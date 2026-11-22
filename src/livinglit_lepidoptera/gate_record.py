@@ -171,7 +171,7 @@ def context_fields(field_cfg: dict) -> list[str]:
     return [k for k, v in field_cfg["fields"].items() if v["kind"] != "measure"]
 
 
-def check_record(raw: dict, paper_dir: Path, field_cfg: dict, check_text: bool = True) -> tuple[Record | None, list[str]]:
+def check_record(raw: dict, paper_dir: Path, field_cfg: dict, check_text: bool = True, record_dir: Path | None = None) -> tuple[Record | None, list[str]]:
     try:
         rec = Record.model_validate(raw)
     except ValidationError as e:
@@ -214,8 +214,9 @@ def check_record(raw: dict, paper_dir: Path, field_cfg: dict, check_text: bool =
                 p = check_anchor(a, paper_dir, rec)
                 if p:
                     probs.append(f"{where}: {p}")
+    rdir = record_dir if record_dir is not None else (RECORDS_DIR / rec.id)
     # Validate manifest.yaml (OA policy & schema) when present
-    mpath = RECORDS_DIR / rec.id / "manifest.yaml"
+    mpath = rdir / "manifest.yaml"
     if mpath.is_file():
         from .models import Manifest
         try:
@@ -224,6 +225,38 @@ def check_record(raw: dict, paper_dir: Path, field_cfg: dict, check_text: bool =
                 probs.append(f"manifest.yaml: oa_status={mf.oa_status!r} rejected under policy.oa_only=true")
         except ValidationError as e:
             probs.extend(f"manifest.yaml: {err['loc']}: {err['msg']}" for err in e.errors())
+    # Validate genetics.yaml (GRN relations, evidence tiers & supplemental genomic tables) when present
+    gpath = rdir / "genetics.yaml"
+    if gpath.is_file():
+        from .models import GeneticsFile
+        try:
+            gf = GeneticsFile.model_validate(load_yaml(gpath))
+            if gf.record != rec.id:
+                probs.append(f"genetics.yaml: record={gf.record!r} does not match {rec.id!r}")
+            binding_assays = {"chip_seq", "cut_and_tag", "atac_seq", "crispr_cre_deletion", "emsa", "y1h"}
+            for rel in gf.relations:
+                for iid in rel.linked_items:
+                    if iid not in rec.evidence:
+                        probs.append(f"genetics.yaml.relations.{rel.id}: linked_item {iid!r} not in record.evidence")
+                if rel.evidence_tier in ("direct_binding_and_perturbation", "chromatin_or_binding_only") or rel.relation == "directly_binds_cre":
+                    if not (set(a.lower() for a in rel.assays) & binding_assays):
+                        probs.append(f"genetics.yaml.relations.{rel.id}: {rel.evidence_tier}/{rel.relation} requires a binding/chromatin assay in assays")
+                if check_text and source_files(paper_dir):
+                    p = check_anchor(rel.anchor, paper_dir, rec)
+                    if p:
+                        probs.append(f"genetics.yaml.relations.{rel.id}.anchor: {p}")
+            for gt in gf.genomic_tables:
+                for iid in gt.linked_items:
+                    if iid not in rec.evidence:
+                        probs.append(f"genetics.yaml.genomic_tables.{gt.id}: linked_item {iid!r} not in record.evidence")
+                if check_text and not (paper_dir / gt.file).is_file():
+                    probs.append(f"genetics.yaml.genomic_tables.{gt.id}: file {gt.file!r} not found in {paper_dir}")
+                if check_text and source_files(paper_dir):
+                    p = check_anchor(gt.anchor, paper_dir, rec)
+                    if p:
+                        probs.append(f"genetics.yaml.genomic_tables.{gt.id}.anchor: {p}")
+        except ValidationError as e:
+            probs.extend(f"genetics.yaml: {err['loc']}: {err['msg']}" for err in e.errors())
     return rec, probs
 
 

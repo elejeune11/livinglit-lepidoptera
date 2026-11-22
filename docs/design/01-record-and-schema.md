@@ -1,4 +1,4 @@
-# 01 · Record, Controlled Vocabulary & Schema (`field_set: 3`)
+# 01 · Record, Controlled Vocabulary & Schema (`field_set: 4`)
 
 ## 1. Per-Paper Manifest (`manifest.yaml`)
 
@@ -31,9 +31,9 @@ not_used:
 
 ---
 
-## 2. Extensible Lepidoptera Context Schema (`field/field.yaml`, `field_set: 3`)
+## 2. Extensible Lepidoptera Context Schema (`field/field.yaml`, `field_set: 4`)
 
-`field_set: 3` generalizes our prototype's butterfly morphogenesis fields to cover **all Lepidoptera (butterflies + moths)** while leaving explicit room for acoustics, pigments, thermal/wetting mechanics, and macro patterning:
+`field_set: 4` generalizes our prototype's butterfly morphogenesis fields to cover **all Lepidoptera (butterflies + moths)** across structural biophysics, evo-devo genetics, functional genomics, acoustics, pigments, thermal/wetting mechanics, and macro patterning (while preserving backward compatibility with `field_set: 3` records via `since: 4` gating):
 
 | Field | Kind | Scope & Extensibility |
 |---|---|---|
@@ -45,16 +45,24 @@ not_used:
 | `functional_architecture` | hierarchical terms (set) | Generalizes `photonic_architecture` into an extensible hierarchy: **optical structural** (ridge multilayers, lower-lamina thin films, 3D gyroids, inter-ridge honeycombs, cross-rib diffusers), **pigmentary** (melanin, pterin, ommochrome, papiliochrome, bile), **acoustic** (broadband ultrasonic absorber, resonant lamina), **thermal / wetting** (superhydrophobic, radiative cooler). |
 | `life_stage` | terms (set) | `egg`, `larva`, `pupa`, `adult`. |
 | `pupal_stage_pct` | quantity | Normalized `% APF` (after pupation / pupal development); `not applicable` for adults/larvae. |
-| `target_gene` | terms (set) | Developmental TFs, signaling pathways, cuticular & cytoskeletal genes (`bab`, `dsx`, `optix`, `WntA`, `cortex`, `mwh`, `Arp2/3`, `F-actin`, `chitin`…) with pinned `FlyBase` (`FBgn`) ortholog xrefs; `none` for WT. |
-| `perturbation_modality` | terms (set) | `wild type`, `G0 CRISPR mosaic`, `knockout`, `RNAi`, `artificial selection`, `small-molecule inhibitor`, `FIB milling`, `mechanical ablation`, `thermal/humidity shift`, `vehicle control`. |
+| `target_gene` | hierarchical terms (set) | Organized into 5 pathway branches (`transcription_factor`, `signaling_pathway`, `pigment_biosynthesis`, `cytoskeleton_and_cuticle`, `noncoding_regulator`) covering core evo-devo TFs (`bab`, `dsx`, `optix`, `Antp`, `sv`, `peb`, `Eip75B`, `Dll`, `ss`, `en`, `al`, `BarH1`), signaling (`WntA`, `cortex`), cytoskeletal/cuticle (`mwh`, `Drak`, `Arp2/3`, `forked`, `singed`, `Osi24`), pigment (`ebony`, `yellow`), and noncoding loci (`ivory`, `mir-193`) with clickable `FlyBase` (`FBgn`) & `NCBI_Gene` xrefs; `none` for WT. |
+| `genetic_element_type` | hierarchical terms (set, `since: 4`) | Distinguishes coding vs. non-coding genetic targets: `coding_exon`, `cis_regulatory_element` (`enhancer`, `silencer`, `promoter`, `insulator`), `noncoding_rna` (`lncrna`, `mirna`), `whole_locus_or_region` (`not applicable` for non-genetic assays). |
+| `allele_or_zygosity` | terms (set, `since: 4`) | Distinguishes somatic mosaicism from germline homozygotes: `g0_somatic_mosaic`, `heterozygous`, `homozygous_null`, `rnai_knockdown`, `natural_polymorphic_allele`, `transgenic_overexpression` (`wild type` / `not applicable`). |
+| `perturbation_modality` | terms (set) | `wild type`, `G0 CRISPR mosaic`, `CRISPR germline KO`, `CRISPR CRE deletion`, `RNAi knockdown`, `transgenesis`, `natural cross / GWAS`, `artificial selection`, `small-molecule inhibitor`, `FIB milling`, `mechanical ablation`, `thermal/humidity shift`, `vehicle control`. |
 | `chemical_agent` | terms (set) | Pharmacological/chemical agent or solvent (`cytochalasin D`, `latrunculin A`, `DMSO`…) with pinned `ChEBI` xrefs; `none` when absent. |
-| `imaging_modality` | hierarchical terms (set) | Microscopy (`SEM`, `FIB-SEM`, `TEM`, `confocal`, `SIM`, `AFM`, `optical`), scattering (`SAXS`, `USAXS`), spectroscopy (`microspectrophotometry`, `goniometry`, `Raman`, `FTIR`), acoustic (`ultrasound vibrometry`, `anechoic reflectivity`), genomics (`snRNA-seq`, `ChIP-seq`, `ATAC-seq`). |
+| `imaging_modality` | hierarchical terms (set) | Microscopy (`SEM`, `FIB-SEM`, `TEM`, `confocal`, `SIM`, `AFM`, `optical`, `immunofluorescence`, `UV photography`), scattering (`SAXS`, `USAXS`), spectroscopy (`microspectrophotometry`, `goniometry`, `Raman`, `FTIR`), acoustic (`ultrasound vibrometry`, `anechoic reflectivity`), and `genomics_and_transcriptomics` (`snRNA-seq`, `scRNA-seq`, `bulk RNA-seq`, `ChIP-seq`, `CUT&Tag`, `ATAC-seq`, `WGS / GWAS`). |
 | `view_orientation` | terms (set) | `planar apical (top-down)`, `tilted oblique`, `cross-section`, `3D volumetric`, `not applicable`. |
 | `hydration_and_prep` | terms (set) | `live in vivo`, `fixed hydrated`, `dry native`, `vacuum sputter-coated`, `FIB-milled`, `critical-point dried`. |
-| `measure` | measure | Canonical quantitative trait (morphological, developmental, biomechanical, optical, acoustic, thermal, or genomic) with explicit SI/domain unit conversion rules. |
+| `measure` | measure | Canonical quantitative trait (morphological, developmental, biomechanical, optical, acoustic, thermal, or genetic/genomic — including `log2_fold_change`, `fdr_adjusted_p`, `chip_peak_count`, `g0_hatching_rate`, `g0_emergence_rate`, `crispant_penetrance`, `nucleus_cluster_count`, `de_gene_count`) with explicit SI/domain unit conversion rules. |
 
-- **Mandatory `context_anchors` (`field_set: 3`)**: Every stated context value in a record must carry a verbatim quote anchor (`{field, value, anchor: {quote, where}}`). Never infer unstated context (`not stated` instead) and never carry a paper's default to a group the paper does not say it applies to.
+- **Mandatory `context_anchors` (`field_set: 3+`)**: Every stated context value in a record must carry a verbatim quote anchor (`{field, value, anchor: {quote, where}}`). Never infer unstated context (`not stated` instead) and never carry a paper's default to a group the paper does not say it applies to.
 - **`other_conditions`**: Any experimentally stated condition that does not fit an existing field (e.g., illumination polarization, ambient humidity, acoustic frequency band) is captured verbatim in `other_conditions: [{text, anchor}]` — preserving extensibility with zero schema distortion.
+
+### Directed Genetic Relations & Supplemental Genomic Tables (`genetics.yaml`)
+Papers with evo-devo perturbations, spatial expression, or functional genomics include an optional `records/<paper>/genetics.yaml` validated by `gate record` and exported into `relations.csv` + `data_hub.json`:
+- **`relations`**: Anchor-backed directed regulatory & genotype→phenotype edges (`source`, `relation`, `target`, `evidence_tier`, `effect_direction`, `assays`, `context`, `linked_items`, `linked_panels`, `anchor`).
+  - **Epistemic binding-assay guard**: `gate record` rejects any edge claiming `direct_binding_and_perturbation`, `chromatin_or_binding_only`, or `directly_binds_cre` unless `assays` includes a physical binding/chromatin assay (`chip_seq`, `cut_and_tag`, `atac_seq`, etc.).
+- **`genomic_tables`**: Generalized schema-driven pointers to supplemental CSV/TSV datasets (`de_genes`, `chip_peaks`, `crispant_counts`, `gwas_loci`, `scale_morphometrics`) with column maps, metadata (`assay`, `contrast`, `stage`, `taxon`), linked items/panels, and verbatim anchors — parsed automatically by `harvest.py` into interactive Volcano plots and searchable tables in the **GRN & Graph** workbench.
 
 ---
 

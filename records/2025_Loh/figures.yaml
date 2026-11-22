@@ -1,0 +1,27 @@
+figures:
+  fig1efgh_sem:
+    file: fig1.png
+    page: 1
+    crop: [0, 0, 2548, 2342]
+    script: figures/fig1efgh_sem.py
+    unit: F1_SCALES
+    kind: microscopy
+    groups:
+      fig1e_black:
+        item: F1_ridge_sem_read
+        group: fig1e_black
+        unit_of_value: µm
+      fig1f_orange:
+        item: F1_ridge_sem_read
+        group: fig1f_orange
+        unit_of_value: µm
+      uvi_male:
+        item: F1_ridge_sem_read
+        group: uvi_male
+        unit_of_value: µm
+      spatulate_male:
+        item: F1_ridge_sem_read
+        group: spatulate_male
+        unit_of_value: µm
+    note: Calibrated 2D-FFT and 12-transect apical ridge spacing across all 4 SEM panels (1E-H) in Fig 1.
+no_points: {}

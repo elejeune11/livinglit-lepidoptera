@@ -393,7 +393,7 @@ window.LL = window.LL || {};
     let s = LL.esc(String(eq || ""));
     s = s.replace(/\*\*2\b|\^2\b/g, "<sup>2</sup>");
     s = s.replace(/\*\*\(([^)]+)\)|\^\(([^)]+)\)/g, (_m, a, b) => `<sup>${a || b}</sup>`);
-    s = s.replace(/\^([A-Za-z0-9_]+)/g, (_m, a) => `<sup>${a}</sup>`);
+    s = s.replace(/\*\*([A-Za-z0-9_]+)|\^([A-Za-z0-9_]+)/g, (_m, a, b) => `<sup>${a || b}</sup>`);
     s = s.replace(/\bsqrt\(/g, "√(");
     s = s.replace(/\bAbs\(([^()]+)\)/g, "|$1|");
     s = s.replace(/\b(lam|theta|pi|nu|rho)\b/g, (_m, g) => `<i>${GREEK_MAP[g]}</i>`);
@@ -423,6 +423,8 @@ window.LL = window.LL || {};
   const ACRONYMS = {
     fvk: "FvK", sem: "SEM", saxs: "SAXS", anova: "ANOVA", ci95: "95% CI",
     sd: "SD", cv: "CV", chi2: "χ²", def: "Definition", q: "q", t: "t", f: "F",
+    crispr: "CRISPR", log2fc: "log2FC", fdr: "FDR", chip: "ChIP", de: "DE",
+    grn: "GRN", cre: "CRE", rnai: "RNAi", snrna: "snRNA", scrna: "scRNA",
   };
 
   function prettyTitle(id) {
@@ -431,7 +433,7 @@ window.LL = window.LL || {};
       .map((w, idx) => {
         const low = w.toLowerCase();
         if (ACRONYMS[low]) return ACRONYMS[low];
-        if (idx > 0 && (low === "and" || low === "of" || low === "to" || low === "from")) return low;
+        if (idx > 0 && (low === "and" || low === "or" || low === "of" || low === "to" || low === "from")) return low;
         return w.charAt(0).toUpperCase() + w.slice(1);
       })
       .join(" ");
@@ -490,9 +492,20 @@ window.LL = window.LL || {};
       if (!q) return true;
       const u = idx.usage[t.id];
       const stated = u ? (u.stated_examples || []).map((e) => e.stated).join(" ") : "";
-      const hay = `${t.id} ${t.label} ${(t.synonyms || []).join(" ")} ${t.definition || ""} ${t.scope || ""} ${stated}`.toLowerCase();
+      const hay = `${t.id} ${t.label} ${(t.synonyms || []).join(" ")} ${(t.xref || []).join(" ")} ${t.definition || ""} ${t.scope || ""} ${stated}`.toLowerCase();
       return hay.includes(q);
     });
+  }
+
+  function xrefUrl(x) {
+    const s = String(x || "").trim();
+    if (s.startsWith("FlyBase:")) return `https://flybase.org/reports/${encodeURIComponent(s.slice(8))}`;
+    if (s.startsWith("FBgn:")) return `https://flybase.org/reports/FBgn${encodeURIComponent(s.slice(5))}`;
+    if (s.startsWith("NCBI_Gene:")) return `https://www.ncbi.nlm.nih.gov/gene/?term=${encodeURIComponent(s.slice(10))}`;
+    if (s.startsWith("NCBI_Taxon:")) return `https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=${encodeURIComponent(s.slice(11))}`;
+    if (s.startsWith("GO:")) return `https://amigo.geneontology.org/amigo/term/${encodeURIComponent(s)}`;
+    if (/^https?:\/\//.test(s)) return s;
+    return null;
   }
 
   function buildTreeRows(filtered, idx) {
@@ -532,6 +545,7 @@ window.LL = window.LL || {};
       const nPanels = u ? (u.panels || []).length : 0;
       const nPapers = u ? (u.papers || []).length : 0;
       const nSyn = (term.synonyms || []).length;
+      const nXref = (term.xref || []).length;
       const sel = term.id === st.selectedTermId;
       const indent = depth * 18;
       return `
@@ -547,6 +561,7 @@ window.LL = window.LL || {};
           </div>
           <div style="display:flex;align-items:center;gap:4px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end">
             ${nPapers > 0 ? `<span class="pill ok">${nPapers}p${nPanels > 0 ? ` · ${nPanels} pan` : ""}</span>` : ""}
+            ${nXref > 0 ? `<span class="pill info">xref</span>` : ""}
             ${nSyn > 0 ? `<span class="pill">${nSyn} syn</span>` : ""}
           </div>
         </button>`;
@@ -569,6 +584,8 @@ window.LL = window.LL || {};
     const matchingComps = isMeasure
       ? (data.comparisons || []).filter((c) => c.measure === term.id || c.measure === term.label || c.measure === term.id.split(":")[1])
       : [];
+    const grnRels = (data.genetic_relations || []).filter((r) => r.source === term.id || r.target === term.id);
+    const nPapersTotal = (data.papers || []).length;
 
     return `
       <div class="card">
@@ -605,11 +622,40 @@ window.LL = window.LL || {};
               <div style="font-size:12.5px;margin-top:3px;color:var(--ink)">${LL.esc(term.scope)}</div>
             </div>` : ""}
 
+          ${(term.xref || []).length ? `
+            <div>
+              <div class="kv-k" style="margin-bottom:5px">External Database Cross-References (${term.xref.length})</div>
+              <div class="chip-row">
+                ${term.xref.map((x) => {
+                  const url = xrefUrl(x);
+                  return url
+                    ? `<a class="pill accent xref-link mono" href="${LL.esc(url)}" target="_blank" rel="noopener">${LL.esc(x)} ↗</a>`
+                    : `<span class="pill mono">${LL.esc(x)}</span>`;
+                }).join("")}
+              </div>
+            </div>` : ""}
+
           ${(term.synonyms || []).length ? `
             <div>
               <div class="kv-k" style="margin-bottom:5px">Accepted Synonyms (${term.synonyms.length})</div>
               <div class="chip-row">
                 ${term.synonyms.map((s) => `<span class="pill info">“${LL.esc(s)}”</span>`).join("")}
+              </div>
+            </div>` : ""}
+
+          ${grnRels.length ? `
+            <div style="padding-top:8px;border-top:1px solid var(--border)">
+              <div class="kv-k" style="margin-bottom:5px">Directed GRN Relations (${grnRels.length})</div>
+              <div style="display:flex;flex-direction:column;gap:5px">
+                ${grnRels.map((r) => `
+                  <button type="button" class="term-row" data-jump-grn="${LL.esc(r.id)}" style="padding:6px 9px">
+                    <span style="font-size:12px">
+                      <strong>${LL.esc(r.source_label)}</strong>
+                      <span class="muted"> ${LL.esc(r.relation.replace(/_/g, " "))} </span>
+                      <strong>${LL.esc(r.target_label)}</strong>
+                    </span>
+                    <span class="pill info" style="font-size:10px">${LL.esc(r.evidence_tier.replace(/_/g, " "))} ↗</span>
+                  </button>`).join("")}
               </div>
             </div>` : ""}
 
@@ -647,7 +693,7 @@ window.LL = window.LL || {};
             </div>
 
             ${!(u.stated_examples.length || u.items.length || u.panels.length) ? `
-              <div class="muted">Not yet referenced in the 2-paper pilot; registered in <span class="mono">field_set 3</span> for autonomous ingestion of upcoming Lepidoptera papers.</div>
+              <div class="muted">Not yet referenced in the current ${nPapersTotal}-paper corpus; registered in <span class="mono">field_set 4</span> for autonomous ingestion of upcoming Lepidoptera papers.</div>
             ` : `
               ${u.items.length ? `
                 <div style="margin-bottom:8px">
@@ -855,8 +901,8 @@ window.LL = window.LL || {};
     container.querySelector("#vf-vocab-export-csv").onclick = () => {
       const flt = filterTerms(idx, st);
       const q = (v) => `"${String(v == null ? "" : v).replace(/"/g, '""')}"`;
-      const header = ["id", "label", "fields", "parent", "synonyms", "definition", "scope", "source", "added"].join(",");
-      const lines = flt.map((t) => [t.id, t.label, (t.fields || []).join(";"), t.parent || "", (t.synonyms || []).join(";"), t.definition || "", t.scope || "", t.source || "", t.added || ""].map(q).join(","));
+      const header = ["id", "label", "fields", "parent", "xref", "synonyms", "definition", "scope", "source", "added"].join(",");
+      const lines = flt.map((t) => [t.id, t.label, (t.fields || []).join(";"), t.parent || "", (t.xref || []).join(";"), (t.synonyms || []).join(";"), t.definition || "", t.scope || "", t.source || "", t.added || ""].map(q).join(","));
       LL.downloadText("livinglit_lepidoptera_vocabulary.csv", [header, ...lines].join("\n"), "text/csv");
     };
   }
@@ -914,7 +960,7 @@ window.LL = window.LL || {};
 
     let html = "";
     if (lep.length) {
-      html += `<div class="formula-group-label">Lepidoptera Physics &amp; Morphometrics (${lep.length})</div>`;
+      html += `<div class="formula-group-label">Lepidoptera Physics, Morphometrics &amp; Genetics (${lep.length})</div>`;
       html += lep.map(cardHtml).join("");
     }
     if (shared.length) {
@@ -1135,7 +1181,7 @@ window.LL = window.LL || {};
       <div class="toolbar">
         <div style="display:flex;gap:4px;flex-wrap:wrap">
           <button type="button" class="btn btn-sm ${st.formulaScope === "ALL" ? "active" : ""}" data-f-scope="ALL">All (${formulas.length})</button>
-          <button type="button" class="btn btn-sm ${st.formulaScope === "lepidoptera" ? "active" : ""}" data-f-scope="lepidoptera">Lepidoptera Physics (${nLep})</button>
+          <button type="button" class="btn btn-sm ${st.formulaScope === "lepidoptera" ? "active" : ""}" data-f-scope="lepidoptera">Lepidoptera Domain (${nLep})</button>
           <button type="button" class="btn btn-sm ${st.formulaScope === "shared" ? "active" : ""}" data-f-scope="shared">Statistical Core (${nShared})</button>
         </div>
         <select id="vf-formula-kind" aria-label="Filter by formula kind">

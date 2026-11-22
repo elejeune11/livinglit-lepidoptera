@@ -36,7 +36,7 @@ window.LL = window.LL || {};
     const d = panel.data || {};
     const st = LL.state;
     const om = d.overlay_meta || null;
-    const hasOverlay = !!om;
+    const hasOverlay = !!(om || d.dotplot_matrix);
     const isMicro = om && (om.kind === "microscopy_fft" || om.kind === "microscopy_scale");
     const extRel = panel.extractor_script ? `${panel.paper}/${panel.extractor_script}` : null;
     const extSrc = extRel && st.data.extractor_scripts ? st.data.extractor_scripts[extRel] : null;
@@ -49,6 +49,7 @@ window.LL = window.LL || {};
       d.periodic_fft_um != null ? `<span class="pill ok">FFT ${LL.fmtNum(d.periodic_fft_um, 3)} µm</span>` : "",
       d.crossrib_fft_um != null ? `<span class="pill info">Crossrib ${LL.fmtNum(d.crossrib_fft_um, 3)} µm</span>` : "",
       d.um_per_px != null ? `<span class="pill">${(d.um_per_px * 1000).toFixed(1)} nm/px</span>` : "",
+      d.dotplot_matrix && d.dotplot_matrix.cells ? `<span class="pill info">${d.dotplot_matrix.cells.length} dotplot cells</span>` : "",
       panel.n_digitized_points > 0 ? `<span class="pill info">${panel.n_digitized_points} digitized pts</span>` : "",
     ].filter(Boolean).join(" ");
 
@@ -56,6 +57,49 @@ window.LL = window.LL || {};
       .filter(([, v]) => v && v !== "not stated")
       .map(([k, v]) => `<div class="kv-item"><div class="kv-k">${LL.esc(k.replace(/_/g, " "))}</div><div class="kv-v">${LL.esc(v)}</div></div>`)
       .join("");
+
+    let genMetaHtml = "";
+    const chMap = panel.channel_gene_map || {};
+    if (Object.keys(chMap).length) {
+      const swatch = { green: "#16a34a", magenta: "#db2777", blue: "#2563eb", orange: "#ea580c", cyan: "#0891b2", gray: "#64748b", red: "#dc2626" };
+      genMetaHtml += `
+        <div class="card">
+          <div class="card-title">Fluorescence / Expression Channel Map</div>
+          <div class="kv-grid">
+            ${Object.entries(chMap).map(([ch, gene]) => `
+              <div class="kv-item">
+                <div class="kv-k"><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${swatch[ch.toLowerCase()] || "#64748b"};margin-right:5px"></span>${LL.esc(ch)} channel</div>
+                <div class="kv-v">${LL.esc(gene)}</div>
+              </div>`).join("")}
+          </div>
+        </div>`;
+    }
+    if (panel.crispant_summary && Object.keys(panel.crispant_summary).length) {
+      genMetaHtml += `
+        <div class="card">
+          <div class="card-title">Genetic Perturbation / Crispant Summary</div>
+          <div class="kv-grid">
+            ${Object.entries(panel.crispant_summary).map(([k, v]) => `
+              <div class="kv-item">
+                <div class="kv-k">${LL.esc(k.replace(/_/g, " "))}</div>
+                <div class="kv-v">${String(v).includes(":") ? `<button type="button" class="pill accent pill-btn" data-jump-term="${LL.esc(v)}">${LL.esc(v)} ↗</button>` : LL.esc(v)}</div>
+              </div>`).join("")}
+          </div>
+        </div>`;
+    }
+    if (panel.genomic_locus && Object.keys(panel.genomic_locus).length) {
+      genMetaHtml += `
+        <div class="card">
+          <div class="card-title">Genomic Locus &amp; Chromatin Track Metadata</div>
+          <div class="kv-grid">
+            ${Object.entries(panel.genomic_locus).map(([k, v]) => `
+              <div class="kv-item">
+                <div class="kv-k">${LL.esc(k.replace(/_/g, " "))}</div>
+                <div class="kv-v mono">${LL.esc(Array.isArray(v) ? v.join(", ") : v)}</div>
+              </div>`).join("")}
+          </div>
+        </div>`;
+    }
 
     let metricsHtml = "";
     if (d.periodic_fft_um != null) {
@@ -112,6 +156,7 @@ window.LL = window.LL || {};
           </div>` : ""}
       </div>
 
+      ${genMetaHtml}
       ${metricsHtml ? `<div class="card"><div class="card-title">Calibrated Metrology &amp; QA</div>${metricsHtml}</div>` : ""}
 
       <div class="card">
@@ -196,7 +241,11 @@ window.LL = window.LL || {};
       st.selectedPanelId = preferred ? preferred.id : null;
     }
     const sel = list.find((p) => p.id === st.selectedPanelId) || null;
-    const arches = ["planar_microscopy", "cross_section", "quantitative_plot", "spectral_or_profile", "macro_morphology", "phylogeny_or_schematic"];
+    const arches = [
+      "planar_microscopy", "cross_section", "quantitative_plot", "spectral_or_profile",
+      "macro_morphology", "phylogeny_or_schematic",
+      "crispant_phenotype_plate", "expression_imaging", "expression_matrix", "genomic_track_or_locus",
+    ];
 
     root.innerHTML = `
       <div class="toolbar">

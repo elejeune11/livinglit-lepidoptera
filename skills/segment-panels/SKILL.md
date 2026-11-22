@@ -6,7 +6,7 @@ description: Stage 2 skill — Atomically segment every multi-panel figure into 
 # `segment-panels` — Atomic 1-Letter Panel Segmentation & BBox QA
 
 ## Objective
-Decompose every main (and key supplemental) figure of `papers_dont_ever_commit/<paper>/` into **atomic 1-letter panels** (`A`, `A_prime`, `A_dprime`, `B`, `C`, …), classify each panel's `archetype` (`planar_microscopy`, `cross_section`, `macro_morphology`, `quantitative_plot`, `spectral_or_profile`, `phylogeny_or_schematic`), localize scale bars and microscopy ROIs, and verify every crop visually.
+Decompose every main (and key supplemental) figure of `papers_dont_ever_commit/<paper>/` into **atomic 1-letter panels** (`A`, `A_prime`, `A_dprime`, `B`, `C`, …), classify each panel's `archetype` (`planar_microscopy`, `cross_section`, `macro_morphology`, `quantitative_plot`, `spectral_or_profile`, `phylogeny_or_schematic`, `crispant_phenotype_plate`, `expression_imaging`, `expression_matrix`, `genomic_track_or_locus`), localize scale bars and microscopy ROIs, record genetic channel/crispant/locus metadata, and verify every crop visually.
 
 ## Hard Rules (Enforced by `gate panels`)
 1. **No composite multi-panel boxes**: Panel IDs like `AB`, `CD`, `top`, `bottom`, `A-C`, `left`, `right` are **REJECTED** unless `composite_justification` explicitly proves inseparable overlapping typography (almost never needed — split them!).
@@ -28,9 +28,14 @@ Decompose every main (and key supplemental) figure of `papers_dont_ever_commit/<
        2. Check physical feasibility: **Nyquist gate** `expected_spacing_um / um_per_px >= 3.0 px/cycle` and `>= 3.5–4` cycles inside a flat, non-fanning ROI.
        3. **Channel isolation**: On dual-channel green+magenta merges (interleaved actin & chitin), NEVER run `channel: gray` (causes false `2×` frequency!). Specify `channel: green_isolated` or `magenta` (and optional `crossrib_channel` for perpendicular cross-ribs/actin rungs); use `channel: max_rgb` for rainbow z-depth-coded STED.
      - Record `view_orientation` explicitly (`top-down apical`, `tilted oblique`, `cross-section`) — tilted SEMs foreshorten spacing by `cos(theta)`!
+   - For **genetic / evo-devo / genomics panels**:
+     - `expression_imaging` (HCR 3.0 in situ, IF, reporter imaging): populate `channel_gene_map` (e.g., `{green: "Bric-a-brac (Bab)", magenta: "F-actin", blue: "DAPI"}`).
+     - `crispant_phenotype_plate` (CRISPR G0 mosaic, KO, RNAi wings): populate `crispant_summary` (`{target_gene, element_type, perturbation, sex, phenotype_summary, ...}`).
+     - `genomic_track_or_locus` (ChIP-seq / ATAC-seq browser tracks, MEME-ChIP motifs): populate `genomic_locus` (`{scaffold, interval, locus_gene, stages}`).
+     - `expression_matrix` (snRNA-seq / scRNA-seq dotplots, heatmaps, UMAPs): assign bespoke extractor if quantitative dotplot matrix can be extracted (`dotplot_matrix`).
 
 3. **Write `records/<paper>/panels.yaml`**
-   - Include figure metadata (`label`, `file`, `xml_id`, `title`, `caption_anchor`, `context`) and every atomic panel with `label`, `title`, `bbox`, `archetype`, `context`, and optional `scale_bar` / `periodic_spec` / `extractor`.
+   - Include figure metadata (`label`, `file`, `xml_id`, `title`, `caption_anchor`, `context`) and every atomic panel with `label`, `title`, `bbox`, `archetype`, `context`, and optional `scale_bar` / `periodic_spec` / `channel_gene_map` / `crispant_summary` / `genomic_locus` / `extractor`.
 
 4. **Render & Visually Verify the BBox Contact Sheet**
    ```bash

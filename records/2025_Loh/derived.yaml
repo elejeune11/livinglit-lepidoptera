@@ -1,0 +1,77 @@
+record: 2025_Loh
+formula_library_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_genetics
+derived:
+  uvi_ridge_density:
+    item: D1_uvi_ridge_density
+    group: uvi_male
+    formula: rho = 1/d
+    anchor:
+      quote: also by the density of the ridges themselves, with a distance between ridges averaging only 1 μm (1.0 ± 0.1 μm, N = 25 scales)
+      where: Results
+    library:
+      formula: ridge_density_from_spacing
+      vars:
+        rho: rho
+        d: d
+    inputs:
+      d:
+        value: F1_ridge_reported.values.uvi
+        kind: per sample
+    output: D1_uvi_ridge_density.values.uvi_rho
+    aggregation: of means
+  canonical_ridge_density:
+    item: D1_uvi_ridge_density
+    group: canonical_all
+    formula: rho = 1/d
+    anchor:
+      quote: Typical scales that are found on either sex or wing surface share a 2-μm distance between their apical ridges
+      where: Results
+    library:
+      formula: ridge_density_from_spacing
+      vars:
+        rho: rho
+        d: d
+    inputs:
+      d:
+        value: F1_ridge_reported.values.typical
+        kind: per sample
+    output: D1_uvi_ridge_density.values.typ_rho
+    aggregation: of means
+  bab_linear_fold_change:
+    item: F10_bab_target_expression
+    group: target_bab
+    formula: FC = 2**log2FC
+    anchor:
+      quote: Stringent filtering criteria result in a list of 87 UVI-DE genes with 3 or more Bab ChIP binding peaks
+      where: Results
+    library:
+      formula: fold_change_from_log2fc
+      vars:
+        FC: FC
+        log2FC: log2FC
+    inputs:
+      log2FC:
+        value: F10_bab_target_expression.values.bab_log2fc
+        kind: constant
+    note: Bab expression drops to 0.055x (~18-fold repression) in Scale3 UVI scale precursors relative to other scale clusters.
+  mwh_linear_fold_change:
+    item: F10_bab_target_expression
+    group: target_mwh
+    formula: FC = 2**log2FC
+    anchor:
+      quote: the loci encoding the nuclear hormone receptor Eip75b and cytoskeletal regulator Multiple wing hair (Mwh) each show more than 50 Bab ChIP sites
+      where: Results
+    library:
+      formula: fold_change_from_log2fc
+      vars:
+        FC: FC
+        log2FC: log2FC
+    inputs:
+      log2FC:
+        value: F10_bab_target_expression.values.mwh_log2fc
+        kind: constant
+    note: Multiple wing hairs (mwh) is upregulated 5.02x in Bab- Scale3 UVI scale precursors.
+proposals: []

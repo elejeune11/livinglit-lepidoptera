@@ -1,0 +1,25 @@
+# Written by code from changes.yaml (version 4); never edited.
+formula: fold_change_from_log2fc
+kind: definition
+statement: Linear expression fold change FC between target and reference cell populations equals 2 raised to the log2 fold
+  change.
+equations:
+- FC = 2**log2FC
+variables:
+  FC: dimensionless
+  log2FC: dimensionless
+assumes:
+- base-2 logarithm (Seurat / DESeq2 convention)
+does_not_apply: natural-log fold changes (ln FC) reported by older Seurat v2 pipelines without base conversion
+tests:
+- given:
+    log2FC: 2.0
+  expect:
+    FC: 4.0
+- given:
+    log2FC: -4.173
+  expect:
+    FC: 0.055437574
+cites:
+  text: Standard base-2 differential expression conversion used in Seurat snRNA-seq analysis (Loh et al. 2025, PLOS Biol 23:e3003233).
+  url: https://doi.org/10.1371/journal.pbio.3003233

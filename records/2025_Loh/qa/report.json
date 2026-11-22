@@ -1,0 +1,630 @@
+{
+  "paper": "2025_Loh",
+  "n_figures": 10,
+  "n_atomic_panels": 85,
+  "composite_panels": 0,
+  "n_custom_extractors": 2,
+  "n_fft_panels": 4,
+  "flagged_panels": [],
+  "panels": {
+    "2025_Loh/F1/A": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F1/B": {
+      "archetype": "planar_microscopy",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F1/C": {
+      "archetype": "planar_microscopy",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F1/D": {
+      "archetype": "quantitative_plot",
+      "n_points": 182,
+      "method": "custom:extractors/f1_interridge.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2025_Loh/F1/E": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 1.7529,
+      "transect_um": 1.7563,
+      "fft_transect_delta_pct": 0.19,
+      "harmonic_ratio_2f": 0.22,
+      "harmonic_guard": "pass",
+      "snr": 204.1,
+      "confidence": "verified"
+    },
+    "2025_Loh/F1/F": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 1.9435,
+      "transect_um": 1.9172,
+      "fft_transect_delta_pct": 1.35,
+      "harmonic_ratio_2f": 0.349,
+      "harmonic_guard": "pass",
+      "snr": 215.9,
+      "confidence": "verified"
+    },
+    "2025_Loh/F1/G": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 0.9679,
+      "transect_um": 1.0076,
+      "fft_transect_delta_pct": 4.11,
+      "harmonic_ratio_2f": 0.077,
+      "harmonic_guard": "pass",
+      "snr": 189.0,
+      "confidence": "verified"
+    },
+    "2025_Loh/F1/H": {
+      "archetype": "planar_microscopy",
+      "n_points": 4,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 3.8543,
+      "transect_um": 3.5684,
+      "fft_transect_delta_pct": 7.42,
+      "harmonic_ratio_2f": 0.232,
+      "harmonic_guard": "low_snr_verify",
+      "snr": 1.9,
+      "confidence": "low_snr_verified"
+    },
+    "2025_Loh/F1/I": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F1/J": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F2/A": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F2/B": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F2/C": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F2/C_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F2/D": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F2/E": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F2/F": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F3/A": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F3/B": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F3/C": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F3/C_prime": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F3/D": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F3/D_prime": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F3/E": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F3/F": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F4/A": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F4/B": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F4/C": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F5/A": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F5/B": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F5/C": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F5/D": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F5/E": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F5/F": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F6/A": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F6/B": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F6/B_prime": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F6/C": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F6/C_prime": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F6/D": {
+      "archetype": "expression_matrix",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F6/E": {
+      "archetype": "expression_matrix",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F6/F": {
+      "archetype": "expression_matrix",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F6/G": {
+      "archetype": "expression_matrix",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F6/H": {
+      "archetype": "expression_matrix",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F6/H_prime": {
+      "archetype": "expression_matrix",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/A": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/B": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/C": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/D": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/E": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/F": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/G": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/H": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/H_prime": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/I": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/I_prime": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/J": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/J_prime": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/K": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F7/L": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F8/A": {
+      "archetype": "expression_matrix",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F8/A_prime": {
+      "archetype": "expression_matrix",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F8/B": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F8/C": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F8/D": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F8/E": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/A": {
+      "archetype": "genomic_track_or_locus",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/B": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/C": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/D": {
+      "archetype": "genomic_track_or_locus",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/E": {
+      "archetype": "genomic_track_or_locus",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/F": {
+      "archetype": "genomic_track_or_locus",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/G": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/G_prime": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/H": {
+      "archetype": "genomic_track_or_locus",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/I": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/I_prime": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/I_dprime": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/J": {
+      "archetype": "genomic_track_or_locus",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/K": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F9/K_prime": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2025_Loh/F10/A": {
+      "archetype": "quantitative_plot",
+      "n_points": 3,
+      "method": "custom:extractors/f10_genomics.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2025_Loh/F10/B": {
+      "archetype": "expression_matrix",
+      "n_points": 168,
+      "method": "custom:extractors/f10_genomics.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2025_Loh/F10/C": {
+      "archetype": "quantitative_plot",
+      "n_points": 102,
+      "method": "custom:extractors/f10_genomics.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2025_Loh/F10/D": {
+      "archetype": "quantitative_plot",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    }
+  }
+}

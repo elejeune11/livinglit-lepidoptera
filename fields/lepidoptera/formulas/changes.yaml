@@ -225,3 +225,161 @@
         text: Normalized percentage of total pupal development (% APF) used across Lepidoptera morphogenesis (Seah et al.
           2023 eLife 12:e89082; Totz et al. 2024 Cell Rep Phys Sci 5:102063).
         url: https://doi.org/10.7554/eLife.89082
+- version: 4
+  paper: 2025_Loh
+  agent:
+    model: livinglit-lepidoptera
+    instructions: field_set_4_genetics
+  events:
+  - event: add
+    entry:
+      formula: crispr_hatching_rate
+      kind: definition
+      statement: G0 CRISPR embryonic hatching rate equals the number of hatched larvae divided by the number of injected eggs.
+      equations:
+      - r_hatch = n_hatched / n_injected
+      variables:
+        r_hatch: dimensionless
+        n_hatched: count
+        n_injected: count
+      assumes:
+      - all injected eggs are tracked through hatching
+      does_not_apply: unrecorded egg mortality or pooled multi-sgRNA batches without per-batch denominators
+      tests:
+      - given:
+          n_hatched: 120.0
+          n_injected: 400.0
+        expect:
+          r_hatch: 0.3
+      cites:
+        text: Standard CRISPR-Cas9 embryonic microinjection viability metric in Lepidoptera (Martin et al. 2020; Loh et al.
+          2025, PLOS Biol 23:e3003233).
+        url: https://doi.org/10.1371/journal.pbio.3003233
+  - event: add
+    entry:
+      formula: crispr_emergence_rate
+      kind: definition
+      statement: G0 CRISPR adult emergence rate equals the number of eclosed adults divided by the number of hatched larvae.
+      equations:
+      - r_emerge = n_emerged / n_hatched
+      variables:
+        r_emerge: dimensionless
+        n_emerged: count
+        n_hatched: count
+      assumes:
+      - larval rearing conditions are consistent across cohorts
+      does_not_apply: embryonic-lethal knockouts where hatched larvae are not scored separately
+      tests:
+      - given:
+          n_emerged: 48.0
+          n_hatched: 120.0
+        expect:
+          r_emerge: 0.4
+      cites:
+        text: Standard CRISPR-Cas9 larval-to-adult survival metric in Lepidoptera mutagenesis screens.
+        url: https://doi.org/10.1371/journal.pbio.3003233
+  - event: add
+    entry:
+      formula: crispr_penetrance
+      kind: definition
+      statement: G0 crispant phenotypic penetrance equals the number of emerged adults exhibiting the target mosaic wing phenotype
+        divided by total emerged adults.
+      equations:
+      - pen = n_phenotype / n_emerged
+      variables:
+        pen: dimensionless
+        n_phenotype: count
+        n_emerged: count
+      assumes:
+      - both wing surfaces of all emerged adults are scored consistently
+      does_not_apply: sex-limited phenotypes unless the denominator is restricted to the informative sex
+      tests:
+      - given:
+          n_phenotype: 18.0
+          n_emerged: 30.0
+        expect:
+          pen: 0.6
+      cites:
+        text: CRISPR G0 mosaic penetrance definition (Loh et al. 2025, PLOS Biol 23:e3003233).
+        url: https://doi.org/10.1371/journal.pbio.3003233
+  - event: add
+    entry:
+      formula: fold_change_from_log2fc
+      kind: definition
+      statement: Linear expression fold change FC between target and reference cell populations equals 2 raised to the log2
+        fold change.
+      equations:
+      - FC = 2**log2FC
+      variables:
+        FC: dimensionless
+        log2FC: dimensionless
+      assumes:
+      - base-2 logarithm (Seurat / DESeq2 convention)
+      does_not_apply: natural-log fold changes (ln FC) reported by older Seurat v2 pipelines without base conversion
+      tests:
+      - given:
+          log2FC: 2.0
+        expect:
+          FC: 4.0
+      - given:
+          log2FC: -4.173
+        expect:
+          FC: 0.055437574
+      cites:
+        text: Standard base-2 differential expression conversion used in Seurat snRNA-seq analysis (Loh et al. 2025, PLOS
+          Biol 23:e3003233).
+        url: https://doi.org/10.1371/journal.pbio.3003233
+  - event: add
+    entry:
+      formula: benjamini_hochberg_fdr
+      kind: definition
+      statement: Benjamini–Hochberg false discovery rate (FDR) step-up adjusted p-value at rank r out of m hypotheses.
+      equations:
+      - fdr = Min(1, p*m/r)
+      variables:
+        fdr: dimensionless
+        p: dimensionless
+        m: count
+        r: count
+      assumes:
+      - p-values are sorted in ascending order and monotone step-up envelope is enforced across ranks
+      does_not_apply: family-wise error rate control (Bonferroni / Holm)
+      tests:
+      - given:
+          p: 0.002
+          m: 1000.0
+          r: 10.0
+        expect:
+          fdr: 0.2
+      cites:
+        text: Benjamini Y, Hochberg Y. Controlling the false discovery rate. J R Stat Soc B 57:289–300 (1995).
+        url: https://doi.org/10.1111/j.2517-6161.1995.tb02031.x
+  - event: add
+    entry:
+      formula: chip_de_enrichment_odds
+      kind: definition
+      statement: Odds ratio testing enrichment of ChIP-seq bound genes among differentially expressed (DE) genes from a 2x2
+        contingency table (a=bound&DE, b=bound&notDE, c=unbound&DE, d=unbound&notDE).
+      equations:
+      - OR = (a*d)/(b*c)
+      variables:
+        OR: dimensionless
+        a: count
+        b: count
+        c: count
+        d: count
+      assumes:
+      - all four contingency cells are positive and background universe is restricted to expressed genes
+      does_not_apply: zero-count contingency cells without Haldane–Anscombe continuity correction
+      tests:
+      - given:
+          a: 87.0
+          b: 400.0
+          c: 58.0
+          d: 8000.0
+        expect:
+          OR: 30.0
+      cites:
+        text: Contingency odds ratio for transcription-factor ChIP-seq and differential expression overlap (Loh et al. 2025,
+          PLOS Biol 23:e3003233).
+        url: https://doi.org/10.1371/journal.pbio.3003233

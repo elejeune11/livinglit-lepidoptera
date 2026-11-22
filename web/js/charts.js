@@ -39,6 +39,79 @@ window.LL = window.LL || {};
     const pw = w - pad.l - pad.r;
     const ph = h - pad.t - pad.b;
 
+    // 0. Expression Dotplot Matrix (genes x cell clusters: radius = % expressing, color = avg expression)
+    if (d.dotplot_matrix && d.dotplot_matrix.cells && d.dotplot_matrix.clusters && d.dotplot_matrix.genes) {
+      const dm = d.dotplot_matrix;
+      const clusters = dm.clusters;
+      const genes = dm.genes;
+      const [emin, emax] = dm.expr_range || [-1.0, 2.5];
+      const dp = { l: 96, r: 16, t: 28, b: 92 };
+      const cw = (w - dp.l - dp.r) / Math.max(genes.length, 1);
+      const ch = (h - dp.t - dp.b) / Math.max(clusters.length, 1);
+      const maxR = Math.min(cw, ch) * 0.44;
+
+      const exprColor = (val) => {
+        const t = Math.max(0, Math.min(1, (val - emin) / Math.max(emax - emin, 1e-6)));
+        // Warm rose -> amber-olive -> deep teal-navy perceptual ramp matching Loh Fig 10B
+        const stops = [
+          [246, 189, 185], [218, 174, 96], [85, 130, 82], [29, 78, 118], [18, 38, 86],
+        ];
+        const seg = t * (stops.length - 1);
+        const i0 = Math.min(stops.length - 2, Math.floor(seg));
+        const f = seg - i0;
+        const c0 = stops[i0], c1 = stops[i0 + 1];
+        const r = Math.round(c0[0] + (c1[0] - c0[0]) * f);
+        const g = Math.round(c0[1] + (c1[1] - c0[1]) * f);
+        const b = Math.round(c0[2] + (c1[2] - c0[2]) * f);
+        return `rgb(${r},${g},${b})`;
+      };
+
+      // Subtle grid + row labels
+      ctx.font = "600 10.5px sans-serif";
+      clusters.forEach((cl, ri) => {
+        const cy = dp.t + (ri + 0.5) * ch;
+        ctx.strokeStyle = tc.grid; ctx.lineWidth = 0.8;
+        ctx.beginPath(); ctx.moveTo(dp.l, cy); ctx.lineTo(w - dp.r, cy); ctx.stroke();
+        ctx.fillStyle = cl.includes("UVI") ? "#a21caf" : (cl.includes("spatulate") ? "#0369a1" : tc.ink);
+        ctx.textAlign = "right";
+        ctx.fillText(cl, dp.l - 8, cy + 3.5);
+      });
+
+      // Rotated gene column labels
+      genes.forEach((gn, ci) => {
+        const cx = dp.l + (ci + 0.5) * cw;
+        ctx.save();
+        ctx.translate(cx, h - dp.b + 8);
+        ctx.rotate(-Math.PI / 3);
+        ctx.fillStyle = tc.ink;
+        ctx.font = "600 10px ui-monospace, monospace";
+        ctx.textAlign = "right";
+        ctx.fillText(gn, 0, 3);
+        ctx.restore();
+      });
+
+      // Draw circles
+      const clIdx = new Map(clusters.map((c, i) => [c, i]));
+      const gnIdx = new Map(genes.map((g, i) => [g, i]));
+      dm.cells.forEach((cell) => {
+        const ri = clIdx.get(cell.cluster), ci = gnIdx.get(cell.gene);
+        if (ri == null || ci == null) return;
+        const cx = dp.l + (ci + 0.5) * cw;
+        const cy = dp.t + (ri + 0.5) * ch;
+        const frac = Math.max(0, Math.min(1, (cell.pct || 0) / 100));
+        const r = Math.max(1.2, Math.sqrt(frac) * maxR);
+        ctx.beginPath();
+        ctx.arc(cx, cy, r, 0, Math.PI * 2);
+        ctx.fillStyle = frac > 0.01 ? exprColor(cell.expr) : tc.grid;
+        ctx.fill();
+      });
+
+      // Compact header legend
+      ctx.fillStyle = tc.muted; ctx.font = "600 10px sans-serif"; ctx.textAlign = "left";
+      ctx.fillText("Dot area = % expressing (0–100%) · Color = avg expression (-1 to +2.5)", dp.l, 15);
+      return;
+    }
+
     // 1. Boxplot panel (with optional overlaid individual jitter scatter points!)
     if (d.digitized_boxplots && !d.curves) {
       const entries = Object.entries(d.digitized_boxplots);

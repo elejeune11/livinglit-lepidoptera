@@ -1,0 +1,28 @@
+# Written by code from changes.yaml (version 4); never edited.
+formula: chip_de_enrichment_odds
+kind: definition
+statement: Odds ratio testing enrichment of ChIP-seq bound genes among differentially expressed (DE) genes from a 2x2 contingency
+  table (a=bound&DE, b=bound&notDE, c=unbound&DE, d=unbound&notDE).
+equations:
+- OR = (a*d)/(b*c)
+variables:
+  OR: dimensionless
+  a: count
+  b: count
+  c: count
+  d: count
+assumes:
+- all four contingency cells are positive and background universe is restricted to expressed genes
+does_not_apply: zero-count contingency cells without Haldane–Anscombe continuity correction
+tests:
+- given:
+    a: 87.0
+    b: 400.0
+    c: 58.0
+    d: 8000.0
+  expect:
+    OR: 30.0
+cites:
+  text: Contingency odds ratio for transcription-factor ChIP-seq and differential expression overlap (Loh et al. 2025, PLOS
+    Biol 23:e3003233).
+  url: https://doi.org/10.1371/journal.pbio.3003233

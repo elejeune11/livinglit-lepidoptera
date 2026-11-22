@@ -19,11 +19,13 @@ For each evidence item, `audit.py` automatically compares all available value or
 
 ---
 
-## 2. Lepidoptera Physics & Morphometrics Formula Library (`field/formulas/` + `derived.yaml`)
+## 2. Lepidoptera Physics, Morphometrics & Genetics Formula Library (`fields/lepidoptera/formulas/` + `derived.yaml`)
 
-Each derived quantity reported by a paper (e.g., thin-film constructive interference wavelength, multilayer Bragg reflection peak, Föppl–von Kármán buckling amplitude scaling, ridge-density ↔ ridge-spacing inversion, optical path length, or acoustic absorption peak) is checked symbolically and numerically using **SymPy**:
+Each derived quantity reported by a paper — spanning structural optics, biomechanics, morphometrics, CRISPR phenotyping, and functional genomics — is checked symbolically and numerically using **SymPy** (40 formulas total: 13 Lepidoptera domain + 27 shared statistical core):
 
-- **Library definitions (`field/formulas/*.yaml`)**: Canonical dimensional equations with explicit symbols, SI/nm/µm/Pa/kHz units, assumptions (e.g., chitin refractive index $n_{\text{chitin}} \approx 1.56$, air $n_{\text{air}} = 1.0$, incidence angle $\theta$), and literature citations.
+- **Physics & Morphometrics**: thin-film constructive interference wavelength, multilayer Bragg reflection peak, Föppl–von Kármán buckling amplitude scaling, ridge-density ↔ ridge-spacing inversion, SAXS Bragg `2π/q*`, tilted-SEM foreshortening `d/cos(θ)`, and relative pupal stage `% APF`.
+- **Genetics & Genomics (`v4`)**: CRISPR G0 hatching rate (`n_hatched / n_injected`), emergence rate (`n_emerged / n_injected`), mosaic penetrance (`n_phenotype / n_emerged`), linear expression fold change (`FC = 2**log2FC`), Benjamini–Hochberg step-up FDR (`Min(1, p*m/r)`), and ChIP-seq / DE enrichment contingency odds ratio (`OR = (a*d)/(b*c)`).
+- **Library definitions (`fields/lepidoptera/formulas/*.yaml`)**: Canonical dimensional equations with explicit symbols, SI/nm/µm/Pa/count units, assumptions (e.g., chitin refractive index $n_{\text{chitin}} \approx 1.56$, air $n_{\text{air}} = 1.0$, Seurat base-2 log convention), built-in numerical tests, and literature citations.
 - **Per-paper `derived.yaml`**: Links a paper's printed derived output to its printed or raw inputs and declares the formula used by the paper.
 - **Wrong-derivation handling**: If SymPy detects that the paper's formula contradicts the library or that the printed output differs by a constant factor (e.g., diameter vs. radius or missing factor of 2 in optical path length $2 n d \cos\theta$), `audit.py` flags the derivation as `inconsistent` and retains both the printed value and the code-rebuilt value (explicitly tagged `origin: derived`).
 

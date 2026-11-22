@@ -1,0 +1,50 @@
+record: 2025_Loh
+resources:
+  - id: loh_osf_interridge
+    kind: dataset
+    repository: OSF
+    title: DataS10 — Individual scale 2D Fourier inter-ridge spacings across 7 C. eurytheme scale classes (N=170)
+    url: https://osf.io/yjvkc/
+    license: CC-BY-4.0
+    local_files:
+      - DataS10_Fourier_Interridge_distances_Figure1D.csv
+    feeds_panels:
+      - 2025_Loh/F1/D
+      - 2025_Loh/F1/E
+      - 2025_Loh/F1/F
+      - 2025_Loh/F1/G
+      - 2025_Loh/F1/H
+    feeds_items:
+      - F1_ridge_reported
+      - F1_uvi_vs_canonical
+    summary:
+      n_scales: 170
+      classes: 7
+      uvi_mean_um: 1.017
+      canonical_mean_um: 2.023
+      spatulate_mean_um: 4.426
+
+  - id: loh_osf_bab_chip
+    kind: dataset
+    repository: OSF
+    title: DataS6 — 87 UVI-DE genes in Scale3 with >= 3 Bab ChIP-seq binding peaks
+    url: https://osf.io/yjvkc/
+    license: CC-BY-4.0
+    local_files:
+      - DataS6_DE_Scale3_3BabPeaksorMore.csv
+    feeds_panels:
+      - 2025_Loh/F9/B
+      - 2025_Loh/F9/C
+      - 2025_Loh/F10/A
+      - 2025_Loh/F10/B
+      - 2025_Loh/F10/C
+      - 2025_Loh/F10/D
+    feeds_items:
+      - F10_bab_uvi_targets_count
+      - F10_bab_target_expression
+      - F10_bab_target_peaks
+    summary:
+      n_bab_targets: 87
+      n_cytoskeleton_cuticle: 17
+      max_bab_peaks: 54
+      top_targets: [Eip75B, Mwh, Bab, Drak, CAP, Dachsous]

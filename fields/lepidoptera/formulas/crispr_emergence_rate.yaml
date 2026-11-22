@@ -1,0 +1,22 @@
+# Written by code from changes.yaml (version 4); never edited.
+formula: crispr_emergence_rate
+kind: definition
+statement: G0 CRISPR adult emergence rate equals the number of eclosed adults divided by the number of hatched larvae.
+equations:
+- r_emerge = n_emerged / n_hatched
+variables:
+  r_emerge: dimensionless
+  n_emerged: count
+  n_hatched: count
+assumes:
+- larval rearing conditions are consistent across cohorts
+does_not_apply: embryonic-lethal knockouts where hatched larvae are not scored separately
+tests:
+- given:
+    n_emerged: 48.0
+    n_hatched: 120.0
+  expect:
+    r_emerge: 0.4
+cites:
+  text: Standard CRISPR-Cas9 larval-to-adult survival metric in Lepidoptera mutagenesis screens.
+  url: https://doi.org/10.1371/journal.pbio.3003233

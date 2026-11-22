@@ -20,6 +20,11 @@ window.LL = window.LL || {};
     Object.entries(d.digitized_boxplots || {}).forEach(([gn, b]) => {
       rows.push([panel.id, gn, "boxplot_median_iqr", gn, b.median ?? "", b.q1 ?? "", b.q3 ?? "", `whiskers:${b.whisker_lo}..${b.whisker_hi}`, b.y_unit || ""].join(","));
     });
+    if (d.dotplot_matrix && d.dotplot_matrix.cells) {
+      d.dotplot_matrix.cells.forEach((c) => {
+        rows.push([panel.id, `${c.cluster}::${c.gene}`, "dotplot_cell", c.pct, c.expr, "", "", "%_expressing", "avg_expr"].join(","));
+      });
+    }
     return rows.join("\n") + "\n";
   }
 
@@ -29,17 +34,22 @@ window.LL = window.LL || {};
     const papers = [...new Set(allPlots.map((p) => p.paper))];
     const list = allPlots.filter((p) => st.vaultPaper === "ALL" || p.paper === st.vaultPaper);
     if (!st.selectedVaultId || !list.some((p) => p.id === st.selectedVaultId)) {
-      const pref = list.find((p) => p.id === "2026_Finet/F5/D_prime") || list.find((p) => p.id === "2024_Lloyd/F8/E") || list[0];
+      const pref = list.find((p) => p.id === "2025_Loh/F10/B") || list.find((p) => p.id === "2026_Finet/F5/D_prime") || list.find((p) => p.id === "2024_Lloyd/F8/E") || list[0];
       st.selectedVaultId = pref ? pref.id : null;
     }
     const sel = list.find((p) => p.id === st.selectedVaultId) || null;
+    const selDotCells = sel && sel.data && sel.data.dotplot_matrix && sel.data.dotplot_matrix.cells ? sel.data.dotplot_matrix.cells.length : 0;
 
     const extRel = sel && sel.extractor_script ? `${sel.paper}/${sel.extractor_script}` : null;
     const extSrc = extRel && st.data.extractor_scripts ? st.data.extractor_scripts[extRel] : null;
 
     root.innerHTML = `
+      <div class="section-head" style="margin-bottom:8px">
+        <h2>Digitized Plots &amp; Overlay Verification</h2>
+        <span class="muted">Inspect extracted curves, scatter points, boxplots, and expression dotplots overlaid directly on original figure crops, re-plotted interactively with downloadable CSV/JSON and Python extractor code.</span>
+      </div>
       <div class="toolbar">
-        <select id="vt-paper" aria-label="Filter vault by paper">
+        <select id="vt-paper" aria-label="Filter digitized plots by paper">
           <option value="ALL">All papers (${allPlots.length} digitized plots)</option>
           ${papers.map((pid) => `<option value="${LL.esc(pid)}" ${st.vaultPaper === pid ? "selected" : ""}>${LL.esc(pid)}</option>`).join("")}
         </select>
@@ -71,7 +81,7 @@ window.LL = window.LL || {};
               <div class="stage-wrap"><canvas id="vt-source-canvas"></canvas></div>
             </div>
             <div>
-              <div class="muted" style="margin-bottom:5px;font-weight:600">Interactive Re-Plotted Data (${sel.n_digitized_points} pts)</div>
+              <div class="muted" style="margin-bottom:5px;font-weight:600">Interactive Re-Plotted Data (${selDotCells ? `${selDotCells} dotplot cells` : `${sel.n_digitized_points} pts`})</div>
               <div class="chart-canvas-box"><canvas id="vt-chart-canvas"></canvas></div>
             </div>
           </div>

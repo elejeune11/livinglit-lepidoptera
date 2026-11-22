@@ -39,7 +39,13 @@ window.LL = window.LL || {};
     // Audit tab
     auditPaper: "ALL",
     auditVerdict: "ALL",
-    // Graph tab
+    // GRN & Graph tab
+    graphTab: "grn", // grn | tables | corpus
+    grnTier: "ALL",
+    grnSelectedRel: null,
+    genomicTableId: null,
+    genomicTableQuery: "",
+    genomicMinPeaks: 0,
     graphFilter: "ALL",
     graphSelectedNode: null,
     // Vocab & Formulas Explorer tab

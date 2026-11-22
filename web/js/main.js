@@ -31,17 +31,19 @@ window.LL = window.LL || {};
     const nFft = (data.panels || []).filter(LL.panelHasFft).length;
     const nTerms = (data.terms || []).length;
     const nFormulas = (data.formulas || []).length;
+    const nGrn = (data.genetic_relations || []).length;
 
     const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
     set("cnt-atlas", nPanels);
     set("cnt-vault", nPlots);
     set("cnt-compare", nComp);
     set("cnt-audit", nClaims);
+    set("cnt-grn", nGrn || "");
     set("cnt-schema", `${nTerms}·${nFormulas}`);
 
     const kpi = document.getElementById("kpi-inline");
     if (kpi) {
-      kpi.textContent = `${(data.papers || []).length} OA papers · ${nPanels} panels · ${nFft} FFT · ${(data.summary && data.summary.n_digitized_series_points) || 0} pts`;
+      kpi.textContent = `${(data.papers || []).length} OA papers · ${nPanels} panels · ${nFft} FFT · ${nGrn} GRN · ${(data.summary && data.summary.n_digitized_series_points) || 0} pts`;
     }
   }
 
@@ -65,7 +67,7 @@ window.LL = window.LL || {};
     document.getElementById("drawer-close").onclick = LL.closeDrawer;
     document.getElementById("drawer-backdrop").onclick = LL.closeDrawer;
 
-    // Global event delegation for Audit Drawer & cross-tab jumps (panels, terms, formulas, compare)
+    // Global event delegation for Audit Drawer & cross-tab jumps (panels, terms, formulas, GRN, compare)
     document.body.addEventListener("click", (ev) => {
       const itemBtn = ev.target.closest("[data-open-item]");
       if (itemBtn) {
@@ -129,6 +131,18 @@ window.LL = window.LL || {};
         renderActiveView();
         return;
       }
+      const grnBtn = ev.target.closest("[data-jump-grn]");
+      if (grnBtn) {
+        LL.closeDrawer();
+        const rid = grnBtn.getAttribute("data-jump-grn");
+        const tabHint = grnBtn.getAttribute("data-jump-grn-tab");
+        LL.state.graphTab = tabHint || "grn";
+        LL.state.grnTier = "ALL";
+        if (rid) LL.state.grnSelectedRel = rid;
+        LL.state.view = "graph";
+        renderActiveView();
+        return;
+      }
       const cmpBtn = ev.target.closest("[data-jump-compare-measure]");
       if (cmpBtn) {
         LL.closeDrawer();
@@ -140,7 +154,7 @@ window.LL = window.LL || {};
 
     // Re-render current view canvases smoothly on live theme switch
     window.addEventListener("ll-theme-redraw", () => {
-      if (["vault", "compare"].includes(LL.state.view)) renderActiveView();
+      if (["vault", "compare", "graph"].includes(LL.state.view)) renderActiveView();
     });
   }
 

@@ -330,6 +330,7 @@ def assemble_bundle(tag: str, releases_dir: Path = ROOT / "releases", papers_dir
     for r in _read_csv(rel / "terms.csv"):
         r["fields"] = _jparse(r.get("fields"), [])
         r["synonyms"] = _jparse(r.get("synonyms"), [])
+        r["xref"] = _jparse(r.get("xref"), [])
         term_labels[r["id"]] = r["label"]
         terms.append(r)
 
@@ -395,6 +396,8 @@ def assemble_bundle(tag: str, releases_dir: Path = ROOT / "releases", papers_dir
         "term_labels": term_labels,
         "term_usage": term_usage,
         "formulas": formulas,
+        "genetic_relations": hub.get("genetic_relations") or [],
+        "genomic_tables": hub.get("genomic_tables") or [],
         "panels": panels,
         "manifests": manifests,
         "qa_reports": hub.get("qa_reports") or {},

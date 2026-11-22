@@ -18,7 +18,7 @@ named_states:
   - not applicable
   - none
   - not stated in this source
-field_set: 3
+field_set: 4
 fields:
   taxon:
     kind: terms
@@ -72,17 +72,38 @@ fields:
     kind: terms
     set: true
     scope: >-
-      Homologous developmental gene, transcription factor, signaling pathway, or cytoskeletal
-      complex targeted or profiled (with pinned FlyBase FBgn ortholog xrefs).
+      Hierarchical homologous developmental gene, transcription factor, signaling pathway,
+      pigment enzyme, cytoskeletal complex, or non-coding regulator targeted or profiled
+      (with pinned FlyBase FBgn / OrthoDB ortholog xrefs).
     states:
       - none
+  genetic_element_type:
+    kind: terms
+    set: true
+    since: 4
+    scope: >-
+      Class of genomic element perturbed or profiled (coding exon, cis-regulatory element such as
+      enhancer/promoter/silencer, non-coding RNA such as lncRNA/miRNA, chromosomal inversion,
+      or transgene reporter).
+    states:
+      - not applicable
+  allele_or_zygosity:
+    kind: terms
+    set: true
+    since: 4
+    scope: >-
+      Genetic zygosity or perturbation state (wild type, G0 somatic mosaic, heterozygous,
+      homozygous null, dominant gain-of-function, RNAi knockdown, or natural polymorphism).
+    states:
+      - not applicable
+      - wild type
   perturbation_modality:
     kind: terms
     set: true
     scope: >-
-      Experimental or evolutionary perturbation design (wild type, G0 CRISPR mosaic, knockout,
-      RNAi, artificial selection, small-molecule inhibitor, FIB milling, mechanical ablation,
-      thermal/humidity shift, vehicle control).
+      Experimental or evolutionary perturbation design (wild type, G0 CRISPR mosaic, germline
+      knockout, CRE deletion, RNAi knockdown, transgenesis, artificial selection, small-molecule
+      inhibitor, FIB milling, mechanical ablation, thermal/humidity shift, vehicle control).
     states:
       - wild type
   chemical_agent:
@@ -95,9 +116,11 @@ fields:
     kind: terms
     set: true
     scope: >-
-      Hierarchical microscopy (SEM, FIB-SEM, TEM, confocal, SIM, AFM, optical), scattering
-      (SAXS, USAXS), spectroscopy (microspectrophotometry, goniometry, Raman, FTIR), acoustic
-      (ultrasound vibrometry, anechoic reflectivity), or genomics (snRNA-seq, ChIP-seq, ATAC-seq).
+      Hierarchical microscopy (SEM, FIB-SEM, TEM, confocal, TauSTED, SIM, AFM, optical, UV
+      photography, immunofluorescence, HCR in situ), scattering (SAXS, USAXS), spectroscopy
+      (microspectrophotometry, goniometry, Raman, FTIR), acoustic (ultrasound vibrometry),
+      or genomics/transcriptomics (bulk RNA-seq, scRNA-seq, snRNA-seq, ChIP-seq, CUT&Tag,
+      ATAC-seq, WGS/GWAS, QTL mapping).
   view_orientation:
     kind: terms
     set: true
@@ -122,9 +145,12 @@ confounder_fields:
   - hydration_and_prep
   - imaging_modality
   - perturbation_modality
+  - genetic_element_type
+  - allele_or_zygosity
 
 linked:
   - [target_gene, perturbation_modality]
+  - [target_gene, genetic_element_type, allele_or_zygosity, perturbation_modality]
   - [chemical_agent, perturbation_modality]
   - [chemical_agent, perturbation_modality, target_gene]
   - [functional_architecture, taxon]
@@ -155,6 +181,8 @@ default_key:
       - life_stage
       - pupal_stage_pct
       - target_gene
+      - genetic_element_type
+      - allele_or_zygosity
       - perturbation_modality
       - chemical_agent
       - imaging_modality
@@ -172,6 +200,8 @@ default_key:
       - life_stage
       - pupal_stage_pct
       - target_gene
+      - genetic_element_type
+      - allele_or_zygosity
       - perturbation_modality
       - chemical_agent
       - imaging_modality

@@ -1,0 +1,50 @@
+id: 2025_Loh
+doi: 10.1371/journal.pbio.3003233
+title: Single-nucleus transcriptomics of wing sexual dimorphism and scale cell specialization in sulphur butterflies
+year: 2025
+journal: PLOS Biology
+oa_status: open_access
+license: CC-BY-4.0
+figure_embed_policy: public_thumbnails
+repositories:
+  - kind: osf
+    url: https://osf.io/yjvkc/
+    note: Feature count matrices, Seurat objects, Data 1-10 CSVs (DataS6 Bab ChIP UVI-DE 87 genes & DataS10 170 Fourier inter-ridge distances harvested locally)
+  - kind: ncbi_sra
+    url: https://www.ncbi.nlm.nih.gov/sra/?term=SRS12272185
+    note: 10x Chromium single-nucleus RNA-seq raw reads (male 40% pupal hindwing, 2,961 filtered nuclei)
+  - kind: ncbi_sra
+    url: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1148116
+    note: Bab ChIP-seq libraries at 40% and 60% pupal wing stages (2 biological replicates per stage)
+files:
+  - file: PMC12204629.xml
+    role: main_text
+  - file: pbio.3003233.g001.png
+    role: main_figure
+  - file: pbio.3003233.g002.png
+    role: main_figure
+  - file: pbio.3003233.g003.png
+    role: main_figure
+  - file: pbio.3003233.g004.png
+    role: main_figure
+  - file: pbio.3003233.g005.png
+    role: main_figure
+  - file: pbio.3003233.g006.png
+    role: main_figure
+  - file: pbio.3003233.g007.png
+    role: main_figure
+  - file: pbio.3003233.g008.png
+    role: main_figure
+  - file: pbio.3003233.g009.png
+    role: main_figure
+  - file: pbio.3003233.g010.png
+    role: main_figure
+  - file: fig1.png
+    role: main_figure
+  - file: DataS10_Fourier_Interridge_distances_Figure1D.csv
+    role: raw_data
+  - file: associated/DataS10_Fourier_Interridge_distances_Figure1D.csv
+    role: raw_data
+  - file: associated/DataS6_DE_Scale3_3BabPeaksorMore.csv
+    role: supp_table
+not_used: []

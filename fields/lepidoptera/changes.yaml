@@ -10,8 +10,7 @@
     label: Papilionoidea
     parent: null
     definition: True butterflies superfamily within Lepidoptera.
-    scope: Root butterfly clade encompassing Nymphalidae, Pieridae, Papilionidae,
-      Lycaenidae, and Riodinidae.
+    scope: Root butterfly clade encompassing Nymphalidae, Pieridae, Papilionidae, Lycaenidae, and Riodinidae.
     xref:
     - NCBITaxon:37572
   - event: add_term
@@ -20,8 +19,7 @@
     label: Nymphalidae
     parent: taxon:papilionoidea
     definition: Brush-footed butterflies family within Papilionoidea.
-    scope: Used for Heliconius, Vanessa, Bicyclus, Morpho, and other nymphalid taxa,
-      distinct from Pieridae and Papilionidae.
+    scope: Used for Heliconius, Vanessa, Bicyclus, Morpho, and other nymphalid taxa, distinct from Pieridae and Papilionidae.
     xref:
     - NCBITaxon:33415
   - event: add_term
@@ -30,8 +28,8 @@
     label: Pieridae
     parent: taxon:papilionoidea
     definition: Sulphur and white butterflies family within Papilionoidea.
-    scope: Used for Colias and other pierid butterflies utilizing pterin pigments
-      and UV-iridescent ridge gratings, distinct from Nymphalidae and Papilionidae.
+    scope: Used for Colias and other pierid butterflies utilizing pterin pigments and UV-iridescent ridge gratings, distinct
+      from Nymphalidae and Papilionidae.
     xref:
     - NCBITaxon:7114
   - event: add_term
@@ -40,8 +38,7 @@
     label: Papilionidae
     parent: taxon:papilionoidea
     definition: Swallowtail butterflies family within Papilionoidea.
-    scope: Used for Parides and Papilio swallowtails, distinct from Nymphalidae and
-      Pieridae.
+    scope: Used for Parides and Papilio swallowtails, distinct from Nymphalidae and Pieridae.
     xref:
     - NCBITaxon:7145
   - event: add_term
@@ -50,8 +47,7 @@
     label: Heliconiinae
     parent: taxon:nymphalidae
     definition: Longwing subfamily of Nymphalidae.
-    scope: Used for Heliconius mimicry rings, distinct from Nymphalinae, Satyrinae,
-      and Morphinae.
+    scope: Used for Heliconius mimicry rings, distinct from Nymphalinae, Satyrinae, and Morphinae.
     xref:
     - NCBITaxon:40039
   - event: add_term
@@ -69,8 +65,7 @@
     label: Satyrinae
     parent: taxon:nymphalidae
     definition: Satyrine subfamily including eyespot model butterflies.
-    scope: Used for Bicyclus anynana, distinct from Heliconiinae, Nymphalinae, and
-      Morphinae.
+    scope: Used for Bicyclus anynana, distinct from Heliconiinae, Nymphalinae, and Morphinae.
     xref:
     - NCBITaxon:46114
   - event: add_term
@@ -159,8 +154,7 @@
     field: taxon
     label: Heliconius sara
     parent: taxon:heliconius
-    definition: Sara longwing butterfly exhibiting proximal dorsal blue structural
-      iridescence.
+    definition: Sara longwing butterfly exhibiting proximal dorsal blue structural iridescence.
     scope: Distinct from H. erato, H. melpomene, H. cydno, and H. eleuchia.
     xref:
     - NCBITaxon:34744
@@ -169,10 +163,8 @@
     field: taxon
     label: Heliconius erato
     parent: taxon:heliconius
-    definition: Red postman butterfly species with structurally iridescent and non-iridescent
-      geographic subspecies.
-    scope: Species parent for H. erato cyrbia and H. erato demophoon, distinct from
-      H. sara and H. melpomene.
+    definition: Red postman butterfly species with structurally iridescent and non-iridescent geographic subspecies.
+    scope: Species parent for H. erato cyrbia and H. erato demophoon, distinct from H. sara and H. melpomene.
     xref:
     - NCBITaxon:33431
   - event: add_term
@@ -180,10 +172,8 @@
     field: taxon
     label: Heliconius melpomene
     parent: taxon:heliconius
-    definition: Postman butterfly species co-mimicking H. erato across Neotropical
-      races.
-    scope: Species parent for H. melpomene cythera and H. melpomene rosina, distinct
-      from H. erato and H. sara.
+    definition: Postman butterfly species co-mimicking H. erato across Neotropical races.
+    scope: Species parent for H. melpomene cythera and H. melpomene rosina, distinct from H. erato and H. sara.
     xref:
     - NCBITaxon:34740
   - event: add_term
@@ -218,8 +208,7 @@
     field: taxon
     label: Bicyclus anynana
     parent: taxon:bicyclus
-    definition: Squinting bushbrown model butterfly for wing eyespot patterning and
-      artificial color selection.
+    definition: Squinting bushbrown model butterfly for wing eyespot patterning and artificial color selection.
     scope: Sole Bicyclus species in the current corpus.
     xref:
     - NCBITaxon:110368
@@ -228,8 +217,7 @@
     field: taxon
     label: Morpho helenor
     parent: taxon:morpho
-    definition: ' Helenor morpho butterfly with high-aspect-ratio multi-lamellar ridge
-      reflectors.'
+    definition: ' Helenor morpho butterfly with high-aspect-ratio multi-lamellar ridge reflectors.'
     scope: Sole Morpho species explicitly benchmarked.
     xref:
     - NCBITaxon:171591
@@ -238,8 +226,7 @@
     field: taxon
     label: Colias eurytheme
     parent: taxon:colias
-    definition: Orange sulphur butterfly exhibiting male-specific UV iridescence controlled
-      by Doublesex and Bric-a-brac.
+    definition: Orange sulphur butterfly exhibiting male-specific UV iridescence controlled by Doublesex and Bric-a-brac.
     scope: Sole Colias species in the current corpus.
     xref:
     - NCBITaxon:72249
@@ -257,8 +244,7 @@
     field: taxon
     label: Parides iphidamas
     parent: taxon:parides
-    definition: Transandean cattleheart swallowtail with green crossrib-honeycomb
-      scales.
+    definition: Transandean cattleheart swallowtail with green crossrib-honeycomb scales.
     scope: Distinct from sister species Parides eurimedes.
     xref:
     - NCBITaxon:110798
@@ -268,8 +254,7 @@
     label: Heliconius erato cyrbia
     parent: taxon:heliconius_erato
     definition: Western Ecuadorian iridescent blue race of Heliconius erato.
-    scope: Iridescent subspecies, distinct from non-iridescent Panamanian H. erato
-      demophoon.
+    scope: Iridescent subspecies, distinct from non-iridescent Panamanian H. erato demophoon.
     xref:
     - NCBITaxon:171894
   - event: add_term
@@ -287,8 +272,7 @@
     label: Heliconius melpomene cythera
     parent: taxon:heliconius_melpomene
     definition: Western Ecuadorian iridescent co-mimic race of Heliconius melpomene.
-    scope: Iridescent subspecies co-mimicking H. e. cyrbia, distinct from non-iridescent
-      H. m. rosina.
+    scope: Iridescent subspecies co-mimicking H. e. cyrbia, distinct from non-iridescent H. m. rosina.
     xref:
     - NCBITaxon:171908
   - event: add_term
@@ -341,16 +325,14 @@
     label: dorsal wing
     parent: anatomical_region:wing
     definition: Upper (dorsal) wing surface across fore- or hindwing.
-    scope: Used when dorsal side is specified across both wing pairs, distinct from
-      ventral wing.
+    scope: Used when dorsal side is specified across both wing pairs, distinct from ventral wing.
   - event: add_term
     id: anatomical_region:ventral_wing
     field: anatomical_region
     label: ventral wing
     parent: anatomical_region:wing
     definition: Lower (ventral) wing surface across fore- or hindwing.
-    scope: Used when ventral side is specified across both wing pairs, distinct from
-      dorsal wing.
+    scope: Used when ventral side is specified across both wing pairs, distinct from dorsal wing.
   - event: add_term
     id: anatomical_region:dorsal_forewing
     field: anatomical_region
@@ -384,8 +366,7 @@
     field: pattern_element
     label: wing pattern compartment
     parent: null
-    definition: Homologous topological zone or Nymphalid Groundplan (NGP) symmetry
-      element.
+    definition: Homologous topological zone or Nymphalid Groundplan (NGP) symmetry element.
     scope: Root wing pattern homology node.
   - event: add_term
     id: pattern_element:proximal_basal_field
@@ -393,8 +374,7 @@
     label: proximal wing field
     parent: pattern_element:ngp_compartment
     definition: Basal and proximal wing zone near the thorax.
-    scope: Distinct from medial patch, central symmetry band, discal spot, eyespot,
-      and marginal band.
+    scope: Distinct from medial patch, central symmetry band, discal spot, eyespot, and marginal band.
   - event: add_term
     id: pattern_element:central_symmetry_band
     field: pattern_element
@@ -422,16 +402,14 @@
     label: distal wing field
     parent: pattern_element:ngp_compartment
     definition: Distal non-marginal wing blade region.
-    scope: Distinct from proximal wing field, medial patch, eyespot, and marginal
-      band.
+    scope: Distinct from proximal wing field, medial patch, eyespot, and marginal band.
   - event: add_term
     id: pattern_element:border_ocelli_eyespot
     field: pattern_element
     label: eyespot field
     parent: pattern_element:ngp_compartment
     definition: Homologous NGP border ocellus (eyespot) organ.
-    scope: Parent for eyespot focus and concentric eyespot rings, distinct from CSS
-      band and marginal band.
+    scope: Parent for eyespot focus and concentric eyespot rings, distinct from CSS band and marginal band.
   - event: add_term
     id: pattern_element:eyespot_focus
     field: pattern_element
@@ -480,59 +458,50 @@
     label: canonical cover scale
     parent: scale_type:cover_scale
     definition: Typical scalloped ~2 um pitch pigmentary cover scale.
-    scope: Standard cover scale morphology, distinct from specialized UVI and spatulate
-      cover scales.
+    scope: Standard cover scale morphology, distinct from specialized UVI and spatulate cover scales.
   - event: add_term
     id: scale_type:uvi_cover_scale
     field: scale_type
     label: UVI cover scale
     parent: scale_type:cover_scale
     definition: Specialized ~1 um dense-ridge UV-iridescent cover scale.
-    scope: High-ridge-density iridescent cover scale, distinct from canonical and
-      spatulate cover scales.
+    scope: High-ridge-density iridescent cover scale, distinct from canonical and spatulate cover scales.
   - event: add_term
     id: scale_type:spatulate_cover_scale
     field: scale_type
     label: spatulate cover scale
     parent: scale_type:cover_scale
     definition: Male-specific rounded margin cover scale with wide ~4.4 um ridge spacing.
-    scope: Wide-ridge marginal cover scale, distinct from canonical and UVI cover
-      scales.
+    scope: Wide-ridge marginal cover scale, distinct from canonical and UVI cover scales.
   - event: add_term
     id: functional_architecture:optical_mechanism
     field: functional_architecture
     label: scale coloration mechanism
     parent: null
-    definition: Physical photonic nanostructure or chemical pigment class generating
-      scale appearance.
+    definition: Physical photonic nanostructure or chemical pigment class generating scale appearance.
     scope: Root optical/coloration mechanism.
   - event: add_term
     id: functional_architecture:structural_reflector
     field: functional_architecture
     label: structural reflector
     parent: functional_architecture:optical_mechanism
-    definition: Sub-wavelength chitin-air photonic nanostructure producing constructive
-      interference.
-    scope: Parent for 1D/2D/3D photonic scale architectures, distinct from pigmentary
-      absorber.
+    definition: Sub-wavelength chitin-air photonic nanostructure producing constructive interference.
+    scope: Parent for 1D/2D/3D photonic scale architectures, distinct from pigmentary absorber.
   - event: add_term
     id: functional_architecture:pigmentary_absorber
     field: functional_architecture
     label: non-iridescent pigmentary
     parent: functional_architecture:optical_mechanism
-    definition: Broadband or selective light absorption by embedded chemical pigments
-      without coherent iridescence.
-    scope: Parent for melanin and pterin pigmentary scales, distinct from structural
-      reflector.
+    definition: Broadband or selective light absorption by embedded chemical pigments without coherent iridescence.
+    scope: Parent for melanin and pterin pigmentary scales, distinct from structural reflector.
   - event: add_term
     id: functional_architecture:ridge_lamellar_multilayer
     field: functional_architecture
     label: ridge-lamellar reflector
     parent: functional_architecture:structural_reflector
-    definition: Dense longitudinal ridges and overlapping ridge-lamellae acting as
-      multilayer / Bragg interference reflectors.
-    scope: Used for Heliconius, Morpho, and Colias UVI ridge reflectors, distinct
-      from lower-lamina thin films and inter-ridge honeycombs.
+    definition: Dense longitudinal ridges and overlapping ridge-lamellae acting as multilayer / Bragg interference reflectors.
+    scope: Used for Heliconius, Morpho, and Colias UVI ridge reflectors, distinct from lower-lamina thin films and inter-ridge
+      honeycombs.
     xref:
     - CHEBI:17029
   - event: add_term
@@ -540,10 +509,8 @@
     field: functional_architecture
     label: lower-lamina thin film
     parent: functional_architecture:structural_reflector
-    definition: Thin-film interference from the basal chitinous lower lamina modulated
-      by ridge/crossrib windows.
-    scope: Used for Bicyclus ground scales, distinct from ridge-lamellar reflectors
-      and 3D honeycombs.
+    definition: Thin-film interference from the basal chitinous lower lamina modulated by ridge/crossrib windows.
+    scope: Used for Bicyclus ground scales, distinct from ridge-lamellar reflectors and 3D honeycombs.
     xref:
     - CHEBI:17029
   - event: add_term
@@ -551,10 +518,9 @@
     field: functional_architecture
     label: inter-ridge honeycomb lattice
     parent: functional_architecture:structural_reflector
-    definition: Tall crossrib-perforated alveolar/honeycomb lumen lattice between
-      ridges.
-    scope: Used for Parides green scales templated by Arp2/3 actin, distinct from
-      ridge-lamellar multilayers and flat lower-lamina thin films.
+    definition: Tall crossrib-perforated alveolar/honeycomb lumen lattice between ridges.
+    scope: Used for Parides green scales templated by Arp2/3 actin, distinct from ridge-lamellar multilayers and flat lower-lamina
+      thin films.
     xref:
     - CHEBI:17029
   - event: add_term
@@ -571,8 +537,7 @@
     field: functional_architecture
     label: pterin pigmentary
     parent: functional_architecture:pigmentary_absorber
-    definition: Pterin-granule (xanthopterin/leucopterin) yellow/orange scales in
-      Pieridae.
+    definition: Pterin-granule (xanthopterin/leucopterin) yellow/orange scales in Pieridae.
     scope: Pterin absorber/scatterer, distinct from melanic pigmentary scales.
     xref:
     - CHEBI:26375
@@ -603,8 +568,7 @@
     field: target_gene
     label: Doublesex (Dsx)
     parent: null
-    definition: Sex-determination transcription factor controlling sexually dimorphic
-      wing patterns and UVI scales.
+    definition: Sex-determination transcription factor controlling sexually dimorphic wing patterns and UVI scales.
     scope: Distinct from downstream Bric-a-brac and Wnt pathway genes.
     xref:
     - FBgn:0000504
@@ -613,8 +577,7 @@
     field: target_gene
     label: Bric-a-brac (Bab)
     parent: null
-    definition: BTB/POZ transcription factor repressing UV-iridescent ridge ultrastructure
-      downstream of Dsx.
+    definition: BTB/POZ transcription factor repressing UV-iridescent ridge ultrastructure downstream of Dsx.
     scope: Distinct from Doublesex and Optix.
     xref:
     - FBgn:0004870
@@ -623,8 +586,7 @@
     field: target_gene
     label: frizzled4 (fz4)
     parent: null
-    definition: Wnt planar cell polarity / canonical receptor required for eyespot
-      focus number and scale orientation.
+    definition: Wnt planar cell polarity / canonical receptor required for eyespot focus number and scale orientation.
     scope: Distinct from Wingless/Wnt1, WntA, and Armadillo.
     xref:
     - FBgn:0027348
@@ -658,8 +620,7 @@
     field: target_gene
     label: Optix
     parent: null
-    definition: Sine oculis homeobox transcription factor regulating wing color and
-      lamina/band identity.
+    definition: Sine oculis homeobox transcription factor regulating wing color and lamina/band identity.
     scope: Distinct from Dsx and Bab.
     xref:
     - FBgn:0025360
@@ -668,10 +629,8 @@
     field: target_gene
     label: Arp2/3 complex
     parent: null
-    definition: Branched actin nucleating complex templating inter-ridge honeycomb
-      height.
-    scope: Branched actin nucleator inhibited by CK-666, distinct from linear F-actin
-      bundles.
+    definition: Branched actin nucleating complex templating inter-ridge honeycomb height.
+    scope: Branched actin nucleator inhibited by CK-666, distinct from linear F-actin bundles.
     xref:
     - FBgn:0011742
   - event: add_term
@@ -679,10 +638,8 @@
     field: target_gene
     label: F-actin bundles
     parent: null
-    definition: Longitudinal linear filamentous actin bundles pre-patterning ridge
-      spacing and preventing ridge buckling waviness.
-    scope: Linear actin cables disrupted by Cytochalasin D, distinct from branched
-      Arp2/3 complex.
+    definition: Longitudinal linear filamentous actin bundles pre-patterning ridge spacing and preventing ridge buckling waviness.
+    scope: Linear actin cables disrupted by Cytochalasin D, distinct from branched Arp2/3 complex.
     xref:
     - FBgn:0000042
   - event: add_term
@@ -690,25 +647,21 @@
     field: perturbation_modality
     label: CRISPR G0 mosaic knockout
     parent: null
-    definition: Somatic Cas9/sgRNA embryonic microinjection generating mosaic crispant
-      wings.
-    scope: Distinct from artificial selection, small-molecule inhibition, and vehicle
-      control.
+    definition: Somatic Cas9/sgRNA embryonic microinjection generating mosaic crispant wings.
+    scope: Distinct from artificial selection, small-molecule inhibition, and vehicle control.
   - event: add_term
     id: perturbation_modality:artificial_selection
     field: perturbation_modality
     label: artificial directional selection
     parent: null
-    definition: Multi-generation laboratory selection on quantitative spectral hue
-      or pattern traits.
+    definition: Multi-generation laboratory selection on quantitative spectral hue or pattern traits.
     scope: Distinct from single-gene CRISPR knockout and chemical inhibition.
   - event: add_term
     id: perturbation_modality:small_molecule_inhibitor
     field: perturbation_modality
     label: pharmacological pupal injection
     parent: null
-    definition: Stage-timed microinjection of a small-molecule cytoskeletal inhibitor
-      into developing pupae.
+    definition: Stage-timed microinjection of a small-molecule cytoskeletal inhibitor into developing pupae.
     scope: Distinct from solvent vehicle control and genetic knockouts.
   - event: add_term
     id: perturbation_modality:vehicle_control
@@ -722,10 +675,8 @@
     field: chemical_agent
     label: cytochalasin D
     parent: null
-    definition: Fungal toxin capping barbed F-actin ends and disrupting linear actin
-      polymerization.
-    scope: Inhibits linear F-actin, distinct from Arp2/3-specific CK-666 and vehicle
-      solvents.
+    definition: Fungal toxin capping barbed F-actin ends and disrupting linear actin polymerization.
+    scope: Inhibits linear F-actin, distinct from Arp2/3-specific CK-666 and vehicle solvents.
     xref:
     - CHEBI:53002
   - event: add_term
@@ -733,10 +684,8 @@
     field: chemical_agent
     label: CK-666
     parent: null
-    definition: Small-molecule allosteric inhibitor stabilizing the inactive conformation
-      of the Arp2/3 complex.
-    scope: Inhibits branched Arp2/3 actin, distinct from Cytochalasin D and vehicle
-      solvents.
+    definition: Small-molecule allosteric inhibitor stabilizing the inactive conformation of the Arp2/3 complex.
+    scope: Inhibits branched Arp2/3 actin, distinct from Cytochalasin D and vehicle solvents.
     xref:
     - CHEBI:139282
   - event: add_term
@@ -744,10 +693,8 @@
     field: chemical_agent
     label: DMSO / ethanol vehicle
     parent: null
-    definition: Carrier solvent (DMSO or ethanol in Grace's/PBS buffer) injected into
-      control pupae.
-    scope: Control solvent, distinct from active inhibitors CK-666 and Cytochalasin
-      D.
+    definition: Carrier solvent (DMSO or ethanol in Grace's/PBS buffer) injected into control pupae.
+    scope: Control solvent, distinct from active inhibitors CK-666 and Cytochalasin D.
     xref:
     - CHEBI:28262
     - CHEBI:16236
@@ -757,23 +704,20 @@
     label: electron microscopy
     parent: null
     definition: High-resolution electron-beam ultrastructural imaging.
-    scope: Parent for planar SEM and FIB-SEM, distinct from X-ray, probe, optical,
-      and spectroscopic methods.
+    scope: Parent for planar SEM and FIB-SEM, distinct from X-ray, probe, optical, and spectroscopic methods.
   - event: add_term
     id: imaging_modality:sem
     field: imaging_modality
     label: SEM
     parent: imaging_modality:electron_microscopy
-    definition: Scanning electron microscopy of scale surfaces or freeze/razor-fractured
-      cross-sections.
+    definition: Scanning electron microscopy of scale surfaces or freeze/razor-fractured cross-sections.
     scope: Distinct from focused-ion-beam milled FIB-SEM.
   - event: add_term
     id: imaging_modality:fib_sem
     field: imaging_modality
     label: FIB-SEM
     parent: imaging_modality:electron_microscopy
-    definition: Focused ion beam milling coupled with scanning electron microscopy
-      for precision cross-sections.
+    definition: Focused ion beam milling coupled with scanning electron microscopy for precision cross-sections.
     scope: Distinct from standard planar/fracture SEM.
   - event: add_term
     id: imaging_modality:x_ray_methods
@@ -781,15 +725,13 @@
     label: X-ray scattering & tomography
     parent: null
     definition: Synchrotron X-ray reciprocal-space scattering or real-space nanotomography.
-    scope: Parent for SAXS and X-ray nano-tomography, distinct from electron and optical
-      microscopy.
+    scope: Parent for SAXS and X-ray nano-tomography, distinct from electron and optical microscopy.
   - event: add_term
     id: imaging_modality:saxs
     field: imaging_modality
     label: SAXS
     parent: imaging_modality:x_ray_methods
-    definition: Transmission small-angle X-ray scattering measuring ensemble-averaged
-      Bragg ridge pitch.
+    definition: Transmission small-angle X-ray scattering measuring ensemble-averaged Bragg ridge pitch.
     scope: Reciprocal-space diffraction, distinct from real-space X-ray nano-tomography.
   - event: add_term
     id: imaging_modality:x_ray_nano_tomography
@@ -804,15 +746,13 @@
     label: AFM/SPM
     parent: null
     definition: Atomic force / scanning probe surfaceprofilometry.
-    scope: Contact/tapping probe topography, distinct from electron, X-ray, and optical
-      modalities.
+    scope: Contact/tapping probe topography, distinct from electron, X-ray, and optical modalities.
   - event: add_term
     id: imaging_modality:optical_microscopy
     field: imaging_modality
     label: optical microscopy
     parent: null
-    definition: Visible/laser light, fluorescence, super-resolution, or quantitative
-      phase microscopy.
+    definition: Visible/laser light, fluorescence, super-resolution, or quantitative phase microscopy.
     scope: Parent for brightfield, confocal, 3D-SIM, reflection phase, and HCR imaging.
   - event: add_term
     id: imaging_modality:light_microscopy
@@ -827,51 +767,43 @@
     label: confocal
     parent: imaging_modality:optical_microscopy
     definition: Laser-scanning confocal fluorescence microscopy.
-    scope: Diffraction-limited optical sectioning, distinct from 3D-SIM, phase microscopy,
-      and brightfield.
+    scope: Diffraction-limited optical sectioning, distinct from 3D-SIM, phase microscopy, and brightfield.
   - event: add_term
     id: imaging_modality:sim_3d
     field: imaging_modality
     label: 3D-SIM
     parent: imaging_modality:optical_microscopy
     definition: 3D structured illumination super-resolution fluorescence microscopy.
-    scope: Super-resolution fluorescence, distinct from standard confocal and reflection
-      phase microscopy.
+    scope: Super-resolution fluorescence, distinct from standard confocal and reflection phase microscopy.
   - event: add_term
     id: imaging_modality:reflection_phase_microscopy
     field: imaging_modality
     label: reflection phase microscopy
     parent: imaging_modality:optical_microscopy
-    definition: Label-free interferometric / speckle-correlation quantitative phase
-      height imaging of live pupal scales.
-    scope: Label-free nanometric height profilometry, distinct from fluorescence confocal
-      and 3D-SIM.
+    definition: Label-free interferometric / speckle-correlation quantitative phase height imaging of live pupal scales.
+    scope: Label-free nanometric height profilometry, distinct from fluorescence confocal and 3D-SIM.
   - event: add_term
     id: imaging_modality:hcr_in_situ
     field: imaging_modality
     label: HCR/in situ
     parent: imaging_modality:optical_microscopy
-    definition: Hybridization chain reaction (HCR3.0) mRNA in situ and immunohistochemistry
-      imaging.
-    scope: Spatial transcript/protein mapping, distinct from structural phase and
-      brightfield microscopy.
+    definition: Hybridization chain reaction (HCR3.0) mRNA in situ and immunohistochemistry imaging.
+    scope: Spatial transcript/protein mapping, distinct from structural phase and brightfield microscopy.
   - event: add_term
     id: imaging_modality:microspectrophotometry
     field: imaging_modality
     label: microspectrophotometry
     parent: null
-    definition: UV-vis reflectance spectroscopy (integrating sphere, bifurcated probe,
-      or microspectrophotometer).
+    definition: UV-vis reflectance spectroscopy (integrating sphere, bifurcated probe, or microspectrophotometer).
     scope: Spectral reflectance measurement, distinct from spatial imaging modalities.
   - event: add_term
     id: view_orientation:planar_apical
     field: view_orientation
     label: planar normal view
     parent: null
-    definition: Orthographic or normal-incidence measurement perpendicular to the
-      scale lamina.
-    scope: Unforeshortened lateral pitch geometry; parent for top-down apical and
-      whole-mount, distinct from tilted oblique and vertical/3D.
+    definition: Orthographic or normal-incidence measurement perpendicular to the scale lamina.
+    scope: Unforeshortened lateral pitch geometry; parent for top-down apical and whole-mount, distinct from tilted oblique
+      and vertical/3D.
   - event: add_term
     id: view_orientation:top_down_apical
     field: view_orientation
@@ -884,52 +816,43 @@
     field: view_orientation
     label: whole-mount
     parent: view_orientation:planar_apical
-    definition: Intact wing or whole-scale normal-incidence geometry (e.g. transmission
-      SAXS or whole-wing imaging).
+    definition: Intact wing or whole-scale normal-incidence geometry (e.g. transmission SAXS or whole-wing imaging).
     scope: Distinct from isolated single-scale top-down apical micrographs.
   - event: add_term
     id: view_orientation:tilted_oblique
     field: view_orientation
     label: tilted oblique
     parent: null
-    definition: Oblique stage-tilted viewing geometry introducing cos(theta) lateral
-      pitch foreshortening.
-    scope: Must never be pooled directly with planar_apical lateral pitch without
-      cos(theta) correction.
+    definition: Oblique stage-tilted viewing geometry introducing cos(theta) lateral pitch foreshortening.
+    scope: Must never be pooled directly with planar_apical lateral pitch without cos(theta) correction.
   - event: add_term
     id: view_orientation:vertical_or_3d
     field: view_orientation
     label: vertical cross-section or 3D
     parent: null
-    definition: Geometry resolving vertical z-height (ridge height, honeycomb height,
-      lamina thickness).
-    scope: Parent for 2D physical cross-sections and 3D volumetric reconstructions,
-      distinct from planar_apical and tilted_oblique.
+    definition: Geometry resolving vertical z-height (ridge height, honeycomb height, lamina thickness).
+    scope: Parent for 2D physical cross-sections and 3D volumetric reconstructions, distinct from planar_apical and tilted_oblique.
   - event: add_term
     id: view_orientation:cross_section
     field: view_orientation
     label: cross-section
     parent: view_orientation:vertical_or_3d
-    definition: Transverse physical section perpendicular to longitudinal ridges (FIB-SEM
-      or fracture SEM).
+    definition: Transverse physical section perpendicular to longitudinal ridges (FIB-SEM or fracture SEM).
     scope: 2D transverse slice, distinct from non-destructive 3D volumetric stacks.
   - event: add_term
     id: view_orientation:volumetric_3d
     field: view_orientation
     label: 3D volumetric
     parent: view_orientation:vertical_or_3d
-    definition: 3D optical/X-ray/phase reconstruction resolving z-height across an
-      area.
+    definition: 3D optical/X-ray/phase reconstruction resolving z-height across an area.
     scope: Non-destructive 3D stack, distinct from milled 2D cross-section.
   - event: add_term
     id: hydration_and_prep:hydrated_state
     field: hydration_and_prep
     label: hydrated pupal/fixed state
     parent: null
-    definition: Aqueous physiological or fixed hydrated state prior to adult desiccation
-      shrinkage.
-    scope: Parent for live in vivo and fixed hydrated tissues, distinct from dehydrated
-      adult cuticle.
+    definition: Aqueous physiological or fixed hydrated state prior to adult desiccation shrinkage.
+    scope: Parent for live in vivo and fixed hydrated tissues, distinct from dehydrated adult cuticle.
   - event: add_term
     id: hydration_and_prep:live_in_vivo
     field: hydration_and_prep
@@ -942,49 +865,42 @@
     field: hydration_and_prep
     label: fixed and stained
     parent: hydration_and_prep:hydrated_state
-    definition: Aldehyde-fixed, buffer-mounted fluorescently stained developing wing
-      tissue.
+    definition: Aldehyde-fixed, buffer-mounted fluorescently stained developing wing tissue.
     scope: Fixed aqueous state, distinct from live in vivo.
   - event: add_term
     id: hydration_and_prep:dehydrated_state
     field: hydration_and_prep
     label: dry sclerotized state
     parent: null
-    definition: Dehydrated adult chitinous cuticle (after ~20-25% post-eclosion drying
-      contraction).
-    scope: Parent for dry native, vacuum sputter coated, and FIB milled adult scales,
-      distinct from hydrated state.
+    definition: Dehydrated adult chitinous cuticle (after ~20-25% post-eclosion drying contraction).
+    scope: Parent for dry native, vacuum sputter coated, and FIB milled adult scales, distinct from hydrated state.
   - event: add_term
     id: hydration_and_prep:dry_native
     field: hydration_and_prep
     label: dry mounted
     parent: hydration_and_prep:dehydrated_state
     definition: Uncoated dry adult wing or isolated scale in air (SAXS, AFM, spectroscopy).
-    scope: Uncoated dry cuticle, distinct from metal sputter-coated or FIB-milled
-      samples.
+    scope: Uncoated dry cuticle, distinct from metal sputter-coated or FIB-milled samples.
   - event: add_term
     id: hydration_and_prep:vacuum_sputter_coated
     field: hydration_and_prep
     label: sputter coated
     parent: hydration_and_prep:dehydrated_state
     definition: Au/Pd or Pt conductive sputter-coated scale under high-vacuum SEM.
-    scope: Conductive metal-coated dry sample, distinct from uncoated dry native and
-      FIB milled.
+    scope: Conductive metal-coated dry sample, distinct from uncoated dry native and FIB milled.
   - event: add_term
     id: hydration_and_prep:fib_milled
     field: hydration_and_prep
     label: FIB milled
     parent: hydration_and_prep:dehydrated_state
     definition: Gallium/plasma focused-ion-beam trenched cross-section in vacuum.
-    scope: Ion-milled cross-section, distinct from intact sputter-coated surface SEM
-      and dry native.
+    scope: Ion-milled cross-section, distinct from intact sputter-coated surface SEM and dry native.
   - event: add_term
     id: measure:ridge_spacing
     field: measure
     label: ridge spacing
     parent: null
-    definition: Center-to-center lateral period (pitch d) between adjacent longitudinal
-      scale ridges.
+    definition: Center-to-center lateral period (pitch d) between adjacent longitudinal scale ridges.
     scope: Distinct from crossrib spacing, actin bundle spacing, and ridge width.
     dimension: length
   - event: add_term
@@ -1000,8 +916,7 @@
     field: measure
     label: ridge height
     parent: null
-    definition: Vertical elevation of longitudinal ridges from base/lower lamina to
-      ridge crest.
+    definition: Vertical elevation of longitudinal ridges from base/lower lamina to ridge crest.
     scope: Distinct from honeycomb lattice height and lower lamina thickness.
     dimension: length
   - event: add_term
@@ -1018,8 +933,7 @@
     label: ridge curvature
     parent: null
     definition: Local in-plane bending curvature kappa (um^-1) of longitudinal ridges.
-    scope: Quantifies Euler buckling waviness after actin disruption, distinct from
-      ridge density.
+    scope: Quantifies Euler buckling waviness after actin disruption, distinct from ridge density.
     dimension: 1/length
   - event: add_term
     id: measure:ridge_number
@@ -1034,8 +948,7 @@
     field: measure
     label: crossrib spacing
     parent: null
-    definition: Longitudinal center-to-center distance between adjacent transverse
-      crossribs.
+    definition: Longitudinal center-to-center distance between adjacent transverse crossribs.
     scope: Orthogonal to ridge spacing.
     dimension: length
   - event: add_term
@@ -1043,8 +956,7 @@
     field: measure
     label: honeycomb lattice height
     parent: null
-    definition: Vertical thickness of the crossrib alveolar/honeycomb wall lattice
-      between ridges.
+    definition: Vertical thickness of the crossrib alveolar/honeycomb wall lattice between ridges.
     scope: Distinct from total ridge height and lower lamina thickness.
     dimension: length
   - event: add_term
@@ -1076,10 +988,8 @@
     field: measure
     label: actin bundle spacing
     parent: null
-    definition: Center-to-center spacing L between adjacent longitudinal F-actin bundles
-      in pupal scales.
-    scope: Intracellular cytoskeletal pre-pattern pitch, distinct from cuticular ridge
-      spacing.
+    definition: Center-to-center spacing L between adjacent longitudinal F-actin bundles in pupal scales.
+    scope: Intracellular cytoskeletal pre-pattern pitch, distinct from cuticular ridge spacing.
     dimension: length
   - event: add_term
     id: measure:actin_bundle_width
@@ -1094,8 +1004,7 @@
     field: measure
     label: critical buckling strain
     parent: null
-    definition: Dimensionless threshold compressive growth strain g_c initiating plasma
-      membrane buckling.
+    definition: Dimensionless threshold compressive growth strain g_c initiating plasma membrane buckling.
     scope: Dimensionless mechanical threshold.
     dimension: dimensionless
   - event: add_term
@@ -1103,8 +1012,7 @@
     field: measure
     label: maximum reflectance
     parent: null
-    definition: Peak percentage or amplitude of reflected light across the UV-vis
-      spectrum.
+    definition: Peak percentage or amplitude of reflected light across the UV-vis spectrum.
     scope: Spectral intensity %, distinct from peak reflectance wavelength.
     dimension: fraction_percent
   - event: add_term
@@ -1112,8 +1020,7 @@
     field: measure
     label: peak reflectance wavelength
     parent: null
-    definition: Spectral wavelength lambda_max (nm) of maximum constructive interference
-      reflectance.
+    definition: Spectral wavelength lambda_max (nm) of maximum constructive interference reflectance.
     scope: Spectral hue position, distinct from maximum reflectance amplitude.
     dimension: length
   - event: add_term
@@ -1121,8 +1028,7 @@
     field: measure
     label: developmental milestone timing
     parent: null
-    definition: Post-pupation time (h/d APF or % pupal development) at which a morphogenetic
-      transition occurs.
+    definition: Post-pupation time (h/d APF or % pupal development) at which a morphogenetic transition occurs.
     scope: Temporal developmental landmark.
     dimension: time
   - event: add_term
@@ -1130,8 +1036,7 @@
     field: measure
     label: relative pupal development
     parent: null
-    definition: Normalized percentage of total pupal development (% APF) elapsed at
-      sampling.
+    definition: Normalized percentage of total pupal development (% APF) elapsed at sampling.
     scope: Temperature-normalized % pupal timeline, distinct from raw hours APF.
     dimension: fraction_percent
   - event: add_term
@@ -1139,8 +1044,7 @@
     field: measure
     label: eyespot duplication count
     parent: null
-    definition: Number of mosaic crispant individuals differentiating supernumerary
-      eyespot foci.
+    definition: Number of mosaic crispant individuals differentiating supernumerary eyespot foci.
     scope: Phenotypic penetrance count, distinct from scale orientation defect count.
     dimension: count
   - event: add_term
@@ -1148,8 +1052,7 @@
     field: measure
     label: scale orientation defect count
     parent: null
-    definition: Number of crispant individuals showing planar cell polarity scale
-      rotation defects.
+    definition: Number of crispant individuals showing planar cell polarity scale rotation defects.
     scope: PCP penetrance count, distinct from eyespot duplication count.
     dimension: count
   - event: add_term
@@ -1157,8 +1060,7 @@
     field: measure
     label: crispant wing phenotype count
     parent: null
-    definition: Number of G0 CRISPR mosaic individuals exhibiting variegated wing
-      pattern transformation.
+    definition: Number of G0 CRISPR mosaic individuals exhibiting variegated wing pattern transformation.
     scope: Mosaic penetrance count.
     dimension: count
   - event: standing_key
@@ -1242,8 +1144,8 @@
   paper: field_set_3_lepidoptera_init
   agent:
     role: schema_architect
-    note: Extend butterfly_morphogenesis -> lepidoptera (butterflies + moths + extensible
-      functional directions + relaxed standing keys)
+    note: Extend butterfly_morphogenesis -> lepidoptera (butterflies + moths + extensible functional directions + relaxed
+      standing keys)
   events:
   - event: add_term
     id: taxon:bombycoidea
@@ -1419,8 +1321,8 @@
     id: measure:window_area
     field: measure
     label: window area
-    definition: Planar area of an individual upper-lamina window opening bounded by
-      adjacent longitudinal ridges and transverse crossribs.
+    definition: Planar area of an individual upper-lamina window opening bounded by adjacent longitudinal ridges and transverse
+      crossribs.
     synonyms:
     - mean window area
     - scale window area
@@ -1483,3 +1385,659 @@
       must_match:
       - contrast
       may_vary: *id001
+- version: 3
+  paper: field_set_4_genetics_init
+  agent:
+    model: livinglit-lepidoptera
+    instructions: field_set_4_genetics
+    run: null
+  events:
+  - event: add_term
+    id: genetic_element_type:coding_exon
+    field: genetic_element_type
+    label: coding exon
+    definition: Protein-coding exonic sequence targeted for frameshift/null knockout or overexpression.
+    synonyms:
+    - coding sequence
+    - CDS
+    - exon knockout
+  - event: add_term
+    id: genetic_element_type:cis_regulatory_element
+    field: genetic_element_type
+    label: cis-regulatory element (CRE)
+    definition: Non-coding DNA regulatory sequence controlling spatiotemporal transcription of a nearby gene.
+    synonyms:
+    - CRE
+    - regulatory element
+    - cis-regulatory module
+  - event: add_term
+    id: genetic_element_type:enhancer
+    field: genetic_element_type
+    parent: genetic_element_type:cis_regulatory_element
+    label: enhancer
+    definition: Cis-regulatory DNA element activating transcription in specific tissues or developmental stages.
+    synonyms:
+    - wing enhancer
+    - scale enhancer
+  - event: add_term
+    id: genetic_element_type:promoter
+    field: genetic_element_type
+    parent: genetic_element_type:cis_regulatory_element
+    label: promoter
+    definition: Core transcription initiation region upstream of a gene transcription start site.
+  - event: add_term
+    id: genetic_element_type:silencer
+    field: genetic_element_type
+    parent: genetic_element_type:cis_regulatory_element
+    label: silencer
+    definition: Cis-regulatory DNA element recruiting transcriptional repressors to suppress target gene expression.
+  - event: add_term
+    id: genetic_element_type:noncoding_rna
+    field: genetic_element_type
+    label: non-coding RNA
+    definition: Functional RNA locus not translated into a canonical polypeptide.
+    synonyms:
+    - ncRNA
+  - event: add_term
+    id: genetic_element_type:lncrna
+    field: genetic_element_type
+    parent: genetic_element_type:noncoding_rna
+    label: long non-coding RNA (lncRNA)
+    definition: Long non-coding RNA transcript (>200 nt) regulating chromatin or wing pattern genes.
+    synonyms:
+    - lncRNA
+  - event: add_term
+    id: genetic_element_type:mirna
+    field: genetic_element_type
+    parent: genetic_element_type:noncoding_rna
+    label: microRNA (miRNA)
+    definition: Short (~22 nt) non-coding RNA mediating post-transcriptional mRNA repression.
+    synonyms:
+    - miRNA
+    - microRNA
+  - event: add_term
+    id: genetic_element_type:chromosomal_inversion
+    field: genetic_element_type
+    label: chromosomal inversion / supergene
+    definition: Recombination-suppressed chromosomal rearrangement locking co-adapted mimetic or dimorphic wing alleles.
+    synonyms:
+    - supergene
+    - inversion
+  - event: add_term
+    id: genetic_element_type:transgene_reporter
+    field: genetic_element_type
+    label: transgene reporter
+    definition: Exogenous promoter/enhancer-driven fluorescent or enzymatic reporter construct integrated into the genome.
+  - event: add_term
+    id: allele_or_zygosity:g0_somatic_mosaic
+    field: allele_or_zygosity
+    label: G0 somatic mosaic
+    definition: Chimeric G0 crispant carrying clonal mutant and wild-type somatic patches within the same wing.
+    synonyms:
+    - G0 mosaic
+    - mosaic KO
+    - mKO
+    - crispant
+  - event: add_term
+    id: allele_or_zygosity:heterozygous
+    field: allele_or_zygosity
+    label: heterozygous
+    definition: Diploid individual carrying one mutant and one wild-type allele at the target locus.
+  - event: add_term
+    id: allele_or_zygosity:homozygous_null
+    field: allele_or_zygosity
+    label: homozygous null
+    definition: Germline-transmitted individual carrying two loss-of-function mutant alleles across all cells.
+    synonyms:
+    - homozygous KO
+    - germline null
+  - event: add_term
+    id: allele_or_zygosity:gain_of_function
+    field: allele_or_zygosity
+    label: gain-of-function / overexpression
+    definition: Dominant or ectopic activation allele driving elevated or mislocalized expression.
+  - event: add_term
+    id: allele_or_zygosity:rnai_knockdown
+    field: allele_or_zygosity
+    label: RNAi knockdown
+    definition: Post-transcriptional hypomorphic transcript depletion via dsRNA/siRNA electroporation or injection.
+    synonyms:
+    - siRNA knockdown
+    - dsRNA knockdown
+  - event: add_term
+    id: allele_or_zygosity:natural_polymorphism
+    field: allele_or_zygosity
+    label: natural polymorphism
+    definition: Naturally segregating population or morph allele (e.g., Alba female polymorphism, mimetic race).
+    synonyms:
+    - natural morph
+    - Alba morph
+    - wild polymorphism
+  - event: add_term
+    id: target_gene:transcription_factor
+    field: target_gene
+    label: transcription factor
+    definition: Sequence-specific DNA-binding transcriptional regulator governing wing patterning, sex dimorphism, or scale
+      differentiation.
+  - event: add_term
+    id: target_gene:signaling_pathway
+    field: target_gene
+    label: signaling pathway component
+    definition: Extracellular morphogen, receptor, or intracellular transducer mediating wing patterning and planar cell polarity.
+  - event: add_term
+    id: target_gene:pigment_biosynthesis
+    field: target_gene
+    label: pigment biosynthesis & transport
+    definition: Enzyme or transporter governing melanin, pterin, ommochrome, or papiliochrome synthesis and deposition.
+  - event: add_term
+    id: target_gene:cytoskeleton_and_cuticle
+    field: target_gene
+    label: cytoskeleton & cuticle morphogenesis
+    definition: Actin/microtubule regulator, kinase, or chitin/cuticle structural protein shaping scale ridges, crossribs,
+      and lamellae.
+  - event: add_term
+    id: target_gene:noncoding_regulator
+    field: target_gene
+    label: non-coding RNA regulator
+    definition: lncRNA or miRNA locus directly regulating wing scale color and pattern fate.
+  - event: set_parent
+    id: target_gene:doublesex
+    parent: target_gene:transcription_factor
+  - event: add_xref
+    id: target_gene:doublesex
+    xref:
+    - FlyBase:FBgn0000504
+    - OrthoDB:119707at7088
+  - event: add_synonym
+    id: target_gene:doublesex
+    text: Dsx
+  - event: add_synonym
+    id: target_gene:doublesex
+    text: DsxF
+  - event: add_synonym
+    id: target_gene:doublesex
+    text: DsxM
+  - event: set_parent
+    id: target_gene:bric_a_brac
+    parent: target_gene:transcription_factor
+  - event: add_xref
+    id: target_gene:bric_a_brac
+    xref:
+    - FlyBase:FBgn0004870
+    - NCBI_Gene:LOC123705510
+  - event: add_synonym
+    id: target_gene:bric_a_brac
+    text: Bab
+  - event: add_synonym
+    id: target_gene:bric_a_brac
+    text: bab
+  - event: set_parent
+    id: target_gene:optix
+    parent: target_gene:transcription_factor
+  - event: add_xref
+    id: target_gene:optix
+    xref:
+    - FlyBase:FBgn0025360
+  - event: set_parent
+    id: target_gene:frizzled4
+    parent: target_gene:signaling_pathway
+  - event: add_xref
+    id: target_gene:frizzled4
+    xref:
+    - FlyBase:FBgn0027348
+  - event: set_parent
+    id: target_gene:wingless_wnt1
+    parent: target_gene:signaling_pathway
+  - event: add_xref
+    id: target_gene:wingless_wnt1
+    xref:
+    - FlyBase:FBgn0284084
+  - event: set_parent
+    id: target_gene:wnta
+    parent: target_gene:signaling_pathway
+  - event: add_xref
+    id: target_gene:wnta
+    xref:
+    - OrthoDB:WntA_Lepidoptera
+  - event: set_parent
+    id: target_gene:armadillo_beta_catenin
+    parent: target_gene:signaling_pathway
+  - event: add_xref
+    id: target_gene:armadillo_beta_catenin
+    xref:
+    - FlyBase:FBgn0000117
+  - event: set_parent
+    id: target_gene:arp2_3_complex
+    parent: target_gene:cytoskeleton_and_cuticle
+  - event: set_parent
+    id: target_gene:f_actin_cytoskeleton
+    parent: target_gene:cytoskeleton_and_cuticle
+  - event: add_term
+    id: target_gene:antennapedia
+    field: target_gene
+    parent: target_gene:transcription_factor
+    label: Antennapedia (Antp)
+    definition: Hox transcription factor marking specific wing/scale precursor subpopulations and eyespot centers.
+    synonyms:
+    - Antp
+    xref:
+    - FlyBase:FBgn0260642
+  - event: add_term
+    id: target_gene:shaven
+    field: target_gene
+    parent: target_gene:transcription_factor
+    label: shaven (sv / Pax2)
+    definition: Pax2-family transcription factor universally marking developing lepidopteran scale cell precursors.
+    synonyms:
+    - sv
+    - Pax2
+    - sparkling
+    xref:
+    - FlyBase:FBgn0005561
+  - event: add_term
+    id: target_gene:pebbled
+    field: target_gene
+    parent: target_gene:transcription_factor
+    label: pebbled (peb / Hnt)
+    definition: Zinc-finger transcription factor (Hindsight) co-expressed across differentiating scale cell precursors.
+    synonyms:
+    - peb
+    - hindsight
+    - Hnt
+    xref:
+    - FlyBase:FBgn0003053
+  - event: add_term
+    id: target_gene:eip75b
+    field: target_gene
+    parent: target_gene:transcription_factor
+    label: Eip75B
+    definition: Ecdysone-inducible nuclear receptor transcription factor strongly bound by Bab and upregulated in Colias UVI
+      scales.
+    synonyms:
+    - E75
+    - Eip75B
+    xref:
+    - FlyBase:FBgn0000568
+    - NCBI_Gene:LOC123690925
+  - event: add_term
+    id: target_gene:distal_less
+    field: target_gene
+    parent: target_gene:transcription_factor
+    label: Distal-less (Dll)
+    definition: Homeodomain transcription factor patterning wing margins, eyespots, and melanic scale fate.
+    synonyms:
+    - Dll
+    xref:
+    - FlyBase:FBgn0000157
+  - event: add_term
+    id: target_gene:spineless
+    field: target_gene
+    parent: target_gene:transcription_factor
+    label: spineless (ss)
+    definition: bHLH-PAS transcription factor controlling bristle and wing scale morphogenesis.
+    synonyms:
+    - ss
+    xref:
+    - FlyBase:FBgn0003513
+  - event: add_term
+    id: target_gene:engrailed
+    field: target_gene
+    parent: target_gene:transcription_factor
+    label: engrailed (en)
+    definition: Posterior compartment selector transcription factor in insect wing discs.
+    synonyms:
+    - en
+    - invected
+    xref:
+    - FlyBase:FBgn0000577
+  - event: add_term
+    id: target_gene:aristaless
+    field: target_gene
+    parent: target_gene:transcription_factor
+    label: aristaless (al)
+    definition: Paired-like homeodomain transcription factor specifying white/yellow wing pattern switches.
+    synonyms:
+    - al
+    - al1
+    xref:
+    - FlyBase:FBgn0000061
+  - event: add_term
+    id: target_gene:bar_h1
+    field: target_gene
+    parent: target_gene:transcription_factor
+    label: BarH1
+    definition: Homeobox transcription factor regulating scale pigmentation and female Alba/pterin fate.
+    synonyms:
+    - BarH-1
+    - BarH1
+    xref:
+    - FlyBase:FBgn0011758
+  - event: add_term
+    id: target_gene:multiple_wing_hairs
+    field: target_gene
+    parent: target_gene:cytoskeleton_and_cuticle
+    label: multiple wing hairs (mwh)
+    definition: Planar-cell-polarity actin-bundling regulator strongly bound by Bab (52 peaks) and upregulated in UVI scale
+      precursors.
+    synonyms:
+    - Mwh
+    - mwh
+    xref:
+    - FlyBase:FBgn0264272
+    - NCBI_Gene:LOC123695799
+  - event: add_term
+    id: target_gene:drak
+    field: target_gene
+    parent: target_gene:cytoskeleton_and_cuticle
+    label: Drak
+    definition: Death-associated protein kinase regulating actomyosin contractility, strongly upregulated in UVI scales and
+      bound by Bab.
+    synonyms:
+    - Drak
+    xref:
+    - FlyBase:FBgn0030093
+    - NCBI_Gene:LOC123691521
+  - event: add_term
+    id: target_gene:forked
+    field: target_gene
+    parent: target_gene:cytoskeleton_and_cuticle
+    label: forked (f)
+    definition: Espin-family F-actin cross-linker required for longitudinal actin bundle assembly and ridge formation.
+    synonyms:
+    - f
+    - espin
+    xref:
+    - FlyBase:FBgn0000630
+  - event: add_term
+    id: target_gene:singed
+    field: target_gene
+    parent: target_gene:cytoskeleton_and_cuticle
+    label: singed (sn / Fascin)
+    definition: Fascin F-actin bundling protein stabilizing parallel longitudinal scale actin bundles.
+    synonyms:
+    - sn
+    - fascin
+    xref:
+    - FlyBase:FBgn0003447
+  - event: add_term
+    id: target_gene:osiris_24
+    field: target_gene
+    parent: target_gene:cytoskeleton_and_cuticle
+    label: Osiris 24 (Osi24)
+    definition: Insect-specific transmembrane cuticle-secretion protein marking developing scale cell precursors.
+    synonyms:
+    - Osi24
+    xref:
+    - FlyBase:FBgn0037430
+  - event: add_term
+    id: target_gene:ebony
+    field: target_gene
+    parent: target_gene:pigment_biosynthesis
+    label: ebony (e)
+    definition: N-beta-alanyldopamine synthetase promoting yellow/tan sclerotin and suppressing black melanin.
+    synonyms:
+    - e
+    xref:
+    - FlyBase:FBgn0000527
+  - event: add_term
+    id: target_gene:yellow
+    field: target_gene
+    parent: target_gene:pigment_biosynthesis
+    label: yellow (y)
+    definition: Melanin-maturation protein required for black dopa-melanin synthesis in wing scales.
+    synonyms:
+    - y
+    xref:
+    - FlyBase:FBgn0004034
+  - event: add_term
+    id: target_gene:ivory_lncrna
+    field: target_gene
+    parent: target_gene:noncoding_regulator
+    label: ivory (lncRNA)
+    definition: Conserved lepidopteran long non-coding RNA at the cortex locus controlling melanic vs. non-melanic scale fate.
+    synonyms:
+    - ivory
+    - cortex locus lncRNA
+  - event: add_term
+    id: target_gene:mir_193
+    field: target_gene
+    parent: target_gene:noncoding_regulator
+    label: miR-193
+    definition: Conserved microRNA processed from the ivory locus directing black melanin patterning across butterflies.
+    synonyms:
+    - mir-193
+    - miR193
+  - event: add_term
+    id: perturbation_modality:crispr_germline_ko
+    field: perturbation_modality
+    label: CRISPR germline knockout
+    definition: Heritable F1/F2 germline CRISPR-Cas9 knockout line carrying defined mutant alleles.
+    synonyms:
+    - germline knockout
+    - F2 KO
+  - event: add_term
+    id: perturbation_modality:crispr_cre_deletion
+    field: perturbation_modality
+    label: CRISPR CRE deletion
+    definition: Dual-sgRNA CRISPR-Cas9 deletion specifically removing a non-coding cis-regulatory enhancer or silencer.
+    synonyms:
+    - enhancer deletion
+    - CRE KO
+  - event: add_term
+    id: perturbation_modality:rnai_knockdown
+    field: perturbation_modality
+    label: RNAi knockdown
+    definition: Pupal wing siRNA/dsRNA electroporation or microinjection depleting target mRNA.
+    synonyms:
+    - RNAi
+    - siRNA electroporation
+    - Bab RNAi
+  - event: add_term
+    id: perturbation_modality:transgenesis
+    field: perturbation_modality
+    label: transgenesis / reporter knock-in
+    definition: PiggyBac or CRISPR-mediated transgenic reporter or ectopic expression construct.
+  - event: add_term
+    id: perturbation_modality:natural_cross_or_gwas
+    field: perturbation_modality
+    label: natural polymorphism / genetic cross
+    definition: Association mapping, QTL cross, or natural morph comparison without engineered perturbation.
+  - event: add_term
+    id: imaging_modality:immunofluorescence
+    field: imaging_modality
+    parent: imaging_modality:optical_microscopy
+    label: immunofluorescence (IF)
+    definition: Antibody-based fluorescent protein localization in fixed pupal wings (e.g., DsxDBD, Bab, Antp).
+    synonyms:
+    - antibody staining
+    - IF
+    - immunostaining
+  - event: add_term
+    id: imaging_modality:uv_photography
+    field: imaging_modality
+    parent: imaging_modality:optical_microscopy
+    label: UV photography (320–400 nm)
+    definition: Ultraviolet-passband reflectance photography imaging UV-iridescent wing patterns.
+    synonyms:
+    - UV-photography
+    - UV imaging
+  - event: add_term
+    id: imaging_modality:genomics_and_transcriptomics
+    field: imaging_modality
+    label: genomics & transcriptomics
+    definition: High-throughput sequencing assays profiling gene expression, chromatin binding, accessibility, or population
+      genetics.
+  - event: add_term
+    id: imaging_modality:snrna_seq
+    field: imaging_modality
+    parent: imaging_modality:genomics_and_transcriptomics
+    label: snRNA-seq
+    definition: Single-nucleus RNA sequencing resolving cell-type-specific transcriptomes in developing wings.
+    synonyms:
+    - single-nucleus RNA-seq
+    - single-nucleus transcriptomics
+  - event: add_term
+    id: imaging_modality:scrna_seq
+    field: imaging_modality
+    parent: imaging_modality:genomics_and_transcriptomics
+    label: scRNA-seq
+    definition: Single-cell RNA sequencing resolving cellular expression clusters.
+    synonyms:
+    - single-cell RNA-seq
+  - event: add_term
+    id: imaging_modality:bulk_rna_seq
+    field: imaging_modality
+    parent: imaging_modality:genomics_and_transcriptomics
+    label: bulk RNA-seq
+    definition: Tissue-level mRNA sequencing comparing wing regions, sexes, or knockout vs. control wings.
+  - event: add_term
+    id: imaging_modality:chip_seq
+    field: imaging_modality
+    parent: imaging_modality:genomics_and_transcriptomics
+    label: ChIP-seq
+    definition: Chromatin immunoprecipitation sequencing mapping genome-wide transcription factor binding sites (e.g., Bab
+      ChIP-seq).
+    synonyms:
+    - ChIP-seq profiling
+  - event: add_term
+    id: imaging_modality:cut_and_tag
+    field: imaging_modality
+    parent: imaging_modality:genomics_and_transcriptomics
+    label: CUT&Tag / CUT&RUN
+    definition: Targeted chromatin cleavage profiling transcription factor occupancy or histone marks from low cell numbers.
+  - event: add_term
+    id: imaging_modality:atac_seq
+    field: imaging_modality
+    parent: imaging_modality:genomics_and_transcriptomics
+    label: ATAC-seq
+    definition: Assay for transposase-accessible chromatin identifying open cis-regulatory elements.
+  - event: add_term
+    id: imaging_modality:wgs_gwas
+    field: imaging_modality
+    parent: imaging_modality:genomics_and_transcriptomics
+    label: WGS / GWAS
+    definition: Whole-genome sequencing or genome-wide association mapping of wing pattern loci.
+  - event: add_term
+    id: measure:log2_fold_change
+    field: measure
+    label: log2 fold change (expression)
+    definition: Base-2 logarithm of gene expression ratio between target cell cluster/condition and reference.
+    synonyms:
+    - avg_log2FC
+    - log2FC
+  - event: add_term
+    id: measure:fdr_adjusted_p
+    field: measure
+    label: FDR-adjusted p-value
+    definition: Multiple-testing corrected significance value (Bonferroni or Benjamini–Hochberg) for differential expression.
+    synonyms:
+    - p_val_adj
+    - padj
+    - adjusted p-value
+  - event: add_term
+    id: measure:chip_peak_count
+    field: measure
+    label: ChIP-seq binding peak count
+    definition: Number of called transcription-factor ChIP-seq occupancy peaks assigned to a gene locus or developmental stage.
+    synonyms:
+    - Bab ChIP peak count
+    - ChIP-seq peaks
+    - binding sites
+  - event: add_term
+    id: measure:differential_expression_probability
+    field: measure
+    label: differential expression probability
+    definition: Fraction or probability of genes exhibiting significant differential expression conditioned on TF ChIP peak
+      count.
+  - event: add_term
+    id: measure:g0_hatching_rate
+    field: measure
+    label: G0 CRISPR hatching rate
+    definition: Proportion of CRISPR-injected embryos that hatch into larvae.
+  - event: add_term
+    id: measure:g0_emergence_rate
+    field: measure
+    label: G0 CRISPR adult emergence rate
+    definition: Proportion of hatched CRISPR larvae surviving to adult eclosion.
+  - event: add_term
+    id: measure:crispant_penetrance
+    field: measure
+    label: crispant phenotype penetrance
+    definition: Proportion of emerged G0 CRISPR adults displaying the target wing or scale mosaic phenotype.
+  - event: add_term
+    id: measure:nucleus_cluster_count
+    field: measure
+    label: profiled nuclei / cell count
+    definition: Number of QC-passing single nuclei or scale-cell precursor nuclei resolved by snRNA-seq/scRNA-seq.
+    synonyms:
+    - nuclei count
+    - cell count
+  - event: add_term
+    id: measure:de_gene_count
+    field: measure
+    label: differentially expressed gene count
+    definition: Number of genes passing fold-change and adjusted p-value thresholds in a transcriptomic contrast.
+    synonyms:
+    - DE genes
+    - UVI-DE genes
+  - event: standing_key
+    measure: measure:ridge_spacing
+    value:
+      must_match: []
+      may_vary: &id002
+      - taxon
+      - sex
+      - anatomical_region
+      - pattern_element
+      - scale_type
+      - functional_architecture
+      - life_stage
+      - pupal_stage_pct
+      - target_gene
+      - genetic_element_type
+      - allele_or_zygosity
+      - perturbation_modality
+      - chemical_agent
+      - imaging_modality
+      - view_orientation
+      - hydration_and_prep
+    direction:
+      must_match:
+      - contrast
+      may_vary: *id002
+  - event: standing_key
+    measure: measure:ridge_height
+    value:
+      must_match: []
+      may_vary: *id002
+    direction:
+      must_match:
+      - contrast
+      may_vary: *id002
+  - event: standing_key
+    measure: measure:crossrib_spacing
+    value:
+      must_match: []
+      may_vary: *id002
+    direction:
+      must_match:
+      - contrast
+      may_vary: *id002
+  - event: standing_key
+    measure: measure:scale_width
+    value:
+      must_match: []
+      may_vary: *id002
+    direction:
+      must_match:
+      - contrast
+      may_vary: *id002
+  - event: standing_key
+    measure: measure:honeycomb_lattice_height
+    value:
+      must_match: []
+      may_vary: *id002
+    direction:
+      must_match:
+      - contrast
+      may_vary: *id002

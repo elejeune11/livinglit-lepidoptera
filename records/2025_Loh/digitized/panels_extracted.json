@@ -1,0 +1,7562 @@
+[
+  {
+    "id": "2025_Loh/F1/A",
+    "paper": "2025_Loh",
+    "figure_id": "F1",
+    "figure_label": "Fig 1",
+    "panel_id": "A",
+    "panel_label": "1A",
+    "title": "Dorsal visible and UV-overlay photographs of female (WT & Alba) and male C. eurytheme wings",
+    "archetype": "macro_morphology",
+    "file": "pbio.3003233.g001.png",
+    "bbox": [
+      0,
+      0,
+      975,
+      575
+    ],
+    "pixel_size": [
+      975,
+      575
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "imaging_modality": "light microscopy",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Male-specific scales in the dorsal wings of Colias eurytheme.A. Dorsal views of male and female butterflies"
+  },
+  {
+    "id": "2025_Loh/F1/B",
+    "paper": "2025_Loh",
+    "figure_id": "F1",
+    "figure_label": "Fig 1",
+    "panel_id": "B",
+    "panel_label": "1B",
+    "title": "Low-magnification SEM of monomorphic female black discal and male ventral orange scales (50 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pbio.3003233.g001.png",
+    "bbox": [
+      976,
+      0,
+      1752,
+      922
+    ],
+    "pixel_size": [
+      776,
+      922
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "scale_type": "canonical cover scale",
+      "imaging_modality": "SEM",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 50.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 155.87,
+      "um_per_px": 0.32078,
+      "fov_um": [
+        248.92,
+        295.76
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 21,
+          "y0": 892,
+          "x1": 177,
+          "y1": 899,
+          "um": 50.0,
+          "um_per_px": 0.320779
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Male-specific scales in the dorsal wings of Colias eurytheme.A. Dorsal views of male and female butterflies"
+  },
+  {
+    "id": "2025_Loh/F1/C",
+    "paper": "2025_Loh",
+    "figure_id": "F1",
+    "figure_label": "Fig 1",
+    "panel_id": "C",
+    "panel_label": "1C",
+    "title": "Low-magnification SEM of male-specific dorsal interface between UVI medial and spatulate margin scales (50 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pbio.3003233.g001.png",
+    "bbox": [
+      1753,
+      0,
+      2548,
+      922
+    ],
+    "pixel_size": [
+      795,
+      922
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "sex": "male",
+      "scale_type": "UVI cover scale",
+      "imaging_modality": "SEM",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 50.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 157.26,
+      "um_per_px": 0.31794,
+      "fov_um": [
+        252.76,
+        293.14
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 32,
+          "y0": 892,
+          "x1": 189,
+          "y1": 899,
+          "um": 50.0,
+          "um_per_px": 0.317938
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Male-specific scales in the dorsal wings of Colias eurytheme.A. Dorsal views of male and female butterflies"
+  },
+  {
+    "id": "2025_Loh/F1/D",
+    "paper": "2025_Loh",
+    "figure_id": "F1",
+    "figure_label": "Fig 1",
+    "panel_id": "D",
+    "panel_label": "1D",
+    "title": "2D Fourier inter-ridge spacing across 7 sex/genotype x scale_type classes (N=170 scales, DataS10)",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g001.png",
+    "bbox": [
+      0,
+      575,
+      975,
+      1456
+    ],
+    "pixel_size": [
+      975,
+      881
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f1_interridge.py",
+    "data": {
+      "digitized_scatter": {
+        "female_black_WT": {
+          "x": [
+            0.373,
+            0.588,
+            0.408,
+            0.472,
+            0.317,
+            0.519,
+            0.328,
+            0.525,
+            0.436,
+            0.375,
+            0.325,
+            0.528,
+            0.571,
+            0.452,
+            0.52,
+            0.61,
+            0.572,
+            0.623,
+            0.358,
+            0.575,
+            0.406,
+            0.482,
+            0.482
+          ],
+          "y": [
+            2.157,
+            2.118,
+            2.114,
+            2.086,
+            2.078,
+            2.066,
+            2.005,
+            2.006,
+            2.0,
+            1.984,
+            1.944,
+            1.934,
+            1.908,
+            1.879,
+            1.872,
+            1.867,
+            1.8,
+            1.997,
+            1.94,
+            1.863,
+            2.158,
+            2.232,
+            1.734
+          ],
+          "n": 23,
+          "y_mean": 1.989,
+          "y_sd": 0.125,
+          "x_unit": "class",
+          "y_unit": "\u00b5m"
+        },
+        "female_black_Alba": {
+          "x": [
+            1.311,
+            1.249,
+            1.366,
+            1.498,
+            1.295,
+            1.414,
+            1.458,
+            1.344,
+            1.497,
+            1.503,
+            1.359,
+            1.43,
+            1.257,
+            1.43,
+            1.473,
+            1.343,
+            1.247,
+            1.435,
+            1.527,
+            1.467,
+            1.532,
+            1.371,
+            1.444,
+            1.387,
+            1.386,
+            1.262
+          ],
+          "y": [
+            2.246,
+            2.229,
+            2.229,
+            2.22,
+            2.158,
+            2.158,
+            2.134,
+            2.106,
+            2.092,
+            2.032,
+            1.983,
+            1.963,
+            1.952,
+            1.903,
+            1.879,
+            2.058,
+            2.05,
+            2.099,
+            2.074,
+            2.076,
+            1.992,
+            2.083,
+            1.858,
+            2.339,
+            1.783,
+            1.912
+          ],
+          "n": 26,
+          "y_mean": 2.062,
+          "y_sd": 0.135,
+          "x_unit": "class",
+          "y_unit": "\u00b5m"
+        },
+        "female_orange_WT": {
+          "x": [
+            2.289,
+            2.225,
+            2.337,
+            2.259,
+            2.21,
+            2.378,
+            2.448,
+            2.476,
+            2.376,
+            2.202,
+            2.283,
+            2.489,
+            2.246,
+            2.293,
+            2.413,
+            2.292,
+            2.23,
+            2.191,
+            2.412,
+            2.361,
+            2.443,
+            2.266,
+            2.261,
+            2.488,
+            2.018,
+            2.69,
+            2.517,
+            2.354
+          ],
+          "y": [
+            2.086,
+            2.065,
+            2.065,
+            2.021,
+            2.007,
+            2.005,
+            2.0,
+            1.95,
+            1.943,
+            1.923,
+            1.923,
+            1.888,
+            1.86,
+            1.862,
+            1.799,
+            1.802,
+            1.741,
+            2.055,
+            2.004,
+            1.907,
+            1.955,
+            1.978,
+            1.821,
+            1.845,
+            1.994,
+            1.994,
+            1.868,
+            1.688
+          ],
+          "n": 28,
+          "y_mean": 1.93,
+          "y_sd": 0.102,
+          "x_unit": "class",
+          "y_unit": "\u00b5m"
+        },
+        "female_white_Alba": {
+          "x": [
+            3.24,
+            3.379,
+            3.39,
+            3.247,
+            3.148,
+            3.367,
+            3.334,
+            3.081,
+            3.088,
+            3.303,
+            3.211,
+            3.196,
+            3.062,
+            3.295,
+            3.111,
+            3.295,
+            3.22,
+            3.097,
+            3.109,
+            3.351,
+            3.178,
+            3.247
+          ],
+          "y": [
+            2.054,
+            1.994,
+            1.933,
+            1.887,
+            2.233,
+            1.9,
+            1.996,
+            1.89,
+            2.181,
+            1.859,
+            2.134,
+            2.217,
+            2.141,
+            2.12,
+            1.934,
+            1.924,
+            2.324,
+            2.088,
+            1.978,
+            2.18,
+            2.255,
+            2.099
+          ],
+          "n": 22,
+          "y_mean": 2.06,
+          "y_sd": 0.138,
+          "x_unit": "class",
+          "y_unit": "\u00b5m"
+        },
+        "male_black": {
+          "x": [
+            4.723,
+            4.572,
+            4.771,
+            4.646,
+            4.755,
+            4.794,
+            4.723,
+            4.646,
+            4.517,
+            4.572,
+            4.516,
+            4.803,
+            4.611,
+            4.715,
+            4.664,
+            4.754,
+            4.707,
+            4.581,
+            4.71,
+            4.818,
+            4.648,
+            4.606,
+            4.698,
+            4.648,
+            4.708,
+            4.565
+          ],
+          "y": [
+            2.363,
+            2.272,
+            2.26,
+            2.249,
+            2.19,
+            2.155,
+            2.139,
+            2.096,
+            2.095,
+            2.025,
+            1.995,
+            1.989,
+            1.985,
+            1.983,
+            1.943,
+            2.104,
+            2.096,
+            1.96,
+            2.179,
+            1.953,
+            2.427,
+            2.028,
+            1.948,
+            1.845,
+            2.328,
+            1.921
+          ],
+          "n": 26,
+          "y_mean": 2.097,
+          "y_sd": 0.151,
+          "x_unit": "class",
+          "y_unit": "\u00b5m"
+        },
+        "male_orange_UVI": {
+          "x": [
+            5.64,
+            5.463,
+            5.686,
+            5.606,
+            5.439,
+            5.487,
+            5.722,
+            5.534,
+            5.582,
+            5.447,
+            5.63,
+            5.678,
+            5.563,
+            5.474,
+            5.52,
+            5.42,
+            5.598,
+            5.414,
+            5.571,
+            5.441,
+            5.483,
+            5.711
+          ],
+          "y": [
+            1.121,
+            1.111,
+            1.111,
+            1.07,
+            1.057,
+            1.041,
+            1.04,
+            1.029,
+            1.016,
+            0.996,
+            0.995,
+            0.996,
+            0.96,
+            0.943,
+            0.986,
+            1.102,
+            0.97,
+            1.006,
+            0.907,
+            0.943,
+            0.99,
+            0.998
+          ],
+          "n": 22,
+          "y_mean": 1.018,
+          "y_sd": 0.059,
+          "x_unit": "class",
+          "y_unit": "\u00b5m"
+        },
+        "male_spatulate": {
+          "x": [
+            6.521,
+            6.366,
+            6.454,
+            6.347,
+            6.553,
+            6.362,
+            6.457,
+            6.505,
+            6.458,
+            6.64,
+            6.612,
+            6.609,
+            6.537,
+            6.632,
+            6.339,
+            6.474,
+            6.385,
+            6.624,
+            6.414,
+            6.491,
+            6.521,
+            6.451,
+            6.585,
+            6.532,
+            6.522,
+            6.495,
+            6.495,
+            6.495,
+            6.497,
+            6.465,
+            6.379,
+            6.496,
+            6.581,
+            6.465,
+            6.465
+          ],
+          "y": [
+            5.001,
+            4.987,
+            4.935,
+            4.927,
+            4.898,
+            4.825,
+            4.786,
+            4.735,
+            4.621,
+            4.589,
+            4.535,
+            4.293,
+            4.088,
+            4.046,
+            4.036,
+            4.036,
+            4.023,
+            3.871,
+            3.796,
+            3.667,
+            4.033,
+            3.788,
+            4.507,
+            4.707,
+            3.659,
+            5.254,
+            3.545,
+            3.495,
+            3.623,
+            3.995,
+            4.941,
+            5.305,
+            4.876,
+            4.58,
+            4.743
+          ],
+          "n": 35,
+          "y_mean": 4.393,
+          "y_sd": 0.531,
+          "x_unit": "class",
+          "y_unit": "\u00b5m"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          80,
+          25,
+          960,
+          614
+        ],
+        "x_range": [
+          0.0,
+          7.0
+        ],
+        "y_range": [
+          0.003,
+          6.047
+        ],
+        "y_misfit_px": 0.209,
+        "kind": "scatter"
+      },
+      "y_tick_misfit_px": 0.209,
+      "uvi_mean_um": 1.017,
+      "canonical_mean_um": 2.023,
+      "spatulate_mean_um": 4.426
+    },
+    "n_digitized_points": 182,
+    "linked_items": [
+      "F1_ridge_reported",
+      "F1_uvi_vs_canonical"
+    ],
+    "linked_claims": [
+      "C1_uvi_dense_ridges",
+      "C2_spatulate_wide_ridges"
+    ],
+    "linked_resources": [
+      "loh_osf_interridge"
+    ],
+    "caption_quote": "Male-specific scales in the dorsal wings of Colias eurytheme.A. Dorsal views of male and female butterflies"
+  },
+  {
+    "id": "2025_Loh/F1/E",
+    "paper": "2025_Loh",
+    "figure_id": "F1",
+    "figure_label": "Fig 1",
+    "panel_id": "E",
+    "panel_label": "1E",
+    "title": "High-mag top-down SEM of female dorsal black discal cover scale ridges (2 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pbio.3003233.g001.png",
+    "bbox": [
+      979,
+      926,
+      1360,
+      1456
+    ],
+    "pixel_size": [
+      381,
+      530
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "sex": "female",
+      "scale_type": "canonical cover scale",
+      "functional_architecture": "melanin pigmentary",
+      "imaging_modality": "SEM",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 2.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 98.9,
+      "um_per_px": 0.02022,
+      "fov_um": [
+        7.7,
+        10.72
+      ],
+      "periodic_fft_um": 1.7529,
+      "periodic_fft_interval_um": [
+        1.5694,
+        1.9364
+      ],
+      "periodic_snr": 204.1,
+      "wavevector_deg": -89.0,
+      "periodic_transect_um": 1.7563,
+      "periodic_transect_sd_um": 0.043,
+      "transect_points_um": [
+        1.7238,
+        1.7847,
+        1.7441,
+        1.7238,
+        1.7441,
+        1.8049,
+        1.8252,
+        1.6833,
+        1.7441,
+        1.7847
+      ],
+      "harmonic_guard": {
+        "status": "pass",
+        "fft_transect_delta_pct": 0.19,
+        "harmonic_ratio_2f": 0.22,
+        "snr": 204.1,
+        "issues": []
+      },
+      "overlay_meta": {
+        "kind": "microscopy_fft",
+        "scale_bar_px": {
+          "x0": 19,
+          "y0": 503,
+          "x1": 117,
+          "y1": 510,
+          "um": 2.0,
+          "um_per_px": 0.020222
+        },
+        "roi_px": [
+          20,
+          50,
+          360,
+          460
+        ],
+        "grating": {
+          "period_px": 86.68,
+          "period_um": 1.7529,
+          "wavevector_deg": -89.0,
+          "phase_shift_px": -40.02,
+          "snr": 204.1
+        },
+        "crossrib_grating": null,
+        "transects": [
+          {
+            "p0": [
+              57.5,
+              437.2
+            ],
+            "p1": [
+              64.1,
+              68.2
+            ],
+            "peaks_px": [
+              [
+                58.3,
+                390.1
+              ],
+              [
+                60.0,
+                294.8
+              ],
+              [
+                61.5,
+                211.6
+              ],
+              [
+                63.1,
+                126.3
+              ]
+            ]
+          },
+          {
+            "p0": [
+              86.2,
+              437.7
+            ],
+            "p1": [
+              92.8,
+              68.7
+            ],
+            "peaks_px": [
+              [
+                87.1,
+                389.6
+              ],
+              [
+                88.7,
+                297.3
+              ],
+              [
+                90.2,
+                213.1
+              ],
+              [
+                91.8,
+                124.8
+              ]
+            ]
+          },
+          {
+            "p0": [
+              114.9,
+              438.2
+            ],
+            "p1": [
+              121.5,
+              69.2
+            ],
+            "peaks_px": [
+              [
+                115.8,
+                389.1
+              ],
+              [
+                117.4,
+                297.8
+              ],
+              [
+                118.9,
+                215.6
+              ],
+              [
+                120.5,
+                129.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              143.6,
+              438.7
+            ],
+            "p1": [
+              150.2,
+              69.7
+            ],
+            "peaks_px": [
+              [
+                144.6,
+                386.6
+              ],
+              [
+                146.1,
+                298.3
+              ],
+              [
+                147.7,
+                213.1
+              ],
+              [
+                149.2,
+                128.9
+              ]
+            ]
+          },
+          {
+            "p0": [
+              172.3,
+              439.2
+            ],
+            "p1": [
+              179.0,
+              70.2
+            ],
+            "peaks_px": [
+              [
+                173.3,
+                386.1
+              ],
+              [
+                174.9,
+                298.9
+              ],
+              [
+                176.4,
+                212.6
+              ],
+              [
+                177.9,
+                129.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              201.0,
+              439.8
+            ],
+            "p1": [
+              207.7,
+              70.8
+            ],
+            "peaks_px": [
+              [
+                201.9,
+                392.6
+              ],
+              [
+                203.5,
+                300.4
+              ],
+              [
+                205.1,
+                211.1
+              ],
+              [
+                206.6,
+                131.9
+              ]
+            ]
+          },
+          {
+            "p0": [
+              229.8,
+              440.3
+            ],
+            "p1": [
+              236.4,
+              71.3
+            ],
+            "peaks_px": [
+              [
+                230.6,
+                392.1
+              ],
+              [
+                232.3,
+                300.9
+              ],
+              [
+                233.9,
+                210.7
+              ],
+              [
+                235.3,
+                132.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              258.5,
+              440.8
+            ],
+            "p1": [
+              265.1,
+              71.8
+            ],
+            "peaks_px": [
+              [
+                259.3,
+                393.7
+              ],
+              [
+                261.0,
+                299.4
+              ],
+              [
+                262.5,
+                216.2
+              ],
+              [
+                264.0,
+                133.0
+              ]
+            ]
+          },
+          {
+            "p0": [
+              287.2,
+              441.3
+            ],
+            "p1": [
+              293.8,
+              72.3
+            ],
+            "peaks_px": [
+              [
+                288.1,
+                389.2
+              ],
+              [
+                289.7,
+                302.9
+              ],
+              [
+                291.3,
+                213.7
+              ],
+              [
+                292.7,
+                132.5
+              ]
+            ]
+          },
+          {
+            "p0": [
+              315.9,
+              441.8
+            ],
+            "p1": [
+              322.5,
+              72.8
+            ],
+            "peaks_px": [
+              [
+                316.8,
+                391.7
+              ],
+              [
+                318.4,
+                303.4
+              ],
+              [
+                320.0,
+                210.2
+              ],
+              [
+                321.4,
+                133.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "n_digitized_points": 11,
+    "linked_items": [
+      "F1_ridge_sem_read"
+    ],
+    "linked_claims": [],
+    "linked_resources": [
+      "loh_osf_interridge"
+    ],
+    "caption_quote": "Male-specific scales in the dorsal wings of Colias eurytheme.A. Dorsal views of male and female butterflies"
+  },
+  {
+    "id": "2025_Loh/F1/F",
+    "paper": "2025_Loh",
+    "figure_id": "F1",
+    "figure_label": "Fig 1",
+    "panel_id": "F",
+    "panel_label": "1F",
+    "title": "High-mag top-down SEM of male ventral orange canonical cover scale ridges with pterin beads (2 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pbio.3003233.g001.png",
+    "bbox": [
+      1370,
+      926,
+      1751,
+      1456
+    ],
+    "pixel_size": [
+      381,
+      530
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "sex": "male",
+      "scale_type": "canonical cover scale",
+      "functional_architecture": "pterin pigmentary",
+      "imaging_modality": "SEM",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 2.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 98.75,
+      "um_per_px": 0.02025,
+      "fov_um": [
+        7.72,
+        10.73
+      ],
+      "periodic_fft_um": 1.9435,
+      "periodic_fft_interval_um": [
+        1.7179,
+        2.1691
+      ],
+      "periodic_snr": 215.9,
+      "wavevector_deg": 89.2,
+      "periodic_transect_um": 1.9172,
+      "periodic_transect_sd_um": 0.0576,
+      "transect_points_um": [
+        1.97,
+        1.9294,
+        1.8481,
+        1.9091,
+        1.8278,
+        1.8481,
+        1.9497,
+        1.97,
+        1.9294,
+        1.9903
+      ],
+      "harmonic_guard": {
+        "status": "pass",
+        "fft_transect_delta_pct": 1.35,
+        "harmonic_ratio_2f": 0.349,
+        "snr": 215.9,
+        "issues": []
+      },
+      "overlay_meta": {
+        "kind": "microscopy_fft",
+        "scale_bar_px": {
+          "x0": 28,
+          "y0": 503,
+          "x1": 126,
+          "y1": 510,
+          "um": 2.0,
+          "um_per_px": 0.020252
+        },
+        "roi_px": [
+          20,
+          50,
+          360,
+          460
+        ],
+        "grating": {
+          "period_px": 95.96,
+          "period_um": 1.9435,
+          "wavevector_deg": 89.2,
+          "phase_shift_px": -46.86,
+          "snr": 215.9
+        },
+        "crossrib_grating": null,
+        "transects": [
+          {
+            "p0": [
+              316.5,
+              68.6
+            ],
+            "p1": [
+              321.9,
+              437.6
+            ],
+            "peaks_px": [
+              [
+                317.1,
+                108.7
+              ],
+              [
+                318.5,
+                207.0
+              ],
+              [
+                319.9,
+                298.3
+              ],
+              [
+                321.3,
+                395.5
+              ]
+            ]
+          },
+          {
+            "p0": [
+              287.8,
+              69.0
+            ],
+            "p1": [
+              293.2,
+              438.0
+            ],
+            "peaks_px": [
+              [
+                288.4,
+                108.2
+              ],
+              [
+                289.8,
+                207.4
+              ],
+              [
+                291.2,
+                302.7
+              ],
+              [
+                292.6,
+                396.9
+              ]
+            ]
+          },
+          {
+            "p0": [
+              259.1,
+              69.5
+            ],
+            "p1": [
+              264.4,
+              438.5
+            ],
+            "peaks_px": [
+              [
+                259.7,
+                113.6
+              ],
+              [
+                261.1,
+                204.8
+              ],
+              [
+                262.5,
+                302.1
+              ],
+              [
+                263.8,
+                392.3
+              ]
+            ]
+          },
+          {
+            "p0": [
+              230.4,
+              69.9
+            ],
+            "p1": [
+              235.7,
+              438.9
+            ],
+            "peaks_px": [
+              [
+                231.0,
+                110.0
+              ],
+              [
+                232.3,
+                204.2
+              ],
+              [
+                233.8,
+                304.5
+              ],
+              [
+                235.1,
+                397.8
+              ]
+            ]
+          },
+          {
+            "p0": [
+              201.7,
+              70.3
+            ],
+            "p1": [
+              207.0,
+              439.3
+            ],
+            "peaks_px": [
+              [
+                202.3,
+                114.4
+              ],
+              [
+                203.6,
+                202.7
+              ],
+              [
+                205.1,
+                304.9
+              ],
+              [
+                206.4,
+                395.2
+              ]
+            ]
+          },
+          {
+            "p0": [
+              173.0,
+              70.7
+            ],
+            "p1": [
+              178.3,
+              439.7
+            ],
+            "peaks_px": [
+              [
+                173.6,
+                115.8
+              ],
+              [
+                174.9,
+                207.1
+              ],
+              [
+                176.4,
+                305.3
+              ],
+              [
+                177.7,
+                394.6
+              ]
+            ]
+          },
+          {
+            "p0": [
+              144.3,
+              71.1
+            ],
+            "p1": [
+              149.6,
+              440.1
+            ],
+            "peaks_px": [
+              [
+                144.9,
+                113.2
+              ],
+              [
+                146.3,
+                210.5
+              ],
+              [
+                147.6,
+                300.7
+              ],
+              [
+                149.0,
+                397.0
+              ]
+            ]
+          },
+          {
+            "p0": [
+              115.6,
+              71.5
+            ],
+            "p1": [
+              120.9,
+              440.5
+            ],
+            "peaks_px": [
+              [
+                116.1,
+                110.6
+              ],
+              [
+                117.5,
+                207.9
+              ],
+              [
+                118.9,
+                306.2
+              ],
+              [
+                120.2,
+                395.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              86.8,
+              72.0
+            ],
+            "p1": [
+              92.2,
+              441.0
+            ],
+            "peaks_px": [
+              [
+                87.4,
+                112.1
+              ],
+              [
+                88.8,
+                207.3
+              ],
+              [
+                90.2,
+                303.6
+              ],
+              [
+                91.5,
+                395.8
+              ]
+            ]
+          },
+          {
+            "p0": [
+              58.1,
+              72.4
+            ],
+            "p1": [
+              63.5,
+              441.4
+            ],
+            "peaks_px": [
+              [
+                58.7,
+                108.5
+              ],
+              [
+                60.1,
+                207.7
+              ],
+              [
+                61.5,
+                306.0
+              ],
+              [
+                62.8,
+                398.3
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "n_digitized_points": 11,
+    "linked_items": [
+      "F1_ridge_sem_read"
+    ],
+    "linked_claims": [],
+    "linked_resources": [
+      "loh_osf_interridge"
+    ],
+    "caption_quote": "Male-specific scales in the dorsal wings of Colias eurytheme.A. Dorsal views of male and female butterflies"
+  },
+  {
+    "id": "2025_Loh/F1/G",
+    "paper": "2025_Loh",
+    "figure_id": "F1",
+    "figure_label": "Fig 1",
+    "panel_id": "G",
+    "panel_label": "1G",
+    "title": "High-mag top-down SEM of male dorsal UV-iridescent (UVI) dense ridge grating (~1.0 \u00b5m pitch, 2 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pbio.3003233.g001.png",
+    "bbox": [
+      1763,
+      926,
+      2144,
+      1456
+    ],
+    "pixel_size": [
+      381,
+      530
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "sex": "male",
+      "scale_type": "UVI cover scale",
+      "functional_architecture": "ridge-lamellar multilayer",
+      "imaging_modality": "SEM",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 2.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 98.32,
+      "um_per_px": 0.02034,
+      "fov_um": [
+        7.75,
+        10.78
+      ],
+      "periodic_fft_um": 0.9679,
+      "periodic_fft_interval_um": [
+        0.9109,
+        1.0249
+      ],
+      "periodic_snr": 189.0,
+      "wavevector_deg": 90.0,
+      "periodic_transect_um": 1.0076,
+      "periodic_transect_sd_um": 0.0165,
+      "transect_points_um": [
+        0.9995,
+        1.0199,
+        1.0403,
+        1.0199,
+        0.9995,
+        0.9791,
+        1.0097,
+        1.0097,
+        0.9995,
+        0.9995
+      ],
+      "harmonic_guard": {
+        "status": "pass",
+        "fft_transect_delta_pct": 4.11,
+        "harmonic_ratio_2f": 0.077,
+        "snr": 189.0,
+        "issues": []
+      },
+      "overlay_meta": {
+        "kind": "microscopy_fft",
+        "scale_bar_px": {
+          "x0": 23,
+          "y0": 503,
+          "x1": 122,
+          "y1": 511,
+          "um": 2.0,
+          "um_per_px": 0.020342
+        },
+        "roi_px": [
+          20,
+          50,
+          360,
+          460
+        ],
+        "grating": {
+          "period_px": 47.58,
+          "period_um": 0.9679,
+          "wavevector_deg": 90.0,
+          "phase_shift_px": -7.58,
+          "snr": 189.0
+        },
+        "crossrib_grating": null,
+        "transects": [
+          {
+            "p0": [
+              319.1,
+              70.4
+            ],
+            "p1": [
+              319.3,
+              439.4
+            ],
+            "peaks_px": [
+              [
+                319.1,
+                114.6
+              ],
+              [
+                319.2,
+                171.7
+              ],
+              [
+                319.2,
+                220.8
+              ],
+              [
+                319.2,
+                273.0
+              ],
+              [
+                319.2,
+                313.1
+              ],
+              [
+                319.3,
+                362.2
+              ],
+              [
+                319.3,
+                406.3
+              ]
+            ]
+          },
+          {
+            "p0": [
+              290.4,
+              70.4
+            ],
+            "p1": [
+              290.6,
+              439.4
+            ],
+            "peaks_px": [
+              [
+                290.4,
+                113.6
+              ],
+              [
+                290.4,
+                171.7
+              ],
+              [
+                290.5,
+                220.9
+              ],
+              [
+                290.5,
+                272.0
+              ],
+              [
+                290.5,
+                310.1
+              ],
+              [
+                290.5,
+                361.2
+              ],
+              [
+                290.6,
+                407.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              261.7,
+              70.5
+            ],
+            "p1": [
+              261.9,
+              439.5
+            ],
+            "peaks_px": [
+              [
+                261.7,
+                113.6
+              ],
+              [
+                261.7,
+                169.7
+              ],
+              [
+                261.8,
+                220.9
+              ],
+              [
+                261.8,
+                272.0
+              ],
+              [
+                261.8,
+                310.1
+              ],
+              [
+                261.8,
+                361.2
+              ],
+              [
+                261.9,
+                407.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              233.0,
+              70.5
+            ],
+            "p1": [
+              233.2,
+              439.5
+            ],
+            "peaks_px": [
+              [
+                233.0,
+                113.6
+              ],
+              [
+                233.0,
+                170.7
+              ],
+              [
+                233.0,
+                221.9
+              ],
+              [
+                233.1,
+                271.0
+              ],
+              [
+                233.1,
+                310.1
+              ],
+              [
+                233.1,
+                361.3
+              ],
+              [
+                233.1,
+                406.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              204.3,
+              70.5
+            ],
+            "p1": [
+              204.5,
+              439.5
+            ],
+            "peaks_px": [
+              [
+                204.3,
+                113.6
+              ],
+              [
+                204.3,
+                171.8
+              ],
+              [
+                204.3,
+                221.9
+              ],
+              [
+                204.4,
+                270.0
+              ],
+              [
+                204.4,
+                309.1
+              ],
+              [
+                204.4,
+                361.3
+              ],
+              [
+                204.4,
+                406.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              175.5,
+              70.5
+            ],
+            "p1": [
+              175.7,
+              439.5
+            ],
+            "peaks_px": [
+              [
+                175.6,
+                114.6
+              ],
+              [
+                175.6,
+                172.8
+              ],
+              [
+                175.6,
+                222.9
+              ],
+              [
+                175.7,
+                269.0
+              ],
+              [
+                175.7,
+                309.2
+              ],
+              [
+                175.7,
+                361.3
+              ],
+              [
+                175.7,
+                406.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              146.8,
+              70.5
+            ],
+            "p1": [
+              147.0,
+              439.5
+            ],
+            "peaks_px": [
+              [
+                146.9,
+                115.6
+              ],
+              [
+                146.9,
+                172.8
+              ],
+              [
+                146.9,
+                224.9
+              ],
+              [
+                146.9,
+                270.1
+              ],
+              [
+                147.0,
+                309.2
+              ],
+              [
+                147.0,
+                360.3
+              ],
+              [
+                147.0,
+                408.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              118.1,
+              70.5
+            ],
+            "p1": [
+              118.3,
+              439.5
+            ],
+            "peaks_px": [
+              [
+                118.1,
+                116.7
+              ],
+              [
+                118.2,
+                172.8
+              ],
+              [
+                118.2,
+                225.0
+              ],
+              [
+                118.2,
+                272.1
+              ],
+              [
+                118.3,
+                309.2
+              ],
+              [
+                118.3,
+                360.3
+              ],
+              [
+                118.3,
+                408.5
+              ]
+            ]
+          },
+          {
+            "p0": [
+              89.4,
+              70.6
+            ],
+            "p1": [
+              89.6,
+              439.6
+            ],
+            "peaks_px": [
+              [
+                89.4,
+                117.7
+              ],
+              [
+                89.5,
+                172.8
+              ],
+              [
+                89.5,
+                225.0
+              ],
+              [
+                89.5,
+                271.1
+              ],
+              [
+                89.5,
+                311.2
+              ],
+              [
+                89.6,
+                359.3
+              ],
+              [
+                89.6,
+                409.5
+              ]
+            ]
+          },
+          {
+            "p0": [
+              60.7,
+              70.6
+            ],
+            "p1": [
+              60.9,
+              439.6
+            ],
+            "peaks_px": [
+              [
+                60.7,
+                118.7
+              ],
+              [
+                60.8,
+                172.8
+              ],
+              [
+                60.8,
+                224.0
+              ],
+              [
+                60.8,
+                271.1
+              ],
+              [
+                60.8,
+                311.2
+              ],
+              [
+                60.9,
+                359.4
+              ],
+              [
+                60.9,
+                409.5
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "n_digitized_points": 11,
+    "linked_items": [
+      "F1_ridge_sem_read",
+      "F1_ridge_reported"
+    ],
+    "linked_claims": [
+      "C1_uvi_dense_ridges"
+    ],
+    "linked_resources": [
+      "loh_osf_interridge"
+    ],
+    "caption_quote": "Male-specific scales in the dorsal wings of Colias eurytheme.A. Dorsal views of male and female butterflies"
+  },
+  {
+    "id": "2025_Loh/F1/H",
+    "paper": "2025_Loh",
+    "figure_id": "F1",
+    "figure_label": "Fig 1",
+    "panel_id": "H",
+    "panel_label": "1H",
+    "title": "High-mag top-down SEM of male marginal spatulate cover scale wide ridges (~4.0-4.4 \u00b5m pitch, 2 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pbio.3003233.g001.png",
+    "bbox": [
+      2155,
+      926,
+      2547,
+      1456
+    ],
+    "pixel_size": [
+      392,
+      530
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "sex": "male",
+      "scale_type": "spatulate cover scale",
+      "functional_architecture": "melanin pigmentary",
+      "imaging_modality": "SEM",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 2.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 99.16,
+      "um_per_px": 0.02017,
+      "fov_um": [
+        7.91,
+        10.69
+      ],
+      "periodic_fft_um": 3.8543,
+      "periodic_fft_interval_um": [
+        3.074,
+        4.6346
+      ],
+      "periodic_snr": 1.9,
+      "wavevector_deg": -88.7,
+      "periodic_transect_um": 3.5684,
+      "periodic_transect_sd_um": 0.1959,
+      "transect_points_um": [
+        3.6661,
+        3.3429,
+        3.6964
+      ],
+      "harmonic_guard": {
+        "status": "low_snr_verify",
+        "fft_transect_delta_pct": 7.42,
+        "harmonic_ratio_2f": 0.232,
+        "snr": 1.9,
+        "issues": []
+      },
+      "overlay_meta": {
+        "kind": "microscopy_fft",
+        "scale_bar_px": {
+          "x0": 19,
+          "y0": 503,
+          "x1": 117,
+          "y1": 511,
+          "um": 2.0,
+          "um_per_px": 0.020169
+        },
+        "roi_px": [
+          25,
+          10,
+          365,
+          475
+        ],
+        "grating": {
+          "period_px": 191.1,
+          "period_um": 3.8543,
+          "wavevector_deg": -88.7,
+          "phase_shift_px": -10.35,
+          "snr": 1.9
+        },
+        "crossrib_grating": null,
+        "transects": [
+          {
+            "p0": [
+              89.8,
+              449.5
+            ],
+            "p1": [
+              99.2,
+              31.0
+            ],
+            "peaks_px": [
+              [
+                90.6,
+                414.4
+              ],
+              [
+                95.4,
+                200.2
+              ],
+              [
+                98.8,
+                51.0
+              ]
+            ]
+          },
+          {
+            "p0": [
+              175.9,
+              451.4
+            ],
+            "p1": [
+              185.4,
+              32.9
+            ],
+            "peaks_px": [
+              [
+                177.3,
+                392.4
+              ],
+              [
+                180.6,
+                246.2
+              ],
+              [
+                184.7,
+                61.0
+              ]
+            ]
+          },
+          {
+            "p0": [
+              233.3,
+              452.7
+            ],
+            "p1": [
+              242.8,
+              34.2
+            ],
+            "peaks_px": [
+              [
+                234.0,
+                424.7
+              ],
+              [
+                238.1,
+                241.5
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "n_digitized_points": 4,
+    "linked_items": [
+      "F1_ridge_sem_read",
+      "F1_ridge_reported"
+    ],
+    "linked_claims": [
+      "C2_spatulate_wide_ridges"
+    ],
+    "linked_resources": [
+      "loh_osf_interridge"
+    ],
+    "caption_quote": "Male-specific scales in the dorsal wings of Colias eurytheme.A. Dorsal views of male and female butterflies"
+  },
+  {
+    "id": "2025_Loh/F1/I",
+    "paper": "2025_Loh",
+    "figure_id": "F1",
+    "figure_label": "Fig 1",
+    "panel_id": "I",
+    "panel_label": "1I",
+    "title": "Courtship UV signaling diagram and dorsal position of male-specific spatulate and UVI scale precursors",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pbio.3003233.g001.png",
+    "bbox": [
+      0,
+      1457,
+      1365,
+      2342
+    ],
+    "pixel_size": [
+      1365,
+      885
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Male-specific scales in the dorsal wings of Colias eurytheme.A. Dorsal views of male and female butterflies"
+  },
+  {
+    "id": "2025_Loh/F1/J",
+    "paper": "2025_Loh",
+    "figure_id": "F1",
+    "figure_label": "Fig 1",
+    "panel_id": "J",
+    "panel_label": "1J",
+    "title": "3D transverse ultrastructure cross-section schematics of canonical (yellow/black), UVI, and spatulate scales",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pbio.3003233.g001.png",
+    "bbox": [
+      1366,
+      1457,
+      2548,
+      2342
+    ],
+    "pixel_size": [
+      1182,
+      885
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Male-specific scales in the dorsal wings of Colias eurytheme.A. Dorsal views of male and female butterflies"
+  },
+  {
+    "id": "2025_Loh/F2/A",
+    "paper": "2025_Loh",
+    "figure_id": "F2",
+    "figure_label": "Fig 2",
+    "panel_id": "A",
+    "panel_label": "2A",
+    "title": "Visible-light dorsal/ventral wings of WT vs Dsx CRISPR G0 mKO females (ZW) and males (ZZ)",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g002.png",
+    "bbox": [
+      0,
+      0,
+      1272,
+      910
+    ],
+    "pixel_size": [
+      1272,
+      910
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "Doublesex (Dsx)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:doublesex",
+      "element_type": "coding_exon",
+      "allele": "g0_somatic_mosaic",
+      "n_crispants": 33,
+      "phenotype": "Dorsal-restricted marginal band narrowing (females) and expansion (males)"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_dsx_crispant_n"
+    ],
+    "linked_claims": [
+      "C3_dsxf_activates_bab_represses_uvi"
+    ],
+    "linked_resources": [],
+    "caption_quote": "DsxF blocks UV-iridescence in females in a cell-autonomous fashion.A. Effects of Dsx mosaic knock-outs (mKO)"
+  },
+  {
+    "id": "2025_Loh/F2/B",
+    "paper": "2025_Loh",
+    "figure_id": "F2",
+    "figure_label": "Fig 2",
+    "panel_id": "B",
+    "panel_label": "2B",
+    "title": "UV photography (320-400 nm) showing ectopic UVI gain in female Dsx mKO and distal border regression in males",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g002.png",
+    "bbox": [
+      1272,
+      0,
+      2548,
+      910
+    ],
+    "pixel_size": [
+      1276,
+      910
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "Doublesex (Dsx)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout",
+      "imaging_modality": "UV photography (320\u2013400 nm)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:doublesex",
+      "element_type": "coding_exon",
+      "allele": "g0_somatic_mosaic",
+      "n_crispants": 33,
+      "phenotype": "Ectopic dorsal UV-iridescence in female crispants; marginal UV regression in males"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_dsx_crispant_n"
+    ],
+    "linked_claims": [
+      "C3_dsxf_activates_bab_represses_uvi"
+    ],
+    "linked_resources": [],
+    "caption_quote": "DsxF blocks UV-iridescence in females in a cell-autonomous fashion.A. Effects of Dsx mosaic knock-outs (mKO)"
+  },
+  {
+    "id": "2025_Loh/F2/C",
+    "paper": "2025_Loh",
+    "figure_id": "F2",
+    "figure_label": "Fig 2",
+    "panel_id": "C",
+    "panel_label": "2C",
+    "title": "Visible-light forewing marginal close-ups of female and male WT vs Dsx mKO",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g002.png",
+    "bbox": [
+      0,
+      910,
+      1272,
+      1545
+    ],
+    "pixel_size": [
+      1272,
+      635
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "Doublesex (Dsx)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:doublesex",
+      "element_type": "coding_exon",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Marginal melanic band shift and ectopic yellow spots in male mKO"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "DsxF blocks UV-iridescence in females in a cell-autonomous fashion.A. Effects of Dsx mosaic knock-outs (mKO)"
+  },
+  {
+    "id": "2025_Loh/F2/C_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F2",
+    "figure_label": "Fig 2",
+    "panel_id": "C_prime",
+    "panel_label": "2C'",
+    "title": "False-color magenta UV overlay over visible forewings showing female UVI gain and male distal regression",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g002.png",
+    "bbox": [
+      1272,
+      910,
+      2548,
+      1545
+    ],
+    "pixel_size": [
+      1276,
+      635
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "Doublesex (Dsx)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout",
+      "imaging_modality": "UV photography (320\u2013400 nm)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:doublesex",
+      "element_type": "coding_exon",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Cell-autonomous female UVI gain vs non-autonomous male distal UVI regression"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "DsxF blocks UV-iridescence in females in a cell-autonomous fashion.A. Effects of Dsx mosaic knock-outs (mKO)"
+  },
+  {
+    "id": "2025_Loh/F2/D",
+    "paper": "2025_Loh",
+    "figure_id": "F2",
+    "figure_label": "Fig 2",
+    "panel_id": "D",
+    "panel_label": "2D",
+    "title": "Diagonal visible/UV split showing sharp clonal KO vs WT boundaries in female Dsx mKO forewing and hindwing",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g002.png",
+    "bbox": [
+      0,
+      1545,
+      1272,
+      2015
+    ],
+    "pixel_size": [
+      1272,
+      470
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "Doublesex (Dsx)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout",
+      "sex": "female",
+      "imaging_modality": "UV photography (320\u2013400 nm)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:doublesex",
+      "element_type": "coding_exon",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Sharp adjacent UVI KO clone vs non-UVI WT clone boundary on same wing"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "DsxF blocks UV-iridescence in females in a cell-autonomous fashion.A. Effects of Dsx mosaic knock-outs (mKO)"
+  },
+  {
+    "id": "2025_Loh/F2/E",
+    "paper": "2025_Loh",
+    "figure_id": "F2",
+    "figure_label": "Fig 2",
+    "panel_id": "E",
+    "panel_label": "2E",
+    "title": "Dsx siRNA pupal wing electroporation phenocopying ectopic female UVI and male marginal feminization",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g002.png",
+    "bbox": [
+      1272,
+      1545,
+      2040,
+      2015
+    ],
+    "pixel_size": [
+      768,
+      470
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "Doublesex (Dsx)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "RNAi knockdown",
+      "perturbation_modality": "RNAi knockdown",
+      "imaging_modality": "UV photography (320\u2013400 nm)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:doublesex",
+      "element_type": "coding_exon",
+      "allele": "rnai_knockdown",
+      "phenotype": "Pupal Dsx siRNA recapitulates ectopic female UVI in electroporated domain"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "DsxF blocks UV-iridescence in females in a cell-autonomous fashion.A. Effects of Dsx mosaic knock-outs (mKO)"
+  },
+  {
+    "id": "2025_Loh/F2/F",
+    "paper": "2025_Loh",
+    "figure_id": "F2",
+    "figure_label": "Fig 2",
+    "panel_id": "F",
+    "panel_label": "2F",
+    "title": "High-magnification UV image of female Dsx RNAi boundary between untreated and ectopic UVI scales",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g002.png",
+    "bbox": [
+      2040,
+      1545,
+      2548,
+      2015
+    ],
+    "pixel_size": [
+      508,
+      470
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "Doublesex (Dsx)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "RNAi knockdown",
+      "perturbation_modality": "RNAi knockdown",
+      "sex": "female",
+      "imaging_modality": "UV photography (320\u2013400 nm)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "DsxF blocks UV-iridescence in females in a cell-autonomous fashion.A. Effects of Dsx mosaic knock-outs (mKO)"
+  },
+  {
+    "id": "2025_Loh/F3/A",
+    "paper": "2025_Loh",
+    "figure_id": "F3",
+    "figure_label": "Fig 3",
+    "panel_id": "A",
+    "panel_label": "3A",
+    "title": "High-mag visible/UV pair of WT female (non-UVI) and WT male (UVI) central dorsal cover scales",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g003.png",
+    "bbox": [
+      0,
+      0,
+      1270,
+      860
+    ],
+    "pixel_size": [
+      1270,
+      860
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Doublesex (Dsx)",
+      "life_stage": "adult",
+      "perturbation_modality": "wild type",
+      "imaging_modality": "UV photography (320\u2013400 nm)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "DsxF medial expression activates Bab in the female dorsal cover scales.A, B. High-magnification views"
+  },
+  {
+    "id": "2025_Loh/F3/B",
+    "paper": "2025_Loh",
+    "figure_id": "F3",
+    "figure_label": "Fig 3",
+    "panel_id": "B",
+    "panel_label": "3B",
+    "title": "High-mag visible/UV pair of female and male Dsx mKO showing dorsal cover-scale specific female UVI gain",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g003.png",
+    "bbox": [
+      1270,
+      0,
+      2542,
+      860
+    ],
+    "pixel_size": [
+      1272,
+      860
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Doublesex (Dsx)",
+      "life_stage": "adult",
+      "perturbation_modality": "CRISPR G0 mosaic knockout",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "imaging_modality": "UV photography (320\u2013400 nm)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:doublesex",
+      "element_type": "coding_exon",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Dorsal cover-scale (dcs) specific non-UVI to UVI conversion in females; ground scales unchanged"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "DsxF medial expression activates Bab in the female dorsal cover scales.A, B. High-magnification views"
+  },
+  {
+    "id": "2025_Loh/F3/C",
+    "paper": "2025_Loh",
+    "figure_id": "F3",
+    "figure_label": "Fig 3",
+    "panel_id": "C",
+    "panel_label": "3C",
+    "title": "Female 40% pupal whole-wing immunofluorescence of DsxDBD across forewing and hindwing (1 mm bar)",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g003.png",
+    "bbox": [
+      0,
+      860,
+      745,
+      1748
+    ],
+    "pixel_size": [
+      745,
+      888
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Doublesex (Dsx)",
+      "sex": "female",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "DsxDBD"
+    ],
+    "channel_gene_map": {
+      "gray": "DsxDBD (female isoform DsxF)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "DsxF medial expression activates Bab in the female dorsal cover scales.A, B. High-magnification views"
+  },
+  {
+    "id": "2025_Loh/F3/C_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F3",
+    "figure_label": "Fig 3",
+    "panel_id": "C_prime",
+    "panel_label": "3C'",
+    "title": "Female 40% pupal medial immunofluorescence co-localizing DsxDBD (magenta) and Bab (green) in cover and ground scales",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g003.png",
+    "bbox": [
+      745,
+      860,
+      1270,
+      1748
+    ],
+    "pixel_size": [
+      525,
+      888
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Doublesex (Dsx)",
+      "sex": "female",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "DsxDBD",
+      "Bab"
+    ],
+    "channel_gene_map": {
+      "magenta": "DsxDBD (DsxF)",
+      "green": "Bric-a-brac (Bab)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [
+      "C3_dsxf_activates_bab_represses_uvi"
+    ],
+    "linked_resources": [],
+    "caption_quote": "DsxF medial expression activates Bab in the female dorsal cover scales.A, B. High-magnification views"
+  },
+  {
+    "id": "2025_Loh/F3/D",
+    "paper": "2025_Loh",
+    "figure_id": "F3",
+    "figure_label": "Fig 3",
+    "panel_id": "D",
+    "panel_label": "3D",
+    "title": "Male 40% pupal whole-wing immunofluorescence showing DsxDBD restricted to wing margins (1 mm bar)",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g003.png",
+    "bbox": [
+      1270,
+      860,
+      2015,
+      1748
+    ],
+    "pixel_size": [
+      745,
+      888
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Doublesex (Dsx)",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "DsxDBD"
+    ],
+    "channel_gene_map": {
+      "gray": "DsxDBD (male isoform DsxM)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "DsxF medial expression activates Bab in the female dorsal cover scales.A, B. High-magnification views"
+  },
+  {
+    "id": "2025_Loh/F3/D_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F3",
+    "figure_label": "Fig 3",
+    "panel_id": "D_prime",
+    "panel_label": "3D'",
+    "title": "Male 40% pupal marginal band IF showing DsxDBD (magenta) in dorsal cover scales and Bab (green) in ground scales",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g003.png",
+    "bbox": [
+      2015,
+      860,
+      2542,
+      1748
+    ],
+    "pixel_size": [
+      527,
+      888
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Doublesex (Dsx)",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "pattern_element": "marginal band",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "DsxDBD",
+      "Bab"
+    ],
+    "channel_gene_map": {
+      "magenta": "DsxDBD (DsxM)",
+      "green": "Bric-a-brac (Bab)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "DsxF medial expression activates Bab in the female dorsal cover scales.A, B. High-magnification views"
+  },
+  {
+    "id": "2025_Loh/F3/E",
+    "paper": "2025_Loh",
+    "figure_id": "F3",
+    "figure_label": "Fig 3",
+    "panel_id": "E",
+    "panel_label": "3E",
+    "title": "Female 40% pupal contralateral control wing showing DAPI (blue) and Bab (green) in all dorsal cover and ground scales",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g003.png",
+    "bbox": [
+      0,
+      1748,
+      1270,
+      2373
+    ],
+    "pixel_size": [
+      1270,
+      625
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Doublesex (Dsx)",
+      "sex": "female",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "perturbation_modality": "wild type",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "DAPI",
+      "Bab"
+    ],
+    "channel_gene_map": {
+      "blue": "DAPI (nuclei)",
+      "green": "Bric-a-brac (Bab)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [
+      "C3_dsxf_activates_bab_represses_uvi"
+    ],
+    "linked_resources": [],
+    "caption_quote": "DsxF medial expression activates Bab in the female dorsal cover scales.A, B. High-magnification views"
+  },
+  {
+    "id": "2025_Loh/F3/F",
+    "paper": "2025_Loh",
+    "figure_id": "F3",
+    "figure_label": "Fig 3",
+    "panel_id": "F",
+    "panel_label": "3F",
+    "title": "Female 40% pupal Dsx RNAi knockdown wing showing loss of Bab (green) specifically in dorsal cover scales",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g003.png",
+    "bbox": [
+      1270,
+      1748,
+      2542,
+      2373
+    ],
+    "pixel_size": [
+      1272,
+      625
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Doublesex (Dsx)",
+      "sex": "female",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "perturbation_modality": "RNAi knockdown",
+      "allele_or_zygosity": "RNAi knockdown",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "DAPI",
+      "Bab"
+    ],
+    "channel_gene_map": {
+      "blue": "DAPI (nuclei)",
+      "green": "Bric-a-brac (Bab \u2014 lost in dcs upon Dsx RNAi)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [
+      "C3_dsxf_activates_bab_represses_uvi"
+    ],
+    "linked_resources": [],
+    "caption_quote": "DsxF medial expression activates Bab in the female dorsal cover scales.A, B. High-magnification views"
+  },
+  {
+    "id": "2025_Loh/F4/A",
+    "paper": "2025_Loh",
+    "figure_id": "F4",
+    "figure_label": "Fig 4",
+    "panel_id": "A",
+    "panel_label": "4A",
+    "title": "Dorsal hindwing marginal Dsx mKO clone boundaries (canonical black -> spatulate in females; spatulate -> canonical in males)",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g004.png",
+    "bbox": [
+      0,
+      0,
+      1800,
+      1697
+    ],
+    "pixel_size": [
+      1800,
+      1697
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "Doublesex (Dsx)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout",
+      "pattern_element": "marginal band",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:doublesex",
+      "element_type": "coding_exon",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Sharp marginal clonal boundary separating WT and reciprocal KO scale morphologies"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_dsx_crispant_n"
+    ],
+    "linked_claims": [
+      "C4_dsx_reciprocal_spatulate"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Doublesex controls the specification of male-specific spatulate scales.A. Magnified views of the dorsal hindwing marginal bands"
+  },
+  {
+    "id": "2025_Loh/F4/B",
+    "paper": "2025_Loh",
+    "figure_id": "F4",
+    "figure_label": "Fig 4",
+    "panel_id": "B",
+    "panel_label": "4B",
+    "title": "Reciprocal shifts in forewing and hindwing marginal scale arrays across WT and Dsx mKO females and males",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g004.png",
+    "bbox": [
+      1800,
+      0,
+      3600,
+      848
+    ],
+    "pixel_size": [
+      1800,
+      848
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "Doublesex (Dsx)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout",
+      "pattern_element": "marginal band",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:doublesex",
+      "element_type": "coding_exon",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Complete reciprocal cover-scale identity switch in both sexes"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [
+      "C4_dsx_reciprocal_spatulate"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Doublesex controls the specification of male-specific spatulate scales.A. Magnified views of the dorsal hindwing marginal bands"
+  },
+  {
+    "id": "2025_Loh/F4/C",
+    "paper": "2025_Loh",
+    "figure_id": "F4",
+    "figure_label": "Fig 4",
+    "panel_id": "C",
+    "panel_label": "4C",
+    "title": "Isolated single melanic scales confirming canonical black <-> spatulate transformation in female and male Dsx mKO",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g004.png",
+    "bbox": [
+      1800,
+      848,
+      3600,
+      1697
+    ],
+    "pixel_size": [
+      1800,
+      849
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "Doublesex (Dsx)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout",
+      "pattern_element": "marginal band",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:doublesex",
+      "element_type": "coding_exon",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Single-scale blade width and corrugated ridge spacing switch"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [
+      "C4_dsx_reciprocal_spatulate"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Doublesex controls the specification of male-specific spatulate scales.A. Magnified views of the dorsal hindwing marginal bands"
+  },
+  {
+    "id": "2025_Loh/F5/A",
+    "paper": "2025_Loh",
+    "figure_id": "F5",
+    "figure_label": "Fig 5",
+    "panel_id": "A",
+    "panel_label": "5A",
+    "title": "Working GRN hypothesis separating non-autonomous Dsx marginal patterning from cell-autonomous Dsx -> Bab -> UVI/spatulate fate switches",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pbio.3003233.g005.png",
+    "bbox": [
+      0,
+      0,
+      1800,
+      560
+    ],
+    "pixel_size": [
+      1800,
+      560
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Bric-a-brac (Bab)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [
+      "C3_dsxf_activates_bab_represses_uvi",
+      "C4_dsx_reciprocal_spatulate"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Dsx and Bab control sexually dimorphic scale fates.A. Working hypothesis for the effects of Dsx"
+  },
+  {
+    "id": "2025_Loh/F5/B",
+    "paper": "2025_Loh",
+    "figure_id": "F5",
+    "figure_label": "Fig 5",
+    "panel_id": "B",
+    "panel_label": "5B",
+    "title": "Female and male dorsal forewing Bab RNAi knockdown wings vs contralateral controls showing ectopic UV-iridescence",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g005.png",
+    "bbox": [
+      0,
+      560,
+      930,
+      1560
+    ],
+    "pixel_size": [
+      930,
+      1000
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Bric-a-brac (Bab)",
+      "perturbation_modality": "RNAi knockdown",
+      "allele_or_zygosity": "RNAi knockdown",
+      "imaging_modality": "UV photography (320\u2013400 nm)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:bric_a_brac",
+      "element_type": "coding_exon",
+      "allele": "rnai_knockdown",
+      "phenotype": "Ectopic UVI in female cover/ground scales and male ground scales; spatulate scales unaffected"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Dsx and Bab control sexually dimorphic scale fates.A. Working hypothesis for the effects of Dsx"
+  },
+  {
+    "id": "2025_Loh/F5/C",
+    "paper": "2025_Loh",
+    "figure_id": "F5",
+    "figure_label": "Fig 5",
+    "panel_id": "C",
+    "panel_label": "5C",
+    "title": "High-mag medial region Bab RNAi clone boundary showing yellow ground scales converting to UVI in both sexes",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g005.png",
+    "bbox": [
+      930,
+      560,
+      1365,
+      1560
+    ],
+    "pixel_size": [
+      435,
+      1000
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Bric-a-brac (Bab)",
+      "perturbation_modality": "RNAi knockdown",
+      "allele_or_zygosity": "RNAi knockdown",
+      "imaging_modality": "UV photography (320\u2013400 nm)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Dsx and Bab control sexually dimorphic scale fates.A. Working hypothesis for the effects of Dsx"
+  },
+  {
+    "id": "2025_Loh/F5/D",
+    "paper": "2025_Loh",
+    "figure_id": "F5",
+    "figure_label": "Fig 5",
+    "panel_id": "D",
+    "panel_label": "5D",
+    "title": "High-mag marginal band Bab RNAi showing melanic scales acquiring dark-blue iridescence and ectopic UVI vein scales",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pbio.3003233.g005.png",
+    "bbox": [
+      1365,
+      560,
+      1800,
+      1560
+    ],
+    "pixel_size": [
+      435,
+      1000
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Bric-a-brac (Bab)",
+      "perturbation_modality": "RNAi knockdown",
+      "allele_or_zygosity": "RNAi knockdown",
+      "imaging_modality": "UV photography (320\u2013400 nm)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Dsx and Bab control sexually dimorphic scale fates.A. Working hypothesis for the effects of Dsx"
+  },
+  {
+    "id": "2025_Loh/F5/E",
+    "paper": "2025_Loh",
+    "figure_id": "F5",
+    "figure_label": "Fig 5",
+    "panel_id": "E",
+    "panel_label": "5E",
+    "title": "Legend of scale cell types, melanic+UVI blue iridescence, and 30-40% pupal Dsx/Bab expression logic",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pbio.3003233.g005.png",
+    "bbox": [
+      0,
+      1560,
+      880,
+      1986
+    ],
+    "pixel_size": [
+      880,
+      426
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Bric-a-brac (Bab)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Dsx and Bab control sexually dimorphic scale fates.A. Working hypothesis for the effects of Dsx"
+  },
+  {
+    "id": "2025_Loh/F5/F",
+    "paper": "2025_Loh",
+    "figure_id": "F5",
+    "figure_label": "Fig 5",
+    "panel_id": "F",
+    "panel_label": "5F",
+    "title": "Combinatorial WT, Dsx KO, and Bab KO/KD perturbation outcome matrix across female/male medial and marginal regions",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pbio.3003233.g005.png",
+    "bbox": [
+      880,
+      1560,
+      1800,
+      1986
+    ],
+    "pixel_size": [
+      920,
+      426
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "target_gene": "Bric-a-brac (Bab)"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Dsx and Bab control sexually dimorphic scale fates.A. Working hypothesis for the effects of Dsx"
+  },
+  {
+    "id": "2025_Loh/F6/A",
+    "paper": "2025_Loh",
+    "figure_id": "F6",
+    "figure_label": "Fig 6",
+    "panel_id": "A",
+    "panel_label": "6A",
+    "title": "UMAP embedding of 2,961 filtered 40% male pupal hindwing nuclei across 9 major cell clusters",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g006.png",
+    "bbox": [
+      0,
+      0,
+      1320,
+      1465
+    ],
+    "pixel_size": [
+      1320,
+      1465
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F6_snrnaseq_nuclei"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.A. UMAP"
+  },
+  {
+    "id": "2025_Loh/F6/B",
+    "paper": "2025_Loh",
+    "figure_id": "F6",
+    "figure_label": "Fig 6",
+    "panel_id": "B",
+    "panel_label": "6B",
+    "title": "Violin plot of unique genes detected per nucleus across 9 clusters (higher in polyploid scale cells)",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g006.png",
+    "bbox": [
+      1320,
+      0,
+      2225,
+      725
+    ],
+    "pixel_size": [
+      905,
+      725
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F6_snrnaseq_nuclei"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.A. UMAP"
+  },
+  {
+    "id": "2025_Loh/F6/B_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F6",
+    "figure_label": "Fig 6",
+    "panel_id": "B_prime",
+    "panel_label": "6B'",
+    "title": "Violin plot of RNA UMI read counts per nucleus across 9 clusters",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g006.png",
+    "bbox": [
+      1320,
+      725,
+      2225,
+      1465
+    ],
+    "pixel_size": [
+      905,
+      740
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.A. UMAP"
+  },
+  {
+    "id": "2025_Loh/F6/C",
+    "paper": "2025_Loh",
+    "figure_id": "F6",
+    "figure_label": "Fig 6",
+    "panel_id": "C",
+    "panel_label": "6C",
+    "title": "Violin plot of mitochondrial DNA read percentage across non-scale vs scale clusters",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g006.png",
+    "bbox": [
+      2225,
+      0,
+      3055,
+      725
+    ],
+    "pixel_size": [
+      830,
+      725
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.A. UMAP"
+  },
+  {
+    "id": "2025_Loh/F6/C_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F6",
+    "figure_label": "Fig 6",
+    "panel_id": "C_prime",
+    "panel_label": "6C'",
+    "title": "UMAP heatmap of mtDNA percentage separating non-scale epithelial/socket cells from scale cells",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g006.png",
+    "bbox": [
+      2225,
+      725,
+      3055,
+      1465
+    ],
+    "pixel_size": [
+      830,
+      740
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.A. UMAP"
+  },
+  {
+    "id": "2025_Loh/F6/D",
+    "paper": "2025_Loh",
+    "figure_id": "F6",
+    "figure_label": "Fig 6",
+    "panel_id": "D",
+    "panel_label": "6D",
+    "title": "UMAP marker expression for Serpent and Rala in minor clusters Misc1 and Misc2",
+    "archetype": "expression_matrix",
+    "file": "pbio.3003233.g006.png",
+    "bbox": [
+      3055,
+      0,
+      3780,
+      725
+    ],
+    "pixel_size": [
+      725,
+      725
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.A. UMAP"
+  },
+  {
+    "id": "2025_Loh/F6/E",
+    "paper": "2025_Loh",
+    "figure_id": "F6",
+    "figure_label": "Fig 6",
+    "panel_id": "E",
+    "panel_label": "6E",
+    "title": "UMAP marker expression for Stubble (epithelial) and neuromusculin / nrm (socket cells)",
+    "archetype": "expression_matrix",
+    "file": "pbio.3003233.g006.png",
+    "bbox": [
+      3780,
+      0,
+      4500,
+      725
+    ],
+    "pixel_size": [
+      720,
+      725
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.A. UMAP"
+  },
+  {
+    "id": "2025_Loh/F6/F",
+    "paper": "2025_Loh",
+    "figure_id": "F6",
+    "figure_label": "Fig 6",
+    "panel_id": "F",
+    "panel_label": "6F",
+    "title": "UMAP marker expression for rhophilin-2 (wing epithelium) and breathless (tracheal epithelium)",
+    "archetype": "expression_matrix",
+    "file": "pbio.3003233.g006.png",
+    "bbox": [
+      3055,
+      725,
+      3780,
+      1465
+    ],
+    "pixel_size": [
+      725,
+      740
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.A. UMAP"
+  },
+  {
+    "id": "2025_Loh/F6/G",
+    "paper": "2025_Loh",
+    "figure_id": "F6",
+    "figure_label": "Fig 6",
+    "panel_id": "G",
+    "panel_label": "6G",
+    "title": "UMAP marker expression for shaven / sv (scale cells) and Notch (non-scale cells)",
+    "archetype": "expression_matrix",
+    "file": "pbio.3003233.g006.png",
+    "bbox": [
+      3780,
+      725,
+      4500,
+      1465
+    ],
+    "pixel_size": [
+      720,
+      740
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.A. UMAP"
+  },
+  {
+    "id": "2025_Loh/F6/H",
+    "paper": "2025_Loh",
+    "figure_id": "F6",
+    "figure_label": "Fig 6",
+    "panel_id": "H",
+    "panel_label": "6H",
+    "title": "Expression dotplot of top marker genes for non-SOP, epithelial, socket, and general scale clusters",
+    "archetype": "expression_matrix",
+    "file": "pbio.3003233.g006.png",
+    "bbox": [
+      0,
+      1465,
+      4500,
+      2610
+    ],
+    "pixel_size": [
+      4500,
+      1145
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.A. UMAP"
+  },
+  {
+    "id": "2025_Loh/F6/H_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F6",
+    "figure_label": "Fig 6",
+    "panel_id": "H_prime",
+    "panel_label": "6H'",
+    "title": "Expression dotplot of top differentiator genes across Scale1-Scale4 subtypes (including Bab, Dsx, spineless, Msx1/2, Abp1)",
+    "archetype": "expression_matrix",
+    "file": "pbio.3003233.g006.png",
+    "bbox": [
+      0,
+      2610,
+      4500,
+      3776
+    ],
+    "pixel_size": [
+      4500,
+      1166
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.A. UMAP"
+  },
+  {
+    "id": "2025_Loh/F7/A",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "A",
+    "panel_label": "7A",
+    "title": "Scale cell precursor UMAP (1,550 nuclei, 8 sub-clusters: Scale1a-e, Scale2 spatulate, Scale3 UVI, Scale4 hair-like)",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      0,
+      0,
+      1210,
+      1440
+    ],
+    "pixel_size": [
+      1210,
+      1440
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F6_snrnaseq_nuclei"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/B",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "B",
+    "panel_label": "7B",
+    "title": "Violin plots of pan-scale markers shaven (sv), pebbled (peb), and Osi24 across all 8 scale sub-clusters",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      1210,
+      0,
+      2899,
+      465
+    ],
+    "pixel_size": [
+      1689,
+      465
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/C",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "C",
+    "panel_label": "7C",
+    "title": "Antp enrichment in Scale1d and Antp 4C3 immunofluorescence localizing to wing-coupling scales",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      1210,
+      465,
+      2899,
+      955
+    ],
+    "pixel_size": [
+      1689,
+      490
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "target_gene": "Antennapedia (Antp)",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "Antp 4C3",
+      "DAPI"
+    ],
+    "channel_gene_map": {
+      "magenta": "Antp (Antennapedia)",
+      "blue": "DAPI (nuclei)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/D",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "D",
+    "panel_label": "7D",
+    "title": "Violin plots of Bar-H1 (Scale1d), mirror (posterior), and homothorax / hth (proximal) across scale sub-clusters",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      1210,
+      955,
+      2899,
+      1440
+    ],
+    "pixel_size": [
+      1689,
+      485
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/E",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "E",
+    "panel_label": "7E",
+    "title": "Violin plots and wing-domain maps for Scale4 markers apterous-A and cut",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      0,
+      1440,
+      1810,
+      1915
+    ],
+    "pixel_size": [
+      1810,
+      475
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/F",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "F",
+    "panel_label": "7F",
+    "title": "Whole-wing immunofluorescence of Cut 2B10 antigen marking wing margin and epithelial nuclei (1 mm bar)",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      1810,
+      1440,
+      2360,
+      1915
+    ],
+    "pixel_size": [
+      550,
+      475
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "Cut 2B10"
+    ],
+    "channel_gene_map": {
+      "gray": "Cut 2B10"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/G",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "G",
+    "panel_label": "7G",
+    "title": "Cut 2B10 and DAPI immunofluorescence marking neuronal chains inside tracheal lumen (100 \u00b5m bar)",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      2360,
+      1440,
+      2899,
+      1915
+    ],
+    "pixel_size": [
+      539,
+      475
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "Cut 2B10",
+      "DAPI"
+    ],
+    "channel_gene_map": {
+      "gray": "Cut 2B10",
+      "blue": "DAPI"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/H",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "H",
+    "panel_label": "7H",
+    "title": "Cut immunofluorescence showing large dorsal wing-hair nuclei proximal to discal crossvein (100 \u00b5m bar)",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      0,
+      1915,
+      575,
+      2385
+    ],
+    "pixel_size": [
+      575,
+      470
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "Cut 2B10"
+    ],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/H_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "H_prime",
+    "panel_label": "7H'",
+    "title": "Corresponding adult dorsal wing light micrograph showing proximal dorsal hair distribution",
+    "archetype": "macro_morphology",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      575,
+      1915,
+      1150,
+      2385
+    ],
+    "pixel_size": [
+      575,
+      470
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "adult",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/I",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "I",
+    "panel_label": "7I",
+    "title": "High-mag Cut 2B10 + DAPI nuclear staining in large proximal dorsal hair precursors (20 \u00b5m bar)",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      1150,
+      1915,
+      1815,
+      2170
+    ],
+    "pixel_size": [
+      665,
+      255
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "Cut 2B10",
+      "DAPI"
+    ],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/I_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "I_prime",
+    "panel_label": "7I'",
+    "title": "Adult dorsal wing hairs corresponding to Cut-positive large proximal nuclei (100 \u00b5m bar)",
+    "archetype": "macro_morphology",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      1150,
+      2170,
+      1815,
+      2385
+    ],
+    "pixel_size": [
+      665,
+      215
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "adult",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/J",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "J",
+    "panel_label": "7J",
+    "title": "Cut immunofluorescence along wing margin marking elongated margin scale precursors",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      1815,
+      1915,
+      2360,
+      2385
+    ],
+    "pixel_size": [
+      545,
+      470
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "Cut 2B10",
+      "wing membrane"
+    ],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/J_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "J_prime",
+    "panel_label": "7J'",
+    "title": "Adult elongated margin scales corresponding to Cut-positive wing margin precursors (100 \u00b5m bar)",
+    "archetype": "macro_morphology",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      2360,
+      1915,
+      2899,
+      2385
+    ],
+    "pixel_size": [
+      539,
+      470
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "adult",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/K",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "K",
+    "panel_label": "7K",
+    "title": "Violin plot of nubbin expression across 8 scale precursor sub-clusters",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      0,
+      2385,
+      575,
+      2906
+    ],
+    "pixel_size": [
+      575,
+      521
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F7/L",
+    "paper": "2025_Loh",
+    "figure_id": "F7",
+    "figure_label": "Fig 7",
+    "panel_id": "L",
+    "panel_label": "7L",
+    "title": "Dorsal vs ventral 40% pupal IF of DAPI (blue), Bab (green), and Nubbin 2D4 (orange) showing Nubbin repression in dorsal cover scales (20 \u00b5m bar)",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g007.png",
+    "bbox": [
+      575,
+      2385,
+      2899,
+      2906
+    ],
+    "pixel_size": [
+      2324,
+      521
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "imaging_modality": "immunofluorescence (IF)"
+    },
+    "stains_or_markers": [
+      "DAPI",
+      "Bab",
+      "Nubbin 2D4"
+    ],
+    "channel_gene_map": {
+      "blue": "DAPI (nuclei)",
+      "green": "Bric-a-brac (Bab)",
+      "orange": "Nubbin 2D4"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot"
+  },
+  {
+    "id": "2025_Loh/F8/A",
+    "paper": "2025_Loh",
+    "figure_id": "F8",
+    "figure_label": "Fig 8",
+    "panel_id": "A",
+    "panel_label": "8A",
+    "title": "Heatmap of top genes downregulated in Scale2/3 (including Bab) and enriched in Scale3 UVI precursors (Sulfatase1, Obst-B, Drak, Mwh, Stubble)",
+    "archetype": "expression_matrix",
+    "file": "pbio.3003233.g008.png",
+    "bbox": [
+      0,
+      0,
+      910,
+      1115
+    ],
+    "pixel_size": [
+      910,
+      1115
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F8_scale2_scale3_de"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Transcriptional divergence of UVI and spatulate scale cell precursors.All experiments correspond to male wing tissues"
+  },
+  {
+    "id": "2025_Loh/F8/A_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F8",
+    "figure_label": "Fig 8",
+    "panel_id": "A_prime",
+    "panel_label": "8A'",
+    "title": "Heatmap of top genes enriched in Scale2 spatulate precursors (ivory lncRNA, Doublesex, frizzled3, Arylsulfatase, vestigial, Msx1)",
+    "archetype": "expression_matrix",
+    "file": "pbio.3003233.g008.png",
+    "bbox": [
+      910,
+      0,
+      1800,
+      1115
+    ],
+    "pixel_size": [
+      890,
+      1115
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F8_scale2_scale3_de"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Transcriptional divergence of UVI and spatulate scale cell precursors.All experiments correspond to male wing tissues"
+  },
+  {
+    "id": "2025_Loh/F8/B",
+    "paper": "2025_Loh",
+    "figure_id": "F8",
+    "figure_label": "Fig 8",
+    "panel_id": "B",
+    "panel_label": "8B",
+    "title": "Violin plots of Bab, Doublesex, Arylsulfatase (Scale2), Abp1 (Scale3), and Sulfatase1 (Scale3) across scale sub-clusters",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g008.png",
+    "bbox": [
+      0,
+      1115,
+      1800,
+      1430
+    ],
+    "pixel_size": [
+      1800,
+      315
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Transcriptional divergence of UVI and spatulate scale cell precursors.All experiments correspond to male wing tissues"
+  },
+  {
+    "id": "2025_Loh/F8/C",
+    "paper": "2025_Loh",
+    "figure_id": "F8",
+    "figure_label": "Fig 8",
+    "panel_id": "C",
+    "panel_label": "8C",
+    "title": "HCR 3.0 mRNA in situ of Doublesex (exons 1-2) localized to male marginal spatulate scale rows",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g008.png",
+    "bbox": [
+      0,
+      1430,
+      625,
+      2176
+    ],
+    "pixel_size": [
+      625,
+      746
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "target_gene": "Doublesex (Dsx)",
+      "imaging_modality": "HCR/in situ"
+    },
+    "stains_or_markers": [
+      "Doublesex mRNA HCR"
+    ],
+    "channel_gene_map": {
+      "orange": "Doublesex (exons 1-2 mRNA)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Transcriptional divergence of UVI and spatulate scale cell precursors.All experiments correspond to male wing tissues"
+  },
+  {
+    "id": "2025_Loh/F8/D",
+    "paper": "2025_Loh",
+    "figure_id": "F8",
+    "figure_label": "Fig 8",
+    "panel_id": "D",
+    "panel_label": "8D",
+    "title": "Dual HCR 3.0 mRNA in situ of Arylsulfatase (green, Scale2 marginal cover scales) and Abp1 (magenta, medial & ground scales)",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g008.png",
+    "bbox": [
+      625,
+      1430,
+      1440,
+      2176
+    ],
+    "pixel_size": [
+      815,
+      746
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "imaging_modality": "HCR/in situ"
+    },
+    "stains_or_markers": [
+      "Arylsulfatase HCR",
+      "Abp1 HCR"
+    ],
+    "channel_gene_map": {
+      "green": "Arylsulfatase (Scale2 spatulate marker)",
+      "magenta": "Abp1 (medial & ground scale marker)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Transcriptional divergence of UVI and spatulate scale cell precursors.All experiments correspond to male wing tissues"
+  },
+  {
+    "id": "2025_Loh/F8/E",
+    "paper": "2025_Loh",
+    "figure_id": "F8",
+    "figure_label": "Fig 8",
+    "panel_id": "E",
+    "panel_label": "8E",
+    "title": "High-mag HCR 3.0 mRNA in situ of Sulfatase1 (orange) + DAPI (blue) restricted to alternating presumptive UVI scale precursors (10 \u00b5m bar)",
+    "archetype": "expression_imaging",
+    "file": "pbio.3003233.g008.png",
+    "bbox": [
+      1440,
+      1430,
+      1800,
+      2176
+    ],
+    "pixel_size": [
+      360,
+      746
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "scale_type": "UVI cover scale",
+      "imaging_modality": "HCR/in situ"
+    },
+    "stains_or_markers": [
+      "Sulfatase1 HCR",
+      "DAPI"
+    ],
+    "channel_gene_map": {
+      "orange": "Sulfatase1 (Scale3 UVI marker)",
+      "blue": "DAPI (nuclei)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Transcriptional divergence of UVI and spatulate scale cell precursors.All experiments correspond to male wing tissues"
+  },
+  {
+    "id": "2025_Loh/F9/A",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "A",
+    "panel_label": "9A",
+    "title": "MEME-ChIP discovered AT-rich C. eurytheme Bab DNA-binding motif matching Drosophila Bab1",
+    "archetype": "genomic_track_or_locus",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      0,
+      0,
+      1345,
+      1085
+    ],
+    "pixel_size": [
+      1345,
+      1085
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "ChIP-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": {
+      "assay": "ChIP-seq (MEME-ChIP motif)",
+      "motif_match": "Drosophila melanogaster Bab1 (AT-rich consensus)"
+    },
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F9_bab_chip_peaks"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/B",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "B",
+    "panel_label": "9B",
+    "title": "HOMER genomic annotation of Bab ChIP-seq sites at 40% (N=9,430) and 60% (N=2,216) pupal stages with Scale2/3 DE overlap",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      1345,
+      0,
+      3260,
+      1085
+    ],
+    "pixel_size": [
+      1915,
+      1085
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "ChIP-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F9_bab_chip_peaks"
+    ],
+    "linked_claims": [],
+    "linked_resources": [
+      "loh_osf_bab_chip"
+    ],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/C",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "C",
+    "panel_label": "9C",
+    "title": "Venn diagram intersecting 40%/60% Bab ChIP-bound genes (1,482 shared) with Scale2/3 DE genes (77 up, 53 down)",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      3260,
+      0,
+      4500,
+      1085
+    ],
+    "pixel_size": [
+      1240,
+      1085
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "ChIP-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F9_bab_chip_peaks"
+    ],
+    "linked_claims": [],
+    "linked_resources": [
+      "loh_osf_bab_chip"
+    ],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/D",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "D",
+    "panel_label": "9D",
+    "title": "Bab ChIP-seq genome browser track across the Bab locus (Sc0000009, 5.0-5.25 Mb) showing 24 auto-binding peaks",
+    "archetype": "genomic_track_or_locus",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      0,
+      1085,
+      2240,
+      1865
+    ],
+    "pixel_size": [
+      2240,
+      780
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "ChIP-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": {
+      "scaffold": "Sc0000009_pilon",
+      "interval": "4.95-5.25 Mb",
+      "locus_gene": "Bab (LOC123705510)",
+      "stages": [
+        "40% pupa",
+        "60% pupa"
+      ]
+    },
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F9_bab_chip_peaks",
+      "F10_bab_target_peaks"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/E",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "E",
+    "panel_label": "9E",
+    "title": "Bab ChIP-seq genome browser track across the Doublesex (Dsx) locus (Sc0000068, 1.15-1.45 Mb) showing cross-regulatory binding",
+    "archetype": "genomic_track_or_locus",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      2240,
+      1085,
+      4500,
+      1865
+    ],
+    "pixel_size": [
+      2260,
+      780
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Doublesex (Dsx)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "ChIP-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": {
+      "scaffold": "Sc0000068_pilon",
+      "interval": "1.15-1.45 Mb",
+      "locus_gene": "Doublesex (Dsx)",
+      "stages": [
+        "40% pupa",
+        "60% pupa"
+      ]
+    },
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F9_bab_chip_peaks"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/F",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "F",
+    "panel_label": "9F",
+    "title": "Bab ChIP-seq genome browser track across tandem Msx1 and Msx2 transcription factor loci (Sc0000054, 0.75-1.05 Mb)",
+    "archetype": "genomic_track_or_locus",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      0,
+      1865,
+      2240,
+      2655
+    ],
+    "pixel_size": [
+      2240,
+      790
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "ChIP-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": {
+      "scaffold": "Sc0000054_pilon",
+      "interval": "0.75-1.05 Mb",
+      "locus_gene": "Msx1 / Msx2 tandem cluster",
+      "stages": [
+        "40% pupa",
+        "60% pupa"
+      ]
+    },
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/G",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "G",
+    "panel_label": "9G",
+    "title": "snRNA-seq cluster violin plot of Msx1 expression (enriched in Bab- Scale2 & Scale3)",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      2240,
+      1865,
+      3375,
+      2655
+    ],
+    "pixel_size": [
+      1135,
+      790
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/G_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "G_prime",
+    "panel_label": "9G'",
+    "title": "snRNA-seq cluster violin plot of Msx2 expression (top Scale3 UVI marker)",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      3375,
+      1865,
+      4500,
+      2655
+    ],
+    "pixel_size": [
+      1125,
+      790
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/H",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "H",
+    "panel_label": "9H",
+    "title": "Bab ChIP-seq genome browser track across tandem chitin-modifier Obstructor cluster (Obst-D, Obst-B, Obst-C/gasp)",
+    "archetype": "genomic_track_or_locus",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      0,
+      2655,
+      1185,
+      3455
+    ],
+    "pixel_size": [
+      1185,
+      800
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "ChIP-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": {
+      "scaffold": "Sc0000002_pilon",
+      "interval": "7.48-7.62 Mb",
+      "locus_gene": "Obst-D / Obst-B / Obst-C (gasp) tandem cluster",
+      "stages": [
+        "40% pupa",
+        "60% pupa"
+      ]
+    },
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/I",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "I",
+    "panel_label": "9I",
+    "title": "snRNA-seq cluster violin plot of Obst-D (peritrophin-A) enriched in Scale3 UVI",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      1185,
+      2655,
+      2290,
+      3455
+    ],
+    "pixel_size": [
+      1105,
+      800
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/I_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "I_prime",
+    "panel_label": "9I'",
+    "title": "snRNA-seq cluster violin plot of Obst-B restricted to Scale3 UVI",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      2290,
+      2655,
+      3395,
+      3455
+    ],
+    "pixel_size": [
+      1105,
+      800
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/I_dprime",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "I_dprime",
+    "panel_label": "9I''",
+    "title": "snRNA-seq cluster violin plot of Obst-C (gasp) strongly upregulated in Scale3 UVI",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      3395,
+      2655,
+      4500,
+      3455
+    ],
+    "pixel_size": [
+      1105,
+      800
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/J",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "J",
+    "panel_label": "9J",
+    "title": "Bab ChIP-seq genome browser track across chitin deacetylase loci Vermiform and Serpentine (Sc0000036)",
+    "archetype": "genomic_track_or_locus",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      0,
+      3455,
+      2240,
+      4245
+    ],
+    "pixel_size": [
+      2240,
+      790
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "ChIP-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": {
+      "scaffold": "Sc0000036_pilon",
+      "interval": "0.0-0.25 Mb",
+      "locus_gene": "Vermiform / Serpentine tandem cluster",
+      "stages": [
+        "40% pupa",
+        "60% pupa"
+      ]
+    },
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/K",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "K",
+    "panel_label": "9K",
+    "title": "snRNA-seq cluster violin plot of Vermiform enriched in Scale2 spatulate precursors",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      2240,
+      3455,
+      3375,
+      4245
+    ],
+    "pixel_size": [
+      1135,
+      790
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F9/K_prime",
+    "paper": "2025_Loh",
+    "figure_id": "F9",
+    "figure_label": "Fig 9",
+    "panel_id": "K_prime",
+    "panel_label": "9K'",
+    "title": "snRNA-seq cluster violin plot of Serpentine enriched in Scale2 spatulate precursors",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g009.png",
+    "bbox": [
+      3375,
+      3455,
+      4500,
+      4245
+    ],
+    "pixel_size": [
+      1125,
+      790
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40% and 60%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab\u2013 scale types.A."
+  },
+  {
+    "id": "2025_Loh/F10/A",
+    "paper": "2025_Loh",
+    "figure_id": "F10",
+    "figure_label": "Fig 10",
+    "panel_id": "A",
+    "panel_label": "10A",
+    "title": "Boxplot of differential expression significance (-log10 p_val_adj) binned by Bab ChIP peak count (0, 1-10, 10+)",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g010.png",
+    "bbox": [
+      0,
+      0,
+      1300,
+      1500
+    ],
+    "pixel_size": [
+      1300,
+      1500
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "ChIP-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f10_genomics.py",
+    "data": {
+      "digitized_boxplots": {
+        "bab_peaks_0": {
+          "median": 0.0,
+          "q1": 0.0,
+          "q3": 2.18,
+          "whisker_lo": 0.0,
+          "whisker_hi": 13.3,
+          "y_unit": "-log10(p_adj)"
+        },
+        "bab_peaks_1_10": {
+          "median": 3.98,
+          "q1": 0.92,
+          "q3": 3.98,
+          "whisker_lo": 0.0,
+          "whisker_hi": 13.44,
+          "y_unit": "-log10(p_adj)"
+        },
+        "bab_peaks_10p": {
+          "median": 12.88,
+          "q1": 2.18,
+          "q3": 12.88,
+          "whisker_lo": 0.0,
+          "whisker_hi": 33.74,
+          "y_unit": "-log10(p_adj)"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          150,
+          240,
+          1050,
+          1440
+        ],
+        "y_range": [
+          -7.84,
+          159.02
+        ],
+        "y_misfit_px": 0.335,
+        "groups": {
+          "bab_peaks_0": {
+            "x_center": 159,
+            "half_width": 55
+          },
+          "bab_peaks_1_10": {
+            "x_center": 426,
+            "half_width": 55
+          },
+          "bab_peaks_10p": {
+            "x_center": 695,
+            "half_width": 55
+          }
+        },
+        "kind": "boxplots"
+      }
+    },
+    "n_digitized_points": 3,
+    "linked_items": [
+      "F9_bab_chip_peaks",
+      "F10_bab_uvi_targets_count"
+    ],
+    "linked_claims": [
+      "C6_bab_chip_enriches_uvi_de"
+    ],
+    "linked_resources": [
+      "loh_osf_bab_chip"
+    ],
+    "caption_quote": "Potential targets of Bab regulation in the UVI scale type.A. Box and whiskers plot of probability"
+  },
+  {
+    "id": "2025_Loh/F10/B",
+    "paper": "2025_Loh",
+    "figure_id": "F10",
+    "figure_label": "Fig 10",
+    "panel_id": "B",
+    "panel_label": "10B",
+    "title": "21 UVI-DE genes (>=3 Bab ChIP peaks) x 8 scale clusters expression dotplot (% expressing & scaled expression, 168 cells)",
+    "archetype": "expression_matrix",
+    "file": "pbio.3003233.g010.png",
+    "bbox": [
+      1300,
+      0,
+      3600,
+      1500
+    ],
+    "pixel_size": [
+      2300,
+      1500
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "snRNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f10_genomics.py",
+    "data": {
+      "dotplot_matrix": {
+        "clusters": [
+          "1a",
+          "1b",
+          "1c",
+          "1d",
+          "1e",
+          "2 (spatulate)",
+          "3 (UVI)",
+          "4"
+        ],
+        "genes": [
+          "Bab",
+          "Eip75B",
+          "Mwh",
+          "Drak",
+          "CAP",
+          "Dachsous",
+          "Bazooka",
+          "Fimbrin",
+          "Formin-like",
+          "Cog3",
+          "Arl4",
+          "Klp31E",
+          "Steppke",
+          "Ectodermal",
+          "ObstE/Gasp",
+          "Osi17",
+          "Cpr92F",
+          "Cpr92F-like",
+          "ChLD3",
+          "lncRNA (bantam)",
+          "ABCG20"
+        ],
+        "cells": [
+          {
+            "cluster": "1a",
+            "gene": "Bab",
+            "pct": 100.0,
+            "expr": 1.17,
+            "px": 465,
+            "py": 418,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1a",
+            "gene": "Eip75B",
+            "pct": 100.0,
+            "expr": -0.04,
+            "px": 554,
+            "py": 418,
+            "r_px": 39.0
+          },
+          {
+            "cluster": "1a",
+            "gene": "Mwh",
+            "pct": 100.0,
+            "expr": 0.13,
+            "px": 643,
+            "py": 418,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1a",
+            "gene": "Drak",
+            "pct": 97.5,
+            "expr": 0.13,
+            "px": 732,
+            "py": 418,
+            "r_px": 27.9
+          },
+          {
+            "cluster": "1a",
+            "gene": "CAP",
+            "pct": 64.2,
+            "expr": -0.01,
+            "px": 821,
+            "py": 418,
+            "r_px": 19.4
+          },
+          {
+            "cluster": "1a",
+            "gene": "Dachsous",
+            "pct": 79.4,
+            "expr": 0.01,
+            "px": 910,
+            "py": 418,
+            "r_px": 23.4
+          },
+          {
+            "cluster": "1a",
+            "gene": "Bazooka",
+            "pct": 16.3,
+            "expr": -0.2,
+            "px": 999,
+            "py": 418,
+            "r_px": 7.2
+          },
+          {
+            "cluster": "1a",
+            "gene": "Fimbrin",
+            "pct": 56.6,
+            "expr": 0.27,
+            "px": 1088,
+            "py": 418,
+            "r_px": 17.5
+          },
+          {
+            "cluster": "1a",
+            "gene": "Formin-like",
+            "pct": 100.0,
+            "expr": 0.98,
+            "px": 1177,
+            "py": 418,
+            "r_px": 33.2
+          },
+          {
+            "cluster": "1a",
+            "gene": "Cog3",
+            "pct": 37.7,
+            "expr": 0.0,
+            "px": 1267,
+            "py": 418,
+            "r_px": 12.7
+          },
+          {
+            "cluster": "1a",
+            "gene": "Arl4",
+            "pct": 52.9,
+            "expr": 0.6,
+            "px": 1355,
+            "py": 418,
+            "r_px": 16.5
+          },
+          {
+            "cluster": "1a",
+            "gene": "Klp31E",
+            "pct": 100.0,
+            "expr": 1.17,
+            "px": 1444,
+            "py": 418,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1a",
+            "gene": "Steppke",
+            "pct": 100.0,
+            "expr": 1.17,
+            "px": 1533,
+            "py": 418,
+            "r_px": 39.2
+          },
+          {
+            "cluster": "1a",
+            "gene": "Ectodermal",
+            "pct": 100.0,
+            "expr": -0.1,
+            "px": 1622,
+            "py": 418,
+            "r_px": 39.4
+          },
+          {
+            "cluster": "1a",
+            "gene": "ObstE/Gasp",
+            "pct": 100.0,
+            "expr": 0.29,
+            "px": 1711,
+            "py": 418,
+            "r_px": 38.8
+          },
+          {
+            "cluster": "1a",
+            "gene": "Osi17",
+            "pct": 100.0,
+            "expr": -0.2,
+            "px": 1800,
+            "py": 418,
+            "r_px": 35.8
+          },
+          {
+            "cluster": "1a",
+            "gene": "Cpr92F",
+            "pct": 14.0,
+            "expr": 0.13,
+            "px": 1889,
+            "py": 418,
+            "r_px": 6.7
+          },
+          {
+            "cluster": "1a",
+            "gene": "Cpr92F-like",
+            "pct": 100.0,
+            "expr": 0.83,
+            "px": 1979,
+            "py": 418,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1a",
+            "gene": "ChLD3",
+            "pct": 100.0,
+            "expr": 0.35,
+            "px": 2066,
+            "py": 418,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1a",
+            "gene": "lncRNA (bantam)",
+            "pct": 77.6,
+            "expr": 0.69,
+            "px": 2155,
+            "py": 418,
+            "r_px": 22.9
+          },
+          {
+            "cluster": "1a",
+            "gene": "ABCG20",
+            "pct": 34.7,
+            "expr": 0.06,
+            "px": 2239,
+            "py": 418,
+            "r_px": 11.9
+          },
+          {
+            "cluster": "1b",
+            "gene": "Bab",
+            "pct": 100.0,
+            "expr": 1.2,
+            "px": 465,
+            "py": 510,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1b",
+            "gene": "Eip75B",
+            "pct": 100.0,
+            "expr": -0.4,
+            "px": 554,
+            "py": 510,
+            "r_px": 38.9
+          },
+          {
+            "cluster": "1b",
+            "gene": "Mwh",
+            "pct": 100.0,
+            "expr": 0.61,
+            "px": 643,
+            "py": 510,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1b",
+            "gene": "Drak",
+            "pct": 100.0,
+            "expr": 0.86,
+            "px": 732,
+            "py": 510,
+            "r_px": 38.7
+          },
+          {
+            "cluster": "1b",
+            "gene": "CAP",
+            "pct": 65.8,
+            "expr": -0.04,
+            "px": 821,
+            "py": 510,
+            "r_px": 19.9
+          },
+          {
+            "cluster": "1b",
+            "gene": "Dachsous",
+            "pct": 59.5,
+            "expr": -0.23,
+            "px": 910,
+            "py": 510,
+            "r_px": 18.2
+          },
+          {
+            "cluster": "1b",
+            "gene": "Bazooka",
+            "pct": 18.1,
+            "expr": -0.18,
+            "px": 999,
+            "py": 510,
+            "r_px": 7.7
+          },
+          {
+            "cluster": "1b",
+            "gene": "Fimbrin",
+            "pct": 66.5,
+            "expr": 0.37,
+            "px": 1088,
+            "py": 510,
+            "r_px": 20.0
+          },
+          {
+            "cluster": "1b",
+            "gene": "Formin-like",
+            "pct": 100.0,
+            "expr": 1.32,
+            "px": 1177,
+            "py": 510,
+            "r_px": 38.2
+          },
+          {
+            "cluster": "1b",
+            "gene": "Cog3",
+            "pct": 44.8,
+            "expr": 0.1,
+            "px": 1267,
+            "py": 510,
+            "r_px": 14.5
+          },
+          {
+            "cluster": "1b",
+            "gene": "Arl4",
+            "pct": 38.0,
+            "expr": -0.08,
+            "px": 1355,
+            "py": 510,
+            "r_px": 12.8
+          },
+          {
+            "cluster": "1b",
+            "gene": "Klp31E",
+            "pct": 100.0,
+            "expr": 0.83,
+            "px": 1444,
+            "py": 510,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1b",
+            "gene": "Steppke",
+            "pct": 100.0,
+            "expr": 0.93,
+            "px": 1533,
+            "py": 510,
+            "r_px": 38.7
+          },
+          {
+            "cluster": "1b",
+            "gene": "Ectodermal",
+            "pct": 100.0,
+            "expr": -0.18,
+            "px": 1622,
+            "py": 510,
+            "r_px": 39.4
+          },
+          {
+            "cluster": "1b",
+            "gene": "ObstE/Gasp",
+            "pct": 100.0,
+            "expr": 0.12,
+            "px": 1711,
+            "py": 510,
+            "r_px": 38.5
+          },
+          {
+            "cluster": "1b",
+            "gene": "Osi17",
+            "pct": 100.0,
+            "expr": -0.2,
+            "px": 1800,
+            "py": 510,
+            "r_px": 37.3
+          },
+          {
+            "cluster": "1b",
+            "gene": "Cpr92F",
+            "pct": 9.9,
+            "expr": 0.12,
+            "px": 1889,
+            "py": 510,
+            "r_px": 5.6
+          },
+          {
+            "cluster": "1b",
+            "gene": "Cpr92F-like",
+            "pct": 100.0,
+            "expr": 0.93,
+            "px": 1979,
+            "py": 510,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1b",
+            "gene": "ChLD3",
+            "pct": 100.0,
+            "expr": 0.44,
+            "px": 2066,
+            "py": 510,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1b",
+            "gene": "lncRNA (bantam)",
+            "pct": 91.0,
+            "expr": 0.9,
+            "px": 2155,
+            "py": 510,
+            "r_px": 26.2
+          },
+          {
+            "cluster": "1b",
+            "gene": "ABCG20",
+            "pct": 28.7,
+            "expr": -0.05,
+            "px": 2239,
+            "py": 510,
+            "r_px": 10.4
+          },
+          {
+            "cluster": "1c",
+            "gene": "Bab",
+            "pct": 100.0,
+            "expr": 0.55,
+            "px": 465,
+            "py": 602,
+            "r_px": 39.1
+          },
+          {
+            "cluster": "1c",
+            "gene": "Eip75B",
+            "pct": 100.0,
+            "expr": 0.19,
+            "px": 554,
+            "py": 602,
+            "r_px": 39.4
+          },
+          {
+            "cluster": "1c",
+            "gene": "Mwh",
+            "pct": 100.0,
+            "expr": 0.58,
+            "px": 643,
+            "py": 602,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1c",
+            "gene": "Drak",
+            "pct": 74.8,
+            "expr": 0.02,
+            "px": 732,
+            "py": 602,
+            "r_px": 22.2
+          },
+          {
+            "cluster": "1c",
+            "gene": "CAP",
+            "pct": 100.0,
+            "expr": 0.7,
+            "px": 821,
+            "py": 602,
+            "r_px": 32.0
+          },
+          {
+            "cluster": "1c",
+            "gene": "Dachsous",
+            "pct": 65.5,
+            "expr": -0.01,
+            "px": 910,
+            "py": 602,
+            "r_px": 19.8
+          },
+          {
+            "cluster": "1c",
+            "gene": "Bazooka",
+            "pct": 12.2,
+            "expr": -0.29,
+            "px": 999,
+            "py": 602,
+            "r_px": 6.2
+          },
+          {
+            "cluster": "1c",
+            "gene": "Fimbrin",
+            "pct": 46.2,
+            "expr": 0.04,
+            "px": 1088,
+            "py": 602,
+            "r_px": 14.8
+          },
+          {
+            "cluster": "1c",
+            "gene": "Formin-like",
+            "pct": 100.0,
+            "expr": 0.63,
+            "px": 1177,
+            "py": 602,
+            "r_px": 30.7
+          },
+          {
+            "cluster": "1c",
+            "gene": "Cog3",
+            "pct": 36.5,
+            "expr": -0.1,
+            "px": 1267,
+            "py": 602,
+            "r_px": 12.4
+          },
+          {
+            "cluster": "1c",
+            "gene": "Arl4",
+            "pct": 64.0,
+            "expr": 0.51,
+            "px": 1355,
+            "py": 602,
+            "r_px": 19.4
+          },
+          {
+            "cluster": "1c",
+            "gene": "Klp31E",
+            "pct": 100.0,
+            "expr": 0.8,
+            "px": 1444,
+            "py": 602,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1c",
+            "gene": "Steppke",
+            "pct": 100.0,
+            "expr": 0.56,
+            "px": 1533,
+            "py": 602,
+            "r_px": 37.5
+          },
+          {
+            "cluster": "1c",
+            "gene": "Ectodermal",
+            "pct": 100.0,
+            "expr": 0.1,
+            "px": 1622,
+            "py": 602,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1c",
+            "gene": "ObstE/Gasp",
+            "pct": 100.0,
+            "expr": 0.19,
+            "px": 1711,
+            "py": 602,
+            "r_px": 38.8
+          },
+          {
+            "cluster": "1c",
+            "gene": "Osi17",
+            "pct": 100.0,
+            "expr": 0.12,
+            "px": 1800,
+            "py": 602,
+            "r_px": 38.0
+          },
+          {
+            "cluster": "1c",
+            "gene": "Cpr92F",
+            "pct": 17.0,
+            "expr": 0.3,
+            "px": 1889,
+            "py": 602,
+            "r_px": 7.4
+          },
+          {
+            "cluster": "1c",
+            "gene": "Cpr92F-like",
+            "pct": 100.0,
+            "expr": -0.33,
+            "px": 1979,
+            "py": 602,
+            "r_px": 39.3
+          },
+          {
+            "cluster": "1c",
+            "gene": "ChLD3",
+            "pct": 100.0,
+            "expr": 1.02,
+            "px": 2066,
+            "py": 602,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1c",
+            "gene": "lncRNA (bantam)",
+            "pct": 65.0,
+            "expr": 0.36,
+            "px": 2155,
+            "py": 602,
+            "r_px": 19.6
+          },
+          {
+            "cluster": "1c",
+            "gene": "ABCG20",
+            "pct": 38.1,
+            "expr": 0.13,
+            "px": 2239,
+            "py": 602,
+            "r_px": 12.8
+          },
+          {
+            "cluster": "1d",
+            "gene": "Bab",
+            "pct": 100.0,
+            "expr": 0.69,
+            "px": 465,
+            "py": 694,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1d",
+            "gene": "Eip75B",
+            "pct": 100.0,
+            "expr": 0.33,
+            "px": 554,
+            "py": 694,
+            "r_px": 39.3
+          },
+          {
+            "cluster": "1d",
+            "gene": "Mwh",
+            "pct": 100.0,
+            "expr": 0.69,
+            "px": 643,
+            "py": 694,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1d",
+            "gene": "Drak",
+            "pct": 100.0,
+            "expr": 0.29,
+            "px": 732,
+            "py": 694,
+            "r_px": 32.6
+          },
+          {
+            "cluster": "1d",
+            "gene": "CAP",
+            "pct": 79.8,
+            "expr": 0.2,
+            "px": 821,
+            "py": 694,
+            "r_px": 23.5
+          },
+          {
+            "cluster": "1d",
+            "gene": "Dachsous",
+            "pct": 78.5,
+            "expr": -0.01,
+            "px": 910,
+            "py": 694,
+            "r_px": 23.1
+          },
+          {
+            "cluster": "1d",
+            "gene": "Bazooka",
+            "pct": 31.0,
+            "expr": 0.1,
+            "px": 999,
+            "py": 694,
+            "r_px": 11.0
+          },
+          {
+            "cluster": "1d",
+            "gene": "Fimbrin",
+            "pct": 34.0,
+            "expr": -0.12,
+            "px": 1088,
+            "py": 694,
+            "r_px": 11.7
+          },
+          {
+            "cluster": "1d",
+            "gene": "Formin-like",
+            "pct": 76.9,
+            "expr": -0.01,
+            "px": 1177,
+            "py": 694,
+            "r_px": 22.7
+          },
+          {
+            "cluster": "1d",
+            "gene": "Cog3",
+            "pct": 50.6,
+            "expr": 0.3,
+            "px": 1267,
+            "py": 694,
+            "r_px": 15.9
+          },
+          {
+            "cluster": "1d",
+            "gene": "Arl4",
+            "pct": 99.7,
+            "expr": 0.87,
+            "px": 1355,
+            "py": 694,
+            "r_px": 28.4
+          },
+          {
+            "cluster": "1d",
+            "gene": "Klp31E",
+            "pct": 100.0,
+            "expr": 0.08,
+            "px": 1444,
+            "py": 694,
+            "r_px": 38.1
+          },
+          {
+            "cluster": "1d",
+            "gene": "Steppke",
+            "pct": 100.0,
+            "expr": 0.51,
+            "px": 1533,
+            "py": 694,
+            "r_px": 34.9
+          },
+          {
+            "cluster": "1d",
+            "gene": "Ectodermal",
+            "pct": 100.0,
+            "expr": 0.29,
+            "px": 1622,
+            "py": 694,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1d",
+            "gene": "ObstE/Gasp",
+            "pct": 100.0,
+            "expr": 0.29,
+            "px": 1711,
+            "py": 694,
+            "r_px": 38.8
+          },
+          {
+            "cluster": "1d",
+            "gene": "Osi17",
+            "pct": 100.0,
+            "expr": 0.3,
+            "px": 1800,
+            "py": 694,
+            "r_px": 38.8
+          },
+          {
+            "cluster": "1d",
+            "gene": "Cpr92F",
+            "pct": 15.4,
+            "expr": 0.21,
+            "px": 1889,
+            "py": 694,
+            "r_px": 7.0
+          },
+          {
+            "cluster": "1d",
+            "gene": "Cpr92F-like",
+            "pct": 100.0,
+            "expr": 0.8,
+            "px": 1979,
+            "py": 694,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1d",
+            "gene": "ChLD3",
+            "pct": 100.0,
+            "expr": 1.24,
+            "px": 2066,
+            "py": 694,
+            "r_px": 39.4
+          },
+          {
+            "cluster": "1d",
+            "gene": "lncRNA (bantam)",
+            "pct": 76.7,
+            "expr": 0.6,
+            "px": 2155,
+            "py": 694,
+            "r_px": 22.7
+          },
+          {
+            "cluster": "1d",
+            "gene": "ABCG20",
+            "pct": 46.7,
+            "expr": 0.36,
+            "px": 2239,
+            "py": 694,
+            "r_px": 14.9
+          },
+          {
+            "cluster": "1e",
+            "gene": "Bab",
+            "pct": 100.0,
+            "expr": 1.29,
+            "px": 465,
+            "py": 786,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1e",
+            "gene": "Eip75B",
+            "pct": 100.0,
+            "expr": -0.05,
+            "px": 554,
+            "py": 786,
+            "r_px": 38.7
+          },
+          {
+            "cluster": "1e",
+            "gene": "Mwh",
+            "pct": 100.0,
+            "expr": 0.26,
+            "px": 643,
+            "py": 786,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1e",
+            "gene": "Drak",
+            "pct": 65.0,
+            "expr": -0.23,
+            "px": 732,
+            "py": 786,
+            "r_px": 19.6
+          },
+          {
+            "cluster": "1e",
+            "gene": "CAP",
+            "pct": 95.9,
+            "expr": 0.26,
+            "px": 821,
+            "py": 786,
+            "r_px": 27.5
+          },
+          {
+            "cluster": "1e",
+            "gene": "Dachsous",
+            "pct": 75.2,
+            "expr": -0.01,
+            "px": 910,
+            "py": 786,
+            "r_px": 22.3
+          },
+          {
+            "cluster": "1e",
+            "gene": "Bazooka",
+            "pct": 29.8,
+            "expr": 0.18,
+            "px": 999,
+            "py": 786,
+            "r_px": 10.7
+          },
+          {
+            "cluster": "1e",
+            "gene": "Fimbrin",
+            "pct": 50.8,
+            "expr": 0.29,
+            "px": 1088,
+            "py": 786,
+            "r_px": 16.0
+          },
+          {
+            "cluster": "1e",
+            "gene": "Formin-like",
+            "pct": 28.7,
+            "expr": -0.63,
+            "px": 1177,
+            "py": 786,
+            "r_px": 10.4
+          },
+          {
+            "cluster": "1e",
+            "gene": "Cog3",
+            "pct": 45.5,
+            "expr": 0.63,
+            "px": 1267,
+            "py": 786,
+            "r_px": 14.6
+          },
+          {
+            "cluster": "1e",
+            "gene": "Arl4",
+            "pct": 34.7,
+            "expr": -0.08,
+            "px": 1355,
+            "py": 786,
+            "r_px": 11.9
+          },
+          {
+            "cluster": "1e",
+            "gene": "Klp31E",
+            "pct": 100.0,
+            "expr": 1.85,
+            "px": 1444,
+            "py": 786,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1e",
+            "gene": "Steppke",
+            "pct": 100.0,
+            "expr": 1.37,
+            "px": 1533,
+            "py": 786,
+            "r_px": 39.2
+          },
+          {
+            "cluster": "1e",
+            "gene": "Ectodermal",
+            "pct": 100.0,
+            "expr": 0.19,
+            "px": 1622,
+            "py": 786,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1e",
+            "gene": "ObstE/Gasp",
+            "pct": 100.0,
+            "expr": 0.54,
+            "px": 1711,
+            "py": 786,
+            "r_px": 38.8
+          },
+          {
+            "cluster": "1e",
+            "gene": "Osi17",
+            "pct": 100.0,
+            "expr": 0.26,
+            "px": 1800,
+            "py": 786,
+            "r_px": 39.1
+          },
+          {
+            "cluster": "1e",
+            "gene": "Cpr92F",
+            "pct": 6.7,
+            "expr": -0.01,
+            "px": 1889,
+            "py": 786,
+            "r_px": 4.8
+          },
+          {
+            "cluster": "1e",
+            "gene": "Cpr92F-like",
+            "pct": 100.0,
+            "expr": 0.51,
+            "px": 1979,
+            "py": 786,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "1e",
+            "gene": "ChLD3",
+            "pct": 100.0,
+            "expr": -0.5,
+            "px": 2066,
+            "py": 786,
+            "r_px": 39.3
+          },
+          {
+            "cluster": "1e",
+            "gene": "lncRNA (bantam)",
+            "pct": 50.6,
+            "expr": -0.08,
+            "px": 2155,
+            "py": 786,
+            "r_px": 15.9
+          },
+          {
+            "cluster": "1e",
+            "gene": "ABCG20",
+            "pct": 45.3,
+            "expr": 0.19,
+            "px": 2239,
+            "py": 786,
+            "r_px": 14.6
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Bab",
+            "pct": 55.3,
+            "expr": -0.8,
+            "px": 465,
+            "py": 878,
+            "r_px": 17.1
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Eip75B",
+            "pct": 100.0,
+            "expr": 0.9,
+            "px": 554,
+            "py": 878,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Mwh",
+            "pct": 100.0,
+            "expr": 0.49,
+            "px": 643,
+            "py": 878,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Drak",
+            "pct": 88.1,
+            "expr": -0.14,
+            "px": 732,
+            "py": 878,
+            "r_px": 25.5
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "CAP",
+            "pct": 100.0,
+            "expr": 0.55,
+            "px": 821,
+            "py": 878,
+            "r_px": 33.2
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Dachsous",
+            "pct": 100.0,
+            "expr": 1.43,
+            "px": 910,
+            "py": 878,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Bazooka",
+            "pct": 81.9,
+            "expr": 1.39,
+            "px": 999,
+            "py": 878,
+            "r_px": 24.0
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Fimbrin",
+            "pct": 13.2,
+            "expr": -0.44,
+            "px": 1088,
+            "py": 878,
+            "r_px": 6.4
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Formin-like",
+            "pct": 100.0,
+            "expr": 0.7,
+            "px": 1177,
+            "py": 878,
+            "r_px": 33.2
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Cog3",
+            "pct": 45.2,
+            "expr": 0.12,
+            "px": 1267,
+            "py": 878,
+            "r_px": 14.6
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Arl4",
+            "pct": 40.1,
+            "expr": 0.01,
+            "px": 1355,
+            "py": 878,
+            "r_px": 13.3
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Klp31E",
+            "pct": 100.0,
+            "expr": 0.04,
+            "px": 1444,
+            "py": 878,
+            "r_px": 38.5
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Steppke",
+            "pct": 100.0,
+            "expr": 0.85,
+            "px": 1533,
+            "py": 878,
+            "r_px": 39.2
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Ectodermal",
+            "pct": 100.0,
+            "expr": 0.58,
+            "px": 1622,
+            "py": 878,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "ObstE/Gasp",
+            "pct": 100.0,
+            "expr": 0.07,
+            "px": 1711,
+            "py": 878,
+            "r_px": 39.0
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Osi17",
+            "pct": 100.0,
+            "expr": 1.04,
+            "px": 1800,
+            "py": 878,
+            "r_px": 39.2
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Cpr92F",
+            "pct": 11.6,
+            "expr": 0.07,
+            "px": 1889,
+            "py": 878,
+            "r_px": 6.0
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "Cpr92F-like",
+            "pct": 100.0,
+            "expr": 0.74,
+            "px": 1979,
+            "py": 878,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "ChLD3",
+            "pct": 100.0,
+            "expr": 0.69,
+            "px": 2066,
+            "py": 878,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "lncRNA (bantam)",
+            "pct": 100.0,
+            "expr": 2.1,
+            "px": 2155,
+            "py": 878,
+            "r_px": 34.7
+          },
+          {
+            "cluster": "2 (spatulate)",
+            "gene": "ABCG20",
+            "pct": 50.8,
+            "expr": 0.4,
+            "px": 2239,
+            "py": 878,
+            "r_px": 16.0
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Bab",
+            "pct": 50.6,
+            "expr": -0.73,
+            "px": 465,
+            "py": 970,
+            "r_px": 15.9
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Eip75B",
+            "pct": 100.0,
+            "expr": 2.23,
+            "px": 554,
+            "py": 970,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Mwh",
+            "pct": 100.0,
+            "expr": 2.08,
+            "px": 643,
+            "py": 970,
+            "r_px": 39.6
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Drak",
+            "pct": 100.0,
+            "expr": 2.3,
+            "px": 732,
+            "py": 970,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "CAP",
+            "pct": 100.0,
+            "expr": 2.39,
+            "px": 821,
+            "py": 970,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Dachsous",
+            "pct": 100.0,
+            "expr": 1.99,
+            "px": 910,
+            "py": 970,
+            "r_px": 39.6
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Bazooka",
+            "pct": 99.4,
+            "expr": 1.82,
+            "px": 999,
+            "py": 970,
+            "r_px": 28.4
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Fimbrin",
+            "pct": 100.0,
+            "expr": 1.65,
+            "px": 1088,
+            "py": 970,
+            "r_px": 32.7
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Formin-like",
+            "pct": 49.7,
+            "expr": -0.63,
+            "px": 1177,
+            "py": 970,
+            "r_px": 15.7
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Cog3",
+            "pct": 100.0,
+            "expr": 2.44,
+            "px": 1267,
+            "py": 970,
+            "r_px": 34.4
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Arl4",
+            "pct": 100.0,
+            "expr": 2.27,
+            "px": 1355,
+            "py": 970,
+            "r_px": 39.6
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Klp31E",
+            "pct": 100.0,
+            "expr": -0.77,
+            "px": 1444,
+            "py": 970,
+            "r_px": 32.1
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Steppke",
+            "pct": 40.0,
+            "expr": -0.95,
+            "px": 1533,
+            "py": 970,
+            "r_px": 13.3
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Ectodermal",
+            "pct": 100.0,
+            "expr": 2.39,
+            "px": 1622,
+            "py": 970,
+            "r_px": 39.6
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "ObstE/Gasp",
+            "pct": 100.0,
+            "expr": 2.44,
+            "px": 1711,
+            "py": 970,
+            "r_px": 39.6
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Osi17",
+            "pct": 100.0,
+            "expr": 2.27,
+            "px": 1800,
+            "py": 970,
+            "r_px": 39.6
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Cpr92F",
+            "pct": 100.0,
+            "expr": 2.44,
+            "px": 1889,
+            "py": 970,
+            "r_px": 31.3
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "Cpr92F-like",
+            "pct": 0.0,
+            "expr": 0.0,
+            "px": 1979,
+            "py": 970,
+            "r_px": 1.0
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "ChLD3",
+            "pct": 100.0,
+            "expr": -0.86,
+            "px": 2066,
+            "py": 970,
+            "r_px": 28.6
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "lncRNA (bantam)",
+            "pct": 30.2,
+            "expr": -0.61,
+            "px": 2155,
+            "py": 970,
+            "r_px": 10.8
+          },
+          {
+            "cluster": "3 (UVI)",
+            "gene": "ABCG20",
+            "pct": 100.0,
+            "expr": 2.44,
+            "px": 2239,
+            "py": 970,
+            "r_px": 35.3
+          },
+          {
+            "cluster": "4",
+            "gene": "Bab",
+            "pct": 100.0,
+            "expr": 0.54,
+            "px": 465,
+            "py": 1062,
+            "r_px": 38.8
+          },
+          {
+            "cluster": "4",
+            "gene": "Eip75B",
+            "pct": 100.0,
+            "expr": 0.69,
+            "px": 554,
+            "py": 1062,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "4",
+            "gene": "Mwh",
+            "pct": 100.0,
+            "expr": -0.89,
+            "px": 643,
+            "py": 1062,
+            "r_px": 38.7
+          },
+          {
+            "cluster": "4",
+            "gene": "Drak",
+            "pct": 100.0,
+            "expr": 0.69,
+            "px": 732,
+            "py": 1062,
+            "r_px": 28.8
+          },
+          {
+            "cluster": "4",
+            "gene": "CAP",
+            "pct": 45.0,
+            "expr": -0.13,
+            "px": 821,
+            "py": 1062,
+            "r_px": 14.5
+          },
+          {
+            "cluster": "4",
+            "gene": "Dachsous",
+            "pct": 100.0,
+            "expr": 0.69,
+            "px": 910,
+            "py": 1062,
+            "r_px": 37.0
+          },
+          {
+            "cluster": "4",
+            "gene": "Bazooka",
+            "pct": 82.5,
+            "expr": 1.11,
+            "px": 999,
+            "py": 1062,
+            "r_px": 24.1
+          },
+          {
+            "cluster": "4",
+            "gene": "Fimbrin",
+            "pct": 100.0,
+            "expr": 1.83,
+            "px": 1088,
+            "py": 1062,
+            "r_px": 33.6
+          },
+          {
+            "cluster": "4",
+            "gene": "Formin-like",
+            "pct": 100.0,
+            "expr": 1.49,
+            "px": 1177,
+            "py": 1062,
+            "r_px": 36.4
+          },
+          {
+            "cluster": "4",
+            "gene": "Cog3",
+            "pct": 57.0,
+            "expr": 0.4,
+            "px": 1267,
+            "py": 1062,
+            "r_px": 17.6
+          },
+          {
+            "cluster": "4",
+            "gene": "Arl4",
+            "pct": 19.5,
+            "expr": -0.18,
+            "px": 1355,
+            "py": 1062,
+            "r_px": 8.1
+          },
+          {
+            "cluster": "4",
+            "gene": "Klp31E",
+            "pct": 100.0,
+            "expr": -0.07,
+            "px": 1444,
+            "py": 1062,
+            "r_px": 37.4
+          },
+          {
+            "cluster": "4",
+            "gene": "Steppke",
+            "pct": 92.6,
+            "expr": -0.52,
+            "px": 1533,
+            "py": 1062,
+            "r_px": 26.7
+          },
+          {
+            "cluster": "4",
+            "gene": "Ectodermal",
+            "pct": 100.0,
+            "expr": 0.63,
+            "px": 1622,
+            "py": 1062,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "4",
+            "gene": "ObstE/Gasp",
+            "pct": 100.0,
+            "expr": -0.04,
+            "px": 1711,
+            "py": 1062,
+            "r_px": 39.1
+          },
+          {
+            "cluster": "4",
+            "gene": "Osi17",
+            "pct": 100.0,
+            "expr": 0.32,
+            "px": 1800,
+            "py": 1062,
+            "r_px": 38.0
+          },
+          {
+            "cluster": "4",
+            "gene": "Cpr92F",
+            "pct": 34.2,
+            "expr": 0.6,
+            "px": 1889,
+            "py": 1062,
+            "r_px": 11.8
+          },
+          {
+            "cluster": "4",
+            "gene": "Cpr92F-like",
+            "pct": 100.0,
+            "expr": 1.51,
+            "px": 1979,
+            "py": 1062,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "4",
+            "gene": "ChLD3",
+            "pct": 100.0,
+            "expr": 1.49,
+            "px": 2066,
+            "py": 1062,
+            "r_px": 39.5
+          },
+          {
+            "cluster": "4",
+            "gene": "lncRNA (bantam)",
+            "pct": 54.6,
+            "expr": -0.05,
+            "px": 2155,
+            "py": 1062,
+            "r_px": 16.9
+          },
+          {
+            "cluster": "4",
+            "gene": "ABCG20",
+            "pct": 55.0,
+            "expr": 0.35,
+            "px": 2239,
+            "py": 1062,
+            "r_px": 17.0
+          }
+        ],
+        "expr_range": [
+          -1.0,
+          2.5
+        ]
+      },
+      "n_genes": 21,
+      "n_clusters": 8,
+      "n_cells_extracted": 168
+    },
+    "n_digitized_points": 168,
+    "linked_items": [
+      "F10_bab_uvi_targets_count",
+      "F10_bab_target_expression",
+      "F10_bab_target_peaks"
+    ],
+    "linked_claims": [
+      "C5_bab_repression_targets"
+    ],
+    "linked_resources": [
+      "loh_osf_bab_chip"
+    ],
+    "caption_quote": "Potential targets of Bab regulation in the UVI scale type.A. Box and whiskers plot of probability"
+  },
+  {
+    "id": "2025_Loh/F10/C",
+    "paper": "2025_Loh",
+    "figure_id": "F10",
+    "figure_label": "Fig 10",
+    "panel_id": "C",
+    "panel_label": "10C",
+    "title": "Volcano plot of Scale3 UVI-DE genes colored by Bab ChIP-seq peak count (0 to 54 peaks, DataS6)",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g010.png",
+    "bbox": [
+      0,
+      1500,
+      1365,
+      2959
+    ],
+    "pixel_size": [
+      1365,
+      1459
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "ChIP-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f10_genomics.py",
+    "data": {
+      "digitized_scatter": {
+        "bab_peaks_10_plus": {
+          "x": [
+            1.812,
+            -1.482,
+            1.472,
+            1.751,
+            -0.844,
+            -1.656,
+            0.963,
+            0.619,
+            0.846,
+            1.415,
+            0.368,
+            -1.549,
+            0.246,
+            3.308,
+            2.043,
+            -0.755,
+            0.843,
+            2.333,
+            -4.165
+          ],
+          "y": [
+            51.77,
+            48.68,
+            33.7,
+            32.39,
+            20.89,
+            17.23,
+            13.93,
+            8.73,
+            8.16,
+            7.46,
+            6.45,
+            6.22,
+            5.52,
+            0.75,
+            52.39,
+            9.54,
+            13.99,
+            53.48,
+            39.81
+          ],
+          "n": 19,
+          "x_unit": "log2FC",
+          "y_unit": "-log10(p_adj)"
+        },
+        "bab_peaks_3_to_9": {
+          "x": [
+            3.706,
+            1.768,
+            2.48,
+            2.299,
+            -2.636,
+            1.451,
+            0.711,
+            -1.654,
+            -0.728,
+            -1.357,
+            1.123,
+            -1.447,
+            1.939,
+            0.928,
+            -1.292,
+            -2.864,
+            0.78,
+            1.863,
+            -1.348,
+            -1.377,
+            -0.944,
+            0.884,
+            1.409,
+            0.609,
+            1.179,
+            -1.284,
+            0.299,
+            -0.657,
+            0.653,
+            0.681,
+            0.809,
+            0.504,
+            -1.501,
+            0.376,
+            -0.677,
+            -0.278,
+            1.009,
+            -0.307,
+            -0.585,
+            0.679,
+            -1.234,
+            -0.489,
+            -0.822,
+            1.85,
+            0.13,
+            -3.287,
+            -1.861,
+            2.875,
+            -1.691,
+            -4.326,
+            -2.739,
+            -1.967,
+            -1.614,
+            0.734,
+            1.462,
+            0.525,
+            1.975,
+            0.437,
+            0.449,
+            0.314,
+            0.598,
+            -3.247,
+            -1.172,
+            1.462,
+            1.987,
+            3.236,
+            1.884,
+            0.461,
+            -2.886,
+            2.412,
+            0.197
+          ],
+          "y": [
+            58.98,
+            49.45,
+            48.64,
+            42.6,
+            38.84,
+            36.23,
+            35.08,
+            34.44,
+            33.97,
+            33.72,
+            33.55,
+            32.93,
+            32.57,
+            32.07,
+            31.46,
+            22.8,
+            20.34,
+            20.14,
+            19.69,
+            16.51,
+            16.49,
+            15.06,
+            13.77,
+            13.36,
+            13.19,
+            12.94,
+            12.87,
+            12.44,
+            11.9,
+            10.5,
+            9.6,
+            8.74,
+            8.22,
+            8.17,
+            7.64,
+            7.37,
+            7.1,
+            6.19,
+            5.63,
+            4.76,
+            4.38,
+            4.14,
+            4.02,
+            3.59,
+            3.5,
+            2.65,
+            1.62,
+            0.43,
+            0.14,
+            0.0,
+            0.04,
+            0.0,
+            33.85,
+            4.4,
+            34.98,
+            13.39,
+            21.74,
+            3.37,
+            8.48,
+            8.01,
+            11.64,
+            37.52,
+            5.34,
+            0.03,
+            0.0,
+            54.84,
+            27.62,
+            15.32,
+            45.19,
+            48.91,
+            3.32
+          ],
+          "n": 71,
+          "x_unit": "log2FC",
+          "y_unit": "-log10(p_adj)"
+        },
+        "bab_peaks_1_to_2": {
+          "x": [
+            2.571,
+            1.813,
+            3.132,
+            1.617,
+            -1.244,
+            1.984,
+            3.486,
+            2.563,
+            -2.388,
+            -0.445,
+            1.861,
+            -1.28
+          ],
+          "y": [
+            53.06,
+            36.31,
+            51.58,
+            20.44,
+            17.58,
+            1.0,
+            59.61,
+            50.43,
+            17.14,
+            5.09,
+            36.04,
+            21.26
+          ],
+          "n": 12,
+          "x_unit": "log2FC",
+          "y_unit": "-log10(p_adj)"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          150,
+          220,
+          1340,
+          1384
+        ],
+        "x_range": [
+          -6.943,
+          7.245
+        ],
+        "y_range": [
+          -7.68,
+          159.33
+        ],
+        "x_misfit_px": 0.236,
+        "y_misfit_px": 0.0,
+        "kind": "scatter"
+      }
+    },
+    "n_digitized_points": 102,
+    "linked_items": [
+      "F10_bab_uvi_targets_count",
+      "F10_bab_target_expression"
+    ],
+    "linked_claims": [
+      "C5_bab_repression_targets"
+    ],
+    "linked_resources": [
+      "loh_osf_bab_chip"
+    ],
+    "caption_quote": "Potential targets of Bab regulation in the UVI scale type.A. Box and whiskers plot of probability"
+  },
+  {
+    "id": "2025_Loh/F10/D",
+    "paper": "2025_Loh",
+    "figure_id": "F10",
+    "figure_label": "Fig 10",
+    "panel_id": "D",
+    "panel_label": "10D",
+    "title": "Volcano plot of UVI-DE genes colored by selective sweeps in sympatric C. eurytheme vs C. philodice with Z-chromosome admixture tree",
+    "archetype": "quantitative_plot",
+    "file": "pbio.3003233.g010.png",
+    "bbox": [
+      1365,
+      1500,
+      3600,
+      2959
+    ],
+    "pixel_size": [
+      2235,
+      1459
+    ],
+    "context": {
+      "species": "Colias eurytheme",
+      "family": "Pieridae",
+      "anatomical_region": "dorsal wing",
+      "sex": "male",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "40%",
+      "target_gene": "Bric-a-brac (Bab)",
+      "genetic_element_type": "cis-regulatory element (CRE)",
+      "imaging_modality": "WGS / GWAS"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F10_bab_uvi_targets_count"
+    ],
+    "linked_claims": [],
+    "linked_resources": [
+      "loh_osf_bab_chip"
+    ],
+    "caption_quote": "Potential targets of Bab regulation in the UVI scale type.A. Box and whiskers plot of probability"
+  }
+]

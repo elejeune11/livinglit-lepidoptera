@@ -418,6 +418,74 @@ def parse_code_registry(papers_dir: Path = PAPERS_DIR) -> list[dict[str, Any]]:
     return registry
 
 
+def parse_genomic_tables(records_dir: Path, papers_dir: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Schema-driven ingestion of supplemental genomics/genetics/morphometrics CSVs declared in genetics.yaml."""
+    from .models import GeneticsFile
+
+    tables_out: list[dict[str, Any]] = []
+    relations_out: list[dict[str, Any]] = []
+    for gpath in sorted(records_dir.glob("*/genetics.yaml")):
+        paper = gpath.parent.name
+        gf = GeneticsFile.model_validate(yaml.safe_load(gpath.read_text(encoding="utf-8")))
+        for r in gf.relations:
+            relations_out.append({"paper": paper, **r.model_dump()})
+        for gt in gf.genomic_tables:
+            fpath = papers_dir / paper / gt.file
+            rows_parsed: list[dict[str, Any]] = []
+            if fpath.is_file() and fpath.suffix.lower() in (".csv", ".tsv"):
+                delim = "\t" if fpath.suffix.lower() == ".tsv" else ","
+                with open(fpath, encoding="utf-8-sig") as fh:
+                    raw_rows = list(csv.reader(fh, delimiter=delim))
+                if raw_rows:
+                    header = raw_rows[0]
+                    col_idx: dict[str, int] = {}
+                    for norm_k, spec_col in gt.columns.items():
+                        if isinstance(spec_col, int):
+                            col_idx[norm_k] = spec_col
+                        elif spec_col in header:
+                            col_idx[norm_k] = header.index(spec_col)
+                    for r in raw_rows[1:]:
+                        if not any(c.strip() for c in r):
+                            continue
+                        if col_idx:
+                            rec_row: dict[str, Any] = {}
+                            for norm_k, idx in col_idx.items():
+                                val = r[idx].strip() if idx < len(r) else ""
+                                if norm_k in ("log2fc", "p_val", "p_adj", "pct_1", "pct_2", "spacing_um", "value", "score"):
+                                    try:
+                                        rec_row[norm_k] = float(val)
+                                    except ValueError:
+                                        rec_row[norm_k] = val
+                                elif norm_k in ("chip_peaks", "n_injected", "n_hatched", "n_emerged", "n_phenotype"):
+                                    try:
+                                        rec_row[norm_k] = int(float(val))
+                                    except ValueError:
+                                        rec_row[norm_k] = val
+                                else:
+                                    rec_row[norm_k] = val.replace("_", " ") if norm_k == "product" else val
+                            rows_parsed.append(rec_row)
+                        else:
+                            rows_parsed.append({header[i]: (r[i].strip() if i < len(r) else "") for i in range(len(header))})
+            tables_out.append({
+                "paper": paper,
+                "id": gt.id,
+                "kind": gt.kind,
+                "file": gt.file,
+                "title": gt.title,
+                "assay": gt.assay,
+                "contrast": gt.contrast,
+                "stage": gt.stage,
+                "taxon": gt.taxon,
+                "linked_items": list(gt.linked_items),
+                "linked_panels": list(gt.linked_panels),
+                "anchor": gt.anchor.model_dump(),
+                "note": gt.note,
+                "n_rows": len(rows_parsed),
+                "rows": rows_parsed,
+            })
+    return tables_out, relations_out
+
+
 def build_data_hub(
     tag: str = "data-hub-v1",
     records_dir: Path = RECORDS_DIR,
@@ -451,12 +519,13 @@ def build_data_hub(
         with open(scsv, encoding="utf-8") as fh:
             all_series.extend(list(csv.DictReader(fh)))
 
-    # 3. Parse harvested external datasets & code (gracefully empty if paper not present)
+    # 3. Parse harvested external datasets, generalized genomic tables & code
     parnell_hub = parse_parnell_saxs_and_spectra(papers_dir / "2018_Parnell")
     loh_hub = parse_loh_osf(papers_dir / "2025_Loh")
     seah_hub = parse_seah_elife(papers_dir / "2023_Seah")
     mt_hub = parse_mcdougal_and_totz(papers_dir)
     code_reg = parse_code_registry(papers_dir)
+    genomic_tables, genetic_relations = parse_genomic_tables(records_dir, papers_dir)
 
     # 4. Collect bespoke per-figure Python extractor scripts for auditable code viewing in UI
     extractor_scripts: dict[str, str] = {}
@@ -474,6 +543,9 @@ def build_data_hub(
             "n_qa_reports": len(qa_reports),
             "n_resource_entries": sum(len(v) for v in all_resources.values()),
             "n_code_scripts_indexed": len(code_reg),
+            "n_genetic_relations": len(genetic_relations),
+            "n_genomic_tables": len(genomic_tables),
+            "n_genomic_table_rows": sum(t["n_rows"] for t in genomic_tables),
             "n_parnell_saxs_scans": len(parnell_hub["saxs_scans"]),
             "n_loh_interridge_scales": len(loh_hub["interridge_rows"]),
             "n_loh_bab_target_genes": len(loh_hub["bab_targets"]),
@@ -486,6 +558,8 @@ def build_data_hub(
         "resources": all_resources,
         "code_registry": code_reg,
         "extractor_scripts": extractor_scripts,
+        "genetic_relations": genetic_relations,
+        "genomic_tables": genomic_tables,
         "parnell": parnell_hub,
         "loh": loh_hub,
         "seah": seah_hub,

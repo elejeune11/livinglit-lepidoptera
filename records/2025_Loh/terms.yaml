@@ -1,0 +1,97 @@
+record: 2025_Loh
+vocabulary_version: 3
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_genetics
+edits: []
+mappings:
+  - field: life_stage
+    stated: adults
+    terms: [life_stage:adult]
+  - field: life_stage
+    stated: pupal
+    terms: [life_stage:pupa]
+  - field: anatomical_region
+    stated: dorsal wings
+    terms: [anatomical_region:dorsal_wing]
+  - field: anatomical_region
+    stated: either wing surface
+    terms: [anatomical_region:dorsal_wing, anatomical_region:ventral_wing]
+  - field: anatomical_region
+    stated: ventral
+    terms: [anatomical_region:ventral_wing]
+  - field: pattern_element
+    stated: medial regions
+    terms: [pattern_element:medial_patch]
+  - field: pattern_element
+    stated: marginal bands
+    terms: [pattern_element:marginal_band]
+  - field: pattern_element
+    stated: discal spots and medial regions
+    terms: [pattern_element:discal_spot, pattern_element:medial_patch]
+  - field: pattern_element
+    stated: marginal and medial regions
+    terms: [pattern_element:marginal_band, pattern_element:medial_patch]
+  - field: scale_type
+    stated: canonical
+    terms: [scale_type:canonical_cover_scale]
+  - field: scale_type
+    stated: UVI dorsal cover scale
+    terms: [scale_type:uvi_cover_scale]
+  - field: scale_type
+    stated: spatulate dorsal cover scale
+    terms: [scale_type:spatulate_cover_scale]
+  - field: scale_type
+    stated: cover scales
+    terms: [scale_type:cover_scale]
+  - field: scale_type
+    stated: scale cell precursors
+    terms: [scale_type:wing_scale]
+  - field: functional_architecture
+    stated: multilayering of ridge lamellae
+    terms: [functional_architecture:ridge_lamellar_multilayer]
+  - field: functional_architecture
+    stated: melanic
+    terms: [functional_architecture:melanin_pigmentary]
+  - field: functional_architecture
+    stated: pterin-pigmented
+    terms: [functional_architecture:pterin_pigmentary]
+  - field: functional_architecture
+    stated: melanic scales, pterin-pigmented scales
+    terms: [functional_architecture:melanin_pigmentary, functional_architecture:pterin_pigmentary]
+  - field: target_gene
+    stated: Multiple wing hair (Mwh)
+    terms: [target_gene:multiple_wing_hairs]
+  - field: genetic_element_type
+    stated: exons
+    terms: [genetic_element_type:coding_exon]
+  - field: genetic_element_type
+    stated: Bab ChIP-seq binding sites
+    terms: [genetic_element_type:cis_regulatory_element]
+  - field: allele_or_zygosity
+    stated: G0 crispants
+    terms: [allele_or_zygosity:g0_somatic_mosaic]
+  - field: perturbation_modality
+    stated: CRISPR mosaic knock-outs
+    terms: [perturbation_modality:crispr_g0_mosaic]
+  - field: imaging_modality
+    stated: Scanning Electron Microscopy
+    terms: [imaging_modality:sem]
+  - field: imaging_modality
+    stated: UV photographs, visible light images
+    terms: [imaging_modality:light_microscopy, imaging_modality:uv_photography]
+  - field: view_orientation
+    stated: Apical views
+    terms: [view_orientation:top_down_apical]
+  - field: view_orientation
+    stated: Dorsal views
+    terms: [view_orientation:top_down_apical]
+  - field: hydration_and_prep
+    stated: electron micrographs
+    terms: [hydration_and_prep:vacuum_sputter_coated]
+  - field: hydration_and_prep
+    stated: fixed nuclei
+    terms: [hydration_and_prep:fixed_hydrated]
+  - field: hydration_and_prep
+    stated: live nuclei
+    terms: [hydration_and_prep:live_in_vivo]

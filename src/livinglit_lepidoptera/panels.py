@@ -38,6 +38,10 @@ PanelArchetype = Literal[
     "quantitative_plot",
     "spectral_or_profile",
     "phylogeny_or_schematic",
+    "expression_imaging",
+    "genomic_track_or_locus",
+    "expression_matrix",
+    "crispant_phenotype_plate",
 ]
 
 
@@ -139,6 +143,9 @@ class PanelSpec(Strict):
     archetype: PanelArchetype
     context: dict[str, str] = Field(default_factory=dict)
     stains_or_markers: list[str] = Field(default_factory=list)
+    channel_gene_map: dict[str, str] = Field(default_factory=dict)
+    genomic_locus: dict[str, Any] | None = None
+    crispant_summary: dict[str, Any] | None = None
     scale_bar: ScaleBarSpec | None = None
     periodic_spec: PeriodicMeasureSpec | None = None
     curve_spec: CurveTraceSpec | None = None
@@ -1183,6 +1190,9 @@ def compute_panel_object(
         "pixel_size": [int(crop.shape[1]), int(crop.shape[0])],
         "context": ctx,
         "stains_or_markers": list(pspec.stains_or_markers),
+        "channel_gene_map": dict(pspec.channel_gene_map),
+        "genomic_locus": pspec.genomic_locus,
+        "crispant_summary": pspec.crispant_summary,
         "scale_bar_um": pspec.scale_bar.um if pspec.scale_bar else None,
         "extractor_script": pspec.extractor.split(":", 1)[0] if pspec.extractor else None,
         "data": computed,

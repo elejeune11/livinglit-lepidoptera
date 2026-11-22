@@ -14,12 +14,16 @@ Prototype audits showed that coarse `top`/`bottom` or `A–C` composite crops si
 2. **Automated composite-panel guard (`gate panels`)**: Fails if a `panel_id` or `panel_label` uses composite patterns (`top`, `bottom`, `left`, `right`, `A–C`, `C–D`, `I–J`, `AB`, `CD`) unless explicitly whitelisted with `composite_justification` (e.g., an inseparable stereo pair or indivisible sequential time-lapse strip sharing one shared axis).
 3. **Full-Figure BBox Contact Sheet**: Every segmentation pass renders every full source figure with labeled colored bounding rectangles. The agent visually inspects every contact sheet before proceeding to digitization.
 4. **Panel archetypes**:
-   - `quantitative_plot` (scatter, regression, errorbar, boxplot, violin, bar, dotplot matrix, volcano)
-   - `spectral_or_profile` (continuous reflectance/Raman/SAXS/FDTD curves, AFM/height transects, ChIP/coverage tracks)
+   - `quantitative_plot` (scatter, regression, errorbar, boxplot, violin, bar, volcano)
+   - `spectral_or_profile` (continuous reflectance/Raman/SAXS/FDTD curves, AFM/height transects)
    - `planar_microscopy` (top-down/whole-mount SEM, SIM, confocal, optical — eligible for 2D-FFT ridge/cross-rib metrology and True-Scale Comparison)
    - `cross_section` (FIB-SEM, TEM, XZ orthogonal sections — eligible for scale-bar calibration & layer thickness measurement)
    - `macro_morphology` (whole wing / specimen photographs)
    - `phylogeny_or_schematic` (cladograms, regulatory circuits, optical schematics)
+   - `crispant_phenotype_plate` (CRISPR G0 mosaic, germline KO, or RNAi knockdown wing plates — carries optional `crispant_summary: {target_gene, element_type, perturbation, penetrance_note, ...}`)
+   - `expression_imaging` (HCR 3.0 in situ hybridization, antibody immunofluorescence, GFP/Gal4 reporter imaging — carries optional `channel_gene_map: {green: "Bab", magenta: "DAPI", ...}`)
+   - `expression_matrix` (snRNA-seq / scRNA-seq / bulk RNA-seq dotplots, heatmaps, UMAP/t-SNE embeddings — dotplots emit `dotplot_matrix` cells for live overlay verification & interactive re-plotting)
+   - `genomic_track_or_locus` (ChIP-seq / CUT&Tag / ATAC-seq browser tracks, MEME-ChIP motifs, GWAS Manhattan / Fst / selective-sweep tracks — carries optional `genomic_locus: {scaffold, interval, locus_gene, stages}`)
 
 ---
 

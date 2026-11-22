@@ -9,7 +9,8 @@ import pytest
 from livinglit_lepidoptera import RECORDS_DIR
 from livinglit_lepidoptera.across import Unit, compute_context_diff
 from livinglit_lepidoptera.matching import Side
-from livinglit_lepidoptera.models import Manifest, Record
+from livinglit_lepidoptera.gate_record import check_record
+from livinglit_lepidoptera.models import GeneticsFile, Manifest, Record
 from livinglit_lepidoptera.panels import PanelsFile, _is_composite_panel
 from livinglit_lepidoptera.vocab import field_config, load_vocab
 
@@ -43,8 +44,11 @@ def test_manifest_schema_and_oa_policy():
 
 def test_relaxed_context_diff_and_confounders():
     v = load_vocab("lepidoptera")
-    assert len(v.terms) >= 170
-    # All standing keys in field_set 3 are relaxed (must_match == [])
+    assert len(v.terms) >= 230
+    assert "genetic_element_type" in v.fields
+    assert "allele_or_zygosity" in v.fields
+    assert "FlyBase:FBgn0004870" in (v.terms["target_gene:bric_a_brac"].xref or [])
+    # All standing keys in field_set 4 are relaxed (must_match == [])
     for k, sk in v.keys.items():
         assert sk.value.must_match == [], f"Standing key {k} should have relaxed must_match=[]"
 
@@ -77,16 +81,20 @@ def test_relaxed_context_diff_and_confounders():
     assert any("hydration_and_prep" in c for c in diff["confounders"])
 
 
-@pytest.mark.parametrize("paper", ["2024_Lloyd", "2026_Finet"])
-def test_pilot_records_schema_and_qa_clean(paper: str):
+@pytest.mark.parametrize("paper,expected_fs,min_claims,min_ext", [
+    ("2024_Lloyd", 3, 7, 3),
+    ("2025_Loh", 4, 6, 2),
+    ("2026_Finet", 3, 7, 3),
+])
+def test_pilot_records_schema_and_qa_clean(paper: str, expected_fs: int, min_claims: int, min_ext: int):
     rdir = RECORDS_DIR / paper
     mf = Manifest.model_validate(yaml.safe_load((rdir / "manifest.yaml").read_text(encoding="utf-8")))
     assert mf.oa_status == "open_access"
 
     rec = Record.model_validate(yaml.safe_load((rdir / "record.yaml").read_text(encoding="utf-8")))
-    assert rec.field_set == 3
-    assert len(rec.claims) >= 7
-    assert len(rec.context_anchors) >= 15
+    assert rec.field_set == expected_fs
+    assert len(rec.claims) >= min_claims
+    assert len(rec.context_anchors) >= 12
 
     pf = PanelsFile.model_validate(yaml.safe_load((rdir / "panels.yaml").read_text(encoding="utf-8")))
     for fid, fig in pf.figures.items():
@@ -96,4 +104,41 @@ def test_pilot_records_schema_and_qa_clean(paper: str):
     qa = json.loads((rdir / "qa" / "report.json").read_text(encoding="utf-8"))
     assert qa["composite_panels"] == 0
     assert qa["flagged_panels"] == []
-    assert qa["n_custom_extractors"] >= 3
+    assert qa["n_custom_extractors"] >= min_ext
+
+
+def test_genetics_schema_and_binding_tier_guard(tmp_path: Path):
+    rdir = RECORDS_DIR / "2025_Loh"
+    gf = GeneticsFile.model_validate(yaml.safe_load((rdir / "genetics.yaml").read_text(encoding="utf-8")))
+    assert len(gf.relations) >= 12
+    assert len(gf.genomic_tables) >= 2
+    assert any(r.id == "bab_binds_represses_mwh" for r in gf.relations)
+    assert any(gt.id == "bab_uvi_de_targets" for gt in gf.genomic_tables)
+
+    # Guard test: claiming direct binding / chromatin_or_binding_only without a binding assay MUST fail gate_record
+    rec_copy = tmp_path / "2025_Loh_bad"
+    rec_copy.mkdir()
+    (rec_copy / "record.yaml").write_text((rdir / "record.yaml").read_text(encoding="utf-8"), encoding="utf-8")
+    (rec_copy / "manifest.yaml").write_text((rdir / "manifest.yaml").read_text(encoding="utf-8"), encoding="utf-8")
+    bad_genetics = {
+        "record": "2025_Loh_bad",
+        "relations": [
+            {
+                "id": "bad_direct_claim",
+                "source": "target_gene:bric_a_brac",
+                "source_label": "Bab",
+                "relation": "directly_binds_cre",
+                "target": "target_gene:multiple_wing_hairs",
+                "target_label": "Mwh",
+                "evidence_tier": "direct_binding_and_perturbation",
+                "assays": ["crispr_g0_mosaic"],
+                "anchor": {"quote": "Bab", "where": "Results"},
+            }
+        ],
+    }
+    (rec_copy / "genetics.yaml").write_text(yaml.safe_dump(bad_genetics), encoding="utf-8")
+    raw_rec = yaml.safe_load((rec_copy / "record.yaml").read_text(encoding="utf-8"))
+    raw_rec["id"] = "2025_Loh_bad"
+    _, probs = check_record(raw_rec, tmp_path, field_config("lepidoptera"), check_text=False, record_dir=rec_copy)
+    assert any("binding/chromatin assay" in p.lower() for p in probs), f"Expected binding-assay guard error, got: {probs}"
+

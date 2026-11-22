@@ -40,19 +40,32 @@ def test_assemble_bundle_enriches_vocab_and_formulas():
     if not rel.is_dir():
         pytest.skip("releases/pilot-v1 not built in this workspace")
     bundle = wb.assemble_bundle("pilot-v1")
-    assert len(bundle["field_decls"]) >= 14
-    assert len(bundle["terms"]) >= 170
-    assert len(bundle["term_usage"]) >= 20
+    assert len(bundle["field_decls"]) >= 16
+    assert len(bundle["terms"]) >= 230
+    assert len(bundle["term_usage"]) >= 25
     assert "taxon:heliconius_sara" in bundle["term_usage"]
     assert len(bundle["term_usage"]["taxon:heliconius_sara"]["panels"]) > 0
 
+    terms_by_id = {t["id"]: t for t in bundle["terms"]}
+    assert "FlyBase:FBgn0004870" in (terms_by_id["target_gene:bric_a_brac"].get("xref") or [])
+
     formulas_by_id = {f["formula"]: f for f in bundle["formulas"]}
-    assert len(formulas_by_id) >= 34
+    assert len(formulas_by_id) >= 40
     lep_formulas = [f for f in bundle["formulas"] if f.get("scope") == "lepidoptera"]
-    assert len(lep_formulas) >= 7
+    assert len(lep_formulas) >= 13
     tf = formulas_by_id["thin_film_ridge_interference"]
     assert tf["scope"] == "lepidoptera"
     assert tf["equations"] == ["lam = 2*(n_r - n_a)*h/m"]
     assert "h" in tf["variables"] and len(tf["tests"]) >= 2
     assert any(d.get("library_formula") == "thin_film_ridge_interference" for d in bundle["derivations"])
+    assert "fold_change_from_log2fc" in formulas_by_id
+    assert any(d.get("library_formula") == "fold_change_from_log2fc" for d in bundle["derivations"])
+
+    assert len(bundle["genetic_relations"]) >= 12
+    tables_by_id = {t["id"]: t for t in bundle["genomic_tables"]}
+    assert "bab_uvi_de_targets" in tables_by_id
+    assert tables_by_id["bab_uvi_de_targets"]["n_rows"] == 87
+    assert "fourier_interridge_170" in tables_by_id
+    assert tables_by_id["fourier_interridge_170"]["n_rows"] == 170
+
 

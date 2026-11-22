@@ -46,11 +46,12 @@ def extract(crop_rgb: np.ndarray, panel_id: str, fig_id: str = "", full_rgb: np.
         "curves": {...},                 # optional: {name: {x, y, lo, hi, peak_x, peak_y, x_unit, y_unit}}
         "digitized_scatter": {...},      # optional: {group: {n, x, y, x_lo, x_hi, y_lo, y_hi, y_interval, x_unit, y_unit}}
         "digitized_boxplots": {...},     # optional: {group: {median, q1, q3, whisker_lo, whisker_hi, y_unit}}
+        "dotplot_matrix": {...},         # optional: {clusters, genes, expr_range, cells: [{cluster, gene, pct, expr, px, py, r_px}]}
         "overlay_meta": {
             "plot_box": [px0, py0, px1, py1],
             "x_range": [350.0, 700.0], "y_range": [0.0, 80.0],
             "x_misfit_px": 0.14, "y_misfit_px": 0.12,
-            "kind": "curves",            # curves | scatter | boxplot
+            "kind": "curves",            # curves | scatter | boxplots | dotplot
         },
     }
 ```

@@ -1,0 +1,874 @@
+id: 2025_Loh
+field_set: 4
+source:
+  title: Single-nucleus transcriptomics of wing sexual dimorphism and scale cell specialization in sulphur butterflies
+  doi: 10.1371/journal.pbio.3003233
+  year: '2025'
+  first_author: Ling S. Loh
+  last_author: Arnaud Martin
+  lab: Martin lab, George Washington University
+  journal: PLOS Biology
+  files:
+    - PMC12204629.xml
+    - DataS10_Fourier_Interridge_distances_Figure1D.csv
+    - fig1.png
+  not_used:
+    - file: pbio.3003233.g001.png
+      why: Decomposed into atomic panels in panels.yaml (SEM + Fig 1D)
+    - file: pbio.3003233.g002.png
+      why: Decomposed into atomic crispant_phenotype_plate panels in panels.yaml
+    - file: pbio.3003233.g003.png
+      why: Decomposed into atomic expression_imaging and crispant panels in panels.yaml
+    - file: pbio.3003233.g004.png
+      why: Decomposed into atomic crispant_phenotype_plate panels in panels.yaml
+    - file: pbio.3003233.g005.png
+      why: Decomposed into atomic GRN schematic and Bab RNAi panels in panels.yaml
+    - file: pbio.3003233.g006.png
+      why: Decomposed into atomic snRNA-seq UMAP, QC violin, and marker dotplot panels in panels.yaml
+    - file: pbio.3003233.g007.png
+      why: Decomposed into atomic scale sub-cluster UMAP, violins, and IF expression_imaging panels in panels.yaml
+    - file: pbio.3003233.g008.png
+      why: Decomposed into atomic DE heatmap expression_matrix and HCR expression_imaging panels in panels.yaml
+    - file: pbio.3003233.g009.png
+      why: Decomposed into atomic Bab ChIP-seq motif, locus track, and violin panels in panels.yaml
+    - file: pbio.3003233.g010.png
+      why: Decomposed into atomic Bab ChIP-DE boxplot, dotplot matrix, and volcano panels in panels.yaml
+  missing:
+    - S1 Table (per-sgRNA CRISPR injection/hatching counts) and OSF Data 1-5, 7-8 CSVs (referenced on OSF yjvkc; Data 6 and Data 10 harvested locally)
+
+context_anchors:
+  - field: taxon
+    value: Colias eurytheme
+    anchor:
+      quote: Male-specific scales in the dorsal wings of Colias eurytheme.
+      where: Fig 1 caption
+  - field: life_stage
+    value: adults
+    anchor:
+      quote: The cell bodies of scale precursors (blue) are transient structures that do not occur in adults.
+      where: Fig 1 caption
+  - field: life_stage
+    value: pupal
+    anchor:
+      quote: Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.
+      where: Fig 6 caption
+  - field: pupal_stage_pct
+    value: 40%
+    anchor:
+      quote: 53 h old pupa at 28 °C, 40% stage
+      where: Methods
+  - field: pupal_stage_pct
+    value: 40% and 60%
+    anchor:
+      quote: fixed nuclei from C. eurytheme wings sampled at the 40% and 60% stages, with two biological replicates per stage
+      where: Results
+  - field: sex
+    value: male
+    anchor:
+      quote: Dorsal views of male and female butterflies, highlighting the difference in width and patterning of the marginal bands
+      where: Fig 1 caption
+  - field: sex
+    value: female
+    anchor:
+      quote: Dorsal views of male and female butterflies, highlighting the difference in width and patterning of the marginal bands
+      where: Fig 1 caption
+  - field: sex
+    value: male and female
+    anchor:
+      quote: Dorsal views of male and female butterflies, highlighting the difference in width and patterning of the marginal bands
+      where: Fig 1 caption
+  - field: anatomical_region
+    value: dorsal wings
+    anchor:
+      quote: Male-specific scales in the dorsal wings of Colias eurytheme.
+      where: Fig 1 caption
+  - field: anatomical_region
+    value: dorsal forewing
+    anchor:
+      quote: female dorsal forewing melanic scales of the discal spot
+      where: Fig 1 caption
+  - field: anatomical_region
+    value: ventral
+    anchor:
+      quote: male ventral orange scales
+      where: Fig 1 caption
+  - field: anatomical_region
+    value: hindwing
+    anchor:
+      quote: Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.
+      where: Fig 6 caption
+  - field: anatomical_region
+    value: either wing surface
+    anchor:
+      quote: Typical scales that are found on either sex or wing surface share a 2-μm distance between their apical ridges
+      where: Results
+  - field: pattern_element
+    value: discal spot
+    anchor:
+      quote: female dorsal forewing melanic scales of the discal spot
+      where: Fig 1 caption
+  - field: pattern_element
+    value: medial regions
+    anchor:
+      quote: Mean apical ridge distance in individual scales from melanic discal spots, medial regions, or male marginal bands
+      where: Fig 1 caption
+  - field: pattern_element
+    value: marginal bands
+    anchor:
+      quote: Mean apical ridge distance in individual scales from melanic discal spots, medial regions, or male marginal bands
+      where: Fig 1 caption
+  - field: pattern_element
+    value: discal spots and medial regions
+    anchor:
+      quote: Mean apical ridge distance in individual scales from melanic discal spots, medial regions, or male marginal bands
+      where: Fig 1 caption
+  - field: pattern_element
+    value: marginal and medial regions
+    anchor:
+      quote: Mean apical ridge distance in individual scales from melanic discal spots, medial regions, or male marginal bands
+      where: Fig 1 caption
+  - field: scale_type
+    value: canonical
+    anchor:
+      quote: from the four main scale types—canonical (orange and black), UVI, and spatulate.
+      where: Fig 1 caption
+  - field: scale_type
+    value: UVI dorsal cover scale
+    anchor:
+      quote: male UVI dorsal cover orange scale
+      where: Fig 1 caption
+  - field: scale_type
+    value: spatulate dorsal cover scale
+    anchor:
+      quote: male spatulate dorsal cover margin scale.
+      where: Fig 1 caption
+  - field: scale_type
+    value: cover scales
+    anchor:
+      quote: showing dorsal cover-scale (dcs) specific transformation of non-UVI to UVI scales in female Dsx KOs.
+      where: Fig 3 caption
+  - field: scale_type
+    value: scale cell precursors
+    anchor:
+      quote: Diverging gene expression profiles of male scale cell precursors at 40% development.
+      where: Fig 7 caption
+  - field: functional_architecture
+    value: multilayering of ridge lamellae
+    anchor:
+      quote: UVI scales are not only characterized by the multilayering of their ridge lamellae
+      where: Results
+  - field: functional_architecture
+    value: melanic
+    anchor:
+      quote: female dorsal forewing melanic scales of the discal spot
+      where: Fig 1 caption
+  - field: functional_architecture
+    value: pterin-pigmented
+    anchor:
+      quote: relatively constant across melanic scales (e.g., forewing discal spots of both sexes), pterin-pigmented scales (orange, yellow)
+      where: Results
+  - field: functional_architecture
+    value: melanic scales, pterin-pigmented scales
+    anchor:
+      quote: relatively constant across melanic scales (e.g., forewing discal spots of both sexes), pterin-pigmented scales (orange, yellow)
+      where: Results
+  - field: target_gene
+    value: Bab
+    anchor:
+      quote: ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab– scale types.
+      where: Fig 9 caption
+  - field: target_gene
+    value: Dsx
+    anchor:
+      quote: Effects of Dsx mosaic knock-outs (mKO), as seen in comparisons of female and male WT individuals with representative Dsx G0 crispants.
+      where: Fig 2 caption
+  - field: target_gene
+    value: Eip75b
+    anchor:
+      quote: the loci encoding the nuclear hormone receptor Eip75b and cytoskeletal regulator Multiple wing hair (Mwh) each show more than 50 Bab ChIP sites
+      where: Results
+  - field: target_gene
+    value: Multiple wing hair (Mwh)
+    anchor:
+      quote: the loci encoding the nuclear hormone receptor Eip75b and cytoskeletal regulator Multiple wing hair (Mwh) each show more than 50 Bab ChIP sites
+      where: Results
+  - field: genetic_element_type
+    value: exons
+    anchor:
+      quote: Dicer-substrate siRNAs (DsiRNAs) were designed against target gene exons
+      where: Methods
+  - field: genetic_element_type
+    value: Bab ChIP-seq binding sites
+    anchor:
+      quote: Summary of the position of all predicted Bab ChIP-seq binding sites across two datasets, at the 40% and 60% pupal stages
+      where: Fig 9 caption
+  - field: allele_or_zygosity
+    value: G0 crispants
+    anchor:
+      quote: Effects of Dsx mosaic knock-outs (mKO), as seen in comparisons of female and male WT individuals with representative Dsx G0 crispants.
+      where: Fig 2 caption
+  - field: perturbation_modality
+    value: CRISPR mosaic knock-outs
+    anchor:
+      quote: We thus used CRISPR-targeted mutagenesis to generate G0 adults carrying Dsx mosaic knock-outs (abbreviated mKO, or “crispants”)
+      where: Results
+  - field: imaging_modality
+    value: Scanning Electron Microscopy
+    anchor:
+      quote: We used Scanning Electron Microscopy to further survey the ultrastructure of scale types in C. eurytheme
+      where: Results
+  - field: imaging_modality
+    value: UV photographs, visible light images
+    anchor:
+      quote: "overlays of UV photographs (C′: magenta false-color) over visible light images"
+      where: Fig 2 caption
+  - field: imaging_modality
+    value: snRNA-seq
+    anchor:
+      quote: Next, we used single-nucleus RNA sequencing (snRNA-seq) to gain further insights into the molecular basis of this diversity of cell types in the male wing.
+      where: Results
+  - field: imaging_modality
+    value: ChIP-seq
+    anchor:
+      quote: we used ChIP-seq to profile Bab genome-wide occupancy, using fixed nuclei from C. eurytheme wings sampled at the 40% and 60% stages
+      where: Results
+  - field: view_orientation
+    value: Apical views
+    anchor:
+      quote: Apical views of the ultrastructure of representative scale types
+      where: Fig 1 caption
+  - field: view_orientation
+    value: Dorsal views
+    anchor:
+      quote: Dorsal views of male and female butterflies
+      where: Fig 1 caption
+  - field: hydration_and_prep
+    value: electron micrographs
+    anchor:
+      quote: The measurements originate from electron micrographs of dorsal wing surfaces in a total of three individuals
+      where: Fig 1 caption
+  - field: hydration_and_prep
+    value: fixed nuclei
+    anchor:
+      quote: using fixed nuclei from C. eurytheme wings sampled at the 40% and 60% stages
+      where: Results
+  - field: hydration_and_prep
+    value: live nuclei
+    anchor:
+      quote: We isolated live nuclei using dounce homogenizers following previously published protocols
+      where: Methods
+
+default_context:
+  taxon: Colias eurytheme
+  chemical_agent: none
+
+units:
+  F1_SCALES:
+    where: Fig. 1D–H and Results
+    title: Apical ridge spacing across canonical, male-specific UV-iridescent, and male-specific spatulate scales in Colias eurytheme
+    context:
+      life_stage: adults
+      pupal_stage_pct: not applicable
+      target_gene: none
+      genetic_element_type: not applicable
+      allele_or_zygosity: wild type
+      perturbation_modality: wild type
+      imaging_modality: Scanning Electron Microscopy
+      view_orientation: Apical views
+      hydration_and_prep: electron micrographs
+    groups:
+      canonical_all:
+        label: Typical canonical scales (pooled WT + Alba)
+        kind: natural
+        context:
+          sex: male and female
+          anatomical_region: either wing surface
+          pattern_element: discal spots and medial regions
+          scale_type: canonical
+          functional_architecture: melanic scales, pterin-pigmented scales
+      uvi_male:
+        label: Male UVI dorsal cover scales
+        kind: natural
+        context:
+          sex: male
+          anatomical_region: dorsal wings
+          pattern_element: medial regions
+          scale_type: UVI dorsal cover scale
+          functional_architecture: multilayering of ridge lamellae
+      spatulate_male:
+        label: Male spatulate dorsal margin scales
+        kind: natural
+        context:
+          sex: male
+          anatomical_region: dorsal wings
+          pattern_element: marginal bands
+          scale_type: spatulate dorsal cover scale
+          functional_architecture: melanic
+      fig1e_black:
+        label: Female dorsal black cover scale (Fig 1E SEM)
+        kind: natural
+        context:
+          sex: female
+          anatomical_region: dorsal forewing
+          pattern_element: discal spot
+          scale_type: canonical
+          functional_architecture: melanic
+      fig1f_orange:
+        label: Male ventral orange cover scale (Fig 1F SEM)
+        kind: natural
+        context:
+          sex: male
+          anatomical_region: ventral
+          pattern_element: medial regions
+          scale_type: canonical
+          functional_architecture: pterin-pigmented
+
+  F2_DSX_MKO:
+    where: Fig. 2–4 and Results
+    title: Doublesex (Dsx) CRISPR G0 mosaic knockout wing patterning and sexually dimorphic scale fate phenotypes
+    context:
+      life_stage: adults
+      pupal_stage_pct: not applicable
+      sex: male and female
+      anatomical_region: dorsal wings
+      pattern_element: marginal and medial regions
+      scale_type: cover scales
+      functional_architecture: multilayering of ridge lamellae
+      target_gene: Dsx
+      genetic_element_type: exons
+      allele_or_zygosity: G0 crispants
+      perturbation_modality: CRISPR mosaic knock-outs
+      imaging_modality: UV photographs, visible light images
+      view_orientation: Dorsal views
+      hydration_and_prep: not stated
+    groups:
+      dsx_mko:
+        label: Dsx G0 mosaic crispants
+        kind: perturbed
+        context: {}
+
+  F6_SNRNASEQ:
+    where: Fig. 6–8 and Results
+    title: Single-nucleus RNA-seq cell-type and scale-precursor transcriptional divergence in 40% male pupal hindwing
+    context:
+      sex: male
+      life_stage: pupal
+      pupal_stage_pct: 40%
+      anatomical_region: hindwing
+      pattern_element: not applicable
+      scale_type: scale cell precursors
+      functional_architecture: multilayering of ridge lamellae
+      target_gene: Bab
+      genetic_element_type: not applicable
+      allele_or_zygosity: wild type
+      perturbation_modality: wild type
+      imaging_modality: snRNA-seq
+      view_orientation: not applicable
+      hydration_and_prep: live nuclei
+    groups:
+      all_nuclei:
+        label: All QC-passing 40% male hindwing nuclei (9 clusters)
+        kind: natural
+        context: {}
+      scale_precursors:
+        label: Scale cell precursor nuclei (Scale1–4, 8 sub-clusters)
+        kind: natural
+        context: {}
+      scale2_vs_scale3:
+        label: Male-specific Bab- clusters (Scale2 spatulate vs Scale3 UVI)
+        kind: natural
+        context: {}
+
+  F9_BAB_CHIP:
+    where: Fig. 9–10 and Results
+    title: Bab ChIP-seq genome-wide occupancy (40% and 60% pupal wings) integrated with Scale3 UVI differential expression and selective sweeps
+    context:
+      sex: male
+      life_stage: pupal
+      anatomical_region: dorsal wings
+      pattern_element: medial regions
+      scale_type: UVI dorsal cover scale
+      functional_architecture: multilayering of ridge lamellae
+      genetic_element_type: Bab ChIP-seq binding sites
+      allele_or_zygosity: wild type
+      perturbation_modality: wild type
+      imaging_modality: ChIP-seq
+      view_orientation: not applicable
+      hydration_and_prep: fixed nuclei
+    groups:
+      chip_40pct:
+        label: 40% pupal wing Bab ChIP-seq sites
+        kind: natural
+        context:
+          pupal_stage_pct: 40%
+          target_gene: Bab
+      chip_both_stages:
+        label: Stable Bab-bound genes across 40% and 60% stages
+        kind: natural
+        context:
+          pupal_stage_pct: 40% and 60%
+          target_gene: Bab
+      uvi_de_bab_targets:
+        label: UVI-DE genes with >= 3 Bab ChIP peaks (DataS6)
+        kind: natural
+        context:
+          pupal_stage_pct: 40% and 60%
+          target_gene: Bab
+      target_bab:
+        label: Bab locus (Scale3 UVI vs other scales, DataS6)
+        kind: natural
+        context:
+          pupal_stage_pct: 40%
+          target_gene: Bab
+      target_eip75b:
+        label: Eip75B locus (Scale3 UVI vs other scales, DataS6)
+        kind: natural
+        context:
+          pupal_stage_pct: 40%
+          target_gene: Eip75b
+      target_mwh:
+        label: Multiple wing hairs (Mwh) locus (Scale3 UVI vs other scales, DataS6)
+        kind: natural
+        context:
+          pupal_stage_pct: 40%
+          target_gene: Multiple wing hair (Mwh)
+
+evidence:
+  F1_ridge_reported:
+    unit: F1_SCALES
+    measure: ridge spacing
+    method: 2D Fourier inter-ridge distance from SEM micrographs across 3 individuals (DataS10)
+    finding: Apical ridge spacing spans 4.4-fold across C. eurytheme scale classes—1.0 ± 0.1 µm in male UVI scales (N=25), 2.0 ± 0.1 µm in canonical scales (N=125), and 4.4 ± 0.5 µm in male spatulate scales (N=20)
+    groups:
+      - canonical_all
+      - uvi_male
+      - spatulate_male
+    n:
+      printed: N = 125 typical, N = 25 UVI, N = 20 spatulate scales
+      per_group:
+        canonical_all: '125'
+        uvi_male: '25'
+        spatulate_male: '20'
+      counts: scales
+      levels:
+        individuals: 3
+        scales: 25
+      test_unit: scales
+    values:
+      typical:
+        printed: 2.0 ± 0.1
+        unit: µm
+        kind: mean
+        group: canonical_all
+        spread: SD
+      uvi:
+        printed: 1.0 ± 0.1
+        unit: µm
+        kind: mean
+        group: uvi_male
+        spread: SD
+      spatulate:
+        printed: 4.4 ± 0.5
+        unit: µm
+        kind: mean
+        group: spatulate_male
+        spread: SD
+    anchor:
+      quote: with a distance between ridges averaging only 1 μm (1.0 ± 0.1 μm, N = 25 scales) (Fig 1D, 1G).
+      where: Results
+
+  F1_ridge_sem_read:
+    unit: F1_SCALES
+    measure: ridge spacing
+    method: LivingLit calibrated 2D-FFT and 12-transect profiling on Fig 1E–H SEM panels
+    finding: Direct calibrated 2D-FFT on Fig 1E–H SEMs independently recovers canonical (1.75–1.94 µm), dense male UVI (0.97 µm), and wide male spatulate (3.85–4.03 µm) apical ridge spacings
+    groups:
+      - fig1e_black
+      - fig1f_orange
+      - uvi_male
+      - spatulate_male
+    anchor:
+      quote: E–H. Apical views of the ultrastructure of representative scale types (same scale types as in panels B, C), featuring the longitudinal ridges
+      where: Fig 1 caption
+
+  F1_uvi_vs_canonical:
+    unit: F1_SCALES
+    measure: ridge spacing
+    method: Fourier inter-ridge spacing comparison between male UVI dorsal cover scales and canonical pigmentary scales (DataS10)
+    finding: Male UVI ridge-lamellar cover scales halve inter-ridge spacing compared to canonical pigmentary scales (1.0 ± 0.1 vs 2.0 ± 0.1 µm)
+    compares:
+      - uvi_male
+      - canonical_all
+    test_of: pair
+    n:
+      printed: N = 25 UVI and N = 125 typical scales across 3 individuals
+      per_group:
+        uvi_male: '25'
+        canonical_all: '125'
+      counts: scales
+      levels:
+        individuals: 3
+        scales: 25
+      test_unit: scales
+    values:
+      uvi_d:
+        printed: 1.0 ± 0.1
+        unit: µm
+        kind: mean
+        group: uvi_male
+        spread: SD
+      typ_d:
+        printed: 2.0 ± 0.1
+        unit: µm
+        kind: mean
+        group: canonical_all
+        spread: SD
+    stated_direction:
+      direction: down
+      anchor:
+        quote: with a distance between ridges averaging only 1 μm (1.0 ± 0.1 μm, N = 25 scales) (Fig 1D, 1G).
+        where: Results
+    anchor:
+      quote: with a distance between ridges averaging only 1 μm (1.0 ± 0.1 μm, N = 25 scales) (Fig 1D, 1G).
+      where: Results
+
+  D1_uvi_ridge_density:
+    unit: F1_SCALES
+    measure: ridge density
+    method: Reciprocal spatial frequency rho = 1/d from apical inter-ridge spacing
+    finding: Male UVI scales double apical ridge density (~1.0 ridges/µm) relative to canonical scales (~0.5 ridges/µm)
+    groups:
+      - uvi_male
+      - canonical_all
+    values:
+      uvi_rho:
+        printed: 1.0e6
+        unit: m^-1
+        kind: value
+        group: uvi_male
+        spread: none
+      typ_rho:
+        printed: 0.50e6
+        unit: m^-1
+        kind: value
+        group: canonical_all
+        spread: none
+    anchor:
+      quote: with a distance between ridges averaging only 1 μm (1.0 ± 0.1 μm, N = 25 scales) (Fig 1D, 1G).
+      where: Results
+    scaling:
+      independent_measure: ridge spacing
+      direction: down
+      anchor:
+        quote: also by the density of the ridges themselves, with a distance between ridges averaging only 1 μm (1.0 ± 0.1 μm, N = 25 scales)
+        where: Results
+
+  F2_dsx_crispant_n:
+    unit: F2_DSX_MKO
+    measure: crispant wing phenotype count
+    method: CRISPR-Cas9 G0 mosaic knockout targeting Doublesex DNA-binding or Dimerization domain exons
+    finding: 33 Dsx G0 crispant individuals exhibited consistent sex-specific mosaic effects on marginal bands, spatulate scales, and female ectopic UV-iridescence
+    groups:
+      - dsx_mko
+    values:
+      n_crispants:
+        printed: '33'
+        unit: individuals
+        kind: count
+        group: dsx_mko
+        spread: none
+    anchor:
+      quote: while 33 crispant individuals showed spatially variegated effects as a result of this mosaicism, these experiments yielded consistent effects
+      where: Results
+
+  F6_snrnaseq_nuclei:
+    unit: F6_SNRNASEQ
+    measure: profiled nuclei / cell count
+    method: 10x Chromium v3.1 snRNA-seq of a single 40% pupal male hindwing (Seurat v5, mtDNA < 3%)
+    finding: Quality filtering retained 2,961 wing nuclei resolved into 9 clusters, including 1,550 scale-cell precursor nuclei across 8 sub-clusters
+    groups:
+      - all_nuclei
+      - scale_precursors
+    values:
+      total_nuclei:
+        printed: '2961'
+        unit: nuclei
+        kind: count
+        group: all_nuclei
+        spread: none
+      scale_nuclei:
+        printed: '1550'
+        unit: nuclei
+        kind: count
+        group: scale_precursors
+        spread: none
+    anchor:
+      quote: resulting in 2,961 filtered cells. Unsupervised clustering yielded nine robust clusters
+      where: Results
+
+  F8_scale2_scale3_de:
+    unit: F6_SNRNASEQ
+    measure: differentially expressed gene count
+    method: Seurat v5 FindMarkers (Wilcoxon rank sum test with Bonferroni correction) comparing Bab- clusters Scale2 and Scale3
+    finding: 1,024 genes are differentially expressed between male spatulate (Scale2) and UVI (Scale3) scale precursors at 40% pupal development
+    groups:
+      - scale2_vs_scale3
+    values:
+      n_de_between_bab_neg:
+        printed: '1024'
+        unit: genes
+        kind: count
+        group: scale2_vs_scale3
+        spread: none
+    anchor:
+      quote: In addition, a total of 1,024 genes are differentially expressed between the two Bab− clusters
+      where: Results
+
+  F9_bab_chip_peaks:
+    unit: F9_BAB_CHIP
+    measure: ChIP-seq binding peak count
+    method: Bab ChIP-seq on fixed pupal wing nuclei (2 replicates each at 40% and 60% pupal stages)
+    finding: Bab ChIP-seq called 11,647 unique binding sites (9,430 at 40% and 2,216 at 60%) mapping to 1,482 stably bound candidate genes across both stages
+    groups:
+      - chip_40pct
+      - chip_both_stages
+    values:
+      unique_sites:
+        printed: '11647'
+        unit: sites
+        kind: count
+        group: chip_both_stages
+        spread: none
+      stably_bound_genes:
+        printed: '1482'
+        unit: genes
+        kind: count
+        group: chip_both_stages
+        spread: none
+    anchor:
+      quote: The intersection of predicted Bab occupancy sites at the two stages results in a list of 1,482 candidate genes
+      where: Results
+
+  F10_bab_uvi_targets_count:
+    unit: F9_BAB_CHIP
+    measure: differentially expressed gene count
+    method: Intersection of Scale3 UVI-DE genes with >= 3 called Bab ChIP-seq peaks (DataS6)
+    finding: 87 UVI-DE genes carry >= 3 Bab ChIP-seq binding peaks (DataS6), including 17 genes with known Drosophila cytoskeletal or cuticle functions
+    groups:
+      - uvi_de_bab_targets
+    values:
+      n_bab_uvi_targets:
+        printed: '87'
+        unit: genes
+        kind: count
+        group: uvi_de_bab_targets
+        spread: none
+      n_cytoskeleton_cuticle:
+        printed: '17'
+        unit: genes
+        kind: count
+        group: uvi_de_bab_targets
+        spread: none
+    anchor:
+      quote: Stringent filtering criteria result in a list of 87 UVI-DE genes with 3 or more Bab ChIP binding peaks
+      where: Results
+
+  F10_bab_target_expression:
+    unit: F9_BAB_CHIP
+    measure: log2 fold change (expression)
+    method: Seurat v5 differential expression in Scale3 UVI vs remaining scale clusters (DataS6)
+    finding: In Bab- UVI scale precursors (Scale3), Bab is strongly downregulated (log2FC = -4.173, 24 ChIP peaks) while Bab-bound targets Eip75B (+2.027, 54 peaks) and Mwh (+2.329, 52 peaks) are sharply upregulated
+    groups:
+      - target_bab
+      - target_eip75b
+      - target_mwh
+    values:
+      bab_log2fc:
+        printed: '-4.173'
+        unit: '1'
+        kind: value
+        group: target_bab
+        spread: none
+        origin: from data
+        data:
+          file: associated/DataS6_DE_Scale3_3BabPeaksorMore.csv
+          cells: C2
+      eip75b_log2fc:
+        printed: '2.027'
+        unit: '1'
+        kind: value
+        group: target_eip75b
+        spread: none
+        origin: from data
+        data:
+          file: associated/DataS6_DE_Scale3_3BabPeaksorMore.csv
+          cells: C3
+      mwh_log2fc:
+        printed: '2.329'
+        unit: '1'
+        kind: value
+        group: target_mwh
+        spread: none
+        origin: from data
+        data:
+          file: associated/DataS6_DE_Scale3_3BabPeaksorMore.csv
+          cells: C4
+    anchor:
+      quote: the loci encoding the nuclear hormone receptor Eip75b and cytoskeletal regulator Multiple wing hair (Mwh) each show more than 50 Bab ChIP sites
+      where: Results
+
+  F10_bab_target_peaks:
+    unit: F9_BAB_CHIP
+    measure: ChIP-seq binding peak count
+    method: Bab ChIP-seq peak calls assigned to candidate loci in DataS6
+    finding: Eip75B (54 Bab ChIP peaks), Multiple wing hairs / Mwh (52 peaks), and Bab itself (24 peaks) show high-density Bab chromatin occupancy
+    groups:
+      - target_bab
+      - target_eip75b
+      - target_mwh
+    values:
+      bab_peaks:
+        printed: '24'
+        unit: peaks
+        kind: count
+        group: target_bab
+        spread: none
+        origin: from data
+        data:
+          file: associated/DataS6_DE_Scale3_3BabPeaksorMore.csv
+          cells: G2
+      eip75b_peaks:
+        printed: '54'
+        unit: peaks
+        kind: count
+        group: target_eip75b
+        spread: none
+        origin: from data
+        data:
+          file: associated/DataS6_DE_Scale3_3BabPeaksorMore.csv
+          cells: G3
+      mwh_peaks:
+        printed: '52'
+        unit: peaks
+        kind: count
+        group: target_mwh
+        spread: none
+        origin: from data
+        data:
+          file: associated/DataS6_DE_Scale3_3BabPeaksorMore.csv
+          cells: G4
+    anchor:
+      quote: the loci encoding the nuclear hormone receptor Eip75b and cytoskeletal regulator Multiple wing hair (Mwh) each show more than 50 Bab ChIP sites
+      where: Results
+
+claims:
+  C1_uvi_dense_ridges:
+    kind: stated
+    quote: also by the density of the ridges themselves, with a distance between ridges averaging only 1 μm (1.0 ± 0.1 μm, N = 25 scales)
+    where: Results
+    scope: Colias eurytheme male dorsal UVI scales
+    direction: reduced ridge spacing in UVI scales versus canonical scales
+    asserts_direction: down
+    rests_on:
+      - F1_ridge_reported
+      - F1_ridge_sem_read
+      - F1_uvi_vs_canonical
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C2_spatulate_wide_ridges:
+    kind: stated
+    quote: A second type of male-specific scale type, here dubbed the spatulate scales, show a large inter-ridge distance of 4.4 ± 0.5 μm (N = 20 scales)
+    where: Results
+    scope: Colias eurytheme male spatulate margin scales
+    direction: increased ridge spacing in spatulate scales
+    rests_on:
+      - F1_ridge_reported
+      - F1_ridge_sem_read
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C3_dsxf_activates_bab_represses_uvi:
+    kind: stated
+    quote: DsxF is required to maintain Bab expression at high levels in the female dorsal scale, thus feminizing the wing phenotype by preventing UVI scale differentiation.
+    where: Results
+    scope: Colias eurytheme female dorsal medial cover scales
+    direction: DsxF maintains Bab expression and represses UVI scale identity
+    rests_on:
+      - F2_dsx_crispant_n
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C4_dsx_reciprocal_spatulate:
+    kind: stated
+    quote: from canonical melanic to spatulate in DsxF mKOs, and vice-versa from spatulate to canonical in DsxM crispants
+    where: Results
+    scope: Colias eurytheme dorsal wing marginal bands (both sexes)
+    direction: reciprocal conversion between canonical black and spatulate scales upon Dsx KO
+    rests_on:
+      - F2_dsx_crispant_n
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C5_bab_repression_targets:
+    kind: stated
+    quote: Eip75b and cytoskeletal regulator Multiple wing hair (Mwh) each show more than 50 Bab ChIP sites, and are upregulated in UVI scale precursors
+    where: Results
+    scope: Colias eurytheme male 40% pupal UVI scale precursors (Scale3)
+    direction: Bab chromatin occupancy correlates with repression of Eip75B and Mwh
+    rests_on:
+      - F9_bab_chip_peaks
+      - F10_bab_uvi_targets_count
+      - F10_bab_target_expression
+      - F10_bab_target_peaks
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Appropriately hedged ("suggesting"); evidence tier is chromatin_or_binding_only (ChIP-seq + WT snRNA-seq DE without Bab-KO RNA-seq or CRE deletion).
+
+  C6_bab_chip_enriches_uvi_de:
+    kind: stated
+    quote: genes with Bab ChIP signals are significantly more likely to be UVI-DE (Fig 10A).
+    where: Results
+    scope: Colias eurytheme 40% pupal wing expressed genes
+    direction: higher probability of UVI differential expression with increasing Bab ChIP peak count
+    rests_on:
+      - F9_bab_chip_peaks
+      - F10_bab_uvi_targets_count
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows

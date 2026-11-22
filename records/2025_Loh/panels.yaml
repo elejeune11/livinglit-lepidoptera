@@ -1,0 +1,1008 @@
+record: 2025_Loh
+default_context:
+  species: Colias eurytheme
+  family: Pieridae
+  anatomical_region: dorsal wing
+figures:
+  F1:
+    label: Fig 1
+    file: pbio.3003233.g001.png
+    xml_id: pbio.3003233.g001
+    title: Male-specific UV-iridescent and spatulate scales in Colias eurytheme and 4-class SEM ridge ultrastructure
+    caption_anchor:
+      quote: Male-specific scales in the dorsal wings of Colias eurytheme.A. Dorsal views of male and female butterflies
+      where: Fig 1
+    context:
+      life_stage: adult
+    panels:
+      A:
+        label: 1A
+        title: Dorsal visible and UV-overlay photographs of female (WT & Alba) and male C. eurytheme wings
+        bbox: [0, 0, 975, 575]
+        archetype: macro_morphology
+        context:
+          imaging_modality: light microscopy
+          view_orientation: top-down apical
+      B:
+        label: 1B
+        title: Low-magnification SEM of monomorphic female black discal and male ventral orange scales (50 µm bar)
+        bbox: [976, 0, 1752, 922]
+        archetype: planar_microscopy
+        context:
+          scale_type: canonical cover scale
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 50.0
+          search_box: [20, 825, 290, 915]
+          polarity: bright
+      C:
+        label: 1C
+        title: Low-magnification SEM of male-specific dorsal interface between UVI medial and spatulate margin scales (50 µm bar)
+        bbox: [1753, 0, 2548, 922]
+        archetype: planar_microscopy
+        context:
+          sex: male
+          scale_type: UVI cover scale
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 50.0
+          search_box: [20, 825, 290, 915]
+          polarity: bright
+      D:
+        label: 1D
+        title: 2D Fourier inter-ridge spacing across 7 sex/genotype x scale_type classes (N=170 scales, DataS10)
+        bbox: [0, 575, 975, 1456]
+        archetype: quantitative_plot
+        extractor: extractors/f1_interridge.py
+        linked_items: [F1_ridge_reported, F1_uvi_vs_canonical]
+        linked_claims: [C1_uvi_dense_ridges, C2_spatulate_wide_ridges]
+        linked_resources: [loh_osf_interridge]
+      E:
+        label: 1E
+        title: High-mag top-down SEM of female dorsal black discal cover scale ridges (2 µm bar)
+        bbox: [979, 926, 1360, 1456]
+        archetype: planar_microscopy
+        context:
+          sex: female
+          scale_type: canonical cover scale
+          functional_architecture: melanin pigmentary
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box: [5, 480, 150, 528]
+          polarity: bright
+        periodic_spec:
+          roi: [20, 50, 360, 460]
+          spacing_range_um: [0.6, 5.0]
+          wavevector_angle_deg: [75, -75]
+        linked_items: [F1_ridge_sem_read]
+        linked_resources: [loh_osf_interridge]
+      F:
+        label: 1F
+        title: High-mag top-down SEM of male ventral orange canonical cover scale ridges with pterin beads (2 µm bar)
+        bbox: [1370, 926, 1751, 1456]
+        archetype: planar_microscopy
+        context:
+          sex: male
+          scale_type: canonical cover scale
+          functional_architecture: pterin pigmentary
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box: [5, 480, 150, 528]
+          polarity: bright
+        periodic_spec:
+          roi: [20, 50, 360, 460]
+          spacing_range_um: [0.6, 5.0]
+          wavevector_angle_deg: [75, -75]
+        linked_items: [F1_ridge_sem_read]
+        linked_resources: [loh_osf_interridge]
+      G:
+        label: 1G
+        title: High-mag top-down SEM of male dorsal UV-iridescent (UVI) dense ridge grating (~1.0 µm pitch, 2 µm bar)
+        bbox: [1763, 926, 2144, 1456]
+        archetype: planar_microscopy
+        context:
+          sex: male
+          scale_type: UVI cover scale
+          functional_architecture: ridge-lamellar multilayer
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box: [5, 480, 150, 528]
+          polarity: bright
+        periodic_spec:
+          roi: [20, 50, 360, 460]
+          spacing_range_um: [0.5, 3.0]
+          wavevector_angle_deg: [75, -75]
+        linked_items: [F1_ridge_sem_read, F1_ridge_reported]
+        linked_claims: [C1_uvi_dense_ridges]
+        linked_resources: [loh_osf_interridge]
+      H:
+        label: 1H
+        title: High-mag top-down SEM of male marginal spatulate cover scale wide ridges (~4.0-4.4 µm pitch, 2 µm bar)
+        bbox: [2155, 926, 2547, 1456]
+        archetype: planar_microscopy
+        context:
+          sex: male
+          scale_type: spatulate cover scale
+          functional_architecture: melanin pigmentary
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box: [5, 480, 150, 528]
+          polarity: bright
+        periodic_spec:
+          roi: [25, 10, 365, 475]
+          spacing_range_um: [2.5, 6.0]
+          wavevector_angle_deg: [75, -75]
+        linked_items: [F1_ridge_sem_read, F1_ridge_reported]
+        linked_claims: [C2_spatulate_wide_ridges]
+        linked_resources: [loh_osf_interridge]
+      I:
+        label: 1I
+        title: Courtship UV signaling diagram and dorsal position of male-specific spatulate and UVI scale precursors
+        bbox: [0, 1457, 1365, 2342]
+        archetype: phylogeny_or_schematic
+      J:
+        label: 1J
+        title: 3D transverse ultrastructure cross-section schematics of canonical (yellow/black), UVI, and spatulate scales
+        bbox: [1366, 1457, 2548, 2342]
+        archetype: phylogeny_or_schematic
+
+  F2:
+    label: Fig 2
+    file: pbio.3003233.g002.png
+    xml_id: pbio.3003233.g002
+    title: DsxF blocks UV-iridescence in females in a cell-autonomous fashion (Dsx CRISPR mKO and RNAi)
+    caption_anchor:
+      quote: DsxF blocks UV-iridescence in females in a cell-autonomous fashion.A. Effects of Dsx mosaic knock-outs (mKO)
+      where: Fig 2
+    context:
+      life_stage: adult
+      target_gene: Doublesex (Dsx)
+      genetic_element_type: coding exon
+      allele_or_zygosity: G0 somatic mosaic
+      perturbation_modality: CRISPR G0 mosaic knockout
+    panels:
+      A:
+        label: 2A
+        title: Visible-light dorsal/ventral wings of WT vs Dsx CRISPR G0 mKO females (ZW) and males (ZZ)
+        bbox: [0, 0, 1272, 910]
+        archetype: crispant_phenotype_plate
+        context:
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:doublesex
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          n_crispants: 33
+          phenotype: Dorsal-restricted marginal band narrowing (females) and expansion (males)
+        linked_items: [F2_dsx_crispant_n]
+        linked_claims: [C3_dsxf_activates_bab_represses_uvi]
+      B:
+        label: 2B
+        title: UV photography (320-400 nm) showing ectopic UVI gain in female Dsx mKO and distal border regression in males
+        bbox: [1272, 0, 2548, 910]
+        archetype: crispant_phenotype_plate
+        context:
+          imaging_modality: UV photography (320–400 nm)
+        crispant_summary:
+          target_gene: target_gene:doublesex
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          n_crispants: 33
+          phenotype: Ectopic dorsal UV-iridescence in female crispants; marginal UV regression in males
+        linked_items: [F2_dsx_crispant_n]
+        linked_claims: [C3_dsxf_activates_bab_represses_uvi]
+      C:
+        label: 2C
+        title: Visible-light forewing marginal close-ups of female and male WT vs Dsx mKO
+        bbox: [0, 910, 1272, 1545]
+        archetype: crispant_phenotype_plate
+        context:
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:doublesex
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          phenotype: Marginal melanic band shift and ectopic yellow spots in male mKO
+      C_prime:
+        label: 2C'
+        title: False-color magenta UV overlay over visible forewings showing female UVI gain and male distal regression
+        bbox: [1272, 910, 2548, 1545]
+        archetype: crispant_phenotype_plate
+        context:
+          imaging_modality: UV photography (320–400 nm)
+        crispant_summary:
+          target_gene: target_gene:doublesex
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          phenotype: Cell-autonomous female UVI gain vs non-autonomous male distal UVI regression
+      D:
+        label: 2D
+        title: Diagonal visible/UV split showing sharp clonal KO vs WT boundaries in female Dsx mKO forewing and hindwing
+        bbox: [0, 1545, 1272, 2015]
+        archetype: crispant_phenotype_plate
+        context:
+          sex: female
+          imaging_modality: UV photography (320–400 nm)
+        crispant_summary:
+          target_gene: target_gene:doublesex
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          clone_contrast: Sharp adjacent UVI KO clone vs non-UVI WT clone boundary on same wing
+      E:
+        label: 2E
+        title: Dsx siRNA pupal wing electroporation phenocopying ectopic female UVI and male marginal feminization
+        bbox: [1272, 1545, 2040, 2015]
+        archetype: crispant_phenotype_plate
+        context:
+          perturbation_modality: RNAi knockdown
+          allele_or_zygosity: RNAi knockdown
+          imaging_modality: UV photography (320–400 nm)
+        crispant_summary:
+          target_gene: target_gene:doublesex
+          element_type: coding_exon
+          allele: rnai_knockdown
+          phenotype: Pupal Dsx siRNA recapitulates ectopic female UVI in electroporated domain
+      F:
+        label: 2F
+        title: High-magnification UV image of female Dsx RNAi boundary between untreated and ectopic UVI scales
+        bbox: [2040, 1545, 2548, 2015]
+        archetype: crispant_phenotype_plate
+        context:
+          sex: female
+          perturbation_modality: RNAi knockdown
+          allele_or_zygosity: RNAi knockdown
+          imaging_modality: UV photography (320–400 nm)
+
+  F3:
+    label: Fig 3
+    file: pbio.3003233.g003.png
+    xml_id: pbio.3003233.g003
+    title: DsxF medial expression activates Bab in female dorsal cover scales
+    caption_anchor:
+      quote: DsxF medial expression activates Bab in the female dorsal cover scales.A, B. High-magnification views
+      where: Fig 3
+    context:
+      target_gene: Doublesex (Dsx)
+    panels:
+      A:
+        label: 3A
+        title: High-mag visible/UV pair of WT female (non-UVI) and WT male (UVI) central dorsal cover scales
+        bbox: [0, 0, 1270, 860]
+        archetype: crispant_phenotype_plate
+        context:
+          life_stage: adult
+          perturbation_modality: wild type
+          imaging_modality: UV photography (320–400 nm)
+      B:
+        label: 3B
+        title: High-mag visible/UV pair of female and male Dsx mKO showing dorsal cover-scale specific female UVI gain
+        bbox: [1270, 0, 2542, 860]
+        archetype: crispant_phenotype_plate
+        context:
+          life_stage: adult
+          perturbation_modality: CRISPR G0 mosaic knockout
+          allele_or_zygosity: G0 somatic mosaic
+          imaging_modality: UV photography (320–400 nm)
+        crispant_summary:
+          target_gene: target_gene:doublesex
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          phenotype: Dorsal cover-scale (dcs) specific non-UVI to UVI conversion in females; ground scales unchanged
+      C:
+        label: 3C
+        title: Female 40% pupal whole-wing immunofluorescence of DsxDBD across forewing and hindwing (1 mm bar)
+        bbox: [0, 860, 745, 1748]
+        archetype: expression_imaging
+        context:
+          sex: female
+          life_stage: pupa
+          pupal_stage_pct: 40%
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [DsxDBD]
+        channel_gene_map:
+          gray: DsxDBD (female isoform DsxF)
+      C_prime:
+        label: 3C'
+        title: Female 40% pupal medial immunofluorescence co-localizing DsxDBD (magenta) and Bab (green) in cover and ground scales
+        bbox: [745, 860, 1270, 1748]
+        archetype: expression_imaging
+        context:
+          sex: female
+          life_stage: pupa
+          pupal_stage_pct: 40%
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [DsxDBD, Bab]
+        channel_gene_map:
+          magenta: DsxDBD (DsxF)
+          green: Bric-a-brac (Bab)
+        linked_claims: [C3_dsxf_activates_bab_represses_uvi]
+      D:
+        label: 3D
+        title: Male 40% pupal whole-wing immunofluorescence showing DsxDBD restricted to wing margins (1 mm bar)
+        bbox: [1270, 860, 2015, 1748]
+        archetype: expression_imaging
+        context:
+          sex: male
+          life_stage: pupa
+          pupal_stage_pct: 40%
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [DsxDBD]
+        channel_gene_map:
+          gray: DsxDBD (male isoform DsxM)
+      D_prime:
+        label: 3D'
+        title: Male 40% pupal marginal band IF showing DsxDBD (magenta) in dorsal cover scales and Bab (green) in ground scales
+        bbox: [2015, 860, 2542, 1748]
+        archetype: expression_imaging
+        context:
+          sex: male
+          life_stage: pupa
+          pupal_stage_pct: 40%
+          pattern_element: marginal band
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [DsxDBD, Bab]
+        channel_gene_map:
+          magenta: DsxDBD (DsxM)
+          green: Bric-a-brac (Bab)
+      E:
+        label: 3E
+        title: Female 40% pupal contralateral control wing showing DAPI (blue) and Bab (green) in all dorsal cover and ground scales
+        bbox: [0, 1748, 1270, 2373]
+        archetype: expression_imaging
+        context:
+          sex: female
+          life_stage: pupa
+          pupal_stage_pct: 40%
+          perturbation_modality: wild type
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [DAPI, Bab]
+        channel_gene_map:
+          blue: DAPI (nuclei)
+          green: Bric-a-brac (Bab)
+        linked_claims: [C3_dsxf_activates_bab_represses_uvi]
+      F:
+        label: 3F
+        title: Female 40% pupal Dsx RNAi knockdown wing showing loss of Bab (green) specifically in dorsal cover scales
+        bbox: [1270, 1748, 2542, 2373]
+        archetype: expression_imaging
+        context:
+          sex: female
+          life_stage: pupa
+          pupal_stage_pct: 40%
+          perturbation_modality: RNAi knockdown
+          allele_or_zygosity: RNAi knockdown
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [DAPI, Bab]
+        channel_gene_map:
+          blue: DAPI (nuclei)
+          green: Bric-a-brac (Bab — lost in dcs upon Dsx RNAi)
+        linked_claims: [C3_dsxf_activates_bab_represses_uvi]
+
+  F4:
+    label: Fig 4
+    file: pbio.3003233.g004.png
+    xml_id: pbio.3003233.g004
+    title: Doublesex controls reciprocal specification of male-specific spatulate vs canonical melanic marginal scales
+    caption_anchor:
+      quote: Doublesex controls the specification of male-specific spatulate scales.A. Magnified views of the dorsal hindwing marginal bands
+      where: Fig 4
+    context:
+      life_stage: adult
+      target_gene: Doublesex (Dsx)
+      genetic_element_type: coding exon
+      allele_or_zygosity: G0 somatic mosaic
+      perturbation_modality: CRISPR G0 mosaic knockout
+      pattern_element: marginal band
+    panels:
+      A:
+        label: 4A
+        title: Dorsal hindwing marginal Dsx mKO clone boundaries (canonical black -> spatulate in females; spatulate -> canonical in males)
+        bbox: [0, 0, 1800, 1697]
+        archetype: crispant_phenotype_plate
+        context:
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:doublesex
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          clone_contrast: Sharp marginal clonal boundary separating WT and reciprocal KO scale morphologies
+        linked_items: [F2_dsx_crispant_n]
+        linked_claims: [C4_dsx_reciprocal_spatulate]
+      B:
+        label: 4B
+        title: Reciprocal shifts in forewing and hindwing marginal scale arrays across WT and Dsx mKO females and males
+        bbox: [1800, 0, 3600, 848]
+        archetype: crispant_phenotype_plate
+        context:
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:doublesex
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          phenotype: Complete reciprocal cover-scale identity switch in both sexes
+        linked_claims: [C4_dsx_reciprocal_spatulate]
+      C:
+        label: 4C
+        title: Isolated single melanic scales confirming canonical black <-> spatulate transformation in female and male Dsx mKO
+        bbox: [1800, 848, 3600, 1697]
+        archetype: crispant_phenotype_plate
+        context:
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:doublesex
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          phenotype: Single-scale blade width and corrugated ridge spacing switch
+        linked_claims: [C4_dsx_reciprocal_spatulate]
+
+  F5:
+    label: Fig 5
+    file: pbio.3003233.g005.png
+    xml_id: pbio.3003233.g005
+    title: Combinatorial Dsx and Bab gene-regulatory circuit and Bab RNAi knockdown phenotypes
+    caption_anchor:
+      quote: Dsx and Bab control sexually dimorphic scale fates.A. Working hypothesis for the effects of Dsx
+      where: Fig 5
+    context:
+      target_gene: Bric-a-brac (Bab)
+    panels:
+      A:
+        label: 5A
+        title: Working GRN hypothesis separating non-autonomous Dsx marginal patterning from cell-autonomous Dsx -> Bab -> UVI/spatulate fate switches
+        bbox: [0, 0, 1800, 560]
+        archetype: phylogeny_or_schematic
+        linked_claims: [C3_dsxf_activates_bab_represses_uvi, C4_dsx_reciprocal_spatulate]
+      B:
+        label: 5B
+        title: Female and male dorsal forewing Bab RNAi knockdown wings vs contralateral controls showing ectopic UV-iridescence
+        bbox: [0, 560, 930, 1560]
+        archetype: crispant_phenotype_plate
+        context:
+          perturbation_modality: RNAi knockdown
+          allele_or_zygosity: RNAi knockdown
+          imaging_modality: UV photography (320–400 nm)
+        crispant_summary:
+          target_gene: target_gene:bric_a_brac
+          element_type: coding_exon
+          allele: rnai_knockdown
+          phenotype: Ectopic UVI in female cover/ground scales and male ground scales; spatulate scales unaffected
+      C:
+        label: 5C
+        title: High-mag medial region Bab RNAi clone boundary showing yellow ground scales converting to UVI in both sexes
+        bbox: [930, 560, 1365, 1560]
+        archetype: crispant_phenotype_plate
+        context:
+          perturbation_modality: RNAi knockdown
+          allele_or_zygosity: RNAi knockdown
+          imaging_modality: UV photography (320–400 nm)
+      D:
+        label: 5D
+        title: High-mag marginal band Bab RNAi showing melanic scales acquiring dark-blue iridescence and ectopic UVI vein scales
+        bbox: [1365, 560, 1800, 1560]
+        archetype: crispant_phenotype_plate
+        context:
+          perturbation_modality: RNAi knockdown
+          allele_or_zygosity: RNAi knockdown
+          imaging_modality: UV photography (320–400 nm)
+      E:
+        label: 5E
+        title: Legend of scale cell types, melanic+UVI blue iridescence, and 30-40% pupal Dsx/Bab expression logic
+        bbox: [0, 1560, 880, 1986]
+        archetype: phylogeny_or_schematic
+      F:
+        label: 5F
+        title: Combinatorial WT, Dsx KO, and Bab KO/KD perturbation outcome matrix across female/male medial and marginal regions
+        bbox: [880, 1560, 1800, 1986]
+        archetype: phylogeny_or_schematic
+
+  F6:
+    label: Fig 6
+    file: pbio.3003233.g006.png
+    xml_id: pbio.3003233.g006
+    title: Single-nucleus RNA-seq atlas of 2,961 nuclei across 9 clusters in 40% male pupal hindwing
+    caption_anchor:
+      quote: Single-nucleus transcriptomic profiles of major cell types in the Colias eurytheme male 40% pupal hindwing.A. UMAP
+      where: Fig 6
+    context:
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 40%
+      imaging_modality: snRNA-seq
+    panels:
+      A:
+        label: 6A
+        title: UMAP embedding of 2,961 filtered 40% male pupal hindwing nuclei across 9 major cell clusters
+        bbox: [0, 0, 1320, 1465]
+        archetype: quantitative_plot
+        linked_items: [F6_snrnaseq_nuclei]
+      B:
+        label: 6B
+        title: Violin plot of unique genes detected per nucleus across 9 clusters (higher in polyploid scale cells)
+        bbox: [1320, 0, 2225, 725]
+        archetype: quantitative_plot
+        linked_items: [F6_snrnaseq_nuclei]
+      B_prime:
+        label: 6B'
+        title: Violin plot of RNA UMI read counts per nucleus across 9 clusters
+        bbox: [1320, 725, 2225, 1465]
+        archetype: quantitative_plot
+      C:
+        label: 6C
+        title: Violin plot of mitochondrial DNA read percentage across non-scale vs scale clusters
+        bbox: [2225, 0, 3055, 725]
+        archetype: quantitative_plot
+      C_prime:
+        label: 6C'
+        title: UMAP heatmap of mtDNA percentage separating non-scale epithelial/socket cells from scale cells
+        bbox: [2225, 725, 3055, 1465]
+        archetype: quantitative_plot
+      D:
+        label: 6D
+        title: UMAP marker expression for Serpent and Rala in minor clusters Misc1 and Misc2
+        bbox: [3055, 0, 3780, 725]
+        archetype: expression_matrix
+      E:
+        label: 6E
+        title: UMAP marker expression for Stubble (epithelial) and neuromusculin / nrm (socket cells)
+        bbox: [3780, 0, 4500, 725]
+        archetype: expression_matrix
+      F:
+        label: 6F
+        title: UMAP marker expression for rhophilin-2 (wing epithelium) and breathless (tracheal epithelium)
+        bbox: [3055, 725, 3780, 1465]
+        archetype: expression_matrix
+      G:
+        label: 6G
+        title: UMAP marker expression for shaven / sv (scale cells) and Notch (non-scale cells)
+        bbox: [3780, 725, 4500, 1465]
+        archetype: expression_matrix
+      H:
+        label: 6H
+        title: Expression dotplot of top marker genes for non-SOP, epithelial, socket, and general scale clusters
+        bbox: [0, 1465, 4500, 2610]
+        archetype: expression_matrix
+      H_prime:
+        label: 6H'
+        title: Expression dotplot of top differentiator genes across Scale1-Scale4 subtypes (including Bab, Dsx, spineless, Msx1/2, Abp1)
+        bbox: [0, 2610, 4500, 3776]
+        archetype: expression_matrix
+
+  F7:
+    label: Fig 7
+    file: pbio.3003233.g007.png
+    xml_id: pbio.3003233.g007
+    title: Sub-clustering of 1,550 male scale cell precursor nuclei at 40% pupal development and Antp/Cut/Nubbin IF validation
+    caption_anchor:
+      quote: Diverging gene expression profiles of male scale cell precursors at 40% development.A. UMAP plot
+      where: Fig 7
+    context:
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 40%
+    panels:
+      A:
+        label: 7A
+        title: "Scale cell precursor UMAP (1,550 nuclei, 8 sub-clusters: Scale1a-e, Scale2 spatulate, Scale3 UVI, Scale4 hair-like)"
+        bbox: [0, 0, 1210, 1440]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+        linked_items: [F6_snrnaseq_nuclei]
+      B:
+        label: 7B
+        title: Violin plots of pan-scale markers shaven (sv), pebbled (peb), and Osi24 across all 8 scale sub-clusters
+        bbox: [1210, 0, 2899, 465]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+      C:
+        label: 7C
+        title: Antp enrichment in Scale1d and Antp 4C3 immunofluorescence localizing to wing-coupling scales
+        bbox: [1210, 465, 2899, 955]
+        archetype: expression_imaging
+        context:
+          target_gene: Antennapedia (Antp)
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [Antp 4C3, DAPI]
+        channel_gene_map:
+          magenta: Antp (Antennapedia)
+          blue: DAPI (nuclei)
+      D:
+        label: 7D
+        title: Violin plots of Bar-H1 (Scale1d), mirror (posterior), and homothorax / hth (proximal) across scale sub-clusters
+        bbox: [1210, 955, 2899, 1440]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+      E:
+        label: 7E
+        title: Violin plots and wing-domain maps for Scale4 markers apterous-A and cut
+        bbox: [0, 1440, 1810, 1915]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+      F:
+        label: 7F
+        title: Whole-wing immunofluorescence of Cut 2B10 antigen marking wing margin and epithelial nuclei (1 mm bar)
+        bbox: [1810, 1440, 2360, 1915]
+        archetype: expression_imaging
+        context:
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [Cut 2B10]
+        channel_gene_map:
+          gray: Cut 2B10
+      G:
+        label: 7G
+        title: Cut 2B10 and DAPI immunofluorescence marking neuronal chains inside tracheal lumen (100 µm bar)
+        bbox: [2360, 1440, 2899, 1915]
+        archetype: expression_imaging
+        context:
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [Cut 2B10, DAPI]
+        channel_gene_map:
+          gray: Cut 2B10
+          blue: DAPI
+      H:
+        label: 7H
+        title: Cut immunofluorescence showing large dorsal wing-hair nuclei proximal to discal crossvein (100 µm bar)
+        bbox: [0, 1915, 575, 2385]
+        archetype: expression_imaging
+        context:
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [Cut 2B10]
+      H_prime:
+        label: 7H'
+        title: Corresponding adult dorsal wing light micrograph showing proximal dorsal hair distribution
+        bbox: [575, 1915, 1150, 2385]
+        archetype: macro_morphology
+        context:
+          life_stage: adult
+          imaging_modality: light microscopy
+      I:
+        label: 7I
+        title: High-mag Cut 2B10 + DAPI nuclear staining in large proximal dorsal hair precursors (20 µm bar)
+        bbox: [1150, 1915, 1815, 2170]
+        archetype: expression_imaging
+        context:
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [Cut 2B10, DAPI]
+      I_prime:
+        label: 7I'
+        title: Adult dorsal wing hairs corresponding to Cut-positive large proximal nuclei (100 µm bar)
+        bbox: [1150, 2170, 1815, 2385]
+        archetype: macro_morphology
+        context:
+          life_stage: adult
+          imaging_modality: light microscopy
+      J:
+        label: 7J
+        title: Cut immunofluorescence along wing margin marking elongated margin scale precursors
+        bbox: [1815, 1915, 2360, 2385]
+        archetype: expression_imaging
+        context:
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [Cut 2B10, wing membrane]
+      J_prime:
+        label: 7J'
+        title: Adult elongated margin scales corresponding to Cut-positive wing margin precursors (100 µm bar)
+        bbox: [2360, 1915, 2899, 2385]
+        archetype: macro_morphology
+        context:
+          life_stage: adult
+          imaging_modality: light microscopy
+      K:
+        label: 7K
+        title: Violin plot of nubbin expression across 8 scale precursor sub-clusters
+        bbox: [0, 2385, 575, 2906]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+      L:
+        label: 7L
+        title: Dorsal vs ventral 40% pupal IF of DAPI (blue), Bab (green), and Nubbin 2D4 (orange) showing Nubbin repression in dorsal cover scales (20 µm bar)
+        bbox: [575, 2385, 2899, 2906]
+        archetype: expression_imaging
+        context:
+          target_gene: Bric-a-brac (Bab)
+          imaging_modality: immunofluorescence (IF)
+        stains_or_markers: [DAPI, Bab, Nubbin 2D4]
+        channel_gene_map:
+          blue: DAPI (nuclei)
+          green: Bric-a-brac (Bab)
+          orange: Nubbin 2D4
+
+  F8:
+    label: Fig 8
+    file: pbio.3003233.g008.png
+    xml_id: pbio.3003233.g008
+    title: Transcriptional divergence of UVI (Scale3) and spatulate (Scale2) scale cell precursors and HCR spatial validation
+    caption_anchor:
+      quote: Transcriptional divergence of UVI and spatulate scale cell precursors.All experiments correspond to male wing tissues
+      where: Fig 8
+    context:
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 40%
+    panels:
+      A:
+        label: 8A
+        title: Heatmap of top genes downregulated in Scale2/3 (including Bab) and enriched in Scale3 UVI precursors (Sulfatase1, Obst-B, Drak, Mwh, Stubble)
+        bbox: [0, 0, 910, 1115]
+        archetype: expression_matrix
+        context:
+          imaging_modality: snRNA-seq
+        linked_items: [F8_scale2_scale3_de]
+      A_prime:
+        label: 8A'
+        title: Heatmap of top genes enriched in Scale2 spatulate precursors (ivory lncRNA, Doublesex, frizzled3, Arylsulfatase, vestigial, Msx1)
+        bbox: [910, 0, 1800, 1115]
+        archetype: expression_matrix
+        context:
+          imaging_modality: snRNA-seq
+        linked_items: [F8_scale2_scale3_de]
+      B:
+        label: 8B
+        title: Violin plots of Bab, Doublesex, Arylsulfatase (Scale2), Abp1 (Scale3), and Sulfatase1 (Scale3) across scale sub-clusters
+        bbox: [0, 1115, 1800, 1430]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+      C:
+        label: 8C
+        title: HCR 3.0 mRNA in situ of Doublesex (exons 1-2) localized to male marginal spatulate scale rows
+        bbox: [0, 1430, 625, 2176]
+        archetype: expression_imaging
+        context:
+          target_gene: Doublesex (Dsx)
+          imaging_modality: HCR/in situ
+        stains_or_markers: [Doublesex mRNA HCR]
+        channel_gene_map:
+          orange: Doublesex (exons 1-2 mRNA)
+      D:
+        label: 8D
+        title: Dual HCR 3.0 mRNA in situ of Arylsulfatase (green, Scale2 marginal cover scales) and Abp1 (magenta, medial & ground scales)
+        bbox: [625, 1430, 1440, 2176]
+        archetype: expression_imaging
+        context:
+          imaging_modality: HCR/in situ
+        stains_or_markers: [Arylsulfatase HCR, Abp1 HCR]
+        channel_gene_map:
+          green: Arylsulfatase (Scale2 spatulate marker)
+          magenta: Abp1 (medial & ground scale marker)
+      E:
+        label: 8E
+        title: High-mag HCR 3.0 mRNA in situ of Sulfatase1 (orange) + DAPI (blue) restricted to alternating presumptive UVI scale precursors (10 µm bar)
+        bbox: [1440, 1430, 1800, 2176]
+        archetype: expression_imaging
+        context:
+          scale_type: UVI cover scale
+          imaging_modality: HCR/in situ
+        stains_or_markers: [Sulfatase1 HCR, DAPI]
+        channel_gene_map:
+          orange: Sulfatase1 (Scale3 UVI marker)
+          blue: DAPI (nuclei)
+
+  F9:
+    label: Fig 9
+    file: pbio.3003233.g009.png
+    xml_id: pbio.3003233.g009
+    title: Bab ChIP-seq genome-wide occupancy across 40% and 60% pupal wings and candidate target loci
+    caption_anchor:
+      quote: ChIP-seq profiling of Bab identifies potential target genes involved in the differentiation of Bab– scale types.A.
+      where: Fig 9
+    context:
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 40% and 60%
+      target_gene: Bric-a-brac (Bab)
+      genetic_element_type: cis-regulatory element (CRE)
+    panels:
+      A:
+        label: 9A
+        title: MEME-ChIP discovered AT-rich C. eurytheme Bab DNA-binding motif matching Drosophila Bab1
+        bbox: [0, 0, 1345, 1085]
+        archetype: genomic_track_or_locus
+        context:
+          imaging_modality: ChIP-seq
+        genomic_locus:
+          assay: ChIP-seq (MEME-ChIP motif)
+          motif_match: Drosophila melanogaster Bab1 (AT-rich consensus)
+        linked_items: [F9_bab_chip_peaks]
+      B:
+        label: 9B
+        title: HOMER genomic annotation of Bab ChIP-seq sites at 40% (N=9,430) and 60% (N=2,216) pupal stages with Scale2/3 DE overlap
+        bbox: [1345, 0, 3260, 1085]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: ChIP-seq
+        linked_items: [F9_bab_chip_peaks]
+        linked_resources: [loh_osf_bab_chip]
+      C:
+        label: 9C
+        title: Venn diagram intersecting 40%/60% Bab ChIP-bound genes (1,482 shared) with Scale2/3 DE genes (77 up, 53 down)
+        bbox: [3260, 0, 4500, 1085]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: ChIP-seq
+        linked_items: [F9_bab_chip_peaks]
+        linked_resources: [loh_osf_bab_chip]
+      D:
+        label: 9D
+        title: Bab ChIP-seq genome browser track across the Bab locus (Sc0000009, 5.0-5.25 Mb) showing 24 auto-binding peaks
+        bbox: [0, 1085, 2240, 1865]
+        archetype: genomic_track_or_locus
+        context:
+          imaging_modality: ChIP-seq
+        genomic_locus:
+          scaffold: Sc0000009_pilon
+          interval: 4.95-5.25 Mb
+          locus_gene: Bab (LOC123705510)
+          stages: [40% pupa, 60% pupa]
+        linked_items: [F9_bab_chip_peaks, F10_bab_target_peaks]
+      E:
+        label: 9E
+        title: Bab ChIP-seq genome browser track across the Doublesex (Dsx) locus (Sc0000068, 1.15-1.45 Mb) showing cross-regulatory binding
+        bbox: [2240, 1085, 4500, 1865]
+        archetype: genomic_track_or_locus
+        context:
+          target_gene: Doublesex (Dsx)
+          imaging_modality: ChIP-seq
+        genomic_locus:
+          scaffold: Sc0000068_pilon
+          interval: 1.15-1.45 Mb
+          locus_gene: Doublesex (Dsx)
+          stages: [40% pupa, 60% pupa]
+        linked_items: [F9_bab_chip_peaks]
+      F:
+        label: 9F
+        title: Bab ChIP-seq genome browser track across tandem Msx1 and Msx2 transcription factor loci (Sc0000054, 0.75-1.05 Mb)
+        bbox: [0, 1865, 2240, 2655]
+        archetype: genomic_track_or_locus
+        context:
+          imaging_modality: ChIP-seq
+        genomic_locus:
+          scaffold: Sc0000054_pilon
+          interval: 0.75-1.05 Mb
+          locus_gene: Msx1 / Msx2 tandem cluster
+          stages: [40% pupa, 60% pupa]
+      G:
+        label: 9G
+        title: snRNA-seq cluster violin plot of Msx1 expression (enriched in Bab- Scale2 & Scale3)
+        bbox: [2240, 1865, 3375, 2655]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+      G_prime:
+        label: 9G'
+        title: snRNA-seq cluster violin plot of Msx2 expression (top Scale3 UVI marker)
+        bbox: [3375, 1865, 4500, 2655]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+      H:
+        label: 9H
+        title: Bab ChIP-seq genome browser track across tandem chitin-modifier Obstructor cluster (Obst-D, Obst-B, Obst-C/gasp)
+        bbox: [0, 2655, 1185, 3455]
+        archetype: genomic_track_or_locus
+        context:
+          imaging_modality: ChIP-seq
+        genomic_locus:
+          scaffold: Sc0000002_pilon
+          interval: 7.48-7.62 Mb
+          locus_gene: Obst-D / Obst-B / Obst-C (gasp) tandem cluster
+          stages: [40% pupa, 60% pupa]
+      I:
+        label: 9I
+        title: snRNA-seq cluster violin plot of Obst-D (peritrophin-A) enriched in Scale3 UVI
+        bbox: [1185, 2655, 2290, 3455]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+      I_prime:
+        label: 9I'
+        title: snRNA-seq cluster violin plot of Obst-B restricted to Scale3 UVI
+        bbox: [2290, 2655, 3395, 3455]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+      I_dprime:
+        label: 9I''
+        title: snRNA-seq cluster violin plot of Obst-C (gasp) strongly upregulated in Scale3 UVI
+        bbox: [3395, 2655, 4500, 3455]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+      J:
+        label: 9J
+        title: Bab ChIP-seq genome browser track across chitin deacetylase loci Vermiform and Serpentine (Sc0000036)
+        bbox: [0, 3455, 2240, 4245]
+        archetype: genomic_track_or_locus
+        context:
+          imaging_modality: ChIP-seq
+        genomic_locus:
+          scaffold: Sc0000036_pilon
+          interval: 0.0-0.25 Mb
+          locus_gene: Vermiform / Serpentine tandem cluster
+          stages: [40% pupa, 60% pupa]
+      K:
+        label: 9K
+        title: snRNA-seq cluster violin plot of Vermiform enriched in Scale2 spatulate precursors
+        bbox: [2240, 3455, 3375, 4245]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+      K_prime:
+        label: 9K'
+        title: snRNA-seq cluster violin plot of Serpentine enriched in Scale2 spatulate precursors
+        bbox: [3375, 3455, 4500, 4245]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: snRNA-seq
+
+  F10:
+    label: Fig 10
+    file: pbio.3003233.g010.png
+    xml_id: pbio.3003233.g010
+    title: Potential targets of Bab regulation in UVI scale precursors integrating ChIP-seq, snRNA-seq, and selective sweeps
+    caption_anchor:
+      quote: Potential targets of Bab regulation in the UVI scale type.A. Box and whiskers plot of probability
+      where: Fig 10
+    context:
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 40%
+      target_gene: Bric-a-brac (Bab)
+      genetic_element_type: cis-regulatory element (CRE)
+    panels:
+      A:
+        label: 10A
+        title: Boxplot of differential expression significance (-log10 p_val_adj) binned by Bab ChIP peak count (0, 1-10, 10+)
+        bbox: [0, 0, 1300, 1500]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: ChIP-seq
+        extractor: extractors/f10_genomics.py
+        linked_items: [F9_bab_chip_peaks, F10_bab_uvi_targets_count]
+        linked_claims: [C6_bab_chip_enriches_uvi_de]
+        linked_resources: [loh_osf_bab_chip]
+      B:
+        label: 10B
+        title: 21 UVI-DE genes (>=3 Bab ChIP peaks) x 8 scale clusters expression dotplot (% expressing & scaled expression, 168 cells)
+        bbox: [1300, 0, 3600, 1500]
+        archetype: expression_matrix
+        context:
+          imaging_modality: snRNA-seq
+        extractor: extractors/f10_genomics.py
+        linked_items: [F10_bab_uvi_targets_count, F10_bab_target_expression, F10_bab_target_peaks]
+        linked_claims: [C5_bab_repression_targets]
+        linked_resources: [loh_osf_bab_chip]
+      C:
+        label: 10C
+        title: Volcano plot of Scale3 UVI-DE genes colored by Bab ChIP-seq peak count (0 to 54 peaks, DataS6)
+        bbox: [0, 1500, 1365, 2959]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: ChIP-seq
+        extractor: extractors/f10_genomics.py
+        linked_items: [F10_bab_uvi_targets_count, F10_bab_target_expression]
+        linked_claims: [C5_bab_repression_targets]
+        linked_resources: [loh_osf_bab_chip]
+      D:
+        label: 10D
+        title: Volcano plot of UVI-DE genes colored by selective sweeps in sympatric C. eurytheme vs C. philodice with Z-chromosome admixture tree
+        bbox: [1365, 1500, 3600, 2959]
+        archetype: quantitative_plot
+        context:
+          imaging_modality: WGS / GWAS
+        linked_items: [F10_bab_uvi_targets_count]
+        linked_resources: [loh_osf_bab_chip]

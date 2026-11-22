@@ -626,3 +626,87 @@ class Manifest(Strict):
     files: list[ManifestFile] = Field(default_factory=list)
     not_used: list[ManifestNotUsed] = Field(default_factory=list)
 
+
+# ------------------------------------------------------------------ genetics.yaml (GRN relations + genomic tables)
+GeneticEntityType = Literal["gene", "cre", "noncoding_rna", "chemical", "sex", "architecture", "pattern_element", "scale_type", "measure"]
+GeneticRelationKind = Literal[
+    "activates_expression",
+    "represses_expression",
+    "directly_binds_cre",
+    "required_for_phenotype",
+    "represses_phenotype",
+    "sufficient_for_phenotype",
+    "epistatic_to",
+    "associated_with_locus",
+]
+EvidenceTier = Literal[
+    "direct_binding_and_perturbation",
+    "perturbation_only",
+    "chromatin_or_binding_only",
+    "correlative",
+]
+
+
+class GeneticRelation(Strict):
+    """Anchor-backed directed causal, regulatory, or genotype-to-phenotype edge."""
+    id: str
+    source: str  # canonical vocab term id or concise gene/locus symbol
+    source_label: str
+    source_type: GeneticEntityType = "gene"
+    relation: GeneticRelationKind
+    target: str  # canonical vocab term id or concise gene/phenotype label
+    target_label: str
+    target_type: GeneticEntityType = "gene"
+    evidence_tier: EvidenceTier
+    effect_direction: Literal["up", "down", "switch", "abolish", "none"] = "none"
+    assays: list[str] = Field(default_factory=list)  # e.g. ["crispr_g0_mosaic", "chip_seq", "snrna_seq"]
+    context: dict[str, str] = Field(default_factory=dict)
+    linked_items: list[str] = Field(default_factory=list)
+    linked_panels: list[str] = Field(default_factory=list)
+    anchor: Anchor
+    note: str | None = None
+
+    @field_validator("id")
+    @classmethod
+    def _rid(cls, v):
+        return check_id(v, "relation")
+
+
+GenomicTableKind = Literal[
+    "de_genes",
+    "binding_or_accessibility",
+    "crispr_screen_summary",
+    "gwas_or_qtl_loci",
+    "scale_morphometrics",
+]
+
+
+class GenomicTableSpec(Strict):
+    """Schema-driven pointer to a supplemental genomics/genetics/morphometrics CSV/TSV/XLSX table."""
+    id: str
+    kind: GenomicTableKind
+    file: str  # relative to papers_dont_ever_commit/<paper>/
+    title: str
+    assay: str
+    contrast: str | None = None
+    stage: str | None = None
+    taxon: str | None = None
+    columns: dict[str, str | int] = Field(default_factory=dict)
+    linked_items: list[str] = Field(default_factory=list)
+    linked_panels: list[str] = Field(default_factory=list)
+    anchor: Anchor
+    note: str | None = None
+
+    @field_validator("id")
+    @classmethod
+    def _tid(cls, v):
+        return check_id(v, "genomic_table")
+
+
+class GeneticsFile(Strict):
+    """Per-paper audited gene regulatory network (GRN) relations & high-throughput genomic supplement tables."""
+    record: str
+    relations: list[GeneticRelation] = Field(default_factory=list)
+    genomic_tables: list[GenomicTableSpec] = Field(default_factory=list)
+
+

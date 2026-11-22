@@ -257,6 +257,22 @@ window.LL = window.LL || {};
     }
   }
 
+  function drawDotplotOverlay(ctx, d, sx, sy) {
+    if (!d.dotplot_matrix || !d.dotplot_matrix.cells) return;
+    ctx.save();
+    d.dotplot_matrix.cells.forEach((c) => {
+      if (c.px == null || c.py == null) return;
+      const cx = c.px * sx, cy = c.py * sy;
+      const r = Math.max(2.2, (c.r_px || 4) * sx);
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, 0, Math.PI * 2);
+      ctx.strokeStyle = c.pct > 0 ? "#06b6d4" : "rgba(148,163,184,0.45)";
+      ctx.lineWidth = c.pct > 0 ? 1.3 : 0.8;
+      ctx.stroke();
+    });
+    ctx.restore();
+  }
+
   LL.renderPanelCanvas = function (canvas, panel, opts) {
     const options = opts || {};
     const thumb = LL.getThumb(panel.id);
@@ -291,6 +307,9 @@ window.LL = window.LL || {};
           drawMicroscopyOverlay(ctx, panel, sx, sy, cw, ch);
         } else {
           drawPlotOverlay(ctx, panel, sx, sy, cw, ch);
+          if (panel.data && panel.data.dotplot_matrix) {
+            drawDotplotOverlay(ctx, panel.data, sx, sy);
+          }
         }
       }
 

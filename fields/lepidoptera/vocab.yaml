@@ -1,6 +1,6 @@
 # Rebuilt by code from field.yaml and changes.yaml; never edited (03-vocabulary).
 name: lepidoptera
-version: 2
+version: 3
 fields:
   taxon:
     kind: terms
@@ -53,15 +53,31 @@ fields:
   target_gene:
     kind: terms
     set: true
-    scope: Homologous developmental gene, transcription factor, signaling pathway, or cytoskeletal complex targeted or profiled
-      (with pinned FlyBase FBgn ortholog xrefs).
+    scope: Hierarchical homologous developmental gene, transcription factor, signaling pathway, pigment enzyme, cytoskeletal
+      complex, or non-coding regulator targeted or profiled (with pinned FlyBase FBgn / OrthoDB ortholog xrefs).
     states:
     - none
+  genetic_element_type:
+    kind: terms
+    set: true
+    scope: Class of genomic element perturbed or profiled (coding exon, cis-regulatory element such as enhancer/promoter/silencer,
+      non-coding RNA such as lncRNA/miRNA, chromosomal inversion, or transgene reporter).
+    states:
+    - not applicable
+  allele_or_zygosity:
+    kind: terms
+    set: true
+    scope: Genetic zygosity or perturbation state (wild type, G0 somatic mosaic, heterozygous, homozygous null, dominant gain-of-function,
+      RNAi knockdown, or natural polymorphism).
+    states:
+    - not applicable
+    - wild type
   perturbation_modality:
     kind: terms
     set: true
-    scope: Experimental or evolutionary perturbation design (wild type, G0 CRISPR mosaic, knockout, RNAi, artificial selection,
-      small-molecule inhibitor, FIB milling, mechanical ablation, thermal/humidity shift, vehicle control).
+    scope: Experimental or evolutionary perturbation design (wild type, G0 CRISPR mosaic, germline knockout, CRE deletion,
+      RNAi knockdown, transgenesis, artificial selection, small-molecule inhibitor, FIB milling, mechanical ablation, thermal/humidity
+      shift, vehicle control).
     states:
     - wild type
   chemical_agent:
@@ -73,9 +89,10 @@ fields:
   imaging_modality:
     kind: terms
     set: true
-    scope: Hierarchical microscopy (SEM, FIB-SEM, TEM, confocal, SIM, AFM, optical), scattering (SAXS, USAXS), spectroscopy
-      (microspectrophotometry, goniometry, Raman, FTIR), acoustic (ultrasound vibrometry, anechoic reflectivity), or genomics
-      (snRNA-seq, ChIP-seq, ATAC-seq).
+    scope: Hierarchical microscopy (SEM, FIB-SEM, TEM, confocal, TauSTED, SIM, AFM, optical, UV photography, immunofluorescence,
+      HCR in situ), scattering (SAXS, USAXS), spectroscopy (microspectrophotometry, goniometry, Raman, FTIR), acoustic (ultrasound
+      vibrometry), or genomics/transcriptomics (bulk RNA-seq, scRNA-seq, snRNA-seq, ChIP-seq, CUT&Tag, ATAC-seq, WGS/GWAS,
+      QTL mapping).
     states: []
   view_orientation:
     kind: terms
@@ -791,74 +808,99 @@ terms:
   fields:
   - target_gene
   label: Doublesex (Dsx)
+  parent: target_gene:transcription_factor
   definition: Sex-determination transcription factor controlling sexually dimorphic wing patterns and UVI scales.
   scope: Distinct from downstream Bric-a-brac and Wnt pathway genes.
+  synonyms:
+  - text: Dsx
+  - text: DsxF
+  - text: DsxM
   xref:
   - FBgn:0000504
+  - FlyBase:FBgn0000504
+  - OrthoDB:119707at7088
   source: LivingLit
   added: *id001
 - id: target_gene:bric_a_brac
   fields:
   - target_gene
   label: Bric-a-brac (Bab)
+  parent: target_gene:transcription_factor
   definition: BTB/POZ transcription factor repressing UV-iridescent ridge ultrastructure downstream of Dsx.
   scope: Distinct from Doublesex and Optix.
+  synonyms:
+  - text: Bab
+  - text: bab
   xref:
   - FBgn:0004870
+  - FlyBase:FBgn0004870
+  - NCBI_Gene:LOC123705510
   source: LivingLit
   added: *id001
 - id: target_gene:frizzled4
   fields:
   - target_gene
   label: frizzled4 (fz4)
+  parent: target_gene:signaling_pathway
   definition: Wnt planar cell polarity / canonical receptor required for eyespot focus number and scale orientation.
   scope: Distinct from Wingless/Wnt1, WntA, and Armadillo.
   xref:
   - FBgn:0027348
+  - FlyBase:FBgn0027348
   source: LivingLit
   added: *id001
 - id: target_gene:wingless_wnt1
   fields:
   - target_gene
   label: Wnt1 / Wingless
+  parent: target_gene:signaling_pathway
   definition: Canonical Wnt morphogen expressed in wing margin and eyespot foci.
   scope: Distinct from WntA and frizzled4.
   xref:
   - FBgn:0004009
+  - FlyBase:FBgn0284084
   source: LivingLit
   added: *id001
 - id: target_gene:wnta
   fields:
   - target_gene
   label: WntA
+  parent: target_gene:signaling_pathway
   definition: Symmetry-system Wnt ligand patterning central and basal wing bands.
   scope: Distinct from canonical Wnt1/Wingless.
+  xref:
+  - OrthoDB:WntA_Lepidoptera
   source: LivingLit
   added: *id001
 - id: target_gene:armadillo_beta_catenin
   fields:
   - target_gene
   label: Armadillo / beta-catenin
+  parent: target_gene:signaling_pathway
   definition: Nuclear effector of canonical Wnt signaling in eyespot foci.
   scope: Distinct from upstream Wnt ligands and frizzled4.
   xref:
   - FBgn:0000117
+  - FlyBase:FBgn0000117
   source: LivingLit
   added: *id001
 - id: target_gene:optix
   fields:
   - target_gene
   label: Optix
+  parent: target_gene:transcription_factor
   definition: Sine oculis homeobox transcription factor regulating wing color and lamina/band identity.
   scope: Distinct from Dsx and Bab.
   xref:
   - FBgn:0025360
+  - FlyBase:FBgn0025360
   source: LivingLit
   added: *id001
 - id: target_gene:arp2_3_complex
   fields:
   - target_gene
   label: Arp2/3 complex
+  parent: target_gene:cytoskeleton_and_cuticle
   definition: Branched actin nucleating complex templating inter-ridge honeycomb height.
   scope: Branched actin nucleator inhibited by CK-666, distinct from linear F-actin bundles.
   xref:
@@ -869,6 +911,7 @@ terms:
   fields:
   - target_gene
   label: F-actin bundles
+  parent: target_gene:cytoskeleton_and_cuticle
   definition: Longitudinal linear filamentous actin bundles pre-patterning ridge spacing and preventing ridge buckling waviness.
   scope: Linear actin cables disrupted by Cytochalasin D, distinct from branched Arp2/3 complex.
   xref:
@@ -1633,11 +1676,658 @@ terms:
   - text: scale window area
   source: LivingLit
   added: *id002
+- id: genetic_element_type:coding_exon
+  fields:
+  - genetic_element_type
+  label: coding exon
+  definition: Protein-coding exonic sequence targeted for frameshift/null knockout or overexpression.
+  synonyms:
+  - text: coding sequence
+  - text: CDS
+  - text: exon knockout
+  source: LivingLit
+  added: &id003
+    paper: field_set_4_genetics_init
+    version: 3
+    agent:
+      model: livinglit-lepidoptera
+      instructions: field_set_4_genetics
+      run: null
+- id: genetic_element_type:cis_regulatory_element
+  fields:
+  - genetic_element_type
+  label: cis-regulatory element (CRE)
+  definition: Non-coding DNA regulatory sequence controlling spatiotemporal transcription of a nearby gene.
+  synonyms:
+  - text: CRE
+  - text: regulatory element
+  - text: cis-regulatory module
+  source: LivingLit
+  added: *id003
+- id: genetic_element_type:enhancer
+  fields:
+  - genetic_element_type
+  label: enhancer
+  parent: genetic_element_type:cis_regulatory_element
+  definition: Cis-regulatory DNA element activating transcription in specific tissues or developmental stages.
+  synonyms:
+  - text: wing enhancer
+  - text: scale enhancer
+  source: LivingLit
+  added: *id003
+- id: genetic_element_type:promoter
+  fields:
+  - genetic_element_type
+  label: promoter
+  parent: genetic_element_type:cis_regulatory_element
+  definition: Core transcription initiation region upstream of a gene transcription start site.
+  source: LivingLit
+  added: *id003
+- id: genetic_element_type:silencer
+  fields:
+  - genetic_element_type
+  label: silencer
+  parent: genetic_element_type:cis_regulatory_element
+  definition: Cis-regulatory DNA element recruiting transcriptional repressors to suppress target gene expression.
+  source: LivingLit
+  added: *id003
+- id: genetic_element_type:noncoding_rna
+  fields:
+  - genetic_element_type
+  label: non-coding RNA
+  definition: Functional RNA locus not translated into a canonical polypeptide.
+  synonyms:
+  - text: ncRNA
+  source: LivingLit
+  added: *id003
+- id: genetic_element_type:lncrna
+  fields:
+  - genetic_element_type
+  label: long non-coding RNA (lncRNA)
+  parent: genetic_element_type:noncoding_rna
+  definition: Long non-coding RNA transcript (>200 nt) regulating chromatin or wing pattern genes.
+  synonyms:
+  - text: lncRNA
+  source: LivingLit
+  added: *id003
+- id: genetic_element_type:mirna
+  fields:
+  - genetic_element_type
+  label: microRNA (miRNA)
+  parent: genetic_element_type:noncoding_rna
+  definition: Short (~22 nt) non-coding RNA mediating post-transcriptional mRNA repression.
+  synonyms:
+  - text: miRNA
+  - text: microRNA
+  source: LivingLit
+  added: *id003
+- id: genetic_element_type:chromosomal_inversion
+  fields:
+  - genetic_element_type
+  label: chromosomal inversion / supergene
+  definition: Recombination-suppressed chromosomal rearrangement locking co-adapted mimetic or dimorphic wing alleles.
+  synonyms:
+  - text: supergene
+  - text: inversion
+  source: LivingLit
+  added: *id003
+- id: genetic_element_type:transgene_reporter
+  fields:
+  - genetic_element_type
+  label: transgene reporter
+  definition: Exogenous promoter/enhancer-driven fluorescent or enzymatic reporter construct integrated into the genome.
+  source: LivingLit
+  added: *id003
+- id: allele_or_zygosity:g0_somatic_mosaic
+  fields:
+  - allele_or_zygosity
+  label: G0 somatic mosaic
+  definition: Chimeric G0 crispant carrying clonal mutant and wild-type somatic patches within the same wing.
+  synonyms:
+  - text: G0 mosaic
+  - text: mosaic KO
+  - text: mKO
+  - text: crispant
+  source: LivingLit
+  added: *id003
+- id: allele_or_zygosity:heterozygous
+  fields:
+  - allele_or_zygosity
+  label: heterozygous
+  definition: Diploid individual carrying one mutant and one wild-type allele at the target locus.
+  source: LivingLit
+  added: *id003
+- id: allele_or_zygosity:homozygous_null
+  fields:
+  - allele_or_zygosity
+  label: homozygous null
+  definition: Germline-transmitted individual carrying two loss-of-function mutant alleles across all cells.
+  synonyms:
+  - text: homozygous KO
+  - text: germline null
+  source: LivingLit
+  added: *id003
+- id: allele_or_zygosity:gain_of_function
+  fields:
+  - allele_or_zygosity
+  label: gain-of-function / overexpression
+  definition: Dominant or ectopic activation allele driving elevated or mislocalized expression.
+  source: LivingLit
+  added: *id003
+- id: allele_or_zygosity:rnai_knockdown
+  fields:
+  - allele_or_zygosity
+  label: RNAi knockdown
+  definition: Post-transcriptional hypomorphic transcript depletion via dsRNA/siRNA electroporation or injection.
+  synonyms:
+  - text: siRNA knockdown
+  - text: dsRNA knockdown
+  source: LivingLit
+  added: *id003
+- id: allele_or_zygosity:natural_polymorphism
+  fields:
+  - allele_or_zygosity
+  label: natural polymorphism
+  definition: Naturally segregating population or morph allele (e.g., Alba female polymorphism, mimetic race).
+  synonyms:
+  - text: natural morph
+  - text: Alba morph
+  - text: wild polymorphism
+  source: LivingLit
+  added: *id003
+- id: target_gene:transcription_factor
+  fields:
+  - target_gene
+  label: transcription factor
+  definition: Sequence-specific DNA-binding transcriptional regulator governing wing patterning, sex dimorphism, or scale
+    differentiation.
+  source: LivingLit
+  added: *id003
+- id: target_gene:signaling_pathway
+  fields:
+  - target_gene
+  label: signaling pathway component
+  definition: Extracellular morphogen, receptor, or intracellular transducer mediating wing patterning and planar cell polarity.
+  source: LivingLit
+  added: *id003
+- id: target_gene:pigment_biosynthesis
+  fields:
+  - target_gene
+  label: pigment biosynthesis & transport
+  definition: Enzyme or transporter governing melanin, pterin, ommochrome, or papiliochrome synthesis and deposition.
+  source: LivingLit
+  added: *id003
+- id: target_gene:cytoskeleton_and_cuticle
+  fields:
+  - target_gene
+  label: cytoskeleton & cuticle morphogenesis
+  definition: Actin/microtubule regulator, kinase, or chitin/cuticle structural protein shaping scale ridges, crossribs, and
+    lamellae.
+  source: LivingLit
+  added: *id003
+- id: target_gene:noncoding_regulator
+  fields:
+  - target_gene
+  label: non-coding RNA regulator
+  definition: lncRNA or miRNA locus directly regulating wing scale color and pattern fate.
+  source: LivingLit
+  added: *id003
+- id: target_gene:antennapedia
+  fields:
+  - target_gene
+  label: Antennapedia (Antp)
+  parent: target_gene:transcription_factor
+  definition: Hox transcription factor marking specific wing/scale precursor subpopulations and eyespot centers.
+  synonyms:
+  - text: Antp
+  xref:
+  - FlyBase:FBgn0260642
+  source: LivingLit
+  added: *id003
+- id: target_gene:shaven
+  fields:
+  - target_gene
+  label: shaven (sv / Pax2)
+  parent: target_gene:transcription_factor
+  definition: Pax2-family transcription factor universally marking developing lepidopteran scale cell precursors.
+  synonyms:
+  - text: sv
+  - text: Pax2
+  - text: sparkling
+  xref:
+  - FlyBase:FBgn0005561
+  source: LivingLit
+  added: *id003
+- id: target_gene:pebbled
+  fields:
+  - target_gene
+  label: pebbled (peb / Hnt)
+  parent: target_gene:transcription_factor
+  definition: Zinc-finger transcription factor (Hindsight) co-expressed across differentiating scale cell precursors.
+  synonyms:
+  - text: peb
+  - text: hindsight
+  - text: Hnt
+  xref:
+  - FlyBase:FBgn0003053
+  source: LivingLit
+  added: *id003
+- id: target_gene:eip75b
+  fields:
+  - target_gene
+  label: Eip75B
+  parent: target_gene:transcription_factor
+  definition: Ecdysone-inducible nuclear receptor transcription factor strongly bound by Bab and upregulated in Colias UVI
+    scales.
+  synonyms:
+  - text: E75
+  - text: Eip75B
+  xref:
+  - FlyBase:FBgn0000568
+  - NCBI_Gene:LOC123690925
+  source: LivingLit
+  added: *id003
+- id: target_gene:distal_less
+  fields:
+  - target_gene
+  label: Distal-less (Dll)
+  parent: target_gene:transcription_factor
+  definition: Homeodomain transcription factor patterning wing margins, eyespots, and melanic scale fate.
+  synonyms:
+  - text: Dll
+  xref:
+  - FlyBase:FBgn0000157
+  source: LivingLit
+  added: *id003
+- id: target_gene:spineless
+  fields:
+  - target_gene
+  label: spineless (ss)
+  parent: target_gene:transcription_factor
+  definition: bHLH-PAS transcription factor controlling bristle and wing scale morphogenesis.
+  synonyms:
+  - text: ss
+  xref:
+  - FlyBase:FBgn0003513
+  source: LivingLit
+  added: *id003
+- id: target_gene:engrailed
+  fields:
+  - target_gene
+  label: engrailed (en)
+  parent: target_gene:transcription_factor
+  definition: Posterior compartment selector transcription factor in insect wing discs.
+  synonyms:
+  - text: en
+  - text: invected
+  xref:
+  - FlyBase:FBgn0000577
+  source: LivingLit
+  added: *id003
+- id: target_gene:aristaless
+  fields:
+  - target_gene
+  label: aristaless (al)
+  parent: target_gene:transcription_factor
+  definition: Paired-like homeodomain transcription factor specifying white/yellow wing pattern switches.
+  synonyms:
+  - text: al
+  - text: al1
+  xref:
+  - FlyBase:FBgn0000061
+  source: LivingLit
+  added: *id003
+- id: target_gene:bar_h1
+  fields:
+  - target_gene
+  label: BarH1
+  parent: target_gene:transcription_factor
+  definition: Homeobox transcription factor regulating scale pigmentation and female Alba/pterin fate.
+  synonyms:
+  - text: BarH-1
+  - text: BarH1
+  xref:
+  - FlyBase:FBgn0011758
+  source: LivingLit
+  added: *id003
+- id: target_gene:multiple_wing_hairs
+  fields:
+  - target_gene
+  label: multiple wing hairs (mwh)
+  parent: target_gene:cytoskeleton_and_cuticle
+  definition: Planar-cell-polarity actin-bundling regulator strongly bound by Bab (52 peaks) and upregulated in UVI scale
+    precursors.
+  synonyms:
+  - text: Mwh
+  - text: mwh
+  xref:
+  - FlyBase:FBgn0264272
+  - NCBI_Gene:LOC123695799
+  source: LivingLit
+  added: *id003
+- id: target_gene:drak
+  fields:
+  - target_gene
+  label: Drak
+  parent: target_gene:cytoskeleton_and_cuticle
+  definition: Death-associated protein kinase regulating actomyosin contractility, strongly upregulated in UVI scales and
+    bound by Bab.
+  synonyms:
+  - text: Drak
+  xref:
+  - FlyBase:FBgn0030093
+  - NCBI_Gene:LOC123691521
+  source: LivingLit
+  added: *id003
+- id: target_gene:forked
+  fields:
+  - target_gene
+  label: forked (f)
+  parent: target_gene:cytoskeleton_and_cuticle
+  definition: Espin-family F-actin cross-linker required for longitudinal actin bundle assembly and ridge formation.
+  synonyms:
+  - text: f
+  - text: espin
+  xref:
+  - FlyBase:FBgn0000630
+  source: LivingLit
+  added: *id003
+- id: target_gene:singed
+  fields:
+  - target_gene
+  label: singed (sn / Fascin)
+  parent: target_gene:cytoskeleton_and_cuticle
+  definition: Fascin F-actin bundling protein stabilizing parallel longitudinal scale actin bundles.
+  synonyms:
+  - text: sn
+  - text: fascin
+  xref:
+  - FlyBase:FBgn0003447
+  source: LivingLit
+  added: *id003
+- id: target_gene:osiris_24
+  fields:
+  - target_gene
+  label: Osiris 24 (Osi24)
+  parent: target_gene:cytoskeleton_and_cuticle
+  definition: Insect-specific transmembrane cuticle-secretion protein marking developing scale cell precursors.
+  synonyms:
+  - text: Osi24
+  xref:
+  - FlyBase:FBgn0037430
+  source: LivingLit
+  added: *id003
+- id: target_gene:ebony
+  fields:
+  - target_gene
+  label: ebony (e)
+  parent: target_gene:pigment_biosynthesis
+  definition: N-beta-alanyldopamine synthetase promoting yellow/tan sclerotin and suppressing black melanin.
+  synonyms:
+  - text: e
+  xref:
+  - FlyBase:FBgn0000527
+  source: LivingLit
+  added: *id003
+- id: target_gene:yellow
+  fields:
+  - target_gene
+  label: yellow (y)
+  parent: target_gene:pigment_biosynthesis
+  definition: Melanin-maturation protein required for black dopa-melanin synthesis in wing scales.
+  synonyms:
+  - text: y
+  xref:
+  - FlyBase:FBgn0004034
+  source: LivingLit
+  added: *id003
+- id: target_gene:ivory_lncrna
+  fields:
+  - target_gene
+  label: ivory (lncRNA)
+  parent: target_gene:noncoding_regulator
+  definition: Conserved lepidopteran long non-coding RNA at the cortex locus controlling melanic vs. non-melanic scale fate.
+  synonyms:
+  - text: ivory
+  - text: cortex locus lncRNA
+  source: LivingLit
+  added: *id003
+- id: target_gene:mir_193
+  fields:
+  - target_gene
+  label: miR-193
+  parent: target_gene:noncoding_regulator
+  definition: Conserved microRNA processed from the ivory locus directing black melanin patterning across butterflies.
+  synonyms:
+  - text: mir-193
+  - text: miR193
+  source: LivingLit
+  added: *id003
+- id: perturbation_modality:crispr_germline_ko
+  fields:
+  - perturbation_modality
+  label: CRISPR germline knockout
+  definition: Heritable F1/F2 germline CRISPR-Cas9 knockout line carrying defined mutant alleles.
+  synonyms:
+  - text: germline knockout
+  - text: F2 KO
+  source: LivingLit
+  added: *id003
+- id: perturbation_modality:crispr_cre_deletion
+  fields:
+  - perturbation_modality
+  label: CRISPR CRE deletion
+  definition: Dual-sgRNA CRISPR-Cas9 deletion specifically removing a non-coding cis-regulatory enhancer or silencer.
+  synonyms:
+  - text: enhancer deletion
+  - text: CRE KO
+  source: LivingLit
+  added: *id003
+- id: perturbation_modality:rnai_knockdown
+  fields:
+  - perturbation_modality
+  label: RNAi knockdown
+  definition: Pupal wing siRNA/dsRNA electroporation or microinjection depleting target mRNA.
+  synonyms:
+  - text: RNAi
+  - text: siRNA electroporation
+  - text: Bab RNAi
+  source: LivingLit
+  added: *id003
+- id: perturbation_modality:transgenesis
+  fields:
+  - perturbation_modality
+  label: transgenesis / reporter knock-in
+  definition: PiggyBac or CRISPR-mediated transgenic reporter or ectopic expression construct.
+  source: LivingLit
+  added: *id003
+- id: perturbation_modality:natural_cross_or_gwas
+  fields:
+  - perturbation_modality
+  label: natural polymorphism / genetic cross
+  definition: Association mapping, QTL cross, or natural morph comparison without engineered perturbation.
+  source: LivingLit
+  added: *id003
+- id: imaging_modality:immunofluorescence
+  fields:
+  - imaging_modality
+  label: immunofluorescence (IF)
+  parent: imaging_modality:optical_microscopy
+  definition: Antibody-based fluorescent protein localization in fixed pupal wings (e.g., DsxDBD, Bab, Antp).
+  synonyms:
+  - text: antibody staining
+  - text: IF
+  - text: immunostaining
+  source: LivingLit
+  added: *id003
+- id: imaging_modality:uv_photography
+  fields:
+  - imaging_modality
+  label: UV photography (320–400 nm)
+  parent: imaging_modality:optical_microscopy
+  definition: Ultraviolet-passband reflectance photography imaging UV-iridescent wing patterns.
+  synonyms:
+  - text: UV-photography
+  - text: UV imaging
+  source: LivingLit
+  added: *id003
+- id: imaging_modality:genomics_and_transcriptomics
+  fields:
+  - imaging_modality
+  label: genomics & transcriptomics
+  definition: High-throughput sequencing assays profiling gene expression, chromatin binding, accessibility, or population
+    genetics.
+  source: LivingLit
+  added: *id003
+- id: imaging_modality:snrna_seq
+  fields:
+  - imaging_modality
+  label: snRNA-seq
+  parent: imaging_modality:genomics_and_transcriptomics
+  definition: Single-nucleus RNA sequencing resolving cell-type-specific transcriptomes in developing wings.
+  synonyms:
+  - text: single-nucleus RNA-seq
+  - text: single-nucleus transcriptomics
+  source: LivingLit
+  added: *id003
+- id: imaging_modality:scrna_seq
+  fields:
+  - imaging_modality
+  label: scRNA-seq
+  parent: imaging_modality:genomics_and_transcriptomics
+  definition: Single-cell RNA sequencing resolving cellular expression clusters.
+  synonyms:
+  - text: single-cell RNA-seq
+  source: LivingLit
+  added: *id003
+- id: imaging_modality:bulk_rna_seq
+  fields:
+  - imaging_modality
+  label: bulk RNA-seq
+  parent: imaging_modality:genomics_and_transcriptomics
+  definition: Tissue-level mRNA sequencing comparing wing regions, sexes, or knockout vs. control wings.
+  source: LivingLit
+  added: *id003
+- id: imaging_modality:chip_seq
+  fields:
+  - imaging_modality
+  label: ChIP-seq
+  parent: imaging_modality:genomics_and_transcriptomics
+  definition: Chromatin immunoprecipitation sequencing mapping genome-wide transcription factor binding sites (e.g., Bab ChIP-seq).
+  synonyms:
+  - text: ChIP-seq profiling
+  source: LivingLit
+  added: *id003
+- id: imaging_modality:cut_and_tag
+  fields:
+  - imaging_modality
+  label: CUT&Tag / CUT&RUN
+  parent: imaging_modality:genomics_and_transcriptomics
+  definition: Targeted chromatin cleavage profiling transcription factor occupancy or histone marks from low cell numbers.
+  source: LivingLit
+  added: *id003
+- id: imaging_modality:atac_seq
+  fields:
+  - imaging_modality
+  label: ATAC-seq
+  parent: imaging_modality:genomics_and_transcriptomics
+  definition: Assay for transposase-accessible chromatin identifying open cis-regulatory elements.
+  source: LivingLit
+  added: *id003
+- id: imaging_modality:wgs_gwas
+  fields:
+  - imaging_modality
+  label: WGS / GWAS
+  parent: imaging_modality:genomics_and_transcriptomics
+  definition: Whole-genome sequencing or genome-wide association mapping of wing pattern loci.
+  source: LivingLit
+  added: *id003
+- id: measure:log2_fold_change
+  fields:
+  - measure
+  label: log2 fold change (expression)
+  definition: Base-2 logarithm of gene expression ratio between target cell cluster/condition and reference.
+  synonyms:
+  - text: avg_log2FC
+  - text: log2FC
+  source: LivingLit
+  added: *id003
+- id: measure:fdr_adjusted_p
+  fields:
+  - measure
+  label: FDR-adjusted p-value
+  definition: Multiple-testing corrected significance value (Bonferroni or Benjamini–Hochberg) for differential expression.
+  synonyms:
+  - text: p_val_adj
+  - text: padj
+  - text: adjusted p-value
+  source: LivingLit
+  added: *id003
+- id: measure:chip_peak_count
+  fields:
+  - measure
+  label: ChIP-seq binding peak count
+  definition: Number of called transcription-factor ChIP-seq occupancy peaks assigned to a gene locus or developmental stage.
+  synonyms:
+  - text: Bab ChIP peak count
+  - text: ChIP-seq peaks
+  - text: binding sites
+  source: LivingLit
+  added: *id003
+- id: measure:differential_expression_probability
+  fields:
+  - measure
+  label: differential expression probability
+  definition: Fraction or probability of genes exhibiting significant differential expression conditioned on TF ChIP peak
+    count.
+  source: LivingLit
+  added: *id003
+- id: measure:g0_hatching_rate
+  fields:
+  - measure
+  label: G0 CRISPR hatching rate
+  definition: Proportion of CRISPR-injected embryos that hatch into larvae.
+  source: LivingLit
+  added: *id003
+- id: measure:g0_emergence_rate
+  fields:
+  - measure
+  label: G0 CRISPR adult emergence rate
+  definition: Proportion of hatched CRISPR larvae surviving to adult eclosion.
+  source: LivingLit
+  added: *id003
+- id: measure:crispant_penetrance
+  fields:
+  - measure
+  label: crispant phenotype penetrance
+  definition: Proportion of emerged G0 CRISPR adults displaying the target wing or scale mosaic phenotype.
+  source: LivingLit
+  added: *id003
+- id: measure:nucleus_cluster_count
+  fields:
+  - measure
+  label: profiled nuclei / cell count
+  definition: Number of QC-passing single nuclei or scale-cell precursor nuclei resolved by snRNA-seq/scRNA-seq.
+  synonyms:
+  - text: nuclei count
+  - text: cell count
+  source: LivingLit
+  added: *id003
+- id: measure:de_gene_count
+  fields:
+  - measure
+  label: differentially expressed gene count
+  definition: Number of genes passing fold-change and adjusted p-value thresholds in a transcriptomic contrast.
+  synonyms:
+  - text: DE genes
+  - text: UVI-DE genes
+  source: LivingLit
+  added: *id003
 standing_keys:
   measure:ridge_spacing:
     value:
       must_match: []
-      may_vary: &id003
+      may_vary: &id004
       - taxon
       - sex
       - anatomical_region
@@ -1647,6 +2337,8 @@ standing_keys:
       - life_stage
       - pupal_stage_pct
       - target_gene
+      - genetic_element_type
+      - allele_or_zygosity
       - perturbation_modality
       - chemical_agent
       - imaging_modality
@@ -1655,41 +2347,41 @@ standing_keys:
     direction:
       must_match:
       - contrast
-      may_vary: *id003
-    added: *id002
+      may_vary: *id004
+    added: *id003
   measure:ridge_height:
     value:
       must_match: []
-      may_vary: *id003
+      may_vary: *id004
     direction:
       must_match:
       - contrast
-      may_vary: *id003
-    added: *id002
+      may_vary: *id004
+    added: *id003
   measure:crossrib_spacing:
     value:
       must_match: []
-      may_vary: *id003
+      may_vary: *id004
     direction:
       must_match:
       - contrast
-      may_vary: *id003
-    added: *id002
+      may_vary: *id004
+    added: *id003
   measure:scale_width:
     value:
       must_match: []
-      may_vary: *id003
+      may_vary: *id004
     direction:
       must_match:
       - contrast
-      may_vary: *id003
-    added: *id002
+      may_vary: *id004
+    added: *id003
   measure:honeycomb_lattice_height:
     value:
       must_match: []
-      may_vary: *id003
+      may_vary: *id004
     direction:
       must_match:
       - contrast
-      may_vary: *id003
-    added: *id002
+      may_vary: *id004
+    added: *id003

@@ -197,6 +197,13 @@ def apply_version(v: Vocabulary, version: dict) -> None:
             v.terms[body["id"]].synonyms.append(_syn(body))
         elif kind == "set_scope":
             v.terms[body["id"]].scope = body["scope"]
+        elif kind == "set_parent":
+            v.terms[body["id"]].parent = body["parent"]
+        elif kind == "add_xref":
+            xs = body.get("xref") or ([body["value"]] if body.get("value") else [])
+            for x in xs:
+                if x not in v.terms[body["id"]].xref:
+                    v.terms[body["id"]].xref.append(x)
         elif kind == "add_qualifier":
             v.terms[body["id"]].qualifiers[body["name"]] = {"dimension": body["dimension"]}
         elif kind == "add_field":
@@ -460,15 +467,37 @@ def append_version(edits: list[dict], paper: str, agent: dict | None, field: str
     return version
 
 
+EXTERNAL_XREF_PATTERNS = {
+    "FlyBase": re.compile(r"^FlyBase:FBgn\d{7}$"),
+    "NCBI_Gene": re.compile(r"^NCBI_Gene:(?:LOC)?\d+$"),
+    "OrthoDB": re.compile(r"^OrthoDB:[A-Za-z0-9_.-]+$"),
+    "GO": re.compile(r"^GO:\d{7}$"),
+    "UniProt": re.compile(r"^UniProt:[A-Z0-9_-]+$"),
+}
+
+
 def recheck_ontology(vocab, ontology) -> list[str]:
-    """Every adopted id and every own term's xref against the pinned ontology releases: missing or obsolete ones are
-    listed (03-vocabulary, Adopted ontologies and our own terms). Run on every release, so a new pin is re-checked."""
+    """Every adopted id and every own term's xref against the pinned ontology releases (or validated external gene
+    database CURIE formats): missing, malformed, or obsolete ones are listed. Run on every release."""
     probs = []
     for tid, t in sorted(vocab.terms.items()):
-        for oid, what in ([(tid, "adopted id")] if t.adopted else []) + [(x, f"xref of {tid}") for x in t.xref]:
+        if t.adopted:
+            info = ontology.check(tid)
+            if info is None:
+                probs.append(f"{tid} (adopted id) is not in the pinned release")
+            elif info.get("obsolete"):
+                probs.append(f"{tid} (adopted id) is obsolete in the pinned {info.get('release')} release")
+        for oid in t.xref:
+            what = f"xref of {tid}"
+            pre = oid.split(":", 1)[0] if ":" in oid else ""
+            if pre in EXTERNAL_XREF_PATTERNS:
+                if not EXTERNAL_XREF_PATTERNS[pre].match(oid):
+                    probs.append(f"{oid} ({what}) has invalid {pre} identifier format")
+                continue
             info = ontology.check(oid)
             if info is None:
                 probs.append(f"{oid} ({what}) is not in the pinned release")
             elif info.get("obsolete"):
                 probs.append(f"{oid} ({what}) is obsolete in the pinned {info.get('release')} release")
     return probs
+

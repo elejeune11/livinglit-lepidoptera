@@ -124,7 +124,29 @@ def build(tag: str, field: str = DEFAULT_FIELD, records_dir: Path = RECORDS_DIR,
     _write_csv(out / "comparisons.csv", [c for c in comps if c["verdict"] != "not comparable"])
     _write_csv(out / "terms.csv", [{"id": t.id, "fields": t.fields, "label": t.label, "parent": t.parent, "source": t.source,
                                      "definition": t.definition, "scope": t.scope, "synonyms": [s["text"] for s in t.synonyms],
-                                     "added": t.added.get("paper")} for t in vocab.terms.values()])
+                                     "xref": list(t.xref or []), "added": t.added.get("paper")} for t in vocab.terms.values()])
+    # Export audited genetic/regulatory relations (genetics.yaml) across papers
+    from .models import GeneticsFile
+    rel_rows = []
+    for pid in sorted(pas):
+        gpath = records_dir / pid / "genetics.yaml"
+        if gpath.is_file():
+            gf = GeneticsFile.model_validate(yaml.safe_load(gpath.read_text(encoding="utf-8")))
+            for r in gf.relations:
+                rel_rows.append({
+                    "paper": pid, "id": r.id, "source": r.source, "source_label": r.source_label,
+                    "source_type": r.source_type, "relation": r.relation, "target": r.target,
+                    "target_label": r.target_label, "target_type": r.target_type,
+                    "evidence_tier": r.evidence_tier, "effect_direction": r.effect_direction,
+                    "assays": r.assays, "context": r.context, "linked_items": r.linked_items,
+                    "linked_panels": r.linked_panels, "anchor_quote": r.anchor.quote,
+                    "anchor_where": r.anchor.where, "note": r.note or "",
+                })
+    _write_csv(out / "relations.csv", rel_rows, [
+        "paper", "id", "source", "source_label", "source_type", "relation", "target", "target_label",
+        "target_type", "evidence_tier", "effect_direction", "assays", "context", "linked_items",
+        "linked_panels", "anchor_quote", "anchor_where", "note",
+    ])
     fu = formula_use(pas)
     _write_csv(out / "formulas.csv", [{"formula": e.formula, "kind": e.kind, "statement": e.statement, "equations": e.equations,
                                         "holds_under": lib.holds_under(e.formula), "suspect": e.formula in lib.suspect,

@@ -1,0 +1,23 @@
+# Written by code from changes.yaml (version 4); never edited.
+formula: crispr_penetrance
+kind: definition
+statement: G0 crispant phenotypic penetrance equals the number of emerged adults exhibiting the target mosaic wing phenotype
+  divided by total emerged adults.
+equations:
+- pen = n_phenotype / n_emerged
+variables:
+  pen: dimensionless
+  n_phenotype: count
+  n_emerged: count
+assumes:
+- both wing surfaces of all emerged adults are scored consistently
+does_not_apply: sex-limited phenotypes unless the denominator is restricted to the informative sex
+tests:
+- given:
+    n_phenotype: 18.0
+    n_emerged: 30.0
+  expect:
+    pen: 0.6
+cites:
+  text: CRISPR G0 mosaic penetrance definition (Loh et al. 2025, PLOS Biol 23:e3003233).
+  url: https://doi.org/10.1371/journal.pbio.3003233

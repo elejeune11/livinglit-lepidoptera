@@ -1,0 +1,23 @@
+# Written by code from changes.yaml (version 4); never edited.
+formula: crispr_hatching_rate
+kind: definition
+statement: G0 CRISPR embryonic hatching rate equals the number of hatched larvae divided by the number of injected eggs.
+equations:
+- r_hatch = n_hatched / n_injected
+variables:
+  r_hatch: dimensionless
+  n_hatched: count
+  n_injected: count
+assumes:
+- all injected eggs are tracked through hatching
+does_not_apply: unrecorded egg mortality or pooled multi-sgRNA batches without per-batch denominators
+tests:
+- given:
+    n_hatched: 120.0
+    n_injected: 400.0
+  expect:
+    r_hatch: 0.3
+cites:
+  text: Standard CRISPR-Cas9 embryonic microinjection viability metric in Lepidoptera (Martin et al. 2020; Loh et al. 2025,
+    PLOS Biol 23:e3003233).
+  url: https://doi.org/10.1371/journal.pbio.3003233

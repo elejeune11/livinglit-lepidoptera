@@ -1,0 +1,493 @@
+panel_id,series,kind,index,x,y,lo,hi,x_unit,y_unit
+2025_Loh/F1/D,female_black_WT,scatter_point,0,0.373,2.157,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,1,0.588,2.118,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,2,0.408,2.114,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,3,0.472,2.086,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,4,0.317,2.078,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,5,0.519,2.066,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,6,0.328,2.005,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,7,0.525,2.006,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,8,0.436,2.0,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,9,0.375,1.984,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,10,0.325,1.944,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,11,0.528,1.934,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,12,0.571,1.908,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,13,0.452,1.879,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,14,0.52,1.872,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,15,0.61,1.867,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,16,0.572,1.8,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,17,0.623,1.997,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,18,0.358,1.94,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,19,0.575,1.863,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,20,0.406,2.158,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,21,0.482,2.232,,,class,µm
+2025_Loh/F1/D,female_black_WT,scatter_point,22,0.482,1.734,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,0,1.311,2.246,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,1,1.249,2.229,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,2,1.366,2.229,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,3,1.498,2.22,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,4,1.295,2.158,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,5,1.414,2.158,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,6,1.458,2.134,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,7,1.344,2.106,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,8,1.497,2.092,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,9,1.503,2.032,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,10,1.359,1.983,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,11,1.43,1.963,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,12,1.257,1.952,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,13,1.43,1.903,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,14,1.473,1.879,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,15,1.343,2.058,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,16,1.247,2.05,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,17,1.435,2.099,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,18,1.527,2.074,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,19,1.467,2.076,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,20,1.532,1.992,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,21,1.371,2.083,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,22,1.444,1.858,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,23,1.387,2.339,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,24,1.386,1.783,,,class,µm
+2025_Loh/F1/D,female_black_Alba,scatter_point,25,1.262,1.912,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,0,2.289,2.086,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,1,2.225,2.065,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,2,2.337,2.065,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,3,2.259,2.021,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,4,2.21,2.007,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,5,2.378,2.005,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,6,2.448,2.0,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,7,2.476,1.95,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,8,2.376,1.943,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,9,2.202,1.923,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,10,2.283,1.923,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,11,2.489,1.888,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,12,2.246,1.86,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,13,2.293,1.862,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,14,2.413,1.799,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,15,2.292,1.802,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,16,2.23,1.741,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,17,2.191,2.055,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,18,2.412,2.004,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,19,2.361,1.907,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,20,2.443,1.955,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,21,2.266,1.978,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,22,2.261,1.821,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,23,2.488,1.845,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,24,2.018,1.994,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,25,2.69,1.994,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,26,2.517,1.868,,,class,µm
+2025_Loh/F1/D,female_orange_WT,scatter_point,27,2.354,1.688,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,0,3.24,2.054,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,1,3.379,1.994,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,2,3.39,1.933,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,3,3.247,1.887,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,4,3.148,2.233,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,5,3.367,1.9,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,6,3.334,1.996,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,7,3.081,1.89,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,8,3.088,2.181,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,9,3.303,1.859,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,10,3.211,2.134,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,11,3.196,2.217,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,12,3.062,2.141,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,13,3.295,2.12,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,14,3.111,1.934,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,15,3.295,1.924,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,16,3.22,2.324,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,17,3.097,2.088,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,18,3.109,1.978,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,19,3.351,2.18,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,20,3.178,2.255,,,class,µm
+2025_Loh/F1/D,female_white_Alba,scatter_point,21,3.247,2.099,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,0,4.723,2.363,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,1,4.572,2.272,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,2,4.771,2.26,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,3,4.646,2.249,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,4,4.755,2.19,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,5,4.794,2.155,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,6,4.723,2.139,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,7,4.646,2.096,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,8,4.517,2.095,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,9,4.572,2.025,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,10,4.516,1.995,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,11,4.803,1.989,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,12,4.611,1.985,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,13,4.715,1.983,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,14,4.664,1.943,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,15,4.754,2.104,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,16,4.707,2.096,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,17,4.581,1.96,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,18,4.71,2.179,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,19,4.818,1.953,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,20,4.648,2.427,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,21,4.606,2.028,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,22,4.698,1.948,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,23,4.648,1.845,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,24,4.708,2.328,,,class,µm
+2025_Loh/F1/D,male_black,scatter_point,25,4.565,1.921,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,0,5.64,1.121,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,1,5.463,1.111,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,2,5.686,1.111,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,3,5.606,1.07,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,4,5.439,1.057,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,5,5.487,1.041,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,6,5.722,1.04,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,7,5.534,1.029,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,8,5.582,1.016,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,9,5.447,0.996,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,10,5.63,0.995,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,11,5.678,0.996,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,12,5.563,0.96,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,13,5.474,0.943,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,14,5.52,0.986,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,15,5.42,1.102,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,16,5.598,0.97,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,17,5.414,1.006,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,18,5.571,0.907,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,19,5.441,0.943,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,20,5.483,0.99,,,class,µm
+2025_Loh/F1/D,male_orange_UVI,scatter_point,21,5.711,0.998,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,0,6.521,5.001,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,1,6.366,4.987,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,2,6.454,4.935,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,3,6.347,4.927,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,4,6.553,4.898,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,5,6.362,4.825,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,6,6.457,4.786,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,7,6.505,4.735,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,8,6.458,4.621,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,9,6.64,4.589,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,10,6.612,4.535,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,11,6.609,4.293,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,12,6.537,4.088,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,13,6.632,4.046,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,14,6.339,4.036,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,15,6.474,4.036,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,16,6.385,4.023,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,17,6.624,3.871,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,18,6.414,3.796,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,19,6.491,3.667,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,20,6.521,4.033,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,21,6.451,3.788,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,22,6.585,4.507,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,23,6.532,4.707,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,24,6.522,3.659,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,25,6.495,5.254,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,26,6.495,3.545,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,27,6.495,3.495,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,28,6.497,3.623,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,29,6.465,3.995,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,30,6.379,4.941,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,31,6.496,5.305,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,32,6.581,4.876,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,33,6.465,4.58,,,class,µm
+2025_Loh/F1/D,male_spatulate,scatter_point,34,6.465,4.743,,,class,µm
+2025_Loh/F1/E,ridge_fft,fft_period,0,,1.7529,1.5694,1.9364,,µm
+2025_Loh/F1/E,ridge_transect,transect_point,0,0.05,1.7238,1.7037,1.744,roi_fraction,µm
+2025_Loh/F1/E,ridge_transect,transect_point,1,0.15,1.7847,1.764,1.8053,roi_fraction,µm
+2025_Loh/F1/E,ridge_transect,transect_point,2,0.25,1.7441,1.7238,1.7644,roi_fraction,µm
+2025_Loh/F1/E,ridge_transect,transect_point,3,0.35,1.7238,1.7037,1.744,roi_fraction,µm
+2025_Loh/F1/E,ridge_transect,transect_point,4,0.45,1.7441,1.7238,1.7644,roi_fraction,µm
+2025_Loh/F1/E,ridge_transect,transect_point,5,0.55,1.8049,1.7841,1.8258,roi_fraction,µm
+2025_Loh/F1/E,ridge_transect,transect_point,6,0.65,1.8252,1.8042,1.8463,roi_fraction,µm
+2025_Loh/F1/E,ridge_transect,transect_point,7,0.75,1.6833,1.6635,1.7031,roi_fraction,µm
+2025_Loh/F1/E,ridge_transect,transect_point,8,0.85,1.7441,1.7238,1.7644,roi_fraction,µm
+2025_Loh/F1/E,ridge_transect,transect_point,9,0.95,1.7847,1.764,1.8053,roi_fraction,µm
+2025_Loh/F1/F,ridge_fft,fft_period,0,,1.9435,1.7179,2.1691,,µm
+2025_Loh/F1/F,ridge_transect,transect_point,0,0.05,1.97,1.9476,1.9924,roi_fraction,µm
+2025_Loh/F1/F,ridge_transect,transect_point,1,0.15,1.9294,1.9074,1.9514,roi_fraction,µm
+2025_Loh/F1/F,ridge_transect,transect_point,2,0.25,1.8481,1.8269,1.8694,roi_fraction,µm
+2025_Loh/F1/F,ridge_transect,transect_point,3,0.35,1.9091,1.8873,1.9309,roi_fraction,µm
+2025_Loh/F1/F,ridge_transect,transect_point,4,0.45,1.8278,1.8067,1.8489,roi_fraction,µm
+2025_Loh/F1/F,ridge_transect,transect_point,5,0.55,1.8481,1.8269,1.8694,roi_fraction,µm
+2025_Loh/F1/F,ridge_transect,transect_point,6,0.65,1.9497,1.9275,1.9719,roi_fraction,µm
+2025_Loh/F1/F,ridge_transect,transect_point,7,0.75,1.97,1.9476,1.9924,roi_fraction,µm
+2025_Loh/F1/F,ridge_transect,transect_point,8,0.85,1.9294,1.9074,1.9514,roi_fraction,µm
+2025_Loh/F1/F,ridge_transect,transect_point,9,0.95,1.9903,1.9678,2.0129,roi_fraction,µm
+2025_Loh/F1/G,ridge_fft,fft_period,0,,0.9679,0.9109,1.0249,,µm
+2025_Loh/F1/G,ridge_transect,transect_point,0,0.05,0.9995,0.9851,1.0139,roi_fraction,µm
+2025_Loh/F1/G,ridge_transect,transect_point,1,0.15,1.0199,1.0054,1.0344,roi_fraction,µm
+2025_Loh/F1/G,ridge_transect,transect_point,2,0.25,1.0403,1.0256,1.055,roi_fraction,µm
+2025_Loh/F1/G,ridge_transect,transect_point,3,0.35,1.0199,1.0054,1.0344,roi_fraction,µm
+2025_Loh/F1/G,ridge_transect,transect_point,4,0.45,0.9995,0.9851,1.0139,roi_fraction,µm
+2025_Loh/F1/G,ridge_transect,transect_point,5,0.55,0.9791,0.9649,0.9933,roi_fraction,µm
+2025_Loh/F1/G,ridge_transect,transect_point,6,0.65,1.0097,0.9952,1.0241,roi_fraction,µm
+2025_Loh/F1/G,ridge_transect,transect_point,7,0.75,1.0097,0.9952,1.0241,roi_fraction,µm
+2025_Loh/F1/G,ridge_transect,transect_point,8,0.85,0.9995,0.9851,1.0139,roi_fraction,µm
+2025_Loh/F1/G,ridge_transect,transect_point,9,0.95,0.9995,0.9851,1.0139,roi_fraction,µm
+2025_Loh/F1/H,ridge_fft,fft_period,0,,3.8543,3.074,4.6346,,µm
+2025_Loh/F1/H,ridge_transect,transect_point,0,0.15,3.6661,3.6277,3.7044,roi_fraction,µm
+2025_Loh/F1/H,ridge_transect,transect_point,1,0.45,3.3429,3.3077,3.3781,roi_fraction,µm
+2025_Loh/F1/H,ridge_transect,transect_point,2,0.65,3.6964,3.6577,3.735,roi_fraction,µm
+2025_Loh/F10/A,bab_peaks_0,boxplot_summary,0,bab_peaks_0,0.0,0.0,2.18,"whiskers:[0.0,13.3]",-log10(p_adj)
+2025_Loh/F10/A,bab_peaks_1_10,boxplot_summary,1,bab_peaks_1_10,3.98,0.92,3.98,"whiskers:[0.0,13.44]",-log10(p_adj)
+2025_Loh/F10/A,bab_peaks_10p,boxplot_summary,2,bab_peaks_10p,12.88,2.18,12.88,"whiskers:[0.0,33.74]",-log10(p_adj)
+2025_Loh/F10/B,Bab,dotplot_cell,0,1a,1.17,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Eip75B,dotplot_cell,1,1a,-0.04,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Mwh,dotplot_cell,2,1a,0.13,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Drak,dotplot_cell,3,1a,0.13,97.5,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,CAP,dotplot_cell,4,1a,-0.01,64.2,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Dachsous,dotplot_cell,5,1a,0.01,79.4,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bazooka,dotplot_cell,6,1a,-0.2,16.3,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Fimbrin,dotplot_cell,7,1a,0.27,56.6,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Formin-like,dotplot_cell,8,1a,0.98,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cog3,dotplot_cell,9,1a,0.0,37.7,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Arl4,dotplot_cell,10,1a,0.6,52.9,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Klp31E,dotplot_cell,11,1a,1.17,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Steppke,dotplot_cell,12,1a,1.17,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Ectodermal,dotplot_cell,13,1a,-0.1,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ObstE/Gasp,dotplot_cell,14,1a,0.29,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Osi17,dotplot_cell,15,1a,-0.2,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F,dotplot_cell,16,1a,0.13,14.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F-like,dotplot_cell,17,1a,0.83,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ChLD3,dotplot_cell,18,1a,0.35,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,lncRNA (bantam),dotplot_cell,19,1a,0.69,77.6,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ABCG20,dotplot_cell,20,1a,0.06,34.7,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bab,dotplot_cell,21,1b,1.2,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Eip75B,dotplot_cell,22,1b,-0.4,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Mwh,dotplot_cell,23,1b,0.61,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Drak,dotplot_cell,24,1b,0.86,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,CAP,dotplot_cell,25,1b,-0.04,65.8,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Dachsous,dotplot_cell,26,1b,-0.23,59.5,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bazooka,dotplot_cell,27,1b,-0.18,18.1,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Fimbrin,dotplot_cell,28,1b,0.37,66.5,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Formin-like,dotplot_cell,29,1b,1.32,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cog3,dotplot_cell,30,1b,0.1,44.8,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Arl4,dotplot_cell,31,1b,-0.08,38.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Klp31E,dotplot_cell,32,1b,0.83,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Steppke,dotplot_cell,33,1b,0.93,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Ectodermal,dotplot_cell,34,1b,-0.18,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ObstE/Gasp,dotplot_cell,35,1b,0.12,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Osi17,dotplot_cell,36,1b,-0.2,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F,dotplot_cell,37,1b,0.12,9.9,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F-like,dotplot_cell,38,1b,0.93,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ChLD3,dotplot_cell,39,1b,0.44,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,lncRNA (bantam),dotplot_cell,40,1b,0.9,91.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ABCG20,dotplot_cell,41,1b,-0.05,28.7,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bab,dotplot_cell,42,1c,0.55,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Eip75B,dotplot_cell,43,1c,0.19,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Mwh,dotplot_cell,44,1c,0.58,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Drak,dotplot_cell,45,1c,0.02,74.8,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,CAP,dotplot_cell,46,1c,0.7,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Dachsous,dotplot_cell,47,1c,-0.01,65.5,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bazooka,dotplot_cell,48,1c,-0.29,12.2,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Fimbrin,dotplot_cell,49,1c,0.04,46.2,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Formin-like,dotplot_cell,50,1c,0.63,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cog3,dotplot_cell,51,1c,-0.1,36.5,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Arl4,dotplot_cell,52,1c,0.51,64.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Klp31E,dotplot_cell,53,1c,0.8,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Steppke,dotplot_cell,54,1c,0.56,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Ectodermal,dotplot_cell,55,1c,0.1,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ObstE/Gasp,dotplot_cell,56,1c,0.19,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Osi17,dotplot_cell,57,1c,0.12,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F,dotplot_cell,58,1c,0.3,17.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F-like,dotplot_cell,59,1c,-0.33,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ChLD3,dotplot_cell,60,1c,1.02,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,lncRNA (bantam),dotplot_cell,61,1c,0.36,65.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ABCG20,dotplot_cell,62,1c,0.13,38.1,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bab,dotplot_cell,63,1d,0.69,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Eip75B,dotplot_cell,64,1d,0.33,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Mwh,dotplot_cell,65,1d,0.69,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Drak,dotplot_cell,66,1d,0.29,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,CAP,dotplot_cell,67,1d,0.2,79.8,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Dachsous,dotplot_cell,68,1d,-0.01,78.5,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bazooka,dotplot_cell,69,1d,0.1,31.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Fimbrin,dotplot_cell,70,1d,-0.12,34.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Formin-like,dotplot_cell,71,1d,-0.01,76.9,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cog3,dotplot_cell,72,1d,0.3,50.6,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Arl4,dotplot_cell,73,1d,0.87,99.7,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Klp31E,dotplot_cell,74,1d,0.08,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Steppke,dotplot_cell,75,1d,0.51,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Ectodermal,dotplot_cell,76,1d,0.29,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ObstE/Gasp,dotplot_cell,77,1d,0.29,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Osi17,dotplot_cell,78,1d,0.3,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F,dotplot_cell,79,1d,0.21,15.4,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F-like,dotplot_cell,80,1d,0.8,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ChLD3,dotplot_cell,81,1d,1.24,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,lncRNA (bantam),dotplot_cell,82,1d,0.6,76.7,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ABCG20,dotplot_cell,83,1d,0.36,46.7,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bab,dotplot_cell,84,1e,1.29,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Eip75B,dotplot_cell,85,1e,-0.05,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Mwh,dotplot_cell,86,1e,0.26,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Drak,dotplot_cell,87,1e,-0.23,65.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,CAP,dotplot_cell,88,1e,0.26,95.9,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Dachsous,dotplot_cell,89,1e,-0.01,75.2,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bazooka,dotplot_cell,90,1e,0.18,29.8,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Fimbrin,dotplot_cell,91,1e,0.29,50.8,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Formin-like,dotplot_cell,92,1e,-0.63,28.7,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cog3,dotplot_cell,93,1e,0.63,45.5,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Arl4,dotplot_cell,94,1e,-0.08,34.7,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Klp31E,dotplot_cell,95,1e,1.85,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Steppke,dotplot_cell,96,1e,1.37,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Ectodermal,dotplot_cell,97,1e,0.19,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ObstE/Gasp,dotplot_cell,98,1e,0.54,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Osi17,dotplot_cell,99,1e,0.26,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F,dotplot_cell,100,1e,-0.01,6.7,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F-like,dotplot_cell,101,1e,0.51,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ChLD3,dotplot_cell,102,1e,-0.5,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,lncRNA (bantam),dotplot_cell,103,1e,-0.08,50.6,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ABCG20,dotplot_cell,104,1e,0.19,45.3,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bab,dotplot_cell,105,2 (spatulate),-0.8,55.3,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Eip75B,dotplot_cell,106,2 (spatulate),0.9,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Mwh,dotplot_cell,107,2 (spatulate),0.49,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Drak,dotplot_cell,108,2 (spatulate),-0.14,88.1,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,CAP,dotplot_cell,109,2 (spatulate),0.55,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Dachsous,dotplot_cell,110,2 (spatulate),1.43,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bazooka,dotplot_cell,111,2 (spatulate),1.39,81.9,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Fimbrin,dotplot_cell,112,2 (spatulate),-0.44,13.2,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Formin-like,dotplot_cell,113,2 (spatulate),0.7,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cog3,dotplot_cell,114,2 (spatulate),0.12,45.2,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Arl4,dotplot_cell,115,2 (spatulate),0.01,40.1,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Klp31E,dotplot_cell,116,2 (spatulate),0.04,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Steppke,dotplot_cell,117,2 (spatulate),0.85,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Ectodermal,dotplot_cell,118,2 (spatulate),0.58,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ObstE/Gasp,dotplot_cell,119,2 (spatulate),0.07,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Osi17,dotplot_cell,120,2 (spatulate),1.04,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F,dotplot_cell,121,2 (spatulate),0.07,11.6,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F-like,dotplot_cell,122,2 (spatulate),0.74,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ChLD3,dotplot_cell,123,2 (spatulate),0.69,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,lncRNA (bantam),dotplot_cell,124,2 (spatulate),2.1,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ABCG20,dotplot_cell,125,2 (spatulate),0.4,50.8,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bab,dotplot_cell,126,3 (UVI),-0.73,50.6,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Eip75B,dotplot_cell,127,3 (UVI),2.23,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Mwh,dotplot_cell,128,3 (UVI),2.08,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Drak,dotplot_cell,129,3 (UVI),2.3,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,CAP,dotplot_cell,130,3 (UVI),2.39,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Dachsous,dotplot_cell,131,3 (UVI),1.99,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bazooka,dotplot_cell,132,3 (UVI),1.82,99.4,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Fimbrin,dotplot_cell,133,3 (UVI),1.65,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Formin-like,dotplot_cell,134,3 (UVI),-0.63,49.7,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cog3,dotplot_cell,135,3 (UVI),2.44,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Arl4,dotplot_cell,136,3 (UVI),2.27,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Klp31E,dotplot_cell,137,3 (UVI),-0.77,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Steppke,dotplot_cell,138,3 (UVI),-0.95,40.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Ectodermal,dotplot_cell,139,3 (UVI),2.39,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ObstE/Gasp,dotplot_cell,140,3 (UVI),2.44,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Osi17,dotplot_cell,141,3 (UVI),2.27,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F,dotplot_cell,142,3 (UVI),2.44,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F-like,dotplot_cell,143,3 (UVI),0.0,0.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ChLD3,dotplot_cell,144,3 (UVI),-0.86,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,lncRNA (bantam),dotplot_cell,145,3 (UVI),-0.61,30.2,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ABCG20,dotplot_cell,146,3 (UVI),2.44,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bab,dotplot_cell,147,4,0.54,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Eip75B,dotplot_cell,148,4,0.69,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Mwh,dotplot_cell,149,4,-0.89,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Drak,dotplot_cell,150,4,0.69,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,CAP,dotplot_cell,151,4,-0.13,45.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Dachsous,dotplot_cell,152,4,0.69,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Bazooka,dotplot_cell,153,4,1.11,82.5,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Fimbrin,dotplot_cell,154,4,1.83,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Formin-like,dotplot_cell,155,4,1.49,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cog3,dotplot_cell,156,4,0.4,57.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Arl4,dotplot_cell,157,4,-0.18,19.5,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Klp31E,dotplot_cell,158,4,-0.07,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Steppke,dotplot_cell,159,4,-0.52,92.6,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Ectodermal,dotplot_cell,160,4,0.63,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ObstE/Gasp,dotplot_cell,161,4,-0.04,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Osi17,dotplot_cell,162,4,0.32,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F,dotplot_cell,163,4,0.6,34.2,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,Cpr92F-like,dotplot_cell,164,4,1.51,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ChLD3,dotplot_cell,165,4,1.49,100.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,lncRNA (bantam),dotplot_cell,166,4,-0.05,54.6,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/B,ABCG20,dotplot_cell,167,4,0.35,55.0,,cluster,avg_expr (lo=pct_expressing)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,0,1.812,51.77,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,1,-1.482,48.68,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,2,1.472,33.7,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,3,1.751,32.39,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,4,-0.844,20.89,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,5,-1.656,17.23,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,6,0.963,13.93,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,7,0.619,8.73,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,8,0.846,8.16,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,9,1.415,7.46,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,10,0.368,6.45,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,11,-1.549,6.22,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,12,0.246,5.52,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,13,3.308,0.75,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,14,2.043,52.39,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,15,-0.755,9.54,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,16,0.843,13.99,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,17,2.333,53.48,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_10_plus,scatter_point,18,-4.165,39.81,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,0,3.706,58.98,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,1,1.768,49.45,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,2,2.48,48.64,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,3,2.299,42.6,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,4,-2.636,38.84,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,5,1.451,36.23,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,6,0.711,35.08,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,7,-1.654,34.44,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,8,-0.728,33.97,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,9,-1.357,33.72,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,10,1.123,33.55,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,11,-1.447,32.93,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,12,1.939,32.57,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,13,0.928,32.07,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,14,-1.292,31.46,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,15,-2.864,22.8,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,16,0.78,20.34,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,17,1.863,20.14,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,18,-1.348,19.69,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,19,-1.377,16.51,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,20,-0.944,16.49,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,21,0.884,15.06,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,22,1.409,13.77,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,23,0.609,13.36,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,24,1.179,13.19,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,25,-1.284,12.94,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,26,0.299,12.87,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,27,-0.657,12.44,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,28,0.653,11.9,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,29,0.681,10.5,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,30,0.809,9.6,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,31,0.504,8.74,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,32,-1.501,8.22,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,33,0.376,8.17,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,34,-0.677,7.64,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,35,-0.278,7.37,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,36,1.009,7.1,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,37,-0.307,6.19,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,38,-0.585,5.63,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,39,0.679,4.76,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,40,-1.234,4.38,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,41,-0.489,4.14,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,42,-0.822,4.02,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,43,1.85,3.59,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,44,0.13,3.5,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,45,-3.287,2.65,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,46,-1.861,1.62,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,47,2.875,0.43,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,48,-1.691,0.14,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,49,-4.326,0.0,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,50,-2.739,0.04,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,51,-1.967,0.0,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,52,-1.614,33.85,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,53,0.734,4.4,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,54,1.462,34.98,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,55,0.525,13.39,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,56,1.975,21.74,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,57,0.437,3.37,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,58,0.449,8.48,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,59,0.314,8.01,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,60,0.598,11.64,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,61,-3.247,37.52,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,62,-1.172,5.34,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,63,1.462,0.03,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,64,1.987,0.0,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,65,3.236,54.84,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,66,1.884,27.62,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,67,0.461,15.32,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,68,-2.886,45.19,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,69,2.412,48.91,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_3_to_9,scatter_point,70,0.197,3.32,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_1_to_2,scatter_point,0,2.571,53.06,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_1_to_2,scatter_point,1,1.813,36.31,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_1_to_2,scatter_point,2,3.132,51.58,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_1_to_2,scatter_point,3,1.617,20.44,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_1_to_2,scatter_point,4,-1.244,17.58,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_1_to_2,scatter_point,5,1.984,1.0,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_1_to_2,scatter_point,6,3.486,59.61,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_1_to_2,scatter_point,7,2.563,50.43,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_1_to_2,scatter_point,8,-2.388,17.14,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_1_to_2,scatter_point,9,-0.445,5.09,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_1_to_2,scatter_point,10,1.861,36.04,,,log2FC,-log10(p_adj)
+2025_Loh/F10/C,bab_peaks_1_to_2,scatter_point,11,-1.28,21.26,,,log2FC,-log10(p_adj)

@@ -1,0 +1,423 @@
+record: 2025_Loh
+relations:
+  - id: dsxf_activates_bab_dcs
+    source: target_gene:doublesex
+    source_label: DsxF (female isoform)
+    source_type: gene
+    relation: activates_expression
+    target: target_gene:bric_a_brac
+    target_label: Bric-a-brac (Bab)
+    target_type: gene
+    evidence_tier: perturbation_only
+    effect_direction: up
+    assays:
+      - rnai_knockdown
+      - immunofluorescence
+    context:
+      taxon: Colias eurytheme
+      sex: female
+      life_stage: pupa
+      pupal_stage_pct: 40%
+      anatomical_region: dorsal forewing
+      scale_type: cover scale
+      genetic_element_type: coding exon
+      allele_or_zygosity: RNAi knockdown
+    linked_items:
+      - F2_dsx_crispant_n
+    linked_panels:
+      - 2025_Loh/F3/C_prime
+      - 2025_Loh/F3/E
+      - 2025_Loh/F3/F
+    anchor:
+      quote: DsxF is required to maintain Bab expression at high levels in the female dorsal scale, thus feminizing the wing phenotype by preventing UVI scale differentiation.
+      where: Results
+    note: Dsx siRNA electroporation eliminates Bab protein in female dorsal cover scales while preserving Bab in ground scales.
+
+  - id: dsxf_represses_uvi
+    source: target_gene:doublesex
+    source_label: DsxF (female isoform)
+    source_type: gene
+    relation: represses_phenotype
+    target: scale_type:uvi_cover_scale
+    target_label: UVI cover scale (ridge-lamellar)
+    target_type: scale_type
+    evidence_tier: perturbation_only
+    effect_direction: abolish
+    assays:
+      - crispr_g0_mosaic
+      - rnai_knockdown
+      - uv_photography
+    context:
+      taxon: Colias eurytheme
+      sex: female
+      life_stage: adult
+      anatomical_region: dorsal wing
+      genetic_element_type: coding exon
+      allele_or_zygosity: G0 somatic mosaic
+    linked_items:
+      - F2_dsx_crispant_n
+    linked_panels:
+      - 2025_Loh/F2/A
+      - 2025_Loh/F2/B
+      - 2025_Loh/F2/D
+      - 2025_Loh/F2/E
+    anchor:
+      quote: Female crispants showed a gain of UVI that phenocopies the male state (Fig 2A–2C′).
+      where: Results
+    note: Cell-autonomous conversion restricted to dorsal cover scales along sharp clonal boundaries.
+
+  - id: dsxm_specifies_spatulate
+    source: target_gene:doublesex
+    source_label: DsxM (male isoform)
+    source_type: gene
+    relation: required_for_phenotype
+    target: scale_type:spatulate_cover_scale
+    target_label: Spatulate cover scale (4.4 µm pitch)
+    target_type: scale_type
+    evidence_tier: perturbation_only
+    effect_direction: switch
+    assays:
+      - crispr_g0_mosaic
+      - light_microscopy
+    context:
+      taxon: Colias eurytheme
+      sex: male
+      life_stage: adult
+      anatomical_region: dorsal hindwing
+      pattern_element: marginal band
+      genetic_element_type: coding exon
+      allele_or_zygosity: G0 somatic mosaic
+    linked_items:
+      - F2_dsx_crispant_n
+    linked_panels:
+      - 2025_Loh/F4/A
+      - 2025_Loh/F4/B
+      - 2025_Loh/F4/C
+    anchor:
+      quote: DsxM is specifically expressed in the dorsal cover scales and masculinizes them into spatulate states.
+      where: Results
+
+  - id: dsxf_maintains_canonical_margin
+    source: target_gene:doublesex
+    source_label: DsxF (female isoform)
+    source_type: gene
+    relation: represses_phenotype
+    target: scale_type:spatulate_cover_scale
+    target_label: Spatulate cover scale (4.4 µm pitch)
+    target_type: scale_type
+    evidence_tier: perturbation_only
+    effect_direction: switch
+    assays:
+      - crispr_g0_mosaic
+      - light_microscopy
+    context:
+      taxon: Colias eurytheme
+      sex: female
+      life_stage: adult
+      anatomical_region: dorsal hindwing
+      pattern_element: marginal band
+      genetic_element_type: coding exon
+      allele_or_zygosity: G0 somatic mosaic
+    linked_items:
+      - F2_dsx_crispant_n
+    linked_panels:
+      - 2025_Loh/F4/A
+      - 2025_Loh/F4/B
+      - 2025_Loh/F4/C
+    anchor:
+      quote: from canonical melanic to spatulate in DsxF mKOs, and vice-versa from spatulate to canonical in DsxM crispants
+      where: Results
+
+  - id: bab_represses_uvi_fate
+    source: target_gene:bric_a_brac
+    source_label: Bric-a-brac (Bab)
+    source_type: gene
+    relation: represses_phenotype
+    target: scale_type:uvi_cover_scale
+    target_label: UVI cover scale (1.0 µm ridge spacing)
+    target_type: scale_type
+    evidence_tier: perturbation_only
+    effect_direction: abolish
+    assays:
+      - rnai_knockdown
+      - uv_photography
+    context:
+      taxon: Colias eurytheme
+      sex: male + female
+      life_stage: pupa
+      anatomical_region: dorsal forewing
+      genetic_element_type: coding exon
+      allele_or_zygosity: RNAi knockdown
+    linked_items:
+      - F1_uvi_vs_canonical
+    linked_panels:
+      - 2025_Loh/F5/A
+      - 2025_Loh/F5/B
+      - 2025_Loh/F5/C
+      - 2025_Loh/F5/D
+    anchor:
+      quote: Bab-deficient cells all acquire a UVI-scale morphology including UV-iridescence and high ridge density.
+      where: Results
+    note: Converts both cover and ground scales in females and ground scales in males to UVI states upon pupal RNAi knockdown.
+
+  - id: bab_autoregulates_bab
+    source: target_gene:bric_a_brac
+    source_label: Bric-a-brac (Bab)
+    source_type: gene
+    relation: directly_binds_cre
+    target: target_gene:bric_a_brac
+    target_label: Bric-a-brac (Bab) locus (24 peaks)
+    target_type: gene
+    evidence_tier: chromatin_or_binding_only
+    effect_direction: none
+    assays:
+      - chip_seq
+      - snrna_seq
+    context:
+      taxon: Colias eurytheme
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 40% and 60%
+      genetic_element_type: cis-regulatory element (CRE)
+    linked_items:
+      - F9_bab_chip_peaks
+      - F10_bab_target_peaks
+    linked_panels:
+      - 2025_Loh/F9/D
+      - 2025_Loh/F10/B
+    anchor:
+      quote: the Bab locus itself shows multiple Bab ChIP peaks, suggesting it may be auto-regulated
+      where: Results
+
+  - id: bab_binds_dsx_feedback
+    source: target_gene:bric_a_brac
+    source_label: Bric-a-brac (Bab)
+    source_type: gene
+    relation: directly_binds_cre
+    target: target_gene:doublesex
+    target_label: Doublesex (Dsx) locus
+    target_type: gene
+    evidence_tier: chromatin_or_binding_only
+    effect_direction: none
+    assays:
+      - chip_seq
+    context:
+      taxon: Colias eurytheme
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 40% and 60%
+      genetic_element_type: cis-regulatory element (CRE)
+    linked_items:
+      - F9_bab_chip_peaks
+    linked_panels:
+      - 2025_Loh/F9/E
+    anchor:
+      quote: The Dsx locus also contains multiple Bab-binding sites
+      where: Results
+    note: Suggests reciprocal cross-regulatory feedback between Dsx and Bab during pupal wing differentiation.
+
+  - id: bab_binds_represses_eip75b
+    source: target_gene:bric_a_brac
+    source_label: Bric-a-brac (Bab)
+    source_type: gene
+    relation: represses_expression
+    target: target_gene:eip75b
+    target_label: Eip75B (54 ChIP peaks, log2FC +2.03)
+    target_type: gene
+    evidence_tier: chromatin_or_binding_only
+    effect_direction: down
+    assays:
+      - chip_seq
+      - snrna_seq
+    context:
+      taxon: Colias eurytheme
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 40%
+      scale_type: UVI cover scale
+      genetic_element_type: cis-regulatory element (CRE)
+    linked_items:
+      - F10_bab_target_expression
+      - F10_bab_target_peaks
+    linked_panels:
+      - 2025_Loh/F10/B
+      - 2025_Loh/F10/C
+    anchor:
+      quote: the loci encoding the nuclear hormone receptor Eip75b and cytoskeletal regulator Multiple wing hair (Mwh) each show more than 50 Bab ChIP sites
+      where: Results
+
+  - id: bab_binds_represses_mwh
+    source: target_gene:bric_a_brac
+    source_label: Bric-a-brac (Bab)
+    source_type: gene
+    relation: represses_expression
+    target: target_gene:multiple_wing_hairs
+    target_label: Multiple wing hairs / Mwh (52 ChIP peaks, log2FC +2.33)
+    target_type: gene
+    evidence_tier: chromatin_or_binding_only
+    effect_direction: down
+    assays:
+      - chip_seq
+      - snrna_seq
+      - wgs_gwas
+    context:
+      taxon: Colias eurytheme
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 40%
+      scale_type: UVI cover scale
+      genetic_element_type: cis-regulatory element (CRE)
+    linked_items:
+      - F10_bab_target_expression
+      - F10_bab_target_peaks
+    linked_panels:
+      - 2025_Loh/F10/B
+      - 2025_Loh/F10/C
+      - 2025_Loh/F10/D
+    anchor:
+      quote: the loci encoding the nuclear hormone receptor Eip75b and cytoskeletal regulator Multiple wing hair (Mwh) each show more than 50 Bab ChIP sites
+      where: Results
+    note: Also carries a private C. eurytheme selective sweep relative to UV-negative sister species C. philodice.
+
+  - id: bab_binds_represses_drak
+    source: target_gene:bric_a_brac
+    source_label: Bric-a-brac (Bab)
+    source_type: gene
+    relation: represses_expression
+    target: target_gene:drak
+    target_label: Drak kinase (7 ChIP peaks, log2FC +3.23)
+    target_type: gene
+    evidence_tier: chromatin_or_binding_only
+    effect_direction: down
+    assays:
+      - chip_seq
+      - snrna_seq
+    context:
+      taxon: Colias eurytheme
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 40%
+      scale_type: UVI cover scale
+      genetic_element_type: cis-regulatory element (CRE)
+    linked_items:
+      - F10_bab_target_expression
+      - F10_bab_target_peaks
+    linked_panels:
+      - 2025_Loh/F10/B
+      - 2025_Loh/F10/C
+    anchor:
+      quote: Stringent filtering criteria result in a list of 87 UVI-DE genes with 3 or more Bab ChIP binding peaks
+      where: Results
+
+  - id: bab_binds_obst_cuticle_cluster
+    source: target_gene:bric_a_brac
+    source_label: Bric-a-brac (Bab)
+    source_type: gene
+    relation: directly_binds_cre
+    target: functional_architecture:ridge_lamellar_multilayer
+    target_label: Obstructor B/C/D chitin-modifier cluster
+    target_type: gene
+    evidence_tier: chromatin_or_binding_only
+    effect_direction: down
+    assays:
+      - chip_seq
+      - snrna_seq
+    context:
+      taxon: Colias eurytheme
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 40%
+      scale_type: UVI cover scale
+      genetic_element_type: cis-regulatory element (CRE)
+    linked_items:
+      - F9_bab_chip_peaks
+    linked_panels:
+      - 2025_Loh/F9/H
+      - 2025_Loh/F9/I
+      - 2025_Loh/F9/I_prime
+      - 2025_Loh/F9/I_dprime
+    anchor:
+      quote: promoter regions of these three genes show strong Bab ChIP-seq signals, suggesting Bab may repress the expression of Obstructor family genes.
+      where: Results
+
+  - id: ivory_marks_spatulate_cluster
+    source: target_gene:ivory_lncrna
+    source_label: ivory (lncRNA)
+    source_type: noncoding_rna
+    relation: associated_with_locus
+    target: scale_type:spatulate_cover_scale
+    target_label: Spatulate scale precursors (Scale2)
+    target_type: scale_type
+    evidence_tier: correlative
+    effect_direction: up
+    assays:
+      - snrna_seq
+    context:
+      taxon: Colias eurytheme
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 40%
+      genetic_element_type: long non-coding RNA (lncRNA)
+    linked_items:
+      - F8_scale2_scale3_de
+    linked_panels:
+      - 2025_Loh/F8/A_prime
+    anchor:
+      quote: the spatulate Scale2 cells are enriched for the ivory lncRNA gene and yellow-c
+      where: Results
+
+genomic_tables:
+  - id: bab_uvi_de_targets
+    kind: de_genes
+    file: associated/DataS6_DE_Scale3_3BabPeaksorMore.csv
+    title: 87 UVI-DE genes in Scale3 with >= 3 Bab ChIP-seq binding peaks (DataS6)
+    assay: snRNA-seq + Bab ChIP-seq
+    contrast: Scale3 (UVI) vs other scale clusters (40% male pupal hindwing)
+    stage: 40% pupal development
+    taxon: Colias eurytheme
+    columns:
+      gene_id: 0
+      p_val: 1
+      log2fc: 2
+      pct_1: 3
+      pct_2: 4
+      p_adj: 5
+      chip_peaks: 6
+      symbol: 8
+      product: 9
+    linked_items:
+      - F10_bab_uvi_targets_count
+      - F10_bab_target_expression
+      - F10_bab_target_peaks
+    linked_panels:
+      - 2025_Loh/F10/B
+      - 2025_Loh/F10/C
+    anchor:
+      quote: Stringent filtering criteria result in a list of 87 UVI-DE genes with 3 or more Bab ChIP binding peaks
+      where: Results
+    note: Direct OSF Data 6 supplement table containing all 87 Bab-bound UVI differentially expressed candidate target genes.
+
+  - id: fourier_interridge_170
+    kind: scale_morphometrics
+    file: associated/DataS10_Fourier_Interridge_distances_Figure1D.csv
+    title: 170 individual C. eurytheme scale 2D Fourier inter-ridge distances (DataS10)
+    assay: SEM 2D-Fourier morphometrics
+    contrast: 7 sex/genotype x scale_type classes (canonical, male UVI, male spatulate)
+    stage: adult
+    taxon: Colias eurytheme
+    columns:
+      sex_genotype: 0
+      scale_type: 1
+      spacing_um: 2
+    linked_items:
+      - F1_ridge_reported
+      - F1_uvi_vs_canonical
+    linked_panels:
+      - 2025_Loh/F1/D
+      - 2025_Loh/F1/E
+      - 2025_Loh/F1/F
+      - 2025_Loh/F1/G
+      - 2025_Loh/F1/H
+    anchor:
+      quote: Mean apical ridge distance in individual scales from melanic discal spots, medial regions, or male marginal bands
+      where: Fig 1 caption

@@ -1,0 +1,24 @@
+# Written by code from changes.yaml (version 4); never edited.
+formula: benjamini_hochberg_fdr
+kind: definition
+statement: Benjamini–Hochberg false discovery rate (FDR) step-up adjusted p-value at rank r out of m hypotheses.
+equations:
+- fdr = Min(1, p*m/r)
+variables:
+  fdr: dimensionless
+  p: dimensionless
+  m: count
+  r: count
+assumes:
+- p-values are sorted in ascending order and monotone step-up envelope is enforced across ranks
+does_not_apply: family-wise error rate control (Bonferroni / Holm)
+tests:
+- given:
+    p: 0.002
+    m: 1000.0
+    r: 10.0
+  expect:
+    fdr: 0.2
+cites:
+  text: Benjamini Y, Hochberg Y. Controlling the false discovery rate. J R Stat Soc B 57:289–300 (1995).
+  url: https://doi.org/10.1111/j.2517-6161.1995.tb02031.x
