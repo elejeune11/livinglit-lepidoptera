@@ -39,14 +39,17 @@ window.LL = window.LL || {};
     const pw = w - pad.l - pad.r;
     const ph = h - pad.t - pad.b;
 
-    // 1. Boxplot-only panel
-    if (d.digitized_boxplots && !d.curves && !d.digitized_scatter) {
+    // 1. Boxplot panel (with optional overlaid individual jitter scatter points!)
+    if (d.digitized_boxplots && !d.curves) {
       const entries = Object.entries(d.digitized_boxplots);
+      const scMap = d.digitized_scatter || {};
       const vals = [];
-      entries.forEach(([, b]) => {
+      entries.forEach(([gn, b]) => {
         ["whisker_lo", "q1", "median", "q3", "whisker_hi"].forEach((k) => {
           if (b[k] != null) vals.push(b[k]);
         });
+        const sc = scMap[gn];
+        if (sc && sc.y) sc.y.forEach((v) => { if (v != null) vals.push(v); });
       });
       if (!vals.length) return;
       const ymin = Math.min(...vals), ymax = Math.max(...vals);
@@ -78,7 +81,7 @@ window.LL = window.LL || {};
           ctx.beginPath(); ctx.moveTo(cx - bw * 0.3, y2p(b.whisker_lo)); ctx.lineTo(cx + bw * 0.3, y2p(b.whisker_lo)); ctx.stroke();
         }
         if (b.q1 != null && b.q3 != null) {
-          ctx.fillStyle = col + "33"; ctx.strokeStyle = col; ctx.lineWidth = 2;
+          ctx.fillStyle = col + "28"; ctx.strokeStyle = col; ctx.lineWidth = 2;
           const top = y2p(b.q3), bot = y2p(b.q1);
           ctx.fillRect(cx - bw / 2, top, bw, Math.max(3, bot - top));
           ctx.strokeRect(cx - bw / 2, top, bw, Math.max(3, bot - top));
@@ -87,8 +90,26 @@ window.LL = window.LL || {};
           ctx.strokeStyle = "#ef4444"; ctx.lineWidth = 2.6;
           ctx.beginPath(); ctx.moveTo(cx - bw / 2, y2p(b.median)); ctx.lineTo(cx + bw / 2, y2p(b.median)); ctx.stroke();
         }
+        const sc = scMap[gn];
+        if (sc && sc.y && sc.y.length) {
+          const xs = sc.x || [];
+          const mx = xs.length ? xs.reduce((a, c) => a + c, 0) / xs.length : 0.5;
+          const xSpan = xs.length ? Math.max(0.05, Math.max(...xs) - Math.min(...xs)) : 0.2;
+          ctx.fillStyle = col;
+          ctx.globalAlpha = 0.72;
+          sc.y.forEach((yv, i) => {
+            if (yv == null) return;
+            const dxNorm = xs.length === sc.y.length ? ((xs[i] - mx) / xSpan) : (((i * 37) % 100) / 100 - 0.5);
+            const px = cx + dxNorm * bw * 0.82;
+            ctx.beginPath();
+            ctx.arc(px, y2p(yv), 3.1, 0, Math.PI * 2);
+            ctx.fill();
+          });
+          ctx.globalAlpha = 1.0;
+        }
         ctx.fillStyle = tc.ink; ctx.font = "600 11px sans-serif"; ctx.textAlign = "center";
-        ctx.fillText(gn, cx, h - pad.b + 16);
+        const nTag = sc && sc.n ? ` (n=${sc.n})` : "";
+        ctx.fillText(gn + nTag, cx, h - pad.b + 16);
       });
       if (yUnit) {
         ctx.save(); ctx.translate(14, pad.t + ph / 2); ctx.rotate(-Math.PI / 2);

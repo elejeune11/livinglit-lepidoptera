@@ -40,8 +40,17 @@ summary:
     cannot judge: 1
   claims_contradicting_direction: 2
   findings:
-    inconsistent: 4
+    inconsistent: 5
 findings:
+- unit: F2_ADULT
+  check: against readings
+  source: item F2_ridge_spacing
+  verdict: inconsistent
+  items:
+  - F2_ridge_spacing
+  checks: 1
+  example: 'F2_ridge_spacing: read mean 0.9567 ± 0.0033'
+  id: FD1
 - unit: F2_ADULT
   check: replication hierarchy
   source: item F2_ridge_spacing
@@ -49,9 +58,9 @@ findings:
   items:
   - F2_ridge_spacing
   checks: 2
-  example: 'F2_ridge_spacing: substructure pseudo-replication: printed SEM 0.007 implies n_eff≈184 (scales=400) while test unit is individuals
-    (N=10, true SEM≈0.03003)'
-  id: FD1
+  example: 'F2_ridge_spacing: substructure pseudo-replication: printed SEM 0.007 implies n_eff≈172 (scales=400) while test unit is individuals
+    (N=10, true SEM≈0.02901)'
+  id: FD2
 - unit: F2_ADULT
   check: which spread
   source: item F2_ridge_spacing
@@ -59,8 +68,8 @@ findings:
   items:
   - F2_ridge_spacing
   checks: 2
-  example: 'F2_ridge_spacing: printed 0.007 labelled SEM; fits neither (SD 0.09496, SEM 0.01605)'
-  id: FD2
+  example: 'F2_ridge_spacing: printed 0.007 labelled SEM; fits neither (SD 0.09174, SEM 0.01469)'
+  id: FD3
 - unit: F8_CYTOD
   check: against readings
   source: item F8_ridge_curvature
@@ -68,8 +77,8 @@ findings:
   items:
   - F8_ridge_curvature
   checks: 1
-  example: 'F8_ridge_curvature: read mean 0.01709 ± 0.00091'
-  id: FD3
+  example: 'F8_ridge_curvature: read mean 0.0168333 ± 0.00083'
+  id: FD4
 - unit: F8_CYTOD
   check: which spread
   source: item F8_ridge_curvature
@@ -77,8 +86,8 @@ findings:
   items:
   - F8_ridge_curvature
   checks: 2
-  example: 'F8_ridge_curvature: printed 0.0018 labelled SEM; fits neither (SD 0.0429, SEM 0.0104)'
-  id: FD4
+  example: 'F8_ridge_curvature: printed 0.0018 labelled SEM; fits neither (SD 0.04943, SEM 0.01427)'
+  id: FD5
 units:
   F2_ADULT:
     where: Fig. 2A–F and Results
@@ -177,37 +186,37 @@ items:
       target: F2_ridge_spacing/blue_all mean
       basis: readings
       entry: mean_def
-      note: read mean 0.806709 ± 0.0034
+      note: read mean 0.802036 ± 0.0032
     - check: against readings
-      verdict: consistent within reading
+      verdict: inconsistent
       target: F2_ridge_spacing/black_all mean
       basis: readings
       entry: mean_def
-      note: read mean 0.963611 ± 0.0038
+      note: read mean 0.9567 ± 0.0033
     - check: which spread
       verdict: inconsistent
       target: F2_ridge_spacing/blue_all spread
       basis: readings
       entry: sem_def
-      note: printed 0.007 labelled SEM; fits neither (SD 0.09496, SEM 0.01605)
+      note: printed 0.007 labelled SEM; fits neither (SD 0.09174, SEM 0.01469)
     - check: which spread
       verdict: inconsistent
       target: F2_ridge_spacing/black_all spread
       basis: readings
       entry: sem_def
-      note: printed 0.004 labelled SEM; fits neither (SD 0.07048, SEM 0.01332)
+      note: printed 0.004 labelled SEM; fits neither (SD 0.06291, SEM 0.01034)
     - check: replication hierarchy
       verdict: inconsistent
       target: F2_ridge_spacing/blue_all
       basis: readings
       entry: sem_def
-      note: 'substructure pseudo-replication: printed SEM 0.007 implies n_eff≈184 (scales=400) while test unit is individuals (N=10, true SEM≈0.03003)'
+      note: 'substructure pseudo-replication: printed SEM 0.007 implies n_eff≈172 (scales=400) while test unit is individuals (N=10, true SEM≈0.02901)'
     - check: replication hierarchy
       verdict: inconsistent
       target: F2_ridge_spacing/black_all
       basis: readings
       entry: sem_def
-      note: 'substructure pseudo-replication: printed SEM 0.004 implies n_eff≈310 (scales=400) while test unit is individuals (N=10, true SEM≈0.02229)'
+      note: 'substructure pseudo-replication: printed SEM 0.004 implies n_eff≈247 (scales=400) while test unit is individuals (N=10, true SEM≈0.0199)'
     - check: statistic to P
       verdict: cannot check
       target: F2_ridge_spacing
@@ -543,13 +552,13 @@ items:
       alternatives:
       - entry: t_two_sample_pooled
         p:
-        - 0.354126
-        - 0.809195
+        - 0.282957
+        - 0.822249
         verdict: consistent within reading
       - entry: t_two_sample_welch
         p:
-        - 0.346079
-        - 0.806003
+        - 0.283532
+        - 0.822351
         verdict: consistent within reading
     derivations: []
     upstream_flags: []
@@ -580,25 +589,25 @@ items:
       target: F8_ridge_curvature/cyto_d mean
       basis: readings
       entry: mean_def
-      note: read mean 0.0563706 ± 0.00073
+      note: read mean 0.0574417 ± 0.00087
     - check: against readings
       verdict: inconsistent
       target: F8_ridge_curvature/dmso_ctrl mean
       basis: readings
       entry: mean_def
-      note: read mean 0.01709 ± 0.00091
+      note: read mean 0.0168333 ± 0.00083
     - check: which spread
       verdict: inconsistent
       target: F8_ridge_curvature/cyto_d spread
       basis: readings
       entry: sem_def
-      note: printed 0.0018 labelled SEM; fits neither (SD 0.0429, SEM 0.0104)
+      note: printed 0.0018 labelled SEM; fits neither (SD 0.04943, SEM 0.01427)
     - check: which spread
       verdict: inconsistent
       target: F8_ridge_curvature/dmso_ctrl spread
       basis: readings
       entry: sem_def
-      note: printed 0.0006 labelled SEM; fits neither (SD 0.01049, SEM 0.003316)
+      note: printed 0.0006 labelled SEM; fits neither (SD 0.009382, SEM 0.002708)
     - check: statistic to P
       verdict: consistent
       target: F8_ridge_curvature
@@ -754,8 +763,8 @@ items:
       alternatives:
       - entry: t_two_sample_welch
         p:
-        - 0.00056
-        - 0.006434
+        - 0.00777
+        - 0.034462
         verdict: consistent within reading
     derivations: []
     upstream_flags: []

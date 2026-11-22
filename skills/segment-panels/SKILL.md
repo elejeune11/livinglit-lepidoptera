@@ -22,8 +22,11 @@ Decompose every main (and key supplemental) figure of `papers_dont_ever_commit/<
 2. **Measure Exact Pixel Coordinates**
    - Write a small helper check (or inspect grayscale row/column whitespace gutters) to place exact pixel `bbox: [x0, y0, x1, y1]` for every atomic panel.
    - For calibrated micrographs (`planar_microscopy`, `cross_section`, `macro_morphology`):
-     - Record `scale_bar`: `{um, search_box: [rx0, ry0, rx1, ry1], polarity: "bright"|"dark"}` where `search_box` is relative to the panel crop (`[0..w, 0..h]`) tightly framing ONLY the scale bar line (not text above/below it!).
-     - If the micrograph shows periodic scale nanostructures (longitudinal ridges, actin bundles, cross-ribs, lamellae), set `periodic_spec` with a clean `roi: [rx0, ry0, rx1, ry1]` strictly inside the **planar scale lamina** (avoiding scale margins, sockets, orthogonal XZ cross-section strips, text annotations, and scale-bar insets!), plus physically informed `spacing_range_um` (e.g. `[0.55, 1.4]` for butterfly ridges, `[0.15, 0.55]` for cross-ribs).
+     - Record `scale_bar`: `{um, search_box: [rx0, ry0, rx1, ry1], polarity: "bright"|"dark"}` where `search_box` is relative to the panel crop (`[0..w, 0..h]`) tightly framing ONLY the scale bar line (not text above/below it!). Cross-check adjacent zoom panels for caption scale-bar typos!
+     - **Fluorescent & Optical FFT Triage (NEVER skip fluorescent micrographs!)**:
+       1. Check text & caption cues for periodicity (`"parallel"`, `"periodic"`, `"regularly spaced"`, `"regular intervals"`, `"organized actin bundles"`, `"maximally spaced"`, `"between the ridges"`, `"perpendicularly to the ridge"`, `"crossribs"`, pupal stage `>= 37.5–44%`) AND screen all calibrated planar micrographs with `scale_bar <= 15 µm`.
+       2. Check physical feasibility: **Nyquist gate** `expected_spacing_um / um_per_px >= 3.0 px/cycle` and `>= 3.5–4` cycles inside a flat, non-fanning ROI.
+       3. **Channel isolation**: On dual-channel green+magenta merges (interleaved actin & chitin), NEVER run `channel: gray` (causes false `2×` frequency!). Specify `channel: green_isolated` or `magenta` (and optional `crossrib_channel` for perpendicular cross-ribs/actin rungs); use `channel: max_rgb` for rainbow z-depth-coded STED.
      - Record `view_orientation` explicitly (`top-down apical`, `tilted oblique`, `cross-section`) — tilted SEMs foreshorten spacing by `cos(theta)`!
 
 3. **Write `records/<paper>/panels.yaml`**

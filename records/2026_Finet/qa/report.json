@@ -4,7 +4,7 @@
   "n_atomic_panels": 39,
   "composite_panels": 0,
   "n_custom_extractors": 4,
-  "n_fft_panels": 6,
+  "n_fft_panels": 9,
   "flagged_panels": [],
   "panels": {
     "2026_Finet/F1/A": {
@@ -16,21 +16,21 @@
     },
     "2026_Finet/F1/B": {
       "archetype": "quantitative_plot",
-      "n_points": 2,
+      "n_points": 22,
       "method": "custom:extractors/f1_shifts.py",
       "has_overlay": true,
       "confidence": "verified"
     },
     "2026_Finet/F1/C": {
       "archetype": "quantitative_plot",
-      "n_points": 2,
+      "n_points": 16,
       "method": "custom:extractors/f1_shifts.py",
       "has_overlay": true,
       "confidence": "verified"
     },
     "2026_Finet/F1/D": {
       "archetype": "quantitative_plot",
-      "n_points": 2,
+      "n_points": 19,
       "method": "custom:extractors/f1_shifts.py",
       "has_overlay": true,
       "confidence": "verified"
@@ -63,14 +63,14 @@
     },
     "2026_Finet/F2/B": {
       "archetype": "spectral_or_profile",
-      "n_points": 246,
+      "n_points": 258,
       "method": "custom:extractors/f2_selection.py",
       "has_overlay": true,
       "confidence": "verified"
     },
     "2026_Finet/F2/C": {
       "archetype": "spectral_or_profile",
-      "n_points": 246,
+      "n_points": 259,
       "method": "custom:extractors/f2_selection.py",
       "has_overlay": true,
       "confidence": "verified"
@@ -84,42 +84,42 @@
     },
     "2026_Finet/F2/E": {
       "archetype": "quantitative_plot",
-      "n_points": 3,
+      "n_points": 122,
       "method": "custom:extractors/f2_selection.py",
       "has_overlay": true,
       "confidence": "verified"
     },
     "2026_Finet/F2/F": {
       "archetype": "quantitative_plot",
-      "n_points": 3,
+      "n_points": 109,
       "method": "custom:extractors/f2_selection.py",
       "has_overlay": true,
       "confidence": "verified"
     },
     "2026_Finet/F2/G": {
       "archetype": "quantitative_plot",
-      "n_points": 3,
+      "n_points": 124,
       "method": "custom:extractors/f2_selection.py",
       "has_overlay": true,
       "confidence": "verified"
     },
     "2026_Finet/F2/H": {
       "archetype": "quantitative_plot",
-      "n_points": 3,
+      "n_points": 110,
       "method": "custom:extractors/f2_selection.py",
       "has_overlay": true,
       "confidence": "verified"
     },
     "2026_Finet/F2/I": {
       "archetype": "quantitative_plot",
-      "n_points": 3,
+      "n_points": 121,
       "method": "custom:extractors/f2_selection.py",
       "has_overlay": true,
       "confidence": "verified"
     },
     "2026_Finet/F2/J": {
       "archetype": "quantitative_plot",
-      "n_points": 3,
+      "n_points": 112,
       "method": "custom:extractors/f2_selection.py",
       "has_overlay": true,
       "confidence": "verified"
@@ -180,10 +180,16 @@
     },
     "2026_Finet/F3/C": {
       "archetype": "planar_microscopy",
-      "n_points": 0,
-      "method": "microscopy_scale",
+      "n_points": 11,
+      "method": "microscopy_fft",
       "has_overlay": true,
-      "confidence": "crop_verified"
+      "fft_um": 1.1047,
+      "transect_um": 1.1683,
+      "fft_transect_delta_pct": 5.76,
+      "harmonic_ratio_2f": 0.023,
+      "harmonic_guard": "pass",
+      "snr": 140.9,
+      "confidence": "verified"
     },
     "2026_Finet/F3/C_prime": {
       "archetype": "cross_section",
@@ -201,10 +207,16 @@
     },
     "2026_Finet/F3/D": {
       "archetype": "planar_microscopy",
-      "n_points": 0,
-      "method": "microscopy_scale",
+      "n_points": 11,
+      "method": "microscopy_fft",
       "has_overlay": true,
-      "confidence": "crop_verified"
+      "fft_um": 1.6407,
+      "transect_um": 1.6713,
+      "fft_transect_delta_pct": 1.87,
+      "harmonic_ratio_2f": 0.059,
+      "harmonic_guard": "pass",
+      "snr": 2729.9,
+      "confidence": "verified"
     },
     "2026_Finet/F3/D_prime": {
       "archetype": "cross_section",
@@ -229,7 +241,7 @@
     },
     "2026_Finet/F4/B": {
       "archetype": "quantitative_plot",
-      "n_points": 62,
+      "n_points": 68,
       "method": "custom:extractors/f4_cohorts.py",
       "has_overlay": true,
       "confidence": "verified"
@@ -257,10 +269,16 @@
     },
     "2026_Finet/F5/B": {
       "archetype": "planar_microscopy",
-      "n_points": 0,
-      "method": "microscopy_scale",
+      "n_points": 11,
+      "method": "microscopy_fft",
       "has_overlay": true,
-      "confidence": "crop_verified"
+      "fft_um": 0.7495,
+      "transect_um": 0.7852,
+      "fft_transect_delta_pct": 4.76,
+      "harmonic_ratio_2f": 0.02,
+      "harmonic_guard": "pass",
+      "snr": 2251.4,
+      "confidence": "verified"
     },
     "2026_Finet/F5/C": {
       "archetype": "planar_microscopy",
@@ -290,28 +308,28 @@
     },
     "2026_Finet/F5/C_prime": {
       "archetype": "spectral_or_profile",
-      "n_points": 540,
+      "n_points": 600,
       "method": "custom:extractors/f5_milling.py",
       "has_overlay": true,
       "confidence": "verified"
     },
     "2026_Finet/F5/D_prime": {
       "archetype": "spectral_or_profile",
-      "n_points": 540,
+      "n_points": 600,
       "method": "custom:extractors/f5_milling.py",
       "has_overlay": true,
       "confidence": "verified"
     },
     "2026_Finet/F5/C_dprime": {
       "archetype": "spectral_or_profile",
-      "n_points": 810,
+      "n_points": 900,
       "method": "custom:extractors/f5_milling.py",
       "has_overlay": true,
       "confidence": "verified"
     },
     "2026_Finet/F5/D_dprime": {
       "archetype": "spectral_or_profile",
-      "n_points": 810,
+      "n_points": 900,
       "method": "custom:extractors/f5_milling.py",
       "has_overlay": true,
       "confidence": "verified"

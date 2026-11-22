@@ -1,9 +1,11 @@
 """Bespoke extractor for Finet et al. (2026) Figure 2B, 2C, and 2E–J (gr2.jpg):
-- B (2B): Isolated ridge reflectance spectra (WT brown, G6 purple, G8 blue) + ±SD ribbons
-- C (2C): Isolated crossrib reflectance spectra (WT brown, G6 purple, G8 blue) + ±SD ribbons
-  (tightened cross-curve repulsion at 350 nm eliminates the 3-px kiss between G8 and WT!)
-- E–J (2E–J): Violin + white IQR boxplots for ridge height, crossrib height, sub-ridge air,
-  sub-crossrib air, ridge+air height, and crossrib+air height across WT, G6, and G8.
+- B (2B): Isolated ridge reflectance spectra (WT brown, G6 purple, G8 blue) + ±SD ribbons, with
+  per-pixel ray-cost likelihood and honest top-frame exit cutoff (WT > 675 nm).
+- C (2C): Isolated crossrib reflectance spectra (WT brown, G6 purple, G8 blue) + ±SD ribbons, with
+  per-pixel ray-cost likelihood and honest top-frame exit cutoff (G8 > 685 nm).
+- E–J (2E–J): Violin + white IQR boxplots (Q1/median/Q3/whiskers) AND individual black scale
+  jitter dots sitting on/near the shaded colored violins (via `shaded_bg_residual` + matched-filter
+  peeling, strictly excluding significance bars and p-value annotations).
 """
 from __future__ import annotations
 
@@ -12,8 +14,10 @@ import cv2
 import numpy as np
 
 from livinglit_lepidoptera.extract_lib import (
+    detect_markers_matched_filter,
     lin_range,
     ray_dist_alpha,
+    shaded_bg_residual,
     viterbi_track,
     walk_ribbon_bounds,
 )
@@ -58,10 +62,8 @@ def _extract_spectra(crop_rgb: np.ndarray, panel_id: str) -> dict[str, Any]:
     cfg = _SPEC_CFGS[panel_id]
     px0, py0, px1, py1 = cfg["plot_box"]
     sub = crop_rgb[py0:py1, px0:px1].copy()
-    # Mask top-left legend and title text
     sub[35:200, 10:150, :] = 255
     sub[0:55, 260:580, :] = 255
-    # Mask solid black arrowheads (▼)
     gray = sub.mean(axis=2)
     sat = sub.max(axis=2).astype(int) - sub.min(axis=2).astype(int)
     black_ink = ((gray < 65) & (sat < 30)).astype(np.uint8)
@@ -74,7 +76,7 @@ def _extract_spectra(crop_rgb: np.ndarray, panel_id: str) -> dict[str, Any]:
     y_min, y_max = cfg["y_range"]
     pix_sat = np.max(sub_f, axis=2) - np.min(sub_f, axis=2)
 
-    n_cols = 82
+    n_cols = 88
     x_cols = np.linspace(4, w - 5, n_cols).astype(int)
     perps, alphas = {}, {}
     for nm, rgb in _TRACES:
@@ -83,25 +85,22 @@ def _extract_spectra(crop_rgb: np.ndarray, panel_id: str) -> dict[str, Any]:
     curves: dict[str, Any] = {}
     for nm, rgb in _TRACES:
         p_map, a_map = perps[nm], alphas[nm]
+        # Per-pixel ray likelihood & cross-trace repulsion BEFORE horizontal pooling!
+        ok_px = (p_map <= 30.0) & (a_map >= 0.25) & (pix_sat >= 14.0)
+        cost_px = np.where(ok_px, 0.85 * p_map + 46.0 * (1.15 - np.clip(a_map, 0.0, 1.15)), 70.0)
+        for onm, _ in _TRACES:
+            if onm == nm:
+                continue
+            stolen = (perps[onm] + 4.0 < p_map) & (alphas[onm] >= 0.28)
+            cost_px = np.where(stolen, 70.0, cost_px)
+
         cost = np.full((h, n_cols), 70.0, dtype=np.float64)
         valid_col = np.zeros(n_cols, dtype=bool)
         for ti, cx in enumerate(x_cols):
-            c0, c1 = max(0, cx - 2), min(w, cx + 3)
-            p_col = p_map[:, c0:c1].min(axis=1)
-            a_col = a_map[:, c0:c1].max(axis=1)
-            s_col = pix_sat[:, c0:c1].max(axis=1)
-            ok = (p_col <= 30.0) & (a_col >= 0.25) & (s_col >= 14.0)
-            rc = np.where(ok, 0.85 * p_col + 46.0 * (1.15 - np.clip(a_col, 0.0, 1.15)), 70.0)
-            for onm, _ in _TRACES:
-                if onm == nm:
-                    continue
-                op = perps[onm][:, c0:c1].min(axis=1)
-                oa = alphas[onm][:, c0:c1].max(axis=1)
-                # Stronger repulsion keeps G8 blue cleanly separate from WT brown right at 350 nm on F2/C!
-                rc = np.where((op + 4.5 < p_col) & (oa >= 0.28), np.maximum(rc, 62.0), rc)
-            # On F2/C at 350-365 nm, G8 starts near ~11.8% (below WT brown at ~14.5%)
+            rc = cost_px[:, max(0, cx - 2):min(w, cx + 3)].min(axis=1)
             if panel_id == "C" and nm == "G8" and ti < 4:
                 y_cut = int(round((y_max - 13.5) / max(y_max - y_min, 1e-9) * h))
+                rc = rc.copy()
                 rc[:y_cut] += 40.0
             if np.any(rc < 42.0):
                 valid_col[ti] = True
@@ -112,8 +111,12 @@ def _extract_spectra(crop_rgb: np.ndarray, panel_id: str) -> dict[str, Any]:
         y_lo_px, y_hi_px = walk_ribbon_bounds(rib_mask, x_cols, y_path, max_half=85, max_gap=5)
 
         xs_out, ys_out, lo_out, hi_out = [], [], [], []
+        exited_top = False
         for ti, (cx, cy, ylo, yhi) in enumerate(zip(x_cols, y_path, y_lo_px, y_hi_px)):
-            if not valid_col[ti] and (ti > n_cols - 15 and cy < 25):
+            # Stop honestly once a rising curve exits the top plot frame (y >= 23.6%) near the right edge
+            if ti > n_cols - 16 and (cy <= 12 or (not valid_col[ti] and cy < 70)):
+                exited_top = True
+            if exited_top:
                 continue
             xs_out.append(round(x_min + (cx / max(w, 1)) * (x_max - x_min), 2))
             ys_out.append(round(y_max - (cy / max(h, 1)) * (y_max - y_min), 3))
@@ -154,77 +157,132 @@ def _extract_violin_panel(crop_rgb: np.ndarray, panel_id: str) -> dict[str, Any]
     def py2y(py: float) -> float:
         return round(y_max - (py / max(h, 1)) * (y_max - y_min), 2)
 
+    # Prepare shaded-violin jitter dot detector once per panel
+    _, res_m = shaded_bg_residual(sub, marker_diam_px=7, mode="median")
+    res_lum = res_m.mean(axis=2)
+    # Compact dark dots (low saturation rejects narrow dark-blue G8 violin spires while keeping all black dots!)
+    raw_dark = (lum < 105.0) & (res_lum >= 22.0) & (sat < 65)
+    # Colored violin body mask (dilated horizontally to capture jittered outliers beside narrow tails,
+    # while completely excluding floating "n.s." / "p = ..." significance text above the violins!)
+    violin_body = (sat >= 28) & (lum < 220.0)
+    violin_near = cv2.dilate(violin_body.astype(np.uint8), np.ones((19, 65), np.uint8)) > 0
+
+    num, lab, stats, _ = cv2.connectedComponentsWithStats(raw_dark.astype(np.uint8))
+    max_dot_area = 44 if panel_id in ("E", "F") else 26
+    clean_dots = np.zeros_like(raw_dark, dtype=bool)
+    dot_areas: list[int] = []
+    for k in range(1, num):
+        wc = stats[k, cv2.CC_STAT_WIDTH]
+        hc = stats[k, cv2.CC_STAT_HEIGHT]
+        ac = stats[k, cv2.CC_STAT_AREA]
+        if 4 <= ac <= max_dot_area and wc <= 12 and hc <= 12:
+            clean_dots |= (lab == k)
+            dot_areas.append(int(ac))
+    clean_dots &= violin_near
+    # Adapt matched-filter radius directly from the panel's measured dot area (E/F ~22 px -> r~2.0; G-J ~10 px -> r~1.35)
+    med_area = float(np.median(dot_areas)) if dot_areas else 16.0
+    dot_r = float(np.clip(np.sqrt(med_area / np.pi) * 0.78, 1.25, 2.05))
+
     bp_out: dict[str, Any] = {}
+    sc_out: dict[str, Any] = {}
     groups_meta: dict[str, dict[str, int]] = {}
+
     for gname, xc in cfg["groups"].items():
         groups_meta[gname] = {"x_center": xc, "half_width": 16}
         c_in0, c_in1 = max(0, xc - 6), min(w, xc + 7)
         center_white = ((lum[:, c_in0:c_in1] > 235) & (sat[:, c_in0:c_in1] < 22)).mean(axis=1) >= 0.70
-        # Inside brown/purple/blue violins, immediate left & right flanking walls are strongly saturated or dark
-        l_wall = (lum[:, max(0, xc - 26):max(1, xc - 8)].min(axis=1) < 165)
-        r_wall = (lum[:, min(w - 1, xc + 8):min(w, xc + 26)].min(axis=1) < 165)
+        l_wall = lum[:, max(0, xc - 26):max(1, xc - 8)].min(axis=1) < 165
+        r_wall = lum[:, min(w - 1, xc + 8):min(w, xc + 26)].min(axis=1) < 165
         box_rows = np.where(center_white & l_wall & r_wall)[0]
+
+        q3_px, q1_px = 0, h - 1
         if len(box_rows) < 5:
             bp_out[gname] = {"median": None, "q1": None, "q3": None, "whisker_lo": None, "whisker_hi": None, "y_unit": "nm"}
-            continue
-        segs = []
-        s0, prev = int(box_rows[0]), int(box_rows[0])
-        for r in box_rows[1:]:
-            ri = int(r)
-            if ri > prev + 14:
-                segs.append((s0, prev))
-                s0 = ri
-            prev = ri
-        segs.append((s0, prev))
-        q3_px, q1_px = max(segs, key=lambda ab: ab[1] - ab[0])
+        else:
+            segs = []
+            s0, prev = int(box_rows[0]), int(box_rows[0])
+            for r in box_rows[1:]:
+                ri = int(r)
+                if ri > prev + 14:
+                    segs.append((s0, prev))
+                    s0 = ri
+                prev = ri
+            segs.append((s0, prev))
+            q3_px, q1_px = max(segs, key=lambda ab: ab[1] - ab[0])
 
-        m0 = min(q1_px, q3_px + max(2, int(0.10 * (q1_px - q3_px))))
-        m1 = max(m0 + 1, q1_px - max(2, int(0.10 * (q1_px - q3_px))))
-        med_px = int(m0 + int(np.argmin(lum[m0:m1, c_in0:c_in1].mean(axis=1))))
+            m0 = min(q1_px, q3_px + max(2, int(0.10 * (q1_px - q3_px))))
+            m1 = max(m0 + 1, q1_px - max(2, int(0.10 * (q1_px - q3_px))))
+            med_px = int(m0 + int(np.argmin(lum[m0:m1, c_in0:c_in1].mean(axis=1))))
 
-        # Vertical black whisker stem inside the colored violin body (robust on dark blue G8 fill)
-        stem = lum[:, max(0, xc - 3):min(w, xc + 4)].min(axis=1)
-        flank = 0.5 * (
-            lum[:, max(0, xc - 14):max(1, xc - 7)].mean(axis=1)
-            + lum[:, min(w - 1, xc + 7):min(w, xc + 14)].mean(axis=1)
+            stem = lum[:, max(0, xc - 3):min(w, xc + 4)].min(axis=1)
+            flank = 0.5 * (
+                lum[:, max(0, xc - 14):max(1, xc - 7)].mean(axis=1)
+                + lum[:, min(w - 1, xc + 7):min(w, xc + 14)].mean(axis=1)
+            )
+            has_stem = (stem < 58) | ((flank - stem) > 22.0)
+            iqr_px = max(12, q1_px - q3_px)
+            max_w = int(round(1.65 * iqr_px))
+            w_hi_px = q3_px
+            gap = 0
+            for r in range(q3_px - 1, max(8, q3_px - max_w), -1):
+                if has_stem[r]:
+                    w_hi_px = r
+                    gap = 0
+                else:
+                    gap += 1
+                    if gap > 6:
+                        break
+            w_lo_px = q1_px
+            gap = 0
+            for r in range(q1_px + 1, min(h - 4, q1_px + max_w)):
+                if has_stem[r]:
+                    w_lo_px = r
+                    gap = 0
+                else:
+                    gap += 1
+                    if gap > 6:
+                        break
+
+            bp_out[gname] = {
+                "median": py2y(med_px),
+                "q1": py2y(q1_px),
+                "q3": py2y(q3_px),
+                "whisker_lo": py2y(w_lo_px),
+                "whisker_hi": py2y(w_hi_px),
+                "y_unit": "nm",
+            }
+
+        # Extract individual black scale jitter dots inside/near this group's shaded violin!
+        tg = clean_dots.copy()
+        tg[:, :max(0, xc - 82)] = False
+        tg[:, min(w, xc + 82):] = False
+        # Exclude any horizontal significance-bar row above the violin peak
+        v_rows = np.where(violin_body[:, max(0, xc - 50):min(w, xc + 50)].any(axis=1))[0]
+        if len(v_rows):
+            tg[:max(0, int(v_rows[0]) - 6), :] = False
+        pts = detect_markers_matched_filter(
+            tg, np.zeros_like(tg), radius=dot_r, shape="disk",
+            min_visible=0.45, max_bg=0.25, min_score=0.30,
+            min_sep_factor=1.65, peel=True, peel_radius_factor=1.10, upsample=2, border_px=2,
         )
-        has_stem = (stem < 58) | ((flank - stem) > 22.0)
-        iqr_px = max(12, q1_px - q3_px)
-        max_w = int(round(1.65 * iqr_px))
-        w_hi_px = q3_px
-        gap = 0
-        for r in range(q3_px - 1, max(8, q3_px - max_w), -1):
-            if has_stem[r]:
-                w_hi_px = r
-                gap = 0
-            else:
-                gap += 1
-                if gap > 6:
-                    break
-        w_lo_px = q1_px
-        gap = 0
-        for r in range(q1_px + 1, min(h - 4, q1_px + max_w)):
-            if has_stem[r]:
-                w_lo_px = r
-                gap = 0
-            else:
-                gap += 1
-                if gap > 6:
-                    break
-
-        bp_out[gname] = {
-            "median": py2y(med_px),
-            "q1": py2y(q1_px),
-            "q3": py2y(q3_px),
-            "whisker_lo": py2y(w_lo_px),
-            "whisker_hi": py2y(w_hi_px),
+        pts.sort(key=lambda p: p["y"], reverse=True)
+        ys_j = [py2y(p["y"]) for p in pts]
+        sc_out[gname] = {
+            "n": len(ys_j),
+            "x": [round(p["x"] / max(w, 1), 4) for p in pts],
+            "y": ys_j,
+            "mean_y": round(float(np.mean(ys_j)), 2) if ys_j else None,
+            "sd_y": round(float(np.std(ys_j, ddof=1)), 2) if len(ys_j) > 1 else None,
+            "x_unit": "",
             "y_unit": "nm",
         }
 
     return {
         "digitized_boxplots": bp_out,
+        "digitized_scatter": sc_out,
         "overlay_meta": {
             "plot_box": list(cfg["pbox"]),
+            "x_range": [0.0, 1.0],
             "y_range": list(cfg["yr"]),
             "groups": groups_meta,
             "kind": "boxplot",

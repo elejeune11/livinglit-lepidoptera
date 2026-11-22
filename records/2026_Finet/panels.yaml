@@ -436,6 +436,19 @@ figures:
           - 1101
           - 823
           polarity: bright
+        periodic_spec:
+          roi:
+          - 120
+          - 120
+          - 960
+          - 720
+          spacing_range_um:
+          - 0.5
+          - 3.0
+          wavevector_angle_deg:
+          - 65.0
+          - 115.0
+          channel: gray
       C_prime:
         label: C'
         title: Euploea mulciber sagittal FIB-SEM view
@@ -499,6 +512,19 @@ figures:
           - 1099
           - 821
           polarity: bright
+        periodic_spec:
+          roi:
+          - 120
+          - 120
+          - 960
+          - 720
+          spacing_range_um:
+          - 0.5
+          - 3.5
+          wavevector_angle_deg:
+          - 65.0
+          - 115.0
+          channel: gray
       D_prime:
         label: D'
         title: Paralaxita orphna sagittal FIB-SEM view
@@ -647,6 +673,16 @@ figures:
           - 1324
           - 836
           polarity: bright
+        periodic_spec:
+          roi:
+          - 140
+          - 120
+          - 1220
+          - 700
+          spacing_range_um:
+          - 0.4
+          - 1.5
+          channel: blue
       C:
         label: C
         title: SEM top view and schematic after FIB milling of two consecutive full

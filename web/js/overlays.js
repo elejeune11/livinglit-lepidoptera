@@ -194,8 +194,8 @@ window.LL = window.LL || {};
           if (i < ylo.length && ylo[i] != null && yhi[i] != null) {
             ctx.beginPath(); ctx.moveTo(cx, y2c(ylo[i])); ctx.lineTo(cx, y2c(yhi[i])); ctx.stroke();
           }
-          ctx.beginPath(); ctx.arc(cx, cy, 4.1, 0, Math.PI * 2); ctx.fillStyle = "#000"; ctx.fill();
-          ctx.beginPath(); ctx.arc(cx, cy, 2.7, 0, Math.PI * 2); ctx.fillStyle = col; ctx.fill();
+          ctx.beginPath(); ctx.arc(cx, cy, 4.6, 0, Math.PI * 2); ctx.strokeStyle = "#000"; ctx.lineWidth = 2.6; ctx.stroke();
+          ctx.beginPath(); ctx.arc(cx, cy, 4.2, 0, Math.PI * 2); ctx.strokeStyle = col; ctx.lineWidth = 1.6; ctx.stroke();
         }
         if (g.y_interval && g.y_interval.length === 2 && xs.length && xr) {
           const sortedX = xs.slice().sort((a, b) => a - b);

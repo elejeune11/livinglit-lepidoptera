@@ -116,3 +116,82 @@ def test_synthetic_2d_fft_and_harmonic_guard():
     hg_bad = check_fft_harmonics(1.60, 0.80, 0.72, 200.0)
     assert hg_bad["status"] == "flagged"
     assert len(hg_bad["issues"]) >= 1
+
+
+def test_find_axis_ticks_and_misfit():
+    from livinglit_lepidoptera.extract_lib import AxisCal, find_axis_ticks
+
+    # Draw a crisp 200x240 plot with left y-axis at x=40 (y=20..170), bottom x-axis at y=170 (x=40..220)
+    img = np.full((200, 240, 3), 255, dtype=np.uint8)
+    img[20:171, 39:41] = 10   # left spine
+    img[169:171, 40:221] = 10  # bottom spine
+    # 4 y-ticks at rows 160, 120, 80, 40 (values 0, 10, 20, 30)
+    for r in (160, 120, 80, 40):
+        img[r - 1:r + 1, 32:39] = 10
+    # 4 x-ticks at cols 55, 105, 155, 205 (values 100, 200, 300, 400)
+    for c in (55, 105, 155, 205):
+        img[171:178, c - 1:c + 1] = 10
+
+    cal = find_axis_ticks(img, y_labels=[0.0, 10.0, 20.0, 30.0], x_labels=[100.0, 200.0, 300.0, 400.0], probe=(2, 6))
+    assert cal["x_misfit_px"] <= 0.6
+    assert cal["y_misfit_px"] <= 0.6
+    assert math.isclose(cal["x_cal"].to_value(130.0), 250.0, abs_tol=2.5)
+    assert math.isclose(cal["y_cal"].to_value(100.0), 15.0, abs_tol=0.6)
+
+    # Wrong label count must fail loudly instead of silently miscalibrating
+    with pytest.raises(ValueError, match="tick count mismatch"):
+        find_axis_ticks(img, y_labels=[0.0, 10.0, 20.0], x_labels=[100.0, 200.0, 300.0, 400.0], probe=(2, 6))
+
+    # Log10 axis calibration check
+    lcal = AxisCal.fit([50.0, 150.0, 250.0], [1.0, 10.0, 100.0], scale="log10")
+    assert math.isclose(lcal.to_value(200.0), math.sqrt(1000.0), rel_tol=1e-3)
+
+
+def test_detect_markers_overlapping_occluded_and_shaded():
+    from livinglit_lepidoptera.extract_lib import (
+        detect_markers_matched_filter,
+        shaded_bg_residual,
+        trace_error_arms_occluded,
+    )
+
+    # 1. Synthetic 120x160 image: orange shaded CI ribbon across middle + 2 overlapping black dots + 1 dot sliced by a red SD bar!
+    img = np.full((120, 160, 3), 255, dtype=np.uint8)
+    img[35:85, 10:150] = [242, 182, 142]  # translucent orange shaded ribbon
+
+    yy, xx = np.mgrid[0:120, 0:160]
+    true_pts = [(42, 58), (52, 58), (105, 60)]  # (42,58) & (52,58) overlap tightly! (105,60) sits behind a red line!
+    for cx, cy in true_pts:
+        disk = (xx - cx) ** 2 + (yy - cy) ** 2 <= 6.2 ** 2
+        # Blended dark-brown dot inside the shaded orange ribbon (simulating ggplot2 ribbon over geom_point!)
+        img[disk] = [62, 38, 26]
+    # Draw vertical red SD bar straight through (105, 60)
+    img[30:90, 104:107] = [230, 30, 30]
+
+    _, res = shaded_bg_residual(img, marker_diam_px=13, mode="median")
+    res_lum = res.mean(axis=2)
+    lum = img.astype(np.float32).mean(axis=2)
+    red_occ = (img[:, :, 0].astype(np.float32) - img[:, :, 1].astype(np.float32) > 100.0) & (lum < 150.0)
+    tgt = (lum < 110.0) & (res_lum >= 45.0) & ~red_occ
+
+    pts = detect_markers_matched_filter(
+        tgt, red_occ, radius=6.0, shape="disk",
+        min_visible=0.35, max_bg=0.20, min_score=0.30,
+        min_sep_factor=1.30, peel=True, peel_radius_factor=0.90, upsample=1,
+    )
+    assert len(pts) == 3
+    # Every true point recovered within 1.5 px (including BOTH overlapping dots AND the red-bar-occluded dot!)
+    for tx, ty in true_pts:
+        assert min(math.hypot(p["x"] - tx, p["y"] - ty) for p in pts) <= 1.5
+
+    # 2. Occlusion-crossing error bar test (walks through crossing occluder AND mirrors hidden lower end!)
+    arm = np.zeros((120, 120), dtype=bool)
+    occ = np.zeros((120, 120), dtype=bool)
+    arm[20:60, 60] = True      # upper arm from y=60 up to y=20 (len=40)
+    occ[35:42, 56:65] = True   # crossing bar through upper arm -> must bridge!
+    arm[35:42, 60] = False
+    occ[64:105, 56:65] = True  # occluder hiding the entire lower arm -> must mirror to y=100!
+    xl, xr, yd, yu, flags = trace_error_arms_occluded(arm, occ, 60, 60, max_len=60, marker_r=4.0)
+    assert yu == 20.0
+    assert flags["y_lo_hidden"] is True
+    assert yd == 100.0
+

@@ -53,9 +53,10 @@ class PeriodicMeasureSpec(Strict):
     roi: tuple[int, int, int, int]
     spacing_range_um: tuple[float, float] = (0.3, 6.0)
     wavevector_angle_deg: tuple[float, float] | None = None
-    channel: Literal["gray", "green", "magenta", "red", "blue"] = "gray"
+    channel: Literal["gray", "green", "green_isolated", "magenta", "red", "blue", "max_rgb"] = "gray"
     measure_crossrib: bool = False
     crossrib_range_um: tuple[float, float] = (0.25, 1.5)
+    crossrib_channel: Literal["gray", "green", "green_isolated", "magenta", "red", "blue", "max_rgb"] | None = None
 
 
 class CurveTraceSpec(Strict):
@@ -172,6 +173,13 @@ class PanelsFile(Strict):
 def _extract_channel(panel_rgb: np.ndarray, ch: str) -> np.ndarray:
     if ch == "green":
         return panel_rgb[:, :, 1].astype(np.float64)
+    if ch == "green_isolated":
+        return np.clip(
+            panel_rgb[:, :, 1].astype(np.float64)
+            - 0.45 * (panel_rgb[:, :, 0].astype(np.float64) + panel_rgb[:, :, 2].astype(np.float64)),
+            0.0,
+            255.0,
+        )
     if ch == "red":
         return panel_rgb[:, :, 0].astype(np.float64)
     if ch == "blue":
@@ -179,6 +187,8 @@ def _extract_channel(panel_rgb: np.ndarray, ch: str) -> np.ndarray:
     if ch == "magenta":
         return np.clip(0.6 * panel_rgb[:, :, 0].astype(np.float64) + 0.4 * panel_rgb[:, :, 2].astype(np.float64)
                        - 0.5 * panel_rgb[:, :, 1].astype(np.float64), 0, 255)
+    if ch == "max_rgb":
+        return np.max(panel_rgb.astype(np.float64), axis=2)
     return panel_rgb
 
 
@@ -986,8 +996,9 @@ def compute_panel_object(
                         w_bounds = (lo_a, hi_a - 180.0)
                     else:
                         w_bounds = (lo_a, hi_a)
+                    cr_img = _extract_channel(crop, ps.crossrib_channel) if ps.crossrib_channel else ch_img
                     c_fft = measure_periodic_fft_verified(
-                        ch_img, cal, ps.roi,
+                        cr_img, cal, ps.roi,
                         spacing_range_um=ps.crossrib_range_um,
                         wavevector_angle_deg=w_bounds,
                     )

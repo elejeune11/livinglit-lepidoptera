@@ -38,16 +38,32 @@ Prototype audits showed that coarse `top`/`bottom` or `A–C` composite crops si
 Generic declarative YAML specs (`curve_spec`, `scatter_spec`) repeatedly failed on crossing curves, steep reflectance peaks, arrowheads, overlapping errorbars, and closely spaced range bars. In `livinglit-lepidoptera`, **all non-trivial quantitative figures use bespoke, auditable Python scripts** built on a unit-tested shared toolkit:
 
 ### `src/livinglit_lepidoptera/extract_lib.py` (Zero Figure-Specific Hardcoding)
-- **Axis & tick calibration**: linear and log-axis tick mapping (`lin_range`, `log_range`), automatic frame box detection, legend/inset masking.
-- **Color decomposition**: perpendicular distance & ink-opacity $\alpha$ along the white-to-target RGB ray (`ray_dist_alpha`), cleanly separating dark core lines from translucent same-hue `±SD` ribbons.
-- **L1-penalty Viterbi dynamic programming (`viterbi_track`)**: tracks continuous curves through crossings and steep 50–80% reflectance peaks without quadratic slope flattening, with inter-trace hue repulsion and optional verified peak anchors.
-- **Ribbon envelope walker (`walk_ribbon_bounds`)**: walks continuously upward/downward from the tracked mean curve across shaded `±SD` or `95% CI` bands without jumping to frame tick marks.
-- **Robust regression & CI fitter (`fit_irls_line_and_ci`)**: fits straight OLS lines + smooth quadratic 95% CI envelopes directly from plotted `ggplot2`-style translucent ribbons while ignoring overlapping scatter dots.
-- **Discrete feature detectors**: connected-component blob finder with red-bar dot healing (`beeswarm_1d`), radiating error-bar arm walker (`trace_error_arms` for `x_lo/x_hi/y_lo/y_hi`), contiguous vertical stem-run bar detector (`extract_vertical_bars`), violin/boxplot IQR+whisker detector, and colorbar-calibrated dotplot matrix reader.
-- **Microscopy metrology (`measure_periodic_fft`, `measure_transects`, `check_fft_harmonics`)**:
+- **Automatic tick-mark axis calibration (`AxisCal`, `find_axis_ticks`)**: detects axis spines and perpendicular tick stubs directly from pixel ink (inspired by `boxgraph-public`), fits linear or `log10` mappings, raises loudly on tick-count mismatch, and logs exact RMS `x_misfit_px` / `y_misfit_px` inside `overlay_meta`.
+- **Per-pixel color-ray decomposition (`ray_dist_alpha`)**: computes perpendicular distance & ink opacity $\alpha$ along the white-to-target RGB ray **per pixel before column pooling** (preventing white-edge `perp=0` pixels from falsely pairing with adjacent curves' high $\alpha$ at crossings!).
+- **L1-penalty Viterbi dynamic programming (`viterbi_track`)**: tracks continuous curves through crossings and steep 50–80% reflectance peaks without quadratic slope flattening, with per-pixel inter-trace repulsion and honest top-frame exit cutoffs.
+- **Ribbon envelope walker (`walk_ribbon_bounds`) & robust regression fitter (`fit_irls_line_and_ci`)**: walks continuously upward/downward from the tracked mean curve across shaded `±SD` or `95% CI` bands without jumping to frame ticks.
+- **Occlusion-aware matched-filter marker peeling (`detect_markers_matched_filter`) & shaded-overlay background subtraction (`shaded_bg_residual`)**:
+  - Evaluates the `boxgraph-public` matched-filter score $S = T + 0.5\,O - 3\,B$ via `fftconvolve` across disk and upward-triangle (`triangle_up`) templates, where $O$ captures all non-target ink (other series, solid regression lines, overlaid red mean/±SD bars, boxplot medians).
+  - **Iterative greedy marker peeling**: after placing each marker, moves its claimed pixels from `tgt` → `occ` (not background!) and updates $T, O$ locally so tightly overlapping marker clusters remain unmerged (`B ≈ 0`).
+  - **Shaded-overlay contrast recovery**: morphological/median local background subtraction (`shaded_bg_residual`) recovers dark or colored dots sitting directly underneath translucent 95% CI ribbons, notched boxplots, or colored violins.
+  - **Occlusion-crossing error-bar walking (`trace_error_arms_occluded`)**: bridges crossing series/ribbons and mirrors single-sided hidden error arms with explicit hidden-end flags.
+- **Microscopy metrology (`measure_periodic_fft_verified`, `measure_transects_with_coords`, `check_fft_harmonics`)**:
   - Calibrates `um_per_px` and `fov_um` from the panel's scale-bar bracket (`scale_bar_px`).
-  - Computes 2D-FFT dominant spatial frequency (`periodic_fft_um`), orientation (`wavevector_deg`), SNR, **exact spatial phase shift** $\phi$ (so overlay grating lines land dead-center on bright ridge crests!), and 10 orthogonal intensity transects (`periodic_transect_um ± sd`, plus per-transect peak coordinates).
-  - Optional orthogonal cross-rib 2D-FFT (`crossrib_fft_um`).
+  - Supports multi-channel fluorescence isolation (`green_isolated`, `magenta`, `max_rgb` for depth-colored STED, `gray`/`blue` for optical/SEM) plus optional separate `crossrib_channel` for orthogonal cross-rib/actin-rung periodicity.
+  - Computes 2D-FFT dominant spatial frequency (`periodic_fft_um`), orientation (`wavevector_deg`), SNR, **exact spatial phase shift** $\phi$, 10 orthogonal intensity transects, and automated `2f`/`0.5f` harmonic guards.
+
+### Two-Stage Fluorescent & Optical Microscopy FFT Triage Protocol
+To ensure periodic fluorescent (confocal, SIM, TauSTED) and optical microscopy panels are **never overlooked** while preventing spurious FFT measurements on non-periodic or undersampled imagery, every calibrated micrograph goes through two stages:
+
+1. **Stage 1 — Text & Caption Cue Trigger (High Recall)**:
+   - **Positive cues**: `"parallel"`, `"periodic"`, `"regularly spaced"`, `"regular intervals"`, `"organized actin bundles"`, `"maximally spaced"`, `"alternating"`, `"between the [cuticle] ridges"`, `"perpendicularly to the direction of the ridge"`, `"window regions in between the crossribs"`, `"epi-illumination ... ridges"`, or developmental stage `>= 37.5–44%` pupal when actin bundles align.
+   - **Negative (exclusion) cues**: `"nascent scales"`, `"cytoplasmic projections"`, `"hundreds of developing scales"` (low-mag overview), `"angled out of plane"`, `"orthogonal view (XZ/YZ)"`, `"radiate from single point"`, or `"dissociated"` (unless intact chitin ridges remain visible in the chitin channel!).
+   - *Rule*: Any calibrated planar micrograph with `scale_bar <= 15 µm` is also visually screened even if the caption omits the word "periodic".
+2. **Stage 2 — Quantitative Physical & Visual Feasibility Gate (High Precision)**:
+   - **Nyquist sampling gate**: `expected_spacing_um / um_per_px >= 3.0 px/cycle` (automatically rules out low-mag confocal overviews where bundles are `< 2 px` apart!).
+   - **Planar cycle-count gate**: A flat, non-fanning ROI containing `>= 3.5–4` visible parallel cycles.
+   - **Channel-separation rule (critical for dual-channel fluorescence)**: Never run grayscale FFT on a green+magenta merge where actin sits halfway between chitin ridges (grayscale interleaving creates a fake `2×` frequency!). Always isolate `green_isolated` (phalloidin F-actin) and/or `magenta` (chitin WGA/CBD-TMR) separately, and use `max_rgb` for rainbow z-depth-coded single-fluorophore STED images.
+   - **Spectral + spatial confirmation**: Pass `check_fft_harmonics` (`|FFT - transect| / FFT <= 12%`, `2f` guard) AND visually confirm 1-to-1 grating-line lock on `qa_renders/fft_<paper>.png`.
 
 ### Per-Figure Extractor Interface (`records/<paper>/extractors/<fig>.py`)
 Each script exposes one pure, deterministic function:

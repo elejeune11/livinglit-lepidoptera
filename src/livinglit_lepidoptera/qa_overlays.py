@@ -148,14 +148,15 @@ def draw_plot_overlay(crop_bgr: np.ndarray, panel_obj: dict[str, Any]) -> np.nda
     # Scatter + per-point x/y errorbars
     if "digitized_scatter" in d and yr:
         is_bee = om.get("mode") == "beeswarm_1d"
-        gmap = {g["name"]: g for g in (om.get("groups") or [])}
+        raw_g = om.get("groups")
+        gmap = {g["name"]: g for g in raw_g} if isinstance(raw_g, list) else {}
         for idx, (gn, g) in enumerate(d["digitized_scatter"].items()):
             col = OVERLAY_BGR[idx % len(OVERLAY_BGR)]
             gx, gy = g.get("x") or [], g.get("y") or []
             xlo, xhi = g.get("x_lo") or [], g.get("x_hi") or []
             ylo, yhi = g.get("y_lo") or [], g.get("y_hi") or []
             mg = gmap.get(gn)
-            rad = max(3, lw * 2 + 1)
+            rad = max(3, lw * 2 + 2)
             for i, (xv, yv) in enumerate(zip(gx, gy)):
                 if is_bee and mg and "x_frac" in mg:
                     xf = ((xv - mg["x_val"]) / 0.36) + 0.5
@@ -169,8 +170,9 @@ def draw_plot_overlay(crop_bgr: np.ndarray, panel_obj: dict[str, Any]) -> np.nda
                     cv2.line(vis, (x2p(xlo[i]), py), (x2p(xhi[i]), py), col, max(1, lw), cv2.LINE_AA)
                 if i < len(ylo) and i < len(yhi) and ylo[i] is not None and yhi[i] is not None:
                     cv2.line(vis, (px, y2p(ylo[i])), (px, y2p(yhi[i])), col, max(1, lw), cv2.LINE_AA)
-                cv2.circle(vis, (px, py), rad + 1, (0, 0, 0), -1, cv2.LINE_AA)
-                cv2.circle(vis, (px, py), rad - 1, col, -1, cv2.LINE_AA)
+                # Hollow ring with subtle black halo so the underlying marker center remains visible!
+                cv2.circle(vis, (px, py), rad + 1, (0, 0, 0), max(1, lw), cv2.LINE_AA)
+                cv2.circle(vis, (px, py), rad, col, max(1, lw), cv2.LINE_AA)
             # Draw group y_interval (e.g. mean ± SD bar) if present
             yi = g.get("y_interval")
             if yi and len(yi) == 2 and gx and xr:

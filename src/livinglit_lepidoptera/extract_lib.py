@@ -7,12 +7,13 @@ figure-local calibration and trace definitions.
 from __future__ import annotations
 
 import math
+from dataclasses import dataclass
 from typing import Any
 
 import cv2
 import numpy as np
-from scipy.ndimage import gaussian_filter1d, map_coordinates
-from scipy.signal import find_peaks
+from scipy.ndimage import distance_transform_edt, gaussian_filter1d, map_coordinates
+from scipy.signal import fftconvolve, find_peaks
 
 from livinglit_lepidoptera.figures.microscopy import (
     ScaleBarCal,
@@ -23,7 +24,7 @@ from livinglit_lepidoptera.figures.microscopy import (
 
 
 # ---------------------------------------------------------------------------
-# 1. Axis & coordinate calibration helpers
+# 1. Axis & coordinate calibration helpers (with RMS tick-misfit reporting)
 # ---------------------------------------------------------------------------
 
 def lin_range(p0: float, p1: float, t_lo: float, v_lo: float, t_hi: float, v_hi: float) -> tuple[float, float]:
@@ -37,6 +38,172 @@ def log_range(p0: float, p1: float, t_lo: float, v_lo: float, t_hi: float, v_hi:
     lv0, lv1 = math.log10(v_lo), math.log10(v_hi)
     s = (lv1 - lv0) / (t_hi - t_lo)
     return (round(10.0 ** (lv0 + (p0 - t_lo) * s), 6), round(10.0 ** (lv0 + (p1 - t_lo) * s), 6))
+
+
+@dataclass
+class AxisCal:
+    """Linear or log10 axis fitted from detected tick-mark pixel positions and printed labels."""
+
+    scale: str  # "linear" | "log10"
+    tick_px: list[float]
+    labels: list[float]
+    slope: float         # px = slope * t(val) + intercept
+    intercept: float
+    misfit_px: float     # RMS residual in pixels across all detected ticks
+    max_residual_px: float
+
+    @classmethod
+    def fit(cls, tick_px: list[float], labels: list[float], scale: str = "linear") -> "AxisCal":
+        if len(tick_px) != len(labels) or len(tick_px) < 2:
+            raise ValueError(f"AxisCal requires >=2 matched (tick_px, label) pairs; got {len(tick_px)} vs {len(labels)}")
+        p = np.asarray(tick_px, dtype=np.float64)
+        v = np.asarray(labels, dtype=np.float64)
+        if scale == "log10":
+            if np.any(v <= 0):
+                raise ValueError("log10 axis requires strictly positive labels")
+            t = np.log10(v)
+        elif scale == "linear":
+            t = v
+        else:
+            raise ValueError(f"Unknown axis scale: {scale!r}")
+        slope, intercept = np.polyfit(t, p, 1)
+        resid = p - (slope * t + intercept)
+        rms = float(np.sqrt(np.mean(resid ** 2))) if len(p) > 2 else 0.5
+        mx = float(np.max(np.abs(resid))) if len(p) > 2 else 0.5
+        return cls(
+            scale=scale,
+            tick_px=[round(float(x), 2) for x in p],
+            labels=[float(x) for x in v],
+            slope=float(slope),
+            intercept=float(intercept),
+            misfit_px=round(rms, 3),
+            max_residual_px=round(mx, 3),
+        )
+
+    def to_pixel(self, val: float) -> float:
+        t = math.log10(val) if self.scale == "log10" else float(val)
+        return float(self.slope * t + self.intercept)
+
+    def to_value(self, px: float) -> float:
+        t = (float(px) - self.intercept) / self.slope
+        return float(10.0 ** t if self.scale == "log10" else t)
+
+    def range_for_span(self, p0: float, p1: float, ndigits: int = 4) -> tuple[float, float]:
+        """Return (val_at_p0, val_at_p1) sorted as (min_val, max_val) when slope < 0 (y-axis)."""
+        v0, v1 = self.to_value(p0), self.to_value(p1)
+        return (round(v0, ndigits), round(v1, ndigits))
+
+
+def _bool_runs(v: np.ndarray) -> list[tuple[int, int]]:
+    m = np.concatenate([[False], np.asarray(v, dtype=bool), [False]]).astype(np.int8)
+    d = np.diff(m)
+    return list(zip(np.flatnonzero(d == 1).tolist(), (np.flatnonzero(d == -1) - 1).tolist()))
+
+
+def _group_centres(idx: list[int], gap: int = 2) -> list[float]:
+    if not idx:
+        return []
+    groups: list[list[int]] = [[int(idx[0])]]
+    for i in idx[1:]:
+        if int(i) - groups[-1][-1] <= gap:
+            groups[-1].append(int(i))
+        else:
+            groups.append([int(i)])
+    return [float(np.mean(g)) for g in groups]
+
+
+def find_axis_ticks(
+    img_rgb: np.ndarray,
+    y_labels: list[float],
+    x_labels: list[float] | None = None,
+    y_scale: str = "linear",
+    x_scale: str = "linear",
+    dark_thr: float = 135.0,
+    max_sat: float = 55.0,
+    min_spine_frac: float = 0.35,
+    probe: tuple[int, int] = (2, 8),
+    y_probe: tuple[int, int] | None = None,
+    x_probe: tuple[int, int] | None = None,
+    tick_min_frac: float = 0.55,
+) -> dict[str, Any]:
+    """Detect left y-axis & bottom x-axis spines and perpendicular tick stubs from pixel ink.
+
+    Inspired by boxgraph-public/andreu2021/_kit.py: raises ValueError immediately if the number of
+    detected tick stubs does not match the printed labels, and reports RMS pixel misfit.
+    """
+    f = img_rgb.astype(np.float32)
+    h, w = f.shape[:2]
+    sat = f.max(axis=2) - f.min(axis=2)
+    dk = (f.mean(axis=2) < dark_thr) & (sat < max_sat)
+
+    # Left vertical spine: leftmost column with a long dark run (>= min_spine_frac * h)
+    best_v: list[tuple[int, int, int]] = []
+    for c in range(w):
+        rs = _bool_runs(dk[:, c])
+        if rs:
+            a, b = max(rs, key=lambda r: r[1] - r[0])
+            if b - a + 1 >= min_spine_frac * h:
+                best_v.append((c, a, b))
+    if not best_v:
+        raise ValueError("No vertical y-axis spine detected")
+    c_left = best_v[0][0]
+    v_cols = [x for x in best_v if x[0] - c_left <= 6]
+    vc0, vc1 = min(x[0] for x in v_cols), max(x[0] for x in v_cols)
+    vr0 = int(np.median([x[1] for x in v_cols]))
+    vr1 = int(np.median([x[2] for x in v_cols]))
+
+    # Bottom horizontal spine: lowest row with a long dark run (>= min_spine_frac * w)
+    best_h: list[tuple[int, int, int]] = []
+    for r in range(h):
+        rs = _bool_runs(dk[r, :])
+        if rs:
+            a, b = max(rs, key=lambda c: c[1] - c[0])
+            if b - a + 1 >= min_spine_frac * w:
+                best_h.append((r, a, b))
+    if not best_h:
+        raise ValueError("No horizontal x-axis spine detected")
+    r_bot = best_h[-1][0]
+    h_rows = [x for x in best_h if r_bot - x[0] <= 6]
+    hr0, hr1 = min(x[0] for x in h_rows), max(x[0] for x in h_rows)
+    hc0 = int(np.median([x[1] for x in h_rows]))
+    hc1 = int(np.median([x[2] for x in h_rows]))
+
+    # Top/right frame borders if closed box exists
+    top_rows = [x for x in best_h if x[0] < hr0 - 15]
+    right_cols = [x for x in best_v if x[0] > vc1 + 15]
+    p_top = (max(x[0] for x in top_rows if x[0] - top_rows[0][0] <= 6) + 1) if top_rows else vr0
+    p_right = (min(x[0] for x in right_cols if right_cols[-1][0] - x[0] <= 6) - 1) if right_cols else hc1
+    plot_box = (vc1 + 1, p_top, p_right, hr0 - 1)
+
+    yp0, yp1 = y_probe or probe
+    y_band = dk[:, max(0, vc0 - yp1):max(1, vc0 - yp0)]
+    y_hits = [r for r in np.flatnonzero(y_band.mean(axis=1) >= tick_min_frac).tolist() if vr0 - 4 <= r <= vr1 + 4]
+    y_ticks = sorted(_group_centres(y_hits, gap=2), reverse=True)  # bottom -> top matches ascending y_labels
+    if len(y_ticks) != len(y_labels):
+        raise ValueError(f"y-axis tick count mismatch: found {len(y_ticks)} at {y_ticks}, expected {len(y_labels)}")
+    y_cal = AxisCal.fit(y_ticks, y_labels, scale=y_scale)
+
+    x_cal = None
+    x_ticks: list[float] = []
+    if x_labels is not None:
+        xp0, xp1 = x_probe or probe
+        x_band = dk[min(h - 1, hr1 + xp0 + 1):min(h, hr1 + xp1 + 1), :]
+        x_hits = [c for c in np.flatnonzero(x_band.mean(axis=0) >= tick_min_frac).tolist() if hc0 - 4 <= c <= hc1 + 4]
+        x_ticks = sorted(_group_centres(x_hits, gap=2))
+        if len(x_ticks) != len(x_labels):
+            raise ValueError(f"x-axis tick count mismatch: found {len(x_ticks)} at {x_ticks}, expected {len(x_labels)}")
+        x_cal = AxisCal.fit(x_ticks, x_labels, scale=x_scale)
+
+    return {
+        "plot_box": plot_box,
+        "x_cal": x_cal,
+        "y_cal": y_cal,
+        "x_ticks": x_ticks,
+        "y_ticks": y_ticks,
+        "x_misfit_px": x_cal.misfit_px if x_cal else None,
+        "y_misfit_px": y_cal.misfit_px,
+    }
+
 
 
 # ---------------------------------------------------------------------------
@@ -273,6 +440,259 @@ def trace_error_arms(
             if gap > max_gap:
                 break
     return float(xl), float(xr), float(yb), float(yt)
+
+
+def trace_error_arms_occluded(
+    arm_mask: np.ndarray,
+    occ_mask: np.ndarray,
+    cx: float,
+    cy: float,
+    max_len: int = 120,
+    max_gap: int = 3,
+    band_half: int = 2,
+    marker_r: float = 4.0,
+) -> tuple[float, float, float, float, dict[str, bool]]:
+    """Occlusion-crossing error-bar walker (inspired by boxgraph-public/andreu2021/_kit.py:_walk).
+
+    Walks left/right/up/down from (cx, cy) through `arm_mask`, bridging pixels occupied by
+    `occ_mask` (other series' markers, lines, or ribbons) instead of stopping prematurely.
+    If an arm terminates inside an occluder without re-emerging, mirrors the opposite visible arm
+    and flags that arm as hidden.
+    """
+    H, W = arm_mask.shape
+    ix, iy = int(round(cx)), int(round(cy))
+    x0_b, x1_b = max(0, ix - band_half), min(W, ix + band_half + 1)
+    y0_b, y1_b = max(0, iy - band_half), min(H, iy + band_half + 1)
+
+    row_t = arm_mask[y0_b:y1_b, :].any(axis=0)
+    row_o = occ_mask[y0_b:y1_b, :].any(axis=0)
+    col_t = arm_mask[:, x0_b:x1_b].any(axis=1)
+    col_o = occ_mask[:, x0_b:x1_b].any(axis=1)
+
+    def _walk_1d(t_arr: np.ndarray, o_arr: np.ndarray, start: int, step: int, lim: int) -> tuple[int, bool]:
+        last_t = start
+        last_o: int | None = None
+        gap = 0
+        pos = start + step
+        steps = 0
+        while 0 <= pos < lim and steps < max_len:
+            if t_arr[pos]:
+                last_t, last_o, gap = pos, None, 0
+            elif o_arr[pos]:
+                last_o, gap = pos, 0
+            else:
+                gap += 1
+                if gap > max_gap:
+                    break
+            pos += step
+            steps += 1
+        hidden = (
+            last_o is not None
+            and abs(last_o - start) > marker_r + 1.5
+            and abs(last_o - last_t) > max(4.0, marker_r)
+        )
+        return last_t, hidden
+
+    xl, hl = _walk_1d(row_t, row_o, ix, -1, W)
+    xr, hr = _walk_1d(row_t, row_o, ix, +1, W)
+    yt, ht = _walk_1d(col_t, col_o, iy, -1, H)
+    yb, hb = _walk_1d(col_t, col_o, iy, +1, H)
+
+    # Mirror single-sided hidden ends against the visible opposite arm
+    if hl and not hr and abs(xr - ix) > marker_r + 2:
+        xl = int(round(max(0, 2 * ix - xr)))
+    elif hr and not hl and abs(ix - xl) > marker_r + 2:
+        xr = int(round(min(W - 1, 2 * ix - xl)))
+    if ht and not hb and abs(yb - iy) > marker_r + 2:
+        yt = int(round(max(0, 2 * iy - yb)))
+    elif hb and not ht and abs(iy - yt) > marker_r + 2:
+        yb = int(round(min(H - 1, 2 * iy - yt)))
+
+    return float(xl), float(xr), float(yb), float(yt), {
+        "x_lo_hidden": hl,
+        "x_hi_hidden": hr,
+        "y_hi_hidden": ht,
+        "y_lo_hidden": hb,
+    }
+
+
+def shaded_bg_residual(
+    sub_rgb: np.ndarray,
+    marker_diam_px: int = 7,
+    mode: str = "close",
+) -> tuple[np.ndarray, np.ndarray]:
+    """Estimate smooth local background (white paper, 95% CI ribbon, notched box, or violin fill)
+    so compact darker/colored markers sitting ON shaded overlays pop out cleanly.
+
+    Returns (bg_rgb_f32, residual_f32) where `residual = bg_rgb - sub_rgb` (positive wherever a
+    pixel is darker than its smooth local ribbon/box/violin background).
+    """
+    k = max(5, int(round(marker_diam_px * 2.5)))
+    if k % 2 == 0:
+        k += 1
+    u8 = np.clip(sub_rgb, 0, 255).astype(np.uint8)
+    if mode == "median":
+        bg = cv2.medianBlur(u8, k)
+    else:
+        se = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))
+        bg = cv2.morphologyEx(u8, cv2.MORPH_CLOSE, se)
+    bg_f = bg.astype(np.float32)
+    res_f = bg_f - sub_rgb.astype(np.float32)
+    return bg_f, res_f
+
+
+def _marker_kernel(r: float, shape: str = "disk") -> np.ndarray:
+    k = max(1, int(math.ceil(r)))
+    yy, xx = np.mgrid[-k:k + 1, -k:k + 1]
+    if shape == "triangle_up":
+        # Equilateral-ish upward triangle inscribed in radius r (e.g., ggplot2 shape=17)
+        h = 1.65 * r
+        y_top = -0.85 * r
+        y_bot = 0.80 * r
+        frac = (yy - y_top) / max(h, 1e-6)
+        half_w = frac * (1.05 * r)
+        return ((yy >= y_top) & (yy <= y_bot) & (np.abs(xx) <= half_w)).astype(np.float64)
+    return (xx * xx + yy * yy <= r * r + 1e-6).astype(np.float64)
+
+
+def detect_markers_matched_filter(
+    tgt: np.ndarray,
+    occ: np.ndarray,
+    radius: float | None = None,
+    shape: str = "disk",
+    min_visible: float = 0.22,
+    max_bg: float = 0.16,
+    min_score: float = 0.20,
+    min_sep_factor: float = 1.35,
+    peel: bool = True,
+    peel_radius_factor: float = 0.88,
+    upsample: int = 1,
+    max_markers: int = 400,
+    border_px: int = 2,
+) -> list[dict[str, Any]]:
+    """Occlusion-aware matched-filter marker detector with iterative greedy marker peeling.
+
+    Combines boxgraph-public/andreu2021/_kit.py's occlusion score:
+        S = T + 0.5 * O - 3.0 * B
+    (where T = target pixels, O = occluder pixels such as other series / regression lines / red
+    SD bars / shaded ribbon borders, B = background pixels inside the marker template) with
+    greedy marker peeling: each picked marker's core is moved from `tgt` -> `occ` (NOT background!),
+    so overlapping markers in dense clusters keep B ~= 0 and still score cleanly without merging!
+
+    Returns list of dicts with subpixel native coordinates:
+        {"x": float, "y": float, "t_frac": float, "o_frac": float, "b_frac": float,
+         "score": float, "occluded": bool, "radius_px": float}
+    """
+    H0, W0 = tgt.shape
+    up = max(1, int(upsample))
+    if up > 1:
+        t_u = cv2.resize(tgt.astype(np.uint8), (W0 * up, H0 * up), interpolation=cv2.INTER_NEAREST) > 0
+        o_u = cv2.resize(occ.astype(np.uint8), (W0 * up, H0 * up), interpolation=cv2.INTER_NEAREST) > 0
+        o_u &= ~t_u
+    else:
+        t_u = tgt.astype(bool).copy()
+        o_u = (occ.astype(bool) & ~t_u).copy()
+
+    if radius is None:
+        edt = distance_transform_edt(t_u)
+        mx = float(edt.max())
+        r = max(1.5 * up, mx) if mx > 0 else 2.5 * up
+    else:
+        r = float(radius) * up
+
+    ker = _marker_kernel(r, shape=shape)
+    kh, kw = ker.shape
+    ry_k, rx_k = kh // 2, kw // 2
+    n = float(ker.sum())
+    if n < 1.0:
+        return []
+
+    T = np.rint(fftconvolve(t_u.astype(np.float64), ker, mode="same"))
+    O = np.rint(fftconvolve(o_u.astype(np.float64), ker, mode="same"))
+
+    H, W = t_u.shape
+    bm = max(0, int(border_px * up))
+    min_sep = max(2.0, min_sep_factor * r)
+    min_sep2 = min_sep * min_sep
+    r_peel = max(1.0, peel_radius_factor * r)
+    peel_k = _marker_kernel(r_peel, shape=shape) > 0.5
+    ph_k, pw_k = peel_k.shape
+    pr_y, pr_x = ph_k // 2, pw_k // 2
+
+    # Mirror kernel for exact correlation vs convolution symmetry when doing local updates
+    ker_flip = ker[::-1, ::-1]
+    picked_mask = np.zeros((H, W), dtype=bool)
+    results: list[dict[str, Any]] = []
+
+    for _ in range(max_markers):
+        B = np.maximum(0.0, n - T - O)
+        S = T + 0.5 * O - 3.0 * B
+        valid = (T >= min_visible * n) & (B <= max_bg * n) & (S >= min_score * n) & (~picked_mask)
+        if bm > 0:
+            valid[:bm, :] = False
+            valid[H - bm:, :] = False
+            valid[:, :bm] = False
+            valid[:, W - bm:] = False
+        if not np.any(valid):
+            break
+
+        masked_S = np.where(valid, S, -1e12)
+        flat_idx = int(np.argmax(masked_S))
+        cy, cx = divmod(flat_idx, W)
+        t_val, o_val, b_val, s_val = float(T[cy, cx]), float(O[cy, cx]), float(B[cy, cx]), float(S[cy, cx])
+
+        # Local quadratic/centroid refinement inside 3x3 valid neighborhood around peak for subpixel x, y
+        y0_s, y1_s = max(0, cy - 1), min(H, cy + 2)
+        x0_s, x1_s = max(0, cx - 1), min(W, cx + 2)
+        patch_s = S[y0_s:y1_s, x0_s:x1_s]
+        wts = np.maximum(0.0, patch_s - (s_val - 0.15 * n))
+        if float(wts.sum()) > 1e-6:
+            yy_s, xx_s = np.mgrid[y0_s:y1_s, x0_s:x1_s]
+            ry_sub = float((yy_s * wts).sum() / wts.sum())
+            rx_sub = float((xx_s * wts).sum() / wts.sum())
+        else:
+            ry_sub, rx_sub = float(cy), float(cx)
+
+        results.append({
+            "x": round((rx_sub + 0.5) / up - 0.5, 3) if up > 1 else round(rx_sub, 3),
+            "y": round((ry_sub + 0.5) / up - 0.5, 3) if up > 1 else round(ry_sub, 3),
+            "t_frac": round(t_val / n, 3),
+            "o_frac": round(o_val / n, 3),
+            "b_frac": round(b_val / n, 3),
+            "score": round(s_val / n, 3),
+            "occluded": bool((t_val / n) < 0.85),
+            "radius_px": round(r / up, 2),
+        })
+
+        # Suppress immediate center exclusion disk so same marker cannot re-fire
+        ey0, ey1 = max(0, int(cy - math.ceil(min_sep))), min(H, int(cy + math.ceil(min_sep)) + 1)
+        ex0, ex1 = max(0, int(cx - math.ceil(min_sep))), min(W, int(cx + math.ceil(min_sep)) + 1)
+        yy_e, xx_e = np.mgrid[ey0:ey1, ex0:ex1]
+        picked_mask[ey0:ey1, ex0:ex1] |= ((yy_e - cy) ** 2 + (xx_e - cx) ** 2 <= min_sep2)
+
+        if peel:
+            # Move this marker's claimed target pixels into occluder & update T, O locally!
+            py0_i, py1_i = max(0, cy - pr_y), min(H, cy + pr_y + 1)
+            px0_i, px1_i = max(0, cx - pr_x), min(W, cx + pr_x + 1)
+            ky0_i, kx0_i = py0_i - (cy - pr_y), px0_i - (cx - pr_x)
+            ky1_i, kx1_i = ky0_i + (py1_i - py0_i), kx0_i + (px1_i - px0_i)
+            foot = peel_k[ky0_i:ky1_i, kx0_i:kx1_i]
+            changed = t_u[py0_i:py1_i, px0_i:px1_i] & foot
+            if np.any(changed):
+                t_u[py0_i:py1_i, px0_i:px1_i] &= ~changed
+                o_u[py0_i:py1_i, px0_i:px1_i] |= changed
+                # Local delta convolution: moving `changed` from tgt -> occ decreases T and increases O by delta!
+                pad_y, pad_x = ry_k, rx_k
+                uy0, uy1 = max(0, py0_i - pad_y), min(H, py1_i + pad_y)
+                ux0, ux1 = max(0, px0_i - pad_x), min(W, px1_i + pad_x)
+                d_patch = np.zeros((uy1 - uy0, ux1 - ux0), dtype=np.float64)
+                d_patch[(py0_i - uy0):(py1_i - uy0), (px0_i - ux0):(px1_i - ux0)] = changed.astype(np.float64)
+                delta = np.rint(fftconvolve(d_patch, ker_flip, mode="same"))
+                T[uy0:uy1, ux0:ux1] = np.maximum(0.0, T[uy0:uy1, ux0:ux1] - delta)
+                O[uy0:uy1, ux0:ux1] = np.minimum(n, O[uy0:uy1, ux0:ux1] + delta)
+
+    return results
+
 
 
 def _max_vrun(col_bool: np.ndarray) -> int:
@@ -527,15 +947,20 @@ def check_fft_harmonics(
 
 
 __all__ = [
+    "AxisCal",
     "ScaleBarCal",
     "detect_scale_bar",
     "lin_range",
     "log_range",
+    "find_axis_ticks",
     "ray_dist_alpha",
     "viterbi_track",
     "walk_ribbon_bounds",
     "fit_irls_line_and_ci",
     "trace_error_arms",
+    "trace_error_arms_occluded",
+    "shaded_bg_residual",
+    "detect_markers_matched_filter",
     "extract_vertical_bars",
     "compute_curve_rmse",
     "measure_periodic_fft_verified",

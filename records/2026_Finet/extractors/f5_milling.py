@@ -4,8 +4,9 @@
 - C_dprime (5C''): Morpho didius full-ridge FDTD simulations (6 crossing curves)
 - D_dprime (5D''): Morpho didius lamellae FDTD simulations (6 crossing curves)
 
-Delegates color-ray likelihood, L1 Viterbi dynamic programming, and continuous ribbon walking
-directly to `livinglit_lepidoptera.extract_lib`.
+Computes per-pixel ray-cost likelihood BEFORE horizontal column pooling (preventing white-edge
+perp=0 pixels from pairing with adjacent curves' high alpha!), then tracks every crossing curve
+cleanly with L1 Viterbi dynamic programming and continuous ribbon walking.
 """
 from __future__ import annotations
 
@@ -63,12 +64,12 @@ _CONFIGS: dict[str, dict[str, Any]] = {
         "exclude": [(620, 0, 1190, 505)],
         "ribbons": False,
         "traces": [
-            ("control_unmilled", (12, 12, 14),    None, 0.36),
-            ("z_100nm",          (238, 32, 34),   None, 0.24),
-            ("z_300nm",          (51, 82, 164),   None, 0.24),
-            ("z_500nm",          (8, 130, 131),   None, 0.24),
-            ("z_800nm",          (185, 84, 162),  [(435.0, 39.6)], 0.22),
-            ("z_1000nm",         (128, 131, 52),  None, 0.24),
+            ("control_unmilled", (12, 12, 14),    None, 0.42),
+            ("z_100nm",          (238, 32, 34),   None, 0.28),
+            ("z_300nm",          (51, 82, 164),   None, 0.28),
+            ("z_500nm",          (8, 130, 131),   None, 0.28),
+            ("z_800nm",          (185, 84, 162),  None, 0.28),
+            ("z_1000nm",         (128, 131, 52),  None, 0.28),
         ],
     },
     "D_dprime": {
@@ -81,12 +82,12 @@ _CONFIGS: dict[str, dict[str, Any]] = {
         "exclude": [(620, 0, 1180, 505)],
         "ribbons": False,
         "traces": [
-            ("control_unmilled", (12, 12, 14),    None, 0.36),
-            ("z_300nm",          (237, 33, 34),   None, 0.24),
-            ("z_500nm",          (51, 83, 166),   None, 0.24),
-            ("z_700nm",          (10, 130, 128),  None, 0.24),
-            ("z_1000nm",         (181, 87, 161),  None, 0.24),
-            ("z_1300nm",         (129, 130, 54),  None, 0.24),
+            ("control_unmilled", (12, 12, 14),    None, 0.42),
+            ("z_300nm",          (237, 33, 34),   None, 0.28),
+            ("z_500nm",          (51, 83, 166),   None, 0.28),
+            ("z_700nm",          (10, 130, 128),  None, 0.28),
+            ("z_1000nm",         (181, 87, 161),  None, 0.28),
+            ("z_1300nm",         (129, 130, 54),  None, 0.28),
         ],
     },
 }
@@ -103,7 +104,7 @@ def extract(crop_rgb: np.ndarray, panel_id: str, **_: Any) -> dict[str, Any]:
     x_min, x_max = cfg["x_range"]
     y_min, y_max = cfg["y_range"]
 
-    n_cols = 135
+    n_cols = 150
     x_cols = np.linspace(4, w - 5, n_cols).astype(int)
     perps, alphas = {}, {}
     for name, rgb, _, _ in cfg["traces"]:
@@ -111,31 +112,28 @@ def extract(crop_rgb: np.ndarray, panel_id: str, **_: Any) -> dict[str, Any]:
 
     curves: dict[str, Any] = {}
     pix_sat = np.max(sub_f, axis=2) - np.min(sub_f, axis=2)
-    empty_cost = 125.0
+    empty_cost = 120.0
 
     for name, rgb, anchors, min_a in cfg["traces"]:
         p_map, a_map = perps[name], alphas[name]
         t_sat = float(max(rgb) - min(rgb))
+        # Per-pixel validity & competition BEFORE horizontal window pooling!
+        if t_sat > 25.0:
+            valid_px = (p_map <= 32.0) & (a_map >= min_a) & (pix_sat >= (10.0 if cfg["ribbons"] else 16.0))
+        else:
+            valid_px = (p_map <= 24.0) & (a_map >= 0.45) & (pix_sat < 26.0)
+        cost_px = np.where(valid_px, 0.75 * p_map + 34.0 * (1.15 - np.clip(a_map, 0.0, 1.15)), empty_cost)
+
+        for oname, orgb, _, _ in cfg["traces"]:
+            if oname == name:
+                continue
+            if np.linalg.norm(np.array(rgb) - np.array(orgb)) > 26.0:
+                stolen_px = (perps[oname] + 4.0 < p_map) & (alphas[oname] >= 0.30)
+                cost_px = np.where(stolen_px, empty_cost, cost_px)
+
         cost = np.full((h, n_cols), empty_cost, dtype=np.float64)
         for ti, cx in enumerate(x_cols):
-            c0, c1 = max(0, cx - 2), min(w, cx + 3)
-            p_col = p_map[:, c0:c1].min(axis=1)
-            a_col = a_map[:, c0:c1].max(axis=1)
-            s_col = pix_sat[:, c0:c1].max(axis=1)
-            if t_sat > 25.0:
-                valid = (p_col <= 34.0) & (a_col >= min_a) & (s_col >= 10.0)
-            else:
-                valid = (p_col <= 26.0) & (a_col >= 0.42) & (s_col < 26.0)
-            row_cost = np.where(valid, 0.7 * p_col + 36.0 * (1.15 - np.clip(a_col, 0.0, 1.15)), empty_cost)
-            for oname, orgb, _, _ in cfg["traces"]:
-                if oname == name:
-                    continue
-                if np.linalg.norm(np.array(rgb) - np.array(orgb)) > 26.0:
-                    op = perps[oname][:, c0:c1].min(axis=1)
-                    oa = alphas[oname][:, c0:c1].max(axis=1)
-                    stolen = (op + 5.0 < p_col) & (oa >= 0.30)
-                    row_cost = np.where(stolen, np.maximum(row_cost, 95.0), row_cost)
-            cost[:, ti] = row_cost
+            cost[:, ti] = cost_px[:, max(0, cx - 2):min(w, cx + 3)].min(axis=1)
 
         if anchors:
             for ax_nm, ay_pct in anchors:
@@ -144,13 +142,7 @@ def extract(crop_rgb: np.ndarray, panel_id: str, **_: Any) -> dict[str, Any]:
                 ys = np.arange(h)
                 cost[:, t_a] += np.where(np.abs(ys - y_a) > 22, 350.0, 0.3 * np.abs(ys - y_a))
 
-        if panel_id == "C_dprime" and name == "z_800nm":
-            for ti, cx in enumerate(x_cols):
-                wl = x_min + (cx / max(w, 1)) * (x_max - x_min)
-                if 395.0 <= wl <= 475.0:
-                    y_cut = int(round((y_max - 43.0) / (y_max - y_min) * h))
-                    cost[:y_cut, ti] += 260.0
-        elif panel_id == "D_prime" and name == "z_500nm":
+        if panel_id == "D_prime" and name == "z_500nm":
             for ti, cx in enumerate(x_cols):
                 wl = x_min + (cx / max(w, 1)) * (x_max - x_min)
                 if 385.0 <= wl <= 465.0:

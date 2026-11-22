@@ -762,6 +762,17 @@ figures:
         linked_resources:
         - lloyd_confocal_archive
         extracted_data: {}
+        periodic_spec:
+          roi:
+          - 65
+          - 65
+          - 165
+          - 165
+          spacing_range_um:
+          - 0.6
+          - 2.2
+          channel: green
+        harmonic_verified: true
       K:
         label: 3K
         title: '62.5% pupal: WGA staining of extracellularly deposited chitin ridges'
@@ -786,6 +797,16 @@ figures:
         linked_resources:
         - lloyd_confocal_archive
         extracted_data: {}
+        periodic_spec:
+          roi:
+          - 65
+          - 65
+          - 165
+          - 165
+          spacing_range_um:
+          - 0.6
+          - 2.2
+          channel: magenta
       L:
         label: 3L
         title: '62.5% pupal: merged actin (green) + WGA chitin (magenta) showing inter-bundle
@@ -812,6 +833,16 @@ figures:
         extracted_data: {}
         linked_resources:
         - lloyd_confocal_archive
+        periodic_spec:
+          roi:
+          - 75
+          - 55
+          - 175
+          - 145
+          spacing_range_um:
+          - 0.6
+          - 2.2
+          channel: green_isolated
   F4:
     label: Fig. 4
     file: 41467_2024_48060_Fig4_HTML.jpg
@@ -903,6 +934,16 @@ figures:
         linked_resources:
         - lloyd_tausted_archive
         extracted_data: {}
+        periodic_spec:
+          roi:
+          - 48
+          - 30
+          - 162
+          - 138
+          spacing_range_um:
+          - 0.35
+          - 1.2
+          channel: green_isolated
       D:
         label: 4D
         title: 50% pupal depth-coded F-actin (0–1974 nm; maximally spaced parallel
@@ -928,6 +969,16 @@ figures:
         extracted_data: {}
         linked_resources:
         - lloyd_tausted_archive
+        periodic_spec:
+          roi:
+          - 105
+          - 115
+          - 245
+          - 255
+          spacing_range_um:
+          - 0.5
+          - 1.6
+          channel: max_rgb
       E:
         label: 4E
         title: 50% pupal whole-scale actin + emerging chitin ridges
@@ -1017,6 +1068,16 @@ figures:
         extracted_data: {}
         linked_resources:
         - lloyd_tausted_archive
+        periodic_spec:
+          roi:
+          - 125
+          - 145
+          - 275
+          - 265
+          spacing_range_um:
+          - 0.5
+          - 1.8
+          channel: max_rgb
       H:
         label: 4H
         title: 63% pupal actin + chitin overview
@@ -1144,6 +1205,16 @@ figures:
         linked_resources:
         - lloyd_tausted_archive
         extracted_data: {}
+        periodic_spec:
+          roi:
+          - 22
+          - 32
+          - 162
+          - 142
+          spacing_range_um:
+          - 0.6
+          - 1.8
+          channel: magenta
   F5:
     label: Fig. 5
     file: 41467_2024_48060_Fig5_HTML.jpg
@@ -1184,6 +1255,16 @@ figures:
         linked_resources:
         - lloyd_tausted_archive
         extracted_data: {}
+        periodic_spec:
+          roi:
+          - 130
+          - 140
+          - 295
+          - 285
+          spacing_range_um:
+          - 0.6
+          - 2.0
+          channel: green_isolated
       A_cartoon:
         label: 5A (Model)
         title: 'Mechanistic schematic: sub-ridge actin filaments underlying angled
@@ -1252,6 +1333,16 @@ figures:
         linked_resources:
         - lloyd_tausted_archive
         extracted_data: {}
+        periodic_spec:
+          roi:
+          - 60
+          - 75
+          - 295
+          - 225
+          spacing_range_um:
+          - 0.6
+          - 2.2
+          channel: magenta
       B_cartoon:
         label: 5B (Model)
         title: 'Mechanistic schematic: periodic lateral actin fibrils templating ridge-wall
@@ -1320,6 +1411,16 @@ figures:
         linked_resources:
         - lloyd_tausted_archive
         extracted_data: {}
+        periodic_spec:
+          roi:
+          - 95
+          - 105
+          - 305
+          - 275
+          spacing_range_um:
+          - 0.5
+          - 1.6
+          channel: magenta
       C_cartoon:
         label: 5C (Model)
         title: 'Mechanistic schematic: square actin blocks occupying lumen windows
@@ -1361,6 +1462,25 @@ figures:
         linked_resources:
         - lloyd_tausted_archive
         extracted_data: {}
+        periodic_spec:
+          roi:
+          - 18
+          - 22
+          - 245
+          - 152
+          spacing_range_um:
+          - 0.55
+          - 1.3
+          wavevector_angle_deg:
+          - -85.0
+          - -45.0
+          channel: magenta
+          measure_crossrib: true
+          crossrib_range_um:
+          - 0.22
+          - 0.65
+          crossrib_channel: magenta
+        harmonic_verified: true
   F6:
     label: Fig. 6
     file: 41467_2024_48060_Fig6_HTML.jpg
@@ -1520,6 +1640,16 @@ figures:
         extracted_data: {}
         linked_resources:
         - lloyd_tausted_archive
+        periodic_spec:
+          roi:
+          - 72
+          - 72
+          - 195
+          - 165
+          spacing_range_um:
+          - 1.0
+          - 4.5
+          channel: max_rgb
       E:
         label: 6E
         title: ~65% pupal P. arcas actin + chitin overview
@@ -1664,6 +1794,16 @@ figures:
         linked_resources:
         - lloyd_tausted_archive
         extracted_data: {}
+        periodic_spec:
+          roi:
+          - 18
+          - 18
+          - 96
+          - 88
+          spacing_range_um:
+          - 0.55
+          - 1.55
+          channel: green_isolated
       J:
         label: 6J
         title: 60% pupal Morpho helenor depth-coded F-actin (0–3504 nm; ladder-like
@@ -1690,6 +1830,16 @@ figures:
         extracted_data: {}
         linked_resources:
         - lloyd_tausted_archive
+        periodic_spec:
+          roi:
+          - 88
+          - 35
+          - 185
+          - 165
+          spacing_range_um:
+          - 0.55
+          - 1.6
+          channel: max_rgb
       K:
         label: 6K
         title: 60% pupal Morpho helenor actin overview
@@ -1743,6 +1893,24 @@ figures:
         linked_resources:
         - lloyd_tausted_archive
         extracted_data: {}
+        periodic_spec:
+          roi:
+          - 12
+          - 12
+          - 104
+          - 96
+          spacing_range_um:
+          - 0.65
+          - 2.2
+          wavevector_angle_deg:
+          - -25.0
+          - 25.0
+          channel: magenta
+          measure_crossrib: true
+          crossrib_range_um:
+          - 0.18
+          - 0.7
+          crossrib_channel: green_isolated
   F7:
     label: Fig. 7
     file: 41467_2024_48060_Fig7_HTML.jpg
@@ -1809,6 +1977,16 @@ figures:
         - lloyd_tausted_archive
         context: {}
         extracted_data: {}
+        periodic_spec:
+          roi:
+          - 48
+          - 38
+          - 170
+          - 175
+          spacing_range_um:
+          - 1.0
+          - 4.5
+          channel: green_isolated
       C:
         label: 7C
         title: Enlarged XY + orthogonal XZ/YZ cross-sections of splayed chitin ridges

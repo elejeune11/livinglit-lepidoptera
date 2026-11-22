@@ -14,10 +14,25 @@ Extract publication-grade numerical data from **every quantitative plot and peri
 
 ## `extract_lib.py` Primitives
 Import from `livinglit_lepidoptera.extract_lib`:
-- Axis calibration: `lin_range`, `log_range`, `px_to_data_x`, `px_to_data_y`, `data_to_px_x`, `data_to_px_y`
-- Curve & band extraction: `ray_dist_alpha` (color-distance / alpha-blended band detector), `viterbi_track` (L1-slope dynamic programming optimal curve tracker), `walk_ribbon_bounds` (`±SD` / 95% CI ribbon envelope walker)
-- Regression, errorbars & bars: `fit_irls_line_and_ci`, `trace_error_arms` (per-point horizontal `x_lo/x_hi` and vertical `y_lo/y_hi` whiskers), `extract_vertical_bars`, `compute_curve_rmse`
-- Calibrated Microscopy Metrology: `measure_periodic_fft_verified` (2D-FFT returning `spacing_um`, `angle_deg`, `phase_shift_px`, `snr`, `harmonic_ratio_2f`, `harmonic_ratio_half`, `harmonic_flag`) + `measure_transects_with_coords` (10 perpendicular intensity transects with exact `p0`, `p1`, `peaks_px`)
+- Axis calibration: `AxisCal`, `find_axis_ticks` (auto-detect spines & tick stubs, assert exact tick count, report RMS `x_misfit_px`/`y_misfit_px`), `lin_range`, `log_range`
+- Curve & band extraction: `ray_dist_alpha` (**always compute per-pixel validity & inter-trace repulsion BEFORE horizontal column pooling** so white-edge `perp=0` never pairs with a neighbor curve's high `alpha`!), `viterbi_track` (L1-slope DP), `walk_ribbon_bounds` (`±SD` / 95% CI ribbon walker)
+- Scatter, overlapping markers & shaded overlays: `shaded_bg_residual` (morphological/median background subtraction so dots inside translucent 95% CI ribbons, notched boxplots, or colored violins retain full contrast), `detect_markers_matched_filter` (occlusion-aware $S = T + 0.5\,O - 3\,B$ via `fftconvolve` across `disk` and `triangle_up` kernels with iterative greedy peeling `tgt -> occ` so overlapping markers and markers behind regression lines or red ±SD bars are never merged or dropped!)
+- Regression, errorbars & bars: `fit_irls_line_and_ci`, `trace_error_arms_occluded` (walks across occluders and mirrors hidden ends), `trace_error_arms`, `extract_vertical_bars`, `compute_curve_rmse`
+- Calibrated Microscopy Metrology: `measure_periodic_fft_verified` + `measure_transects_with_coords` + `check_fft_harmonics` (supports `green_isolated`, `magenta`, `max_rgb` depth-colored STED, `gray`/`blue`, plus separate `crossrib_channel` for dual-channel orthogonal cross-rib/actin-rung periodicity!)
+
+## Two-Stage Fluorescent & Optical Microscopy FFT Triage
+NEVER stop at SEM panels — audit **every** confocal, TauSTED, SIM, and optical panel:
+1. **Text & Caption Cues**: Scan text/captions for positive cues (`"parallel"`, `"periodic"`, `"regularly spaced"`, `"regular intervals"`, `"organized actin bundles"`, `"maximally spaced"`, `"between the ridges"`, `"perpendicularly to the ridge"`, `"crossribs"`, pupal stage `>= 37.5–44%`) and negative cues (`"nascent"`, `"cytoplasmic projections"`, `"angled out of plane"`, `"orthogonal view"`, `"hundreds of scales"`). Also screen any calibrated planar micrograph with `scale_bar <= 15 µm`.
+2. **Physical Feasibility & Channel Separation**:
+   - **Nyquist gate**: `expected_spacing_um / um_per_px >= 3.0 px/cycle` (skip undersampled low-mag overviews).
+   - **Cycle gate**: Flat, non-fanning ROI with `>= 3.5–4` cycles.
+   - **Channel isolation**: On green+magenta merges (actin between chitin ridges), **NEVER run grayscale FFT** (interleaved stripes create a false `2×` frequency!). Always isolate `green_isolated` and/or `magenta`; use `max_rgb` for rainbow z-depth-coded STED.
+
+## Plot Digitization Rules (Zero Missed Overlapping or Shaded Points)
+- **Never use naive connected-components `blobs()` on overlapping scatter plots** — touching markers merge into one centroid! Use `detect_markers_matched_filter(..., peel=True, upsample=2..3)` (with both `disk` and `triangle_up` passes for mixed shapes).
+- **Never threshold raw `lum < 90 & sat < 35` on plots with translucent 95% CI ribbons or shaded violins/boxplots** — ggplot2 draws ribbons *over* points, shifting black dots to dark brown/plum! Always apply `shaded_bg_residual` and place regression lines / red ±SD bars in `occ`.
+- **On boxplots/violins with overlaid jitter dots**: extract BOTH `digitized_boxplots` AND `digitized_scatter` (using box-polygon separation or adaptive dot radius `sqrt(med_area/pi)`), noting honestly if solid `#000` black violin fill makes interior black dots optically unobservable.
+- **On additive black-background fluorescence profiles** (`green + magenta = white`): read `G` and `0.5*(R+B)` directly without crosstalk subtraction so colocalized overlaps never drop to zero!
 
 ## Extractor Function Contract
 In `panels.yaml`, point any quantitative panel to its custom function:
@@ -34,6 +49,7 @@ def extract(crop_rgb: np.ndarray, panel_id: str, fig_id: str = "", full_rgb: np.
         "overlay_meta": {
             "plot_box": [px0, py0, px1, py1],
             "x_range": [350.0, 700.0], "y_range": [0.0, 80.0],
+            "x_misfit_px": 0.14, "y_misfit_px": 0.12,
             "kind": "curves",            # curves | scatter | boxplot
         },
     }
@@ -41,7 +57,7 @@ def extract(crop_rgb: np.ndarray, panel_id: str, fig_id: str = "", full_rgb: np.
 
 ## Automated Quality Guards (Run by `gate panels <paper> --apply`)
 1. **Atomic 1-letter Panel Guard**: Rejects composite panel IDs.
-2. **FFT 2× Harmonic / Subharmonic Guard**: Flags any micrograph where FFT-vs-transect delta exceeds 12%, `harmonic_ratio_2f > 0.35`, or `harmonic_ratio_half > 0.45` (catching locks onto every other ridge!).
+2. **FFT 2× Harmonic / Subharmonic Guard**: Flags any micrograph where FFT-vs-transect delta exceeds 12% or `harmonic_ratio_2f >= 0.60` unless visually confirmed (`harmonic_verified: true`).
 3. **Plot Span Completeness Guard**: Flags curves covering `< 70%` of the calibrated `x_range` unless `partial_x_range: true` is declared.
 4. **Raw-Data Benchmark RMSE**: When raw repository CSV/XLSX data exists, cross-checks digitized series RMSE against the raw source.
 5. **Persisted QA Manifest**: Automatically writes `records/<paper>/qa/report.json`.
@@ -53,12 +69,11 @@ uv run livinglit-lep gate panels <paper> --apply
 uv run livinglit-lep qa <paper> --out qa_renders
 ```
 
-1. **Inspect `qa_renders/plots_<paper>.png` with `view_file`**:
-   - Confirm cyan `plot_box` hugs the exact inner axes ticks.
-   - Confirm every curve, `±SD`/CI ribbon, scatter dot, errorbar cap, box median/IQR/whisker, and dotplot circle lands cleanly on the underlying pixels.
+1. **Inspect `qa_renders/plots_<paper>.png` (and 2–3× zoomed scatter/curve crops for dense panels) with `view_file`**:
+   - Confirm cyan `plot_box` hugs exact axis ticks and `x_misfit_px` / `y_misfit_px` are sub-pixel.
+   - Confirm hollow verification rings sit dead-center on **every** individual scatter dot (including overlapping clusters, dots inside translucent 95% CI ribbons, dots behind red ±SD bars, and jitter dots on boxplots/violins).
    - Confirm zero legend contamination, zero cross-curve jump/kiss, and zero dropped uncertainty bands.
 2. **Inspect `qa_renders/fft_<paper>.png` with `view_file`**:
-   - Confirm the yellow scale-bar bracket aligns with the exact pixel endpoints of the image scale bar.
-   - Confirm the cyan FFT ROI sits cleanly inside the periodic scale lamina (never on XZ strips, scale edges, or insets).
-   - Confirm the bright-green phase-aligned grating lines sit **1-to-1 on EVERY SINGLE ridge crest** (not every other ridge = 2× harmonic, and not twice per ridge = 0.5×!).
+   - Confirm yellow scale-bar bracket aligns with exact scale-bar endpoints (cross-check adjacent zoom panels for caption scale-bar typos!).
+   - Confirm bright-green phase-aligned grating lines sit **1-to-1 on EVERY SINGLE ridge/actin crest** (and magenta orthogonal grating on crossribs/perpendicular actin filaments where measured).
 3. **Iterate**: If ANY panel has a visual flaw or `flagged` status in `records/<paper>/qa/report.json`, refine the extractor / ROI / `spacing_range_um`, re-run `gate panels --apply` and `qa`, and re-inspect via `view_file` until 100% spotless!
