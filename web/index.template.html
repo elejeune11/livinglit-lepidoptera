@@ -4,41 +4,37 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LivingLit · Lepidoptera — Pilot Atlas, Metrology &amp; Synthesis</title>
-  <meta name="description" content="Auditable figure digitization, calibrated 2D-FFT microscopy metrology, relaxed cross-paper synthesis, and 7-dimension within-paper claim auditing for Lepidoptera." />
+  <meta name="description" content="Auditable figure digitization, calibrated 2D-FFT microscopy metrology, gene regulatory network workbench, relaxed cross-paper synthesis, and 7-dimension within-paper claim auditing for Lepidoptera." />
   <!--STYLES-->
 </head>
 <body>
   <header class="topbar" role="banner">
-    <div class="brand">
+    <button type="button" class="brand brand-btn" data-jump-view="overview" title="Return to Overview">
       <div class="brand-mark" aria-hidden="true">LL</div>
-      <div>
-        <div class="brand-title">LivingLit · Lepidoptera</div>
-      </div>
+      <div class="brand-title">LivingLit · Lepidoptera</div>
       <span class="brand-tag" id="release-tag">pilot-v1</span>
-    </div>
+    </button>
 
     <nav class="nav-tabs" role="tablist" aria-label="Primary views">
-      <button type="button" class="nav-tab active" data-view="atlas" role="tab" title="Browse all atomic figure panels with scale-bar & FFT overlays">Atlas <span class="cnt" id="cnt-atlas"></span></button>
-      <button type="button" class="nav-tab" data-view="vault" role="tab" title="Digitized Plots: verify extracted curves, scatter, boxplots & dotplots side-by-side against figure crops">Plots <span class="cnt" id="cnt-vault"></span></button>
-      <button type="button" class="nav-tab" data-view="scale" role="tab" title="Compare calibrated micrographs at identical physical magnification (µm/px)">True Scale</button>
-      <button type="button" class="nav-tab" data-view="compare" role="tab" title="Cross-paper quantitative comparisons with live confounder toggles">Compare <span class="cnt" id="cnt-compare"></span></button>
-      <button type="button" class="nav-tab" data-view="audit" role="tab" title="7-dimension within-paper claim and numerical audit">Audit <span class="cnt" id="cnt-audit"></span></button>
-      <button type="button" class="nav-tab" data-view="graph" role="tab" title="Gene Regulatory Network (GRN), Genomic Tables (DE/ChIP), and Corpus Knowledge Graph">GRN &amp; Graph <span class="cnt" id="cnt-grn"></span></button>
-      <button type="button" class="nav-tab" data-view="schema" role="tab" title="Explore hierarchical Controlled Vocabulary & interactive SymPy Formula Workbench">Vocab &amp; Formulas <span class="cnt" id="cnt-schema"></span></button>
-      <button type="button" class="nav-tab" data-view="papers" role="tab" title="Open-Access manifests, QA scorecards & indexed author scripts">Papers</button>
+      <button type="button" class="nav-tab active" data-view="overview" role="tab" aria-selected="true" title="Workflow schematic, core principles & guided starting points">Overview</button>
+      <button type="button" class="nav-tab" data-view="figures" role="tab" aria-selected="false" title="Panel Atlas, Digitized Plots & True-Scale Micrographs">Figures <span class="cnt" id="cnt-figures"></span></button>
+      <button type="button" class="nav-tab" data-view="compare" role="tab" aria-selected="false" title="Cross-paper empirical comparison with live context-matching toggles">Compare</button>
+      <button type="button" class="nav-tab" data-view="audit" role="tab" aria-selected="false" title="7-dimension within-paper claim audit, SymPy checks & numerical findings">Audit <span class="cnt" id="cnt-audit"></span></button>
+      <button type="button" class="nav-tab" data-view="graph" role="tab" aria-selected="false" title="Gene Regulatory Network (GRN), Genomic Tables & Corpus Knowledge Graph">GRN &amp; Graph <span class="cnt" id="cnt-grn"></span></button>
+      <button type="button" class="nav-tab" data-view="schema" role="tab" aria-selected="false" title="Controlled Vocabulary & interactive SymPy Formula Workbench">Vocab &amp; Formulas</button>
+      <button type="button" class="nav-tab" data-view="papers" role="tab" aria-selected="false" title="Open-Access paper manifests, QA scorecards & author scripts">Papers <span class="cnt" id="cnt-papers"></span></button>
     </nav>
 
     <div class="topbar-right">
       <div class="kpi-inline" id="kpi-inline"></div>
-      <button type="button" class="btn btn-sm" id="btn-theme" title="Toggle light / dark theme">Theme</button>
+      <button type="button" class="btn btn-sm" id="btn-theme" title="Toggle light / dark theme">Dark mode</button>
     </div>
   </header>
 
   <div class="wip-banner" role="status" aria-label="Work in progress notice">
     <span class="wip-badge">Work in Progress · Unverified</span>
     <span>
-      Experimental AI-assisted literature synthesis prototype — <strong>not yet verified by human domain experts</strong>.
-      Digitized plots, 2D-FFT readings, GRN edges, and automated audit flags may contain errors and are not peer-reviewed critiques; always verify against the original published papers before relying on or citing any data.
+      AI-assisted research prototype — <strong>not yet verified by human experts</strong>. Digitized plots, FFT readings, GRN edges &amp; audit flags may contain errors; verify against the original papers before citing.
     </span>
   </div>
 

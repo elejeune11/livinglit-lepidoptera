@@ -1,4 +1,4 @@
-/* Digitized Quantitative Plot Vault: Interactive Re-Plot + Live Overlay Proof + Inline .py + CSV Export */
+/* Digitized Plots Workspace: Master-Detail Plot List + Source Crop Overlay + Interactive Re-Plot + Inline .py + CSV/JSON */
 window.LL = window.LL || {};
 
 (function (LL) {
@@ -28,13 +28,34 @@ window.LL = window.LL || {};
     return rows.join("\n") + "\n";
   }
 
+  function plotKindTag(p) {
+    const d = p.data || {};
+    if (d.dotplot_matrix && d.dotplot_matrix.cells) return `${d.dotplot_matrix.cells.length} cells`;
+    if (d.digitized_boxplots && Object.keys(d.digitized_boxplots).length) return `${p.n_digitized_points || Object.keys(d.digitized_boxplots).length} box`;
+    if (d.curves && Object.keys(d.curves).length) return `${p.n_digitized_points} pts`;
+    if (d.digitized_scatter && Object.keys(d.digitized_scatter).length) return `${p.n_digitized_points} pts`;
+    return `${p.n_digitized_points || 0} pts`;
+  }
+
   LL.renderVaultView = function (root) {
     const st = LL.state;
     const allPlots = (st.data.panels || []).filter(LL.panelHasPlot);
     const papers = [...new Set(allPlots.map((p) => p.paper))];
-    const list = allPlots.filter((p) => st.vaultPaper === "ALL" || p.paper === st.vaultPaper);
+    const q = (st.vaultQuery || "").trim().toLowerCase();
+    const list = allPlots.filter((p) => {
+      if (st.vaultPaper !== "ALL" && p.paper !== st.vaultPaper) return false;
+      if (q) {
+        const hay = `${p.id} ${p.title} ${p.paper} ${JSON.stringify(p.context || {})}`.toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+
     if (!st.selectedVaultId || !list.some((p) => p.id === st.selectedVaultId)) {
-      const pref = list.find((p) => p.id === "2025_Loh/F10/B") || list.find((p) => p.id === "2026_Finet/F5/D_prime") || list.find((p) => p.id === "2024_Lloyd/F8/E") || list[0];
+      const pref = list.find((p) => p.id === "2020_Stavenga/F5/A")
+        || list.find((p) => p.id === "2025_Loh/F10/B")
+        || list.find((p) => p.id === "2026_Finet/F5/D_prime")
+        || list[0];
       st.selectedVaultId = pref ? pref.id : null;
     }
     const sel = list.find((p) => p.id === st.selectedVaultId) || null;
@@ -44,78 +65,104 @@ window.LL = window.LL || {};
     const extSrc = extRel && st.data.extractor_scripts ? st.data.extractor_scripts[extRel] : null;
 
     root.innerHTML = `
-      <div class="section-head" style="margin-bottom:8px">
-        <h2>Digitized Plots &amp; Overlay Verification</h2>
-        <span class="muted">Inspect extracted curves, scatter points, boxplots, and expression dotplots overlaid directly on original figure crops, re-plotted interactively with downloadable CSV/JSON and Python extractor code.</span>
-      </div>
-      <div class="toolbar">
-        <select id="vt-paper" aria-label="Filter digitized plots by paper">
-          <option value="ALL">All papers (${allPlots.length} digitized plots)</option>
-          ${papers.map((pid) => `<option value="${LL.esc(pid)}" ${st.vaultPaper === pid ? "selected" : ""}>${LL.esc(pid)}</option>`).join("")}
-        </select>
-        <div style="display:flex;gap:5px;flex-wrap:wrap;flex:1;max-height:84px;overflow-y:auto;padding:2px 4px 2px 0" id="vt-pills">
-          ${list.map((p) => `
-            <button type="button" class="btn btn-sm ${p.id === st.selectedVaultId ? "primary" : ""}" data-vault-id="${LL.esc(p.id)}">
-              ${LL.esc(p.paper.split("_")[1])} ${LL.esc(p.figure_id)}/${LL.esc(p.panel_label)}
-            </button>`).join("")}
-        </div>
-      </div>
-      ${sel ? `
-        <div class="card" style="margin-bottom:14px">
-          <div class="card-title">
-            <div>
-              <span class="mono">${LL.esc(sel.id)}</span>
-              <span class="muted" style="margin-left:8px">${LL.esc(sel.title)}</span>
-            </div>
-            <div style="display:flex;gap:6px;flex-wrap:wrap">
-              <button type="button" class="btn btn-sm ${st.vaultOverlayOn ? "active" : ""}" id="vt-toggle-ov">${st.vaultOverlayOn ? "✓ " : ""}Overlay check</button>
-              ${extSrc ? `<button type="button" class="btn btn-sm ${st.vaultShowCode ? "active" : ""}" id="vt-toggle-code">${LL.esc(sel.extractor_script.split("/").pop())}</button>` : ""}
-              <button type="button" class="btn btn-sm" id="vt-dl-csv">CSV</button>
-              <button type="button" class="btn btn-sm" id="vt-dl-json">JSON</button>
-            </div>
+      <div class="plots-shell">
+        <aside class="card plots-sidebar" aria-label="Digitized plot selector">
+          <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:9px">
+            <select id="vt-paper" aria-label="Filter digitized plots by paper">
+              <option value="ALL">All papers (${allPlots.length} plots)</option>
+              ${papers.map((pid) => {
+                const cnt = allPlots.filter((p) => p.paper === pid).length;
+                return `<option value="${LL.esc(pid)}" ${st.vaultPaper === pid ? "selected" : ""}>${LL.esc(pid)} (${cnt})</option>`;
+              }).join("")}
+            </select>
+            <input type="search" id="vt-q" placeholder="Filter plots by figure or topic…" value="${LL.esc(st.vaultQuery || "")}" />
+            <div class="muted mono" style="font-size:11px">Showing ${list.length} of ${allPlots.length} digitized plots</div>
           </div>
 
-          <div class="vault-pair">
-            <div>
-              <div class="muted" style="margin-bottom:5px;font-weight:600">Source Figure Crop + Live Digitized Geometry Overlay</div>
-              <div class="stage-wrap"><canvas id="vt-source-canvas"></canvas></div>
-            </div>
-            <div>
-              <div class="muted" style="margin-bottom:5px;font-weight:600">Interactive Re-Plotted Data (${selDotCells ? `${selDotCells} dotplot cells` : `${sel.n_digitized_points} pts`})</div>
-              <div class="chart-canvas-box"><canvas id="vt-chart-canvas"></canvas></div>
-            </div>
+          <div class="plots-list" id="vt-list">
+            ${list.map((p) => `
+              <button type="button" class="plot-row-btn ${p.id === st.selectedVaultId ? "selected" : ""}" data-vault-id="${LL.esc(p.id)}">
+                <div class="plot-row-top">
+                  <span class="mono" style="font-weight:700;font-size:11.5px">${LL.esc(p.paper.split("_")[1])} · ${LL.esc(p.figure_id)}/${LL.esc(p.panel_label)}</span>
+                  <span class="pill" style="font-size:10px">${LL.esc(plotKindTag(p))}</span>
+                </div>
+                <div class="plot-row-title muted">${LL.esc(p.title)}</div>
+              </button>`).join("") || `<div class="muted" style="padding:14px">No digitized plots match that filter.</div>`}
           </div>
+        </aside>
 
-          ${st.vaultShowCode && extSrc ? `
-            <div style="margin-top:12px">
-              <div class="mono" style="font-size:11.5px;font-weight:600;margin-bottom:4px">Auditable extractor: records/${LL.esc(extRel)}</div>
-              <pre class="code-viewer">${LL.esc(extSrc)}</pre>
-            </div>` : ""}
+        <div class="plots-stage">
+          ${sel ? `
+            <div class="card">
+              <div class="card-title" style="align-items:flex-start">
+                <div>
+                  <div class="mono" style="font-weight:700;font-size:13.5px">${LL.esc(sel.id)}</div>
+                  <div class="muted" style="margin-top:2px;font-weight:500">${LL.esc(sel.title)}</div>
+                </div>
+                <div style="display:flex;gap:6px;flex-wrap:wrap">
+                  <button type="button" class="btn btn-sm ${st.vaultOverlayOn ? "active" : ""}" id="vt-toggle-ov">${st.vaultOverlayOn ? "✓ " : ""}Overlay check</button>
+                  ${extSrc ? `<button type="button" class="btn btn-sm ${st.vaultShowCode ? "active" : ""}" id="vt-toggle-code">${LL.esc(sel.extractor_script.split("/").pop())}</button>` : ""}
+                  <button type="button" class="btn btn-sm" id="vt-dl-csv">CSV</button>
+                  <button type="button" class="btn btn-sm" id="vt-dl-json">JSON</button>
+                  <button type="button" class="btn btn-sm" data-jump-panel="${LL.esc(sel.id)}">In Atlas ↗</button>
+                </div>
+              </div>
+
+              <div class="vault-pair">
+                <div>
+                  <div class="muted" style="margin-bottom:5px;font-weight:600;font-size:12px">Source Figure Crop + Live Digitized Overlay</div>
+                  <div class="stage-wrap"><canvas id="vt-source-canvas"></canvas></div>
+                </div>
+                <div>
+                  <div class="muted" style="margin-bottom:5px;font-weight:600;font-size:12px">Interactive Re-Plotted Data (${selDotCells ? `${selDotCells} dotplot cells` : `${sel.n_digitized_points} pts`})</div>
+                  <div class="chart-canvas-box"><canvas id="vt-chart-canvas"></canvas></div>
+                </div>
+              </div>
+
+              ${(sel.linked_items || []).length ? `
+                <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;align-items:center">
+                  <span class="muted" style="font-size:11.5px;font-weight:600">Linked evidence:</span>
+                  ${sel.linked_items.map((iid) => `<button type="button" class="pill accent pill-btn mono" data-open-item="${LL.esc(sel.paper)}/${LL.esc(iid)}">${LL.esc(iid)} ↗</button>`).join("")}
+                </div>` : ""}
+
+              ${st.vaultShowCode && extSrc ? `
+                <div style="margin-top:12px">
+                  <div class="mono" style="font-size:11.5px;font-weight:600;margin-bottom:4px">Auditable extractor: records/${LL.esc(extRel)}</div>
+                  <pre class="code-viewer">${LL.esc(extSrc)}</pre>
+                </div>` : ""}
+            </div>
+          ` : `<div class="card muted">Select a digitized plot on the left to inspect its source overlay and extracted values.</div>`}
         </div>
-      ` : `<div class="card muted">No digitized plots match the filter.</div>`}
+      </div>
     `;
+
+    const activeRow = root.querySelector(".plot-row-btn.selected");
+    if (activeRow && activeRow.scrollIntoView) {
+      activeRow.scrollIntoView({ block: "nearest" });
+    }
 
     if (sel) {
       const drawBoth = () => {
         const sc = document.getElementById("vt-source-canvas");
         const cc = document.getElementById("vt-chart-canvas");
-        if (sc) LL.renderPanelCanvas(sc, sel, { overlayOn: st.vaultOverlayOn, maxW: 660, maxH: 400 });
+        if (sc) LL.renderPanelCanvas(sc, sel, { overlayOn: st.vaultOverlayOn, maxW: 620, maxH: 410 });
         if (cc) LL.renderDigitizedChart(cc, sel);
       };
       drawBoth();
-      const bOv = document.getElementById("vt-toggle-ov");
-      if (bOv) bOv.onclick = () => { st.vaultOverlayOn = !st.vaultOverlayOn; LL.renderVaultView(root); };
-      const bCode = document.getElementById("vt-toggle-code");
-      if (bCode) bCode.onclick = () => { st.vaultShowCode = !st.vaultShowCode; LL.renderVaultView(root); };
+
+      document.getElementById("vt-toggle-ov").onclick = () => { st.vaultOverlayOn = !st.vaultOverlayOn; LL.renderVaultView(root); };
+      const cBtn = document.getElementById("vt-toggle-code");
+      if (cBtn) cBtn.onclick = () => { st.vaultShowCode = !st.vaultShowCode; LL.renderVaultView(root); };
       document.getElementById("vt-dl-csv").onclick = () => LL.downloadText(`${sel.id.replace(/\//g, "_")}.csv`, panelToCsv(sel), "text/csv");
-      document.getElementById("vt-dl-json").onclick = () => LL.downloadText(`${sel.id.replace(/\//g, "_")}.json`, JSON.stringify(sel.data, null, 2), "application/json");
+      document.getElementById("vt-dl-json").onclick = () => LL.downloadText(`${sel.id.replace(/\//g, "_")}.json`, JSON.stringify(sel, null, 2), "application/json");
     }
 
     document.getElementById("vt-paper").onchange = (e) => { st.vaultPaper = e.target.value; LL.renderVaultView(root); };
-    document.getElementById("vt-pills").onclick = (e) => {
-      const b = e.target.closest("[data-vault-id]");
-      if (!b) return;
-      st.selectedVaultId = b.getAttribute("data-vault-id");
+    document.getElementById("vt-q").oninput = (e) => { st.vaultQuery = e.target.value; LL.renderVaultView(root); };
+    document.getElementById("vt-list").onclick = (e) => {
+      const btn = e.target.closest("[data-vault-id]");
+      if (!btn) return;
+      st.selectedVaultId = btn.getAttribute("data-vault-id");
       LL.renderVaultView(root);
     };
   };

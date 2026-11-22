@@ -252,12 +252,12 @@ window.LL = window.LL || {};
     const laneTxt = dark ? "#64748b" : "#94a3b8";
     const nodeFillGene = dark ? "#1c2633" : "#f8fafc";
     const nodeFillHub = dark ? "#12323d" : "#e6f4f7";
-    const nodeFillCross = dark ? "#2a1b3d" : "#f3e8ff";
-    const nodeFillMorph = dark ? "#2d1f16" : "#fff7ed";
+    const nodeFillCross = dark ? "#2d2412" : "#fef3c7";
+    const nodeFillMorph = dark ? "#1f2b22" : "#ecfdf5";
     const nodeStrokeGene = dark ? "#3b5169" : "#94a3b8";
     const nodeStrokeHub = dark ? "#4ab3c9" : "#0f5f73";
-    const nodeStrokeCross = dark ? "#c084fc" : "#7e22ce";
-    const nodeStrokeMorph = dark ? "#f59e0b" : "#d97706";
+    const nodeStrokeCross = dark ? "#f59e0b" : "#b45309";
+    const nodeStrokeMorph = dark ? "#34d399" : "#15803d";
     const ink = dark ? "#e2e8f0" : "#0f172a";
     const subInk = dark ? "#94a3b8" : "#64748b";
 
@@ -498,26 +498,28 @@ window.LL = window.LL || {};
     paperFiltered.forEach((r) => { tierCounts[r.evidence_tier] = (tierCounts[r.evidence_tier] || 0) + 1; });
     const filtered = st.grnTier === "ALL" ? paperFiltered : paperFiltered.filter((r) => r.evidence_tier === st.grnTier);
     if (!st.grnSelectedRel || !filtered.some((r) => r.id === st.grnSelectedRel)) {
-      st.grnSelectedRel = filtered[0] ? filtered[0].id : null;
+      const pref = filtered.find((r) => r.id === "ivory_required_for_melanic_heliconius")
+        || filtered.find((r) => r.id === "bab_binds_represses_mwh")
+        || filtered[0];
+      st.grnSelectedRel = pref ? pref.id : null;
     }
     const selRel = filtered.find((r) => r.id === st.grnSelectedRel) || null;
     const dark = LL.isDark();
 
     body.innerHTML = `
-      <div class="toolbar" style="margin-bottom:6px">
-        <span style="font-weight:700;font-size:12px">Paper:</span>
-        <button type="button" class="btn btn-sm ${st.grnPaper === "ALL" ? "active" : ""}" data-grn-paper="ALL">All papers (${allRels.length})</button>
-        ${paperList.map((p) => `<button type="button" class="btn btn-sm ${st.grnPaper === p ? "active" : ""}" data-grn-paper="${LL.esc(p)}">${LL.esc(p)} (${paperCounts[p]})</button>`).join("")}
-        <button type="button" class="btn btn-sm" id="grn-export-json" style="margin-left:auto">Export GRN JSON</button>
-      </div>
-
       <div class="toolbar">
-        <span style="font-weight:700;font-size:12px">Evidence Tier:</span>
-        <button type="button" class="btn btn-sm ${st.grnTier === "ALL" ? "active" : ""}" data-grn-tier="ALL">All (${paperFiltered.length})</button>
-        ${Object.entries(TIER_META).map(([k, m]) => {
-          const cnt = tierCounts[k] || 0;
-          return `<button type="button" class="btn btn-sm ${st.grnTier === k ? "active" : ""}" data-grn-tier="${k}" title="${LL.esc(m.desc)}">${LL.esc(m.short)} (${cnt})</button>`;
-        }).join("")}
+        <select id="grn-paper-sel" aria-label="Filter GRN by paper">
+          <option value="ALL" ${st.grnPaper === "ALL" ? "selected" : ""}>All papers (${allRels.length} edges)</option>
+          ${paperList.map((p) => `<option value="${LL.esc(p)}" ${st.grnPaper === p ? "selected" : ""}>${LL.esc(p)} (${paperCounts[p]})</option>`).join("")}
+        </select>
+        <div style="display:flex;gap:5px;flex-wrap:wrap">
+          <button type="button" class="btn btn-sm ${st.grnTier === "ALL" ? "active" : ""}" data-grn-tier="ALL">All tiers (${paperFiltered.length})</button>
+          ${Object.entries(TIER_META).map(([k, m]) => {
+            const cnt = tierCounts[k] || 0;
+            return `<button type="button" class="btn btn-sm ${st.grnTier === k ? "active" : ""}" data-grn-tier="${k}" title="${LL.esc(m.desc)}">${LL.esc(m.short)} (${cnt})</button>`;
+          }).join("")}
+        </div>
+        <button type="button" class="btn btn-sm" id="grn-export-json" style="margin-left:auto">Export JSON</button>
       </div>
 
       <div class="grn-legend">
@@ -526,8 +528,8 @@ window.LL = window.LL || {};
         <span><svg width="26" height="10"><line x1="1" y1="5" x2="25" y2="5" stroke="${dark ? "#4ab3c9" : "#0f5f73"}" stroke-width="2.2" stroke-dasharray="9 3 2 3" /></svg> ChIP binding (dash-dot)</span>
         <span><svg width="26" height="10"><line x1="1" y1="5" x2="25" y2="5" stroke="currentColor" stroke-width="2.2" stroke-dasharray="7 4" /></svg> Perturbation (dashed)</span>
         <span><svg width="26" height="10"><line x1="1" y1="5" x2="25" y2="5" stroke="${dark ? "#fbbf24" : "#b45309"}" stroke-width="2" stroke-dasharray="3 4" /></svg> Correlative (dotted)</span>
-        <span style="color:${dark ? "#c084fc" : "#7e22ce"};font-weight:700">★ Cross-paper hub</span>
-        <span class="muted" style="margin-left:auto">Click any edge to inspect anchor · Click any node to open in Vocab</span>
+        <span style="color:${dark ? "#f59e0b" : "#b45309"};font-weight:700">★ Cross-paper hub</span>
+        <span class="muted" style="margin-left:auto">Click any edge to inspect anchor · Click any node for Vocab</span>
       </div>
 
       <div class="grn-layout">
@@ -573,18 +575,17 @@ window.LL = window.LL || {};
       </div>
     `;
 
+    body.querySelector("#grn-paper-sel").onchange = (e) => {
+      st.grnPaper = e.target.value;
+      st.grnTier = "ALL";
+      renderGrnMode(body, data);
+    };
+
     body.querySelector("#grn-export-json").onclick = () => {
       LL.downloadText("livinglit_lepidoptera_grn.json", JSON.stringify(filtered, null, 2), "application/json");
     };
 
     body.onclick = (ev) => {
-      const pBtn = ev.target.closest("[data-grn-paper]");
-      if (pBtn) {
-        st.grnPaper = pBtn.getAttribute("data-grn-paper");
-        st.grnTier = "ALL";
-        renderGrnMode(body, data);
-        return;
-      }
       const tBtn = ev.target.closest("[data-grn-tier]");
       if (tBtn) {
         st.grnTier = tBtn.getAttribute("data-grn-tier");
