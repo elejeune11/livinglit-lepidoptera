@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+      - name: Sync dependencies
+        run: uv sync --dev
+      - name: Run unit and schema tests
+        run: uv run pytest -v
+      - name: Verify Lepidoptera vocabulary and zero-CDN web hygiene
+        run: |
+          uv run python -c "
+          from livinglit_lepidoptera.vocab import load_vocab
+          v = load_vocab('lepidoptera')
+          assert len(v.terms) >= 170
+          print(f'Vocabulary OK: {len(v.terms)} terms')
+          "
+          uv run python -c "
+          from pathlib import Path
+          import importlib.util
+          spec = importlib.util.spec_from_file_location('wb', 'web/build.py')
+          wb = importlib.util.module_from_spec(spec); spec.loader.exec_module(wb)
+          wb.verify_html_hygiene(Path('web/index.template.html').read_text(), 'template')
+          print('Web hygiene OK')
+          "
