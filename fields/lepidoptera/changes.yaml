@@ -1415,3 +1415,71 @@
     id: perturbation_modality:fib_milling
     field: perturbation_modality
     label: FIB milling
+  - event: add_term
+    id: measure:window_area
+    field: measure
+    label: window area
+    definition: Planar area of an individual upper-lamina window opening bounded by
+      adjacent longitudinal ridges and transverse crossribs.
+    synonyms:
+    - mean window area
+    - scale window area
+  - event: standing_key
+    measure: measure:ridge_spacing
+    value:
+      must_match: []
+      may_vary: &id001
+      - taxon
+      - sex
+      - anatomical_region
+      - pattern_element
+      - scale_type
+      - functional_architecture
+      - life_stage
+      - pupal_stage_pct
+      - target_gene
+      - perturbation_modality
+      - chemical_agent
+      - imaging_modality
+      - view_orientation
+      - hydration_and_prep
+    direction:
+      must_match:
+      - contrast
+      may_vary: *id001
+  - event: standing_key
+    measure: measure:ridge_height
+    value:
+      must_match: []
+      may_vary: *id001
+    direction:
+      must_match:
+      - contrast
+      may_vary: *id001
+  - event: standing_key
+    measure: measure:crossrib_spacing
+    value:
+      must_match: []
+      may_vary: *id001
+    direction:
+      must_match:
+      - contrast
+      may_vary: *id001
+  - event: standing_key
+    measure: measure:scale_width
+    value:
+      must_match: []
+      may_vary: *id001
+    direction:
+      must_match:
+      - contrast
+      may_vary: *id001
+  - event: standing_key
+    measure: measure:honeycomb_lattice_height
+    value:
+      must_match: []
+      may_vary: *id001
+    direction:
+      must_match:
+      - contrast
+      may_vary: *id001

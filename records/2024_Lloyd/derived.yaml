@@ -1,0 +1,8 @@
+record: 2024_Lloyd
+formula_library_version: 1
+agent:
+  model: livinglit-lepidoptera
+  instructions: formulas_pilot_v1
+derived: {}
+proposals: []
+reason_if_empty: 'All reported morphometrics (ridge spacing, ridge width, scale width, scale area, actin spacing/width/number, crossrib spacing, curvature) and image-derived measurements are recorded directly without paper-computed formula outputs.'

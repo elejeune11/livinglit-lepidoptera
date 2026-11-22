@@ -1,0 +1,29 @@
+id: 2026_Finet
+doi: 10.1016/j.isci.2026.114957
+title: Butterfly scale ridges and crossribs as a tunable toolbox for structural coloration
+year: 2026
+journal: iScience
+oa_status: open_access
+license: CC-BY-NC-ND-4.0
+figure_embed_policy: public_thumbnails
+repositories:
+  - kind: Dryad
+    url: https://doi.org/10.5061/dryad.bnzs7h4js
+    doi: 10.5061/dryad.bnzs7h4js
+    note: 12 figure archives (164.7 MB) indexed via Dryad API v2 metadata; raw file downloads are CAPTCHA-gated in automated sessions so quantitative figure series are extracted directly via bespoke LivingLit extractors.
+files:
+  - file: PMC13059322.xml
+    role: main_text
+  - file: gr1.jpg
+    role: main_figure
+  - file: gr2.jpg
+    role: main_figure
+  - file: gr3.jpg
+    role: main_figure
+  - file: gr4.jpg
+    role: main_figure
+  - file: gr5.jpg
+    role: main_figure
+not_used:
+  - file: fx1.jpg
+    why: Graphical abstract summary diagram (no quantitative measurements beyond main Figs. 1–5).

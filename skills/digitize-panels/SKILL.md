@@ -22,28 +22,20 @@ Import from `livinglit_lepidoptera.extract_lib`:
 ## Extractor Function Contract
 In `panels.yaml`, point any quantitative panel to its custom function:
 ```yaml
-custom_extractor:
-  script: extractors/f5_milling.py
-  func: extract_f5_panel
-  params:
-    panel_id: D_prime
+extractor: extractors/f5_milling.py:extract
 ```
 Each extractor function signature:
 ```python
-def extract_f5_panel(crop_bgr: np.ndarray, spec: PanelSpec, params: dict) -> dict:
+def extract(crop_rgb: np.ndarray, panel_id: str, fig_id: str = "", full_rgb: np.ndarray | None = None, bbox: tuple[int, int, int, int] = (0, 0, 0, 0)) -> dict:
     return {
-        "plot_type": "curve_series",        # curve_series | scatter | boxplot | bar | dotplot
-        "x_label": "Wavelength", "x_unit": "nm", "x_range": [300.0, 700.0],
-        "y_label": "Reflectance", "y_unit": "%", "y_range": [0.0, 40.0],
-        "series": [...],                    # or "points": [...], "boxes": [...], "groups": [...]
+        "curves": {...},                 # optional: {name: {x, y, lo, hi, peak_x, peak_y, x_unit, y_unit}}
+        "digitized_scatter": {...},      # optional: {group: {n, x, y, x_lo, x_hi, y_lo, y_hi, y_interval, x_unit, y_unit}}
+        "digitized_boxplots": {...},     # optional: {group: {median, q1, q3, whisker_lo, whisker_hi, y_unit}}
         "overlay_meta": {
-            "kind": "plot",
             "plot_box": [px0, py0, px1, py1],
-            "x_range": [300.0, 700.0], "y_range": [0.0, 40.0],
-            "x_scale": "linear", "y_scale": "linear",
-            # optional: curves_px, ribbons_px, points_px, errorbars_px, boxes_px, circles_px
+            "x_range": [350.0, 700.0], "y_range": [0.0, 80.0],
+            "kind": "curves",            # curves | scatter | boxplot
         },
-        "notes": "L1-Viterbi curve + alpha ribbon extraction",
     }
 ```
 

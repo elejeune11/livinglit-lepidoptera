@@ -215,7 +215,7 @@ def check_record(raw: dict, paper_dir: Path, field_cfg: dict, check_text: bool =
                 if p:
                     probs.append(f"{where}: {p}")
     # Validate manifest.yaml (OA policy & schema) when present
-    mpath = record_dir / "manifest.yaml"
+    mpath = RECORDS_DIR / rec.id / "manifest.yaml"
     if mpath.is_file():
         from .models import Manifest
         try:

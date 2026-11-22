@@ -1,0 +1,538 @@
+id: 2026_Finet
+field_set: 3
+source:
+  title: Butterfly scale ridges and crossribs as a tunable toolbox for structural coloration
+  doi: 10.1016/j.isci.2026.114957
+  year: '2026'
+  first_author: Cédric Finet
+  last_author: Antónia Monteiro
+  lab: Monteiro lab, National University of Singapore
+  journal: iScience
+  files:
+    - PMC13059322.xml
+    - gr1.jpg
+    - gr2.jpg
+    - gr3.jpg
+    - gr4.jpg
+    - gr5.jpg
+  not_used:
+    - file: fx1.jpg
+      why: Graphical abstract summary diagram containing no unique quantitative data beyond Figs. 1–5
+  missing:
+    - Dryad raw CSV archives (CAPTCHA-gated automated download; digitized directly via bespoke extractors)
+default_context:
+  sex: not stated
+  anatomical_region: not stated
+  pattern_element: not stated
+  life_stage: adult
+  pupal_stage_pct: not applicable
+  target_gene: none
+  chemical_agent: none
+context_anchors:
+  - field: taxon
+    value: Bicyclus anynana
+    anchor:
+      quote: an artificial selection experiment performed on scale hue in Bicyclus anynana butterflies.
+      where: Results
+  - field: taxon
+    value: 34 species
+    anchor:
+      quote: measured reflectance and compared how light was reflected from the upperside (abwing side) and underside (adwing side) surfaces of 39 scales with stereotypical morphologies from 34 species
+      where: Results
+  - field: taxon
+    value: Morpho didius
+    anchor:
+      quote: manipulated the ridge height in the nymphalid butterfly Morpho didius (Figures 5A and 5B).
+      where: Results
+  - field: scale_type
+    value: ground scales
+    anchor:
+      quote: produced violet-blue scales from UV-reflecting brown ground scales over eight generations of artificial selection in the laboratory.
+      where: Results
+  - field: scale_type
+    value: cover scales
+    anchor:
+      quote: Optical microscopy images of the abwing side of blue or green cover scales
+      where: Fig. 3 caption
+  - field: functional_architecture
+    value: stacked lamellae
+    anchor:
+      quote: The current model for the metallic blue color of M. didius wings assumes that the spatial separation between the stacked lamellae
+      where: Results
+  - field: functional_architecture
+    value: ridges and crossribs
+    anchor:
+      quote: measuring the height of ridges and crossribs from transverse and sagittal focused ion beam scanning electron micrograph (FIB-SEM) sections
+      where: Results
+  - field: life_stage
+    value: adult
+    anchor:
+      quote: Adult specimen of M. didius from Peru
+      where: Fig. 5A caption
+  - field: perturbation_modality
+    value: artificial selection
+    anchor:
+      quote: produced violet-blue scales from UV-reflecting brown ground scales over eight generations of artificial selection in the laboratory.
+      where: Results
+  - field: perturbation_modality
+    value: FIB-SEM millings
+    anchor:
+      quote: performed a series of FIB-SEM millings of the full ridge (core + lamellae) of an uncoated scale at different depths
+      where: Results
+  - field: imaging_modality
+    value: FIB-SEM
+    anchor:
+      quote: measuring the height of ridges and crossribs from transverse and sagittal focused ion beam scanning electron micrograph (FIB-SEM) sections
+      where: Results
+  - field: imaging_modality
+    value: microspectrophotometer
+    anchor:
+      quote: our microspectrophotometer set-up enabled us to measure a spot size between 1.1 and 1.2
+      where: Results
+  - field: imaging_modality
+    value: SEM
+    anchor:
+      quote: SEM top view of scale after milling of two consecutive ridges (core + lamellae).
+      where: Fig. 5C caption
+  - field: view_orientation
+    value: transverse and sagittal
+    anchor:
+      quote: measuring the height of ridges and crossribs from transverse and sagittal focused ion beam scanning electron micrograph (FIB-SEM) sections
+      where: Results
+  - field: view_orientation
+    value: top view
+    anchor:
+      quote: SEM top view of scale after milling of two consecutive ridges (core + lamellae).
+      where: Fig. 5C caption
+  - field: view_orientation
+    value: abwing side
+    anchor:
+      quote: Optical microscopy images of the abwing side of blue or green cover scales
+      where: Fig. 3 caption
+  - field: hydration_and_prep
+    value: dried specimens
+    anchor:
+      quote: re-examining conserved, dried specimens used to establish the violet-blue lines
+      where: Results
+  - field: hydration_and_prep
+    value: uncoated
+    anchor:
+      quote: performed a series of FIB-SEM millings of the full ridge (core + lamellae) of an uncoated scale at different depths
+      where: Results
+units:
+  F1_SURVEY:
+    where: Figure 1 and Results
+    title: Contribution of upper surface nanostructures to scale peak wavelength, reflectance intensity, and FWHM across 39 scales from 34 butterfly species
+    context:
+      taxon: 34 species
+      scale_type: cover scales
+      functional_architecture: ridges and crossribs
+      perturbation_modality: none
+      imaging_modality: microspectrophotometer
+      view_orientation: abwing side
+      hydration_and_prep: dried specimens
+    groups:
+      survey_34sp:
+        label: 39 butterfly scales from 34 species (abaxial vs adaxial)
+        kind: natural
+        context: {}
+  F2_SELECTION:
+    where: Figure 2 and Results
+    title: Artificial selection for violet-blue scale hue in Bicyclus anynana (WT to G8) increases ridge height, crossrib height, and crossrib spacing
+    context:
+      taxon: Bicyclus anynana
+      scale_type: ground scales
+      functional_architecture: ridges and crossribs
+      imaging_modality: FIB-SEM
+      view_orientation: transverse and sagittal
+      hydration_and_prep: dried specimens
+    groups:
+      wt_line:
+        label: Wild-type brown ground scales (WT)
+        kind: wild type
+        context:
+          perturbation_modality: none
+      g8_blue:
+        label: Generation-8 artificially selected blue ground scales (G8)
+        kind: perturbed
+        context:
+          perturbation_modality: artificial selection
+  F4_34SPECIES:
+    where: Figure 4 and Results
+    title: Multi-order ridge-air interference correlation between longitudinal ridge height and peak reflectance wavelength across 39 scales from 34 butterfly species
+    context:
+      taxon: 34 species
+      scale_type: cover scales
+      functional_architecture: ridges and crossribs
+      perturbation_modality: none
+      imaging_modality: FIB-SEM
+      view_orientation: transverse and sagittal
+      hydration_and_prep: dried specimens
+    groups:
+      cohort_order1:
+        label: First-order ridge height cohort (268–1036 nm, n=17)
+        kind: natural
+        context: {}
+      cohort_order2:
+        label: Second-order ridge height cohort (1126–2184 nm, n=21)
+        kind: natural
+        context: {}
+  F5_MORPHO_SEM:
+    where: Figure 5C–D
+    title: Top-down SEM of intact unmilled Morpho didius cover scale ridges prior to/adjacent to FIB milling
+    context:
+      taxon: Morpho didius
+      scale_type: cover scales
+      functional_architecture: stacked lamellae
+      perturbation_modality: none
+      imaging_modality: SEM
+      view_orientation: top view
+      hydration_and_prep: uncoated
+    groups:
+      morpho_unmilled_sem:
+        label: Intact Morpho didius cover scale (Fig 5C/D SEM)
+        kind: natural
+        context: {}
+  F5_MILLING:
+    where: Figure 5C'–D'' and Results
+    title: Focused ion beam milling of full ridges vs lateral lamellae in Morpho didius decouples peak wavelength shift from reflectance intensity
+    context:
+      taxon: Morpho didius
+      scale_type: cover scales
+      functional_architecture: stacked lamellae
+      imaging_modality: microspectrophotometer
+      view_orientation: top view
+      hydration_and_prep: uncoated
+    groups:
+      morpho_intact:
+        label: Intact unmilled Morpho didius ridge
+        kind: wild type
+        context:
+          perturbation_modality: none
+      morpho_full_milled:
+        label: Full-ridge FIB-milled Morpho didius ridge (z = 100–800 nm)
+        kind: perturbed
+        context:
+          perturbation_modality: FIB-SEM millings
+      morpho_lamellae_milled:
+        label: Lateral-lamellae-only FIB-milled Morpho didius ridge (z = 500–1300 nm)
+        kind: perturbed
+        context:
+          perturbation_modality: FIB-SEM millings
+evidence:
+  F1_hue_shift:
+    unit: F1_SURVEY
+    measure: spectral hue shift
+    method: Abaxial vs adaxial microspectrophotometry across 39 scales from 34 butterfly species
+    software: R (pavo v2.9)
+    finding: Upper surface nanostructures shift peak reflectance wavelength by 0 to 85 nm relative to the lower lamina across 39 scales
+    groups:
+      - survey_34sp
+    values:
+      hue_range:
+        printed: 0 to 85
+        unit: nm
+        kind: value
+        group: survey_34sp
+        spread: range
+    anchor:
+      quote: the absolute shift in reflectance peak ranging from approximately 0 to 85 nm
+      where: Results
+  F2_crossrib_spacing:
+    unit: F2_SELECTION
+    measure: crossrib spacing
+    method: FIB-SEM ultrastructural measurement across WT and G8 selected B. anynana lines
+    software: Fiji
+    finding: Artificial selection for violet-blue ground scale color increased mean crossrib spacing from 862 ± 71 nm (WT) to 1160 ± 116 nm (G8)
+    compares:
+      - g8_blue
+      - wt_line
+    test_of: pair
+    values:
+      wt_cr:
+        printed: 862 ± 71
+        unit: nm
+        kind: mean
+        group: wt_line
+        spread: SD
+      g8_cr:
+        printed: 1160 ± 116
+        unit: nm
+        kind: mean
+        group: g8_blue
+        spread: SD
+    stated_direction:
+      direction: up
+      anchor:
+        quote: we detected an increase in the mean distance between crossribs (dWT = 862 ± 71 nm versus dG8 = 1160 ± 116 nm)
+        where: Results
+    anchor:
+      quote: we detected an increase in the mean distance between crossribs (dWT = 862 ± 71 nm versus dG8 = 1160 ± 116 nm)
+      where: Results
+  F2_window_area:
+    unit: F2_SELECTION
+    measure: window area
+    method: FIB-SEM measurement of upper-lamina window area across WT and G8 selected B. anynana ground scales
+    software: Fiji
+    finding: Mean window area increased from 0.72 ± 0.2 um2 (WT) to 1.2 ± 0.3 um2 (G8) alongside wider crossrib spacing
+    compares:
+      - g8_blue
+      - wt_line
+    test_of: pair
+    values:
+      wt_win:
+        printed: 0.72 ± 0.2
+        unit: µm²
+        kind: mean
+        group: wt_line
+        spread: SD
+      g8_win:
+        printed: 1.2 ± 0.3
+        unit: µm²
+        kind: mean
+        group: g8_blue
+        spread: SD
+    stated_direction:
+      direction: up
+      anchor:
+        quote: The increase in the distance between crossribs increased the mean window area (Figure S3D) (areaWT = 0.72 ± 0.2 μm2 versus areaG8 = 1.2 ± 0.3 μm2)
+        where: Results
+    anchor:
+      quote: The increase in the distance between crossribs increased the mean window area (Figure S3D) (areaWT = 0.72 ± 0.2 μm2 versus areaG8 = 1.2 ± 0.3 μm2)
+      where: Results
+  F4_cohort1_pgls:
+    unit: F4_34SPECIES
+    measure: ridge height
+    method: Transverse FIB-SEM ridge height measurement and PGLS regression across shorter-ridge cohort (268–1036 nm)
+    software: R
+    finding: Shorter ridges (268–1036 nm, n = 17 scales) positively correlate with peak reflectance wavelength (PGLS β = 0.76 ± 0.22, t = 3.51, p = 3.1e-03)
+    groups:
+      - cohort_order1
+    n:
+      printed: 17 shorter-ridge scales
+      counts: scales
+    stats:
+      test: PGLS regression
+      statistic: t = 3.51
+      p: p = 3.1e-03
+    anchor:
+      quote: 'a significant positive correlation (intercept: 117.13, β = 0.76, SE = 0.22, t = 3.51, p = 3.1e-03)'
+      where: Results
+    scaling:
+      independent_measure: peak reflectance wavelength
+      direction: up
+      stratified_by: interference order i
+      anchor:
+        quote: 'a significant positive correlation (intercept: 117.13, β = 0.76, SE = 0.22, t = 3.51, p = 3.1e-03)'
+        where: Results
+  F4_ridge_height_cohorts:
+    unit: F4_34SPECIES
+    measure: ridge height
+    method: Transverse FIB-SEM ridge height measurement and PGLS regression across 39 scale types in 34 species
+    software: R
+    finding: 39 scales across 34 species stratify into two constructive-interference ridge-height branches — 268–1036 nm (mean 614 nm, p = 3.1e-3) and 1126–2184 nm (mean 1444 nm, β = 4.57, t = 11.54, p < 1e-4)
+    compares:
+      - cohort_order2
+      - cohort_order1
+    test_of: pair
+    n:
+      printed: 17 lower-branch and 21 upper-branch scales (plus 1 third-order outlier = 39 total)
+      per_group:
+        cohort_order1: '17'
+        cohort_order2: '21'
+      counts: scales
+    stats:
+      test: PGLS regression
+      statistic: t = 11.54
+      p: p < 1e-04
+    anchor:
+      quote: 'This positive correlation was very significant for taller ridges between 1126 and 2184 nm (intercept: −554.08, β = 4.57, SE = 0.40, t = 11.54, p < 1e-04)'
+      where: Results
+    scaling:
+      independent_measure: peak reflectance wavelength
+      direction: up
+      stratified_by: interference order i
+      anchor:
+        quote: 'This positive correlation was very significant for taller ridges between 1126 and 2184 nm (intercept: −554.08, β = 4.57, SE = 0.40, t = 11.54, p < 1e-04)'
+        where: Results
+  F4_interference_hue:
+    unit: F4_34SPECIES
+    measure: peak reflectance wavelength
+    method: Analytical ridge-air phase interference equation lambda = 2*(n_r - n_a)*h / m
+    finding: A chitin ridge of height h = 400 nm (n_r = 1.56 in air n_a = 1.0) at order m = 1 (i = 2) produces a blue interference peak at 448 nm
+    groups:
+      - cohort_order1
+    values:
+      lam_pred:
+        printed: '448'
+        unit: nm
+        kind: value
+        group: cohort_order1
+        spread: none
+    anchor:
+      quote: constructive interference of the two waves gives rise to spectral peaks, whose wavelengths/hues (λ) are given by
+      where: Results
+    scaling:
+      independent_measure: ridge height
+      direction: up
+      stratified_by: interference order m
+      anchor:
+        quote: constructive interference of the two waves gives rise to spectral peaks, whose wavelengths/hues (λ) are given by
+        where: Results
+  F5_morpho_ridge_spacing:
+    unit: F5_MORPHO_SEM
+    measure: ridge spacing
+    method: LivingLit 2D FFT and multi-transect profiling on Fig 5C intact Morpho didius SEM
+    finding: Image-derived SEM ridge spacing on intact Morpho didius cover scale (Fig 5C) is 0.763 um (FFT) / 0.760 um (transect)
+    groups:
+      - morpho_unmilled_sem
+    anchor:
+      quote: SEM top view of scale after milling of two consecutive ridges (core + lamellae).
+      where: Fig. 5C caption
+  F5_full_ridge_milling:
+    unit: F5_MILLING
+    measure: peak reflectance wavelength
+    method: FIB-SEM milling of full ridge (core + lamellae) followed by microspectrophotometry (Fig 5C')
+    finding: Progressive full-ridge FIB milling (z = 100, 500, 800 nm) UV-shifts the Morpho didius reflectance peak from 435 nm down to 411 nm, 369 nm, and 350 nm while reducing brightness
+    compares:
+      - morpho_full_milled
+      - morpho_intact
+    test_of: pair
+    stated_direction:
+      direction: down
+      anchor:
+        quote: We found that the reflection spectrum was UV-shifted when the ridge height was decreased
+        where: Results
+    anchor:
+      quote: We found that the reflection spectrum was UV-shifted when the ridge height was decreased
+      where: Results
+  F5_lamellae_milling:
+    unit: F5_MILLING
+    measure: peak reflectance wavelength
+    method: Selective FIB-SEM milling of lateral lamellae only (preserving central ridge core) followed by microspectrophotometry (Fig 5D')
+    finding: Selective lateral lamellae milling up to z = 1000 nm leaves the ~430 nm peak wavelength unchanged (digitized 438 -> 435 -> 432 nm) while halving peak reflectance intensity (76% -> 36%)
+    compares:
+      - morpho_lamellae_milled
+      - morpho_intact
+    test_of: pair
+    stated_direction:
+      direction: none
+      anchor:
+        quote: We found that the position of the reflectance peak (∼430 nm) remained unchanged regardless of the depth of milling
+        where: Results
+    anchor:
+      quote: We found that the position of the reflectance peak (∼430 nm) remained unchanged regardless of the depth of milling
+      where: Results
+claims:
+  C1_highlights_almost_perfect:
+    kind: stated
+    quote: A large set of butterfly species has hues that correlate almost perfectly with ridge height
+    where: Highlights
+    scope: 39 scales across 34 butterfly species
+    rests_on:
+      - F4_cohort1_pgls
+      - F4_ridge_height_cohorts
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: overstated
+      presence: follows
+  C2_highlights_sole_input:
+    kind: stated
+    quote: A new interference model predicts ridge hue using its height as the sole input
+    where: Highlights
+    scope: Analytical ridge-air interference model
+    rests_on:
+      - F4_interference_hue
+      - F4_ridge_height_cohorts
+    judgement:
+      direction: follows
+      support: follows
+      comparison: cannot judge
+      scope: follows
+      replication: follows
+      strength: overstated
+      presence: follows
+  C3_summary_morpho_sufficient:
+    kind: stated
+    quote: modifying ridge height is sufficient to change ridge hue, notably in Morpho didius, whose color was thought to be generated exclusively by ridge lamellae.
+    where: Summary
+    scope: Morpho didius FIB-SEM milling of full ridge vs lateral lamellae
+    direction: Shortening ridge height shifts hue toward UV while milling lateral lamellae alone preserves peak wavelength
+    rests_on:
+      - F5_full_ridge_milling
+      - F5_lamellae_milling
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: cannot judge
+      strength: follows
+      presence: follows
+  C4_results_upper_surface_contrib:
+    kind: stated
+    quote: The upper surface substantially contributes to the overall scale coloration
+    where: Results section heading
+    scope: 39 stereotypical scales across 34 butterfly species
+    rests_on:
+      - F1_hue_shift
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+  C5_results_bleach_robust:
+    kind: stated
+    quote: we found that the removal of pigments does not substantially affect the overall correlation between ridge height and ridge reflectance
+    where: Results
+    scope: Depigmented bleach-treated scales across sampled species
+    rests_on:
+      - F4_ridge_height_cohorts
+    judgement:
+      direction: follows
+      support: cannot judge
+      comparison: follows
+      scope: follows
+      replication: cannot judge
+      strength: follows
+      presence: follows
+  C6_results_model_limitation:
+    kind: stated
+    quote: our model was not sensitive enough to capture a shift for milder milling by 100–500 nm
+    where: Results (Morpho didius optical modeling)
+    scope: FDTD optical simulation of full-ridge milling in Morpho didius (Fig 5C'')
+    rests_on:
+      - F5_full_ridge_milling
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+  C7_summary_toolbox_butterflies:
+    kind: stated
+    quote: This study identifies the upper surface of scales as a toolbox for structural color diversity in butterflies
+    where: Summary
+    scope: Papilionoidea butterflies (34 species spanning 6 families)
+    rests_on:
+      - F1_hue_shift
+      - F2_crossrib_spacing
+      - F4_ridge_height_cohorts
+      - F5_full_ridge_milling
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows

@@ -27,24 +27,27 @@ Verify that a candidate paper satisfies the repository's Open Access policy, inv
 3. **Write `records/<paper>/manifest.yaml`**
    Follow the strict `Manifest` schema in `src/livinglit_lepidoptera/models.py`:
    ```yaml
-   record: 2024_Lloyd
-   oa_status: open_access          # open_access | paywalled | unknown
+   id: 2024_Lloyd
+   doi: 10.1038/s41467-024-48060-3
+   title: The actin cytoskeleton plays multiple roles in structural colour formation in butterfly wing scales
+   year: 2024
+   journal: Nature Communications
+   oa_status: open_access               # open_access | restricted
    license: CC-BY-4.0
-   figure_embed_policy: oa_crops_only   # oa_crops_only | metadata_only
-   files:
-     - path: PMC11106069.xml
-       role: full_text_xml
-       sha256: "..."
-     - path: 41467_2024_48060_Fig1_HTML.jpg
-       role: figure_image
+   figure_embed_policy: public_thumbnails  # public_thumbnails | local_only
    repositories:
-     - name: ORDA / Figshare
-       url: https://doi.org/10.15131/shef.data.25285501
-       harvested: true
+     - kind: Figshare
+       url: https://doi.org/10.15131/shef.data.25422754
+       doi: 10.15131/shef.data.25422754
        note: "7 R statistical scripts downloaded locally; raw measurement CSVs omitted by authors."
+   files:
+     - file: PMC11106069.xml
+       role: main_text                  # main_text | main_figure | supp_text | supp_table | supp_figure | raw_data | code
+     - file: fig1.png
+       role: main_figure
    not_used:
-     - path: fig1.png
-       reason: "Duplicate lower-resolution copy of 41467_2024_48060_Fig1_HTML.jpg"
+     - file: 41467_2024_48060_Fig1_HTML.jpg
+       why: "Lower-resolution PMC HTML copy of Fig. 1; full-resolution fig1.png is used instead."
    ```
    Every single file present in `papers_dont_ever_commit/<paper>/` must appear under `files` or `not_used`.
 

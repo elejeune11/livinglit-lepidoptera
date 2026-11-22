@@ -1,0 +1,772 @@
+record: 2026_Finet
+default_context:
+  life_stage: adult
+  pupal_stage_pct: not applicable
+  hydration_and_prep: dry mounted
+figures:
+  F1:
+    label: Fig. 1
+    file: gr1.jpg
+    xml_id: fig1
+    title: Contribution of the upper surface to overall butterfly scale coloration
+      across 34 species
+    caption_anchor:
+      quote: Contribution of the upper surface to the overall scale coloration
+      where: Fig. 1 caption
+    context:
+      taxon: Papilionoidea (34 species)
+      imaging_modality: microspectrophotometry
+      view_orientation: top-down apical
+    panels:
+      A:
+        label: A
+        title: Sampled butterfly tribes mapped onto the Espeland et al. (2018) phylogeny
+        bbox:
+        - 0
+        - 0
+        - 3408
+        - 2085
+        archetype: phylogeny_or_schematic
+      B:
+        label: B
+        title: Absolute shift in peak reflectance wavelength |Δλ| between abaxial
+          and adaxial sides
+        bbox:
+        - 0
+        - 2085
+        - 1120
+        - 3115
+        archetype: quantitative_plot
+        extractor: extractors/f1_shifts.py:extract
+      C:
+        label: C
+        title: Absolute shift in peak reflectance intensity |ΔRmax| between abaxial
+          and adaxial sides
+        bbox:
+        - 1140
+        - 2085
+        - 2280
+        - 3115
+        archetype: quantitative_plot
+        extractor: extractors/f1_shifts.py:extract
+      D:
+        label: D
+        title: Absolute shift in spectral bandwidth |ΔFWHM| between abaxial and adaxial
+          sides
+        bbox:
+        - 2310
+        - 2085
+        - 3408
+        - 3115
+        archetype: quantitative_plot
+        extractor: extractors/f1_shifts.py:extract
+  F2:
+    label: Fig. 2
+    file: gr2.jpg
+    xml_id: fig2
+    title: Evolution of scale reflectance and upper-surface nanostructure thicknesses
+      during artificial selection in Bicyclus anynana
+    caption_anchor:
+      quote: Evolution of scale reflectance and thicknesses of upper surface nanostructures
+        over the course of an artificial selection experiment in B. anynana
+      where: Fig. 2 caption
+    context:
+      taxon: Bicyclus anynana
+      anatomical_region: dorsal forewing
+      scale_type: ground scale
+      perturbation_modality: artificial directional selection
+    panels:
+      A:
+        label: A
+        title: Optical micrograph of abwing side of WT B. anynana ground scale
+        bbox:
+        - 15
+        - 32
+        - 800
+        - 419
+        archetype: planar_microscopy
+        context:
+          imaging_modality: optical microscopy
+          view_orientation: top-down apical
+          perturbation_modality: wild type
+        scale_bar:
+          um: 4.0
+          search_box:
+          - 655
+          - 338
+          - 765
+          - 375
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 80
+          - 55
+          - 680
+          - 320
+          spacing_range_um:
+          - 1.0
+          - 3.0
+          wavevector_angle_deg:
+          - 65.0
+          - -65.0
+      A_prime:
+        label: A'
+        title: Optical micrograph of abwing side of G8 violet-blue selected B. anynana
+          ground scale
+        bbox:
+        - 15
+        - 419
+        - 800
+        - 800
+        archetype: planar_microscopy
+        context:
+          imaging_modality: optical microscopy
+          view_orientation: top-down apical
+        scale_bar:
+          um: 4.0
+          search_box:
+          - 655
+          - 330
+          - 765
+          - 368
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 80
+          - 55
+          - 680
+          - 315
+          spacing_range_um:
+          - 1.0
+          - 3.0
+          wavevector_angle_deg:
+          - 65.0
+          - -65.0
+      B:
+        label: B
+        title: Isolated ridge reflectance spectra across WT, G6, and G8 selection
+          generations
+        bbox:
+        - 840
+        - 0
+        - 1860
+        - 940
+        archetype: spectral_or_profile
+        context:
+          imaging_modality: microspectrophotometry
+        extractor: extractors/f2_selection.py:extract
+      C:
+        label: C
+        title: Isolated crossrib reflectance spectra across WT, G6, and G8 selection
+          generations
+        bbox:
+        - 1870
+        - 0
+        - 2892
+        - 940
+        archetype: spectral_or_profile
+        context:
+          imaging_modality: microspectrophotometry
+        extractor: extractors/f2_selection.py:extract
+      D:
+        label: D
+        title: Cross-sectional schematic of B. anynana ground scale showing measured
+          heights
+        bbox:
+        - 0
+        - 950
+        - 2892
+        - 2220
+        archetype: phylogeny_or_schematic
+      E:
+        label: E
+        title: Ridge height across WT, G6, and G8 B. anynana generations
+        bbox:
+        - 0
+        - 2310
+        - 935
+        - 3230
+        archetype: quantitative_plot
+        context:
+          imaging_modality: FIB-SEM
+        extractor: extractors/f2_selection.py:extract
+      F:
+        label: F
+        title: Crossrib height across WT, G6, and G8 B. anynana generations
+        bbox:
+        - 0
+        - 3235
+        - 935
+        - 4060
+        archetype: quantitative_plot
+        context:
+          imaging_modality: FIB-SEM
+        extractor: extractors/f2_selection.py:extract
+      G:
+        label: G
+        title: Sub-ridge air layer thickness across WT, G6, and G8 B. anynana generations
+        bbox:
+        - 940
+        - 2310
+        - 1905
+        - 3230
+        archetype: quantitative_plot
+        context:
+          imaging_modality: FIB-SEM
+        extractor: extractors/f2_selection.py:extract
+      H:
+        label: H
+        title: Sub-crossrib air layer thickness across WT, G6, and G8 B. anynana generations
+        bbox:
+        - 940
+        - 3235
+        - 1905
+        - 4060
+        archetype: quantitative_plot
+        context:
+          imaging_modality: FIB-SEM
+        extractor: extractors/f2_selection.py:extract
+      I:
+        label: I
+        title: Total ridge + air height across WT, G6, and G8 B. anynana generations
+        bbox:
+        - 1912
+        - 2310
+        - 2892
+        - 3230
+        archetype: quantitative_plot
+        context:
+          imaging_modality: FIB-SEM
+        extractor: extractors/f2_selection.py:extract
+      J:
+        label: J
+        title: Total crossrib + air height across WT, G6, and G8 B. anynana generations
+        bbox:
+        - 1912
+        - 3235
+        - 2892
+        - 4060
+        archetype: quantitative_plot
+        context:
+          imaging_modality: FIB-SEM
+        extractor: extractors/f2_selection.py:extract
+  F3:
+    label: Fig. 3
+    file: gr3.jpg
+    xml_id: fig3
+    title: Diversity of ridge and crossrib structural coloration across butterfly
+      families
+    caption_anchor:
+      quote: Diversity of ridge and crossrib structural coloration
+      where: Fig. 3 caption
+    context:
+      scale_type: cover scale
+    panels:
+      A:
+        label: A
+        title: Prothoe franck (Nymphalidae) abwing optical microscopy of blue cover
+          scale
+        bbox:
+        - 0
+        - 0
+        - 1119
+        - 839
+        archetype: planar_microscopy
+        context:
+          taxon: Prothoe franck
+          imaging_modality: optical microscopy
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 999
+          - 779
+          - 1101
+          - 822
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 140
+          - 100
+          - 960
+          - 720
+          spacing_range_um:
+          - 1.0
+          - 3.0
+          wavevector_angle_deg:
+          - 65.0
+          - -65.0
+      A_prime:
+        label: A'
+        title: Prothoe franck sagittal FIB-SEM view showing ridge architecture
+        bbox:
+        - 0
+        - 839
+        - 549
+        - 1679
+        archetype: cross_section
+        context:
+          taxon: Prothoe franck
+          imaging_modality: FIB-SEM
+          view_orientation: cross-section
+        scale_bar:
+          um: 0.5
+          search_box:
+          - 416
+          - 778
+          - 533
+          - 820
+          polarity: bright
+      A_dprime:
+        label: A''
+        title: Prothoe franck transverse FIB-SEM cross-section of ridges and crossribs
+        bbox:
+        - 569
+        - 839
+        - 1119
+        - 1679
+        archetype: cross_section
+        context:
+          taxon: Prothoe franck
+          imaging_modality: FIB-SEM
+          view_orientation: cross-section
+        scale_bar:
+          um: 0.5
+          search_box:
+          - 408
+          - 777
+          - 532
+          - 820
+          polarity: bright
+      B:
+        label: B
+        title: Pyrrhopyge hadassa (Hesperiidae) abwing optical microscopy of cover
+          scale
+        bbox:
+        - 1125
+        - 0
+        - 2244
+        - 839
+        archetype: planar_microscopy
+        context:
+          taxon: Pyrrhopyge hadassa
+          imaging_modality: optical microscopy
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 987
+          - 779
+          - 1100
+          - 822
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 140
+          - 100
+          - 960
+          - 720
+          spacing_range_um:
+          - 1.0
+          - 3.0
+          wavevector_angle_deg:
+          - 65.0
+          - -65.0
+      B_prime:
+        label: B'
+        title: Pyrrhopyge hadassa sagittal FIB-SEM view showing ridge height
+        bbox:
+        - 1125
+        - 839
+        - 1676
+        - 1679
+        archetype: cross_section
+        context:
+          taxon: Pyrrhopyge hadassa
+          imaging_modality: FIB-SEM
+          view_orientation: cross-section
+        scale_bar:
+          um: 0.5
+          search_box:
+          - 352
+          - 777
+          - 529
+          - 820
+          polarity: bright
+      B_dprime:
+        label: B''
+        title: Pyrrhopyge hadassa transverse FIB-SEM cross-section
+        bbox:
+        - 1696
+        - 839
+        - 2244
+        - 1679
+        archetype: cross_section
+        context:
+          taxon: Pyrrhopyge hadassa
+          imaging_modality: FIB-SEM
+          view_orientation: cross-section
+        scale_bar:
+          um: 0.5
+          search_box:
+          - 400
+          - 777
+          - 533
+          - 820
+          polarity: bright
+      C:
+        label: C
+        title: Euploea mulciber (Nymphalidae) abwing optical microscopy of blue cover
+          scale
+        bbox:
+        - 0
+        - 1696
+        - 1119
+        - 2537
+        archetype: planar_microscopy
+        context:
+          taxon: Euploea mulciber
+          imaging_modality: optical microscopy
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 975
+          - 780
+          - 1101
+          - 823
+          polarity: bright
+      C_prime:
+        label: C'
+        title: Euploea mulciber sagittal FIB-SEM view
+        bbox:
+        - 0
+        - 2537
+        - 549
+        - 3376
+        archetype: cross_section
+        context:
+          taxon: Euploea mulciber
+          imaging_modality: FIB-SEM
+          view_orientation: cross-section
+        scale_bar:
+          um: 0.5
+          search_box:
+          - 371
+          - 776
+          - 529
+          - 819
+          polarity: bright
+      C_dprime:
+        label: C''
+        title: Euploea mulciber transverse FIB-SEM cross-section
+        bbox:
+        - 569
+        - 2537
+        - 1119
+        - 3376
+        archetype: cross_section
+        context:
+          taxon: Euploea mulciber
+          imaging_modality: FIB-SEM
+          view_orientation: cross-section
+        scale_bar:
+          um: 0.5
+          search_box:
+          - 318
+          - 776
+          - 530
+          - 819
+          polarity: bright
+      D:
+        label: D
+        title: Paralaxita orphna (Riodinidae) abwing optical microscopy of cover scale
+        bbox:
+        - 1125
+        - 1696
+        - 2244
+        - 2537
+        archetype: planar_microscopy
+        context:
+          taxon: Paralaxita orphna
+          imaging_modality: optical microscopy
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 981
+          - 778
+          - 1099
+          - 821
+          polarity: bright
+      D_prime:
+        label: D'
+        title: Paralaxita orphna sagittal FIB-SEM view
+        bbox:
+        - 1125
+        - 2537
+        - 1676
+        - 3376
+        archetype: cross_section
+        context:
+          taxon: Paralaxita orphna
+          imaging_modality: FIB-SEM
+          view_orientation: cross-section
+        scale_bar:
+          um: 0.5
+          search_box:
+          - 365
+          - 779
+          - 529
+          - 821
+          polarity: bright
+      D_dprime:
+        label: D''
+        title: Paralaxita orphna transverse FIB-SEM cross-section
+        bbox:
+        - 1696
+        - 2537
+        - 2244
+        - 3376
+        archetype: cross_section
+        context:
+          taxon: Paralaxita orphna
+          imaging_modality: FIB-SEM
+          view_orientation: cross-section
+        scale_bar:
+          um: 0.5
+          search_box:
+          - 373
+          - 779
+          - 531
+          - 821
+          polarity: bright
+  F4:
+    label: Fig. 4
+    file: gr4.jpg
+    xml_id: fig4
+    title: Correlation between ridge height and ridge color hue across 39 scales from
+      34 butterfly species
+    caption_anchor:
+      quote: Correlation between ridge height and ridge color hue across species
+      where: Fig. 4 caption
+    context:
+      taxon: Papilionoidea (34 species)
+      imaging_modality: FIB-SEM
+    panels:
+      A:
+        label: A
+        title: Ridge height vs peak reflectance wavelength across 39 scales (34 species)
+          with x/y error bars
+        bbox:
+        - 0
+        - 0
+        - 2525
+        - 1939
+        archetype: quantitative_plot
+        extractor: extractors/f4_cohorts.py:extract
+      B:
+        label: B
+        title: PGLS linear regression and 95% CI for shorter-ridge cohort (268–1036
+          nm, p = 3.1e-3)
+        bbox:
+        - 2530
+        - 0
+        - 3408
+        - 770
+        archetype: quantitative_plot
+        extractor: extractors/f4_cohorts.py:extract
+      C:
+        label: C
+        title: PGLS linear regression and 95% CI for taller-ridge cohort (1126–2184
+          nm, p < 1e-4)
+        bbox:
+        - 2530
+        - 772
+        - 3408
+        - 1264
+        archetype: quantitative_plot
+        extractor: extractors/f4_cohorts.py:extract
+      D:
+        label: D
+        title: Thin-film interference theoretical curves (i = 2, 4, 6) relating ridge
+          height and peak wavelength
+        bbox:
+        - 2530
+        - 1266
+        - 3408
+        - 1840
+        archetype: quantitative_plot
+        partial_x_range: true
+        extractor: extractors/f4_cohorts.py:extract
+  F5:
+    label: Fig. 5
+    file: gr5.jpg
+    xml_id: fig5
+    title: Focused ion beam (FIB) milling test of ridge height vs lamellae in Morpho
+      didius
+    caption_anchor:
+      quote: Testing the role of ridge height in Morpho didius
+      where: Fig. 5 caption
+    context:
+      taxon: Morpho didius
+      functional_architecture: ridge-lamellar reflector
+      scale_type: cover scale
+    panels:
+      A:
+        label: A
+        title: Adult Morpho didius specimen macro photograph
+        bbox:
+        - 10
+        - 10
+        - 1460
+        - 885
+        archetype: macro_morphology
+        scale_bar:
+          um: 20000.0
+          px: 138.0
+          polarity: dark
+      B:
+        label: B
+        title: Epi-illumination optical microscopy (100x) showing blue ridges in Morpho
+          didius
+        bbox:
+        - 1500
+        - 10
+        - 2890
+        - 872
+        archetype: planar_microscopy
+        context:
+          imaging_modality: optical microscopy
+          view_orientation: top-down apical
+        scale_bar:
+          um: 3.0
+          search_box:
+          - 1162
+          - 795
+          - 1324
+          - 836
+          polarity: bright
+      C:
+        label: C
+        title: SEM top view and schematic after FIB milling of two consecutive full
+          ridges (core + lamellae)
+        bbox:
+        - 10
+        - 945
+        - 1460
+        - 1865
+        archetype: planar_microscopy
+        context:
+          imaging_modality: FIB-SEM
+          view_orientation: top-down apical
+          perturbation_modality: FIB milling
+          hydration_and_prep: FIB milled
+        scale_bar:
+          um: 1.0
+          search_box:
+          - 1177
+          - 850
+          - 1339
+          - 892
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 495
+          - 78
+          - 1360
+          - 255
+          spacing_range_um:
+          - 0.45
+          - 1.1
+          wavevector_angle_deg:
+          - -20.0
+          - 20.0
+      D:
+        label: D
+        title: SEM top view and schematic after FIB milling of lateral lamellae only
+        bbox:
+        - 1475
+        - 945
+        - 2905
+        - 1865
+        archetype: planar_microscopy
+        context:
+          imaging_modality: FIB-SEM
+          view_orientation: top-down apical
+          perturbation_modality: FIB milling
+          hydration_and_prep: FIB milled
+        scale_bar:
+          um: 1.0
+          search_box:
+          - 1195
+          - 850
+          - 1357
+          - 892
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 505
+          - 78
+          - 1360
+          - 255
+          spacing_range_um:
+          - 0.45
+          - 1.1
+          wavevector_angle_deg:
+          - -20.0
+          - 20.0
+      C_prime:
+        label: C'
+        title: Measured reflectance spectra of intact and full-ridge FIB-milled Morpho
+          didius scales
+        bbox:
+        - 0
+        - 1930
+        - 1455
+        - 3040
+        archetype: spectral_or_profile
+        context:
+          imaging_modality: microspectrophotometry
+          perturbation_modality: FIB milling
+        extractor: extractors/f5_milling.py:extract
+      D_prime:
+        label: D'
+        title: Measured reflectance spectra of intact and lamellae-milled Morpho didius
+          scales
+        bbox:
+        - 1460
+        - 1930
+        - 2917
+        - 3040
+        archetype: spectral_or_profile
+        context:
+          imaging_modality: microspectrophotometry
+          perturbation_modality: FIB milling
+        extractor: extractors/f5_milling.py:extract
+      C_dprime:
+        label: C''
+        title: FDTD simulated reflectance of intact and full-ridge milled Morpho didius
+          scales
+        bbox:
+        - 0
+        - 3040
+        - 1455
+        - 4133
+        archetype: spectral_or_profile
+        context:
+          perturbation_modality: FIB milling
+        extractor: extractors/f5_milling.py:extract
+      D_dprime:
+        label: D''
+        title: FDTD simulated reflectance of intact and lamellae-milled Morpho didius
+          scales
+        bbox:
+        - 1460
+        - 3040
+        - 2917
+        - 4133
+        archetype: spectral_or_profile
+        context:
+          perturbation_modality: FIB milling
+        extractor: extractors/f5_milling.py:extract

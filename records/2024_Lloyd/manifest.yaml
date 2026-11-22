@@ -1,0 +1,53 @@
+id: 2024_Lloyd
+doi: 10.1038/s41467-024-48060-3
+title: The actin cytoskeleton plays multiple roles in structural colour formation in butterfly wing scales
+year: 2024
+journal: Nature Communications
+oa_status: open_access
+license: CC-BY-4.0
+figure_embed_policy: public_thumbnails
+repositories:
+  - kind: Figshare
+    url: https://orda.shef.ac.uk/articles/software/Code_for_Actin_Crosslinking_and_Reorganisation_in_Iridescent_Butterfly_Scale_Development/25422754
+    doi: 10.15131/shef.data.25422754
+    note: 7 R statistical scripts downloaded locally; raw measurement CSVs omitted from author upload.
+  - kind: Figshare
+    url: https://doi.org/10.15131/shef.data.c.7114033
+    doi: 10.15131/shef.data.c.7114033
+    note: Raw confocal and TauSTED microscopy TIFF stacks indexed via metadata.
+files:
+  - file: PMC11106069.xml
+    role: main_text
+  - file: fig1.png
+    role: main_figure
+  - file: 41467_2024_48060_Fig2_HTML.jpg
+    role: main_figure
+  - file: 41467_2024_48060_Fig3_HTML.jpg
+    role: main_figure
+  - file: 41467_2024_48060_Fig4_HTML.jpg
+    role: main_figure
+  - file: 41467_2024_48060_Fig5_HTML.jpg
+    role: main_figure
+  - file: 41467_2024_48060_Fig6_HTML.jpg
+    role: main_figure
+  - file: 41467_2024_48060_Fig7_HTML.jpg
+    role: main_figure
+  - file: 41467_2024_48060_Fig8_HTML.jpg
+    role: main_figure
+  - file: associated/SEM_ANALYSIS_LLOYD_2024.R
+    role: code
+  - file: associated/CONFOCAL_ANALYSIS_2024.R
+    role: code
+  - file: associated/SPECTROMETRY_ANALYSIS_CYTO_D_LLOYD_2024.R
+    role: code
+  - file: associated/RIDGE_NUMBER_CYTO_D_LLOYD_2024.R
+    role: code
+  - file: associated/CURVATURE_ANALYSIS_CYTO_D_LLOYD_2024.R
+    role: code
+  - file: associated/AFM_ANALYSIS_CYTO_D_LLOYD_2024.R
+    role: code
+  - file: associated/SEM_ANALYSIS_DEMOPHOON_LLOYD_2024.R
+    role: code
+not_used:
+  - file: 41467_2024_48060_Fig1_HTML.jpg
+    why: Lower-resolution (750x618) PMC HTML copy of Fig. 1; full-resolution 1500x1236 fig1.png is used instead.

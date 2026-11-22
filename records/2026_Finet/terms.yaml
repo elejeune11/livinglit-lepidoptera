@@ -1,0 +1,63 @@
+record: 2026_Finet
+vocabulary_version: 1
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_3_pilot
+edits: []
+mappings:
+  - field: taxon
+    stated: 34 species
+    terms:
+      - taxon:papilionoidea
+  - field: scale_type
+    stated: ground scales
+    terms:
+      - scale_type:ground_scale
+  - field: scale_type
+    stated: cover scales
+    terms:
+      - scale_type:cover_scale
+  - field: functional_architecture
+    stated: stacked lamellae
+    terms:
+      - functional_architecture:ridge_lamellar_multilayer
+  - field: functional_architecture
+    stated: ridges and crossribs
+    terms:
+      - functional_architecture:structural_reflector
+  - field: perturbation_modality
+    stated: artificial selection
+    terms:
+      - perturbation_modality:artificial_selection
+  - field: perturbation_modality
+    stated: FIB-SEM millings
+    terms:
+      - perturbation_modality:fib_milling
+  - field: imaging_modality
+    stated: microspectrophotometer
+    terms:
+      - imaging_modality:microspectrophotometry
+  - field: view_orientation
+    stated: transverse and sagittal
+    terms:
+      - view_orientation:cross_section
+  - field: view_orientation
+    stated: top view
+    terms:
+      - view_orientation:top_down_apical
+  - field: view_orientation
+    stated: abwing side
+    terms:
+      - view_orientation:top_down_apical
+  - field: hydration_and_prep
+    stated: dried specimens
+    terms:
+      - hydration_and_prep:dry_native
+  - field: hydration_and_prep
+    stated: uncoated
+    terms:
+      - hydration_and_prep:dry_native
+  - field: measure
+    stated: spectral hue shift
+    terms:
+      - measure:spectral_hue_shift

@@ -1,0 +1,2229 @@
+record: 2024_Lloyd
+default_context:
+  species: Heliconius sara
+  family: Nymphalidae
+  anatomical_region: dorsal forewing
+  genetic_perturbation: wild type
+  chemical_perturbation: none
+figures:
+  F1:
+    label: Fig. 1
+    file: fig1.png
+    xml_id: Fig1
+    title: Adult Heliconius sara wing regions, scale imbrication, SEM ridge/crossrib
+      ultrastructure, and TEM multilayer lamellae
+    caption_anchor:
+      quote: The neotropical butterfly Heliconius sara.A Dorsal view of a Heliconius
+        sara individual.
+      where: Fig. 1
+    context:
+      developmental_stage: adult
+    panels:
+      A:
+        label: 1A
+        title: Dorsal whole-butterfly view of adult Heliconius sara
+        bbox:
+        - 4
+        - 4
+        - 748
+        - 346
+        archetype: macro_morphology
+        context:
+          imaging_modality: macro photography
+          view_orientation: whole-mount
+        scale_bar:
+          um: 10000.0
+          search_box:
+          - 600
+          - 290
+          - 740
+          - 342
+          polarity: dark
+        extracted_data: {}
+      B:
+        label: 1B
+        title: Proximal dorsal forewing iridescent blue scale array
+        bbox:
+        - 4
+        - 355
+        - 371
+        - 731
+        archetype: macro_morphology
+        context:
+          wing_region: proximal forewing
+          color_mechanism: iridescent structural
+          imaging_modality: optical microscopy
+          view_orientation: top-down apical
+        extracted_data: {}
+      C:
+        label: 1C
+        title: Distal dorsal forewing non-iridescent black and white band scales
+        bbox:
+        - 377
+        - 355
+        - 748
+        - 731
+        archetype: macro_morphology
+        context:
+          wing_region: distal forewing
+          color_mechanism: non-iridescent pigmentary
+          imaging_modality: optical microscopy
+          view_orientation: top-down apical
+        extracted_data: {}
+      D:
+        label: 1D
+        title: Low-magnification SEM of overlapping cover (arrow) and ground (arrowhead)
+          scales
+        bbox:
+        - 752
+        - 4
+        - 1496
+        - 731
+        archetype: macro_morphology
+        context:
+          scale_type: cover and ground scales
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 50.0
+          search_box:
+          - 550
+          - 665
+          - 735
+          - 722
+          polarity: bright
+        extracted_data: {}
+      E:
+        label: 1E
+        title: Top-down SEM of iridescent H. sara scale periodic longitudinal ridges
+        bbox:
+        - 4
+        - 742
+        - 499
+        - 1233
+        archetype: planar_microscopy
+        context:
+          wing_region: proximal forewing
+          scale_type: cover scale
+          color_mechanism: iridescent structural
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 345
+          - 440
+          - 490
+          - 488
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 60
+          - 50
+          - 440
+          - 430
+          spacing_range_um:
+          - 0.4
+          - 2.0
+          wavevector_angle_deg:
+          - 65
+          - -65
+          measure_crossrib: true
+        linked_items:
+        - F1E_sem_ridge
+        - F2_ridge_spacing
+        extracted_data: {}
+      F:
+        label: 1F
+        title: High-magnification SEM of ridge lamellae, crossribs, microribs, and
+          lumen windows
+        bbox:
+        - 506
+        - 742
+        - 995
+        - 1233
+        archetype: planar_microscopy
+        context:
+          wing_region: proximal forewing
+          scale_type: cover scale
+          color_mechanism: iridescent structural
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 1.0
+          search_box:
+          - 300
+          - 435
+          - 485
+          - 488
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 200
+          - 30
+          - 465
+          - 355
+          spacing_range_um:
+          - 0.5
+          - 1.5
+          wavevector_angle_deg:
+          - 60
+          - -60
+          measure_crossrib: true
+          crossrib_range_um:
+          - 0.3
+          - 0.9
+        linked_items:
+        - S_crossrib_spacing
+        extracted_data: {}
+      G:
+        label: 1G
+        title: TEM cross-section through iridescent H. sara ridges showing multilayer
+          photonic nanostructures
+        bbox:
+        - 1002
+        - 742
+        - 1496
+        - 1233
+        archetype: cross_section
+        context:
+          wing_region: proximal forewing
+          scale_type: cover scale
+          color_mechanism: iridescent structural
+          imaging_modality: TEM
+          view_orientation: cross-section
+        scale_bar:
+          um: 1.0
+          search_box:
+          - 240
+          - 430
+          - 485
+          - 488
+          polarity: dark
+        extracted_data: {}
+  F2:
+    label: Fig. 2
+    file: 41467_2024_48060_Fig2_HTML.jpg
+    xml_id: Fig2
+    title: Adult ridge morphometrics and 50% pupal F-actin bundle spacing/width in
+      iridescent vs black H. sara scales
+    caption_anchor:
+      quote: Morphological analyses of adult ridge organization and pupal actin patterning.
+      where: Fig. 2
+    context: {}
+    panels:
+      A:
+        label: 2A
+        title: False-color SEMs of blue vs black cover and ground scales sampled from
+          forewing
+        bbox:
+        - 2
+        - 2
+        - 248
+        - 250
+        archetype: macro_morphology
+        context:
+          developmental_stage: adult
+          imaging_modality: SEM + macro
+        scale_bar:
+          um: 10000.0
+          px: 51.0
+          polarity: dark
+        extracted_data: {}
+      B:
+        label: 2B
+        title: Representative whole-scale SEM showing length, width, and area measurement
+          axes
+        bbox:
+        - 258
+        - 2
+        - 352
+        - 250
+        archetype: macro_morphology
+        context:
+          developmental_stage: adult
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 20.0
+          search_box:
+          - 40
+          - 225
+          - 92
+          - 248
+          px: 31.0
+          polarity: bright
+        linked_items:
+        - F2_scale_width
+        - F2_scale_area
+        extracted_data: {}
+      C:
+        label: 2C
+        title: High-mag SEM illustrating ridge spacing (arrowhead) and ridge width
+          (arrow) definitions
+        bbox:
+        - 355
+        - 2
+        - 750
+        - 250
+        archetype: planar_microscopy
+        context:
+          developmental_stage: adult
+          color_mechanism: iridescent structural
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 300
+          - 215
+          - 392
+          - 248
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 20
+          - 30
+          - 230
+          - 210
+          spacing_range_um:
+          - 0.5
+          - 1.5
+          wavevector_angle_deg:
+          - 55
+          - -55
+        linked_items:
+        - F2_ridge_spacing
+        - F2_ridge_width
+        extracted_data: {}
+      D:
+        label: 2D
+        title: 'Joint scatter + marginal densities: Ridge number vs scale width (µm)
+          across blue/black cover/ground'
+        bbox:
+        - 2
+        - 255
+        - 250
+        - 480
+        archetype: quantitative_plot
+        context:
+          developmental_stage: adult
+        linked_items:
+        - F2_scale_width
+        extracted_data: {}
+        linked_resources:
+        - lloyd_r_scripts
+        extractor: extractors/f2_morphometrics.py:extract
+      E:
+        label: 2E
+        title: 'Joint scatter + marginal densities: Ridge number vs ridge spacing
+          (µm)'
+        bbox:
+        - 252
+        - 255
+        - 500
+        - 480
+        archetype: quantitative_plot
+        context:
+          developmental_stage: adult
+        linked_items:
+        - F2_ridge_spacing
+        extracted_data: {}
+        linked_resources:
+        - lloyd_r_scripts
+        extractor: extractors/f2_morphometrics.py:extract
+      F:
+        label: 2F
+        title: 'Joint scatter + marginal densities: Ridge spacing (µm) vs ridge width
+          (µm)'
+        bbox:
+        - 502
+        - 255
+        - 750
+        - 480
+        archetype: quantitative_plot
+        context:
+          developmental_stage: adult
+        linked_items:
+        - F2_ridge_spacing
+        - F2_ridge_width
+        extracted_data: {}
+        linked_resources:
+        - lloyd_r_scripts
+        extractor: extractors/f2_morphometrics.py:extract
+      G:
+        label: 2G
+        title: Whole-mounted phalloidin-stained 50% pupal H. sara forewing (iridescent
+          vs black ROIs)
+        bbox:
+        - 2
+        - 530
+        - 318
+        - 738
+        archetype: macro_morphology
+        stains_or_markers:
+        - phalloidin (F-actin)
+        context:
+          developmental_stage: 50% pupal development
+          imaging_modality: fluorescence microscopy
+          view_orientation: whole-mount
+        scale_bar:
+          um: 1000.0
+          search_box:
+          - 255
+          - 180
+          - 314
+          - 206
+          polarity: bright
+        extracted_data: {}
+      H:
+        label: 2H
+        title: Overlapping 50% pupal scales stained with phalloidin showing parallel
+          actin bundles
+        bbox:
+        - 321
+        - 530
+        - 535
+        - 738
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin (F-actin)
+        context:
+          developmental_stage: 50% pupal development
+          imaging_modality: confocal
+          view_orientation: top-down apical
+        scale_bar:
+          um: 20.0
+          search_box:
+          - 165
+          - 180
+          - 212
+          - 206
+          polarity: bright
+        extracted_data: {}
+      I:
+        label: 2I
+        title: Single 50% pupal scale confocal F-actin bundle array (with high-mag
+          zoom Ii)
+        bbox:
+        - 540
+        - 530
+        - 750
+        - 738
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin (F-actin)
+        context:
+          developmental_stage: 50% pupal development
+          imaging_modality: confocal
+          view_orientation: top-down apical
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 150
+          - 180
+          - 208
+          - 206
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 15
+          - 70
+          - 138
+          - 178
+          spacing_range_um:
+          - 0.6
+          - 2.0
+          channel: green
+        linked_items:
+        - F2_actin_spacing
+        extracted_data: {}
+      J:
+        label: 2J
+        title: 'Notched boxplot: Actin bundle width (µm) at 50% pupal development
+          (black vs blue, n=12)'
+        bbox:
+        - 2
+        - 745
+        - 250
+        - 975
+        archetype: quantitative_plot
+        context:
+          developmental_stage: 50% pupal development
+          imaging_modality: confocal
+        linked_items:
+        - F2_actin_width
+        extracted_data: {}
+        linked_resources:
+        - lloyd_r_scripts
+        - lloyd_confocal_archive
+        extractor: extractors/f2_morphometrics.py:extract
+      K:
+        label: 2K
+        title: 'Notched boxplot: Actin bundle spacing (µm) at 50% pupal development
+          (black vs blue, n=12)'
+        bbox:
+        - 252
+        - 745
+        - 500
+        - 975
+        archetype: quantitative_plot
+        context:
+          developmental_stage: 50% pupal development
+          imaging_modality: confocal
+        linked_items:
+        - F2_actin_spacing
+        linked_claims:
+        - C1_actin_templates_ridges
+        extracted_data: {}
+        linked_resources:
+        - lloyd_r_scripts
+        - lloyd_confocal_archive
+        extractor: extractors/f2_morphometrics.py:extract
+      L:
+        label: 2L
+        title: 'Notched boxplot: Actin bundle number per scale at 50% pupal vs adult
+          ridge number'
+        bbox:
+        - 502
+        - 745
+        - 750
+        - 975
+        archetype: quantitative_plot
+        context:
+          developmental_stage: 50% pupal development
+          imaging_modality: confocal
+        extracted_data: {}
+        linked_resources:
+        - lloyd_r_scripts
+        - lloyd_confocal_archive
+        extractor: extractors/f2_morphometrics.py:extract
+  F3:
+    label: Fig. 3
+    file: 41467_2024_48060_Fig3_HTML.jpg
+    xml_id: Fig3
+    title: Confocal developmental time-series of H. sara wing scales from 25% to 62.5%
+      pupal development
+    caption_anchor:
+      quote: Confocal series of normal wing scale development in H. sara.Cell nuclei
+        counterstained with DAPI (blue).
+      where: Fig. 3
+    context:
+      imaging_modality: confocal
+      view_orientation: top-down apical
+      sample_preparation: fixed and stained
+    panels:
+      A:
+        label: 3A
+        title: '25–31% pupal: nascent scale buds stained for phalloidin (actin) +
+          DAPI'
+        bbox:
+        - 38
+        - 4
+        - 272
+        - 238
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - DAPI
+        context:
+          developmental_stage: 28% pupal development
+        scale_bar:
+          um: 20.0
+          search_box:
+          - 177
+          - 214
+          - 233
+          - 225
+          polarity: bright
+          px: 48.0
+        linked_resources:
+        - lloyd_confocal_archive
+        extracted_data: {}
+      B:
+        label: 3B
+        title: '25–31% pupal: epithelium-wide ordered rows of nascent scales (anti-alpha
+          Tubulin)'
+        bbox:
+        - 275
+        - 4
+        - 508
+        - 238
+        archetype: planar_microscopy
+        stains_or_markers:
+        - anti-alpha Tubulin
+        context:
+          developmental_stage: 28% pupal development
+        scale_bar:
+          um: 20.0
+          search_box:
+          - 195
+          - 200
+          - 232
+          - 232
+          polarity: bright
+        linked_resources:
+        - lloyd_confocal_archive
+        extracted_data: {}
+      C:
+        label: 3C
+        title: '25–31% pupal: alternating cover (arrowhead) and ground (arrow) precursor
+          cytoplasm & socket cells'
+        bbox:
+        - 511
+        - 4
+        - 746
+        - 238
+        archetype: planar_microscopy
+        stains_or_markers:
+        - anti-alpha Tubulin
+        - DAPI
+        context:
+          developmental_stage: 28% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 180
+          - 200
+          - 232
+          - 232
+          polarity: bright
+        linked_resources:
+        - lloyd_confocal_archive
+        extracted_data: {}
+      D:
+        label: 3D
+        title: '37.5–44% pupal: elongated club-like scale sacs filled with parallel
+          F-actin bundles'
+        bbox:
+        - 38
+        - 241
+        - 272
+        - 474
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - DAPI
+        context:
+          developmental_stage: 41% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 180
+          - 200
+          - 232
+          - 232
+          polarity: bright
+        linked_resources:
+        - lloyd_confocal_archive
+        extracted_data: {}
+      E:
+        label: 3E
+        title: '37.5–44% pupal: WGA plasma-membrane staining of expanding scale sacs'
+        bbox:
+        - 275
+        - 241
+        - 508
+        - 474
+        archetype: planar_microscopy
+        stains_or_markers:
+        - WGA
+        context:
+          developmental_stage: 41% pupal development
+        scale_bar:
+          um: 20.0
+          search_box:
+          - 175
+          - 200
+          - 232
+          - 232
+          polarity: bright
+        linked_resources:
+        - lloyd_confocal_archive
+        extracted_data: {}
+      F:
+        label: 3F
+        title: '37.5–44% pupal: actin bundles traversing socket rings at scale base'
+        bbox:
+        - 511
+        - 241
+        - 746
+        - 474
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - DAPI
+        context:
+          developmental_stage: 41% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 180
+          - 200
+          - 232
+          - 232
+          polarity: bright
+        linked_resources:
+        - lloyd_confocal_archive
+        extracted_data: {}
+      G:
+        label: 3G
+        title: '50% pupal: low-mag distal forewing carpet of flattened scales'
+        bbox:
+        - 38
+        - 477
+        - 272
+        - 709
+        archetype: macro_morphology
+        stains_or_markers:
+        - phalloidin
+        context:
+          developmental_stage: 50% pupal development
+        scale_bar:
+          um: 300.0
+          search_box:
+          - 165
+          - 200
+          - 232
+          - 232
+          polarity: bright
+        linked_resources:
+        - lloyd_confocal_archive
+        extracted_data: {}
+      H:
+        label: 3H
+        title: '50% pupal: overlapping scales and actin-rich wing-vein hairs'
+        bbox:
+        - 275
+        - 477
+        - 508
+        - 709
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        context:
+          developmental_stage: 50% pupal development
+        scale_bar:
+          um: 50.0
+          search_box:
+          - 170
+          - 200
+          - 232
+          - 232
+          polarity: bright
+        linked_resources:
+        - lloyd_confocal_archive
+        extracted_data: {}
+      I:
+        label: 3I
+        title: '50% pupal: ordered parallel F-actin bundles extending into scale fingers'
+        bbox:
+        - 511
+        - 477
+        - 746
+        - 709
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        context:
+          developmental_stage: 50% pupal development
+        scale_bar:
+          um: 20.0
+          search_box:
+          - 180
+          - 200
+          - 232
+          - 232
+          polarity: bright
+        linked_resources:
+        - lloyd_confocal_archive
+        extracted_data: {}
+      J:
+        label: 3J
+        title: '62.5% pupal: phalloidin staining showing actin sub-bundling gaps'
+        bbox:
+        - 38
+        - 712
+        - 272
+        - 946
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        context:
+          developmental_stage: 62.5% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 165
+          - 200
+          - 232
+          - 232
+          polarity: bright
+        linked_resources:
+        - lloyd_confocal_archive
+        extracted_data: {}
+      K:
+        label: 3K
+        title: '62.5% pupal: WGA staining of extracellularly deposited chitin ridges'
+        bbox:
+        - 275
+        - 712
+        - 508
+        - 946
+        archetype: planar_microscopy
+        stains_or_markers:
+        - WGA (chitin)
+        context:
+          developmental_stage: 62.5% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 165
+          - 200
+          - 232
+          - 232
+          polarity: bright
+        linked_resources:
+        - lloyd_confocal_archive
+        extracted_data: {}
+      L:
+        label: 3L
+        title: '62.5% pupal: merged actin (green) + WGA chitin (magenta) showing inter-bundle
+          ridge deposition'
+        bbox:
+        - 511
+        - 712
+        - 746
+        - 946
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - WGA (chitin)
+        context:
+          developmental_stage: 62.5% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 165
+          - 200
+          - 232
+          - 232
+          polarity: bright
+        extracted_data: {}
+        linked_resources:
+        - lloyd_confocal_archive
+  F4:
+    label: Fig. 4
+    file: 41467_2024_48060_Fig4_HTML.jpg
+    xml_id: Fig4
+    title: TauSTED super-resolution 4-stage reorganization of F-actin and chitin from
+      44% to 81% pupal development
+    caption_anchor:
+      quote: TauSTED super-resolution microscopy of the rearranging actin cytoskeleton
+        during the development of H.sara scales.
+      where: Fig. 4
+    context:
+      imaging_modality: TauSTED
+      view_orientation: top-down apical
+      sample_preparation: fixed and stained
+    panels:
+      A:
+        label: 4A
+        title: 44% pupal depth-coded F-actin (0–1095 nm; dorsal fine vs internal thick
+          bundles)
+        bbox:
+        - 2
+        - 2
+        - 373
+        - 373
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin (depth-coded)
+        context:
+          developmental_stage: 44% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 275
+          - 345
+          - 370
+          - 371
+          polarity: bright
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+      B:
+        label: 4B
+        title: 44% pupal actin (green) + incipient peripheral chitin (magenta)
+        bbox:
+        - 2
+        - 375
+        - 187
+        - 559
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR (chitin)
+        context:
+          developmental_stage: 44% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 135
+          - 158
+          - 184
+          - 182
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      C:
+        label: 4C
+        title: '44% pupal scale-tip zoom: internal actin bundles anchor scale finger
+          initiation'
+        bbox:
+        - 189
+        - 375
+        - 373
+        - 559
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR (chitin)
+        context:
+          developmental_stage: 44% pupal development
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 125
+          - 158
+          - 183
+          - 182
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      D:
+        label: 4D
+        title: 50% pupal depth-coded F-actin (0–1974 nm; maximally spaced parallel
+          bundles)
+        bbox:
+        - 376
+        - 2
+        - 748
+        - 373
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin (depth-coded)
+        context:
+          developmental_stage: 50% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 275
+          - 345
+          - 370
+          - 371
+          polarity: bright
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+      E:
+        label: 4E
+        title: 50% pupal whole-scale actin + emerging chitin ridges
+        bbox:
+        - 376
+        - 375
+        - 561
+        - 559
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR (chitin)
+        context:
+          developmental_stage: 50% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 135
+          - 158
+          - 183
+          - 182
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      F:
+        label: 4F
+        title: '50% pupal high-mag TauSTED: alternating actin bundles (green) and
+          nascent chitin ridges (magenta)'
+        bbox:
+        - 563
+        - 375
+        - 748
+        - 559
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR (chitin)
+        context:
+          developmental_stage: 50% pupal development
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 100
+          - 155
+          - 183
+          - 183
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 10
+          - 15
+          - 175
+          - 150
+          spacing_range_um:
+          - 0.6
+          - 2.0
+          channel: green
+        linked_items:
+        - F2_actin_spacing
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+        harmonic_verified: true
+      G:
+        label: 4G
+        title: '63% pupal depth-coded F-actin (0–2632 nm): parallel bundle dissociation
+          & internal branched network'
+        bbox:
+        - 2
+        - 561
+        - 373
+        - 931
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin (depth-coded)
+        context:
+          developmental_stage: 63% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 275
+          - 342
+          - 370
+          - 369
+          polarity: bright
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+      H:
+        label: 4H
+        title: 63% pupal actin + chitin overview
+        bbox:
+        - 2
+        - 933
+        - 187
+        - 1119
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR (chitin)
+        context:
+          developmental_stage: 63% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 139
+          - 167
+          - 185
+          - 186
+          polarity: bright
+          px: 40.0
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      I:
+        label: 4I
+        title: 63% pupal zoom of branched F-actin network underlying ridges
+        bbox:
+        - 189
+        - 933
+        - 373
+        - 1119
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR (chitin)
+        context:
+          developmental_stage: 63% pupal development
+        scale_bar:
+          um: 5.0
+          search_box:
+          - 95
+          - 158
+          - 183
+          - 184
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      J:
+        label: 4J
+        title: '81% pupal depth-coded F-actin (0–1097 nm): fingertip arborization
+          & square actin blocks'
+        bbox:
+        - 376
+        - 561
+        - 748
+        - 931
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin (depth-coded)
+        context:
+          developmental_stage: 81% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 275
+          - 342
+          - 370
+          - 369
+          polarity: bright
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+      K:
+        label: 4K
+        title: 81% pupal mature chitin ridges/crossribs with residual block-like actin
+        bbox:
+        - 376
+        - 933
+        - 561
+        - 1119
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR (chitin)
+        context:
+          developmental_stage: 81% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 138
+          - 167
+          - 185
+          - 186
+          polarity: bright
+          px: 39.0
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      L:
+        label: 4L
+        title: 81% pupal high-mag zoom of mature chitin ridges and crossribs
+        bbox:
+        - 563
+        - 933
+        - 748
+        - 1119
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR (chitin)
+        context:
+          developmental_stage: 81% pupal development
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 135
+          - 158
+          - 183
+          - 184
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+  F5:
+    label: Fig. 5
+    file: 41467_2024_48060_Fig5_HTML.jpg
+    xml_id: Fig5
+    title: TauSTED super-resolution + mechanistic cartoons of F-actin templating ridge
+      layers, microribs, and lumen windows
+    caption_anchor:
+      quote: TauSTED super resolution imaging of actin filaments associated with various
+        scale ultrastructures.
+      where: Fig. 5
+    context:
+      imaging_modality: TauSTED
+      sample_preparation: fixed and stained
+    panels:
+      A:
+        label: 5A
+        title: 63% pupal black scale overview (actin green + chitin magenta)
+        bbox:
+        - 3
+        - 2
+        - 387
+        - 386
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        context:
+          developmental_stage: 63% pupal development
+          color_mechanism: non-iridescent pigmentary
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 290
+          - 355
+          - 382
+          - 383
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      A_cartoon:
+        label: 5A (Model)
+        title: 'Mechanistic schematic: sub-ridge actin filaments underlying angled
+          ridge lamellae'
+        bbox:
+        - 395
+        - 2
+        - 672
+        - 192
+        archetype: phylogeny_or_schematic
+        context:
+          developmental_stage: 63% pupal development
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+      Ai:
+        label: 5Ai
+        title: 63% pupal zoom of angled scale-finger ridges showing actin beneath
+          chitin layers
+        bbox:
+        - 395
+        - 194
+        - 672
+        - 386
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        context:
+          developmental_stage: 63% pupal development
+          color_mechanism: non-iridescent pigmentary
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 175
+          - 165
+          - 274
+          - 190
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      B:
+        label: 5B
+        title: 69% pupal black scale overview showing fine side-wall actin striations
+        bbox:
+        - 3
+        - 389
+        - 387
+        - 771
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        context:
+          developmental_stage: 69% pupal development
+          color_mechanism: non-iridescent pigmentary
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 290
+          - 352
+          - 382
+          - 380
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      B_cartoon:
+        label: 5B (Model)
+        title: 'Mechanistic schematic: periodic lateral actin fibrils templating ridge-wall
+          microribs'
+        bbox:
+        - 395
+        - 389
+        - 672
+        - 578
+        archetype: phylogeny_or_schematic
+        context:
+          developmental_stage: 69% pupal development
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+      Bi:
+        label: 5Bi
+        title: 69% pupal zoom of microrib-like periodic actin filaments along ridge
+          walls
+        bbox:
+        - 395
+        - 580
+        - 672
+        - 771
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        context:
+          developmental_stage: 69% pupal development
+          color_mechanism: non-iridescent pigmentary
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 205
+          - 160
+          - 274
+          - 189
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      C:
+        label: 5C
+        title: 75% pupal iridescent scale overview filled with square actin blocks
+        bbox:
+        - 3
+        - 774
+        - 387
+        - 1158
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        context:
+          developmental_stage: 75% pupal development
+          color_mechanism: iridescent structural
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 290
+          - 352
+          - 382
+          - 382
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      C_cartoon:
+        label: 5C (Model)
+        title: 'Mechanistic schematic: square actin blocks occupying lumen windows
+          between crossribs'
+        bbox:
+        - 395
+        - 774
+        - 672
+        - 965
+        archetype: phylogeny_or_schematic
+        context:
+          developmental_stage: 75% pupal development
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+      Ci:
+        label: 5Ci
+        title: 75% pupal zoom of square actin blocks framed by chitin ridges and crossribs
+        bbox:
+        - 395
+        - 967
+        - 672
+        - 1158
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        context:
+          developmental_stage: 75% pupal development
+          color_mechanism: iridescent structural
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 165
+          - 160
+          - 274
+          - 189
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+  F6:
+    label: Fig. 6
+    file: 41467_2024_48060_Fig6_HTML.jpg
+    xml_id: Fig6
+    title: Cross-family conservation of developmental F-actin patterning in Parides
+      arcas (Papilionidae) and Morpho helenor (Nymphalidae)
+    caption_anchor:
+      quote: Actin patterning in the developing scales of Parides arcas (A-F) and
+        Morpho helenor (G-L).
+      where: Fig. 6
+    context:
+      imaging_modality: TauSTED
+      view_orientation: top-down apical
+      sample_preparation: fixed and stained
+    panels:
+      parides_adult:
+        label: 6 (P. arcas)
+        title: Adult dorsal view of Parides arcas (Papilionidae; green/pink wing patches)
+        bbox:
+        - 2
+        - 4
+        - 348
+        - 116
+        archetype: macro_morphology
+        context:
+          species: Parides arcas
+          family: Papilionidae
+          developmental_stage: adult
+          imaging_modality: macro photography
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      morpho_adult:
+        label: 6 (M. helenor)
+        title: Adult dorsal view of Morpho helenor (Nymphalidae; iridescent blue wings)
+        bbox:
+        - 351
+        - 4
+        - 698
+        - 116
+        archetype: macro_morphology
+        context:
+          species: Morpho helenor
+          family: Nymphalidae
+          developmental_stage: adult
+          imaging_modality: macro photography
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      A:
+        label: 6A
+        title: ~50% pupal P. arcas depth-coded F-actin (0–2028 nm; ventral bundles
+          + dorsal ridge network)
+        bbox:
+        - 2
+        - 119
+        - 232
+        - 350
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin (depth-coded)
+        context:
+          species: Parides arcas
+          family: Papilionidae
+          developmental_stage: 50% pupal development
+        scale_bar:
+          um: 5.0
+          search_box:
+          - 185
+          - 205
+          - 229
+          - 229
+          polarity: bright
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+      B:
+        label: 6B
+        title: ~50% pupal P. arcas actin + chitin scale tip
+        bbox:
+        - 234
+        - 119
+        - 348
+        - 234
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        context:
+          species: Parides arcas
+          family: Papilionidae
+          developmental_stage: 50% pupal development
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 94
+          - 104
+          - 114
+          - 115
+          polarity: bright
+          px: 14.0
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      C:
+        label: 6C
+        title: '~50% pupal P. arcas zoom: flared intra-ridge actin colocalizing with
+          cuticle layers'
+        bbox:
+        - 234
+        - 235
+        - 348
+        - 350
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        context:
+          species: Parides arcas
+          family: Papilionidae
+          developmental_stage: 50% pupal development
+        scale_bar:
+          um: 5.0
+          search_box:
+          - 80
+          - 95
+          - 113
+          - 114
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      D:
+        label: 6D
+        title: ~65% pupal P. arcas depth-coded F-actin (0–4872 nm; dissociated bundles
+          + radiating network)
+        bbox:
+        - 2
+        - 352
+        - 232
+        - 583
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin (depth-coded)
+        context:
+          species: Parides arcas
+          family: Papilionidae
+          developmental_stage: 65% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 185
+          - 205
+          - 229
+          - 229
+          polarity: bright
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+      E:
+        label: 6E
+        title: ~65% pupal P. arcas actin + chitin overview
+        bbox:
+        - 234
+        - 352
+        - 348
+        - 467
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        context:
+          species: Parides arcas
+          family: Papilionidae
+          developmental_stage: 65% pupal development
+        scale_bar:
+          um: 5.0
+          search_box:
+          - 93
+          - 102
+          - 114
+          - 115
+          polarity: bright
+          px: 15.0
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      F:
+        label: 6F
+        title: ~65% pupal P. arcas zoom of branched actin network between ridges
+        bbox:
+        - 234
+        - 468
+        - 348
+        - 583
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        context:
+          species: Parides arcas
+          family: Papilionidae
+          developmental_stage: 65% pupal development
+        scale_bar:
+          um: 10.0
+          search_box:
+          - 75
+          - 95
+          - 113
+          - 114
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      G:
+        label: 6G
+        title: 50% pupal Morpho helenor depth-coded F-actin (0–1981 nm; dense parallel
+          bundles)
+        bbox:
+        - 351
+        - 119
+        - 580
+        - 350
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin (depth-coded)
+        context:
+          species: Morpho helenor
+          family: Nymphalidae
+          color_mechanism: iridescent structural
+          developmental_stage: 50% pupal development
+        scale_bar:
+          um: 5.0
+          search_box:
+          - 175
+          - 205
+          - 228
+          - 229
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 40
+          - 12
+          - 140
+          - 108
+          spacing_range_um:
+          - 0.45
+          - 0.95
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+      H:
+        label: 6H
+        title: 50% pupal Morpho helenor actin + chitin scale
+        bbox:
+        - 582
+        - 119
+        - 698
+        - 234
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - WGA
+        context:
+          species: Morpho helenor
+          developmental_stage: 50% pupal development
+        scale_bar:
+          um: 5.0
+          search_box:
+          - 85
+          - 92
+          - 115
+          - 113
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      I:
+        label: 6I
+        title: 50% pupal Morpho helenor high-mag zoom of actin between & within ridges
+        bbox:
+        - 582
+        - 235
+        - 698
+        - 350
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - WGA
+        context:
+          species: Morpho helenor
+          developmental_stage: 50% pupal development
+        scale_bar:
+          um: 1.0
+          search_box:
+          - 90
+          - 95
+          - 115
+          - 114
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      J:
+        label: 6J
+        title: 60% pupal Morpho helenor depth-coded F-actin (0–3504 nm; ladder-like
+          transverse actin)
+        bbox:
+        - 351
+        - 352
+        - 580
+        - 583
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin (depth-coded)
+        context:
+          species: Morpho helenor
+          developmental_stage: 60% pupal development
+        scale_bar:
+          um: 5.0
+          search_box:
+          - 175
+          - 205
+          - 228
+          - 229
+          polarity: bright
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+      K:
+        label: 6K
+        title: 60% pupal Morpho helenor actin overview
+        bbox:
+        - 582
+        - 352
+        - 698
+        - 467
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - WGA
+        context:
+          species: Morpho helenor
+          developmental_stage: 60% pupal development
+        scale_bar:
+          um: 5.0
+          search_box:
+          - 90
+          - 92
+          - 115
+          - 113
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+      L:
+        label: 6L
+        title: '60% pupal Morpho helenor zoom: perpendicular actin rungs templating
+          crossribs'
+        bbox:
+        - 582
+        - 468
+        - 698
+        - 583
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - WGA
+        context:
+          species: Morpho helenor
+          developmental_stage: 60% pupal development
+        scale_bar:
+          um: 1.0
+          search_box:
+          - 90
+          - 95
+          - 115
+          - 114
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        extracted_data: {}
+  F7:
+    label: Fig. 7
+    file: 41467_2024_48060_Fig7_HTML.jpg
+    xml_id: Fig7
+    title: Orthogonal 3D TauSTED views and fluorescence intensity profiles of actin-chitin
+      colocalization in ~50% pupal Parides arcas ridges
+    caption_anchor:
+      quote: TauSTED fluorescence microscopy of Parides arcas wing scales at ~50%
+        development, showing the intimate association of chitin and actin
+      where: Fig. 7
+    context:
+      species: Parides arcas
+      family: Papilionidae
+      developmental_stage: 50% pupal development
+      imaging_modality: TauSTED
+      sample_preparation: fixed and stained
+    panels:
+      A:
+        label: 7A
+        title: ~50% pupal P. arcas scale tip merge of actin (green) + chitin (magenta)
+        bbox:
+        - 2
+        - 2
+        - 212
+        - 208
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        scale_bar:
+          um: 5.0
+          search_box:
+          - 165
+          - 180
+          - 209
+          - 205
+          polarity: bright
+        linked_resources:
+        - lloyd_tausted_archive
+        context: {}
+        extracted_data: {}
+      B:
+        label: 7B
+        title: ~50% pupal P. arcas mid-scale merge of actin + chitin
+        bbox:
+        - 2
+        - 211
+        - 212
+        - 459
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        scale_bar:
+          um: 5.0
+          search_box:
+          - 179
+          - 230
+          - 210
+          - 246
+          polarity: bright
+          px: 23.0
+        linked_resources:
+        - lloyd_tausted_archive
+        context: {}
+        extracted_data: {}
+      C:
+        label: 7C
+        title: Enlarged XY + orthogonal XZ/YZ cross-sections of splayed chitin ridges
+          and inter-ridge actin bundles
+        bbox:
+        - 214
+        - 2
+        - 476
+        - 208
+        archetype: cross_section
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 2
+          - 130
+          - 65
+          - 165
+          polarity: bright
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+        context: {}
+      D:
+        label: 7D
+        title: Enlarged XY + orthogonal XZ/YZ views of 3 parallel developing ridges
+          in P. arcas
+        bbox:
+        - 214
+        - 211
+        - 476
+        - 459
+        archetype: planar_microscopy
+        stains_or_markers:
+        - phalloidin
+        - CBD-TMR
+        scale_bar:
+          um: 2.0
+          search_box:
+          - 2
+          - 175
+          - 60
+          - 208
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 32
+          - 22
+          - 198
+          - 145
+          spacing_range_um:
+          - 2.2
+          - 3.8
+          channel: magenta
+        linked_resources:
+        - lloyd_tausted_archive
+        context: {}
+        extracted_data: {}
+      E:
+        label: 7E
+        title: XZ transverse intensity line profile (0–7 µm) showing alternating actin
+          bundles and splayed chitin double-peaks
+        bbox:
+        - 480
+        - 2
+        - 698
+        - 208
+        archetype: spectral_or_profile
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+        context: {}
+        extractor: extractors/f7_profiles.py:extract
+      F:
+        label: 7F
+        title: XZ transverse intensity line profile (0–8.5 µm) across 3 developing
+          ridges
+        bbox:
+        - 480
+        - 211
+        - 698
+        - 459
+        archetype: spectral_or_profile
+        extracted_data: {}
+        linked_resources:
+        - lloyd_tausted_archive
+        context: {}
+        extractor: extractors/f7_profiles.py:extract
+  F8:
+    label: Fig. 8
+    file: 41467_2024_48060_Fig8_HTML.jpg
+    xml_id: Fig8
+    title: Pharmacological disruption of F-actin with Cytochalasin D at 50% pupal
+      development collapses iridescence and buckles ridges
+    caption_anchor:
+      quote: Chemical perturbation of actin with cytochalasin D at 50% development.
+      where: Fig. 8
+    context:
+      developmental_stage: adult (injected at 50% pupal)
+      color_mechanism: iridescent structural
+    panels:
+      A:
+        label: 8A
+        title: Adult H. sara injected with Cytochalasin D in right forewing at 50%
+          pupal development
+        bbox:
+        - 2
+        - 4
+        - 319
+        - 130
+        archetype: macro_morphology
+        context:
+          chemical_perturbation: cytochalasin D (20 µM)
+          imaging_modality: macro photography
+        extracted_data: {}
+      B:
+        label: 8B
+        title: Zoom of Cytochalasin D-treated right forewing dull black/blue patch
+        bbox:
+        - 321
+        - 4
+        - 456
+        - 130
+        archetype: macro_morphology
+        context:
+          chemical_perturbation: cytochalasin D (20 µM)
+          imaging_modality: macro photography
+        extracted_data: {}
+      C:
+        label: 8C
+        title: Vehicle-control adult H. sara injected with Grace's medium/DMSO at
+          50% pupal development
+        bbox:
+        - 2
+        - 133
+        - 319
+        - 255
+        archetype: macro_morphology
+        context:
+          chemical_perturbation: DMSO vehicle control
+          imaging_modality: macro photography
+        extracted_data: {}
+      D:
+        label: 8D
+        title: Zoom of DMSO control right forewing iridescent blue patch
+        bbox:
+        - 321
+        - 133
+        - 456
+        - 255
+        archetype: macro_morphology
+        context:
+          chemical_perturbation: DMSO vehicle control
+          imaging_modality: macro photography
+        extracted_data: {}
+      E:
+        label: 8E
+        title: 'Reflectance spectra (350–700 nm): DMSO control (n=15) vs Cytochalasin
+          D (n=21)'
+        bbox:
+        - 463
+        - 4
+        - 749
+        - 254
+        archetype: spectral_or_profile
+        context:
+          imaging_modality: microspectrophotometry
+        extracted_data: {}
+        linked_resources:
+        - lloyd_r_scripts
+        extractor: extractors/f8_cytod.py:extract
+      F:
+        label: 8F
+        title: Low-mag SEM of Cytochalasin D-treated scales (15 µm bar; crumpled tips)
+        bbox:
+        - 2
+        - 260
+        - 187
+        - 458
+        archetype: macro_morphology
+        context:
+          chemical_perturbation: cytochalasin D (20 µM)
+          imaging_modality: SEM
+        scale_bar:
+          um: 15.0
+          search_box:
+          - 140
+          - 175
+          - 184
+          - 197
+          polarity: bright
+        extracted_data: {}
+      G:
+        label: 8G
+        title: Mid-low SEM of Cytochalasin D-treated scale ridges (15 µm bar)
+        bbox:
+        - 188
+        - 260
+        - 374
+        - 458
+        archetype: planar_microscopy
+        context:
+          chemical_perturbation: cytochalasin D (20 µM)
+          imaging_modality: SEM
+        scale_bar:
+          um: 15.0
+          search_box:
+          - 135
+          - 175
+          - 184
+          - 197
+          polarity: bright
+        extracted_data: {}
+      H:
+        label: 8H
+        title: Mid-mag top-down SEM of Cytochalasin D wavy/distorted ridges (5 µm
+          bar)
+        bbox:
+        - 2
+        - 461
+        - 187
+        - 648
+        archetype: planar_microscopy
+        context:
+          chemical_perturbation: cytochalasin D (20 µM)
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box:
+          - 115
+          - 162
+          - 183
+          - 186
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 15
+          - 20
+          - 170
+          - 158
+          spacing_range_um:
+          - 0.45
+          - 2.0
+        extracted_data: {}
+      I:
+        label: 8I
+        title: High-mag SEM of Cytochalasin D collapsed/bent ridge lamellae (1 µm
+          bar)
+        bbox:
+        - 188
+        - 461
+        - 374
+        - 648
+        archetype: planar_microscopy
+        context:
+          chemical_perturbation: cytochalasin D (20 µM)
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 1.0
+          search_box:
+          - 115
+          - 162
+          - 184
+          - 186
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 18
+          - 16
+          - 166
+          - 152
+          spacing_range_um:
+          - 0.55
+          - 1.25
+        extracted_data: {}
+      J:
+        label: 8J
+        title: Low-mag SEM of DMSO control scales (15 µm bar; straight parallel ridges)
+        bbox:
+        - 375
+        - 260
+        - 562
+        - 458
+        archetype: macro_morphology
+        context:
+          chemical_perturbation: DMSO vehicle control
+          imaging_modality: SEM
+        scale_bar:
+          um: 15.0
+          search_box:
+          - 164
+          - 188
+          - 187
+          - 198
+          polarity: bright
+          px: 16.0
+        extracted_data: {}
+      K:
+        label: 8K
+        title: Mid-low SEM of DMSO control scale tips (15 µm bar)
+        bbox:
+        - 563
+        - 260
+        - 749
+        - 458
+        archetype: planar_microscopy
+        context:
+          chemical_perturbation: DMSO vehicle control
+          imaging_modality: SEM
+        scale_bar:
+          um: 15.0
+          search_box:
+          - 135
+          - 175
+          - 184
+          - 197
+          polarity: bright
+        extracted_data: {}
+      L:
+        label: 8L
+        title: Mid-mag top-down SEM of DMSO control straight periodic ridges (5 µm
+          bar)
+        bbox:
+        - 375
+        - 461
+        - 562
+        - 648
+        archetype: planar_microscopy
+        context:
+          chemical_perturbation: DMSO vehicle control
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box:
+          - 115
+          - 162
+          - 185
+          - 186
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 15
+          - 20
+          - 170
+          - 158
+          spacing_range_um:
+          - 0.45
+          - 2.0
+        extracted_data: {}
+      M:
+        label: 8M
+        title: High-mag top-down SEM of DMSO control ridges and crossribs (1 µm bar)
+        bbox:
+        - 563
+        - 461
+        - 749
+        - 648
+        archetype: planar_microscopy
+        context:
+          chemical_perturbation: DMSO vehicle control
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 1.0
+          search_box:
+          - 115
+          - 162
+          - 184
+          - 186
+          polarity: bright
+        periodic_spec:
+          roi:
+          - 15
+          - 20
+          - 170
+          - 158
+          spacing_range_um:
+          - 0.45
+          - 2.0
+          measure_crossrib: true
+        extracted_data: {}
+      N:
+        label: 8N
+        title: 'Dotplot + mean±SD: Ridge number per scale in control (n=12) vs Cyto-D
+          (n=12)'
+        bbox:
+        - 2
+        - 655
+        - 372
+        - 1011
+        archetype: quantitative_plot
+        context:
+          imaging_modality: SEM
+        extracted_data: {}
+        linked_resources:
+        - lloyd_r_scripts
+        extractor: extractors/f8_cytod.py:extract
+      O:
+        label: 8O
+        title: 'Dotplot + mean±SD: Ridge curvature κ (µm⁻¹) in control (n=20) vs Cyto-D
+          (n=20)'
+        bbox:
+        - 375
+        - 655
+        - 749
+        - 1011
+        archetype: quantitative_plot
+        context:
+          imaging_modality: SEM
+        extracted_data: {}
+        linked_resources:
+        - lloyd_r_scripts
+        extractor: extractors/f8_cytod.py:extract

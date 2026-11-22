@@ -1,0 +1,97 @@
+record: 2024_Lloyd
+vocabulary_version: 1
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_3_pilot
+edits: []
+mappings:
+  - field: sex
+    stated: 10 males and 10 females
+    terms:
+      - sex:male
+      - sex:female
+  - field: anatomical_region
+    stated: right forewing
+    terms:
+      - anatomical_region:forewing
+  - field: pattern_element
+    stated: proximal wing region
+    terms:
+      - pattern_element:proximal_basal_field
+  - field: pattern_element
+    stated: distal wing region
+    terms:
+      - pattern_element:distal_sector
+  - field: scale_type
+    stated: cover and ground scales
+    terms:
+      - scale_type:cover_scale
+      - scale_type:ground_scale
+  - field: scale_type
+    stated: cover scales
+    terms:
+      - scale_type:cover_scale
+  - field: scale_type
+    stated: ground scales
+    terms:
+      - scale_type:ground_scale
+  - field: functional_architecture
+    stated: layered lamellae
+    terms:
+      - functional_architecture:ridge_lamellar_multilayer
+  - field: functional_architecture
+    stated: melanin pigments
+    terms:
+      - functional_architecture:melanin_pigmentary
+  - field: life_stage
+    stated: pupae
+    terms:
+      - life_stage:pupa
+  - field: target_gene
+    stated: actin
+    terms:
+      - target_gene:f_actin_cytoskeleton
+  - field: perturbation_modality
+    stated: injected
+    terms:
+      - perturbation_modality:small_molecule_inhibitor
+  - field: chemical_agent
+    stated: medium/DMSO
+    terms:
+      - chemical_agent:vehicle_solvent
+  - field: imaging_modality
+    stated: confocal microscopy
+    terms:
+      - imaging_modality:confocal
+  - field: imaging_modality
+    stated: X-ray tomography
+    terms:
+      - imaging_modality:x_ray_nano_tomography
+  - field: imaging_modality
+    stated: Reflectance spectroscopy
+    terms:
+      - imaging_modality:microspectrophotometry
+  - field: view_orientation
+    stated: Dorsal view
+    terms:
+      - view_orientation:top_down_apical
+  - field: view_orientation
+    stated: 3D scans
+    terms:
+      - view_orientation:volumetric_3d
+  - field: hydration_and_prep
+    stated: fixed
+    terms:
+      - hydration_and_prep:fixed_hydrated
+  - field: hydration_and_prep
+    stated: unmanipulated
+    terms:
+      - hydration_and_prep:dry_native
+  - field: measure
+    stated: actin bundle number
+    terms:
+      - measure:actin_bundle_number
+  - field: measure
+    stated: peak reflectance
+    terms:
+      - measure:maximum_reflectance

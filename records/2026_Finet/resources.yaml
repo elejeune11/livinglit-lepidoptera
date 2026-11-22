@@ -1,0 +1,32 @@
+record: 2026_Finet
+resources:
+  - id: finet_dryad_34species
+    kind: dataset
+    repository: Dryad
+    title: Ridge and crossrib height of butterfly wing scales across 34 species (12 figure archives)
+    url: https://doi.org/10.5061/dryad.bnzs7h4js
+    doi: 10.5061/dryad.bnzs7h4js
+    license: CC0-1.0
+    local_files: []
+    feeds_panels:
+      - F1/B
+      - F1/C
+      - F1/D
+      - F2/B
+      - F2/C
+      - F2/E
+      - F2/F
+      - F2/G
+      - F2/H
+      - F2/I
+      - F2/J
+      - F4/A
+      - F4/B
+      - F4/C
+      - F5/C_prime
+      - F5/D_prime
+    feeds_items: []
+    summary:
+      n_archives: 12
+      total_mb: 164.7
+      note: Dryad API v2 metadata indexed; interactive browser session required for raw archive downloads.

@@ -1,0 +1,52 @@
+record: 2026_Finet
+formula_library_version: 1
+agent:
+  model: livinglit-lepidoptera
+  instructions: formulas_pilot_v1
+derived:
+  interference_order1:
+    item: F4_interference_hue
+    group: cohort_order1
+    formula: lam = 2*(n_r - n_a)*h/m
+    anchor:
+      quote: constructive interference of the two waves gives rise to spectral peaks, whose wavelengths/hues (λ) are given by
+      where: Results
+    library:
+      formula: thin_film_ridge_interference
+      vars:
+        lam: lam
+        h: h
+        n_r: n_r
+        n_a: n_a
+        m: m
+    inputs:
+      h:
+        printed: '400'
+        unit: nm
+        kind: constant
+        anchor:
+          quote: When the ridges were between 268 and 1036 nm in height, their color hue ranged from about 379 to 594 nm
+          where: Results
+      n_r:
+        printed: '1.56'
+        unit: '1'
+        kind: constant
+        anchor:
+          quote: engineered ridge-like nanostructures made of transparent chitosan
+          where: Discussion
+      n_a:
+        printed: '1.0'
+        unit: '1'
+        kind: constant
+        anchor:
+          quote: phase difference between the ridge path and the air path
+          where: Results
+      m:
+        printed: '1'
+        unit: '1'
+        kind: constant
+        anchor:
+          quote: constructive interference of the two waves gives rise to spectral peaks, whose wavelengths/hues (λ) are given by
+          where: Results
+    output: F4_interference_hue.values.lam_pred
+proposals: []

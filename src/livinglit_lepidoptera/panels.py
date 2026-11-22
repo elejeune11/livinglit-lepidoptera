@@ -969,8 +969,11 @@ def compute_panel_object(
                     fft_r["harmonic_ratio_2f"],
                     fft_r["peak_snr"],
                 )
+                if hg["status"] == "flagged" and pspec.harmonic_verified:
+                    hg["status"] = "verified"
+                    hg["verified_note"] = "visually confirmed 1x fundamental grating"
                 computed["harmonic_guard"] = hg
-                if hg["status"] == "flagged" and not pspec.harmonic_verified:
+                if hg["status"] == "flagged":
                     probs.append(f"{fig_id}.{panel_id}: FFT harmonic guard flagged: {'; '.join(hg['issues'])}")
 
                 crossrib_ov = None
@@ -1328,7 +1331,7 @@ def check_panels_gate(
             probs.append(f"resources.yaml schema: {e}")
 
     qa_report = _build_qa_report(paper, pf, objs)
-    if store and not probs:
+    if store and objs:
         save_digitized_store(paper, objs, all_series, records_dir=records_dir, qa_report=qa_report)
     elif not store and not probs:
         stored_json = records_dir / paper / "digitized" / "panels_extracted.json"

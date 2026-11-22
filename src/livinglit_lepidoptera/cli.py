@@ -52,6 +52,13 @@ def _anchor_of(rec):
 
 
 def gate(kind: str, paper: str, apply: bool = False) -> list[str]:
+    if kind == "panels":
+        from .panels import check_panels_gate
+        objs, p_probs = check_panels_gate(paper, RECORDS_DIR, PAPERS_DIR, store=apply)
+        if apply and not p_probs:
+            tot_pts = sum(o.get("n_digitized_points", 0) for o in objs)
+            print(f"stored {len(objs)} panel objects and {tot_pts} digitized data points in records/{paper}/digitized/")
+        return p_probs
     from .gate_record import check_record, check_figures_and_data
     from .record import load_yaml
     from .vocab import field_config

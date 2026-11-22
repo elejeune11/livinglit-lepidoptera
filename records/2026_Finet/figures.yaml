@@ -1,0 +1,37 @@
+figures:
+  f4a_cohorts:
+    file: gr4.jpg
+    crop:
+      - 0
+      - 0
+      - 2525
+      - 1939
+    script: figures/f4a_cohorts.py
+    unit: F4_34SPECIES
+    kind: raster
+    groups:
+      cohort_order1:
+        item: F4_ridge_height_cohorts
+        group: cohort_order1
+        unit_of_value: nm
+      cohort_order2:
+        item: F4_ridge_height_cohorts
+        group: cohort_order2
+        unit_of_value: nm
+    note: 39 butterfly scales (34 species) extracted from Fig 4A via bespoke f4_cohorts.py.
+  f5c_morpho_sem:
+    file: gr5.jpg
+    crop:
+      - 10
+      - 945
+      - 1460
+      - 1865
+    script: figures/f5c_morpho_sem.py
+    unit: F5_MORPHO_SEM
+    kind: microscopy
+    groups:
+      morpho_unmilled_sem:
+        item: F5_morpho_ridge_spacing
+        group: morpho_unmilled_sem
+        unit_of_value: µm
+    note: Top-down SEM of intact unmilled Morpho didius ridges calibrated to 1 um scale bar (FFT 0.763 um).

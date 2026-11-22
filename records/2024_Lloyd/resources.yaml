@@ -1,0 +1,83 @@
+record: 2024_Lloyd
+resources:
+  - id: lloyd_r_scripts
+    kind: code
+    repository: Figshare
+    title: 7 original R morphometric & mixed-model analysis scripts (Sheffield ORDA)
+    url: https://orda.shef.ac.uk/articles/software/Code_for_Actin_Crosslinking_and_Reorganisation_in_Iridescent_Butterfly_Scale_Development/25422754
+    doi: 10.15131/shef.data.25422754
+    license: CC-BY-4.0
+    local_files:
+      - SEM_ANALYSIS_LLOYD_2024.R
+      - CONFOCAL_ANALYSIS_2024.R
+      - SPECTROMETRY_ANALYSIS_CYTO_D_LLOYD_2024.R
+      - RIDGE_NUMBER_CYTO_D_LLOYD_2024.R
+      - CURVATURE_ANALYSIS_CYTO_D_LLOYD_2024.R
+      - AFM_ANALYSIS_CYTO_D_LLOYD_2024.R
+      - SEM_ANALYSIS_DEMOPHOON_LLOYD_2024.R
+    feeds_panels:
+      - F2/D
+      - F2/E
+      - F2/F
+      - F2/J
+      - F2/K
+      - F2/L
+      - F8/E
+      - F8/N
+      - F8/O
+    feeds_items:
+      - F2_ridge_spacing
+      - F2_ridge_width
+      - F2_actin_spacing
+      - F2_actin_width
+      - F2_actin_number
+      - F8_reflectance_brightness
+      - F8_ridge_number
+      - F8_ridge_curvature
+    summary:
+      n_scripts: 7
+      audit_finding: "Scripts reference local ~/phd/*.csv files omitted from upload; distributions recovered via bespoke LivingLit figure extractors."
+  - id: lloyd_confocal_archive
+    kind: image_collection
+    repository: Figshare
+    title: Raw confocal z-stacks of H. sara pupal wing scale development (Sheffield ORDA 25305586)
+    url: https://doi.org/10.15131/shef.data.25305586
+    doi: 10.15131/shef.data.25305586
+    license: CC-BY-4.0
+    local_files: []
+    feeds_panels:
+      - F2/G
+      - F2/H
+      - F2/I
+      - F3/A
+      - F3/B
+      - F3/C
+      - F3/D
+      - F3/E
+      - F3/F
+      - F3/G
+      - F3/H
+      - F3/I
+      - F3/J
+      - F3/K
+      - F3/L
+    feeds_items:
+      - F2_actin_spacing
+    summary:
+      collection_doi: 10.15131/shef.data.c.7114033
+  - id: lloyd_tausted_archive
+    kind: image_collection
+    repository: Figshare
+    title: Raw TauSTED super-resolution TIFF stacks of H. sara, P. arcas & M. helenor (Sheffield ORDA 25376833)
+    url: https://doi.org/10.15131/shef.data.25376833
+    doi: 10.15131/shef.data.25376833
+    license: CC-BY-4.0
+    local_files: []
+    feeds_panels:
+      - F4/*
+      - F5/*
+      - F6/*
+      - F7/*
+    feeds_items: []
+    summary:
+      collection_doi: 10.15131/shef.data.c.7114033

@@ -157,7 +157,7 @@ def draw_plot_overlay(crop_bgr: np.ndarray, panel_obj: dict[str, Any]) -> np.nda
             mg = gmap.get(gn)
             rad = max(3, lw * 2 + 1)
             for i, (xv, yv) in enumerate(zip(gx, gy)):
-                if is_bee and mg:
+                if is_bee and mg and "x_frac" in mg:
                     xf = ((xv - mg["x_val"]) / 0.36) + 0.5
                     px = int(round(px0 + (mg["x_frac"][0] + xf * (mg["x_frac"][1] - mg["x_frac"][0])) * pw))
                 elif xr:
@@ -171,16 +171,34 @@ def draw_plot_overlay(crop_bgr: np.ndarray, panel_obj: dict[str, Any]) -> np.nda
                     cv2.line(vis, (px, y2p(ylo[i])), (px, y2p(yhi[i])), col, max(1, lw), cv2.LINE_AA)
                 cv2.circle(vis, (px, py), rad + 1, (0, 0, 0), -1, cv2.LINE_AA)
                 cv2.circle(vis, (px, py), rad - 1, col, -1, cv2.LINE_AA)
+            # Draw group y_interval (e.g. mean ± SD bar) if present
+            yi = g.get("y_interval")
+            if yi and len(yi) == 2 and gx and xr:
+                cx_m = x2p(float(np.median(gx)))
+                cv2.line(vis, (cx_m, y2p(yi[0])), (cx_m, y2p(yi[1])), (40, 230, 255), max(2, lw + 1), cv2.LINE_AA)
 
-    # Boxplots
+    # Boxplots (supports both list[{name, x_frac}] and dict{name: {x_center, half_width}})
     if "digitized_boxplots" in d and yr and om.get("groups"):
-        for idx, gm in enumerate(om["groups"]):
-            b = d["digitized_boxplots"].get(gm["name"])
+        raw_grps = om["groups"]
+        if isinstance(raw_grps, dict):
+            grp_items = [
+                (gname, int(px0 + gm["x_center"]), max(10, int(gm.get("half_width", 14) * 2)))
+                for gname, gm in raw_grps.items()
+            ]
+        else:
+            grp_items = [
+                (
+                    gm["name"],
+                    int(round(px0 + 0.5 * (gm["x_frac"][0] + gm["x_frac"][1]) * pw)),
+                    max(8, int(round((gm["x_frac"][1] - gm["x_frac"][0]) * pw * 0.42))),
+                )
+                for gm in raw_grps
+            ]
+        for idx, (gname, cx, bw) in enumerate(grp_items):
+            b = d["digitized_boxplots"].get(gname)
             if not b:
                 continue
             col = OVERLAY_BGR[idx % len(OVERLAY_BGR)]
-            cx = int(round(px0 + 0.5 * (gm["x_frac"][0] + gm["x_frac"][1]) * pw))
-            bw = max(8, int(round((gm["x_frac"][1] - gm["x_frac"][0]) * pw * 0.42)))
             if b.get("whisker_lo") is not None and b.get("whisker_hi") is not None:
                 cv2.line(vis, (cx, y2p(b["whisker_lo"])), (cx, y2p(b["whisker_hi"])), col, max(2, lw), cv2.LINE_AA)
             if b.get("q1") is not None and b.get("q3") is not None:
@@ -286,12 +304,12 @@ def render_plot_overlay_sheet(paper: str, out_path: Path, papers_dir: Path = PAP
 
 def render_fft_overlay_sheet(paper: str, out_path: Path, papers_dir: Path = PAPERS_DIR, records_dir: Path = RECORDS_DIR) -> Path:
     panels = json.loads((records_dir / paper / "digitized" / "panels_extracted.json").read_text(encoding="utf-8"))
+    fft_panels = [p for p in panels if (p.get("data") or {}).get("periodic_fft_um") is not None]
+    target_panels = fft_panels if fft_panels else [p for p in panels if (p.get("data") or {}).get("um_per_px") is not None]
     img_cache: dict[str, np.ndarray] = {}
     tiles = []
-    for p in panels:
+    for p in target_panels:
         d = p.get("data") or {}
-        if d.get("periodic_fft_um") is None and d.get("um_per_px") is None:
-            continue
         if p["file"] not in img_cache:
             img_cache[p["file"]] = cv2.imread(str(papers_dir / paper / p["file"]))
         x0, y0, x1, y1 = p["bbox"]
@@ -305,7 +323,7 @@ def render_fft_overlay_sheet(paper: str, out_path: Path, papers_dir: Path = PAPE
         else:
             hdr_col = (60, 60, 60)
             hdr = f"{p['id']} | scale={d['um_per_px']*1000:.1f} nm/px FOV={d.get('fov_um')} um"
-        tiles.append(_fit_tile(vis, hdr, tw=520, th=410, hdr_col=hdr_col))
+        tiles.append(_fit_tile(vis, hdr, tw=600, th=470, hdr_col=hdr_col))
     grid = _make_grid(tiles, cols=3)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     cv2.imwrite(str(out_path), grid)

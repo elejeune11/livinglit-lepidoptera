@@ -322,13 +322,13 @@ _CONFOUNDER_FIELDS = ("view_orientation", "hydration_and_prep", "imaging_modalit
 
 
 def _side_label(vocab, s: Side) -> str:
-    if s.state:
-        return s.state
     if s.terms:
         return ", ".join(sorted(vocab.terms[t].label if t in vocab.terms else t for t in s.terms))
-    if s.quantity is not None:
-        return f"{s.quantity:g}" + (f" {s.unit}" if s.unit else "")
-    return s.qualifiers.get("_text", "") or "not stated"
+    if s.qualifiers:
+        return ", ".join(f"{k}={v}" for k, v in sorted(s.qualifiers.items()))
+    if s.state:
+        return s.state
+    return "not stated"
 
 
 def compute_context_diff(vocab, a: Unit, b: Unit) -> dict:
@@ -344,16 +344,15 @@ def compute_context_diff(vocab, a: Unit, b: Unit) -> dict:
         la, lb = _side_label(vocab, sa), _side_label(vocab, sb)
         if la == "not stated" and lb == "not stated":
             continue
-        same = False
         if fdecl.kind == "terms":
             if sa.terms and sb.terms:
                 same = bool(sa.terms == sb.terms)
             elif sa.state and sb.state:
                 same = sa.state == sb.state
-        elif fdecl.kind == "quantity":
-            same = (sa.quantity == sb.quantity and sa.unit == sb.unit and sa.state == sb.state)
+            else:
+                same = False
         else:
-            same = la == lb
+            same = (la == lb)
         if same:
             matched.append(fname)
         else:

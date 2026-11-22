@@ -1,0 +1,980 @@
+id: 2024_Lloyd
+field_set: 3
+source:
+  title: The actin cytoskeleton plays multiple roles in structural colour formation in butterfly wing scales
+  doi: 10.1038/s41467-024-48060-3
+  year: '2024'
+  first_author: Victoria J. Lloyd
+  last_author: Nicola J. Nadeau
+  lab: Nadeau lab, University of Sheffield
+  journal: Nature Communications
+  files:
+    - PMC11106069.xml
+    - fig1.png
+    - 41467_2024_48060_Fig2_HTML.jpg
+    - 41467_2024_48060_Fig3_HTML.jpg
+    - 41467_2024_48060_Fig4_HTML.jpg
+    - 41467_2024_48060_Fig5_HTML.jpg
+    - 41467_2024_48060_Fig6_HTML.jpg
+    - 41467_2024_48060_Fig7_HTML.jpg
+    - 41467_2024_48060_Fig8_HTML.jpg
+  not_used:
+    - file: 41467_2024_48060_Fig1_HTML.jpg
+      why: Lower-resolution PMC copy of Fig 1; full-resolution 1500x1236 fig1.png is used instead
+  missing:
+    - Raw measurement CSV files referenced in Sheffield ORDA R scripts
+default_context:
+  taxon: Heliconius sara
+context_anchors:
+  - field: taxon
+    value: Heliconius sara
+    anchor:
+      quote: The neotropical butterfly Heliconius sara.
+      where: Fig. 1 caption
+  - field: sex
+    value: 10 males and 10 females
+    anchor:
+      quote: 10 males and 10 females, were used for SEM analysis of adult scale morphology
+      where: Methods (Comparative analyses)
+  - field: anatomical_region
+    value: dorsal forewing
+    anchor:
+      quote: compare the adult morphology of iridescent and non-iridescent scales on the dorsal forewing of H. sara
+      where: Results
+  - field: anatomical_region
+    value: right forewing
+    anchor:
+      quote: injected with cytochalasin D (A) and medium/DMSO (control, C) into the right forewing at 50% development
+      where: Fig. 8 caption
+  - field: pattern_element
+    value: proximal wing region
+    anchor:
+      quote: sampled from the proximal, iridescent (blue) wing region and the distal, non-iridescent (black) wing region
+      where: Fig. 2A caption
+  - field: pattern_element
+    value: distal wing region
+    anchor:
+      quote: sampled from the proximal, iridescent (blue) wing region and the distal, non-iridescent (black) wing region
+      where: Fig. 2A caption
+  - field: scale_type
+    value: cover and ground scales
+    anchor:
+      quote: Both cover and ground iridescent scales were smaller in size than non-iridescent scales
+      where: Results
+  - field: scale_type
+    value: cover scales
+    anchor:
+      quote: Iridescent cover scales had significantly reduced ridge spacing compared to iridescent ground scales
+      where: Results
+  - field: scale_type
+    value: ground scales
+    anchor:
+      quote: Iridescent cover scales had significantly reduced ridge spacing compared to iridescent ground scales
+      where: Results
+  - field: functional_architecture
+    value: layered lamellae
+    anchor:
+      quote: layered lamellae in iridescent H. sara scales are patterned onto an already existing structure – the parallel ridges.
+      where: Discussion
+  - field: functional_architecture
+    value: melanin pigments
+    anchor:
+      quote: absorbed by melanin pigments
+      where: Results
+  - field: life_stage
+    value: adult
+    anchor:
+      quote: compare the adult morphology of iridescent and non-iridescent scales on the dorsal forewing of H. sara
+      where: Results
+  - field: life_stage
+    value: pupae
+    anchor:
+      quote: Pupae were injected at 50% pupal development using a Hamilton microliter syringe
+      where: Methods (Chemical perturbation)
+  - field: pupal_stage_pct
+    value: 50% pupal development
+    anchor:
+      quote: Pupae were injected at 50% pupal development using a Hamilton microliter syringe
+      where: Methods (Chemical perturbation)
+  - field: target_gene
+    value: actin
+    anchor:
+      quote: To determine whether actin plays a direct role in optical nanostructure formation, we injected pupae with Cytochalasin D
+      where: Results (Chemical perturbation of actin)
+  - field: perturbation_modality
+    value: injected
+    anchor:
+      quote: Pupae were injected at 50% pupal development using a Hamilton microliter syringe
+      where: Methods (Chemical perturbation)
+  - field: chemical_agent
+    value: cytochalasin D
+    anchor:
+      quote: Ready-made cytochalasin D solution (Merck) (5 mg/ml in DMSO) was diluted to a final concentration of 20
+      where: Methods (Chemical perturbation)
+  - field: chemical_agent
+    value: medium/DMSO
+    anchor:
+      quote: injected with cytochalasin D (A) and medium/DMSO (control, C) into the right forewing at 50% development
+      where: Fig. 8 caption
+  - field: imaging_modality
+    value: SEM
+    anchor:
+      quote: Samples were sputter coated with gold before being imaged on a JEOL JSM-6010LA SEM
+      where: Methods (Electron Microscopy)
+  - field: imaging_modality
+    value: confocal microscopy
+    anchor:
+      quote: confocal microscopy of phalloidin-stained wings (n = 12)
+      where: Results
+  - field: imaging_modality
+    value: X-ray tomography
+    anchor:
+      quote: obtained 3D scans of whole, unmanipulated scales were measured using X-ray tomography
+      where: Results
+  - field: imaging_modality
+    value: Reflectance spectroscopy
+    anchor:
+      quote: Reflectance spectroscopy confirmed a significant reduction in brightness (t-test, t = 4.34, d.f. = 33, p < 0.001)
+      where: Results (Chemical perturbation of actin)
+  - field: view_orientation
+    value: Dorsal view
+    anchor:
+      quote: Dorsal view of an iridescent wing scale surface, with many periodically ordered longitudinal ridges
+      where: Fig. 1E caption
+  - field: view_orientation
+    value: 3D scans
+    anchor:
+      quote: obtained 3D scans of whole, unmanipulated scales were measured using X-ray tomography
+      where: Results
+  - field: hydration_and_prep
+    value: sputter coated
+    anchor:
+      quote: Samples were sputter coated with gold before being imaged on a JEOL JSM-6010LA SEM
+      where: Methods (Electron Microscopy)
+  - field: hydration_and_prep
+    value: fixed
+    anchor:
+      quote: wings were dissected from pupae in phosphate buffered saline (PBS) and immediately fixed for 15 min in 4% paraformaldehyde
+      where: Methods (Reporting summary)
+  - field: hydration_and_prep
+    value: unmanipulated
+    anchor:
+      quote: obtained 3D scans of whole, unmanipulated scales were measured using X-ray tomography
+      where: Results
+units:
+  F2_ADULT:
+    where: Fig. 2A–F and Results
+    title: Adult iridescent blue versus non-iridescent black scale ridge spacing, ridge width, scale width, and area in H. sara
+    context:
+      sex: 10 males and 10 females
+      anatomical_region: dorsal forewing
+      life_stage: adult
+      pupal_stage_pct: not applicable
+      target_gene: none
+      perturbation_modality: none
+      chemical_agent: none
+      imaging_modality: SEM
+      view_orientation: Dorsal view
+      hydration_and_prep: sputter coated
+    groups:
+      blue_all:
+        label: Iridescent blue scales
+        kind: natural
+        context:
+          pattern_element: proximal wing region
+          scale_type: cover and ground scales
+          functional_architecture: layered lamellae
+      black_all:
+        label: Non-iridescent black scales
+        kind: natural
+        context:
+          pattern_element: distal wing region
+          scale_type: cover and ground scales
+          functional_architecture: melanin pigments
+      blue_cover:
+        label: Iridescent blue cover scales
+        kind: natural
+        context:
+          pattern_element: proximal wing region
+          scale_type: cover scales
+          functional_architecture: layered lamellae
+      blue_ground:
+        label: Iridescent blue ground scales
+        kind: natural
+        context:
+          pattern_element: proximal wing region
+          scale_type: ground scales
+          functional_architecture: layered lamellae
+      black_cover:
+        label: Non-iridescent black cover scales
+        kind: natural
+        context:
+          pattern_element: distal wing region
+          scale_type: cover scales
+          functional_architecture: melanin pigments
+      black_ground:
+        label: Non-iridescent black ground scales
+        kind: natural
+        context:
+          pattern_element: distal wing region
+          scale_type: ground scales
+          functional_architecture: melanin pigments
+  F1E_SEM:
+    where: Fig. 1E
+    title: Top-down SEM of adult iridescent Heliconius sara wing scale surface
+    context:
+      sex: not stated
+      anatomical_region: dorsal forewing
+      pattern_element: proximal wing region
+      scale_type: cover scales
+      functional_architecture: layered lamellae
+      life_stage: adult
+      pupal_stage_pct: not applicable
+      target_gene: none
+      perturbation_modality: none
+      chemical_agent: none
+      imaging_modality: SEM
+      view_orientation: Dorsal view
+      hydration_and_prep: sputter coated
+    groups:
+      blue_cover_sem:
+        label: Iridescent H. sara cover scale (Fig 1E SEM)
+        kind: natural
+        context: {}
+  F2_ACTIN:
+    where: Fig. 2G–L and Results
+    title: Developing pupal F-actin bundle spacing, width, and number at 50% pupal development in H. sara
+    context:
+      sex: not stated
+      anatomical_region: dorsal forewing
+      scale_type: cover scales
+      life_stage: pupae
+      pupal_stage_pct: 50% pupal development
+      target_gene: actin
+      perturbation_modality: none
+      chemical_agent: none
+      imaging_modality: confocal microscopy
+      view_orientation: Dorsal view
+      hydration_and_prep: fixed
+    groups:
+      blue_50:
+        label: Developing iridescent blue scales (50% pupal)
+        kind: natural
+        context:
+          pattern_element: proximal wing region
+          functional_architecture: layered lamellae
+      black_50:
+        label: Developing non-iridescent black scales (50% pupal)
+        kind: natural
+        context:
+          pattern_element: distal wing region
+          functional_architecture: melanin pigments
+  S_XRAY:
+    where: Results (X-ray nano-tomography)
+    title: Crossrib spacing in adult H. sara scales measured via X-ray nano-tomography
+    context:
+      sex: not stated
+      anatomical_region: dorsal forewing
+      scale_type: cover scales
+      life_stage: adult
+      pupal_stage_pct: not applicable
+      target_gene: none
+      perturbation_modality: none
+      chemical_agent: none
+      imaging_modality: X-ray tomography
+      view_orientation: 3D scans
+      hydration_and_prep: unmanipulated
+    groups:
+      blue_xray:
+        label: Iridescent scale (X-ray)
+        kind: natural
+        context:
+          pattern_element: proximal wing region
+          functional_architecture: layered lamellae
+      black_xray:
+        label: Non-iridescent scale (X-ray)
+        kind: natural
+        context:
+          pattern_element: distal wing region
+          functional_architecture: melanin pigments
+  F8_CYTOD:
+    where: Fig. 8N–O and Results
+    title: Pharmacological F-actin disruption with Cytochalasin D at 50% pupal development increases ridge curvature without changing ridge number
+    context:
+      sex: not stated
+      anatomical_region: right forewing
+      pattern_element: proximal wing region
+      scale_type: cover scales
+      functional_architecture: layered lamellae
+      life_stage: adult
+      pupal_stage_pct: not applicable
+      imaging_modality: SEM
+      view_orientation: Dorsal view
+      hydration_and_prep: sputter coated
+    groups:
+      cyto_d:
+        label: Cytochalasin D injected at 50% pupal
+        kind: perturbed
+        context:
+          target_gene: actin
+          perturbation_modality: injected
+          chemical_agent: cytochalasin D
+      dmso_ctrl:
+        label: Medium/DMSO vehicle control injected at 50% pupal
+        kind: wild type
+        context:
+          target_gene: none
+          perturbation_modality: injected
+          chemical_agent: medium/DMSO
+  F8_SPEC:
+    where: Fig. 8E and Results
+    title: Reflectance spectroscopy of Cytochalasin D versus vehicle control right forewings
+    context:
+      sex: not stated
+      anatomical_region: right forewing
+      pattern_element: proximal wing region
+      scale_type: cover scales
+      functional_architecture: layered lamellae
+      life_stage: adult
+      pupal_stage_pct: not applicable
+      imaging_modality: Reflectance spectroscopy
+      view_orientation: Dorsal view
+      hydration_and_prep: unmanipulated
+    groups:
+      cyto_d_spec:
+        label: Cytochalasin D right forewing reflectance
+        kind: perturbed
+        context:
+          target_gene: actin
+          perturbation_modality: injected
+          chemical_agent: cytochalasin D
+      dmso_ctrl_spec:
+        label: Medium/DMSO control right forewing reflectance
+        kind: wild type
+        context:
+          target_gene: none
+          perturbation_modality: injected
+          chemical_agent: medium/DMSO
+evidence:
+  F2_ridge_spacing:
+    unit: F2_ADULT
+    measure: ridge spacing
+    method: SEM image measurement with linear mixed effects model (lme4)
+    software: R 3.5.2 (lme4)
+    finding: Iridescent blue scales have significantly smaller ridge spacing (0.804 ± 0.007 um) than non-iridescent black scales (0.962 ± 0.004 um)
+    compares:
+      - blue_all
+      - black_all
+    test_of: pair
+    values:
+      blue:
+        printed: 0.804 ± 0.007
+        unit: µm
+        kind: mean
+        group: blue_all
+        spread: SEM
+        spread_source: sentence
+      black:
+        printed: 0.962 ± 0.004
+        unit: µm
+        kind: mean
+        group: black_all
+        spread: SEM
+        spread_source: sentence
+    stats:
+      test: likelihood ratio test
+      statistic: χ2 = 446
+      p: p < 0.001
+      df: '2'
+    stated_direction:
+      direction: down
+      anchor:
+        quote: The iridescent blue scales had significantly reduced ridge spacing compared to the non-iridescent black scales
+        where: Results
+    anchor:
+      quote: The iridescent blue scales had significantly reduced ridge spacing compared to the non-iridescent black scales (mean ± SE ridge spacing, blue 0.804 μm ± 0.007, black 0.962 μm ± 0.004
+      where: Results
+    n:
+      printed: 400 scales from 20 individuals (10 males, 10 females)
+      counts: individuals
+      levels:
+        individuals: 20
+        scales: 400
+      test_unit: individuals
+  F2_ridge_spacing_scale_type:
+    unit: F2_ADULT
+    measure: ridge spacing
+    method: SEM image measurement with lme4 + Tukey post-hoc comparison
+    software: R 3.5.2 (lme4)
+    finding: Scale type (cover vs ground) significantly affects ridge spacing (χ2 = 27, p < 0.001); iridescent cover scales have smaller ridge spacing than iridescent ground scales (p < 0.001), whereas non-iridescent cover and ground scales do not differ (p = 0.633)
+    compares:
+      - blue_cover
+      - blue_ground
+    test_of: pair
+    stats:
+      test: likelihood ratio test
+      statistic: χ2 = 27
+      df: '2'
+      p: p < 0.001
+    stated_direction:
+      direction: down
+      anchor:
+        quote: Iridescent cover scales had significantly reduced ridge spacing compared to iridescent ground scales (Tukey comparison, p < 0.001)
+        where: Results
+    anchor:
+      quote: There was also an effect of scale type (cover or ground) on ridge spacing (likelihood ratio, χ2 = 27, d.f. = 2, p < 0.001).
+      where: Results
+  F2_ridge_width:
+    unit: F2_ADULT
+    measure: ridge width
+    method: SEM image measurement with linear mixed effects model (lme4)
+    software: R 3.5.2 (lme4)
+    finding: Ridge width is slightly greater in iridescent scales (0.315 ± 0.002 um) than non-iridescent scales (0.302 ± 0.001 um)
+    compares:
+      - blue_all
+      - black_all
+    test_of: pair
+    values:
+      blue:
+        printed: 0.315 ± 0.002
+        unit: µm
+        kind: mean
+        group: blue_all
+        spread: SEM
+        spread_source: sentence
+      black:
+        printed: 0.302 ± 0.001
+        unit: µm
+        kind: mean
+        group: black_all
+        spread: SEM
+        spread_source: sentence
+    stats:
+      test: likelihood ratio test
+      statistic: χ2 = 43
+      df: '1'
+      p: p < 0.001
+    stated_direction:
+      direction: up
+      anchor:
+        quote: Ridge width was slightly greater in iridescent scales compared to non-iridescent scales
+        where: Results
+    anchor:
+      quote: Ridge width was slightly greater in iridescent scales compared to non-iridescent scales (mean ± SE ridge width, iridescent 0.315 μm ± 0.002, non-iridescent 0.302 μm ± 0.001
+      where: Results
+    n:
+      printed: 400 scales from 20 individuals
+      counts: individuals
+      levels:
+        individuals: 20
+        scales: 400
+      test_unit: individuals
+  F2_ridge_width_scale_type:
+    unit: F2_ADULT
+    measure: ridge width
+    method: SEM image measurement with linear mixed effects model (lme4)
+    software: R 3.5.2 (lme4)
+    finding: No difference in ridge width between cover and ground scales (χ2 = 0.24, df = 1, p = 0.622)
+    compares:
+      - blue_cover
+      - blue_ground
+    test_of: pair
+    stats:
+      test: likelihood ratio test
+      statistic: χ2 = 0.24
+      df: '1'
+      p: p = 0.622
+    stated_direction:
+      direction: none
+      anchor:
+        quote: There was no difference in ridge width between cover and ground scales (likelihood ratio, χ2 = 0.24, d.f. = 1, p = 0.622, Fig. 2F).
+        where: Results
+    anchor:
+      quote: There was no difference in ridge width between cover and ground scales (likelihood ratio, χ2 = 0.24, d.f. = 1, p = 0.622, Fig. 2F).
+      where: Results
+  F2_scale_width:
+    unit: F2_ADULT
+    measure: scale width
+    method: SEM measurement across cover and ground scales
+    software: R 3.5.2 (lme4)
+    finding: Iridescent blue scales are narrower than non-iridescent black scales in both cover (29.5 vs 31.3 um) and ground (42.9 vs 47.8 um) scales
+    groups:
+      - blue_cover
+      - blue_ground
+      - black_cover
+      - black_ground
+    values:
+      bc:
+        printed: 29.5 ± 0.22
+        unit: µm
+        kind: mean
+        group: blue_cover
+        spread: SEM
+        spread_source: sentence
+      bg:
+        printed: 42.9 ± 0.3
+        unit: µm
+        kind: mean
+        group: blue_ground
+        spread: SEM
+        spread_source: sentence
+      kc:
+        printed: 31.3 ± 0.22
+        unit: µm
+        kind: mean
+        group: black_cover
+        spread: SEM
+        spread_source: sentence
+      kg:
+        printed: 47.8 ± 0.33
+        unit: µm
+        kind: mean
+        group: black_ground
+        spread: SEM
+        spread_source: sentence
+    stats:
+      test: likelihood ratio test
+      statistic: χ2 = 24
+      df: '1'
+      p: p < 0.001
+    anchor:
+      quote: 'mean ± SE scale width, blue: cover 29.5 μm ± 0.22, ground 42.9 μm ± 0.3, black: cover 31.3 μm ± 0.22, ground 47.8 μm ± 0.33'
+      where: Results
+  F2_scale_area:
+    unit: F2_ADULT
+    measure: scale area
+    method: SEM outline measurement across cover and ground scales
+    software: R 3.5.2 (lme4)
+    finding: Iridescent blue scales have smaller area than non-iridescent black scales in both cover (2700 vs 3044 um2) and ground (3708 vs 4123 um2) scales
+    groups:
+      - blue_cover
+      - blue_ground
+      - black_cover
+      - black_ground
+    values:
+      bc:
+        printed: 2700 ± 21
+        unit: µm²
+        kind: mean
+        group: blue_cover
+        spread: SEM
+        spread_source: sentence
+      bg:
+        printed: 3708 ± 35
+        unit: µm²
+        kind: mean
+        group: blue_ground
+        spread: SEM
+        spread_source: sentence
+      kc:
+        printed: 3044 ± 25
+        unit: µm²
+        kind: mean
+        group: black_cover
+        spread: SEM
+        spread_source: sentence
+      kg:
+        printed: 4123 ± 30
+        unit: µm²
+        kind: mean
+        group: black_ground
+        spread: SEM
+        spread_source: sentence
+    stats:
+      test: likelihood ratio test
+      statistic: χ2 = 208
+      df: '1'
+      p: p < 0.001
+    anchor:
+      quote: 'Both cover and ground iridescent scales were smaller in size than non-iridescent scales (mean ± SE scale area, blue: cover 2700 μm2 ± 21, ground 3708 μm2 ± 35'
+      where: Results
+  F2_actin_spacing:
+    unit: F2_ACTIN
+    measure: actin bundle spacing
+    method: phalloidin fluorescence confocal microscopy at 50% pupal development
+    software: R 3.5.2 (lme4)
+    finding: Developing iridescent scales have reduced actin bundle spacing (1.07 ± 0.02 um) compared to non-iridescent black scales (1.22 ± 0.03 um)
+    compares:
+      - blue_50
+      - black_50
+    test_of: pair
+    n:
+      printed: n = 12 pupae, 5 scales per wing region
+      counts: pupae
+      levels:
+        pupae: 12
+        scales: 60
+      test_unit: pupae
+    values:
+      blue:
+        printed: 1.07 ± 0.02
+        unit: µm
+        kind: mean
+        group: blue_50
+        spread: SEM
+        spread_source: sentence
+      black:
+        printed: 1.22 ± 0.03
+        unit: µm
+        kind: mean
+        group: black_50
+        spread: SEM
+        spread_source: sentence
+    stats:
+      test: likelihood ratio test
+      statistic: χ2 = 40
+      p: p < 0.001
+      df: '1'
+    stated_direction:
+      direction: down
+      anchor:
+        quote: The developing iridescent scales had reduced actin spacing compared to the non-iridescent, black scales
+        where: Results
+    anchor:
+      quote: The developing iridescent scales had reduced actin spacing compared to the non-iridescent, black scales (mean ± SE bundle spacing, iridescent 1.07 μm ± 0.02, non-iridescent 1.22 μm ± 0.03
+      where: Results
+  F2_actin_width:
+    unit: F2_ACTIN
+    measure: actin bundle width
+    method: phalloidin fluorescence confocal microscopy at 50% pupal development
+    software: R 3.5.2 (lme4)
+    finding: Iridescent scales have slightly thinner actin bundles (0.438 ± 0.004 um) than non-iridescent scales (0.456 ± 0.003 um)
+    compares:
+      - blue_50
+      - black_50
+    test_of: pair
+    n:
+      printed: n = 12 pupae, 5 scales per wing region
+      counts: pupae
+      levels:
+        pupae: 12
+        scales: 60
+      test_unit: pupae
+    values:
+      blue:
+        printed: 0.438 ± 0.004
+        unit: µm
+        kind: mean
+        group: blue_50
+        spread: SEM
+        spread_source: sentence
+      black:
+        printed: 0.456 ± 0.003
+        unit: µm
+        kind: mean
+        group: black_50
+        spread: SEM
+        spread_source: sentence
+    stats:
+      test: likelihood ratio test
+      statistic: χ2 = 19
+      p: p < 0.001
+      df: '1'
+    stated_direction:
+      direction: down
+      anchor:
+        quote: Iridescent scales had slightly thinner actin bundles compared to non-iridescent scales
+        where: Results
+    anchor:
+      quote: Iridescent scales had slightly thinner actin bundles compared to non-iridescent scales (mean ± SE bundle width, iridescent 0.438 μm ± 0.004, non-iridescent 0.456 μm ± 0.003
+      where: Results
+  F2_actin_number:
+    unit: F2_ACTIN
+    measure: actin bundle number
+    method: phalloidin fluorescence confocal microscopy at 50% pupal development
+    software: R 3.5.2 (lme4)
+    finding: Developing iridescent scales have more actin bundles (40 ± 1.8) than non-iridescent scales (32 ± 1.1; χ2 = 11, p < 0.001)
+    compares:
+      - blue_50
+      - black_50
+    test_of: pair
+    n:
+      printed: n = 12 pupae, 5 scales per wing region
+      counts: pupae
+    values:
+      blue:
+        printed: 40 ± 1.8
+        unit: bundles
+        kind: mean
+        group: blue_50
+        spread: SEM
+        spread_source: sentence
+      black:
+        printed: 32 ± 1.1
+        unit: bundles
+        kind: mean
+        group: black_50
+        spread: SEM
+        spread_source: sentence
+    stats:
+      test: likelihood ratio test
+      statistic: χ2 = 11
+      p: p < 0.001
+      df: '1'
+    stated_direction:
+      direction: up
+      anchor:
+        quote: iridescent scales had a greater number of actin bundles compared to non-iridescent scales
+        where: Results
+    anchor:
+      quote: iridescent scales had a greater number of actin bundles compared to non-iridescent scales (mean ± SE actin bundle number, iridescent 40 ± 1.8, non-iridescent 32 ± 1.1
+      where: Results
+  S_crossrib_spacing:
+    unit: S_XRAY
+    measure: crossrib spacing
+    method: correlation function analysis of X-ray nano-tomography
+    finding: Crossrib spacing is smaller in iridescent scales (0.483 um) than in non-iridescent black scales (0.607 um)
+    groups:
+      - blue_xray
+      - black_xray
+    values:
+      blue:
+        printed: '0.483'
+        unit: µm
+        kind: value
+        group: blue_xray
+        spread: none
+      black:
+        printed: '0.607'
+        unit: µm
+        kind: value
+        group: black_xray
+        spread: none
+    anchor:
+      quote: indicates a greater crossrib spacing in the black scale compared to the iridescent scale (iridescent 0.483 μm; non-iridescent 0.607 μm)
+      where: Results
+  F1E_sem_ridge:
+    unit: F1E_SEM
+    measure: ridge spacing
+    method: LivingLit 2D FFT and multi-transect profiling on Fig 1E SEM
+    finding: Image-derived SEM ridge spacing on Fig 1E is 0.823 um (transect) / 0.833 um (2D FFT), within 2.5% of the author-reported 0.804 um mean
+    groups:
+      - blue_cover_sem
+    anchor:
+      quote: Dorsal view of an iridescent wing scale surface, with many periodically ordered longitudinal ridges running parallel to scale length.
+      where: Fig. 1E caption
+  F8_reflectance_brightness:
+    unit: F8_SPEC
+    measure: peak reflectance
+    method: Reflectance spectroscopy (350–700 nm) on right forewing of Cyto D vs vehicle control adults
+    software: R 3.5.2 (pavo)
+    finding: Cytochalasin D injection at 50% pupal development significantly reduces dorsal wing brightness (t = 4.34, df = 33, p < 0.001; digitized mean peak drops from 11.0% at 524 nm to 7.3% at 569 nm)
+    compares:
+      - cyto_d_spec
+      - dmso_ctrl_spec
+    test_of: pair
+    stats:
+      test: two-sample t-test
+      statistic: t = 4.34
+      df: '33'
+      p: p < 0.001
+    stated_direction:
+      direction: down
+      anchor:
+        quote: Reflectance spectroscopy confirmed a significant reduction in brightness (t-test, t = 4.34, d.f. = 33, p < 0.001)
+        where: Results (Chemical perturbation of actin)
+    anchor:
+      quote: Reflectance spectroscopy confirmed a significant reduction in brightness (t-test, t = 4.34, d.f. = 33, p < 0.001)
+      where: Results (Chemical perturbation of actin)
+  F8_ridge_number:
+    unit: F8_CYTOD
+    measure: ridge number
+    method: SEM scale ridge counts tested across individuals (two-sample t-test); note paper text mis-cites Fig. 8O instead of Fig. 8N
+    software: R 3.5.2
+    finding: Cytochalasin D injection at 50% pupal development does not alter adult ridge number compared to vehicle controls (t = -0.41, df = 5, p = 0.70)
+    compares:
+      - cyto_d
+      - dmso_ctrl
+    test_of: pair
+    n:
+      printed: 20 control and 23 cyto scales digitized from Fig 8N; t-test df = 5 across individuals
+      counts: individuals
+    stats:
+      test: two-sample t-test
+      statistic: t = -0.41
+      p: p = 0.70
+      df: '5'
+    stated_direction:
+      direction: none
+      anchor:
+        quote: There was no difference in the average ridge number between cyto-D treated and control scales (t-test, t = −0.41, df = 5, p = 0.70, Fig. 8O).
+        where: Results (Chemical perturbation of actin)
+    anchor:
+      quote: in the average ridge number between cyto-D treated and control scales (t-test, t = −0.41, df = 5, p = 0.70, Fig. 8O).
+      where: Results (Chemical perturbation of actin)
+  F8_ridge_curvature:
+    unit: F8_CYTOD
+    measure: ridge curvature
+    method: Kappa spline ridge curvature measurement on SEM images (two-sample t-test); note paper text mis-cites Fig. 8N instead of Fig. 8O
+    software: R 3.5.2
+    finding: Cytochalasin D increases adult ridge curvature from 0.0158 to 0.0566 um^-1 (t = -2.78, df = 12, p < 0.05); R script audit reveals printed SE (0.0018) was computed across ungrouped spline vertices rather than per-scale means
+    compares:
+      - cyto_d
+      - dmso_ctrl
+    test_of: pair
+    n:
+      printed: 10 control and 17 cyto scales digitized from Fig 8O; t-test df = 12
+      counts: scales
+    values:
+      cyto_curv:
+        printed: 0.0566 ± 0.0018
+        unit: 1/µm
+        kind: mean
+        group: cyto_d
+        spread: SEM
+        spread_source: sentence
+      ctrl_curv:
+        printed: 0.0158 ± 0.0006
+        unit: 1/µm
+        kind: mean
+        group: dmso_ctrl
+        spread: SEM
+        spread_source: sentence
+    stats:
+      test: Welch t-test
+      statistic: t = -2.78
+      p: p < 0.05
+      df: '12'
+    stated_direction:
+      direction: up
+      anchor:
+        quote: Cyto-D treated scales had significantly greater average ridge curvature (κ) (μm−1) compared to controls
+        where: Results (Chemical perturbation of actin)
+    anchor:
+      quote: Cyto-D treated scales had significantly greater average ridge curvature (κ) (μm−1) compared to controls (mean ± SE curvature (κ), treated 0.0566 ± 0.0018 μm−1, control 0.0158 ± 0.0006 μm−1
+      where: Results (Chemical perturbation of actin)
+claims:
+  C1_abstract_universal_lepidoptera:
+    kind: stated
+    quote: providing ridge patterning mechanisms that are likely universal across lepidoptera.
+    where: Abstract
+    scope: All Lepidoptera (butterflies and moths)
+    rests_on:
+      - F2_ridge_spacing
+      - F2_actin_spacing
+      - F8_ridge_curvature
+    judgement:
+      direction: follows
+      support: cannot judge
+      comparison: cannot judge
+      scope: overstated
+      replication: cannot judge
+      strength: overstated
+      presence: follows
+  C2_abstract_near_total_loss:
+    kind: stated
+    quote: actin perturbation experiments at these later developmental stages resulted in near total loss of structural colour in H. sara.
+    where: Abstract
+    scope: Cytochalasin D injected right forewings of H. sara
+    direction: Cytochalasin D reduces iridescent structural colour reflectance
+    asserts_direction: down
+    rests_on:
+      - F8_reflectance_brightness
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: overstated
+      presence: follows
+  C3_results_actin_templates_density:
+    kind: stated
+    quote: the patterning of actin in developing Heliconius scale cells plays an important role in governing the density of adult scale ridges
+    where: Results (F-actin patterning)
+    scope: Heliconius sara iridescent vs non-iridescent scales
+    direction: Denser actin bundles predict denser adult ridges
+    asserts_direction: down
+    rests_on:
+      - F2_ridge_spacing
+      - F2_actin_spacing
+      - F2_actin_number
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+  C4_results_universality_three_species:
+    kind: stated
+    quote: confirms the universality of a complex and highly dynamic network of actin cytoskeleton in developing scales.
+    where: Results (Comparative TauSTED across 3 species)
+    scope: Three butterfly species (H. sara, P. arcas, M. helenor) extrapolated to universality
+    rests_on:
+      - F2_actin_spacing
+    judgement:
+      direction: cannot judge
+      support: cannot judge
+      comparison: cannot judge
+      scope: overstated
+      replication: cannot judge
+      strength: overstated
+      presence: follows
+  C5_results_ridge_number_set:
+    kind: stated
+    quote: This confirms that by 50% development, ridge number and position has already been established in scale cells.
+    where: Results (Chemical perturbation of actin)
+    scope: H. sara Cytochalasin D injection at 50% pupal development
+    direction: No change in ridge number after 50% pupal Cyto D
+    asserts_direction: none
+    rests_on:
+      - F8_ridge_number
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: cannot judge
+      strength: overstated
+      presence: follows
+  C6_results_cytoD_direct_loss:
+    kind: stated
+    quote: perturbation of the actin cytoskeleton during the ridge formation stage results in significant loss of structural colour.
+    where: Results (Chemical perturbation of actin)
+    scope: H. sara Cytochalasin D treatment at 50% pupal development
+    direction: Actin perturbation decreases structural colour reflectance and increases ridge curvature
+    asserts_direction: down
+    rests_on:
+      - F8_reflectance_brightness
+      - F8_ridge_curvature
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+  C7_fig7_title_intimate_association:
+    kind: stated
+    quote: showing the intimate association of chitin and actin in the developing ridge.
+    where: Fig. 7 caption title
+    scope: Parides arcas developing wing scales at ~50% pupal development
+    rests_on:
+      - F2_actin_spacing
+    judgement:
+      direction: cannot judge
+      support: follows
+      comparison: cannot judge
+      scope: follows
+      replication: cannot judge
+      strength: follows
+      presence: follows
+  C8_discussion_direct_role_lamellae:
+    kind: stated
+    quote: using actin perturbation experiments, we demonstrate that the actin cytoskeleton likely plays a direct role in the development of layered lamellae.
+    where: Discussion
+    scope: Ridge lamellae morphogenesis in H. sara
+    rests_on:
+      - F8_reflectance_brightness
+      - F8_ridge_curvature
+    judgement:
+      direction: follows
+      support: cannot judge
+      comparison: follows
+      scope: follows
+      replication: cannot judge
+      strength: overstated
+      presence: follows

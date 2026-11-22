@@ -1622,86 +1622,74 @@ terms:
   label: FIB milling
   source: LivingLit
   added: *id002
+- id: measure:window_area
+  fields:
+  - measure
+  label: window area
+  definition: Planar area of an individual upper-lamina window opening bounded by adjacent longitudinal ridges and transverse
+    crossribs.
+  synonyms:
+  - text: mean window area
+  - text: scale window area
+  source: LivingLit
+  added: *id002
 standing_keys:
   measure:ridge_spacing:
     value:
-      must_match:
-      - scale_type@2
-      - photonic_architecture@3
-      - life_stage
-      - view_orientation@1
-      - hydration_and_prep@1
-      - perturbation_modality
-      may_vary:
+      must_match: []
+      may_vary: &id003
       - taxon
       - sex
-      - wing_surface
+      - anatomical_region
       - pattern_element
-      - imaging_modality
-    direction:
-      must_match:
-      - contrast
-      may_vary: []
-    added: *id001
-  measure:ridge_height:
-    value:
-      must_match:
-      - scale_type@2
+      - scale_type
+      - functional_architecture
       - life_stage
       - pupal_stage_pct
-      - view_orientation@1
+      - target_gene
       - perturbation_modality
-      may_vary:
-      - taxon
-      - wing_surface
+      - chemical_agent
       - imaging_modality
+      - view_orientation
+      - hydration_and_prep
     direction:
       must_match:
       - contrast
-      may_vary: []
-    added: *id001
+      may_vary: *id003
+    added: *id002
+  measure:ridge_height:
+    value:
+      must_match: []
+      may_vary: *id003
+    direction:
+      must_match:
+      - contrast
+      may_vary: *id003
+    added: *id002
   measure:crossrib_spacing:
     value:
-      must_match:
-      - scale_type@2
-      - photonic_architecture@2
-      - life_stage
-      - view_orientation@1
-      - perturbation_modality
-      may_vary:
-      - taxon
-      - imaging_modality
+      must_match: []
+      may_vary: *id003
     direction:
       must_match:
       - contrast
-      may_vary: []
-    added: *id001
+      may_vary: *id003
+    added: *id002
   measure:scale_width:
     value:
-      must_match:
-      - scale_type@2
-      - life_stage
-      - hydration_and_prep@1
-      - perturbation_modality
-      may_vary:
-      - taxon
-      - wing_surface
-      - pattern_element
+      must_match: []
+      may_vary: *id003
     direction:
       must_match:
       - contrast
-      may_vary: []
-    added: *id001
+      may_vary: *id003
+    added: *id002
   measure:honeycomb_lattice_height:
     value:
-      must_match:
-      - life_stage
-      - view_orientation@1
-      - perturbation_modality
-      may_vary:
-      - taxon
+      must_match: []
+      may_vary: *id003
     direction:
       must_match:
       - contrast
-      may_vary: []
-    added: *id001
+      may_vary: *id003
+    added: *id002

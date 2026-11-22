@@ -1,0 +1,64 @@
+figures:
+  fig1e_sem:
+    file: fig1.png
+    page: 1
+    crop:
+      - 0
+      - 742
+      - 499
+      - 1236
+    script: figures/fig1e_sem.py
+    unit: F1E_SEM
+    kind: microscopy
+    groups:
+      blue_cover_sem:
+        item: F1E_sem_ridge
+        group: blue_cover_sem
+        unit_of_value: µm
+    note: Top-down SEM of iridescent H. sara cover scale calibrated to 2 um scale bar (SNR=4022).
+  F2E_scatter:
+    file: 41467_2024_48060_Fig2_HTML.jpg
+    crop:
+      - 252
+      - 255
+      - 500
+      - 480
+    script: figures/F2E_scatter.py
+    unit: F2_ADULT
+    kind: raster
+    groups:
+      blue_all:
+        item: F2_ridge_spacing
+        group: blue_all
+        unit_of_value: µm
+      black_all:
+        item: F2_ridge_spacing
+        group: black_all
+        unit_of_value: µm
+  F8_beeswarms:
+    file: 41467_2024_48060_Fig8_HTML.jpg
+    crop:
+      - 0
+      - 655
+      - 749
+      - 1011
+    script: figures/F8_beeswarms.py
+    unit: F8_CYTOD
+    kind: raster
+    groups:
+      n_cyto:
+        item: F8_ridge_number
+        group: cyto_d
+        unit_of_value: ridges
+      n_ctrl:
+        item: F8_ridge_number
+        group: dmso_ctrl
+        unit_of_value: ridges
+      k_cyto:
+        item: F8_ridge_curvature
+        group: cyto_d
+        unit_of_value: 1/µm
+      k_ctrl:
+        item: F8_ridge_curvature
+        group: dmso_ctrl
+        unit_of_value: 1/µm
