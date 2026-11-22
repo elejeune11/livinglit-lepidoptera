@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640">
+
+  <defs>
+    <style>
+      .sans { font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "SF Mono", ui-monospace, Menlo, monospace; }
+      .title { font-size: 20px; font-weight: 700; fill: #0f172a; letter-spacing: -0.02em; }
+      .sub { font-size: 12.5px; fill: #475569; }
+      .sec-h { font-size: 13.5px; font-weight: 700; letter-spacing: -0.01em; }
+      .box-h { font-size: 12.5px; font-weight: 700; fill: #0f172a; }
+      .box-t { font-size: 11px; fill: #334155; }
+      .code { font-size: 10.5px; fill: #0f5c6e; font-weight: 600; }
+      .badge { font-size: 10px; font-weight: 700; letter-spacing: 0.03em; }
+      .tiny { font-size: 9.8px; fill: #475569; }
+    </style>
+    <marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#475569"/>
+    </marker>
+    <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0f5c6e"/>
+    </marker>
+    <marker id="arr-grn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#166534"/>
+    </marker>
+    <marker id="arr-amb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#9a5800"/>
+    </marker>
+    <marker id="arr-ind" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#5b3a8c"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#b91c1c"/>
+    </marker>
+    <filter id="sh" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="640" fill="#fbfbfa" rx="10"/>
+
+  <!-- Header -->
+  <text x="32" y="40" class="sans title">Figure 3 · Epistemic Separation: Within-Paper Claim Audit vs. Relaxed Cross-Paper Comparison</text>
+  <text x="32" y="61" class="sans sub">Prose claims are rigorously audited inside each paper, while cross-paper synthesis uses strictly empirical values with zero hidden blocking</text>
+
+  <!-- LEFT: Within-Paper Audit -->
+  <g transform="translate(32, 86)" filter="url(#sh)">
+    <rect width="530" height="522" rx="9" fill="#ffffff" stroke="#0f5c6e" stroke-width="1.6"/>
+    <rect width="530" height="36" rx="9" fill="#e6f3f6"/>
+    <rect y="22" width="530" height="14" fill="#e6f3f6"/>
+    <text x="16" y="23" class="sans sec-h" fill="#0f5c6e">A. Within-Paper Audit (Faithful to Original LivingLit)</text>
+
+    <!-- Empirical Inputs -->
+    <rect x="16" y="50" width="498" height="84" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="26" y="69" class="sans box-h">Anchored Paper Evidence (evidence: + derived.yaml)</text>
+    <text x="26" y="88" class="sans box-t">• Printed values anchored verbatim (≤30-word quote verified by gate)</text>
+    <text x="26" y="104" class="sans box-t">• Raw author cells (data.yaml) + verified figure scripts (readings.yaml / digitized/)</text>
+    <text x="26" y="120" class="sans box-t">• SymPy formula checks rebuild ratios, optical orders, &amp; mechanical scaling laws</text>
+
+    <!-- Prose Claims -->
+    <rect x="16" y="150" width="498" height="94" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="26" y="169" class="sans box-h">Author Prose Claims (claims: — Full Depth)</text>
+    <text x="26" y="188" class="sans box-t">• Extracted from Abstract, Results conclusions, Discussion, assertive figure titles</text>
+    <text x="26" y="204" class="sans box-t">• One claim per assertion (restates: links repeated assertions across sections)</text>
+    <text x="26" y="220" class="sans box-t">• Three kinds: stated (judged) · attributed (null) · literature priority (null)</text>
+    <text x="26" y="235" class="mono tiny" fill="#0f5c6e">rests_on: [item_ids] · opposes: [item_ids] · asserts_direction: up|down|none</text>
+
+    <!-- 7-Dimension Grid -->
+    <rect x="16" y="260" width="498" height="150" rx="6" fill="#e6f3f6" stroke="#0f5c6e"/>
+    <text x="26" y="280" class="sans box-h" fill="#0f5c6e">7-Dimension Audit Against This Paper's Own Evidence Only</text>
+    <g transform="translate(26, 292)">
+      <rect x="0"   y="0"  width="112" height="30" rx="4" fill="#fff" stroke="#0f5c6e"/><text x="56"  y="19" text-anchor="middle" class="mono tiny">1. direction</text>
+      <rect x="122" y="0"  width="112" height="30" rx="4" fill="#fff" stroke="#0f5c6e"/><text x="178" y="19" text-anchor="middle" class="mono tiny">2. support</text>
+      <rect x="244" y="0"  width="112" height="30" rx="4" fill="#fff" stroke="#0f5c6e"/><text x="300" y="19" text-anchor="middle" class="mono tiny">3. comparison</text>
+      <rect x="366" y="0"  width="112" height="30" rx="4" fill="#fff" stroke="#0f5c6e"/><text x="422" y="19" text-anchor="middle" class="mono tiny">4. scope</text>
+
+      <rect x="0"   y="40" width="152" height="30" rx="4" fill="#fff" stroke="#0f5c6e"/><text x="76"  y="59" text-anchor="middle" class="mono tiny">5. replication (n)</text>
+      <rect x="162" y="40" width="152" height="30" rx="4" fill="#fff" stroke="#0f5c6e"/><text x="238" y="59" text-anchor="middle" class="mono tiny">6. strength (causal)</text>
+      <rect x="324" y="40" width="154" height="30" rx="4" fill="#fff" stroke="#0f5c6e"/><text x="401" y="59" text-anchor="middle" class="mono tiny">7. presence (in paper)</text>
+    </g>
+    <text x="26" y="384" class="sans box-t">Each scored: <tspan font-weight="700" fill="#166534">follows</tspan> · <tspan font-weight="700" fill="#9a5800">overstated</tspan> · <tspan font-weight="700" fill="#475569">cannot judge</tspan> · <tspan font-weight="700" fill="#b91c1c">does not follow</tspan></text>
+    <text x="26" y="401" class="mono tiny" fill="#0f5c6e">claim_verdict() = worst dimension · claim_direction_flags() cross-checks numbers</text>
+
+    <!-- Audit Output -->
+    <rect x="16" y="424" width="498" height="82" rx="6" fill="#fff5f5" stroke="#fca5a5"/>
+    <text x="26" y="444" class="sans box-h" fill="#9f2222">Surfaced Exclusively in the Within-Paper Audit Tab &amp; Result Drawer</text>
+    <text x="26" y="463" class="sans box-t">• Flags prose-vs-number contradictions, missing controls, and unit/derivation slips</text>
+    <text x="26" y="479" class="sans box-t">• Never silently corrects an author's printed number (uses suspected_error / suspect)</text>
+    <text x="26" y="495" class="sans box-t">• Zero interpretive prose leaks into cross-paper numerical comparisons</text>
+  </g>
+
+  <!-- CENTER FIREWALL -->
+  <g transform="translate(576, 86)">
+    <line x1="24" y1="8" x2="24" y2="514" stroke="#b91c1c" stroke-width="2" stroke-dasharray="6,5"/>
+    <rect x="-4" y="196" width="56" height="128" rx="6" fill="#fce8e8" stroke="#b91c1c" stroke-width="1.4"/>
+    <text x="24" y="232" text-anchor="middle" class="sans badge" fill="#9f2222">PROSE</text>
+    <text x="24" y="248" text-anchor="middle" class="sans badge" fill="#9f2222">CLAIMS</text>
+    <text x="24" y="264" text-anchor="middle" class="sans badge" fill="#9f2222">NEVER</text>
+    <text x="24" y="280" text-anchor="middle" class="sans badge" fill="#9f2222">CROSS</text>
+    <text x="24" y="296" text-anchor="middle" class="sans badge" fill="#9f2222">THIS</text>
+    <text x="24" y="312" text-anchor="middle" class="sans badge" fill="#9f2222">LINE</text>
+  </g>
+
+  <!-- RIGHT: Relaxed Cross-Paper Comparison -->
+  <g transform="translate(638, 86)" filter="url(#sh)">
+    <rect width="530" height="522" rx="9" fill="#ffffff" stroke="#9a5800" stroke-width="1.6"/>
+    <rect width="530" height="36" rx="9" fill="#fef4e2"/>
+    <rect y="22" width="530" height="14" fill="#fef4e2"/>
+    <text x="16" y="23" class="sans sec-h" fill="#9a5800">B. Relaxed Cross-Paper Comparison (Shift #2 · User Discretion)</text>
+
+    <!-- Empirical Multi-Paper Inputs -->
+    <rect x="16" y="50" width="498" height="84" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="26" y="69" class="sans box-h">Strictly Empirical Multi-Paper Inputs (All Lepidoptera)</text>
+    <text x="26" y="88" class="sans box-t">• Only evidence items, values.csv, digitized plot series, &amp; FFT metrology</text>
+    <text x="26" y="104" class="sans box-t">• Spans butterflies &amp; moths: Heliconius, Morpho, Colias, Vanessa, Parides, Bicyclus…</text>
+    <text x="26" y="120" class="sans box-t">• Extensible to moth acoustics, pigments, thermal/wetting mechanics, patterning</text>
+
+    <!-- Minimal Hard Blocker -->
+    <rect x="16" y="150" width="498" height="72" rx="6" fill="#fef4e2" stroke="#d97706"/>
+    <text x="26" y="170" class="sans box-h" fill="#9a5800">Minimal Hard Blocker (Physical Compatibility Only)</text>
+    <text x="26" y="189" class="sans box-t">• Same canonical measure (e.g. measure:ridge_spacing) + compatible physical units</text>
+    <text x="26" y="205" class="sans box-t">• No hidden biological/taxonomic blocking — cross-clade comparisons stay accessible</text>
+
+    <!-- Transparent Context Diff Surface -->
+    <rect x="16" y="238" width="498" height="162" rx="6" fill="#ffffff" stroke="#9a5800" stroke-width="1.3"/>
+    <text x="26" y="258" class="sans box-h">Transparent Context Diff Badges (Zero Hidden Assumptions)</text>
+    <text x="26" y="276" class="sans tiny">Every pair displays exactly which context fields match vs. differ:</text>
+    <g transform="translate(26, 288)">
+      <rect x="0"   y="0"  width="148" height="24" rx="12" fill="#e8f5ee" stroke="#166534"/><text x="74"  y="15.5" text-anchor="middle" class="mono tiny" fill="#166534">✓ same measure</text>
+      <rect x="158" y="0"  width="154" height="24" rx="12" fill="#fef4e2" stroke="#d97706"/><text x="235" y="15.5" text-anchor="middle" class="mono tiny" fill="#9a5800">≠ taxon (genus)</text>
+      <rect x="322" y="0"  width="154" height="24" rx="12" fill="#e8f5ee" stroke="#166534"/><text x="399" y="15.5" text-anchor="middle" class="mono tiny" fill="#166534">✓ cover scale</text>
+
+      <rect x="0"   y="34" width="148" height="24" rx="12" fill="#fef4e2" stroke="#d97706"/><text x="74"  y="49.5" text-anchor="middle" class="mono tiny" fill="#9a5800">≠ stage (pupa/adult)</text>
+      <rect x="158" y="34" width="154" height="24" rx="12" fill="#fce8e8" stroke="#b91c1c"/><text x="235" y="49.5" text-anchor="middle" class="mono tiny" fill="#9f2222">⚠ tilted vs top-down</text>
+      <rect x="322" y="34" width="154" height="24" rx="12" fill="#fef4e2" stroke="#d97706"/><text x="399" y="49.5" text-anchor="middle" class="mono tiny" fill="#9a5800">≠ SAXS vs SEM</text>
+
+      <rect x="0"   y="68" width="232" height="24" rx="12" fill="#e6f3f6" stroke="#0f5c6e"/><text x="116" y="83.5" text-anchor="middle" class="mono tiny" fill="#0f5c6e">≠ perturbation (WT vs Cyto D)</text>
+      <rect x="242" y="68" width="234" height="24" rx="12" fill="#e6f3f6" stroke="#0f5c6e"/><text x="359" y="83.5" text-anchor="middle" class="mono tiny" fill="#0f5c6e">≠ hydration (live vs dry SEM)</text>
+    </g>
+
+    <!-- User Discretion Outputs -->
+    <rect x="16" y="416" width="498" height="90" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="26" y="436" class="sans box-h">Interactive Researcher Discretion in the Visualizer</text>
+    <text x="26" y="455" class="sans box-t">• Toggle any context axis live: "Require exact match" vs. "Relax &amp; color by field"</text>
+    <text x="26" y="471" class="sans box-t">• Group value distributions by paper, clade/taxon, photonic architecture, or modality</text>
+    <text x="26" y="487" class="sans box-t">• Explore multi-paper intersections in "Where Papers Meet" &amp; the Knowledge Graph</text>
+  </g>
+
+  <!-- Empirical bridge arrow passing ABOVE the prose firewall -->
+  <path d="M 546 178 C 585 178, 595 178, 650 178" stroke="#0f5c6e" stroke-width="2.2" fill="none" marker-end="url(#arr-teal)"/>
+  <rect x="558" y="156" width="84" height="18" rx="4" fill="#e6f3f6" stroke="#0f5c6e"/>
+  <text x="600" y="168.5" text-anchor="middle" class="mono" font-size="9" font-weight="700" fill="#0f5c6e">VALUES ONLY</text>
+</svg>

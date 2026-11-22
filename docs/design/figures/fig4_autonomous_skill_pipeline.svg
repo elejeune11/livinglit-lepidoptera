@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660">
+
+  <defs>
+    <style>
+      .sans { font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "SF Mono", ui-monospace, Menlo, monospace; }
+      .title { font-size: 20px; font-weight: 700; fill: #0f172a; letter-spacing: -0.02em; }
+      .sub { font-size: 12.5px; fill: #475569; }
+      .sec-h { font-size: 13.5px; font-weight: 700; letter-spacing: -0.01em; }
+      .box-h { font-size: 12.5px; font-weight: 700; fill: #0f172a; }
+      .box-t { font-size: 11px; fill: #334155; }
+      .code { font-size: 10.5px; fill: #0f5c6e; font-weight: 600; }
+      .badge { font-size: 10px; font-weight: 700; letter-spacing: 0.03em; }
+      .tiny { font-size: 9.8px; fill: #475569; }
+    </style>
+    <marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#475569"/>
+    </marker>
+    <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#0f5c6e"/>
+    </marker>
+    <marker id="arr-grn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#166534"/>
+    </marker>
+    <marker id="arr-amb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#9a5800"/>
+    </marker>
+    <marker id="arr-ind" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#5b3a8c"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 9 5 L 1 8.5 z" fill="#b91c1c"/>
+    </marker>
+    <filter id="sh" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="660" fill="#fbfbfa" rx="10"/>
+
+  <!-- Header -->
+  <text x="32" y="40" class="sans title">Figure 4 · Autonomous 5-Stage Agent Skill Pipeline (skills/) &amp; Self-Closing QA Loops</text>
+  <text x="32" y="61" class="sans sub">Designed to add new open-access Lepidoptera papers end-to-end with zero human babysitting after the 2-paper pilot sign-off</text>
+
+  <!-- Stage 1 -->
+  <g transform="translate(28, 96)" filter="url(#sh)">
+    <rect width="208" height="390" rx="9" fill="#ffffff" stroke="#0f5c6e" stroke-width="1.5"/>
+    <rect width="208" height="36" rx="9" fill="#e6f3f6"/>
+    <rect y="22" width="208" height="14" fill="#e6f3f6"/>
+    <text x="12" y="23" class="mono sec-h" fill="#0f5c6e">1. ingest-paper</text>
+    <text x="12" y="56" class="sans box-h">Harvest &amp; License Gate</text>
+    <text x="12" y="76" class="sans box-t">• Fetch OA PDF / XML &amp;</text>
+    <text x="12" y="91" class="sans box-t">  full-res figure files</text>
+    <text x="12" y="109" class="sans box-t">• Harvest Dryad / OSF /</text>
+    <text x="12" y="124" class="sans box-t">  Figshare / eLife / GitHub</text>
+    <text x="12" y="142" class="sans box-t">• Write manifest.yaml</text>
+    <text x="12" y="157" class="sans box-t">  (DOI, OA license, files)</text>
+    <text x="12" y="175" class="sans box-t">• Index repo code &amp; raw</text>
+    <text x="12" y="190" class="sans box-t">  data in resources.yaml</text>
+
+    <rect x="12" y="302" width="184" height="74" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="20" y="320" class="mono tiny" fill="#0f5c6e">Exit Criteria:</text>
+    <text x="20" y="336" class="sans tiny">✓ Verified OA license</text>
+    <text x="20" y="351" class="sans tiny">✓ 100% files accounted</text>
+    <text x="20" y="366" class="sans tiny">✓ Zero files in git</text>
+  </g>
+
+  <!-- Stage 2 -->
+  <g transform="translate(260, 96)" filter="url(#sh)">
+    <rect width="208" height="390" rx="9" fill="#ffffff" stroke="#166534" stroke-width="1.5"/>
+    <rect width="208" height="36" rx="9" fill="#e8f5ee"/>
+    <rect y="22" width="208" height="14" fill="#e8f5ee"/>
+    <text x="12" y="23" class="mono sec-h" fill="#166534">2. segment-panels</text>
+    <text x="12" y="56" class="sans box-h">Atomic BBox Pass</text>
+    <text x="12" y="76" class="sans box-t">• Propose atomic 1-letter</text>
+    <text x="12" y="91" class="sans box-t">  bboxes in panels.yaml</text>
+    <text x="12" y="109" class="sans box-t">• Assign archetype, taxon,</text>
+    <text x="12" y="124" class="sans box-t">  modality, &amp; scale_bar</text>
+    <text x="12" y="142" class="sans box-t">• Render Full-Figure BBox</text>
+    <text x="12" y="157" class="sans box-t">  Contact Sheets</text>
+
+    <!-- Visual Self-Check Loop Box -->
+    <rect x="12" y="182" width="184" height="104" rx="6" fill="#f2ecfa" stroke="#5b3a8c" stroke-width="1.3"/>
+    <text x="20" y="200" class="sans box-h" fill="#5b3a8c">Autonomous Visual Loop</text>
+    <text x="20" y="218" class="sans tiny">1. Agent opens BBox sheet</text>
+    <text x="20" y="233" class="sans tiny">2. Checks for merged panels</text>
+    <text x="20" y="248" class="sans tiny">   or neighbor tick clipping</text>
+    <text x="20" y="263" class="sans tiny">3. Adjusts coords &amp; re-checks</text>
+    <text x="20" y="278" class="mono tiny" fill="#5b3a8c">   ↻ until 100% atomic</text>
+
+    <rect x="12" y="302" width="184" height="74" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="20" y="320" class="mono tiny" fill="#166534">Exit Criteria:</text>
+    <text x="20" y="336" class="sans tiny">✓ Zero composite halves</text>
+    <text x="20" y="351" class="sans tiny">✓ Scale bars calibrated</text>
+    <text x="20" y="366" class="sans tiny">✓ Clean panel crops</text>
+  </g>
+
+  <!-- Stage 3 (Wider — Parallel Subagents!) -->
+  <g transform="translate(492, 96)" filter="url(#sh)">
+    <rect width="236" height="390" rx="9" fill="#ffffff" stroke="#5b3a8c" stroke-width="1.8"/>
+    <rect width="236" height="36" rx="9" fill="#f2ecfa"/>
+    <rect y="22" width="236" height="14" fill="#f2ecfa"/>
+    <text x="12" y="23" class="mono sec-h" fill="#5b3a8c">3. digitize-panels</text>
+    <text x="12" y="56" class="sans box-h">Parallel Per-Figure Subagents</text>
+
+    <!-- Parallel lanes -->
+    <rect x="12" y="68" width="66" height="44" rx="5" fill="#e8f5ee" stroke="#166534"/>
+    <text x="45" y="87" text-anchor="middle" class="mono tiny" fill="#166534">Fig 1</text>
+    <text x="45" y="102" text-anchor="middle" class="sans tiny">FFT/ROI</text>
+
+    <rect x="85" y="68" width="66" height="44" rx="5" fill="#e6f3f6" stroke="#0f5c6e"/>
+    <text x="118" y="87" text-anchor="middle" class="mono tiny" fill="#0f5c6e">Fig 2</text>
+    <text x="118" y="102" text-anchor="middle" class="sans tiny">f2.py</text>
+
+    <rect x="158" y="68" width="66" height="44" rx="5" fill="#e6f3f6" stroke="#0f5c6e"/>
+    <text x="191" y="87" text-anchor="middle" class="mono tiny" fill="#0f5c6e">Fig N</text>
+    <text x="191" y="102" text-anchor="middle" class="sans tiny">fN.py</text>
+
+    <text x="12" y="132" class="sans box-t">• Uses extract_lib.py primitives</text>
+    <text x="12" y="148" class="sans box-t">• Emits unified overlay_meta</text>
+    <text x="12" y="164" class="sans box-t">• Renders Plot + Grating QA</text>
+
+    <!-- Self-closing retry loop -->
+    <rect x="12" y="180" width="212" height="108" rx="6" fill="#fff5f5" stroke="#b91c1c" stroke-width="1.3"/>
+    <text x="20" y="198" class="sans box-h" fill="#9f2222">Self-Closing Overlay Retry Loop</text>
+    <text x="20" y="216" class="sans tiny">1. Inspect overlay image visually</text>
+    <text x="20" y="231" class="sans tiny">2. Run FFT harmonic &amp; span guards</text>
+    <text x="20" y="246" class="sans tiny">3. Check RMSE vs. Tier-1 raw data</text>
+    <text x="20" y="261" class="sans tiny">4. Tune script / ROI &amp; re-render</text>
+    <text x="20" y="277" class="mono tiny" fill="#b91c1c">   ↻ max 3 tries else flag qa/</text>
+
+    <rect x="12" y="302" width="212" height="74" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="20" y="320" class="mono tiny" fill="#5b3a8c">Exit Criteria:</text>
+    <text x="20" y="336" class="sans tiny">✓ gate panels PASSES</text>
+    <text x="20" y="351" class="sans tiny">✓ Zero unchecked overlays</text>
+    <text x="20" y="366" class="sans tiny">✓ digitized/ cache persisted</text>
+  </g>
+
+  <!-- Stage 4 -->
+  <g transform="translate(752, 96)" filter="url(#sh)">
+    <rect width="204" height="390" rx="9" fill="#ffffff" stroke="#0f5c6e" stroke-width="1.5"/>
+    <rect width="204" height="36" rx="9" fill="#e6f3f6"/>
+    <rect y="22" width="204" height="14" fill="#e6f3f6"/>
+    <text x="12" y="23" class="mono sec-h" fill="#0f5c6e">4. read-record</text>
+    <text x="12" y="56" class="sans box-h">Full Lepidoptera Read</text>
+    <text x="12" y="76" class="sans box-t">• Read all text, tables, &amp;</text>
+    <text x="12" y="91" class="sans box-t">  supplements (record.yaml)</text>
+    <text x="12" y="109" class="sans box-t">• Map raw cells (data.yaml)</text>
+    <text x="12" y="127" class="sans box-t">• Map controlled terms &amp;</text>
+    <text x="12" y="142" class="sans box-t">  context_anchors</text>
+    <text x="12" y="160" class="sans box-t">• Check formulas (SymPy)</text>
+    <text x="12" y="178" class="sans box-t">• Extract &amp; 7-dim judge</text>
+    <text x="12" y="193" class="sans box-t">  all prose claims</text>
+    <text x="12" y="211" class="sans box-t">• Link items ↔ panels</text>
+
+    <rect x="12" y="302" width="180" height="74" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="20" y="320" class="mono tiny" fill="#0f5c6e">Exit Criteria:</text>
+    <text x="20" y="336" class="sans tiny">✓ gate record PASSES</text>
+    <text x="20" y="351" class="sans tiny">✓ gate terms &amp; derived</text>
+    <text x="20" y="366" class="sans tiny">✓ gate figures PASSES</text>
+  </g>
+
+  <!-- Stage 5 -->
+  <g transform="translate(980, 96)" filter="url(#sh)">
+    <rect width="192" height="390" rx="9" fill="#ffffff" stroke="#9a5800" stroke-width="1.5"/>
+    <rect width="192" height="36" rx="9" fill="#fef4e2"/>
+    <rect y="22" width="192" height="14" fill="#fef4e2"/>
+    <text x="12" y="23" class="mono sec-h" fill="#9a5800">5. publish-site</text>
+    <text x="12" y="56" class="sans box-h">Release &amp; Visual CI</text>
+    <text x="12" y="76" class="sans box-t">• Run livinglit audit</text>
+    <text x="12" y="94" class="sans box-t">• Build release CSVs &amp;</text>
+    <text x="12" y="109" class="sans box-t">  relaxed comparisons</text>
+    <text x="12" y="127" class="sans box-t">• Harvest data_hub.json</text>
+    <text x="12" y="145" class="sans box-t">• Compile modular web/</text>
+    <text x="12" y="160" class="sans box-t">  → docs/ + overview.html</text>
+    <text x="12" y="178" class="sans box-t">• Run Playwright light &amp;</text>
+    <text x="12" y="193" class="sans box-t">  dark UI smoke tests</text>
+
+    <rect x="12" y="302" width="168" height="74" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="20" y="320" class="mono tiny" fill="#9a5800">Exit Criteria:</text>
+    <text x="20" y="336" class="sans tiny">✓ 0 JS/console errors</text>
+    <text x="20" y="351" class="sans tiny">✓ All N×5 gates green</text>
+    <text x="20" y="366" class="sans tiny">✓ Clean git commit/CI</text>
+  </g>
+
+  <!-- Stage-to-Stage Arrows -->
+  <path d="M 236 285 L 256 285" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <path d="M 468 285 L 488 285" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <path d="M 728 285 L 748 285" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <path d="M 956 285 L 976 285" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+
+  <!-- Bottom Governance & Pilot Rollout Strip -->
+  <g transform="translate(28, 512)" filter="url(#sh)">
+    <rect width="1144" height="122" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+    <rect width="1144" height="30" rx="9" fill="#f1f5f9"/>
+    <rect y="18" width="1144" height="12" fill="#f1f5f9"/>
+    <text x="16" y="20" class="sans sec-h" fill="#0f172a">Autonomous Confidence Logging &amp; Two-Phase Rollout</text>
+
+    <rect x="16" y="42" width="546" height="66" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="26" y="60" class="mono code" fill="#5b3a8c">records/&lt;paper&gt;/qa/report.json (Committed Audit Trail)</text>
+    <text x="26" y="77" class="sans box-t">Logs per-panel confidence (verified / low_snr / flagged), FFT-vs-transect delta,</text>
+    <text x="26" y="93" class="sans box-t">RMSE vs. raw files, retry counts, &amp; ambiguities — never hides uncertainty.</text>
+
+    <rect x="580" y="42" width="548" height="66" rx="6" fill="#fef4e2" stroke="#d97706"/>
+    <text x="590" y="60" class="sans box-h" fill="#9a5800">Rollout Order: Gold-Standard Pilot → Autonomous Corpus Scale-Up</text>
+    <text x="590" y="77" class="sans box-t">1. Pilot (Human Check): 2024_Lloyd + 2026_Finet end-to-end across all 5 stages.</text>
+    <text x="590" y="93" class="sans box-t">2. Scale (Autonomous): Remaining 6 OA seed papers + future butterfly &amp; moth papers.</text>
+  </g>
+</svg>
