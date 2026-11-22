@@ -97,22 +97,22 @@
     <text x="14" y="22" class="sans sec-h" fill="#0f5c6e">2A. LivingLit Text, Table &amp; Claim Engine (Faithful Core)</text>
 
     <rect x="14" y="46" width="184" height="74" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
-    <text x="24" y="64" class="mono code">record.yaml + data.yaml</text>
-    <text x="24" y="81" class="sans box-t">Units, groups, items, printed</text>
-    <text x="24" y="96" class="sans box-t">values, raw cells, verbatim</text>
-    <text x="24" y="111" class="sans box-t">anchors &amp; context_anchors</text>
+    <text x="24" y="64" class="mono code">record + genetics.yaml</text>
+    <text x="24" y="81" class="sans box-t">Units, values, raw cells,</text>
+    <text x="24" y="96" class="sans box-t">GRN edges, genomic_tables,</text>
+    <text x="24" y="111" class="sans box-t">verbatim context_anchors</text>
 
     <rect x="212" y="46" width="184" height="74" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
-    <text x="222" y="64" class="mono code">terms.yaml (field_set: 3)</text>
+    <text x="222" y="64" class="mono code">terms.yaml (field_set: 4)</text>
     <text x="222" y="81" class="sans box-t">Lepidoptera (butterflies +</text>
-    <text x="222" y="96" class="sans box-t">moths) vocab, NCBITaxon,</text>
-    <text x="222" y="111" class="sans box-t">FlyBase, ChEBI, open slots</text>
+    <text x="222" y="96" class="sans box-t">moths) + FlyBase/NCBI xrefs,</text>
+    <text x="222" y="111" class="sans box-t">CRE/zygosity/genomics terms</text>
 
     <rect x="14" y="132" width="184" height="76" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
-    <text x="24" y="150" class="mono code">derived.yaml + formulas/</text>
-    <text x="24" y="167" class="sans box-t">SymPy formula verification</text>
-    <text x="24" y="182" class="sans box-t">(Bragg, thin-film, FvK,</text>
-    <text x="24" y="197" class="sans box-t">ratios, scaling laws)</text>
+    <text x="24" y="150" class="mono code">derived.yaml (40 SymPy)</text>
+    <text x="24" y="167" class="sans box-t">Physics, optics, FvK, SAXS,</text>
+    <text x="24" y="182" class="sans box-t">CRISPR penetrance, log2FC,</text>
+    <text x="24" y="197" class="sans box-t">BH-FDR &amp; ChIP enrichment OR</text>
 
     <rect x="212" y="132" width="184" height="76" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
     <text x="222" y="150" class="mono code">claims: (Within-Paper)</text>
@@ -129,22 +129,22 @@
     <text x="14" y="22" class="sans sec-h" fill="#166534">2B. Atomic Figure Panels &amp; Metrology Layer (Shift #1)</text>
 
     <rect x="14" y="46" width="184" height="78" rx="6" fill="#f8fafc" stroke="#86efac"/>
-    <text x="24" y="64" class="mono code" fill="#166534">panels.yaml (1-Letter)</text>
-    <text x="24" y="81" class="sans box-t">Strict atomic bboxes (no</text>
-    <text x="24" y="96" class="sans box-t">top/bottom halves), panel</text>
-    <text x="24" y="111" class="sans box-t">archetypes, scale bars, ROIs</text>
+    <text x="24" y="64" class="mono code" fill="#166534">panels.yaml (10 types)</text>
+    <text x="24" y="81" class="sans box-t">Strict 1-letter bboxes, scale</text>
+    <text x="24" y="96" class="sans box-t">bars, ROIs, crispant plates,</text>
+    <text x="24" y="111" class="sans box-t">IF/HCR maps &amp; ChIP tracks</text>
 
     <rect x="212" y="46" width="184" height="78" rx="6" fill="#f8fafc" stroke="#86efac"/>
     <text x="222" y="64" class="mono code" fill="#166534">extractors/*.py + lib</text>
     <text x="222" y="81" class="sans box-t">Bespoke per-figure scripts</text>
     <text x="222" y="96" class="sans box-t">using extract_lib.py (DP,</text>
-    <text x="222" y="111" class="sans box-t">ribbons, IRLS, dotplot, FFT)</text>
+    <text x="222" y="111" class="sans box-t">peeling, dotplot, fluor FFT)</text>
 
     <rect x="14" y="136" width="382" height="84" rx="6" fill="#f2ecfa" stroke="#5b3a8c"/>
     <text x="24" y="154" class="mono code" fill="#5b3a8c">Unified overlay_meta + digitized/ Verified Cache (Shift #3)</text>
-    <text x="24" y="172" class="sans box-t">• Plots: plot_box, curves + ±SD/CI bands, errorbars, box/dotplots</text>
+    <text x="24" y="172" class="sans box-t">• Plots: plot_box, curves + ±SD/CI, errorbars, box/volcano/dotplots</text>
     <text x="24" y="188" class="sans box-t">• Microscopy: scale bar, FFT ROI, phase-aligned grating, transects</text>
-    <text x="24" y="204" class="sans box-t">• Priority: Author raw data &gt; Printed tables &gt; Per-figure .py script</text>
+    <text x="24" y="204" class="sans box-t">• Priority: Author raw / genomic_tables &gt; Printed tables &gt; .py script</text>
   </g>
 
   <!-- Column 3: Deterministic Gates -->
@@ -157,8 +157,8 @@
     <g transform="translate(12, 48)">
       <rect width="142" height="58" rx="6" fill="#fff5f5" stroke="#fca5a5"/>
       <text x="10" y="20" class="mono code" fill="#9f2222">gate record</text>
-      <text x="10" y="36" class="sans tiny">Quotes verified in text,</text>
-      <text x="10" y="49" class="sans tiny">100% file accounting</text>
+      <text x="10" y="36" class="sans tiny">Quotes, 100% files &amp;</text>
+      <text x="10" y="49" class="sans tiny">GRN binding-tier guard</text>
     </g>
     <g transform="translate(12, 116)">
       <rect width="142" height="58" rx="6" fill="#fff5f5" stroke="#fca5a5"/>
@@ -170,13 +170,13 @@
       <rect width="142" height="58" rx="6" fill="#fff5f5" stroke="#fca5a5"/>
       <text x="10" y="20" class="mono code" fill="#9f2222">gate terms</text>
       <text x="10" y="36" class="sans tiny">Controlled vocab +</text>
-      <text x="10" y="49" class="sans tiny">ontology xref validity</text>
+      <text x="10" y="49" class="sans tiny">FlyBase/NCBI/OBO xrefs</text>
     </g>
     <g transform="translate(12, 252)">
       <rect width="142" height="58" rx="6" fill="#fff5f5" stroke="#fca5a5"/>
       <text x="10" y="20" class="mono code" fill="#9f2222">gate derived</text>
-      <text x="10" y="36" class="sans tiny">SymPy formula checks</text>
-      <text x="10" y="49" class="sans tiny">&amp; unit consistency</text>
+      <text x="10" y="36" class="sans tiny">40 SymPy checks &amp;</text>
+      <text x="10" y="49" class="sans tiny">unit consistency</text>
     </g>
     <g transform="translate(12, 320)">
       <rect width="142" height="138" rx="6" fill="#f2ecfa" stroke="#5b3a8c"/>
@@ -196,16 +196,16 @@
     <rect width="242" height="34" rx="9" fill="#fef4e2"/>
     <rect y="20" width="242" height="14" fill="#fef4e2"/>
     <text x="12" y="22" class="sans sec-h" fill="#9a5800">4. Cross-Paper Engine (Shift #2)</text>
-    <text x="14" y="54" class="sans box-h">Relaxed, User-Discretion</text>
+    <text x="14" y="54" class="sans box-h">Relaxed Compare + GRNs</text>
     <text x="14" y="72" class="sans box-t">• Uses strictly evidence items &amp;</text>
     <text x="14" y="87" class="sans box-t">  values (never prose claims)</text>
     <text x="14" y="105" class="sans box-t">• Minimal must_match (same</text>
     <text x="14" y="120" class="sans box-t">  measure + compatible units)</text>
-    <text x="14" y="138" class="sans box-t">• Every biological/method diff</text>
-    <text x="14" y="153" class="sans box-t">  shown as explicit context diff</text>
-    <text x="14" y="171" class="sans box-t">• Researcher toggles filters</text>
-    <text x="14" y="186" class="sans box-t">  live; outputs tidy CSV/JSON</text>
-    <text x="14" y="205" class="mono tiny" fill="#9a5800">values.csv · comparisons.csv · hub</text>
+    <text x="14" y="138" class="sans box-t">• 16 context diffs incl. CRE &amp;</text>
+    <text x="14" y="153" class="sans box-t">  zygosity + tiered GRN edges</text>
+    <text x="14" y="171" class="sans box-t">• Live filters &amp; tidy CSV/JSON</text>
+    <text x="14" y="186" class="sans box-t">  exports + genomic_tables hub</text>
+    <text x="14" y="205" class="mono tiny" fill="#9a5800">values · comparisons · relations.csv</text>
   </g>
 
   <g transform="translate(926, 356)" filter="url(#sh)">
@@ -214,11 +214,11 @@
     <rect y="20" width="242" height="14" fill="#e2e8f0"/>
     <text x="12" y="22" class="sans sec-h" fill="#0f172a">5. Modular Visualizer (web/)</text>
     <text x="14" y="54" class="sans box-h">Zero-Dependency JS / Canvas</text>
-    <text x="14" y="72" class="sans box-t">• Panel Atlas &amp; True-Scale (µm/px)</text>
+    <text x="14" y="72" class="sans box-t">• Atlas, Plots &amp; True Scale</text>
     <text x="14" y="88" class="sans box-t">• Live Plot + FFT Grating Overlays</text>
-    <text x="14" y="104" class="sans box-t">• Inline .py Extractor Viewer</text>
-    <text x="14" y="120" class="sans box-t">• Truth-Based Compare &amp; Graph</text>
-    <text x="14" y="136" class="sans box-t">• Within-Paper Audit &amp; Drawer</text>
+    <text x="14" y="104" class="sans box-t">• GRN SVG &amp; Volcano Tables</text>
+    <text x="14" y="120" class="sans box-t">• Vocab Tree &amp; 40-Formula Calc</text>
+    <text x="14" y="136" class="sans box-t">• Compare, Audit &amp; Drawer</text>
     <rect x="14" y="152" width="214" height="66" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
     <text x="24" y="171" class="mono code" fill="#0f172a">Dual Build Targets:</text>
     <text x="24" y="189" class="sans box-t">1. Multi-file GitHub Pages (docs/)</text>
@@ -228,9 +228,9 @@
   <!-- Bottom Autonomous Skill Pipeline Bar -->
   <g transform="translate(32, 610)" filter="url(#sh)">
     <rect width="1136" height="72" rx="9" fill="#f2ecfa" stroke="#5b3a8c" stroke-width="1.5"/>
-    <text x="18" y="26" class="sans sec-h" fill="#5b3a8c">Autonomous 5-Stage Agent Skill Pipeline (skills/) · Zero-Human-Babysitting After Pilot Sign-Off</text>
-    <text x="18" y="48" class="mono" style="font-size:10.5px;fill:#3b0764">1. ingest-paper → 2. segment-panels (BBox QA) → 3. digitize-panels (parallel .py + overlay/FFT QA) → 4. read-record (5 gates) → 5. publish-site (Playwright CI)</text>
-    <text x="18" y="63" class="sans tiny">Gold-standard validation pilot: 2024_Lloyd + 2026_Finet end-to-end before scaling autonomously to the remaining 6 open-access papers and future Lepidoptera papers.</text>
+    <text x="18" y="26" class="sans sec-h" fill="#5b3a8c">Autonomous 5-Stage Agent Skill Pipeline (skills/) · Butterfly &amp; Moth OA Corpus Scale-Up</text>
+    <text x="18" y="48" class="mono" style="font-size:10.5px;fill:#3b0764">1. ingest-paper → 2. segment-panels (BBox QA) → 3. digitize-panels (parallel .py + overlay/FFT QA) → 4. read-record (field_set 4 + GRN) → 5. publish-site</text>
+    <text x="18" y="63" class="sans tiny">Validated on 3-paper pilot (2024_Lloyd, 2025_Loh, 2026_Finet) and scaled autonomously to 10 OA butterfly &amp; moth papers across optics, morphogenesis, genetics &amp; acoustics.</text>
   </g>
 
   <!-- Connecting Arrows -->

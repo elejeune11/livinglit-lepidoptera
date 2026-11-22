@@ -25,10 +25,10 @@ Two empirical items are eligible for direct numerical comparison whenever:
 2. Their units are **dimensionally compatible** (auto-convertible by `numbers.convert`, e.g., `nm` ↔ `µm`) with compatible `expressed_as` basis (`absolute` vs. `% change` / `fold` are never mixed numerically).
 
 ### Tier 2 · Transparent Context Diff Surface (User Discretion)
-Every eligible cross-paper pair computes an explicit **`context_diff`** across all 13 contextual fields (`taxon`, `sex`, `anatomical_region`, `pattern_element`, `scale_type`, `functional_architecture`, `life_stage`, `pupal_stage_pct`, `target_gene`, `perturbation_modality`, `chemical_agent`, `imaging_modality`, `view_orientation`, `hydration_and_prep`):
+Every eligible cross-paper pair computes an explicit **`context_diff`** across all 16 contextual fields (`taxon`, `sex`, `anatomical_region`, `pattern_element`, `scale_type`, `functional_architecture`, `life_stage`, `pupal_stage_pct`, `target_gene`, `genetic_element_type`, `allele_or_zygosity`, `perturbation_modality`, `chemical_agent`, `imaging_modality`, `view_orientation`, `hydration_and_prep`):
 - **Matched fields** are shown as green verified pills (e.g., `✓ cover scale`, `✓ adult`, `✓ wild type`).
 - **Differing fields** are shown as explicit diff badges (e.g., `≠ taxon (genus)`, `≠ imaging_modality (SAXS vs SEM)`, `≠ perturbation (WT vs Cyto D)`).
-- **Known physical confounders get an explicit warning highlight** (not a silent block!), such as `⚠ view_orientation (tilted oblique vs planar apical)` — where foreshortening alters apparent SEM ridge pitch — or `⚠ hydration_and_prep (live hydrated vs vacuum dry SEM)`.
+- **Known physical and genetic confounders get an explicit warning highlight** (not a silent block!), including `⚠ view_orientation (tilted oblique vs planar apical)`, `⚠ hydration_and_prep (live hydrated vs vacuum dry SEM)`, `⚠ genetic_element_type (coding exon KO vs CRE deletion vs lncRNA)`, and `⚠ allele_or_zygosity (G0 somatic mosaic vs homozygous null vs RNAi knockdown)`.
 - **Interactive researcher toggles in the UI**: In **Compare → Values** and **Compare → Verdicts**, the user can interactively check/uncheck any context dimension (`Require exact match` vs. `Relax & color by field`) and group distributions by `paper`, `taxon` (phylogenetic DFS order), `functional_architecture`, `scale_type`, or `imaging_modality`.
 
 ---
@@ -41,12 +41,21 @@ For any two compared items $(A, B)$:
 
 ---
 
-## 4. "Where Do Papers Meet?" & Knowledge Graph
+## 4. Cross-Paper GRN Synthesis, "Where Do Papers Meet?" & Knowledge Graph
 
-Every paper meets every other paper across **all shared controlled-vocabulary axes** — not just measures:
-- Shared **taxa / clades** (computed along the phylogenetic hierarchy so *H. erato* and *H. melpomene* meet at `Heliconius` and `Nymphalidae`)
+Every paper meets every other paper across **all shared controlled-vocabulary axes** — not just morphometric measures:
+- Shared **taxa / clades** (computed along the phylogenetic hierarchy so *H. erato* and *H. melpomene* meet at `Heliconius` and `Nymphalidae`, and butterflies + moths meet at `Lepidoptera`)
 - Shared **scale types** & **functional architectures**
-- Shared **target genes**, **perturbations**, & **chemical agents**
-- Shared **imaging/optical modalities** & **measures**
+- Shared **target genes** (linked by canonical `target_gene:*` IDs + FlyBase/NCBI ortholog xrefs), **genetic element types**, **perturbations**, & **chemical agents**
+- Shared **imaging / genomics modalities** & **measures**
 
-Both the **Intersection Matrix** (`Compare → Where Papers Meet`) and the dedicated **Knowledge Graph** tab are 100% deterministically computed from `terms.yaml` and `values.csv` with clickable drill-down into exact evidence items and figure panels.
+### Evidence-Tiered GRN Synthesis (`genetics.yaml` → `relations.csv` → **GRN & Graph**)
+Directed regulatory edges (`source → relation → target`) from multiple evo-devo papers compose into a cross-paper **Gene Regulatory Network** while honoring the same epistemic discipline as empirical values:
+- Every edge carries a mandatory verbatim paper `anchor`, `assays`, `context` (`taxon`, `sex`, `life_stage`, `genetic_element_type`, `allele_or_zygosity`), and an explicit **`evidence_tier`**:
+  1. `direct_binding_and_perturbation` (solid stroke — requires both physical binding/chromatin assay and functional KO/RNAi)
+  2. `perturbation_only` (dashed — CRISPR / RNAi functional effect without direct binding proof)
+  3. `chromatin_or_binding_only` (dash-dot — ChIP-seq / CUT&Tag / ATAC-seq occupancy paired with expression)
+  4. `correlative` (dotted — snRNA-seq cluster enrichment / GWAS association)
+- `gate record` enforces that no edge can claim direct binding without a binding assay in `assays`.
+
+Both the **Intersection Matrix** (`Compare → Where Papers Meet`) and the 3-mode **GRN & Graph** workbench (`Regulatory Network (GRN)` · `Genomic Tables` · `Corpus Knowledge Graph`) are 100% deterministically computed from `terms.yaml`, `genetics.yaml`, and `values.csv` with clickable drill-down into exact evidence items, vocabulary xrefs, and figure panels.

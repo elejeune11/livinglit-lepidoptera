@@ -84,11 +84,11 @@
     <text x="16" y="314" class="sans box-t">  or "A–C" composite crops</text>
     <text x="16" y="332" class="sans box-t">• Neighbor axis ticks &amp; sibling</text>
     <text x="16" y="348" class="sans box-t">  panel labels excluded cleanly</text>
-    <text x="16" y="366" class="sans box-t">• Each panel tagged with archetype:</text>
-    <text x="24" y="383" class="mono tiny">quantitative_plot</text>
-    <text x="24" y="398" class="mono tiny">spectral_or_profile</text>
-    <text x="24" y="413" class="mono tiny">planar_microscopy</text>
-    <text x="24" y="428" class="mono tiny">cross_section · macro · schematic</text>
+    <text x="16" y="366" class="sans box-t">• Each panel tagged (10 archetypes):</text>
+    <text x="24" y="382" class="mono tiny">quantitative_plot · spectral</text>
+    <text x="24" y="396" class="mono tiny">planar_microscopy · cross_section</text>
+    <text x="24" y="410" class="mono tiny">crispant_plate · expression_img</text>
+    <text x="24" y="424" class="mono tiny">expr_matrix · genomic_track · macro</text>
 
     <rect x="16" y="442" width="230" height="36" rx="5" fill="#fce8e8" stroke="#fca5a5"/>
     <text x="26" y="458" class="mono tiny" fill="#9f2222">BBox Visual Self-Check Gate:</text>
@@ -100,20 +100,20 @@
     <rect width="836" height="236" rx="9" fill="#ffffff" stroke="#0f5c6e" stroke-width="1.6"/>
     <rect width="836" height="34" rx="9" fill="#e6f3f6"/>
     <rect y="20" width="836" height="14" fill="#e6f3f6"/>
-    <text x="14" y="22" class="sans sec-h" fill="#0f5c6e">Step 2A · Quantitative Plots, Spectra, Errorbars &amp; Genomics Dotplots</text>
+    <text x="14" y="22" class="sans sec-h" fill="#0f5c6e">Step 2A · Quantitative Plots, Spectra, Errorbars, Volcano &amp; Genomics Dotplots</text>
 
     <!-- Data Priority + Extractor -->
     <rect x="16" y="46" width="248" height="174" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
     <text x="26" y="65" class="sans box-h">1. Data Priority Hierarchy</text>
-    <text x="26" y="83" class="sans box-t" font-weight="600" fill="#166534">Tier 1: Author CSV / XLSX / .dat</text>
+    <text x="26" y="83" class="sans box-t" font-weight="600" fill="#166534">Tier 1: Author CSV / genomic_tables</text>
     <text x="26" y="99" class="sans box-t" font-weight="600" fill="#0f5c6e">Tier 2: Printed Tables &amp; Text</text>
     <text x="26" y="115" class="sans box-t" font-weight="600" fill="#5b3a8c">Tier 3: Per-Figure Python Script</text>
     <line x1="26" y1="126" x2="254" y2="126" stroke="#e2e8f0"/>
     <text x="26" y="143" class="mono code">extractors/fN.py + extract_lib.py</text>
-    <text x="26" y="160" class="sans tiny">• Tick calibration &amp; legend masking</text>
-    <text x="26" y="174" class="sans tiny">• White-ray unmixing + L1 Viterbi DP</text>
+    <text x="26" y="160" class="sans tiny">• Auto-tick calibration (misfit px)</text>
+    <text x="26" y="174" class="sans tiny">• White-ray DP &amp; shaded-bg peeling</text>
     <text x="26" y="188" class="sans tiny">• ±SD/CI ribbon walker &amp; IRLS fits</text>
-    <text x="26" y="202" class="sans tiny">• Errorbar arm, boxplot &amp; dotplot grid</text>
+    <text x="26" y="202" class="sans tiny">• Errorbar, boxplot, volcano &amp; dotplot</text>
 
     <!-- Plot Overlay Mockup -->
     <rect x="282" y="46" width="276" height="174" rx="6" fill="#ffffff" stroke="#06b6d4" stroke-width="1.4"/>
@@ -155,15 +155,15 @@
     <rect width="836" height="236" rx="9" fill="#ffffff" stroke="#166534" stroke-width="1.6"/>
     <rect width="836" height="34" rx="9" fill="#e8f5ee"/>
     <rect y="20" width="836" height="14" fill="#e8f5ee"/>
-    <text x="14" y="22" class="sans sec-h" fill="#166534">Step 2B · Calibrated Microscopy, 2D-FFT Ridge Metrology &amp; Grating Proof</text>
+    <text x="14" y="22" class="sans sec-h" fill="#166534">Step 2B · Calibrated SEM/Fluorescent Microscopy, 2D-FFT &amp; Grating Proof</text>
 
     <!-- Metrology Steps -->
     <rect x="16" y="46" width="248" height="174" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
     <text x="26" y="65" class="sans box-h">Microscopy Metrology Pipeline</text>
     <text x="26" y="85" class="sans box-t">1. Measure scale bar in pixels →</text>
     <text x="36" y="100" class="mono tiny">um_per_px, fov_um, bar_box</text>
-    <text x="26" y="120" class="sans box-t">2. Clean planar ROI (excludes</text>
-    <text x="36" y="135" class="sans box-t">scale bars, arrows, XZ strips)</text>
+    <text x="26" y="120" class="sans box-t">2. Channel-isolated clean ROI</text>
+    <text x="36" y="135" class="sans box-t">(green/magenta/STED/SEM)</text>
     <text x="26" y="155" class="sans box-t">3. 2D-FFT peak + phase alignment</text>
     <text x="36" y="170" class="mono tiny">period_px, wavevector_deg, φ</text>
     <text x="26" y="190" class="sans box-t">4. 10 orthogonal transects +</text>

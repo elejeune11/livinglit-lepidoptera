@@ -142,20 +142,20 @@
     <rect width="204" height="36" rx="9" fill="#e6f3f6"/>
     <rect y="22" width="204" height="14" fill="#e6f3f6"/>
     <text x="12" y="23" class="mono sec-h" fill="#0f5c6e">4. read-record</text>
-    <text x="12" y="56" class="sans box-h">Full Lepidoptera Read</text>
+    <text x="12" y="56" class="sans box-h">Full field_set 4 Read</text>
     <text x="12" y="76" class="sans box-t">• Read all text, tables, &amp;</text>
     <text x="12" y="91" class="sans box-t">  supplements (record.yaml)</text>
-    <text x="12" y="109" class="sans box-t">• Map raw cells (data.yaml)</text>
-    <text x="12" y="127" class="sans box-t">• Map controlled terms &amp;</text>
-    <text x="12" y="142" class="sans box-t">  context_anchors</text>
-    <text x="12" y="160" class="sans box-t">• Check formulas (SymPy)</text>
-    <text x="12" y="178" class="sans box-t">• Extract &amp; 7-dim judge</text>
-    <text x="12" y="193" class="sans box-t">  all prose claims</text>
-    <text x="12" y="211" class="sans box-t">• Link items ↔ panels</text>
+    <text x="12" y="109" class="sans box-t">• Author genetics.yaml</text>
+    <text x="12" y="124" class="sans box-t">  (GRN + genomic_tables)</text>
+    <text x="12" y="142" class="sans box-t">• Map terms + FlyBase/</text>
+    <text x="12" y="157" class="sans box-t">  NCBI xrefs &amp; anchors</text>
+    <text x="12" y="175" class="sans box-t">• 40 SymPy checks + 7-dim</text>
+    <text x="12" y="190" class="sans box-t">  within-paper claim audit</text>
+    <text x="12" y="208" class="sans box-t">• Link items ↔ panels</text>
 
     <rect x="12" y="302" width="180" height="74" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
     <text x="20" y="320" class="mono tiny" fill="#0f5c6e">Exit Criteria:</text>
-    <text x="20" y="336" class="sans tiny">✓ gate record PASSES</text>
+    <text x="20" y="336" class="sans tiny">✓ gate record + GRN tier</text>
     <text x="20" y="351" class="sans tiny">✓ gate terms &amp; derived</text>
     <text x="20" y="366" class="sans tiny">✓ gate figures PASSES</text>
   </g>
@@ -168,13 +168,13 @@
     <text x="12" y="23" class="mono sec-h" fill="#9a5800">5. publish-site</text>
     <text x="12" y="56" class="sans box-h">Release &amp; Visual CI</text>
     <text x="12" y="76" class="sans box-t">• Run livinglit audit</text>
-    <text x="12" y="94" class="sans box-t">• Build release CSVs &amp;</text>
-    <text x="12" y="109" class="sans box-t">  relaxed comparisons</text>
-    <text x="12" y="127" class="sans box-t">• Harvest data_hub.json</text>
+    <text x="12" y="94" class="sans box-t">• Export values, compare,</text>
+    <text x="12" y="109" class="sans box-t">  relations &amp; terms CSVs</text>
+    <text x="12" y="127" class="sans box-t">• Harvest genomic_tables</text>
     <text x="12" y="145" class="sans box-t">• Compile modular web/</text>
     <text x="12" y="160" class="sans box-t">  → docs/ + overview.html</text>
-    <text x="12" y="178" class="sans box-t">• Run Playwright light &amp;</text>
-    <text x="12" y="193" class="sans box-t">  dark UI smoke tests</text>
+    <text x="12" y="178" class="sans box-t">• Run Playwright 8-tab &amp;</text>
+    <text x="12" y="193" class="sans box-t">  40-formula smoke tests</text>
 
     <rect x="12" y="302" width="168" height="74" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
     <text x="20" y="320" class="mono tiny" fill="#9a5800">Exit Criteria:</text>
@@ -202,8 +202,8 @@
     <text x="26" y="93" class="sans box-t">RMSE vs. raw files, retry counts, &amp; ambiguities — never hides uncertainty.</text>
 
     <rect x="580" y="42" width="548" height="66" rx="6" fill="#fef4e2" stroke="#d97706"/>
-    <text x="590" y="60" class="sans box-h" fill="#9a5800">Rollout Order: Gold-Standard Pilot → Autonomous Corpus Scale-Up</text>
-    <text x="590" y="77" class="sans box-t">1. Pilot (Human Check): 2024_Lloyd + 2026_Finet end-to-end across all 5 stages.</text>
-    <text x="590" y="93" class="sans box-t">2. Scale (Autonomous): Remaining 6 OA seed papers + future butterfly &amp; moth papers.</text>
+    <text x="590" y="60" class="sans box-h" fill="#9a5800">Rollout Order: 3-Paper Pilot → 10-Paper Open-Access Butterfly &amp; Moth Corpus</text>
+    <text x="590" y="77" class="sans box-t">1. Pilot: 2024_Lloyd, 2026_Finet, 2025_Loh (optics, morphogenesis &amp; GRN/genomics).</text>
+    <text x="590" y="93" class="sans box-t">2. Scale: 7 more OA papers (SAXS, live imaging, Wnt/ivory GRNs, Arp2/3, FvK, moths).</text>
   </g>
 </svg>
