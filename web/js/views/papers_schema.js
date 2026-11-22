@@ -78,32 +78,40 @@ window.LL = window.LL || {};
 
       <div class="vault-pair">
         <div class="card">
-          <div class="card-title">Lepidoptera Controlled Vocabulary (${terms.length} terms · field_set 3)</div>
-          <div class="muted" style="margin-bottom:8px">Covers butterflies (Papilionoidea) &amp; moths (Bombycoidea, Noctuoidea, Geometroidea, Pyraloidea) with extensible optical, acoustic, thermal, and mechanical architectures.</div>
+          <div class="card-title">
+            <span>Lepidoptera Controlled Vocabulary (${terms.length} terms · field_set 3)</span>
+            <button type="button" class="btn btn-sm primary" data-jump-term="" data-jump-field="ALL">Open Explorer →</button>
+          </div>
+          <div class="muted" style="margin-bottom:8px">Click any field below to explore its hierarchy, definitions, synonyms, and live corpus usage.</div>
           <div class="kv-grid">
             ${Object.entries(byField).sort((a, b) => b[1].length - a[1].length).map(([f, list]) => `
-              <div class="kv-item">
+              <button type="button" class="kv-item kv-clickable" data-jump-term="" data-jump-field="${LL.esc(f)}">
                 <div class="kv-k">${LL.esc(f.replace(/_/g, " "))}</div>
-                <div class="kv-v mono">${list.length} terms</div>
-              </div>`).join("")}
+                <div class="kv-v mono">${list.length} terms →</div>
+              </button>`).join("")}
           </div>
         </div>
 
-        <div class="card" style="max-height:360px;overflow-y:auto">
-          <div class="card-title">Domain &amp; Statistical Formula Library (${formulas.length} SymPy formulas)</div>
-          <table class="data-table">
-            <thead><tr><th>Formula</th><th>Kind</th><th>Statement</th></tr></thead>
-            <tbody>
-              ${formulas.filter((f) => f.kind === "domain" || f.formula.includes("interference") || f.formula.includes("ridge") || f.formula.includes("acoustic") || f.formula.includes("saxs") || f.formula.includes("buckling")).concat(
-                formulas.filter((f) => !(f.kind === "domain" || f.formula.includes("interference") || f.formula.includes("ridge") || f.formula.includes("acoustic") || f.formula.includes("saxs") || f.formula.includes("buckling"))).slice(0, 8)
-              ).map((f) => `
-                <tr>
-                  <td class="mono" style="font-weight:600">${LL.esc(f.formula)}</td>
-                  <td><span class="pill">${LL.esc(f.kind)}</span></td>
-                  <td class="muted">${LL.esc(f.statement)}</td>
-                </tr>`).join("")}
-            </tbody>
-          </table>
+        <div class="card">
+          <div class="card-title">
+            <span>SymPy Formula Library (${formulas.length} formulas)</span>
+            <button type="button" class="btn btn-sm primary" data-jump-formula="" data-jump-scope="ALL">Open Workbench →</button>
+          </div>
+          <div class="muted" style="margin-bottom:8px">Click any Lepidoptera physics or statistical audit formula to inspect equations, assumptions, dependencies, and run live calculations.</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px">
+            <button type="button" class="btn btn-sm" data-jump-formula="" data-jump-scope="lepidoptera">Lepidoptera Physics &amp; Morphometrics (${formulas.filter((f) => f.scope === "lepidoptera").length}) →</button>
+            <button type="button" class="btn btn-sm" data-jump-formula="" data-jump-scope="shared">Statistical &amp; Audit Core (${formulas.filter((f) => f.scope !== "lepidoptera").length}) →</button>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:5px">
+            ${formulas.filter((f) => f.scope === "lepidoptera").map((f) => `
+              <button type="button" class="kv-item kv-clickable" style="display:flex;justify-content:space-between;align-items:center;gap:8px;text-align:left" data-jump-formula="${LL.esc(f.formula)}" data-jump-scope="lepidoptera">
+                <div>
+                  <div class="mono" style="font-size:12px;font-weight:700">${LL.esc(f.formula)}</div>
+                  <div class="muted" style="font-size:11px">${LL.esc((f.equations || []).join(" · "))}</div>
+                </div>
+                <span class="pill accent">${LL.esc(f.kind)}</span>
+              </button>`).join("")}
+          </div>
         </div>
       </div>
     `;

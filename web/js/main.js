@@ -17,6 +17,7 @@ window.LL = window.LL || {};
     else if (v === "compare") LL.renderCompareView(root);
     else if (v === "audit") LL.renderAuditView(root);
     else if (v === "graph") LL.renderGraphView(root);
+    else if (v === "schema") LL.renderVocabFormulasView(root);
     else if (v === "papers") LL.renderPapersView(root);
   }
 
@@ -28,12 +29,15 @@ window.LL = window.LL || {};
     const nComp = (data.comparisons || []).length;
     const nClaims = (data.claims || []).length;
     const nFft = (data.panels || []).filter(LL.panelHasFft).length;
+    const nTerms = (data.terms || []).length;
+    const nFormulas = (data.formulas || []).length;
 
     const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
     set("cnt-atlas", nPanels);
     set("cnt-vault", nPlots);
     set("cnt-compare", nComp);
     set("cnt-audit", nClaims);
+    set("cnt-schema", `${nTerms}·${nFormulas}`);
 
     const kpi = document.getElementById("kpi-inline");
     if (kpi) {
@@ -61,7 +65,7 @@ window.LL = window.LL || {};
     document.getElementById("drawer-close").onclick = LL.closeDrawer;
     document.getElementById("drawer-backdrop").onclick = LL.closeDrawer;
 
-    // Global event delegation for opening Audit Drawer or jumping to a panel in Atlas
+    // Global event delegation for Audit Drawer & cross-tab jumps (panels, terms, formulas, compare)
     document.body.addEventListener("click", (ev) => {
       const itemBtn = ev.target.closest("[data-open-item]");
       if (itemBtn) {
@@ -76,7 +80,60 @@ window.LL = window.LL || {};
         LL.state.atlasArch = "ALL";
         LL.state.atlasOnlyFft = false;
         LL.state.atlasOnlyExt = false;
+        LL.state.atlasQuery = "";
         LL.state.view = "atlas";
+        renderActiveView();
+        return;
+      }
+      const atlasQBtn = ev.target.closest("[data-jump-atlas-query]");
+      if (atlasQBtn) {
+        LL.closeDrawer();
+        LL.state.atlasPaper = "ALL";
+        LL.state.atlasArch = "ALL";
+        LL.state.atlasOnlyFft = false;
+        LL.state.atlasOnlyExt = false;
+        LL.state.atlasQuery = atlasQBtn.getAttribute("data-jump-atlas-query") || "";
+        LL.state.selectedPanelId = null;
+        LL.state.view = "atlas";
+        renderActiveView();
+        return;
+      }
+      const termBtn = ev.target.closest("[data-jump-term]");
+      if (termBtn) {
+        LL.closeDrawer();
+        const tid = termBtn.getAttribute("data-jump-term");
+        const fieldHint = termBtn.getAttribute("data-jump-field");
+        LL.state.schemaTab = "vocab";
+        LL.state.vocabQuery = "";
+        LL.state.vocabFilter = "all";
+        if (fieldHint) LL.state.vocabField = fieldHint;
+        else if (tid && tid.includes(":")) LL.state.vocabField = tid.split(":")[0];
+        else LL.state.vocabField = "ALL";
+        if (tid) LL.state.selectedTermId = tid;
+        LL.state.view = "schema";
+        renderActiveView();
+        return;
+      }
+      const formulaBtn = ev.target.closest("[data-jump-formula]");
+      if (formulaBtn) {
+        LL.closeDrawer();
+        const fid = formulaBtn.getAttribute("data-jump-formula");
+        const scopeHint = formulaBtn.getAttribute("data-jump-scope");
+        LL.state.schemaTab = "formulas";
+        LL.state.formulaQuery = "";
+        LL.state.formulaKind = "ALL";
+        LL.state.formulaOnlyUsed = false;
+        LL.state.formulaScope = scopeHint || "ALL";
+        if (fid) LL.state.selectedFormulaId = fid;
+        LL.state.view = "schema";
+        renderActiveView();
+        return;
+      }
+      const cmpBtn = ev.target.closest("[data-jump-compare-measure]");
+      if (cmpBtn) {
+        LL.closeDrawer();
+        LL.state.compareMeasure = cmpBtn.getAttribute("data-jump-compare-measure") || "ALL";
+        LL.state.view = "compare";
         renderActiveView();
       }
     });

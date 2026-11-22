@@ -497,3 +497,309 @@
 }
 .kv-k { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-3); }
 .kv-v { font-size: 12px; font-weight: 600; color: var(--ink); margin-top: 1px; word-break: break-word; }
+.kv-clickable {
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: border-color 0.14s, background 0.14s, transform 0.1s;
+}
+.kv-clickable:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  transform: translateY(-1px);
+}
+
+/* Vocab & Formulas Explorer */
+.schema-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.seg-switch {
+  display: inline-flex;
+  padding: 3px;
+  gap: 3px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+.seg-btn {
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink-2);
+  padding: 6px 13px;
+  border-radius: 7px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.14s, color 0.14s, box-shadow 0.14s;
+}
+.seg-btn:hover { color: var(--ink); }
+.seg-btn.active {
+  background: var(--surface);
+  color: var(--accent);
+  border-color: var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+/* 3-pane Vocabulary Explorer */
+.vocab-layout {
+  display: grid;
+  grid-template-columns: 235px minmax(310px, 1fr) minmax(380px, 1.15fr);
+  gap: 14px;
+  align-items: start;
+}
+@media (max-width: 1180px) {
+  .vocab-layout { grid-template-columns: 210px 1fr; }
+  .vocab-detail { grid-column: 1 / -1; position: static !important; }
+}
+@media (max-width: 780px) {
+  .vocab-layout { grid-template-columns: 1fr; }
+}
+.field-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.field-rail-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 6px 9px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+.field-rail-btn:hover { background: var(--surface-2); }
+.field-rail-btn.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 32%, transparent);
+}
+.field-rail-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-3);
+}
+.used-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ok);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.term-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: calc(100vh - 235px);
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.term-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+}
+.term-row:hover { border-color: var(--accent); background: var(--surface-2); }
+.term-row.selected {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+.term-tree-branch {
+  color: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  margin-right: 4px;
+  user-select: none;
+}
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+  font-size: 11.5px;
+}
+.breadcrumb-sep { color: var(--ink-3); }
+
+/* 2-pane Formula Library Workbench */
+.formula-layout {
+  display: grid;
+  grid-template-columns: minmax(340px, 0.95fr) minmax(440px, 1.3fr);
+  gap: 14px;
+  align-items: start;
+}
+@media (max-width: 1020px) {
+  .formula-layout { grid-template-columns: 1fr; }
+}
+.formula-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  max-height: calc(100vh - 230px);
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.formula-group-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-3);
+  margin: 8px 2px 2px;
+}
+.formula-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+}
+.formula-card.lep { border-left: 3px solid var(--accent); }
+.formula-card:hover { border-color: var(--accent); background: var(--surface-2); }
+.formula-card.selected {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.eq-preview {
+  font-family: var(--font-serif);
+  font-size: 14.5px;
+  color: var(--ink);
+  line-height: 1.35;
+}
+.eq-banner {
+  padding: 13px 15px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.eq-banner-math {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  line-height: 1.45;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+.eq-banner-math sub, .eq-preview sub { font-size: 0.72em; line-height: 0; }
+.eq-banner-math sup, .eq-preview sup { font-size: 0.72em; line-height: 0; }
+.eq-sympy-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--border);
+  font-size: 11.5px;
+  color: var(--ink-2);
+}
+
+.calc-box {
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+.calc-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+  gap: 8px;
+  margin: 8px 0 10px;
+}
+.calc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.calc-field label {
+  font-size: 11px;
+  color: var(--ink-2);
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+.calc-field input {
+  width: 100%;
+  padding: 5px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+}
+.calc-field input:focus {
+  outline: 2px solid var(--accent-soft);
+  border-color: var(--accent);
+}
+.calc-outputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+.calc-result-chip {
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--border));
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.warn-callout {
+  padding: 9px 11px;
+  border-radius: var(--radius-sm);
+  background: var(--warn-soft);
+  border: 1px solid color-mix(in srgb, var(--warn) 35%, transparent);
+  color: var(--ink);
+  font-size: 12px;
+}
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+

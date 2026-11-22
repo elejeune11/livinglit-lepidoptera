@@ -18,7 +18,9 @@ window.LL = window.LL || {};
 
     const vals = (data.values || []).filter((v) => v.paper === paper && v.item === itemId);
     const checks = (data.checks || []).filter((c) => c.paper === paper && c.item === itemId);
+    const derivs = (data.derivations || []).filter((d) => d.paper === paper && d.item === itemId);
     const linkedPanels = (data.panels || []).filter((p) => p.paper === paper && (p.linked_items || []).includes(itemId));
+    const termById = new Map((data.terms || []).map((t) => [t.id, t]));
 
     document.getElementById("drawer-sub").textContent = `${paper} · Unit ${item.unit} · Measure: ${item.measure}`;
     document.getElementById("drawer-title").textContent = itemId;
@@ -42,6 +44,7 @@ window.LL = window.LL || {};
         <span class="pill">Depth: ${LL.esc(item.depth)}</span>
         ${item.direction && item.direction !== "not available" ? `<span class="pill accent">Direction: ${LL.esc(item.direction)} (${LL.esc(item.direction_origin)})</span>` : ""}
         ${item.p ? `<span class="pill mono">${LL.esc(item.p)}</span>` : ""}
+        ${(item.measure_terms || []).map((mt) => `<button type="button" class="pill info pill-btn" data-jump-term="${LL.esc(mt)}" title="Inspect controlled vocabulary term">${LL.esc(mt)} ↗</button>`).join("")}
       </div>
 
       <div>
@@ -70,11 +73,35 @@ window.LL = window.LL || {};
           </table>
         </div>` : ""}
 
+      ${derivs.length ? `
+        <div>
+          <div style="font-weight:700;margin-bottom:6px">SymPy Formula Derivations (${derivs.length})</div>
+          ${derivs.map((d) => `
+            <div class="kv-item" style="margin-bottom:6px">
+              <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap">
+                <span class="mono" style="font-weight:700">${LL.esc(d.derivation)}</span>
+                <div style="display:flex;gap:5px;align-items:center">
+                  ${d.library_formula ? `<button type="button" class="pill accent pill-btn" data-jump-formula="${LL.esc(d.library_formula)}">${LL.esc(d.library_formula)} ↗</button>` : ""}
+                  <span class="pill ${d.verdict === "consistent" ? "ok" : "warn"}">${LL.esc(d.verdict)}</span>
+                </div>
+              </div>
+              <div class="mono muted" style="margin-top:4px;font-size:11.5px">${LL.esc(d.formula)}</div>
+              ${d.rebuilt && d.rebuilt.value != null ? `<div class="muted" style="margin-top:3px">Rebuilt: <strong>${LL.esc(d.rebuilt.value)} ${LL.esc(d.rebuilt.unit || "")}</strong>${d.rebuilt.interval ? ` · interval [${d.rebuilt.interval.join(", ")}]` : ""}</div>` : ""}
+            </div>`).join("")}
+        </div>` : ""}
+
       ${ctxPairs.length ? `
         <div>
           <div style="font-weight:700;margin-bottom:6px">Resolved Controlled-Vocabulary Context</div>
           <div class="kv-grid">
-            ${ctxPairs.map(([k, v]) => `<div class="kv-item"><div class="kv-k">${LL.esc(k.replace(/_/g, " "))}</div><div class="kv-v mono" style="font-size:11px">${LL.esc(v)}</div></div>`).join("")}
+            ${ctxPairs.map(([k, v]) => {
+              const tids = v.split(",").map((s) => s.trim()).filter(Boolean);
+              const inner = tids.map((tid) => termById.has(tid)
+                ? `<button type="button" class="pill pill-btn" style="margin:2px 2px 0 0" data-jump-term="${LL.esc(tid)}">${LL.esc(termById.get(tid).label)} ↗</button>`
+                : `<span class="mono" style="font-size:11px">${LL.esc(tid)}</span>`
+              ).join(" ");
+              return `<div class="kv-item"><div class="kv-k">${LL.esc(k.replace(/_/g, " "))}</div><div class="kv-v">${inner}</div></div>`;
+            }).join("")}
           </div>
         </div>` : ""}
 

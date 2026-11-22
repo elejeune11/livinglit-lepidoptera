@@ -42,6 +42,19 @@ window.LL = window.LL || {};
     // Graph tab
     graphFilter: "ALL",
     graphSelectedNode: null,
+    // Vocab & Formulas Explorer tab
+    schemaTab: "vocab",
+    vocabField: "ALL",
+    vocabQuery: "",
+    vocabFilter: "all", // all | used | defined | synonyms
+    vocabMode: "tree",  // tree | flat
+    selectedTermId: null,
+    formulaScope: "ALL", // ALL | lepidoptera | shared
+    formulaKind: "ALL",  // ALL | model | definition | derived
+    formulaOnlyUsed: false,
+    formulaQuery: "",
+    selectedFormulaId: null,
+    formulaCalcInputs: {},
   };
 
   LL.esc = function (s) {

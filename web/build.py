@@ -41,6 +41,7 @@ JS_FILES = [
     "js/views/compare.js",
     "js/views/audit.js",
     "js/views/graph.js",
+    "js/views/vocab_formulas.js",
     "js/views/papers_schema.js",
     "js/main.js",
 ]
@@ -70,6 +71,165 @@ def _jparse(s: str | None, default: Any = None) -> Any:
         return json.loads(s)
     except Exception:
         return default
+
+
+def _load_schema_metadata() -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
+    """Load rich field declarations and formula library details directly from fields/."""
+    import sys
+
+    src_dir = str(ROOT / "src")
+    if src_dir not in sys.path:
+        sys.path.insert(0, src_dir)
+    from livinglit_lepidoptera import DEFAULT_FIELD, FIELDS_DIR
+    from livinglit_lepidoptera.formulas import load_library, load_log as load_formula_log
+    from livinglit_lepidoptera.vocab import load_fields
+
+    field_decls: list[dict[str, Any]] = []
+    for name, decl in load_fields().items():
+        field_decls.append({
+            "name": name,
+            "kind": decl.kind,
+            "ontology": decl.ontology,
+            "set": bool(decl.set),
+            "scope": decl.scope,
+            "states": list(decl.states or []),
+        })
+
+    lib = load_library()
+    provenance: dict[str, dict[str, Any]] = {}
+    for scope_name, fdir in (("shared", FIELDS_DIR / "_shared" / "formulas"), ("lepidoptera", FIELDS_DIR / DEFAULT_FIELD / "formulas")):
+        for ver in load_formula_log(fdir):
+            for ev in ver.get("events", []):
+                if ev.get("event") == "add":
+                    fname = ev["entry"]["formula"]
+                    provenance[fname] = {
+                        "scope": scope_name,
+                        "added_version": ver.get("version"),
+                        "added_paper": ver.get("paper") or scope_name,
+                    }
+
+    used_by_map: dict[str, list[str]] = {}
+    for fname, entry in lib.entries.items():
+        for u in entry.uses or []:
+            used_by_map.setdefault(u.formula, [])
+            if fname not in used_by_map[u.formula]:
+                used_by_map[u.formula].append(fname)
+
+    formula_meta: dict[str, dict[str, Any]] = {}
+    for fname, entry in lib.entries.items():
+        prov = provenance.get(fname, {"scope": "shared", "added_version": None, "added_paper": None})
+        cites_obj = None
+        if entry.cites:
+            cites_obj = {
+                "text": entry.cites.text,
+                "url": entry.cites.url,
+                "quote": entry.cites.quote,
+                "anchor": entry.cites.anchor,
+            }
+        formula_meta[fname] = {
+            "scope": prov["scope"],
+            "added_version": prov["added_version"],
+            "added_paper": prov["added_paper"],
+            "equations": list(entry.equations or []),
+            "variables": dict(entry.variables or {}),
+            "assumes": list(entry.assumes or []),
+            "holds_under": list(lib.holds_under(fname) or []),
+            "uses": [{"formula": u.formula, "subs": dict(u.subs or {})} for u in (entry.uses or [])],
+            "used_by": used_by_map.get(fname, []),
+            "does_not_apply": entry.does_not_apply or "",
+            "tests": [{"given": dict(t.given or {}), "expect": dict(t.expect or {})} for t in (entry.tests or [])],
+            "cites": cites_obj,
+        }
+    return field_decls, formula_meta
+
+
+def _build_term_usage(
+    terms: list[dict[str, Any]],
+    mappings_rows: list[dict[str, Any]],
+    items: list[dict[str, Any]],
+    panels: list[dict[str, Any]],
+) -> dict[str, dict[str, Any]]:
+    """Aggregate live corpus usage (papers, author phrasings, items, panels) for every vocabulary term."""
+    usage: dict[str, dict[str, Any]] = {}
+
+    def _slot(tid: str) -> dict[str, Any]:
+        if tid not in usage:
+            usage[tid] = {"papers": [], "items": [], "panels": [], "stated_examples": []}
+        return usage[tid]
+
+    # 1. Canonical term mappings from mappings.csv
+    for m in mappings_rows:
+        paper = m.get("paper", "")
+        tids = _jparse(m.get("terms"), [])
+        for tid in tids:
+            s = _slot(tid)
+            if paper and paper not in s["papers"]:
+                s["papers"].append(paper)
+            ex = {
+                "paper": paper,
+                "at": m.get("at", ""),
+                "stated": m.get("stated", ""),
+                "origin": m.get("origin", ""),
+            }
+            if len(s["stated_examples"]) < 12 and ex not in s["stated_examples"]:
+                s["stated_examples"].append(ex)
+
+    # 2. Item measure_terms
+    for it in items:
+        ikey = f"{it.get('paper', '')}/{it.get('item', '')}"
+        paper = it.get("paper", "")
+        for tid in it.get("measure_terms") or []:
+            s = _slot(tid)
+            if paper and paper not in s["papers"]:
+                s["papers"].append(paper)
+            if ikey not in s["items"]:
+                s["items"].append(ikey)
+
+    # 3. Link items via item-level context/unit mappings + match panels via context labels/synonyms & linked_items
+    label_to_tids: dict[str, list[str]] = {}
+    for t in terms:
+        tid = t["id"]
+        cands = [t.get("label", ""), tid.split(":", 1)[-1].replace("_", " ")] + list(t.get("synonyms") or [])
+        for c in cands:
+            norm = re.sub(r"\s+", " ", str(c or "").strip().lower())
+            if len(norm) >= 2:
+                label_to_tids.setdefault(norm, [])
+                if tid not in label_to_tids[norm]:
+                    label_to_tids[norm].append(tid)
+
+    # Map panel.context values -> matching terms
+    for p in panels:
+        pid = p.get("id", "")
+        paper = p.get("paper", "")
+        ctx = p.get("context") or {}
+        matched_tids: set[str] = set()
+        for val in ctx.values():
+            if not val:
+                continue
+            vals = val if isinstance(val, list) else [val]
+            for v in vals:
+                sv = re.sub(r"\s+", " ", str(v).strip().lower())
+                if sv in label_to_tids:
+                    matched_tids.update(label_to_tids[sv])
+                else:
+                    # Also check clean phrase boundary matches for composite strings like "Papilionoidea (34 species)"
+                    head = sv.split("(", 1)[0].strip()
+                    if head in label_to_tids:
+                        matched_tids.update(label_to_tids[head])
+        # Also inherit measure_terms from linked items
+        for it_name in p.get("linked_items") or []:
+            ikey = f"{paper}/{it_name}"
+            for it in items:
+                if f"{it.get('paper', '')}/{it.get('item', '')}" == ikey:
+                    matched_tids.update(it.get("measure_terms") or [])
+        for tid in matched_tids:
+            s = _slot(tid)
+            if paper and paper not in s["papers"]:
+                s["papers"].append(paper)
+            if pid and pid not in s["panels"]:
+                s["panels"].append(pid)
+
+    return usage
 
 
 def _build_thumbs(
@@ -152,7 +312,13 @@ def assemble_bundle(tag: str, releases_dir: Path = ROOT / "releases", papers_dir
         r["rests_on"] = _jparse(r.get("rests_on"), [])
         r["judgement"] = _jparse(r.get("judgement"), {})
         claims.append(r)
-    derivations = _read_csv(rel / "derivations.csv")
+    derivations = []
+    for r in _read_csv(rel / "derivations.csv"):
+        r["inputs"] = _jparse(r.get("inputs"), {})
+        r["rebuilt"] = _jparse(r.get("rebuilt"), {})
+        r["notes"] = _jparse(r.get("notes"), [])
+        r["parameter_kinds"] = _jparse(r.get("parameter_kinds"), {})
+        derivations.append(r)
     checks = _read_csv(rel / "checks.csv")
     findings = _read_csv(rel / "findings.csv")
     missing_supplements = []
@@ -166,7 +332,48 @@ def assemble_bundle(tag: str, releases_dir: Path = ROOT / "releases", papers_dir
         r["synonyms"] = _jparse(r.get("synonyms"), [])
         term_labels[r["id"]] = r["label"]
         terms.append(r)
-    formulas = _read_csv(rel / "formulas.csv")
+
+    field_decls, formula_meta = _load_schema_metadata()
+    eq_to_formula: dict[str, str] = {}
+    for fname, meta in formula_meta.items():
+        for eq in meta.get("equations") or []:
+            eq_to_formula[re.sub(r"\s+", "", eq)] = fname
+    for d in derivations:
+        lib_col = d.get("library", "")
+        if lib_col in formula_meta:
+            d["library_formula"] = lib_col
+        else:
+            norm_eq = re.sub(r"\s+", "", d.get("formula", ""))
+            d["library_formula"] = eq_to_formula.get(norm_eq, "")
+    formulas = []
+    for r in _read_csv(rel / "formulas.csv"):
+        r["equations"] = _jparse(r.get("equations"), [])
+        r["holds_under"] = _jparse(r.get("holds_under"), [])
+        r["derivations"] = int(r["derivations"]) if str(r.get("derivations", "")).isdigit() else 0
+        r["papers_using"] = int(r["papers_using"]) if str(r.get("papers_using", "")).isdigit() else 0
+        r["papers_in_conflict"] = int(r["papers_in_conflict"]) if str(r.get("papers_in_conflict", "")).isdigit() else 0
+        r["suspect"] = str(r.get("suspect", "")).lower() == "true"
+        meta = formula_meta.get(r["formula"], {})
+        r.update({
+            "scope": meta.get("scope", "shared"),
+            "added_version": meta.get("added_version"),
+            "added_paper": meta.get("added_paper"),
+            "variables": meta.get("variables", {}),
+            "assumes": meta.get("assumes", []),
+            "uses": meta.get("uses", []),
+            "used_by": meta.get("used_by", []),
+            "does_not_apply": meta.get("does_not_apply", ""),
+            "tests": meta.get("tests", []),
+            "cites": meta.get("cites"),
+        })
+        if meta.get("equations"):
+            r["equations"] = meta["equations"]
+        if meta.get("holds_under"):
+            r["holds_under"] = meta["holds_under"]
+        formulas.append(r)
+
+    mappings_rows = _read_csv(rel / "mappings.csv")
+    term_usage = _build_term_usage(terms, mappings_rows, items, panels)
 
     manifests = hub.get("manifests") or {}
     thumbs = _build_thumbs(panels, manifests, papers_dir, rel / "thumbs_cache.json")
@@ -183,8 +390,10 @@ def assemble_bundle(tag: str, releases_dir: Path = ROOT / "releases", papers_dir
         "checks": checks,
         "findings": findings,
         "missing_supplements": missing_supplements,
+        "field_decls": field_decls,
         "terms": terms,
         "term_labels": term_labels,
+        "term_usage": term_usage,
         "formulas": formulas,
         "panels": panels,
         "manifests": manifests,
