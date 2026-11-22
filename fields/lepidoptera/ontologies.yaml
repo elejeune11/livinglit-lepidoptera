@@ -1,0 +1,16 @@
+# Pinned ontology releases for butterfly morphogenesis (taxonomy, pharmacology/pigments, insect developmental gene orthologs).
+ncbitaxon:
+  file: taxslim.obo
+  release: ncbitaxon/2026-07-lepidoptera-subset
+  sha256: ae4e79632466ffd2aa06b363146e39f989cfb34013cbd4c5b53ae9ac5f87ee0f
+  terms: 32
+chebi:
+  file: chebi_core.obo.gz
+  release: chebi/257-butterfly-subset
+  sha256: 8139e615a781f42f8a37f441dcaa57fb8e4b6a0387a40d0aedface9e0d84a8e1
+  terms: 9
+flybase:
+  file: flybase_orthologs.obo
+  release: flybase/FB2026_02-orthologs
+  sha256: 69c6f9b8fea3a12733a40f0e2a4e09ad828ee8ea5517f3a7d5a93d7a604f674a
+  terms: 8

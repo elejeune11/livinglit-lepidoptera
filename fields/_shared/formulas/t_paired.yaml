@@ -1,0 +1,25 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: t_paired
+kind: definition
+statement: The paired t statistic from the mean and SD of differences.
+equations:
+- t = md/(sdd/sqrt(n))
+- df = n - 1
+variables:
+  t: dimensionless
+  md: D
+  sdd: D
+  n: count
+  df: count
+does_not_apply: independent samples
+tests:
+- given:
+    md: 2.0
+    sdd: 2.0
+    n: 4.0
+  expect:
+    t: 2.0
+    df: 3.0
+cites:
+  text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.3.1 Do two processes have the same mean?
+  url: https://www.itl.nist.gov/div898/handbook/

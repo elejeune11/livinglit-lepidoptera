@@ -1,0 +1,1030 @@
+<meta charset="utf-8">
+<title>LivingLit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a question index on the left (a strip of tabs on phones); each question opens a working view of the release. */
+:root{
+  --bg:#eef1f4; --surface:#ffffff; --sunk:#e3e8ed; --ink:#121b26; --muted:#56636f; --line:#cfd7df;
+  --accent:#2f47b8; --accent-ink:#ffffff; --accent-soft:#dfe4fa;
+  --good:#23824f; --good-soft:#cfe9da; --warn:#b06d07; --warn-soft:#f6e3c3; --bad:#c0312d; --bad-soft:#f6d3d1;
+  --none:#9aa5b0; --none-soft:#e1e6eb;
+  --o-stated:#56636f; --o-data:#23824f; --o-read:#2f47b8; --o-derived:#b06d07;
+  --g-paper:#121b26; --g1:#2f47b8; --g2:#11817f; --g3:#b06d07; --g4:#23824f; --g5:#a03a8c; --g6:#c0312d; --g-link:#9aa9b8;
+  --f-display:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:36px;
+  --r:6px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f151c; --surface:#16202a; --sunk:#1d2935; --ink:#e4eaf0; --muted:#97a5b2; --line:#2c3b49;
+  --accent:#8fa2ff; --accent-ink:#0f151c; --accent-soft:#25305e;
+  --good:#5cc78d; --good-soft:#1c3b2b; --warn:#e7a948; --warn-soft:#3f3017; --bad:#f07a74; --bad-soft:#47201f;
+  --none:#6d7b88; --none-soft:#26323e;
+  --o-stated:#a6b3bf; --o-data:#5cc78d; --o-read:#8fa2ff; --o-derived:#e7a948;
+  --g-paper:#e4eaf0; --g1:#8fa2ff; --g2:#4fc7c3; --g3:#e7a948; --g4:#5cc78d; --g5:#de86cc; --g6:#f07a74; --g-link:#4a5c6e;
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0f151c; --surface:#16202a; --sunk:#1d2935; --ink:#e4eaf0; --muted:#97a5b2; --line:#2c3b49;
+  --accent:#8fa2ff; --accent-ink:#0f151c; --accent-soft:#25305e;
+  --good:#5cc78d; --good-soft:#1c3b2b; --warn:#e7a948; --warn-soft:#3f3017; --bad:#f07a74; --bad-soft:#47201f;
+  --none:#6d7b88; --none-soft:#26323e;
+  --o-stated:#a6b3bf; --o-data:#5cc78d; --o-read:#8fa2ff; --o-derived:#e7a948;
+  --g-paper:#e4eaf0; --g1:#8fa2ff; --g2:#4fc7c3; --g3:#e7a948; --g4:#5cc78d; --g5:#de86cc; --g6:#f07a74; --g-link:#4a5c6e;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--ink)}
+body{font-family:var(--f-body);font-size:16px;line-height:1.5;margin:0}
+a{color:var(--accent)}
+button,select,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:700;letter-spacing:-.01em}
+h2{font-size:1.45rem;font-weight:700}
+h3{font-size:1.05rem;font-weight:600}
+.mono,code{font-family:var(--f-mono);font-size:.86em}
+.muted{color:var(--muted)}
+.eyebrow{font-family:var(--f-display);font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.num{font-variant-numeric:tabular-nums}
+
+.shell{display:grid;grid-template-columns:270px minmax(0,1fr);min-height:100vh}
+nav.index{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;border-right:1px solid var(--line);
+  padding-block:var(--s5);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:var(--s4);display:flex;flex-direction:column;gap:var(--s4)}
+.brand{display:flex;flex-direction:column;gap:2px}
+.brand b{font-family:var(--f-display);font-size:1.25rem;letter-spacing:-.01em}
+.brand span{font-family:var(--f-mono);font-size:.74rem;color:var(--muted)}
+nav.index ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+nav.index a{display:block;padding:7px 10px;border-radius:var(--r);text-decoration:none;color:var(--ink);font-size:.95rem;line-height:1.3}
+nav.index a:hover{background:var(--sunk)}
+nav.index a[aria-current="page"]{background:var(--accent);color:var(--accent-ink)}
+nav.index .grp{margin-top:var(--s3)}
+main{min-width:0;padding-block:var(--s6);padding-left:var(--s6);padding-right:max(16px,env(safe-area-inset-right,0px))}
+.view{max-width:1120px;display:flex;flex-direction:column;gap:var(--s5)}
+.lede{max-width:68ch;color:var(--muted);font-size:1.05rem;margin:0}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:var(--s4) var(--s5);min-width:0}
+.panel>h3{margin-bottom:var(--s3)}
+.row{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--s4)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:var(--s3)}
+.stat{padding:var(--s3) var(--s4);border-left:3px solid var(--accent);background:var(--surface)}
+.stat b{display:block;font-family:var(--f-display);font-size:1.7rem;font-variant-numeric:tabular-nums;line-height:1.1}
+.stat span{font-size:.88rem;color:var(--muted)}
+
+.qgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--s3)}
+.q{display:flex;flex-direction:column;gap:var(--s2);padding:var(--s4);background:var(--surface);border:1px solid var(--line);border-radius:var(--r);text-decoration:none;color:var(--ink)}
+.q:hover{border-color:var(--accent)}
+.q h3{font-size:1.1rem}
+.q p{margin:0;font-size:.95rem;color:var(--muted)}
+.q .ans{font-size:.95rem;color:var(--ink)}
+.q .go{margin-top:auto;font-family:var(--f-display);font-size:.85rem;color:var(--accent);font-weight:600}
+.limits{border:1px dashed var(--line);border-radius:var(--r);padding:var(--s4) var(--s5);background:transparent}
+.limits ul{margin:var(--s2) 0 0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px;max-width:80ch}
+
+.controls{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:end}
+.controls label{display:flex;flex-direction:column;gap:3px;font-size:.8rem;color:var(--muted);min-width:0}
+select,input[type=search]{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:6px 8px;max-width:100%;min-width:0}
+input[type=search]{min-width:240px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.seg button{border:0;background:var(--surface);padding:6px 10px;cursor:pointer;font-size:.88rem}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:6px 12px;cursor:pointer;font-size:.9rem}
+.btn:hover{border-color:var(--accent)}
+
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:.78rem;padding:1px 8px;border-radius:999px;background:var(--sunk);color:var(--ink);white-space:nowrap;font-family:var(--f-body)}
+.chip.good{background:var(--good-soft);color:var(--good)}
+.chip.warn{background:var(--warn-soft);color:var(--warn)}
+.chip.bad{background:var(--bad-soft);color:var(--bad)}
+.chip.none{background:var(--none-soft);color:var(--muted)}
+.chip.acc{background:var(--accent-soft);color:var(--accent)}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+
+/* stacked bars */
+.sbars{display:flex;flex-direction:column;gap:5px}
+.sbar{display:grid;grid-template-columns:minmax(0,9.5em) minmax(0,1fr) 3.5em;gap:var(--s3);align-items:center;font-size:.86rem;cursor:pointer;border-radius:4px;padding:1px 2px}
+.sbar:hover{background:var(--sunk)}
+.sbar.sel{background:var(--accent-soft)}
+.sbar .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.track{display:flex;height:14px;border-radius:3px;overflow:hidden;background:var(--sunk)}
+.track i{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:var(--s3);font-size:.82rem;color:var(--muted)}
+.legend span{display:inline-flex;gap:5px;align-items:center}
+
+/* bar lists */
+.blist{display:flex;flex-direction:column;gap:6px}
+.bl{display:grid;grid-template-columns:minmax(0,40%) minmax(0,1fr) 4em;gap:var(--s3);align-items:center;font-size:.88rem}
+.bl .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bl .b{height:12px;background:var(--accent);border-radius:2px;min-width:2px}
+
+/* heat matrix */
+.scroller{overflow-x:auto;max-width:100%}
+table.mx{border-collapse:separate;border-spacing:2px;font-size:.78rem}
+table.mx th{font-weight:500;color:var(--muted)}
+table.mx th.col{height:120px;vertical-align:bottom;padding:0}
+table.mx th.col div{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;font-family:var(--f-mono);font-size:.72rem;padding:2px 0;max-height:118px;overflow:hidden}
+table.mx th.rowh{text-align:left;white-space:nowrap;padding-right:var(--s2);cursor:pointer;color:var(--ink);font-weight:500;max-width:240px;overflow:hidden;text-overflow:ellipsis}
+table.mx th.rowh:hover{color:var(--accent)}
+table.mx td{width:20px;height:20px;border-radius:3px;padding:0;text-align:center;cursor:pointer;font-variant-numeric:tabular-nums;font-size:.66rem}
+table.mx td.z{background:var(--sunk);cursor:default}
+table.mx td.np{color:var(--muted);text-align:right;padding-left:var(--s2);cursor:default;font-size:.78rem;width:auto}
+
+/* tables */
+table.t{width:100%;border-collapse:collapse;font-size:.9rem}
+table.t th{text-align:left;font-weight:600;font-family:var(--f-display);font-size:.8rem;color:var(--muted);border-bottom:1px solid var(--line);padding:6px 8px;white-space:nowrap}
+table.t td{border-bottom:1px solid var(--line);padding:7px 8px;vertical-align:top}
+table.t tr.click{cursor:pointer}
+table.t tr.click:hover td{background:var(--sunk)}
+table.t tr.sel td{background:var(--accent-soft)}
+table.t td.r,table.t th.r{text-align:right;font-variant-numeric:tabular-nums}
+
+.cards{display:flex;flex-direction:column;gap:var(--s2)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:var(--s3) var(--s4);display:flex;flex-direction:column;gap:6px;min-width:0}
+.card .head{display:flex;flex-wrap:wrap;gap:var(--s2);align-items:center;font-size:.85rem;color:var(--muted)}
+.card q{font-style:italic;quotes:"\201C" "\201D"}
+.card .eq{font-family:var(--f-mono);font-size:.86rem;background:var(--sunk);padding:4px 8px;border-radius:4px;overflow-x:auto;white-space:pre}
+.more{align-self:start}
+.empty{color:var(--muted);font-style:italic;padding:var(--s3) 0}
+.note{font-size:.88rem;color:var(--muted);max-width:80ch;margin:0}
+
+/* cover */
+.cover{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:var(--s5);align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:var(--s5)}
+.cover-fig{margin:0;display:flex;flex-direction:column;gap:var(--s2);min-width:0}
+.cover-fig img{display:block;width:100%;height:auto;border-radius:4px;background:#fff}
+.cover-fig figcaption{font-size:.85rem;color:var(--muted)}
+.cover-cite{display:flex;flex-direction:column;gap:var(--s3);min-width:0}
+.cover-cite h2{font-size:1.3rem}
+.cover-ref{margin:0;font-size:.92rem;overflow-wrap:anywhere}
+.cover-sum{margin:0;max-width:62ch}
+@media (max-width:1000px){.cover{grid-template-columns:minmax(0,1fr)}}
+
+/* knowledge graph */
+.gwrap{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:var(--s4);align-items:start}
+.gbox{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;min-width:0}
+.gbox svg{display:block;width:100%;cursor:grab;touch-action:none}
+.gbox svg:active{cursor:grabbing}
+.gbox line{stroke:var(--g-link);stroke-opacity:.55}
+.gbox line.hot{stroke:var(--ink);stroke-opacity:.8}
+.gbox g.n circle{stroke:var(--surface);stroke-width:1.2;cursor:pointer}
+.gbox g.n.paper circle{fill:var(--g-paper)}
+.gbox g.n.sel circle{stroke:var(--accent);stroke-width:3}
+.gbox text{font-family:var(--f-body);font-size:10px;fill:var(--ink);paint-order:stroke;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round;pointer-events:none}
+.gbox g.n.paper text{font-weight:600;font-size:11px}
+.gbox g.n text.tl{display:none}
+.gbox g.n.show text.tl{display:block}
+.gbox .dim{opacity:.1}
+.gbox .zoomhint{position:absolute;right:10px;bottom:8px;font-size:.75rem;color:var(--muted);background:var(--surface);padding:2px 6px;border-radius:4px}
+.layers{display:flex;flex-wrap:wrap;gap:6px}
+.layers button{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 10px;font-size:.84rem;cursor:pointer}
+.layers button[aria-pressed="true"]{border-color:var(--ink);background:var(--sunk);font-weight:600}
+.gpanel{display:flex;flex-direction:column;gap:var(--s3);max-height:760px;overflow:auto}
+.gpanel ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:3px;font-size:.88rem}
+.gpanel li{display:flex;gap:var(--s2);justify-content:space-between}
+.gpanel li button{border:0;background:none;padding:0;color:var(--accent);cursor:pointer;text-align:left;font-size:inherit}
+@media (max-width:1100px){.gwrap{grid-template-columns:minmax(0,1fr)}.gpanel{max-height:none}}
+
+/* dot plot */
+.plot svg{display:block;width:100%;height:auto}
+.plot text{fill:var(--muted);font-family:var(--f-body);font-size:11px}
+.plot .ptitle{fill:var(--ink);font-size:12px}
+.plot line.grid{stroke:var(--line)}
+.plot circle{stroke:var(--surface);stroke-width:.8}
+.plot circle.dim{opacity:.15}
+.tip{position:fixed;pointer-events:none;z-index:20;background:var(--ink);color:var(--bg);padding:6px 9px;border-radius:5px;font-size:.8rem;max-width:320px;line-height:1.35}
+
+@media (max-width:860px){
+  .shell{grid-template-columns:minmax(0,1fr)}
+  nav.index{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;height:auto;flex-direction:row;align-items:center;overflow-x:auto;border-right:0;border-bottom:1px solid var(--line);background:var(--bg);
+    padding-block:var(--s2);padding-right:max(16px,env(safe-area-inset-right,0px))}
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+  nav.index ol{flex-direction:row}
+  nav.index a{white-space:nowrap;font-size:.88rem}
+  nav.index .grp,.brand span,.navfoot{display:none}
+  .brand b{white-space:nowrap;font-size:1.05rem}
+  main{padding-block:var(--s5);padding-left:max(16px,env(safe-area-inset-left,0px))}
+  input[type=search]{min-width:0;width:100%}
+}
+@media (prefers-reduced-motion:no-preference){.q,.btn{transition:border-color .12s}}
+/* one result */
+a.card{text-decoration:none;color:var(--ink)}
+a.card:hover{border-color:var(--accent)}
+a.rl{font-family:var(--f-mono);font-size:.86em}
+.crumbs{font-size:.9rem;color:var(--muted)}
+blockquote{margin:0;padding:var(--s2) var(--s4);border-left:3px solid var(--line);font-style:italic}
+dl.kv{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:6px var(--s4);margin:0;font-size:.92rem}
+dl.kv dt{color:var(--muted)}
+dl.kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.flag{background:var(--warn-soft);border-radius:4px;padding:4px 8px;font-size:.86rem;margin-top:4px}
+.o-data{color:var(--o-data)} .o-read{color:var(--o-read)} .o-stated{color:var(--o-stated)} .o-derived{color:var(--o-derived)}
+.notice{background:var(--warn-soft);color:var(--ink);border-bottom:1px solid var(--line);padding:8px 16px;font-size:.86rem;text-align:center}
+</style>
+
+<div class="notice" role="note"><b>Work in progress:</b> results are produced by LLM agent jobs and checked by code, but not yet reviewed by people; <a href="https://github.com/elejeune11/LivingLit-public">check a record before citing it</a>.</div>
+<div class="shell">
+  <nav class="index" aria-label="Questions">
+    <div class="brand"><b>LivingLit</b><span id="tagline"></span></div>
+    <ol id="nav"></ol>
+    <p class="note navfoot" id="navfoot"></p>
+  </nav>
+  <main id="main"></main>
+</div>
+<div class="tip" id="tip" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const D = /*DATA*/null;
+
+// ---------- helpers
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = n => Number(n).toLocaleString("en-US");
+const pct = (a, b) => b ? Math.round(100 * a / b) + "%" : "–";
+const lab = id => D.label[id] || String(id || "").replace(/^[a-z_]+:/, "").replace(/_/g, " ");
+const short = p => { const [y, ...r] = p.split("_"); return r.join(" ") + " " + y.slice(2); };
+const paperById = Object.fromEntries(D.P.map(p => [p.id, p]));
+const PIDS = D.P.map(p => p.id);
+const sum = o => Object.values(o || {}).reduce((a, b) => a + b, 0);
+const tip = $("#tip");
+function showTip(e, html){ tip.innerHTML = html; tip.hidden = false; moveTip(e); }
+function moveTip(e){ const x = Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8); tip.style.left = x + "px"; tip.style.top = (e.clientY + 14) + "px"; }
+function hideTip(){ tip.hidden = true; }
+const opt = (v, t, sel) => `<option value="${esc(v)}"${sel ? " selected" : ""}>${esc(t)}</option>`;
+const paperSelect = (id, cur, extra="All papers") => `<select id="${id}">${opt("", extra, !cur)}${PIDS.map(p => opt(p, short(p), p === cur)).join("")}</select>`;
+
+const ITEM_STATUS = [["consistent","good","Consistent"],["consistent within reading","good2","Consistent within reading"],["close","warn","Close"],["inconsistent","bad","Inconsistent"],["cannot check","none","Cannot check"]];
+const CLAIM_V = [["follows","good","Follows"],["overstated","warn","Overstated"],["does not follow","bad","Does not follow"],["cannot judge","none","Cannot judge"],["no verdict","none2","No verdict"]];
+const col = k => ({good:"var(--good)",good2:"color-mix(in srgb,var(--good) 55%,var(--surface))",warn:"var(--warn)",bad:"var(--bad)",none:"var(--none)",none2:"var(--none-soft)",acc:"var(--accent)"}[k]);
+const chipCls = v => ({consistent:"good","consistent within reading":"good",close:"warn",inconsistent:"bad","cannot check":"none",follows:"good",overstated:"warn","does not follow":"bad","cannot judge":"none","no verdict":"none",agree:"good",differ:"warn"}[v] || (String(v).startsWith("same") ? "good" : String(v).startsWith("differ") ? "warn" : "none"));
+const chip = v => `<span class="chip ${chipCls(v)}">${esc(v)}</span>`;
+
+function stackBar(parts, total){
+  return `<div class="track">${parts.filter(p => p.n).map(p => `<i style="width:${100*p.n/total}%;background:${col(p.k)}" title="${esc(p.t)}: ${fmt(p.n)}"></i>`).join("")}</div>`;
+}
+function legend(defs){ return `<div class="legend">${defs.map(([, k, t]) => `<span><i class="dot" style="background:${col(k)}"></i>${esc(t)}</span>`).join("")}</div>`; }
+function barList(rows, {fmtv = fmt, max} = {}){
+  const m = max ?? Math.max(1, ...rows.map(r => r[1]));
+  return `<div class="blist">${rows.map(([n, v, t]) => `<div class="bl"><span class="nm" title="${esc(n)}">${esc(n)}</span><span><span class="b" style="display:block;width:${100*v/m}%"></span></span><span class="num muted" style="text-align:right">${t ?? fmtv(v)}</span></div>`).join("")}</div>`;
+}
+function pager(list, render, step = 60){
+  let shown = step;
+  const id = "pg" + Math.random().toString(36).slice(2, 8);
+  const draw = () => {
+    const box = document.getElementById(id); if (!box) return;
+    box.innerHTML = (list.length ? list.slice(0, shown).map(render).join("") : `<p class="empty">Nothing matches these filters.</p>`) +
+      (list.length > shown ? `<button class="btn more" type="button">Show ${Math.min(step, list.length - shown)} more of ${fmt(list.length - shown)}</button>` : "");
+    const b = box.querySelector(".more"); if (b) b.onclick = () => { shown += step; draw(); };
+  };
+  setTimeout(draw);
+  return `<div class="cards" id="${id}"></div>`;
+}
+
+// ---------- derived numbers
+const N = (() => {
+  const st = {}; D.I.forEach(i => st[i[5]] = (st[i[5]] || 0) + 1);
+  const cl = {}; D.CL.forEach(c => cl[c[3]] = (cl[c[3]] || 0) + 1);
+  const mp = {}; D.I.forEach(i => i[3].forEach(m => { (mp[m] ||= new Set()).add(i[0]); }));
+  const shared = Object.entries(mp).filter(([, s]) => s.size >= 2).sort((a, b) => b[1].size - a[1].size);
+  const v = D.CMP.verdicts;
+  return { items: D.I.length, status: st, claims: cl, measuresByPaper: mp, shared,
+    agree: v["agree"] || 0, differ: v["differ"] || 0, noSpread: v["not available (no spread)"] || 0, units: v["not comparable (units)"] || 0,
+    findings: D.F.length, inconsistentF: D.F.filter(f => f[4] === "inconsistent").length };
+})();
+
+// ---------- views
+const VIEWS = [
+  ["start", "Overview", startView],
+  ["meet", "Where do papers meet?", meetView],
+  ["graph", "How is it all connected?", graphView],
+  ["values", "How do reported values line up?", valuesView],
+  ["compare", "Which comparisons hold?", compareView],
+  ["audit", "Do the numbers check out?", auditView],
+  ["gaps", "What is missing?", gapsView],
+  ["vocab", "Which terms does it use?", vocabView],
+  ["formulas", "Which formulas does it check?", formulasView],
+  ["papers", "Papers", papersView],
+];
+const S = { paper: "" }; // shared paper filter for audit
+
+function coverSheet(){
+  const c = D.COVER; if (!c) return "";
+  const k = c.citation || {};
+  const authors = String(k.authors || "").split(/,\s*/);
+  const shortAuthors = authors.length > 3 ? authors.slice(0, 3).join(", ") + ", et al." : authors.join(", ");
+  const ref = [k.journal, k.year && `(${k.year})`, k.volume && `${k.volume}${k.issue ? `(${k.issue})` : ""}`, k.pages].filter(Boolean).join(" ");
+  return `<section class="cover" id="cover" aria-label="Cover">
+    ${c.image ? `<figure class="cover-fig"><img src="${c.image}" alt="LivingLit's whole plan"><figcaption>How LivingLit works: agents write, code decides, and two field libraries grow and are used.</figcaption></figure>` : ""}
+    <div class="cover-cite">
+      <span class="eyebrow">Source of the corpus</span>
+      <h2>${esc(k.title || "")}</h2>
+      <p class="cover-ref"><span title="${esc(k.authors || "")}">${esc(shortAuthors)}</span> <i>${esc(ref)}</i>.${k.doi ? ` <a href="https://doi.org/${esc(k.doi)}" target="_blank" rel="noopener">doi:${esc(k.doi)}</a>` : ""}${k.pmid ? ` <span class="muted">PMID ${esc(k.pmid)}</span>` : ""}</p>
+      ${c.summary ? `<p class="cover-sum">${esc(c.summary)}</p>` : ""}
+      ${c.role ? `<p class="note">${esc(c.role)}</p>` : ""}
+    </div>
+  </section>`;
+}
+function countSharedContextTerms(){
+  let n = 0;
+  Object.values(D.CTXP || {}).forEach(tmap => Object.values(tmap).forEach(pmap => { if (Object.keys(pmap).length >= 2) n++; }));
+  return n;
+}
+function startView(){
+  const st = N.status, cannot = st["cannot check"] || 0, checkable = N.items - cannot;
+  const topNS = D.NS[0];
+  const nSharedCtx = countSharedContextTerms();
+  const qs = [
+    ["meet", "Where do papers meet?", "Inspect paper-by-paper intersections across species & clades, perturbations & genes, measures, anatomy, and imaging modalities.",
+      `${N.shared.length} shared measures and ${nSharedCtx} shared taxon, perturbation, gene, anatomy & modality nodes.`],
+    ["graph", "How is it all connected?", "See the knowledge graph: papers joined by the clades, genes, perturbations, architectures, and measures they share.",
+      `${D.P.length} papers and ${fmt(D.T.length)} hierarchical vocabulary terms. Toggle any combination of layers.`],
+    ["values", "How do reported values line up?", "Put every reported value of one measure on one axis, with its biological and physical context.",
+      `${D.VM.length} measure and unit sets have values from two or more papers. ${D.VM[0] ? fieldName(lab(D.VM[0].measure)) : "Top measure"} spans ${D.VM[0]?.papers || 0} papers.`],
+    ["compare", "Which comparisons hold?", "See which cross-paper comparisons agree or differ under per-measure standing keys, and which confounds block invalid pairs.",
+      `${fmt(N.agree)} agree and ${fmt(N.differ)} differ among ${fmt(D.CMP.n)} cross-paper comparisons.`],
+    ["audit", "Do the numbers check out?", "Find results whose printed numbers, digitized points, source cells, or replication hierarchy disagree.",
+      `${fmt(N.inconsistentF)} inconsistent findings. ${fmt(checkable)} of ${fmt(N.items)} results checked by code.`],
+    ["gaps", "What is missing?", "See which context papers leave unstated, and what source data to ask authors for.",
+      topNS ? `${lab(topNS[0]).replace(/_/g," ")} is not stated for ${pct(topNS[2], topNS[1] + topNS[2])} of reported groups.` : ""],
+    ["vocab", "Which terms does it use?", "Browse the 6-level phylogenetic taxon tree, homologous anatomy, ChEBI/FlyBase xrefs, and standing keys.",
+      `${fmt(D.T.length)} terms (vocabulary v${D.vocab_version}) across 15 domain fields.`],
+    ["formulas", "Which formulas does it check?", "Browse the statistical and biophysical equations used to verify derivations and scaling laws.",
+      `${D.FO.length} formulas (library v${D.formula_version}).`],
+  ];
+  return `${coverSheet()}
+  <header style="display:flex;flex-direction:column;gap:var(--s3)">
+    <span class="eyebrow">Release ${esc(D.tag)}</span>
+    <h1>What you can ask of ${D.P.length} audited papers</h1>
+    <p class="lede">Each paper is parsed into an audited quantitative record. Taxa, homologous anatomy, perturbations, genes, imaging geometries, and measures map onto hierarchical controlled vocabularies, and code audits every number and cross-paper comparison.</p>
+  </header>
+  <div class="stats">
+    <div class="stat"><b>${D.P.length}</b><span>papers</span></div>
+    <div class="stat"><b>${fmt(N.items)}</b><span>audited results</span></div>
+    <div class="stat"><b>${fmt(nSharedCtx + N.shared.length)}</b><span>shared meeting nodes</span></div>
+    <div class="stat"><b>${fmt(D.CMP.n)}</b><span>cross-paper comparisons</span></div>
+    <div class="stat"><b>${fmt(D.T.length)}</b><span>vocabulary terms</span></div>
+    <div class="stat"><b>${D.FO.length}</b><span>formulas</span></div>
+  </div>
+  <div class="qgrid">${qs.map(([h, t, d, a]) => `<a class="q" href="#${h}"><h3>${esc(t)}</h3><p>${esc(d)}</p><span class="ans">${esc(a)}</span><span class="go">Open</span></a>`).join("")}</div>
+  <section class="limits">
+    <h3>Methodological guardrails enforced by code</h3>
+    <ul>
+      <li><b>${pct(cannot, N.items)}</b> of results carry single values or counts without raw spread/<i>n</i>; the Gaps view identifies which datasets would make them checkable.</li>
+      <li><b>${fmt(N.noSpread)}</b> cross-paper value pairs match on context but lack group SD on one side; <b>${fmt(N.agree + N.differ)}</b> receive a computed <i>agree</i> / <i>differ</i> verdict.</li>
+      <li>Per-measure standing keys automatically block invalid physical comparisons (e.g. oblique tilted SEMs vs. planar SAXS, or swollen hydrated pupal scales vs. dried adult cuticle) while allowing valid cross-species comparisons across clades.</li>
+      <li>Of ${fmt(sumStrata())} context strata, <b>${D.ST.length}</b> span two or more papers with zero unstated assumptions.</li>
+    </ul>
+  </section>`;
+}
+function sumStrata(){ return D.STRATA_TOTAL || 54; }
+
+const MS_GROUPS = [
+  ["all", "All shared axes", null],
+  ["taxon", "Taxa & clades", ["taxon"]],
+  ["perturb", "Perturbations & genes", ["perturbation_modality", "target_gene", "chemical_agent"]],
+  ["measure", "Measures", ["measure"]],
+  ["anatomy", "Anatomy & photonics", ["photonic_architecture", "scale_type", "pattern_element", "wing_surface", "life_stage"]],
+  ["imaging", "Imaging & geometry", ["imaging_modality", "view_orientation", "hydration_and_prep"]],
+];
+const MS_STATE = { tab: "all", single: false };
+
+function buildMeetSections(){
+  const minP = MS_STATE.single ? 1 : 2;
+  const mMap = {};
+  D.I.forEach(i => i[3].forEach(m => { ((mMap[m] ||= {})[i[0]] = (mMap[m][i[0]] || 0) + 1); }));
+
+  function rowsForField(fld){
+    const src = fld === "measure" ? mMap : ((D.CTXP || {})[fld] || {});
+    const entries = Object.entries(src).map(([t, pmap]) => ({
+      fld, term: t, pmap, nPapers: Object.keys(pmap).length,
+      depth: (D.DEPTH && D.DEPTH[t]) || 0,
+      tot: Object.values(pmap).reduce((a, b) => a + b, 0)
+    })).filter(r => r.nPapers >= minP && !r.term.startsWith("state:not"));
+    if (fld === "taxon") {
+      // Preserve phylogenetic tree order using term order in D.T
+      const orderIdx = new Map(D.T.map((t, idx) => [t[0], idx]));
+      entries.sort((a, b) => (orderIdx.get(a.term) ?? 999) - (orderIdx.get(b.term) ?? 999));
+    } else {
+      entries.sort((a, b) => b.nPapers - a.nPapers || a.depth - b.depth || lab(a.term).localeCompare(lab(b.term)));
+    }
+    return entries;
+  }
+
+  if (MS_STATE.tab === "all") {
+    return [
+      ["Measures", rowsForField("measure")],
+      ["Taxa & clades (phylogenetic roll-up)", rowsForField("taxon")],
+      ["Perturbations, genes & chemical agents", [
+        ...rowsForField("perturbation_modality"), ...rowsForField("target_gene"), ...rowsForField("chemical_agent")
+      ]],
+      ["Scale homology, wing pattern & photonic architecture", [
+        ...rowsForField("photonic_architecture"), ...rowsForField("scale_type"), ...rowsForField("pattern_element"), ...rowsForField("wing_surface"), ...rowsForField("life_stage")
+      ]],
+      ["Imaging modality, viewing geometry & hydration", [
+        ...rowsForField("imaging_modality"), ...rowsForField("view_orientation"), ...rowsForField("hydration_and_prep")
+      ]],
+    ].filter(([, rs]) => rs.length > 0);
+  }
+  const grp = MS_GROUPS.find(g => g[0] === MS_STATE.tab) || MS_GROUPS[0];
+  return grp[2].map(f => [fieldName(f), rowsForField(f)]).filter(([, rs]) => rs.length > 0);
+}
+
+function drawMeetMatrix(){
+  const box = $("#mx"); if (!box) return;
+  const sections = buildMeetSections();
+  const allCounts = sections.flatMap(([, rs]) => rs.flatMap(r => Object.values(r.pmap)));
+  const maxc = Math.max(1, ...allCounts);
+  const cell = (r, p) => {
+    const c = r.pmap[p];
+    if (!c) return `<td class="z"></td>`;
+    const a = Math.round(22 + 78 * Math.log(1 + c) / Math.log(1 + maxc));
+    return `<td data-t="${esc(r.term)}" data-f="${esc(r.fld)}" data-p="${p}" style="background:color-mix(in srgb,var(--accent) ${a}%,var(--surface));color:${a > 55 ? "var(--accent-ink)" : "var(--ink)"}" title="${esc(lab(r.term))} · ${esc(short(p))}: ${c} results">${c > 99 ? "" : c}</td>`;
+  };
+  let tbody = "";
+  sections.forEach(([secTitle, rs]) => {
+    tbody += `<tr><td colspan="${PIDS.length + 2}" style="text-align:left;padding:10px 8px 4px;font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);background:var(--sunk)">${esc(secTitle)} (${rs.length})</td></tr>`;
+    rs.forEach(r => {
+      const indent = r.depth > 0 ? `<span class="muted" style="padding-left:${(r.depth - 1) * 10}px">↳ </span>` : "";
+      const tag = MS_STATE.tab === "all" && r.fld !== "measure" ? ` <span class="muted" style="font-weight:400;font-size:.76rem">· ${esc(r.fld.replace(/_/g, " "))}</span>` : "";
+      tbody += `<tr><th class="rowh" data-t="${esc(r.term)}" data-f="${esc(r.fld)}" title="${esc(r.term)}">${indent}${esc(lab(r.term))}${tag}</th>${PIDS.map(p => cell(r, p)).join("")}<td class="np">${r.nPapers}</td></tr>`;
+    });
+  });
+  box.innerHTML = `<table class="mx">
+    <thead><tr><th>Term / clade / perturbation / measure</th>${PIDS.map(p => `<th class="col"><div title="${esc(paperById[p].title)}">${esc(short(p))}</div></th>`).join("")}<th class="col"><div>papers</div></th></tr></thead>
+    <tbody>${tbody || `<tr><td colspan="${PIDS.length + 2}" class="empty">No terms match this filter.</td></tr>`}</tbody>
+  </table>`;
+  box.onclick = e => {
+    const td = e.target.closest("td[data-t]");
+    const th = e.target.closest("th[data-t]");
+    if (td) meetDetail(td.dataset.t, td.dataset.p, td.dataset.f);
+    else if (th) meetDetail(th.dataset.t, "", th.dataset.f);
+  };
+}
+
+function meetView(){
+  setTimeout(() => {
+    document.querySelectorAll("#mtabs button").forEach(b => b.onclick = () => {
+      MS_STATE.tab = b.dataset.tab;
+      document.querySelectorAll("#mtabs button").forEach(x => x.setAttribute("aria-pressed", x === b));
+      drawMeetMatrix();
+    });
+    const cb = $("#msingle");
+    if (cb) cb.onchange = e => { MS_STATE.single = e.target.checked; drawMeetMatrix(); };
+    drawMeetMatrix();
+    if (PENDING_MEET){
+      const t = PENDING_MEET; PENDING_MEET = null;
+      const fld = t.split(":")[0] || "measure";
+      if (!MS_STATE.single) {
+        const pmap = fld === "measure" ? {} : ((D.CTXP[fld] || {})[t] || {});
+        if (fld !== "measure" && Object.keys(pmap).length < 2) { MS_STATE.single = true; if (cb) cb.checked = true; drawMeetMatrix(); }
+      }
+      meetDetail(t, "", fld);
+    }
+  });
+  return `
+  <header><span class="eyebrow">Where do papers meet?</span><h1>Shared taxa, perturbations, genes, anatomy &amp; measures</h1></header>
+  <p class="lede">Papers meet wherever their results map to the same measure, clade/species (with phylogenetic roll-up from subspecies to genus to family), perturbation modality, homologous gene/complex, scale/wing anatomy, photonic architecture, or imaging modality. Click any row or cell to inspect the underlying results.</p>
+  <div class="panel" style="display:flex;flex-direction:column;gap:var(--s3)">
+    <div class="controls" style="justify-content:space-between">
+      <div class="layers" id="mtabs" role="group" aria-label="Meeting axis">
+        ${MS_GROUPS.map(([k, lbl]) => `<button type="button" data-tab="${k}" aria-pressed="${MS_STATE.tab === k}">${esc(lbl)}</button>`).join("")}
+      </div>
+      <label style="flex-direction:row;align-items:center;gap:6px;color:var(--ink);font-size:.88rem">
+        <input type="checkbox" id="msingle" ${MS_STATE.single ? "checked" : ""}> Include 1-paper terms (full corpus coverage)
+      </label>
+    </div>
+    <div class="scroller" id="mx"></div>
+  </div>
+  <div id="meetd"></div>
+  <section class="panel">
+    <h3>Multi-paper strata under standing keys</h3>
+    <p class="note">A stratum groups results across papers that share a measure and satisfy every physical &amp; biological standing-key guard (scale layer, photonic architecture, viewing orientation, hydration state, developmental stage).</p>
+    <table class="t" style="margin-top:var(--s3)"><thead><tr><th>Measure</th><th>Standing-key signature / contrast</th><th class="r">Papers</th><th>Reported values or directions</th></tr></thead>
+    <tbody>${D.ST.slice().sort((a, b) => b.papers - a.papers).map(s => `<tr><td>${esc(lab(s.measure))} <span class="muted mono">(${esc(s.part)})</span></td><td><span class="chip acc" style="white-space:normal;text-align:left">${esc(s.key.replace(/_/g, " "))}</span></td><td class="r">${s.papers}</td>
+      <td>${dirSummary(s)}</td></tr>`).join("")}</tbody></table>
+  </section>`;
+}
+function dirSummary(s){
+  const by = {};
+  s.values.forEach(v => { const [k, d] = v.split(": "); const p = k.split("/")[0]; (by[p] ||= []).push(d === "None" ? "–" : d); });
+  return Object.entries(by).map(([p, ds]) => {
+    const c = {}; ds.forEach(d => c[d] = (c[d] || 0) + 1);
+    return `<div style="font-size:.86rem"><b>${esc(short(p))}</b> <span class="muted">${Object.entries(c).map(([d, n]) => `${esc(d)}${n > 1 ? " ×" + n : ""}`).join(", ")}</span></div>`; }).join("");
+}
+function meetDetail(term, p, fld=""){
+  const itMap = D.IT || {};
+  const list = D.I.filter(i => {
+    if (p && i[0] !== p) return false;
+    if (i[3].includes(term)) return true;
+    const ts = itMap[i[0] + "/" + i[1]] || [];
+    return ts.includes(term);
+  });
+  const box = $("#meetd");
+  box.innerHTML = `<section class="panel"><div class="row" style="justify-content:space-between"><h3>${esc(lab(term))}${fld && fld !== "measure" ? ` <span class="chip acc">${esc(fld.replace(/_/g, " "))}</span>` : ""}${p ? " · " + esc(short(p)) : " · all matching papers"}</h3><span class="muted num">${fmt(list.length)} results</span></div>
+    ${pager(list, itemCard, 25)}</section>`;
+  box.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"});
+}
+function itemCard(i){
+  const [p, id, unit, ms, finding, status, depth, dir, n, pv, test] = i;
+  const u = D.U[p + "/" + unit];
+  return `<a class="card" href="#result/${esc(p)}/${esc(id)}"><div class="head"><b style="color:var(--ink)">${esc(short(p))}</b><span class="mono">${esc(id)}</span>${chip(status)}${dir && dir !== "not available" ? `<span class="chip">${esc(dir)}</span>` : ""}<span class="chip none">${esc(depth)}</span></div>
+    <div>${esc(finding)}</div>
+    <div class="head">${u ? `<span>${esc(u[1])}</span>` : ""}${n && n !== "not stated" ? `<span>n: ${esc(n)}</span>` : ""}${pv && pv !== "not stated" ? `<span>${esc(pv)}</span>` : ""}${test && test !== "not stated" ? `<span>${esc(test)}</span>` : ""}</div></a>`;
+}
+
+// knowledge graph
+const fieldName = k => { const s = String(k).replace(/_/g, " "); return s.charAt(0).toUpperCase() + s.slice(1); };
+// context fields that link at least two papers through a shared term, most linking first (chosen from the release)
+const LAYERS = [["measure", "Measures", "g1"], ["stratum", "Measure × contrast", "g2"]].concat(
+  Object.entries(D.CTXP || {})
+    .map(([k, ts]) => [k, Object.values(ts).filter(ps => Object.keys(ps).length >= 2).length])
+    .filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 16)
+    .map(([k], i) => [k, fieldName(k), ["g3", "g4", "g5", "g6"][i % 4]]));
+const LAYER = Object.fromEntries(LAYERS.map(l => [l[0], l]));
+const GS = { layers: new Set(["measure"]), mode: "bi", single: false, minShared: 10, sel: null };
+let gSim = null;
+function termsFor(L){
+  const m = new Map();
+  const add = (t, p, c = 1) => { if (!m.has(t)) m.set(t, new Map()); const x = m.get(t); x.set(p, (x.get(p) || 0) + c); };
+  if (L === "measure") D.I.forEach(i => i[3].forEach(t => add(t, i[0])));
+  else if (L === "stratum") D.ST.forEach(s => s.items.forEach(it => add(s.id, it.split("/")[0])));
+  else Object.entries(D.CTXP[L] || {}).forEach(([t, ps]) => Object.entries(ps).forEach(([p, c]) => add(t, p, c)));
+  return m;
+}
+function termLabel(L, t){
+  if (L === "stratum"){ const s = D.ST.find(x => x.id === t); return s ? `${lab(s.measure)} × ${s.key.replace("contrast=", "").replace(/_/g, " ")}` : t; }
+  return lab(t);
+}
+function buildGraph(){
+  const nodes = [], links = [], adj = new Map(), terms = [];
+  const link = (a, b, o) => { links.push({source: a, target: b, ...o}); (adj.get(a) || adj.set(a, new Set()).get(a)).add(b); (adj.get(b) || adj.set(b, new Set()).get(b)).add(a); };
+  PIDS.forEach(p => nodes.push({id: "P|" + p, type: "paper", p, r: 4 + Math.sqrt(paperById[p].items || 1) / 1.7}));
+  GS.layers.forEach(L => termsFor(L).forEach((ps, t) => { if (GS.single || ps.size >= 2) terms.push({L, t, ps}); }));
+  if (GS.mode === "bi"){
+    terms.forEach(x => { const id = x.L + "|" + x.t;
+      nodes.push({id, type: "term", L: x.L, t: x.t, ps: x.ps, r: 2.5 + Math.sqrt(x.ps.size) * 1.5});
+      x.ps.forEach((c, p) => link("P|" + p, id, {w: c})); });
+  } else {
+    const pair = new Map();
+    terms.forEach(x => { const ps = [...x.ps.keys()].sort();
+      for (let i = 0; i < ps.length; i++) for (let j = i + 1; j < ps.length; j++){ const k = ps[i] + "||" + ps[j];
+        if (!pair.has(k)) pair.set(k, []); pair.get(k).push(x); } });
+    pair.forEach((ts, k) => { if (ts.length >= GS.minShared){ const [a, b] = k.split("||"); link("P|" + a, "P|" + b, {w: ts.length, terms: ts}); } });
+  }
+  return {nodes, links, adj, terms};
+}
+function graphView(){
+  setTimeout(() => {
+    $("#glayers").onclick = e => { const b = e.target.closest("button[data-l]"); if (!b) return;
+      GS.layers.has(b.dataset.l) ? GS.layers.delete(b.dataset.l) : GS.layers.add(b.dataset.l);
+      if (!GS.layers.size) GS.layers.add(b.dataset.l);
+      b.parentElement.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", GS.layers.has(x.dataset.l)));
+      GS.sel = null; drawGraph(); };
+    document.querySelectorAll("#gmode button").forEach(b => b.onclick = () => { GS.mode = b.dataset.m; GS.sel = null;
+      document.querySelectorAll("#gmode button").forEach(x => x.setAttribute("aria-pressed", x === b)); $("#gminw").hidden = GS.mode !== "pp"; drawGraph(); });
+    $("#gsingle").onchange = e => { GS.single = e.target.checked; GS.sel = null; drawGraph(); };
+    $("#gmin").onchange = e => { GS.minShared = +e.target.value; GS.sel = null; drawGraph(); };
+    drawGraph();
+  });
+  return `
+  <header><span class="eyebrow">How is it all connected?</span><h1>The knowledge graph</h1></header>
+  <p class="lede">Dark circles are papers; coloured circles are vocabulary terms. A line means a paper maps at least one result or group to that term. No link is written by a model: two papers are close only because they share terms. Choose which kinds of terms make links.</p>
+  <div class="panel" style="display:flex;flex-direction:column;gap:var(--s3)">
+    <div class="layers" id="glayers" role="group" aria-label="Kinds of terms">${LAYERS.map(([k, t, c]) => `<button type="button" data-l="${k}" aria-pressed="${GS.layers.has(k)}"><i class="dot" style="background:var(--${c})"></i>${esc(t)}</button>`).join("")}</div>
+    <div class="controls">
+      <label>Show<span class="seg" id="gmode"><button type="button" data-m="bi" aria-pressed="${GS.mode === "bi"}">Papers and terms</button><button type="button" data-m="pp" aria-pressed="${GS.mode === "pp"}">Papers only</button></span></label>
+      <label for="gmin" id="gminw" ${GS.mode === "pp" ? "" : "hidden"}>Link papers sharing at least<select id="gmin">${[1, 3, 5, 10, 15, 20, 30].map(n => opt(n, n + (n === 1 ? " term" : " terms"), n === GS.minShared)).join("")}</select></label>
+      <label style="flex-direction:row;align-items:center;gap:6px;color:var(--ink);font-size:.88rem"><input type="checkbox" id="gsingle" ${GS.single ? "checked" : ""}> Include terms only one paper uses</label>
+    </div>
+    <p class="note" id="gsum"></p>
+  </div>
+  <div class="gwrap">
+    <div class="gbox" id="graph"></div>
+    <div class="panel gpanel" id="gpanel"></div>
+  </div>`;
+}
+function drawGraph(){
+  const box = $("#graph"); if (!box) return;
+  if (gSim) gSim.stop();
+  if (!window.d3){ box.innerHTML = `<p class="empty" style="padding:var(--s4)">The graph library (d3) did not load, so the graph cannot be drawn. Check the connection and reload the page.</p>`; return; }
+  box.innerHTML = "";
+  const G = buildGraph();
+  const linked = new Set(); G.links.forEach(l => { linked.add(l.source); linked.add(l.target); });
+  const lone = PIDS.filter(p => !linked.has("P|" + p));
+  $("#gsum").textContent = `${D.P.length} papers, ${fmt(G.terms.length)} terms, ${fmt(G.links.length)} links.` + (lone.length ? ` ${lone.length} papers share no term in these layers: ${lone.map(short).join(", ")}.` : "");
+  const W = Math.max(320, box.clientWidth), H = Math.max(460, Math.min(760, Math.round(innerHeight * .72)));
+  const svg = d3.select(box).append("svg").attr("viewBox", [0, 0, W, H]).attr("height", H).attr("role", "img").attr("aria-label", "Knowledge graph of papers and shared terms");
+  const g = svg.append("g");
+  const zoom = d3.zoom().scaleExtent([.25, 6]).on("zoom", e => g.attr("transform", e.transform));
+  svg.call(zoom).on("dblclick.zoom", null);
+  const lsel = g.append("g").selectAll("line").data(G.links).join("line")
+    .attr("stroke-width", d => GS.mode === "bi" ? Math.min(2.6, .5 + Math.log1p(d.w) * .35) : Math.min(7, .5 + Math.sqrt(d.w - GS.minShared + 1) * .8));
+  const nsel = g.append("g").selectAll("g").data(G.nodes).join("g").attr("class", d => "n " + d.type);
+  nsel.append("circle").attr("r", d => d.r).attr("fill", d => d.type === "paper" ? null : `var(--${LAYER[d.L][2]})`);
+  const labelled = new Set(G.terms.slice().sort((a, b) => b.ps.size - a.ps.size).slice(0, 10).map(x => x.L + "|" + x.t));
+  nsel.append("text").attr("class", d => d.type === "term" && !labelled.has(d.id) ? "tl" : null)
+    .attr("dx", d => d.r + 3).attr("dy", 3.5).text(d => d.type === "paper" ? short(d.p) : termLabel(d.L, d.t));
+  nsel.on("mouseenter", (e, d) => { const html = d.type === "paper" ? `<b>${esc(short(d.p))}</b><br>${esc(paperById[d.p].title)}<br>${G.adj.get(d.id)?.size || 0} links`
+      : `<b>${esc(termLabel(d.L, d.t))}</b><br>${esc(LAYER[d.L][1])} · ${d.ps.size} papers<br><span style="opacity:.75">${esc(d.t)}</span>`; showTip(e, html); })
+    .on("mousemove", moveTip).on("mouseleave", hideTip)
+    .on("click", (e, d) => { e.stopPropagation(); GS.sel = GS.sel === d.id ? null : d.id; mark(); panel(); });
+  lsel.on("click", (e, d) => { if (GS.mode !== "pp") return; e.stopPropagation(); GS.sel = "L|" + d.source.id + "|" + d.target.id; mark(); panel(d); });
+  svg.on("click", () => { GS.sel = null; mark(); panel(); });
+  nsel.call(d3.drag()
+    .on("start", (e, d) => { if (!e.active) gSim.alphaTarget(.2).restart(); d.fx = d.x; d.fy = d.y; })
+    .on("drag", (e, d) => { d.fx = e.x; d.fy = e.y; })
+    .on("end", (e, d) => { if (!e.active) gSim.alphaTarget(0); d.fx = null; d.fy = null; }));
+  function mark(){
+    const s = GS.sel;
+    if (!s){ nsel.classed("dim", false).classed("sel", false).classed("show", false); lsel.classed("dim", false).classed("hot", false); return; }
+    if (s.startsWith("L|")){
+      const ids = s.slice(2).split("|P|"); const A = ids[0], B = "P|" + ids[1];
+      nsel.classed("dim", d => d.id !== A && d.id !== B).classed("sel", d => d.id === A || d.id === B).classed("show", false);
+      lsel.classed("dim", d => !(d.source.id === A && d.target.id === B)).classed("hot", d => d.source.id === A && d.target.id === B); return; }
+    const nb = G.adj.get(s) || new Set();
+    nsel.classed("dim", d => d.id !== s && !nb.has(d.id)).classed("sel", d => d.id === s).classed("show", d => d.id === s || nb.has(d.id));
+    lsel.classed("dim", d => d.source.id !== s && d.target.id !== s).classed("hot", d => d.source.id === s || d.target.id === s);
+  }
+  gSim = d3.forceSimulation(G.nodes)
+    .force("link", d3.forceLink(G.links).id(d => d.id).distance(d => GS.mode === "bi" ? 34 : 60 + 140 / Math.sqrt(d.w)).strength(d => GS.mode === "bi" ? .35 : Math.min(.9, .08 * d.w)))
+    .force("charge", d3.forceManyBody().strength(d => d.type === "paper" ? -260 : -26))
+    .force("collide", d3.forceCollide(d => d.r + 2))
+    .force("x", d3.forceX(W / 2).strength(.045)).force("y", d3.forceY(H / 2).strength(.065));
+  const tick = () => { lsel.attr("x1", d => d.source.x).attr("y1", d => d.source.y).attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+    nsel.attr("transform", d => `translate(${d.x},${d.y})`); };
+  gSim.stop(); for (let i = 0; i < 360; i++) gSim.tick(); tick();
+  gSim.on("tick", tick);
+  { // fit the settled layout into view
+    const xs = G.nodes.map(d => d.x), ys = G.nodes.map(d => d.y);
+    const x0 = Math.min(...xs) - 60, x1 = Math.max(...xs) + 110, y0 = Math.min(...ys) - 30, y1 = Math.max(...ys) + 30;
+    const k = Math.min(1.6, W / (x1 - x0), H / (y1 - y0));
+    svg.call(zoom.transform, d3.zoomIdentity.translate(W / 2 - k * (x0 + x1) / 2, H / 2 - k * (y0 + y1) / 2).scale(k));
+  }
+  box.insertAdjacentHTML("beforeend", `<span class="zoomhint">Scroll to zoom · drag to move · click a circle</span>`);
+  mark(); panel();
+  function panel(linkD){
+    const P = $("#gpanel"), s = GS.sel;
+    if (!s){
+      const top = G.terms.slice().sort((a, b) => b.ps.size - a.ps.size).slice(0, 14);
+      const deg = PIDS.map(p => [p, G.adj.get("P|" + p)?.size || 0]).sort((a, b) => b[1] - a[1]);
+      P.innerHTML = `<h3>Most shared terms</h3><ul>${top.map(x => `<li><button type="button" data-id="${esc(x.L + "|" + x.t)}">${esc(termLabel(x.L, x.t))}</button><span class="muted num">${x.ps.size} papers</span></li>`).join("") || `<li class="muted">No term is shared in these layers.</li>`}</ul>
+        <h3>Best-connected papers</h3><ul>${deg.slice(0, 10).map(([p, n]) => `<li><button type="button" data-id="P|${p}">${esc(short(p))}</button><span class="muted num">${n} ${GS.mode === "bi" ? "terms" : "papers"}</span></li>`).join("")}</ul>
+        <p class="note">Click a circle to see what it connects to. ${GS.mode === "pp" ? "Click a line to see the terms two papers share." : ""}</p>`;
+    } else if (s.startsWith("L|") && linkD){
+      P.innerHTML = `<h3>${esc(short(linkD.source.p))} and ${esc(short(linkD.target.p))}</h3><p class="note">${linkD.w} shared terms</p>
+        <ul>${linkD.terms.map(x => `<li><span>${esc(termLabel(x.L, x.t))}</span><span class="chip">${esc(LAYER[x.L][1])}</span></li>`).join("")}</ul>`;
+    } else if (s.startsWith("P|")){
+      const p = s.slice(2), info = paperById[p];
+      const mine = G.terms.filter(x => x.ps.has(p));
+      const co = new Map(); mine.forEach(x => x.ps.forEach((c, q) => { if (q !== p) co.set(q, (co.get(q) || 0) + 1); }));
+      const byL = {}; mine.forEach(x => (byL[x.L] ||= []).push(x));
+      P.innerHTML = `<div><span class="eyebrow">Paper · ${esc(info.year)}</span><h3>${esc(short(p))}</h3><p class="note">${esc(info.title)}</p><p class="note">${esc(info.lab)}</p></div>
+        <div class="row"><a class="btn" href="#audit" data-audit="${p}">Its findings</a></div>
+        <h3>Shares terms with</h3><ul>${[...co].sort((a, b) => b[1] - a[1]).slice(0, 15).map(([q, n]) => `<li><button type="button" data-id="P|${q}">${esc(short(q))}</button><span class="muted num">${n} terms</span></li>`).join("") || `<li class="muted">No other paper in these layers.</li>`}</ul>
+        ${Object.entries(byL).map(([L, xs]) => `<h3>${esc(LAYER[L][1])} <span class="muted num">${xs.length}</span></h3><ul>${xs.sort((a, b) => b.ps.size - a.ps.size).slice(0, 30).map(x => `<li><button type="button" data-id="${esc(x.L + "|" + x.t)}">${esc(termLabel(x.L, x.t))}</button><span class="muted num">${x.ps.size} papers</span></li>`).join("")}</ul>`).join("")}`;
+    } else {
+      const n = G.nodes.find(d => d.id === s); if (!n){ GS.sel = null; return panel(); }
+      const def = D.T.find(t => t[0] === n.t);
+      P.innerHTML = `<div><span class="eyebrow">${esc(LAYER[n.L][1])}</span><h3>${esc(termLabel(n.L, n.t))}</h3><p class="note mono">${esc(n.t)}</p>${def && def[4] ? `<p class="note">${esc(def[4])}</p>` : ""}</div>
+        ${n.L !== "stratum" ? `<div class="row"><a class="btn" href="#meet" data-meet="${esc(n.t)}">Read its results</a></div>` : ""}
+        <h3>Used by ${n.ps.size} papers</h3><ul>${[...n.ps].sort((a, b) => b[1] - a[1]).map(([p, c]) => `<li><button type="button" data-id="P|${p}">${esc(short(p))}</button><span class="muted num">${c} results</span></li>`).join("")}</ul>`;
+    }
+    P.querySelectorAll("button[data-id]").forEach(b => b.onclick = () => { GS.sel = b.dataset.id; mark(); panel(); });
+    P.querySelectorAll("a[data-audit]").forEach(a => a.onclick = () => { S.paper = a.dataset.audit; });
+    P.querySelectorAll("a[data-meet]").forEach(a => a.onclick = () => { PENDING_MEET = a.dataset.meet; });
+  }
+}
+let PENDING_MEET = null;
+
+// values landscape
+const VS = { set: 0, scale: "lin", ctx: (D.CTX || [])[0] || "", hi: "" };
+function valuesView(){
+  const opts = D.VM.map((s, k) => opt(k, `${lab(s.measure)} (${s.unit}) · ${s.papers} papers`, k == VS.set)).join("");
+  setTimeout(() => {
+    $("#vset").onchange = e => { VS.set = +e.target.value; VS.hi = ""; drawPlot(); };
+    $("#vctx").onchange = e => { VS.ctx = e.target.value; VS.hi = ""; drawPlot(); };
+    document.querySelectorAll("#vscale button").forEach(b => b.onclick = () => { VS.scale = b.dataset.s; document.querySelectorAll("#vscale button").forEach(x => x.setAttribute("aria-pressed", x === b)); drawPlot(); });
+    drawPlot();
+  });
+  return `
+  <header><span class="eyebrow">How do reported values line up?</span><h1>One measure, every paper</h1></header>
+  <p class="lede">Each dot is a mean or value a paper reports for one group, placed on one axis. Rows are papers. Colour shows where the number came from. Pick a context field to highlight groups that share it.</p>
+  <div class="controls">
+    <label for="vset">Measure and unit<select id="vset">${opts}</select></label>
+    <label for="vctx">Highlight by<select id="vctx">${(D.CTX || []).map(k => opt(k, k.replace(/_/g, " "), k === VS.ctx)).join("")}</select></label>
+    <label>Axis<span class="seg" id="vscale"><button type="button" data-s="lin" aria-pressed="${VS.scale === "lin"}">Linear</button><button type="button" data-s="log" aria-pressed="${VS.scale === "log"}">Log</button></span></label>
+  </div>
+  <div class="panel plot" id="plot"></div>
+  <div class="panel" id="ctxlist"></div>
+  <p class="note">Units are converted for display only (nm to µm, seconds to ms); the release keeps values as printed. Values from different contexts are not comparable just because they share an axis: use the highlight to see which context each group reports.</p>`;
+}
+function drawPlot(){
+  const s = D.VM[VS.set]; if (!s) return;
+  const ci = D.CTX.indexOf(VS.ctx);
+  const rows = D.V.filter(v => v[0] === s.measure && v[1] === s.unit);
+  const papers = [...new Set(rows.map(r => r[2]))].sort();
+  const W = 900, rowH = 26, top = 30, left = 150, right = 20, H = top + papers.length * rowH + 30;
+  const xs = rows.map(r => r[5]).filter(x => VS.scale === "lin" || x > 0);
+  let lo = Math.min(...xs), hi = Math.max(...xs);
+  const log = VS.scale === "log" && lo > 0;
+  if (log){ lo = Math.log10(lo); hi = Math.log10(hi); }
+  if (lo === hi){ lo -= 1; hi += 1; }
+  const pad = (hi - lo) * .04; lo -= pad; hi += pad;
+  const X = x => left + (W - left - right) * (((log ? Math.log10(x) : x) - lo) / (hi - lo));
+  const ticks = []; const nt = 6;
+  if (log){ for (let e = Math.ceil(lo); e <= Math.floor(hi); e++) ticks.push(10 ** e); }
+  else { const step = niceStep((hi - lo) / nt); for (let t = Math.ceil(lo / step) * step; t <= hi; t += step) ticks.push(+t.toPrecision(10)); }
+  const ctxVals = {}; rows.forEach(r => { const c = r[9][ci] || "–"; ctxVals[c] = (ctxVals[c] || 0) + 1; });
+  const origCol = o => o === "from data" ? "var(--o-data)" : o === "read" ? "var(--o-read)" : o.startsWith("derived") ? "var(--o-derived)" : "var(--o-stated)";
+  let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(lab(s.measure))} values by paper">`;
+  svg += `<text class="ptitle" x="${left}" y="16">${esc(lab(s.measure))} (${esc(s.unit)})${log ? ", log scale" : ""}</text>`;
+  ticks.forEach(t => { const x = X(t); svg += `<line class="grid" x1="${x}" x2="${x}" y1="${top - 6}" y2="${H - 24}"/><text x="${x}" y="${H - 8}" text-anchor="middle">${fmtTick(t)}</text>`; });
+  papers.forEach((p, k) => { const y = top + k * rowH + rowH / 2;
+    svg += `<text x="${left - 10}" y="${y + 4}" text-anchor="end" style="fill:var(--ink)">${esc(short(p))}</text>`;
+    if (k % 2 === 0) svg += `<rect x="${left}" y="${y - rowH / 2}" width="${W - left - right}" height="${rowH}" fill="var(--sunk)" opacity=".45"/>`; });
+  rows.forEach((r, k) => { if (log && r[5] <= 0) return;
+    const pi = papers.indexOf(r[2]); const jitter = ((k * 7919) % 13 - 6) * 1.2;
+    const y = top + pi * rowH + rowH / 2 + jitter; const dim = VS.hi && (r[9][ci] || "–") !== VS.hi;
+    svg += `<circle data-k="${k}" cx="${X(r[5]).toFixed(1)}" cy="${y.toFixed(1)}" r="4.6" fill="${origCol(r[8])}" class="${dim ? "dim" : ""}"/>`; });
+  svg += `</svg>`;
+  const box = $("#plot");
+  box.innerHTML = `<div class="row" style="justify-content:space-between;margin-bottom:var(--s2)"><span class="muted num">${fmt(rows.length)} values from ${papers.length} papers</span>
+    <div class="legend"><span><i class="dot" style="background:var(--o-stated)"></i>printed</span><span><i class="dot" style="background:var(--o-data)"></i>from released data</span><span><i class="dot" style="background:var(--o-read)"></i>read from a figure</span><span><i class="dot" style="background:var(--o-derived)"></i>derived by LivingLit</span></div></div>
+    <div class="scroller"><div style="min-width:560px">${svg}</div></div>`;
+  box.querySelectorAll("circle").forEach(c => {
+    const r = rows[+c.dataset.k];
+    c.onmouseenter = e => showTip(e, `<b>${esc(short(r[2]))}</b> · ${esc(r[4])}<br>${esc(r[6])} ${esc(r[7])} <span style="opacity:.7">(${esc(r[8])})</span><br><span style="opacity:.8">${esc(r[3])}</span><br>${D.CTX.map((k, i) => r[9][i] && r[9][i] !== "not stated" ? `${k.replace(/_/g, " ")}: ${esc(lab(r[9][i].split("|")[0]))}` : "").filter(Boolean).slice(0, 4).join("<br>")}`);
+    c.onmousemove = moveTip; c.onmouseleave = hideTip;
+  });
+  const cl = Object.entries(ctxVals).sort((a, b) => b[1] - a[1]);
+  $("#ctxlist").innerHTML = `<h3>${esc(VS.ctx.replace(/_/g, " "))} across these groups</h3><p class="note">Click a value to highlight its groups; click again to clear.</p>
+    <div class="row" style="margin-top:var(--s2)">${cl.map(([c, n]) => `<button type="button" class="btn" data-c="${esc(c)}" aria-pressed="${VS.hi === c}" style="${VS.hi === c ? "background:var(--accent);color:var(--accent-ink);border-color:var(--accent)" : ""}">${esc(c === "–" ? "no value" : c.split("|").map(lab).join(" + "))} <span class="muted num">${n}</span></button>`).join("")}</div>`;
+  $("#ctxlist").querySelectorAll("button").forEach(b => b.onclick = () => { VS.hi = VS.hi === b.dataset.c ? "" : b.dataset.c; drawPlot(); });
+}
+function niceStep(r){ const e = 10 ** Math.floor(Math.log10(r)); const f = r / e; return (f < 1.5 ? 1 : f < 3 ? 2 : f < 7 ? 5 : 10) * e; }
+function fmtTick(t){ return Math.abs(t) >= 1e4 || (Math.abs(t) < 1e-2 && t !== 0) ? t.toExponential(0) : +t.toPrecision(4) + ""; }
+
+// comparisons
+const CS = { m: "", v: "", p: "" };
+function compareView(){
+  const v = D.CMP.verdicts, tot = D.CMP.n;
+  const parts = [["agree","good","Agree"],["differ","warn","Differ"],["not available (no spread)","none","Not available: no spread"],["not comparable (units)","none2","Not comparable: units"],["not available","none2","Not available"]];
+  const other = tot - parts.reduce((a, [k]) => a + (v[k] || 0), 0);
+  const drops = Object.entries(D.CMP.drop_any).sort((a, b) => b[1] - a[1]).slice(0, 14).map(([k, n]) => [k.replace("@1", "").replace(/_/g, " "), n, pct(n, tot)]);
+  const nd = Object.entries(D.CMP.ndrops).map(([k, n]) => [+k, n]).sort((a, b) => a[0] - b[0]);
+  const ms = [...new Set(D.AG.map(a => a[2]))].sort((a, b) => lab(a).localeCompare(lab(b)));
+  setTimeout(() => {
+    const go = () => { CS.m = $("#cm").value; CS.v = $("#cv").value; CS.p = $("#cp").value; $("#clist").innerHTML = compList(); };
+    ["#cm", "#cv", "#cp"].forEach(s => $(s).onchange = go); go();
+  });
+  return `
+  <header><span class="eyebrow">Which comparisons hold?</span><h1>Cross-paper comparisons</h1></header>
+  <p class="lede">Code pairs results from different papers that share a measure and compares them under a standing key. A verdict holds only if the context it sets aside does not matter, and each comparison names that context.</p>
+  <div class="panel"><h3>${fmt(tot)} comparisons</h3>
+    ${stackBar(parts.map(([k, c, t]) => ({k: c, n: v[k] || 0, t})).concat([{k: "none2", n: other, t: "Other"}]), tot)}
+    <div style="margin-top:var(--s2)">${legend(parts)}</div>
+    <p class="note" style="margin-top:var(--s2)">${fmt(v["agree"] || 0)} agree, ${fmt(v["differ"] || 0)} differ. Direction comparisons: ${fmt((v["same direction"] || 0) + (v["same direction (stated)"] || 0))} same direction, ${fmt(v["differ in direction"] || 0)} differ.</p></div>
+  <div class="cols">
+    <div class="panel"><h3>Context set aside to compare</h3><p class="note">How often each field had to be dropped for two results to count as comparable.</p><div style="margin-top:var(--s3)">${barList(drops)}</div></div>
+    <div class="panel"><h3>Fields set aside per comparison</h3><p class="note">Most comparisons need several fields set aside. The few at zero or one are the strongest leads.</p><div style="margin-top:var(--s3)">${barList(nd.map(([k, n]) => [k === 1 ? "1 field" : k + " fields", n]))}</div></div>
+  </div>
+  <section class="panel"><h3>Comparisons with a verdict</h3>
+    <div class="controls" style="margin-block:var(--s3)">
+      <label for="cm">Measure<select id="cm">${opt("", "All measures")}${ms.map(m => opt(m, lab(m), m === CS.m)).join("")}</select></label>
+      <label for="cv">Verdict<select id="cv">${opt("", "Agree or differ")}${["agree","differ","same direction","same direction (stated)","differ in direction"].map(x => opt(x, x, x === CS.v)).join("")}</select></label>
+      <label for="cp">Paper${paperSelect("cp", CS.p)}</label>
+    </div>
+    <div id="clist"></div></section>`;
+}
+function compList(){
+  let L = D.AG.filter(a => (!CS.m || a[2] === CS.m) && (!CS.v || a[3] === CS.v) && (!CS.p || a[0].startsWith(CS.p + "/") || a[1].startsWith(CS.p + "/")));
+  L = L.slice().sort((a, b) => a[4].length - b[4].length);
+  const side = s => { const [p, item, g] = s.split("/"); return `<b>${esc(short(p))}</b> <span class="mono">${esc(item)}</span>${g ? ` · ${esc(g)}` : ""}`; };
+  return `<p class="note">${fmt(L.length)} comparisons, fewest fields set aside first.</p>` + pager(L, a => `<div class="card"><div class="head">${chip(a[3])}<span>${esc(lab(a[2]))}</span>${a[5] === "direction" ? `<span class="chip">direction</span>` : ""}</div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:var(--s2);align-items:center;font-size:.92rem"><div style="min-width:0;overflow-wrap:anywhere">${side(a[0])}</div><span class="muted">vs</span><div style="min-width:0;overflow-wrap:anywhere">${side(a[1])}</div></div>
+    <div class="head">${a[4].length ? `assuming these do not matter: ${a[4].map(d => `<span class="chip">${esc(d.replace("@1", "").replace(/_/g, " "))}</span>`).join("")}` : `<span class="chip good">nothing set aside</span>`}</div></div>`, 40);
+}
+
+// audit
+const AS = { check: "", verdict: "" };
+function auditView(){
+  const byP = {}; D.P.forEach(p => byP[p.id] = p.status || {});
+  const order = PIDS.slice().sort((a, b) => (1 - (byP[a]["cannot check"] || 0) / Math.max(1, sum(byP[a]))) < (1 - (byP[b]["cannot check"] || 0) / Math.max(1, sum(byP[b]))) ? 1 : -1);
+  const checks = {}; D.F.forEach(f => { const c = (checks[f[3]] ||= {inconsistent: 0, close: 0}); c[f[4]] = (c[f[4]] || 0) + 1; });
+  setTimeout(() => {
+    const go = () => { S.paper = $("#ap").value; AS.check = $("#ac").value; AS.verdict = $("#av").value; $("#alist").innerHTML = auditList();
+      document.querySelectorAll("#abars .sbar").forEach(b => b.classList.toggle("sel", b.dataset.p === S.paper)); };
+    ["#ap", "#ac", "#av"].forEach(s => $(s).onchange = go);
+    $("#abars").onclick = e => { const b = e.target.closest(".sbar"); if (!b) return; $("#ap").value = S.paper === b.dataset.p ? "" : b.dataset.p; go(); };
+    go();
+  });
+  return `
+  <header><span class="eyebrow">Do the numbers check out?</span><h1>Audit of every result</h1></header>
+  <p class="lede">Code reruns each result's numbers: summaries against P values, points against summaries, n against data, values reported twice, and derivations along the formula library. A finding is a result that does not hold up.</p>
+  <div class="cols">
+    <div class="panel"><h3>Results by status, per paper</h3><p class="note">Sorted by the share that can be checked. Click a paper to filter the findings.</p>
+      <div style="margin-block:var(--s3)">${legend(ITEM_STATUS)}</div>
+      <div class="sbars" id="abars">${order.map(p => { const s = byP[p], t = sum(s);
+        return `<div class="sbar" data-p="${p}"><span class="nm">${esc(short(p))}</span>${stackBar(ITEM_STATUS.map(([k, c, tt]) => ({k: c, n: s[k] || 0, t: tt})), t)}<span class="num muted" style="text-align:right">${pct(t - (s["cannot check"] || 0), t)}</span></div>`; }).join("")}</div></div>
+    <div class="panel"><h3>Findings by check</h3><p class="note">Inconsistent and close findings for each kind of check.</p>
+      <table class="t" style="margin-top:var(--s3)"><thead><tr><th>Check</th><th class="r">Inconsistent</th><th class="r">Close</th></tr></thead>
+      <tbody>${Object.entries(checks).sort((a, b) => sum(b[1]) - sum(a[1])).map(([c, n]) => `<tr><td>${esc(c)}</td><td class="r">${n.inconsistent || 0}</td><td class="r">${n.close || 0}</td></tr>`).join("")}</tbody></table></div>
+  </div>
+  <section class="panel"><h3>Findings</h3>
+    <div class="controls" style="margin-block:var(--s3)">
+      <label for="ap">Paper${paperSelect("ap", S.paper)}</label>
+      <label for="ac">Check<select id="ac">${opt("", "All checks")}${Object.keys(checks).sort().map(c => opt(c, c, c === AS.check)).join("")}</select></label>
+      <label for="av">Verdict<select id="av">${opt("", "Inconsistent or close")}${opt("inconsistent", "Inconsistent", AS.verdict === "inconsistent")}${opt("close", "Close", AS.verdict === "close")}</select></label>
+    </div><div id="alist"></div></section>`;
+}
+function auditList(){
+  const L = D.F.filter(f => (!S.paper || f[0] === S.paper) && (!AS.check || f[3] === AS.check) && (!AS.verdict || f[4] === AS.verdict));
+  return `<p class="note">${fmt(L.length)} findings.</p>` + pager(L, f => { const u = D.U[f[0] + "/" + f[2]];
+    return `<div class="card"><div class="head"><b style="color:var(--ink)">${esc(short(f[0]))}</b><span class="mono">${esc(f[1])}</span>${chip(f[4])}<span class="chip acc">${esc(f[3])}</span>${u ? `<span>${esc(u[1])}</span>` : ""}</div>
+      ${u ? `<div>${esc(u[0])}</div>` : ""}
+      ${f[7] ? `<div class="mono" style="overflow-wrap:anywhere">${esc(f[7])}</div>` : ""}
+      <div class="head"><span>source: ${esc(f[5])}</span><span>results: ${f[6].map(i => rlink(f[0], i)).join(", ")}</span></div></div>`; }, 40);
+}
+
+// gaps
+function gapsView(){
+  const ns = D.NS.filter(r => r[1] + r[2] >= 5).map(([k, s, n]) => [k.replace(/_/g, " "), Math.round(100 * n / (s + n)), pct(n, s + n)]).slice(0, 22);
+  const sdr = D.SDR.slice().sort((a, b) => b[1] - a[1]);
+  return `
+  <header><span class="eyebrow">What is missing?</span><h1>Gaps you could fill</h1></header>
+  <p class="lede">Unstated is unknown, not false: a field that a paper leaves out stays open, and every comparison that needs it waits. These lists show where one email, one supplement or one methods paper would unlock the most.</p>
+  <div class="cols">
+    <div class="panel"><h3>Context left unstated</h3><p class="note">Share of reported groups whose paper does not state this field.</p><div style="margin-top:var(--s3)">${barList(ns, {max: 100})}</div></div>
+    <div class="panel"><h3>Ask authors for source data</h3><p class="note">Results that cannot be checked from the paper alone, per paper. Source data would make most of them checkable.</p>
+      <table class="t" style="margin-top:var(--s3)"><thead><tr><th>Paper</th><th class="r">Cannot check</th><th class="r">Of</th></tr></thead><tbody>${sdr.map(([p, c, t]) => `<tr><td>${esc(short(p))}</td><td class="r">${fmt(c)}</td><td class="r muted">${fmt(t)}</td></tr>`).join("")}</tbody></table></div>
+  </div>
+  <div class="cols">
+    <div class="panel"><h3>Methods papers that would fill the most values</h3><p class="note">Cited sources whose methods the records point to for values they do not print.</p>
+      <div class="cards" style="margin-top:var(--s3)">${D.COMP.slice(0, 15).map(([r, c, recs, v, loc]) => `<div class="card"><div class="head"><span class="chip acc">#${r}</span><span>${fmt(v)} values · ${recs.map(short).map(esc).join(", ")}</span></div><div style="font-size:.92rem">${esc(c)}</div></div>`).join("")}</div></div>
+    <div class="panel"><h3>Supplements not in hand</h3><p class="note">Files the papers name that the record reader did not have, mostly movies.</p>
+      <table class="t" style="margin-top:var(--s3)"><tbody>${D.MS.map(([p, m]) => `<tr><td style="white-space:nowrap">${esc(short(p))}</td><td>${m.map(esc).join(", ")}</td></tr>`).join("")}</tbody></table></div>
+  </div>`;
+}
+
+// vocabulary
+const VO = { q: "", f: "" };
+function vocabView(){
+  const fields = {}; D.T.forEach(t => t[2].forEach(f => fields[f] = (fields[f] || 0) + 1));
+  const covBy = {}; D.COV.forEach(c => { covBy[c[2]] = c; });
+  setTimeout(() => {
+    const go = () => { VO.q = $("#vq").value.trim().toLowerCase(); VO.f = $("#vf").value; $("#vlist").innerHTML = vocabList(covBy); };
+    $("#vq").oninput = go; $("#vf").onchange = go; go();
+  });
+  const fl = Object.entries(fields).sort((a, b) => b[1] - a[1]);
+  return `
+  <header><span class="eyebrow">Which terms does it use?</span><h1>Controlled vocabulary · v${D.vocab_version}</h1></header>
+  <p class="lede">Every term was added by an agent from a source's own text and checked by code: one parent per term, and every synonym found as printed. Papers meet only where their values map to the same term.</p>
+  <div class="panel"><h3>Terms by field</h3><div style="margin-top:var(--s3)">${barList(fl.slice(0, 16).map(([f, n]) => [f.replace(/_/g, " "), n]))}</div></div>
+  <section class="panel"><h3>Search</h3>
+    <div class="controls" style="margin-block:var(--s3)">
+      <label for="vq">Label, synonym or definition<input id="vq" type="search" value="${esc(VO.q)}" placeholder="e.g. ridge spacing or Heliconius sara"></label>
+      <label for="vf">Field<select id="vf">${opt("", "All fields")}${fl.map(([f]) => opt(f, f.replace(/_/g, " "), f === VO.f)).join("")}</select></label>
+    </div><div id="vlist"></div></section>`;
+}
+function vocabList(covBy){
+  const q = VO.q;
+  const L = D.T.filter(t => (!VO.f || t[2].includes(VO.f)) && (!q || t[0].toLowerCase().includes(q) || t[1].toLowerCase().includes(q) || t[4].toLowerCase().includes(q) || t[5].some(s => s.toLowerCase().includes(q))));
+  return `<p class="note">${fmt(L.length)} terms.</p>` + pager(L, t => { const c = covBy[t[0]];
+    return `<div class="card"><div class="head"><b style="color:var(--ink);font-size:1rem">${esc(t[1])}</b><span class="mono">${esc(t[0])}</span>${t[2].map(f => `<span class="chip acc">${esc(f.replace(/_/g, " "))}</span>`).join("")}${c ? `<span>${c[4]} sources · ${c[3]} labs</span>` : ""}</div>
+      ${t[4] ? `<div>${esc(t[4])}</div>` : ""}
+      ${t[8] ? `<div class="note">${esc(t[8])}</div>` : ""}
+      <div class="head">${t[3] ? `<span>parent: ${esc(lab(t[3]))}</span>` : ""}${t[5].length ? `<span>synonyms: ${t[5].slice(0, 8).map(s => `“${esc(s)}”`).join(", ")}${t[5].length > 8 ? " …" : ""}</span>` : ""}<span>added from ${esc(t[6] || t[7])}</span></div></div>`; }, 50);
+}
+
+// formulas
+const FS = { k: "" };
+function formulasView(){
+  const kinds = {}; D.FO.forEach(f => kinds[f[1]] = (kinds[f[1]] || 0) + 1);
+  setTimeout(() => {
+    const go = () => { FS.k = $("#fk").value; $("#flist").innerHTML = pager(D.FO.filter(f => !FS.k || f[1] === FS.k), f => `<div class="card"><div class="head"><b style="color:var(--ink)" class="mono">${esc(f[0])}</b><span class="chip ${f[1] === "derived" ? "good" : "acc"}">${esc(f[1])}</span></div>
+      <div>${esc(f[2])}</div>${f[3].map(e => `<div class="eq">${esc(e)}</div>`).join("")}${f[4].length ? `<div class="head">holds under: ${f[4].map(h => `<span class="chip">${esc(typeof h === "string" ? h : JSON.stringify(h))}</span>`).join("")}</div>` : ""}</div>`, 80); };
+    $("#fk").onchange = go; go();
+  });
+  return `
+  <header><span class="eyebrow">Which formulas does it check?</span><h1>Formula library · v${D.formula_version}</h1></header>
+  <p class="lede">Derived quantities in papers are rebuilt from their inputs with these entries. Definitions, models and bounds are cited; derived entries are proved by code from them.</p>
+  <div class="row">${Object.entries(kinds).map(([k, n]) => `<span class="chip acc">${esc(k)} · ${n}</span>`).join("")}</div>
+  <section class="panel"><div class="controls" style="margin-bottom:var(--s3)"><label for="fk">Kind<select id="fk">${opt("", "All kinds")}${Object.keys(kinds).map(k => opt(k, k, k === FS.k)).join("")}</select></label></div><div id="flist"></div></section>`;
+}
+
+// papers
+function papersView(){
+  const fc = {}; D.F.forEach(f => { if (f[4] === "inconsistent") fc[f[0]] = (fc[f[0]] || 0) + 1; });
+  const open = p => { S.paper = p; const P = paperById[p], L = D.I.filter(i => i[0] === p);
+    document.querySelectorAll("#ptab tr[data-p]").forEach(r => r.classList.toggle("sel", r.dataset.p === p));
+    $("#pres").innerHTML = `<section class="panel"><div class="row" style="justify-content:space-between"><h3>${esc(short(p))} · ${esc(P.title)}</h3><span class="row"><a href="#audit">Its audit findings</a></span></div>
+      ${P.doi ? `<p class="note"><a href="https://doi.org/${esc(P.doi)}">${esc(P.doi)}</a> · ${esc(P.lab)}</p>` : ""}<p class="note" style="margin-top:var(--s2)">${fmt(L.length)} results; open one to see its values, checks, derivations and context.</p>${pager(L, itemCard, 40)}</section>`;
+    $("#pres").scrollIntoView({block: "start"}); };
+  setTimeout(() => { $("#ptab").onclick = e => { const tr = e.target.closest("tr[data-p]"); if (tr) open(tr.dataset.p); }; });
+  return `
+  <header><span class="eyebrow">Papers</span><h1>${D.P.length} papers in this release</h1></header>
+  <p class="lede">Click a paper to list its results. Each result opens on its own page; the paper you pick carries over to the audit view.</p>
+  <div class="panel"><div class="scroller"><table class="t" id="ptab"><thead><tr><th>Year</th><th>Paper</th><th>Lab</th><th class="r">Results</th><th class="r">Checkable</th><th class="r">Inconsistent</th><th>Max depth</th></tr></thead>
+  <tbody>${D.P.map(p => { const t = sum(p.status), c = t - (p.status["cannot check"] || 0);
+    return `<tr class="click" data-p="${p.id}"><td class="num">${esc(p.year)}</td><td style="min-width:260px"><b>${esc(short(p.id))}</b><div class="muted" style="font-size:.86rem">${esc(p.title)}</div></td><td class="muted" style="font-size:.86rem">${esc(p.lab)}</td>
+      <td class="r">${fmt(p.items || 0)}</td><td class="r">${pct(c, t)}</td><td class="r">${fc[p.id] || 0}</td><td><span class="chip none">${esc(p.depth || "none")}</span></td></tr>`; }).join("")}</tbody></table></div></div>
+  <div id="pres"></div>`;
+}
+
+// ---------- one result: loaded from its paper's file when opened
+const rlink = (p, i) => `<a class="rl" href="#result/${esc(p)}/${esc(i)}">${esc(i)}</a>`;
+const LOADING = {};
+function loadPaper(p){
+  return LOADING[p] ||= new Promise((ok, fail) => {
+    const s = document.createElement("script");
+    s.src = "explorer_data/items_" + encodeURIComponent(p) + ".js";
+    s.onload = ok; s.onerror = () => { delete LOADING[p]; fail(); };
+    document.head.appendChild(s);
+  });
+}
+const ORIGIN_CLS = {matched: "good", assigned: "acc", adopted: "good", flagged: "warn", unmapped: "bad", "not stated": "none", "not applicable": "none", "by reference": "acc"};
+const ochip = o => `<span class="chip ${ORIGIN_CLS[o] || "none"}">${esc(o)}</span>`;
+const termTxt = t => `${esc(lab(t))} <span class="mono muted">${esc(t)}</span>`;
+const flags = L => (L || []).map(f => `<div class="flag">${esc(f)}</div>`).join("");
+function resultView(key){
+  const it = (window.LL_ITEMS || {})[key];
+  const p = key.split("/")[0];
+  if (!it){
+    if (!paperById[p]) return `<p class="empty">No result ${esc(key)} in this release.</p>`;
+    loadPaper(p).then(() => { if (decodeURIComponent(location.hash.slice(1)) === "result/" + key) route(); },
+      () => { const m = $("#rload"); if (m) m.textContent = "This paper's results could not be loaded: its file explorer_data/items_" + p + ".js is not beside the page."; });
+    return `<p class="empty" id="rload">Loading ${esc(short(p))}…</p>`;
+  }
+  const m = it.map || {context: {}, measure: ["", []]};
+  const c = it.contrast, pts = it.points || {};
+  const printed = it.values.filter(v => v[1] === "mean" && v[5] === "stated").map(v => v[3]);
+  const sec = (t, body, note = "") => `<section class="panel"><h3>${t}</h3>${note ? `<p class="note">${note}</p>` : ""}<div style="margin-top:var(--s3)">${body}</div></section>`;
+  let h = `<p class="crumbs"><a href="#papers">Papers</a> › ${esc(short(p))} · ${esc(it.unit_where || it.unit)}${it.unit_title ? " — " + esc(it.unit_title) : ""} · <span class="mono">${esc(it.item)}</span></p>
+  <header><span class="eyebrow">One result</span><h1>${esc(it.measure)}</h1></header>
+  <p class="lede" style="color:var(--ink)">${esc(it.finding)}</p>
+  <div class="row">${chip(it.status)}<span class="chip none">depth: ${esc(it.depth)}</span>${it.suspected_error ? `<span class="chip warn">suspected error: ${esc(it.suspected_error)}</span>` : ""}</div>`;
+  h += `<section class="panel">${it.anchor ? `<blockquote>“${esc(it.anchor)}”</blockquote><p class="note" style="margin-top:6px">${esc(it.where)} · ${it.anchor_kind === "unit" ? "anchored to its unit (inside an image)" : it.anchor_kind === "dataset cell" ? "a released-data cell, checked by code" : "found in the paper's text by code"}</p>` : ""}
+    <dl class="kv" style="margin-top:var(--s3)"><dt>Measure</dt><dd>${ochip(m.measure[0])} ${(m.measure[1] || []).map(termTxt).join(", ")}</dd>
+    ${it.method ? `<dt>Method</dt><dd>${esc(it.method)}</dd>` : ""}${it.software ? `<dt>Software</dt><dd>${esc(it.software)}</dd>` : ""}
+    <dt>n</dt><dd>${esc(it.n)}</dd><dt>Test</dt><dd>${esc(it.test || "—")} · ${esc(it.p || "—")}</dd><dt>Kind</dt><dd>${esc(it.test_of)}</dd></dl></section>`;
+  if (c || (it.groups || []).length){
+    let b = "";
+    if (c){
+      b += `<div class="row">${c.benchmark ? `<span class="chip acc">against a benchmark</span>` : c.aliased ? `<span class="chip warn">aliased confound</span>` : c.confound ? `<span class="chip bad">confound</span>` : (c.fields || []).length ? `<span class="chip good">contrast on ${esc(c.fields.join(", "))}</span>` : `<span class="chip none">no single contrast</span>`}
+        ${it.direction ? `<span class="chip ${it.direction.origin === "stated" ? "warn" : "good"}">direction ${esc(it.direction.direction)}${it.direction.origin === "stated" ? " (stated, not computed)" : ""}</span>` : `<span class="chip none">direction not available</span>`}</div>`;
+      if ((c.condition || []).length) b += `<p class="note" style="margin-top:6px">condition ${esc(c.condition.join(", "))} against reference ${esc((c.reference || []).join(", "))}</p>`;
+      b += flags(c.problems);
+    }
+    const gs = it.groups || [], fs = [...new Set(gs.flatMap(g => Object.keys(g.context)))];
+    if (gs.length) b += `<div class="scroller" style="margin-top:var(--s3)"><table class="t"><thead><tr><th>Group</th><th>Kind</th>${fs.map(f => `<th>${esc(f.replace(/_/g, " "))}</th>`).join("")}</tr></thead><tbody>${gs.map(g => `<tr><td><b>${esc(g.label)}</b> <span class="mono muted">${esc(g.id)}</span></td><td>${esc(g.kind)}</td>${fs.map(f => `<td>${esc(g.context[f] ?? "")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    h += sec("Groups and contrast", b, "Each group states only what sets it apart; code finds the contrast between them.");
+  }
+  if ((it.upstream || []).length) h += sec("Upstream flags", flags(it.upstream));
+  if (Object.keys(pts).length) h += sec("Points", strip(pts, printed), "Each dot is one value from released data (green) or read from the figure by the reader's code (blue); the bar is their mean.");
+  h += sec("Values", `<div class="scroller"><table class="t"><thead><tr><th>Group</th><th>Kind</th><th>Printed</th><th class="r">Value</th><th>Unit</th><th>Origin</th><th>Interval</th></tr></thead><tbody>${it.values.map(v => `<tr><td>${esc(v[0])}</td><td>${esc(v[1])}</td><td>${esc(v[2])}</td><td class="r">${v[3] == null ? "" : (+v[3]).toLocaleString("en-US", {maximumSignificantDigits: 6})}</td><td>${esc(v[4])}</td><td class="o-${v[5] === "from data" ? "data" : v[5] === "read" ? "read" : v[5] === "stated" ? "stated" : "derived"}">${esc(v[5])}</td><td>${v[6] != null ? `[${v[6]}, ${v[7]}]` : ""}</td></tr>`).join("") || `<tr><td colspan="7" class="muted">No values.</td></tr>`}</tbody></table></div>`, "Printed strings as stated; the value column is the number code parsed from them.");
+  h += sec("Checks run by code", it.checks.length ? `<table class="t"><tbody>${it.checks.map(k => `<tr><td style="width:32%">${esc(k[0])}</td><td>${chip(k[1])}</td><td>${esc(k[2])}</td></tr>`).join("")}</tbody></table>` : `<p class="empty">No check could run: ${it.depth === "none" ? "no values, statistic or points" : "printed values alone allow none here"}.</p>`);
+  if (it.chains.length) h += sec("Derivations", `<table class="t"><tbody>${it.chains.map(k => `<tr><td class="mono">${esc(k[0])}</td><td>${k[1] ? `<span class="mono">${esc(k[1])}</span>` : `<span class="muted">no library formula</span>`}</td><td>${chip(k[2])}</td><td>${esc(k[3])}${flags(k[4])}</td></tr>`).join("")}</tbody></table>`, "Each derived quantity rebuilt along the formula library; a rebuilt value is derived by LivingLit.");
+  h += sec("Context, resolved by code", `<div class="scroller"><table class="t"><thead><tr><th>Field</th><th>Stated at</th><th>Stated</th><th>Origin</th><th>Terms</th></tr></thead><tbody>${Object.entries(m.context).map(([f, x]) => `<tr${x[0] === "not stated" ? ' class="muted"' : ""}><td class="mono">${esc(f)}</td><td>${esc(x[4] || "")}</td><td style="max-width:300px">${esc(x[2] || "")}</td><td>${ochip(x[0])}</td><td>${(x[1] || []).map(termTxt).join("<br>")}${x[3] ? flags([x[3]]) : ""}</td></tr>`).join("")}</tbody></table></div>`, "Each field resolved from paper to unit to group to result; papers meet only where these terms match.");
+  return h;
+}
+function strip(points, printed){
+  const arms = Object.entries(points); if (!arms.length) return "";
+  const all = arms.flatMap(([, v]) => v).filter(x => x != null), pm = printed.filter(x => x != null);
+  let lo = Math.min(...all, ...pm), hi = Math.max(...all, ...pm); if (lo === hi){ lo -= 1; hi += 1; }
+  const pad = (hi - lo) * .06; lo -= pad; hi += pad;
+  const W = 560, rowH = 28, H = arms.length * rowH + 22, x0 = 160, X = v => x0 + (W - x0 - 10) * (v - lo) / (hi - lo);
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="points per group">`;
+  arms.forEach(([k, v], i) => { const [arm, origin] = k.split("|"); const y = 12 + i * rowH; const c = origin === "from data" ? "var(--o-data)" : "var(--o-read)";
+    s += `<text x="0" y="${y + 4}" font-size="11" fill="var(--ink)">${esc(arm.slice(0, 24))}</text><text x="0" y="${y + 16}" font-size="9" fill="var(--muted)">${esc(origin)} · n ${v.length}</text><line x1="${x0}" x2="${W - 10}" y1="${y}" y2="${y}" stroke="var(--line)"/>`;
+    v.forEach(q => { if (q != null) s += `<circle cx="${X(q).toFixed(1)}" cy="${y}" r="3" fill="${c}" fill-opacity=".7"/>`; });
+    const mu = v.reduce((a, b) => a + b, 0) / v.length; s += `<line x1="${X(mu)}" x2="${X(mu)}" y1="${y - 8}" y2="${y + 8}" stroke="var(--ink)" stroke-width="2"><title>mean of points ${mu.toPrecision(4)}</title></line>`; });
+  [lo + pad, (lo + hi) / 2, hi - pad].forEach(t => s += `<text x="${X(t)}" y="${H - 6}" font-size="9.5" text-anchor="middle" fill="var(--muted)">${(+t.toPrecision(3)).toLocaleString("en-US")}</text>`);
+  return s + `</svg>`;
+}
+
+// ---------- router
+function route(){
+  const h = decodeURIComponent(location.hash.slice(1));
+  if (h.startsWith("result/")){
+    document.querySelectorAll("#nav a").forEach(a => a.setAttribute("aria-current", "false"));
+    hideTip(); if (gSim){ gSim.stop(); gSim = null; }
+    $("#main").innerHTML = `<div class="view">${resultView(h.slice(7))}</div>`;
+    window.scrollTo(0, 0);
+    document.title = "LivingLit · " + h.slice(7);
+    return;
+  }
+  const v = VIEWS.find(x => x[0] === h) || VIEWS[0];
+  document.querySelectorAll("#nav a").forEach(a => a.setAttribute("aria-current", a.dataset.v === v[0] ? "page" : "false"));
+  const cur = document.querySelector('#nav a[data-v="' + v[0] + '"]');
+  if (cur && innerWidth <= 860) cur.scrollIntoView({block: "nearest", inline: "center"});
+  hideTip();
+  if (gSim){ gSim.stop(); gSim = null; }
+  $("#main").innerHTML = `<div class="view">${v[2]()}</div>`;
+  window.scrollTo(0, 0);
+  document.title = v[0] === "start" ? "LivingLit" : "LivingLit · " + v[1];
+}
+$("#nav").innerHTML = VIEWS.map(([k, t], i) => `${i === 1 ? `<li class="grp eyebrow">Questions</li>` : i === VIEWS.length - 1 ? `<li class="grp eyebrow">Sources</li>` : ""}<li><a href="#${k}" data-v="${k}">${esc(t)}</a></li>`).join("");
+$("#tagline").textContent = `release ${D.tag} · ${D.P.length} papers`;
+$("#navfoot").textContent = `Vocabulary v${D.vocab_version} · formulas v${D.formula_version}. Built from the release tables only.`;
+addEventListener("hashchange", route);
+route();
+</script>

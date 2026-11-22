@@ -1,0 +1,33 @@
+# Written by code from changes.yaml (version 2); never edited.
+formula: fvk_critical_buckling_strain
+kind: model
+statement: Critical biaxial compressive growth strain g_c for clamped Föppl–von Kármán plate buckling of a scale plasma membrane
+  of thickness h between parallel actin bundles separated by distance L.
+equations:
+- g_c = pi**2*(h/L)**2/(3*(1 - nu**2))
+variables:
+  g_c: dimensionless
+  h: length
+  L: length
+  nu: dimensionless
+assumes:
+- clamped boundary conditions at parallel actin bundles
+- zero transmembrane pressure p = 0
+- isotropic linear elastic thin plate
+does_not_apply: post-buckling large-deflection regime or unattached actin bundles
+tests:
+- given:
+    h: 0.02
+    L: 1.6
+    nu: 0.5
+  expect:
+    g_c: 0.0006853891945200942
+- given:
+    h: 0.02
+    L: 0.8
+    nu: 0.5
+  expect:
+    g_c: 0.002741556778080377
+cites:
+  text: Equation 4 of Totz et al. 2024, Cell Reports Physical Science 5:102063.
+  url: https://doi.org/10.1016/j.xcrp.2024.102063

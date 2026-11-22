@@ -1,0 +1,22 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: holm_step
+kind: definition
+statement: Holm's step-down adjustment of the i-th smallest of m P values; code keeps the adjusted values monotone.
+equations:
+- ph = Min(1, (m - i + 1)*p)
+variables:
+  ph: dimensionless
+  p: dimensionless
+  m: count
+  i: count
+does_not_apply: single-step procedures
+tests:
+- given:
+    p: 0.01
+    m: 3.0
+    i: 1.0
+  expect:
+    ph: 0.03
+cites:
+  text: Holm S. A simple sequentially rejective multiple test procedure. Scand J Stat 6:65–70 (1979)
+  url: https://www.jstor.org/stable/4615733

@@ -1,0 +1,42 @@
+[project]
+name = "livinglit-lepidoptera"
+version = "0.1.0"
+description = "Audited living literature review, atomic figure panel atlas, and visual-overlay digitization engine for Lepidoptera (butterflies and moths)."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.6",
+    "pyyaml>=6",
+    "sympy>=1.12",
+    "scipy>=1.11",
+    "numpy>=1.26",
+    "openpyxl>=3.1",
+    "python-docx>=1.1",
+    "pymupdf>=1.24",
+    "opencv-python-headless>=4.9",
+    "pyxlsb>=1.0.10",
+    "xlrd>=2.0",
+]
+
+[project.scripts]
+livinglit-lep = "livinglit_lepidoptera.cli:main"
+livinglit = "livinglit_lepidoptera.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/livinglit_lepidoptera"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]
+markers = [
+    "papers: needs papers_dont_ever_commit/ (skipped without it)",
+    "ontologies: needs pinned ontology files in ontologies_dont_commit/ (skipped without it)",
+]

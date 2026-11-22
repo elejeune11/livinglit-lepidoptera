@@ -1,0 +1,23 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: t_distribution
+kind: model
+statement: Two-sided P of a t statistic with df degrees of freedom.
+equations:
+- p = tdist_p2(t, df)
+variables:
+  p: dimensionless
+  t: dimensionless
+  df: count
+assumes:
+- normality
+- independence
+does_not_apply: rank tests
+tests:
+- given:
+    t: 2.0
+    df: 10.0
+  expect:
+    p: 0.07338803477074436
+cites:
+  text: NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.4 t distribution
+  url: https://www.itl.nist.gov/div898/handbook/

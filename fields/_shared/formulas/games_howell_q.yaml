@@ -1,0 +1,33 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: games_howell_q
+kind: definition
+statement: The Games–Howell q for two of k group means without assuming equal variances, with Welch–Satterthwaite degrees
+  of freedom.
+equations:
+- qgh = Abs(m1 - m2)/sqrt((s1^2/n1 + s2^2/n2)/2)
+- df = (s1^2/n1 + s2^2/n2)^2/((s1^2/n1)^2/(n1 - 1) + (s2^2/n2)^2/(n2 - 1))
+variables:
+  qgh: dimensionless
+  m1: D
+  m2: D
+  s1: D
+  s2: D
+  n1: count
+  n2: count
+  df: count
+does_not_apply: equal variances assumed (Tukey–Kramer)
+tests:
+- given:
+    m1: 3.0
+    m2: 1.0
+    s1: 1.0
+    s2: 1.0
+    n1: 2.0
+    n2: 2.0
+  expect:
+    qgh: 2.8284271247461903
+    df: 2.0
+cites:
+  text: Games PA, Howell JF. Pairwise multiple comparison procedures with unequal n's and/or variances. J Educ Stat 1:113–125
+    (1976)
+  url: https://doi.org/10.3102/10769986001002113

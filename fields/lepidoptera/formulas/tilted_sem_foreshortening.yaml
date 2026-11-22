@@ -1,0 +1,30 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: tilted_sem_foreshortening
+kind: model
+statement: Apparent ridge spacing d_app in a planar SEM tilted by angle theta (radians) around the ridge axis is foreshortened
+  by cos(theta).
+equations:
+- d_app = d*cos(theta)
+variables:
+  d_app: length
+  d: length
+  theta: dimensionless
+assumes:
+- orthographic SEM projection
+- tilt axis parallel to longitudinal ridges
+- flat scale lamina
+does_not_apply: curved scales or tilt around an axis perpendicular to the ridges
+tests:
+- given:
+    d: 1.0
+    theta: 0.0
+  expect:
+    d_app: 1.0
+- given:
+    d: 1.0
+    theta: 1.0471975512
+  expect:
+    d_app: 0.5
+cites:
+  text: Standard orthographic foreshortening projection for tilted scanning electron microscopy.
+  url: https://doi.org/10.1098/rsif.2017.0948

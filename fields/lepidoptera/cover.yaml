@@ -1,0 +1,12 @@
+# Explorer cover metadata for livinglit-lepidoptera (field_set 3).
+role: Standalone audited living literature review & digitized figure atlas for Lepidoptera (butterflies and moths).
+citation:
+  authors: livinglit-lepidoptera pilot corpus (Lloyd VJ et al. 2024; Finet C et al. 2026)
+  title: 'livinglit-lepidoptera: Audited Comparative Morphogenesis, Biophotonics & Digitized Figure Atlas (field_set 3)'
+  journal: Open-Access Lepidoptera Synthesis Corpus
+  year: 2026
+summary: >-
+  Combines LivingLit's zero-assumption text, table, SymPy formula, and 7-dimension within-paper claim audit
+  with atomic 1-letter figure panel segmentation, bespoke per-figure Python digitization scripts, live
+  Plot + Microscopy FFT Grating visual overlays, and relaxed user-discretion cross-paper comparisons across
+  butterflies and moths.

@@ -1,0 +1,35 @@
+# Written by code from changes.yaml (version 2); never edited.
+formula: thin_film_ridge_interference
+kind: model
+statement: Constructive interference peak wavelength lambda of a chitinous scale ridge of height h and refractive index n_r
+  in air (n_a) at interference order m.
+equations:
+- lam = 2*(n_r - n_a)*h/m
+variables:
+  lam: length
+  h: length
+  n_r: dimensionless
+  n_a: dimensionless
+  m: dimensionless
+assumes:
+- normal incidence optical path difference between ridge chitin and surrounding air
+- constructive phase difference 2*pi*m
+does_not_apply: multilayer Bragg stacks or pigmenary absorption-dominated spectra
+tests:
+- given:
+    h: 400.0
+    n_r: 1.56
+    n_a: 1.0
+    m: 1.0
+  expect:
+    lam: 448.0
+- given:
+    h: 800.0
+    n_r: 1.56
+    n_a: 1.0
+    m: 2.0
+  expect:
+    lam: 448.0
+cites:
+  text: Ridge height phase-interference model in Finet et al. 2026, iScience 29:115374.
+  url: https://doi.org/10.1016/j.isci.2026.115374

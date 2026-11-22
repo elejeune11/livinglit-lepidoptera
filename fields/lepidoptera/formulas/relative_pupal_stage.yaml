@@ -1,0 +1,29 @@
+# Written by code from changes.yaml (version 3); never edited.
+formula: relative_pupal_stage
+kind: definition
+statement: Relative pupal developmental stage (%) equals post-pupation elapsed time divided by total pupal duration at the
+  rearing temperature, times 100.
+equations:
+- stage_frac = t_apf / D_pupa
+variables:
+  stage_frac: dimensionless
+  t_apf: time
+  D_pupa: time
+assumes:
+- constant ectotherm rearing temperature across the pupal cohort
+does_not_apply: diapausing pupae or fluctuating thermal regimes where developmental rate is non-linear
+tests:
+- given:
+    t_apf: 194.88
+    D_pupa: 234.8
+  expect:
+    stage_frac: 0.8299829642
+- given:
+    t_apf: 24.0
+    D_pupa: 144.0
+  expect:
+    stage_frac: 0.1666666667
+cites:
+  text: Normalized percentage of total pupal development (% APF) used across Lepidoptera morphogenesis (Seah et al. 2023 eLife
+    12:e89082; Totz et al. 2024 Cell Rep Phys Sci 5:102063).
+  url: https://doi.org/10.7554/eLife.89082

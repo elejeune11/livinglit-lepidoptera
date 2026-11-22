@@ -1,0 +1,25 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: ridge_density_from_spacing
+kind: definition
+statement: Linear ridge density (number of parallel ridges per unit width) is the reciprocal of ridge spacing d.
+equations:
+- rho = 1/d
+variables:
+  rho: 1/length
+  d: length
+assumes:
+- ridges are parallel and periodically spaced across the measured region
+does_not_apply: disordered or branching ridges without a well-defined mean spacing
+tests:
+- given:
+    d: 1.0
+  expect:
+    rho: 1.0
+- given:
+    d: 0.8
+  expect:
+    rho: 1.25
+cites:
+  text: Standard spatial frequency definition (f0 = 1/d) used in 2D FFT ridge spacing analysis (McDougal et al. 2021, PNAS
+    118:e2112009118).
+  url: https://doi.org/10.1073/pnas.2112009118

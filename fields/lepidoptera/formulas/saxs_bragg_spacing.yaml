@@ -1,0 +1,24 @@
+# Written by code from changes.yaml (version 2); never edited.
+formula: saxs_bragg_spacing
+kind: definition
+statement: Real-space grating period d from first-order small-angle X-ray scattering (SAXS) wavevector peak q.
+equations:
+- d = 2*pi/q
+variables:
+  d: length
+  q: 1/length
+assumes:
+- first-order Bragg peak (m = 1) of a periodic 1D grating
+does_not_apply: higher-order harmonics without harmonic index or disordered non-periodic scatterers
+tests:
+- given:
+    q: 0.006283185307179587
+  expect:
+    d: 1000.0
+- given:
+    q: 0.008467904726657125
+  expect:
+    d: 742.0
+cites:
+  text: Small-angle X-ray scattering grating period d = 2*pi/q (Parnell et al. 2018, J. R. Soc. Interface 15:20170948).
+  url: https://doi.org/10.1098/rsif.2017.0948

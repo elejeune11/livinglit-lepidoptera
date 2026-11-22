@@ -1,0 +1,24 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: two_way_anova_f
+kind: definition
+statement: In a two-way ANOVA, the F of a main effect or the interaction is its mean square over the error mean square.
+equations:
+- F = (SS/df)/(SSE/dfE)
+variables:
+  F: dimensionless
+  SS: D**2
+  df: count
+  SSE: D**2
+  dfE: count
+does_not_apply: repeated measures or mixed models
+tests:
+- given:
+    SS: 8.0
+    df: 1.0
+    SSE: 12.0
+    dfE: 6.0
+  expect:
+    F: 4.0
+cites:
+  text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.4.3.6 Two-way crossed ANOVA
+  url: https://www.itl.nist.gov/div898/handbook/

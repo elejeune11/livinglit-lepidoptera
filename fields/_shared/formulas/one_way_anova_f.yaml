@@ -1,0 +1,30 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: one_way_anova_f
+kind: definition
+statement: The one-way ANOVA F is the between-group mean square over the within-group mean square.
+equations:
+- F = (SSB/(k - 1))/(SSW/(N - k))
+- df1 = k - 1
+- df2 = N - k
+variables:
+  F: dimensionless
+  SSB: D**2
+  SSW: D**2
+  k: count
+  N: count
+  df1: count
+  df2: count
+does_not_apply: two-way designs
+tests:
+- given:
+    SSB: 8.0
+    SSW: 6.0
+    k: 3.0
+    N: 9.0
+  expect:
+    F: 4.0
+    df1: 2.0
+    df2: 6.0
+cites:
+  text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.4.3.3 The ANOVA table and tests of hypotheses about means
+  url: https://www.itl.nist.gov/div898/handbook/

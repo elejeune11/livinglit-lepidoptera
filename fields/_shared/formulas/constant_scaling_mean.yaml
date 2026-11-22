@@ -1,0 +1,31 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: constant_scaling_mean
+kind: derived
+statement: Under y = c·x, the mean scales by c.
+equations:
+- my = c*mx
+variables:
+  my: D2
+  mx: D
+  c: D2/D
+  Sx: D
+  Sy: D2
+  n: count
+assumes:
+- Sy = c*Sx
+uses:
+- formula: mean_def
+  subs:
+    m: mx
+    S: Sx
+- formula: mean_def
+  subs:
+    m: my
+    S: Sy
+does_not_apply: a factor that differs between samples
+tests:
+- given:
+    c: 2.0
+    mx: 3.0
+  expect:
+    my: 6.0

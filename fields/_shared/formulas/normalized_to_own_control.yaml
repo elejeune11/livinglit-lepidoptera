@@ -1,0 +1,29 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: normalized_to_own_control
+kind: derived
+statement: A control normalized to its own mean has mean 1 (and SD 0 if each sample is normalized to itself).
+equations:
+- my = 1
+variables:
+  my: dimensionless
+  mx: D
+  Sx: D
+  Sy: dimensionless
+  n: count
+assumes:
+- Sy = Sx/mx
+uses:
+- formula: mean_def
+  subs:
+    m: mx
+    S: Sx
+- formula: mean_def
+  subs:
+    m: my
+    S: Sy
+does_not_apply: normalized to another group's mean
+tests:
+- given:
+    mx: 5.0
+  expect:
+    my: 1.0

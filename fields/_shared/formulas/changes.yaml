@@ -1,0 +1,769 @@
+# Append-only log of accepted formula entries (04-formulas). Entry files are rebuilt from it.
+- version: 1
+  paper: null
+  agent:
+    model: build
+    instructions: 04-formulas, Statistical formulas
+  events:
+  - event: add
+    entry:
+      formula: mean_def
+      kind: definition
+      statement: The mean is the sum of the values divided by n.
+      equations:
+      - m = S/n
+      variables:
+        m: D
+        S: D
+        n: count
+      does_not_apply: medians or trimmed means
+      tests:
+      - given:
+          S: 10.0
+          n: 4.0
+        expect:
+          m: 2.5
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.1 Measures of location
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: sd_def
+      kind: definition
+      statement: The sample standard deviation from the sum of squares, mean and n.
+      equations:
+      - sd = sqrt((Q - n*m^2)/(n - 1))
+      variables:
+        sd: D
+        Q: D**2
+        m: D
+        n: count
+      does_not_apply: population SD (divisor n)
+      tests:
+      - given:
+          Q: 14.0
+          m: 2.0
+          n: 3.0
+        expect:
+          sd: 1.0
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6 Measures of scale
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: sem_def
+      kind: definition
+      statement: The standard error of the mean is SD divided by the square root of n.
+      equations:
+      - sem = sd/sqrt(n)
+      variables:
+        sem: D
+        sd: D
+        n: count
+      does_not_apply: a spread that is an SD or a CI
+      tests:
+      - given:
+          sd: 2.0
+          n: 4.0
+        expect:
+          sem: 1.0
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.2.2 Confidence limits for the mean
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: cv_def
+      kind: definition
+      statement: The coefficient of variation is SD divided by the mean.
+      equations:
+      - cv = sd/m
+      variables:
+        cv: dimensionless
+        sd: D
+        m: D
+      does_not_apply: a mean of zero
+      tests:
+      - given:
+          sd: 1.0
+          m: 4.0
+        expect:
+          cv: 0.25
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6 Measures of scale
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: t_two_sample_pooled
+      kind: definition
+      statement: Student's two-sample t statistic with pooled variance and n1 + n2 − 2 degrees of freedom.
+      equations:
+      - sp2 = ((n1 - 1)*s1^2 + (n2 - 1)*s2^2)/(n1 + n2 - 2)
+      - t = (m1 - m2)/sqrt(sp2*(1/n1 + 1/n2))
+      - df = n1 + n2 - 2
+      variables:
+        sp2: D**2
+        n1: count
+        n2: count
+        s1: D
+        s2: D
+        t: dimensionless
+        m1: D
+        m2: D
+        df: count
+      does_not_apply: paired samples
+      tests:
+      - given:
+          m1: 3.0
+          m2: 1.0
+          s1: 1.0
+          s2: 1.0
+          n1: 2.0
+          n2: 2.0
+        expect:
+          sp2: 1.0
+          t: 2.0
+          df: 2.0
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.3 Two-sample t-test for equal means
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: t_two_sample_welch
+      kind: definition
+      statement: Welch's two-sample t statistic with Welch–Satterthwaite degrees of freedom (unequal variances).
+      equations:
+      - t = (m1 - m2)/sqrt(s1^2/n1 + s2^2/n2)
+      - df = (s1^2/n1 + s2^2/n2)^2/((s1^2/n1)^2/(n1 - 1) + (s2^2/n2)^2/(n2 - 1))
+      variables:
+        t: dimensionless
+        m1: D
+        m2: D
+        s1: D
+        s2: D
+        n1: count
+        n2: count
+        df: count
+      does_not_apply: paired samples
+      tests:
+      - given:
+          m1: 3.0
+          m2: 1.0
+          s1: 1.0
+          s2: 1.0
+          n1: 2.0
+          n2: 2.0
+        expect:
+          t: 2.0
+          df: 2.0
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.3 Two-sample t-test for equal means
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: t_paired
+      kind: definition
+      statement: The paired t statistic from the mean and SD of differences.
+      equations:
+      - t = md/(sdd/sqrt(n))
+      - df = n - 1
+      variables:
+        t: dimensionless
+        md: D
+        sdd: D
+        n: count
+        df: count
+      does_not_apply: independent samples
+      tests:
+      - given:
+          md: 2.0
+          sdd: 2.0
+          n: 4.0
+        expect:
+          t: 2.0
+          df: 3.0
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.3.1 Do two processes have the same mean?
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: one_way_anova_f
+      kind: definition
+      statement: The one-way ANOVA F is the between-group mean square over the within-group mean square.
+      equations:
+      - F = (SSB/(k - 1))/(SSW/(N - k))
+      - df1 = k - 1
+      - df2 = N - k
+      variables:
+        F: dimensionless
+        SSB: D**2
+        SSW: D**2
+        k: count
+        N: count
+        df1: count
+        df2: count
+      does_not_apply: two-way designs
+      tests:
+      - given:
+          SSB: 8.0
+          SSW: 6.0
+          k: 3.0
+          N: 9.0
+        expect:
+          F: 4.0
+          df1: 2.0
+          df2: 6.0
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.4.3.3 The ANOVA table and tests of hypotheses about means
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: t_distribution
+      kind: model
+      statement: Two-sided P of a t statistic with df degrees of freedom.
+      equations:
+      - p = tdist_p2(t, df)
+      variables:
+        p: dimensionless
+        t: dimensionless
+        df: count
+      assumes:
+      - normality
+      - independence
+      does_not_apply: rank tests
+      tests:
+      - given:
+          t: 2.0
+          df: 10.0
+        expect:
+          p: 0.07338803477074436
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.4 t distribution
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: f_distribution
+      kind: model
+      statement: Upper-tail P of an F statistic with df1 and df2 degrees of freedom.
+      equations:
+      - p = fdist_p(F, df1, df2)
+      variables:
+        p: dimensionless
+        F: dimensionless
+        df1: count
+        df2: count
+      assumes:
+      - normality
+      - independence
+      - equal variances
+      does_not_apply: non-parametric tests
+      tests:
+      - given:
+          F: 4.0
+          df1: 2.0
+          df2: 6.0
+        expect:
+          p: 0.07871720116618075
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.5 F distribution
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: chi2_distribution
+      kind: model
+      statement: Upper-tail P of a chi-squared statistic.
+      equations:
+      - p = chi2_p(x, df)
+      variables:
+        p: dimensionless
+        x: dimensionless
+        df: count
+      assumes:
+      - independence
+      - large expected counts
+      does_not_apply: small expected counts
+      tests:
+      - given:
+          x: 3.841458820694124
+          df: 1.0
+        expect:
+          p: 0.05
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.6 Chi-square distribution
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: normal_distribution
+      kind: model
+      statement: Two-sided P of a z statistic.
+      equations:
+      - p = norm_p2(z)
+      variables:
+        p: dimensionless
+        z: dimensionless
+      assumes:
+      - normality
+      - independence
+      does_not_apply: small samples with unknown variance
+      tests:
+      - given:
+          z: 1.959963984540054
+        expect:
+          p: 0.05
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.1 Normal distribution
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: ci95_halfwidth
+      kind: model
+      statement: The 95 % confidence half-width of a mean.
+      equations:
+      - h = tq975(n - 1)*sd/sqrt(n)
+      variables:
+        h: D
+        sd: D
+        n: count
+      assumes:
+      - normality
+      - independence
+      does_not_apply: bootstrap intervals
+      tests:
+      - given:
+          sd: 2.0
+          n: 4.0
+        expect:
+          h: 3.182446305284263
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.2.2.1 Confidence interval approach
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: propagated_spread_ratio
+      kind: model
+      statement: First-order propagation of independent relative spreads through a ratio or product.
+      equations:
+      - sy/y = sqrt((sa/a)^2 + (sb/b)^2)
+      variables:
+        sy: D3
+        y: D3
+        sa: D
+        a: D
+        sb: D2
+        b: D2
+      assumes:
+      - first order
+      - inputs independent
+      does_not_apply: correlated inputs
+      tests:
+      - given:
+          sa: 3.0
+          a: 4.0
+          sb: 0.0
+          b: 1.0
+          y: 4.0
+        expect:
+          sy: 3.0
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 2.5.5 Propagation of error considerations
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: constant_scaling_mean
+      kind: derived
+      statement: Under y = c·x, the mean scales by c.
+      equations:
+      - my = c*mx
+      variables:
+        my: D2
+        mx: D
+        c: D2/D
+        Sx: D
+        Sy: D2
+        n: count
+      assumes:
+      - Sy = c*Sx
+      uses:
+      - formula: mean_def
+        subs:
+          m: mx
+          S: Sx
+      - formula: mean_def
+        subs:
+          m: my
+          S: Sy
+      does_not_apply: a factor that differs between samples
+      tests:
+      - given:
+          c: 2.0
+          mx: 3.0
+        expect:
+          my: 6.0
+  - event: add
+    entry:
+      formula: constant_scaling_t
+      kind: derived
+      statement: Under y = c·x (c > 0) applied to both groups, means and SDs scale by c and t is unchanged, so P is unchanged.
+      equations:
+      - ty = tx
+      variables:
+        ty: dimensionless
+        tx: dimensionless
+        c: dimensionless
+        a1: D
+        a2: D
+        u1: D
+        u2: D
+        b1: D
+        b2: D
+        v1: D
+        v2: D
+        n1: count
+        n2: count
+        dfx: count
+        dfy: count
+      assumes:
+      - b1 = c*a1
+      - b2 = c*a2
+      - v1 = c*u1
+      - v2 = c*u2
+      uses:
+      - formula: t_two_sample_welch
+        subs:
+          t: tx
+          m1: a1
+          m2: a2
+          s1: u1
+          s2: u2
+          df: dfx
+      - formula: t_two_sample_welch
+        subs:
+          t: ty
+          m1: b1
+          m2: b2
+          s1: v1
+          s2: v2
+          df: dfy
+      does_not_apply: a factor that differs between groups
+      tests:
+      - given:
+          tx: 2.5
+        expect:
+          ty: 2.5
+  - event: add
+    entry:
+      formula: constant_shift_t
+      kind: derived
+      statement: Under y = x + c applied to both groups, t and P are unchanged.
+      equations:
+      - ty = tx
+      variables:
+        ty: dimensionless
+        tx: dimensionless
+        c: D
+        a1: D
+        a2: D
+        u1: D
+        u2: D
+        b1: D
+        b2: D
+        n1: count
+        n2: count
+        dfx: count
+        dfy: count
+      assumes:
+      - b1 = a1 + c
+      - b2 = a2 + c
+      uses:
+      - formula: t_two_sample_welch
+        subs:
+          t: tx
+          m1: a1
+          m2: a2
+          s1: u1
+          s2: u2
+          df: dfx
+      - formula: t_two_sample_welch
+        subs:
+          t: ty
+          m1: b1
+          m2: b2
+          s1: u1
+          s2: u2
+          df: dfy
+      does_not_apply: a shift that differs between groups
+      tests:
+      - given:
+          tx: 1.5
+        expect:
+          ty: 1.5
+  - event: add
+    entry:
+      formula: ratio_of_means_constant_denominator
+      kind: derived
+      statement: The mean of ratios equals the ratio of means only when the denominator is one constant.
+      equations:
+      - mr = ma/b
+      variables:
+        mr: D/D2
+        ma: D
+        b: D2
+        Sr: D/D2
+        Sa: D
+        n: count
+      assumes:
+      - Sr = Sa/b
+      uses:
+      - formula: mean_def
+        subs:
+          m: mr
+          S: Sr
+      - formula: mean_def
+        subs:
+          m: ma
+          S: Sa
+      does_not_apply: a denominator that varies by sample
+      tests:
+      - given:
+          ma: 6.0
+          b: 2.0
+        expect:
+          mr: 3.0
+  - event: add
+    entry:
+      formula: normalized_to_own_control
+      kind: derived
+      statement: A control normalized to its own mean has mean 1 (and SD 0 if each sample is normalized to itself).
+      equations:
+      - my = 1
+      variables:
+        my: dimensionless
+        mx: D
+        Sx: D
+        Sy: dimensionless
+        n: count
+      assumes:
+      - Sy = Sx/mx
+      uses:
+      - formula: mean_def
+        subs:
+          m: mx
+          S: Sx
+      - formula: mean_def
+        subs:
+          m: my
+          S: Sy
+      does_not_apply: normalized to another group's mean
+      tests:
+      - given:
+          mx: 5.0
+        expect:
+          my: 1.0
+  - event: add
+    entry:
+      formula: studentized_range_distribution
+      kind: model
+      statement: Upper-tail P of the studentized range q for k means and df error degrees of freedom.
+      equations:
+      - p = qrange_p(q, k, df)
+      variables:
+        p: dimensionless
+        q: dimensionless
+        k: count
+        df: count
+      assumes:
+      - normality
+      - independence
+      - equal variances
+      does_not_apply: comparisons against one control (Dunnett)
+      tests:
+      - given:
+          q: 3.5
+          k: 3.0
+          df: 20.0
+        expect:
+          p: 0.055891849081750045
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.4.7.1 Tukey's method
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: tukey_kramer_q
+      kind: definition
+      statement: The Tukey–Kramer q for two of k group means, from the pooled within-group mean square MSW with N − k degrees
+        of freedom.
+      equations:
+      - q = Abs(m1 - m2)/sqrt(MSW/2*(1/n1 + 1/n2))
+      - df = N - k
+      variables:
+        q: dimensionless
+        m1: D
+        m2: D
+        MSW: D**2
+        n1: count
+        n2: count
+        df: count
+        N: count
+        k: count
+      does_not_apply: unequal variances (Games–Howell)
+      tests:
+      - given:
+          m1: 3.0
+          m2: 1.0
+          MSW: 2.0
+          n1: 2.0
+          n2: 2.0
+          N: 6.0
+          k: 3.0
+        expect:
+          q: 2.0
+          df: 3.0
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.4.7.1 Tukey's method
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: games_howell_q
+      kind: definition
+      statement: The Games–Howell q for two of k group means without assuming equal variances, with Welch–Satterthwaite degrees
+        of freedom.
+      equations:
+      - qgh = Abs(m1 - m2)/sqrt((s1^2/n1 + s2^2/n2)/2)
+      - df = (s1^2/n1 + s2^2/n2)^2/((s1^2/n1)^2/(n1 - 1) + (s2^2/n2)^2/(n2 - 1))
+      variables:
+        qgh: dimensionless
+        m1: D
+        m2: D
+        s1: D
+        s2: D
+        n1: count
+        n2: count
+        df: count
+      does_not_apply: equal variances assumed (Tukey–Kramer)
+      tests:
+      - given:
+          m1: 3.0
+          m2: 1.0
+          s1: 1.0
+          s2: 1.0
+          n1: 2.0
+          n2: 2.0
+        expect:
+          qgh: 2.8284271247461903
+          df: 2.0
+      cites:
+        text: Games PA, Howell JF. Pairwise multiple comparison procedures with unequal n's and/or variances. J Educ Stat
+          1:113–125 (1976)
+        url: https://doi.org/10.3102/10769986001002113
+  - event: add
+    entry:
+      formula: bonferroni_adjust
+      kind: definition
+      statement: The Bonferroni-adjusted P of one of m comparisons.
+      equations:
+      - pb = Min(1, m*p)
+      variables:
+        pb: dimensionless
+        p: dimensionless
+        m: count
+      does_not_apply: step-down procedures
+      tests:
+      - given:
+          p: 0.01
+          m: 3.0
+        expect:
+          pb: 0.03
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.4.7.3 Bonferroni's method
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: sidak_adjust
+      kind: definition
+      statement: The Šidák-adjusted P of one of m independent comparisons.
+      equations:
+      - ps = 1 - (1 - p)^m
+      variables:
+        ps: dimensionless
+        p: dimensionless
+        m: count
+      does_not_apply: step-down procedures
+      tests:
+      - given:
+          p: 0.01
+          m: 3.0
+        expect:
+          ps: 0.029701
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.4.7.3 Bonferroni's method
+        url: https://www.itl.nist.gov/div898/handbook/
+  - event: add
+    entry:
+      formula: holm_step
+      kind: definition
+      statement: Holm's step-down adjustment of the i-th smallest of m P values; code keeps the adjusted values monotone.
+      equations:
+      - ph = Min(1, (m - i + 1)*p)
+      variables:
+        ph: dimensionless
+        p: dimensionless
+        m: count
+        i: count
+      does_not_apply: single-step procedures
+      tests:
+      - given:
+          p: 0.01
+          m: 3.0
+          i: 1.0
+        expect:
+          ph: 0.03
+      cites:
+        text: Holm S. A simple sequentially rejective multiple test procedure. Scand J Stat 6:65–70 (1979)
+        url: https://www.jstor.org/stable/4615733
+  - event: add
+    entry:
+      formula: holm_sidak_step
+      kind: definition
+      statement: The Holm–Šidák step-down adjustment of the i-th smallest of m P values; code keeps the adjusted values monotone.
+      equations:
+      - phs = 1 - (1 - p)^(m - i + 1)
+      variables:
+        phs: dimensionless
+        p: dimensionless
+        m: count
+        i: count
+      does_not_apply: single-step procedures
+      tests:
+      - given:
+          p: 0.01
+          m: 3.0
+          i: 1.0
+        expect:
+          phs: 0.029701
+      cites:
+        text: Holm S. A simple sequentially rejective multiple test procedure. Scand J Stat 6:65–70 (1979)
+        url: https://www.jstor.org/stable/4615733
+  - event: add
+    entry:
+      formula: two_way_anova_f
+      kind: definition
+      statement: In a two-way ANOVA, the F of a main effect or the interaction is its mean square over the error mean square.
+      equations:
+      - F = (SS/df)/(SSE/dfE)
+      variables:
+        F: dimensionless
+        SS: D**2
+        df: count
+        SSE: D**2
+        dfE: count
+      does_not_apply: repeated measures or mixed models
+      tests:
+      - given:
+          SS: 8.0
+          df: 1.0
+          SSE: 12.0
+          dfE: 6.0
+        expect:
+          F: 4.0
+      cites:
+        text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.4.3.6 Two-way crossed ANOVA
+        url: https://www.itl.nist.gov/div898/handbook/

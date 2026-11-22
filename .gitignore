@@ -1,10 +1,16 @@
 # Never commit copyrighted source papers, raw third-party archives, or pinned external ontology dumps
+papers_dont_ever_commit
 papers_dont_ever_commit/
+data_dont_commit
 data_dont_commit/
+ontologies_dont_commit
 ontologies_dont_commit/
 
-# Local thumbnail caches & scratch QA renders (regenerated deterministically)
+# Local thumbnail caches, generated release bundles, & scratch QA renders (regenerated deterministically)
 **/thumbs_cache*.json
+**/thumbs*.json
+releases/
+docs/site/
 /tmp/
 scratch/
 qa_renders/

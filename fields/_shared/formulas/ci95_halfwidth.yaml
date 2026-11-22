@@ -1,0 +1,23 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: ci95_halfwidth
+kind: model
+statement: The 95 % confidence half-width of a mean.
+equations:
+- h = tq975(n - 1)*sd/sqrt(n)
+variables:
+  h: D
+  sd: D
+  n: count
+assumes:
+- normality
+- independence
+does_not_apply: bootstrap intervals
+tests:
+- given:
+    sd: 2.0
+    n: 4.0
+  expect:
+    h: 3.182446305284263
+cites:
+  text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.2.2.1 Confidence interval approach
+  url: https://www.itl.nist.gov/div898/handbook/

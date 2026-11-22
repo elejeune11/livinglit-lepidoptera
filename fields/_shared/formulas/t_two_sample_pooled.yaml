@@ -1,0 +1,34 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: t_two_sample_pooled
+kind: definition
+statement: Student's two-sample t statistic with pooled variance and n1 + n2 − 2 degrees of freedom.
+equations:
+- sp2 = ((n1 - 1)*s1^2 + (n2 - 1)*s2^2)/(n1 + n2 - 2)
+- t = (m1 - m2)/sqrt(sp2*(1/n1 + 1/n2))
+- df = n1 + n2 - 2
+variables:
+  sp2: D**2
+  n1: count
+  n2: count
+  s1: D
+  s2: D
+  t: dimensionless
+  m1: D
+  m2: D
+  df: count
+does_not_apply: paired samples
+tests:
+- given:
+    m1: 3.0
+    m2: 1.0
+    s1: 1.0
+    s2: 1.0
+    n1: 2.0
+    n2: 2.0
+  expect:
+    sp2: 1.0
+    t: 2.0
+    df: 2.0
+cites:
+  text: NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.3 Two-sample t-test for equal means
+  url: https://www.itl.nist.gov/div898/handbook/

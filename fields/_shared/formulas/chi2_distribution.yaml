@@ -1,0 +1,23 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: chi2_distribution
+kind: model
+statement: Upper-tail P of a chi-squared statistic.
+equations:
+- p = chi2_p(x, df)
+variables:
+  p: dimensionless
+  x: dimensionless
+  df: count
+assumes:
+- independence
+- large expected counts
+does_not_apply: small expected counts
+tests:
+- given:
+    x: 3.841458820694124
+    df: 1.0
+  expect:
+    p: 0.05
+cites:
+  text: NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.6 Chi-square distribution
+  url: https://www.itl.nist.gov/div898/handbook/

@@ -1,0 +1,23 @@
+id: acoustic_quarter_wave_absorption
+name: Quarter-wave porous scale acoustic resonance frequency
+status: established
+expression: f_res = c_air / (4 * d_layer)
+symbols:
+  f_res:
+    role: output
+    unit: kHz
+    meaning: peak ultrasonic absorption frequency
+  c_air:
+    role: constant
+    value: 343.0
+    unit: m/s
+    meaning: speed of sound in air at 20 C
+  d_layer:
+    role: input
+    unit: mm
+    meaning: effective porous thoracic/wing scale layer thickness
+assumptions:
+- Normal-incidence acoustic wave in air
+- Rigid backing boundary at moth cuticle
+reference: "Neil TR et al. (2020) PNAS \u2014 Thoracic scales of moths as a stealth\
+  \ coating against bat biosonar"

@@ -1,0 +1,26 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: studentized_range_distribution
+kind: model
+statement: Upper-tail P of the studentized range q for k means and df error degrees of freedom.
+equations:
+- p = qrange_p(q, k, df)
+variables:
+  p: dimensionless
+  q: dimensionless
+  k: count
+  df: count
+assumes:
+- normality
+- independence
+- equal variances
+does_not_apply: comparisons against one control (Dunnett)
+tests:
+- given:
+    q: 3.5
+    k: 3.0
+    df: 20.0
+  expect:
+    p: 0.055891849081750045
+cites:
+  text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.4.7.1 Tukey's method
+  url: https://www.itl.nist.gov/div898/handbook/

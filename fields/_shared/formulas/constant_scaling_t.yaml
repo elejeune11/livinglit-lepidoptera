@@ -1,0 +1,50 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: constant_scaling_t
+kind: derived
+statement: Under y = c·x (c > 0) applied to both groups, means and SDs scale by c and t is unchanged, so P is unchanged.
+equations:
+- ty = tx
+variables:
+  ty: dimensionless
+  tx: dimensionless
+  c: dimensionless
+  a1: D
+  a2: D
+  u1: D
+  u2: D
+  b1: D
+  b2: D
+  v1: D
+  v2: D
+  n1: count
+  n2: count
+  dfx: count
+  dfy: count
+assumes:
+- b1 = c*a1
+- b2 = c*a2
+- v1 = c*u1
+- v2 = c*u2
+uses:
+- formula: t_two_sample_welch
+  subs:
+    t: tx
+    m1: a1
+    m2: a2
+    s1: u1
+    s2: u2
+    df: dfx
+- formula: t_two_sample_welch
+  subs:
+    t: ty
+    m1: b1
+    m2: b2
+    s1: v1
+    s2: v2
+    df: dfy
+does_not_apply: a factor that differs between groups
+tests:
+- given:
+    tx: 2.5
+  expect:
+    ty: 2.5

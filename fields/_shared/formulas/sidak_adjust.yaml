@@ -1,0 +1,20 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: sidak_adjust
+kind: definition
+statement: The Šidák-adjusted P of one of m independent comparisons.
+equations:
+- ps = 1 - (1 - p)^m
+variables:
+  ps: dimensionless
+  p: dimensionless
+  m: count
+does_not_apply: step-down procedures
+tests:
+- given:
+    p: 0.01
+    m: 3.0
+  expect:
+    ps: 0.029701
+cites:
+  text: NIST/SEMATECH e-Handbook of Statistical Methods, 7.4.7.3 Bonferroni's method
+  url: https://www.itl.nist.gov/div898/handbook/

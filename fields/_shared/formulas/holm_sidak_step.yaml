@@ -1,0 +1,22 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: holm_sidak_step
+kind: definition
+statement: The Holm–Šidák step-down adjustment of the i-th smallest of m P values; code keeps the adjusted values monotone.
+equations:
+- phs = 1 - (1 - p)^(m - i + 1)
+variables:
+  phs: dimensionless
+  p: dimensionless
+  m: count
+  i: count
+does_not_apply: single-step procedures
+tests:
+- given:
+    p: 0.01
+    m: 3.0
+    i: 1.0
+  expect:
+    phs: 0.029701
+cites:
+  text: Holm S. A simple sequentially rejective multiple test procedure. Scand J Stat 6:65–70 (1979)
+  url: https://www.jstor.org/stable/4615733

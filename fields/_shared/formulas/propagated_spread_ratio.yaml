@@ -1,0 +1,29 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: propagated_spread_ratio
+kind: model
+statement: First-order propagation of independent relative spreads through a ratio or product.
+equations:
+- sy/y = sqrt((sa/a)^2 + (sb/b)^2)
+variables:
+  sy: D3
+  y: D3
+  sa: D
+  a: D
+  sb: D2
+  b: D2
+assumes:
+- first order
+- inputs independent
+does_not_apply: correlated inputs
+tests:
+- given:
+    sa: 3.0
+    a: 4.0
+    sb: 0.0
+    b: 1.0
+    y: 4.0
+  expect:
+    sy: 3.0
+cites:
+  text: NIST/SEMATECH e-Handbook of Statistical Methods, 2.5.5 Propagation of error considerations
+  url: https://www.itl.nist.gov/div898/handbook/

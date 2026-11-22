@@ -1,0 +1,1707 @@
+# Rebuilt by code from field.yaml and changes.yaml; never edited (03-vocabulary).
+name: lepidoptera
+version: 2
+fields:
+  taxon:
+    kind: terms
+    set: true
+    scope: Lepidoptera phylogenetic tree spanning butterflies (Papilionoidea) and moths (Bombycoidea, Noctuoidea, Geometroidea,
+      Pyraloidea, Saturniidae, Sphingidae, Uraniidae…) with pinned NCBITaxon xrefs.
+    states: []
+  sex:
+    kind: terms
+    set: true
+    scope: specimen biological sex (male, female, male and female).
+    states: []
+  anatomical_region:
+    kind: terms
+    set: true
+    scope: Anatomical body or wing region sampled (wing -> forewing/hindwing -> dorsal/ventral, margin/discal; plus thorax,
+      abdomen, antenna, leg for moth acoustic/thermal scales).
+    states: []
+  pattern_element:
+    kind: terms
+    set: true
+    scope: Homologous Nymphalid Groundplan (NGP) symmetry element, eyespot, band, wing compartment, or moth camouflage/acoustic
+      zone.
+    states:
+    - not applicable
+  scale_type:
+    kind: terms
+    set: true
+    scope: Homologous scale layer and specialization tree (cover, ground, UVI, spatulate, androconia, transparent/glass, piliform
+      hair-like, thoracic acoustic scale).
+    states: []
+  functional_architecture:
+    kind: terms
+    set: true
+    scope: 'Extensible physical/chemical mechanism hierarchy: optical structural (ridge multilayer, lower-lamina thin film,
+      inter-ridge honeycomb, 3D gyroid, cross-rib diffuser), pigmentary (melanin, pterin, ommochrome, papiliochrome, bile),
+      acoustic (ultrasonic broadband absorber, resonant lamina), thermal and wetting (radiative cooler, superhydrophobic microtexture).'
+    states: []
+  life_stage:
+    kind: terms
+    set: true
+    scope: organismal developmental stage at sampling (egg, larva, pupa, adult).
+    states: []
+  pupal_stage_pct:
+    kind: quantity
+    set: true
+    scope: normalized percentage of total pupal development (% APF) at sampling or live imaging.
+    states:
+    - not applicable
+  target_gene:
+    kind: terms
+    set: true
+    scope: Homologous developmental gene, transcription factor, signaling pathway, or cytoskeletal complex targeted or profiled
+      (with pinned FlyBase FBgn ortholog xrefs).
+    states:
+    - none
+  perturbation_modality:
+    kind: terms
+    set: true
+    scope: Experimental or evolutionary perturbation design (wild type, G0 CRISPR mosaic, knockout, RNAi, artificial selection,
+      small-molecule inhibitor, FIB milling, mechanical ablation, thermal/humidity shift, vehicle control).
+    states:
+    - wild type
+  chemical_agent:
+    kind: terms
+    set: true
+    scope: pharmacological inhibitor, pigment precursor, or vehicle solvent (with pinned ChEBI xrefs).
+    states:
+    - none
+  imaging_modality:
+    kind: terms
+    set: true
+    scope: Hierarchical microscopy (SEM, FIB-SEM, TEM, confocal, SIM, AFM, optical), scattering (SAXS, USAXS), spectroscopy
+      (microspectrophotometry, goniometry, Raman, FTIR), acoustic (ultrasound vibrometry, anechoic reflectivity), or genomics
+      (snRNA-seq, ChIP-seq, ATAC-seq).
+    states: []
+  view_orientation:
+    kind: terms
+    set: true
+    scope: Viewing geometry relative to scale plane (planar apical top-down, tilted oblique, cross-section, 3D volumetric).
+    states:
+    - not applicable
+  hydration_and_prep:
+    kind: terms
+    set: true
+    scope: Cuticle hydration state and specimen preparation (live in vivo, fixed hydrated, dry native, vacuum sputter-coated,
+      FIB-milled, critical-point dried).
+    states: []
+  measure:
+    kind: measure
+    set: true
+    scope: quantitative morphological, developmental, biomechanical, optical, acoustic, thermal, or genomic trait.
+    states: []
+terms:
+- id: taxon:papilionoidea
+  fields:
+  - taxon
+  label: Papilionoidea
+  definition: True butterflies superfamily within Lepidoptera.
+  scope: Root butterfly clade encompassing Nymphalidae, Pieridae, Papilionidae, Lycaenidae, and Riodinidae.
+  xref:
+  - NCBITaxon:37572
+  source: LivingLit
+  added: &id001
+    paper: corpus_v2_schema
+    version: 1
+    agent:
+      model: domain-adapter
+      instructions: field_set_2_hierarchy
+- id: taxon:nymphalidae
+  fields:
+  - taxon
+  label: Nymphalidae
+  parent: taxon:papilionoidea
+  definition: Brush-footed butterflies family within Papilionoidea.
+  scope: Used for Heliconius, Vanessa, Bicyclus, Morpho, and other nymphalid taxa, distinct from Pieridae and Papilionidae.
+  xref:
+  - NCBITaxon:33415
+  source: LivingLit
+  added: *id001
+- id: taxon:pieridae
+  fields:
+  - taxon
+  label: Pieridae
+  parent: taxon:papilionoidea
+  definition: Sulphur and white butterflies family within Papilionoidea.
+  scope: Used for Colias and other pierid butterflies utilizing pterin pigments and UV-iridescent ridge gratings, distinct
+    from Nymphalidae and Papilionidae.
+  xref:
+  - NCBITaxon:7114
+  source: LivingLit
+  added: *id001
+- id: taxon:papilionidae
+  fields:
+  - taxon
+  label: Papilionidae
+  parent: taxon:papilionoidea
+  definition: Swallowtail butterflies family within Papilionoidea.
+  scope: Used for Parides and Papilio swallowtails, distinct from Nymphalidae and Pieridae.
+  xref:
+  - NCBITaxon:7145
+  source: LivingLit
+  added: *id001
+- id: taxon:heliconiinae
+  fields:
+  - taxon
+  label: Heliconiinae
+  parent: taxon:nymphalidae
+  definition: Longwing subfamily of Nymphalidae.
+  scope: Used for Heliconius mimicry rings, distinct from Nymphalinae, Satyrinae, and Morphinae.
+  xref:
+  - NCBITaxon:40039
+  source: LivingLit
+  added: *id001
+- id: taxon:nymphalinae
+  fields:
+  - taxon
+  label: Nymphalinae
+  parent: taxon:nymphalidae
+  definition: Nymphaline subfamily including painted ladies and admirals.
+  scope: Used for Vanessa cardui, distinct from Heliconiinae, Satyrinae, and Morphinae.
+  xref:
+  - NCBITaxon:42272
+  source: LivingLit
+  added: *id001
+- id: taxon:satyrinae
+  fields:
+  - taxon
+  label: Satyrinae
+  parent: taxon:nymphalidae
+  definition: Satyrine subfamily including eyespot model butterflies.
+  scope: Used for Bicyclus anynana, distinct from Heliconiinae, Nymphalinae, and Morphinae.
+  xref:
+  - NCBITaxon:46114
+  source: LivingLit
+  added: *id001
+- id: taxon:morphinae
+  fields:
+  - taxon
+  label: Morphinae
+  parent: taxon:nymphalidae
+  definition: Morphine subfamily known for tall multi-lamellar ridge reflectors.
+  scope: Used for Morpho species, distinct from Heliconiinae, Nymphalinae, and Satyrinae.
+  xref:
+  - NCBITaxon:127319
+  source: LivingLit
+  added: *id001
+- id: taxon:coliadinae
+  fields:
+  - taxon
+  label: Coliadinae
+  parent: taxon:pieridae
+  definition: Sulphur butterfly subfamily within Pieridae.
+  scope: Used for Colias sulphur butterflies.
+  xref:
+  - NCBITaxon:42159
+  source: LivingLit
+  added: *id001
+- id: taxon:papilioninae
+  fields:
+  - taxon
+  label: Papilioninae
+  parent: taxon:papilionidae
+  definition: True swallowtail subfamily within Papilionidae.
+  scope: Used for Parides cattleheart swallowtails.
+  xref:
+  - NCBITaxon:7146
+  source: LivingLit
+  added: *id001
+- id: taxon:heliconius
+  fields:
+  - taxon
+  label: Heliconius
+  parent: taxon:heliconiinae
+  definition: Neotropical Mullerian mimicry genus Heliconius.
+  scope: Genus parent for H. sara, H. erato, H. melpomene, H. cydno, and H. eleuchia.
+  xref:
+  - NCBITaxon:34739
+  source: LivingLit
+  added: *id001
+- id: taxon:vanessa
+  fields:
+  - taxon
+  label: Vanessa
+  parent: taxon:nymphalinae
+  definition: Cosmopolitan nymphaline genus Vanessa.
+  scope: Genus parent for Vanessa cardui.
+  xref:
+  - NCBITaxon:42274
+  source: LivingLit
+  added: *id001
+- id: taxon:bicyclus
+  fields:
+  - taxon
+  label: Bicyclus
+  parent: taxon:satyrinae
+  definition: Afrotropical satyrine bushbrown genus Bicyclus.
+  scope: Genus parent for Bicyclus anynana.
+  xref:
+  - NCBITaxon:110367
+  source: LivingLit
+  added: *id001
+- id: taxon:morpho
+  fields:
+  - taxon
+  label: Morpho
+  parent: taxon:morphinae
+  definition: Neotropical structural-blue genus Morpho.
+  scope: Genus parent for Morpho helenor and Morpho didius.
+  xref:
+  - NCBITaxon:34745
+  source: LivingLit
+  added: *id001
+- id: taxon:colias
+  fields:
+  - taxon
+  label: Colias
+  parent: taxon:coliadinae
+  definition: Clouded yellow / sulphur genus Colias.
+  scope: Genus parent for Colias eurytheme.
+  xref:
+  - NCBITaxon:42160
+  source: LivingLit
+  added: *id001
+- id: taxon:parides
+  fields:
+  - taxon
+  label: Parides
+  parent: taxon:papilioninae
+  definition: Neotropical Troidini swallowtail genus Parides.
+  scope: Genus parent for Parides eurimedes and Parides iphidamas.
+  xref:
+  - NCBITaxon:76228
+  source: LivingLit
+  added: *id001
+- id: taxon:heliconius_sara
+  fields:
+  - taxon
+  label: Heliconius sara
+  parent: taxon:heliconius
+  definition: Sara longwing butterfly exhibiting proximal dorsal blue structural iridescence.
+  scope: Distinct from H. erato, H. melpomene, H. cydno, and H. eleuchia.
+  xref:
+  - NCBITaxon:34744
+  source: LivingLit
+  added: *id001
+- id: taxon:heliconius_erato
+  fields:
+  - taxon
+  label: Heliconius erato
+  parent: taxon:heliconius
+  definition: Red postman butterfly species with structurally iridescent and non-iridescent geographic subspecies.
+  scope: Species parent for H. erato cyrbia and H. erato demophoon, distinct from H. sara and H. melpomene.
+  xref:
+  - NCBITaxon:33431
+  source: LivingLit
+  added: *id001
+- id: taxon:heliconius_melpomene
+  fields:
+  - taxon
+  label: Heliconius melpomene
+  parent: taxon:heliconius
+  definition: Postman butterfly species co-mimicking H. erato across Neotropical races.
+  scope: Species parent for H. melpomene cythera and H. melpomene rosina, distinct from H. erato and H. sara.
+  xref:
+  - NCBITaxon:34740
+  source: LivingLit
+  added: *id001
+- id: taxon:heliconius_eleuchia
+  fields:
+  - taxon
+  label: Heliconius eleuchia
+  parent: taxon:heliconius
+  definition: Iridescent blue-black Heliconius species in the sara/sapho clade.
+  scope: Distinct from H. sara, H. cydno, H. erato, and H. melpomene.
+  xref:
+  - NCBITaxon:171915
+  source: LivingLit
+  added: *id001
+- id: taxon:heliconius_cydno
+  fields:
+  - taxon
+  label: Heliconius cydno
+  parent: taxon:heliconius
+  definition: Cydno longwing species exhibiting moderate blue structural reflectance.
+  scope: Distinct from H. melpomene, H. sara, and H. eleuchia.
+  xref:
+  - NCBITaxon:34742
+  source: LivingLit
+  added: *id001
+- id: taxon:vanessa_cardui
+  fields:
+  - taxon
+  label: Vanessa cardui
+  parent: taxon:vanessa
+  definition: Painted lady butterfly model system for live in vivo pupal scale morphogenesis.
+  scope: Sole Vanessa species in the current corpus.
+  xref:
+  - NCBITaxon:171605
+  source: LivingLit
+  added: *id001
+- id: taxon:bicyclus_anynana
+  fields:
+  - taxon
+  label: Bicyclus anynana
+  parent: taxon:bicyclus
+  definition: Squinting bushbrown model butterfly for wing eyespot patterning and artificial color selection.
+  scope: Sole Bicyclus species in the current corpus.
+  xref:
+  - NCBITaxon:110368
+  source: LivingLit
+  added: *id001
+- id: taxon:morpho_helenor
+  fields:
+  - taxon
+  label: Morpho helenor
+  parent: taxon:morpho
+  definition: ' Helenor morpho butterfly with high-aspect-ratio multi-lamellar ridge reflectors.'
+  scope: Sole Morpho species explicitly benchmarked.
+  xref:
+  - NCBITaxon:171591
+  source: LivingLit
+  added: *id001
+- id: taxon:colias_eurytheme
+  fields:
+  - taxon
+  label: Colias eurytheme
+  parent: taxon:colias
+  definition: Orange sulphur butterfly exhibiting male-specific UV iridescence controlled by Doublesex and Bric-a-brac.
+  scope: Sole Colias species in the current corpus.
+  xref:
+  - NCBITaxon:72249
+  source: LivingLit
+  added: *id001
+- id: taxon:parides_eurimedes
+  fields:
+  - taxon
+  label: Parides eurimedes
+  parent: taxon:parides
+  definition: Mylotes cattleheart swallowtail with green honeycomb photonic scales.
+  scope: Distinct from sister species Parides iphidamas.
+  xref:
+  - NCBITaxon:110796
+  source: LivingLit
+  added: *id001
+- id: taxon:parides_iphidamas
+  fields:
+  - taxon
+  label: Parides iphidamas
+  parent: taxon:parides
+  definition: Transandean cattleheart swallowtail with green crossrib-honeycomb scales.
+  scope: Distinct from sister species Parides eurimedes.
+  xref:
+  - NCBITaxon:110798
+  source: LivingLit
+  added: *id001
+- id: taxon:heliconius_erato_cyrbia
+  fields:
+  - taxon
+  label: Heliconius erato cyrbia
+  parent: taxon:heliconius_erato
+  definition: Western Ecuadorian iridescent blue race of Heliconius erato.
+  scope: Iridescent subspecies, distinct from non-iridescent Panamanian H. erato demophoon.
+  xref:
+  - NCBITaxon:171894
+  source: LivingLit
+  added: *id001
+- id: taxon:heliconius_erato_demophoon
+  fields:
+  - taxon
+  label: Heliconius erato demophoon
+  parent: taxon:heliconius_erato
+  definition: Central American non-iridescent black race of Heliconius erato.
+  scope: Non-iridescent sister race to H. erato cyrbia.
+  xref:
+  - NCBITaxon:171895
+  source: LivingLit
+  added: *id001
+- id: taxon:heliconius_melpomene_cythera
+  fields:
+  - taxon
+  label: Heliconius melpomene cythera
+  parent: taxon:heliconius_melpomene
+  definition: Western Ecuadorian iridescent co-mimic race of Heliconius melpomene.
+  scope: Iridescent subspecies co-mimicking H. e. cyrbia, distinct from non-iridescent H. m. rosina.
+  xref:
+  - NCBITaxon:171908
+  source: LivingLit
+  added: *id001
+- id: taxon:heliconius_melpomene_rosina
+  fields:
+  - taxon
+  label: Heliconius melpomene rosina
+  parent: taxon:heliconius_melpomene
+  definition: Central American non-iridescent black race of Heliconius melpomene.
+  scope: Non-iridescent sister race to H. m. cythera.
+  xref:
+  - NCBITaxon:171912
+  source: LivingLit
+  added: *id001
+- id: sex:male
+  fields:
+  - sex
+  label: male
+  definition: Adult or developing male butterfly.
+  scope: Distinct from female.
+  source: LivingLit
+  added: *id001
+- id: sex:female
+  fields:
+  - sex
+  label: female
+  definition: Adult or developing female butterfly.
+  scope: Distinct from male.
+  source: LivingLit
+  added: *id001
+- id: anatomical_region:wing
+  fields:
+  - anatomical_region
+  label: wing
+  definition: Lepidopteran wing appendage (forewing or hindwing, dorsal or ventral).
+  scope: Root anatomical wing term.
+  source: LivingLit
+  added: *id001
+- id: anatomical_region:forewing
+  fields:
+  - anatomical_region
+  label: forewing
+  parent: anatomical_region:wing
+  definition: Mesothoracic anterior wing.
+  scope: Distinct from metathoracic hindwing and unspecified dorsal/ventral wing.
+  source: LivingLit
+  added: *id001
+- id: anatomical_region:hindwing
+  fields:
+  - anatomical_region
+  label: hindwing
+  parent: anatomical_region:wing
+  definition: Metathoracic posterior wing.
+  scope: Distinct from mesothoracic forewing.
+  source: LivingLit
+  added: *id001
+- id: anatomical_region:dorsal_wing
+  fields:
+  - anatomical_region
+  label: dorsal wing
+  parent: anatomical_region:wing
+  definition: Upper (dorsal) wing surface across fore- or hindwing.
+  scope: Used when dorsal side is specified across both wing pairs, distinct from ventral wing.
+  source: LivingLit
+  added: *id001
+- id: anatomical_region:ventral_wing
+  fields:
+  - anatomical_region
+  label: ventral wing
+  parent: anatomical_region:wing
+  definition: Lower (ventral) wing surface across fore- or hindwing.
+  scope: Used when ventral side is specified across both wing pairs, distinct from dorsal wing.
+  source: LivingLit
+  added: *id001
+- id: anatomical_region:dorsal_forewing
+  fields:
+  - anatomical_region
+  label: dorsal forewing
+  parent: anatomical_region:forewing
+  definition: Upper (dorsal) surface of the forewing.
+  scope: Distinct from ventral forewing.
+  source: LivingLit
+  added: *id001
+- id: anatomical_region:ventral_forewing
+  fields:
+  - anatomical_region
+  label: ventral forewing
+  parent: anatomical_region:forewing
+  definition: Lower (ventral) surface of the forewing.
+  scope: Distinct from dorsal forewing.
+  source: LivingLit
+  added: *id001
+- id: anatomical_region:dorsal_hindwing
+  fields:
+  - anatomical_region
+  label: dorsal hindwing
+  parent: anatomical_region:hindwing
+  definition: Upper (dorsal) surface of the hindwing.
+  scope: Distinct from ventral hindwing.
+  source: LivingLit
+  added: *id001
+- id: anatomical_region:ventral_hindwing
+  fields:
+  - anatomical_region
+  label: ventral hindwing
+  parent: anatomical_region:hindwing
+  definition: Lower (ventral) surface of the hindwing.
+  scope: Distinct from dorsal hindwing.
+  source: LivingLit
+  added: *id001
+- id: pattern_element:ngp_compartment
+  fields:
+  - pattern_element
+  label: wing pattern compartment
+  definition: Homologous topological zone or Nymphalid Groundplan (NGP) symmetry element.
+  scope: Root wing pattern homology node.
+  source: LivingLit
+  added: *id001
+- id: pattern_element:proximal_basal_field
+  fields:
+  - pattern_element
+  label: proximal wing field
+  parent: pattern_element:ngp_compartment
+  definition: Basal and proximal wing zone near the thorax.
+  scope: Distinct from medial patch, central symmetry band, discal spot, eyespot, and marginal band.
+  source: LivingLit
+  added: *id001
+- id: pattern_element:central_symmetry_band
+  fields:
+  - pattern_element
+  label: central symmetry system band
+  parent: pattern_element:ngp_compartment
+  definition: WntA/Optix-patterned central and basal symmetry system bands (CSS/BSS).
+  scope: Distinct from discal spot, border ocelli/eyespot, and marginal band.
+  source: LivingLit
+  added: *id001
+- id: pattern_element:discal_spot
+  fields:
+  - pattern_element
+  label: discal spot
+  parent: pattern_element:ngp_compartment
+  definition: ' Pattern element centered on the discal crossvein.'
+  scope: Distinct from central symmetry band, medial patch, and border ocelli.
+  source: LivingLit
+  added: *id001
+- id: pattern_element:medial_patch
+  fields:
+  - pattern_element
+  label: medial wing patch
+  parent: pattern_element:ngp_compartment
+  definition: Central/medial wing blade color patch.
+  scope: Distinct from proximal wing field, discal spot, eyespot, and marginal band.
+  source: LivingLit
+  added: *id001
+- id: pattern_element:distal_sector
+  fields:
+  - pattern_element
+  label: distal wing field
+  parent: pattern_element:ngp_compartment
+  definition: Distal non-marginal wing blade region.
+  scope: Distinct from proximal wing field, medial patch, eyespot, and marginal band.
+  source: LivingLit
+  added: *id001
+- id: pattern_element:border_ocelli_eyespot
+  fields:
+  - pattern_element
+  label: eyespot field
+  parent: pattern_element:ngp_compartment
+  definition: Homologous NGP border ocellus (eyespot) organ.
+  scope: Parent for eyespot focus and concentric eyespot rings, distinct from CSS band and marginal band.
+  source: LivingLit
+  added: *id001
+- id: pattern_element:eyespot_focus
+  fields:
+  - pattern_element
+  label: eyespot focus
+  parent: pattern_element:border_ocelli_eyespot
+  definition: Central organizer signaling focus of a border eyespot.
+  scope: Signaling center within an eyespot, distinct from surrounding eyespot rings.
+  source: LivingLit
+  added: *id001
+- id: pattern_element:eyespot_ring
+  fields:
+  - pattern_element
+  label: eyespot ring
+  parent: pattern_element:border_ocelli_eyespot
+  definition: Concentric differentiated color rings surrounding an eyespot focus.
+  scope: Distinct from the central eyespot focus.
+  source: LivingLit
+  added: *id001
+- id: pattern_element:marginal_band
+  fields:
+  - pattern_element
+  label: marginal band
+  parent: pattern_element:ngp_compartment
+  definition: Distalmost wing margin and parafocal border band.
+  scope: Distinct from eyespot field, distal sector, and medial patch.
+  source: LivingLit
+  added: *id001
+- id: scale_type:wing_scale
+  fields:
+  - scale_type
+  label: wing scale
+  definition: Chitinous single-cell epithelial appendage on the lepidopteran wing.
+  scope: Root scale homology term.
+  source: LivingLit
+  added: *id001
+- id: scale_type:cover_scale
+  fields:
+  - scale_type
+  label: cover scale
+  parent: scale_type:wing_scale
+  definition: Apical overlay scale layer exposed on the wing surface.
+  scope: Overlies ground scales; parent for specialized cover scale subtypes.
+  source: LivingLit
+  added: *id001
+- id: scale_type:ground_scale
+  fields:
+  - scale_type
+  label: ground scale
+  parent: scale_type:wing_scale
+  definition: Basal understory scale layer beneath cover scales.
+  scope: Distinct from overlying cover scales.
+  source: LivingLit
+  added: *id001
+- id: scale_type:canonical_cover_scale
+  fields:
+  - scale_type
+  label: canonical cover scale
+  parent: scale_type:cover_scale
+  definition: Typical scalloped ~2 um pitch pigmentary cover scale.
+  scope: Standard cover scale morphology, distinct from specialized UVI and spatulate cover scales.
+  source: LivingLit
+  added: *id001
+- id: scale_type:uvi_cover_scale
+  fields:
+  - scale_type
+  label: UVI cover scale
+  parent: scale_type:cover_scale
+  definition: Specialized ~1 um dense-ridge UV-iridescent cover scale.
+  scope: High-ridge-density iridescent cover scale, distinct from canonical and spatulate cover scales.
+  source: LivingLit
+  added: *id001
+- id: scale_type:spatulate_cover_scale
+  fields:
+  - scale_type
+  label: spatulate cover scale
+  parent: scale_type:cover_scale
+  definition: Male-specific rounded margin cover scale with wide ~4.4 um ridge spacing.
+  scope: Wide-ridge marginal cover scale, distinct from canonical and UVI cover scales.
+  source: LivingLit
+  added: *id001
+- id: functional_architecture:optical_mechanism
+  fields:
+  - functional_architecture
+  label: scale coloration mechanism
+  definition: Physical photonic nanostructure or chemical pigment class generating scale appearance.
+  scope: Root optical/coloration mechanism.
+  source: LivingLit
+  added: *id001
+- id: functional_architecture:structural_reflector
+  fields:
+  - functional_architecture
+  label: structural reflector
+  parent: functional_architecture:optical_mechanism
+  definition: Sub-wavelength chitin-air photonic nanostructure producing constructive interference.
+  scope: Parent for 1D/2D/3D photonic scale architectures, distinct from pigmentary absorber.
+  source: LivingLit
+  added: *id001
+- id: functional_architecture:pigmentary_absorber
+  fields:
+  - functional_architecture
+  label: non-iridescent pigmentary
+  parent: functional_architecture:optical_mechanism
+  definition: Broadband or selective light absorption by embedded chemical pigments without coherent iridescence.
+  scope: Parent for melanin and pterin pigmentary scales, distinct from structural reflector.
+  source: LivingLit
+  added: *id001
+- id: functional_architecture:ridge_lamellar_multilayer
+  fields:
+  - functional_architecture
+  label: ridge-lamellar reflector
+  parent: functional_architecture:structural_reflector
+  definition: Dense longitudinal ridges and overlapping ridge-lamellae acting as multilayer / Bragg interference reflectors.
+  scope: Used for Heliconius, Morpho, and Colias UVI ridge reflectors, distinct from lower-lamina thin films and inter-ridge
+    honeycombs.
+  xref:
+  - CHEBI:17029
+  source: LivingLit
+  added: *id001
+- id: functional_architecture:lower_lamina_thin_film
+  fields:
+  - functional_architecture
+  label: lower-lamina thin film
+  parent: functional_architecture:structural_reflector
+  definition: Thin-film interference from the basal chitinous lower lamina modulated by ridge/crossrib windows.
+  scope: Used for Bicyclus ground scales, distinct from ridge-lamellar reflectors and 3D honeycombs.
+  xref:
+  - CHEBI:17029
+  source: LivingLit
+  added: *id001
+- id: functional_architecture:interridge_honeycomb_lattice
+  fields:
+  - functional_architecture
+  label: inter-ridge honeycomb lattice
+  parent: functional_architecture:structural_reflector
+  definition: Tall crossrib-perforated alveolar/honeycomb lumen lattice between ridges.
+  scope: Used for Parides green scales templated by Arp2/3 actin, distinct from ridge-lamellar multilayers and flat lower-lamina
+    thin films.
+  xref:
+  - CHEBI:17029
+  source: LivingLit
+  added: *id001
+- id: functional_architecture:melanin_pigmentary
+  fields:
+  - functional_architecture
+  label: melanic pigmentary
+  parent: functional_architecture:pigmentary_absorber
+  definition: Melanin-infused dark brown/black non-iridescent scales.
+  scope: Melanin absorber, distinct from pterin/ommochrome pigmentary scales.
+  xref:
+  - CHEBI:25179
+  source: LivingLit
+  added: *id001
+- id: functional_architecture:pterin_pigmentary
+  fields:
+  - functional_architecture
+  label: pterin pigmentary
+  parent: functional_architecture:pigmentary_absorber
+  definition: Pterin-granule (xanthopterin/leucopterin) yellow/orange scales in Pieridae.
+  scope: Pterin absorber/scatterer, distinct from melanic pigmentary scales.
+  xref:
+  - CHEBI:26375
+  - CHEBI:17263
+  source: LivingLit
+  added: *id001
+- id: life_stage:larva
+  fields:
+  - life_stage
+  label: larva
+  definition: Pre-pupal caterpillar instar.
+  scope: Distinct from pupa and adult.
+  source: LivingLit
+  added: *id001
+- id: life_stage:pupa
+  fields:
+  - life_stage
+  label: pupa
+  definition: Metamorphic pupal stage (chrysalis) during wing and scale morphogenesis.
+  scope: Distinct from larva and adult.
+  source: LivingLit
+  added: *id001
+- id: life_stage:adult
+  fields:
+  - life_stage
+  label: adult
+  definition: Fully eclosed imago with dried sclerotized chitinous scales.
+  scope: Distinct from larva and pupa.
+  source: LivingLit
+  added: *id001
+- id: target_gene:doublesex
+  fields:
+  - target_gene
+  label: Doublesex (Dsx)
+  definition: Sex-determination transcription factor controlling sexually dimorphic wing patterns and UVI scales.
+  scope: Distinct from downstream Bric-a-brac and Wnt pathway genes.
+  xref:
+  - FBgn:0000504
+  source: LivingLit
+  added: *id001
+- id: target_gene:bric_a_brac
+  fields:
+  - target_gene
+  label: Bric-a-brac (Bab)
+  definition: BTB/POZ transcription factor repressing UV-iridescent ridge ultrastructure downstream of Dsx.
+  scope: Distinct from Doublesex and Optix.
+  xref:
+  - FBgn:0004870
+  source: LivingLit
+  added: *id001
+- id: target_gene:frizzled4
+  fields:
+  - target_gene
+  label: frizzled4 (fz4)
+  definition: Wnt planar cell polarity / canonical receptor required for eyespot focus number and scale orientation.
+  scope: Distinct from Wingless/Wnt1, WntA, and Armadillo.
+  xref:
+  - FBgn:0027348
+  source: LivingLit
+  added: *id001
+- id: target_gene:wingless_wnt1
+  fields:
+  - target_gene
+  label: Wnt1 / Wingless
+  definition: Canonical Wnt morphogen expressed in wing margin and eyespot foci.
+  scope: Distinct from WntA and frizzled4.
+  xref:
+  - FBgn:0004009
+  source: LivingLit
+  added: *id001
+- id: target_gene:wnta
+  fields:
+  - target_gene
+  label: WntA
+  definition: Symmetry-system Wnt ligand patterning central and basal wing bands.
+  scope: Distinct from canonical Wnt1/Wingless.
+  source: LivingLit
+  added: *id001
+- id: target_gene:armadillo_beta_catenin
+  fields:
+  - target_gene
+  label: Armadillo / beta-catenin
+  definition: Nuclear effector of canonical Wnt signaling in eyespot foci.
+  scope: Distinct from upstream Wnt ligands and frizzled4.
+  xref:
+  - FBgn:0000117
+  source: LivingLit
+  added: *id001
+- id: target_gene:optix
+  fields:
+  - target_gene
+  label: Optix
+  definition: Sine oculis homeobox transcription factor regulating wing color and lamina/band identity.
+  scope: Distinct from Dsx and Bab.
+  xref:
+  - FBgn:0025360
+  source: LivingLit
+  added: *id001
+- id: target_gene:arp2_3_complex
+  fields:
+  - target_gene
+  label: Arp2/3 complex
+  definition: Branched actin nucleating complex templating inter-ridge honeycomb height.
+  scope: Branched actin nucleator inhibited by CK-666, distinct from linear F-actin bundles.
+  xref:
+  - FBgn:0011742
+  source: LivingLit
+  added: *id001
+- id: target_gene:f_actin_cytoskeleton
+  fields:
+  - target_gene
+  label: F-actin bundles
+  definition: Longitudinal linear filamentous actin bundles pre-patterning ridge spacing and preventing ridge buckling waviness.
+  scope: Linear actin cables disrupted by Cytochalasin D, distinct from branched Arp2/3 complex.
+  xref:
+  - FBgn:0000042
+  source: LivingLit
+  added: *id001
+- id: perturbation_modality:crispr_g0_mosaic
+  fields:
+  - perturbation_modality
+  label: CRISPR G0 mosaic knockout
+  definition: Somatic Cas9/sgRNA embryonic microinjection generating mosaic crispant wings.
+  scope: Distinct from artificial selection, small-molecule inhibition, and vehicle control.
+  source: LivingLit
+  added: *id001
+- id: perturbation_modality:artificial_selection
+  fields:
+  - perturbation_modality
+  label: artificial directional selection
+  definition: Multi-generation laboratory selection on quantitative spectral hue or pattern traits.
+  scope: Distinct from single-gene CRISPR knockout and chemical inhibition.
+  source: LivingLit
+  added: *id001
+- id: perturbation_modality:small_molecule_inhibitor
+  fields:
+  - perturbation_modality
+  label: pharmacological pupal injection
+  definition: Stage-timed microinjection of a small-molecule cytoskeletal inhibitor into developing pupae.
+  scope: Distinct from solvent vehicle control and genetic knockouts.
+  source: LivingLit
+  added: *id001
+- id: perturbation_modality:vehicle_control
+  fields:
+  - perturbation_modality
+  label: solvent vehicle control
+  definition: Stage-matched sham/solvent (DMSO or ethanol) pupal injection control.
+  scope: ' Matched reference group for small-molecule inhibitor injections.'
+  source: LivingLit
+  added: *id001
+- id: chemical_agent:cytochalasin_d
+  fields:
+  - chemical_agent
+  label: cytochalasin D
+  definition: Fungal toxin capping barbed F-actin ends and disrupting linear actin polymerization.
+  scope: Inhibits linear F-actin, distinct from Arp2/3-specific CK-666 and vehicle solvents.
+  xref:
+  - CHEBI:53002
+  source: LivingLit
+  added: *id001
+- id: chemical_agent:ck_666
+  fields:
+  - chemical_agent
+  label: CK-666
+  definition: Small-molecule allosteric inhibitor stabilizing the inactive conformation of the Arp2/3 complex.
+  scope: Inhibits branched Arp2/3 actin, distinct from Cytochalasin D and vehicle solvents.
+  xref:
+  - CHEBI:139282
+  source: LivingLit
+  added: *id001
+- id: chemical_agent:vehicle_solvent
+  fields:
+  - chemical_agent
+  label: DMSO / ethanol vehicle
+  definition: Carrier solvent (DMSO or ethanol in Grace's/PBS buffer) injected into control pupae.
+  scope: Control solvent, distinct from active inhibitors CK-666 and Cytochalasin D.
+  xref:
+  - CHEBI:28262
+  - CHEBI:16236
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:electron_microscopy
+  fields:
+  - imaging_modality
+  label: electron microscopy
+  definition: High-resolution electron-beam ultrastructural imaging.
+  scope: Parent for planar SEM and FIB-SEM, distinct from X-ray, probe, optical, and spectroscopic methods.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:sem
+  fields:
+  - imaging_modality
+  label: SEM
+  parent: imaging_modality:electron_microscopy
+  definition: Scanning electron microscopy of scale surfaces or freeze/razor-fractured cross-sections.
+  scope: Distinct from focused-ion-beam milled FIB-SEM.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:fib_sem
+  fields:
+  - imaging_modality
+  label: FIB-SEM
+  parent: imaging_modality:electron_microscopy
+  definition: Focused ion beam milling coupled with scanning electron microscopy for precision cross-sections.
+  scope: Distinct from standard planar/fracture SEM.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:x_ray_methods
+  fields:
+  - imaging_modality
+  label: X-ray scattering & tomography
+  definition: Synchrotron X-ray reciprocal-space scattering or real-space nanotomography.
+  scope: Parent for SAXS and X-ray nano-tomography, distinct from electron and optical microscopy.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:saxs
+  fields:
+  - imaging_modality
+  label: SAXS
+  parent: imaging_modality:x_ray_methods
+  definition: Transmission small-angle X-ray scattering measuring ensemble-averaged Bragg ridge pitch.
+  scope: Reciprocal-space diffraction, distinct from real-space X-ray nano-tomography.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:x_ray_nano_tomography
+  fields:
+  - imaging_modality
+  label: X-ray nano-tomography
+  parent: imaging_modality:x_ray_methods
+  definition: 3D synchrotron phase-contrast X-ray nanotomography.
+  scope: Real-space 3D X-ray imaging, distinct from SAXS.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:afm_spm
+  fields:
+  - imaging_modality
+  label: AFM/SPM
+  definition: Atomic force / scanning probe surfaceprofilometry.
+  scope: Contact/tapping probe topography, distinct from electron, X-ray, and optical modalities.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:optical_microscopy
+  fields:
+  - imaging_modality
+  label: optical microscopy
+  definition: Visible/laser light, fluorescence, super-resolution, or quantitative phase microscopy.
+  scope: Parent for brightfield, confocal, 3D-SIM, reflection phase, and HCR imaging.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:light_microscopy
+  fields:
+  - imaging_modality
+  label: light microscopy
+  parent: imaging_modality:optical_microscopy
+  definition: Reflected/transmitted brightfield or epi-illumination wing photography.
+  scope: Distinct from fluorescence confocal, 3D-SIM, reflection phase, and HCR.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:confocal
+  fields:
+  - imaging_modality
+  label: confocal
+  parent: imaging_modality:optical_microscopy
+  definition: Laser-scanning confocal fluorescence microscopy.
+  scope: Diffraction-limited optical sectioning, distinct from 3D-SIM, phase microscopy, and brightfield.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:sim_3d
+  fields:
+  - imaging_modality
+  label: 3D-SIM
+  parent: imaging_modality:optical_microscopy
+  definition: 3D structured illumination super-resolution fluorescence microscopy.
+  scope: Super-resolution fluorescence, distinct from standard confocal and reflection phase microscopy.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:reflection_phase_microscopy
+  fields:
+  - imaging_modality
+  label: reflection phase microscopy
+  parent: imaging_modality:optical_microscopy
+  definition: Label-free interferometric / speckle-correlation quantitative phase height imaging of live pupal scales.
+  scope: Label-free nanometric height profilometry, distinct from fluorescence confocal and 3D-SIM.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:hcr_in_situ
+  fields:
+  - imaging_modality
+  label: HCR/in situ
+  parent: imaging_modality:optical_microscopy
+  definition: Hybridization chain reaction (HCR3.0) mRNA in situ and immunohistochemistry imaging.
+  scope: Spatial transcript/protein mapping, distinct from structural phase and brightfield microscopy.
+  source: LivingLit
+  added: *id001
+- id: imaging_modality:microspectrophotometry
+  fields:
+  - imaging_modality
+  label: microspectrophotometry
+  definition: UV-vis reflectance spectroscopy (integrating sphere, bifurcated probe, or microspectrophotometer).
+  scope: Spectral reflectance measurement, distinct from spatial imaging modalities.
+  source: LivingLit
+  added: *id001
+- id: view_orientation:planar_apical
+  fields:
+  - view_orientation
+  label: planar normal view
+  definition: Orthographic or normal-incidence measurement perpendicular to the scale lamina.
+  scope: Unforeshortened lateral pitch geometry; parent for top-down apical and whole-mount, distinct from tilted oblique
+    and vertical/3D.
+  source: LivingLit
+  added: *id001
+- id: view_orientation:top_down_apical
+  fields:
+  - view_orientation
+  label: top-down apical
+  parent: view_orientation:planar_apical
+  definition: Normal-incidence apical surface view of individual scales.
+  scope: Distinct from whole-mount wing transmission/epi view.
+  source: LivingLit
+  added: *id001
+- id: view_orientation:whole_mount
+  fields:
+  - view_orientation
+  label: whole-mount
+  parent: view_orientation:planar_apical
+  definition: Intact wing or whole-scale normal-incidence geometry (e.g. transmission SAXS or whole-wing imaging).
+  scope: Distinct from isolated single-scale top-down apical micrographs.
+  source: LivingLit
+  added: *id001
+- id: view_orientation:tilted_oblique
+  fields:
+  - view_orientation
+  label: tilted oblique
+  definition: Oblique stage-tilted viewing geometry introducing cos(theta) lateral pitch foreshortening.
+  scope: Must never be pooled directly with planar_apical lateral pitch without cos(theta) correction.
+  source: LivingLit
+  added: *id001
+- id: view_orientation:vertical_or_3d
+  fields:
+  - view_orientation
+  label: vertical cross-section or 3D
+  definition: Geometry resolving vertical z-height (ridge height, honeycomb height, lamina thickness).
+  scope: Parent for 2D physical cross-sections and 3D volumetric reconstructions, distinct from planar_apical and tilted_oblique.
+  source: LivingLit
+  added: *id001
+- id: view_orientation:cross_section
+  fields:
+  - view_orientation
+  label: cross-section
+  parent: view_orientation:vertical_or_3d
+  definition: Transverse physical section perpendicular to longitudinal ridges (FIB-SEM or fracture SEM).
+  scope: 2D transverse slice, distinct from non-destructive 3D volumetric stacks.
+  source: LivingLit
+  added: *id001
+- id: view_orientation:volumetric_3d
+  fields:
+  - view_orientation
+  label: 3D volumetric
+  parent: view_orientation:vertical_or_3d
+  definition: 3D optical/X-ray/phase reconstruction resolving z-height across an area.
+  scope: Non-destructive 3D stack, distinct from milled 2D cross-section.
+  source: LivingLit
+  added: *id001
+- id: hydration_and_prep:hydrated_state
+  fields:
+  - hydration_and_prep
+  label: hydrated pupal/fixed state
+  definition: Aqueous physiological or fixed hydrated state prior to adult desiccation shrinkage.
+  scope: Parent for live in vivo and fixed hydrated tissues, distinct from dehydrated adult cuticle.
+  source: LivingLit
+  added: *id001
+- id: hydration_and_prep:live_in_vivo
+  fields:
+  - hydration_and_prep
+  label: live in vivo
+  parent: hydration_and_prep:hydrated_state
+  definition: Intact living pupa imaged through a surgical cuticle/coverslip window.
+  scope: Unfixed living state, distinct from fixed and stained hydrated tissue.
+  source: LivingLit
+  added: *id001
+- id: hydration_and_prep:fixed_hydrated
+  fields:
+  - hydration_and_prep
+  label: fixed and stained
+  parent: hydration_and_prep:hydrated_state
+  definition: Aldehyde-fixed, buffer-mounted fluorescently stained developing wing tissue.
+  scope: Fixed aqueous state, distinct from live in vivo.
+  source: LivingLit
+  added: *id001
+- id: hydration_and_prep:dehydrated_state
+  fields:
+  - hydration_and_prep
+  label: dry sclerotized state
+  definition: Dehydrated adult chitinous cuticle (after ~20-25% post-eclosion drying contraction).
+  scope: Parent for dry native, vacuum sputter coated, and FIB milled adult scales, distinct from hydrated state.
+  source: LivingLit
+  added: *id001
+- id: hydration_and_prep:dry_native
+  fields:
+  - hydration_and_prep
+  label: dry mounted
+  parent: hydration_and_prep:dehydrated_state
+  definition: Uncoated dry adult wing or isolated scale in air (SAXS, AFM, spectroscopy).
+  scope: Uncoated dry cuticle, distinct from metal sputter-coated or FIB-milled samples.
+  source: LivingLit
+  added: *id001
+- id: hydration_and_prep:vacuum_sputter_coated
+  fields:
+  - hydration_and_prep
+  label: sputter coated
+  parent: hydration_and_prep:dehydrated_state
+  definition: Au/Pd or Pt conductive sputter-coated scale under high-vacuum SEM.
+  scope: Conductive metal-coated dry sample, distinct from uncoated dry native and FIB milled.
+  source: LivingLit
+  added: *id001
+- id: hydration_and_prep:fib_milled
+  fields:
+  - hydration_and_prep
+  label: FIB milled
+  parent: hydration_and_prep:dehydrated_state
+  definition: Gallium/plasma focused-ion-beam trenched cross-section in vacuum.
+  scope: Ion-milled cross-section, distinct from intact sputter-coated surface SEM and dry native.
+  source: LivingLit
+  added: *id001
+- id: measure:ridge_spacing
+  fields:
+  - measure
+  label: ridge spacing
+  definition: Center-to-center lateral period (pitch d) between adjacent longitudinal scale ridges.
+  scope: Distinct from crossrib spacing, actin bundle spacing, and ridge width.
+  dimension: length
+  source: LivingLit
+  added: *id001
+- id: measure:ridge_density
+  fields:
+  - measure
+  label: ridge density
+  definition: Spatial frequency of longitudinal ridges per unit width (rho = 1/d).
+  scope: Reciprocal of ridge spacing, distinct from ridge number per scale.
+  dimension: 1/length
+  source: LivingLit
+  added: *id001
+- id: measure:ridge_height
+  fields:
+  - measure
+  label: ridge height
+  definition: Vertical elevation of longitudinal ridges from base/lower lamina to ridge crest.
+  scope: Distinct from honeycomb lattice height and lower lamina thickness.
+  dimension: length
+  source: LivingLit
+  added: *id001
+- id: measure:ridge_width
+  fields:
+  - measure
+  label: ridge width
+  definition: Lateral full width of an individual longitudinal ridge.
+  scope: Distinct from center-to-center ridge spacing.
+  dimension: length
+  source: LivingLit
+  added: *id001
+- id: measure:ridge_curvature
+  fields:
+  - measure
+  label: ridge curvature
+  definition: Local in-plane bending curvature kappa (um^-1) of longitudinal ridges.
+  scope: Quantifies Euler buckling waviness after actin disruption, distinct from ridge density.
+  dimension: 1/length
+  source: LivingLit
+  added: *id001
+- id: measure:ridge_number
+  fields:
+  - measure
+  label: ridge number
+  definition: Total count of parallel longitudinal ridges spanning a scale's width.
+  scope: Whole-scale count, distinct from ridge density.
+  dimension: count
+  source: LivingLit
+  added: *id001
+- id: measure:crossrib_spacing
+  fields:
+  - measure
+  label: crossrib spacing
+  definition: Longitudinal center-to-center distance between adjacent transverse crossribs.
+  scope: Orthogonal to ridge spacing.
+  dimension: length
+  source: LivingLit
+  added: *id001
+- id: measure:honeycomb_lattice_height
+  fields:
+  - measure
+  label: honeycomb lattice height
+  definition: Vertical thickness of the crossrib alveolar/honeycomb wall lattice between ridges.
+  scope: Distinct from total ridge height and lower lamina thickness.
+  dimension: length
+  source: LivingLit
+  added: *id001
+- id: measure:lower_lamina_thickness
+  fields:
+  - measure
+  label: lower lamina thickness
+  definition: Vertical thickness of the basal chitinous lower lamina.
+  scope: Distinct from ridge height and honeycomb lattice height.
+  dimension: length
+  source: LivingLit
+  added: *id001
+- id: measure:scale_width
+  fields:
+  - measure
+  label: scale width
+  definition: Maximum transverse width of a single wing scale blade.
+  scope: Distinct from scale area and ridge spacing.
+  dimension: length
+  source: LivingLit
+  added: *id001
+- id: measure:scale_area
+  fields:
+  - measure
+  label: scale area
+  definition: Total planar projected surface area of a single wing scale.
+  scope: 2D area, distinct from linear scale width.
+  dimension: area
+  source: LivingLit
+  added: *id001
+- id: measure:actin_bundle_spacing
+  fields:
+  - measure
+  label: actin bundle spacing
+  definition: Center-to-center spacing L between adjacent longitudinal F-actin bundles in pupal scales.
+  scope: Intracellular cytoskeletal pre-pattern pitch, distinct from cuticular ridge spacing.
+  dimension: length
+  source: LivingLit
+  added: *id001
+- id: measure:actin_bundle_width
+  fields:
+  - measure
+  label: actin bundle width
+  definition: Transverse diameter of individual pupal F-actin bundles.
+  scope: Distinct from actin bundle spacing.
+  dimension: length
+  source: LivingLit
+  added: *id001
+- id: measure:critical_buckling_strain
+  fields:
+  - measure
+  label: critical buckling strain
+  definition: Dimensionless threshold compressive growth strain g_c initiating plasma membrane buckling.
+  scope: Dimensionless mechanical threshold.
+  dimension: dimensionless
+  source: LivingLit
+  added: *id001
+- id: measure:maximum_reflectance
+  fields:
+  - measure
+  label: maximum reflectance
+  definition: Peak percentage or amplitude of reflected light across the UV-vis spectrum.
+  scope: Spectral intensity %, distinct from peak reflectance wavelength.
+  dimension: fraction_percent
+  source: LivingLit
+  added: *id001
+- id: measure:peak_reflectance_wavelength
+  fields:
+  - measure
+  label: peak reflectance wavelength
+  definition: Spectral wavelength lambda_max (nm) of maximum constructive interference reflectance.
+  scope: Spectral hue position, distinct from maximum reflectance amplitude.
+  dimension: length
+  source: LivingLit
+  added: *id001
+- id: measure:developmental_milestone_timing
+  fields:
+  - measure
+  label: developmental milestone timing
+  definition: Post-pupation time (h/d APF or % pupal development) at which a morphogenetic transition occurs.
+  scope: Temporal developmental landmark.
+  dimension: time
+  source: LivingLit
+  added: *id001
+- id: measure:relative_pupal_development
+  fields:
+  - measure
+  label: relative pupal development
+  definition: Normalized percentage of total pupal development (% APF) elapsed at sampling.
+  scope: Temperature-normalized % pupal timeline, distinct from raw hours APF.
+  dimension: fraction_percent
+  source: LivingLit
+  added: *id001
+- id: measure:eyespot_duplication_count
+  fields:
+  - measure
+  label: eyespot duplication count
+  definition: Number of mosaic crispant individuals differentiating supernumerary eyespot foci.
+  scope: Phenotypic penetrance count, distinct from scale orientation defect count.
+  dimension: count
+  source: LivingLit
+  added: *id001
+- id: measure:scale_orientation_defect_count
+  fields:
+  - measure
+  label: scale orientation defect count
+  definition: Number of crispant individuals showing planar cell polarity scale rotation defects.
+  scope: PCP penetrance count, distinct from eyespot duplication count.
+  dimension: count
+  source: LivingLit
+  added: *id001
+- id: measure:crispant_wing_phenotype_count
+  fields:
+  - measure
+  label: crispant wing phenotype count
+  definition: Number of G0 CRISPR mosaic individuals exhibiting variegated wing pattern transformation.
+  scope: Mosaic penetrance count.
+  dimension: count
+  source: LivingLit
+  added: *id001
+- id: taxon:bombycoidea
+  fields:
+  - taxon
+  label: Bombycoidea (silk & hawk moths)
+  parent: taxon:lepidoptera
+  source: LivingLit
+  added: &id002
+    paper: field_set_3_lepidoptera_init
+    version: 2
+    agent:
+      role: schema_architect
+      note: Extend butterfly_morphogenesis -> lepidoptera (butterflies + moths + extensible functional directions + relaxed
+        standing keys)
+- id: taxon:saturniidae
+  fields:
+  - taxon
+  label: Saturniidae (emperor & giant silk moths)
+  parent: taxon:bombycoidea
+  source: LivingLit
+  added: *id002
+- id: taxon:sphingidae
+  fields:
+  - taxon
+  label: Sphingidae (hawk moths)
+  parent: taxon:bombycoidea
+  source: LivingLit
+  added: *id002
+- id: taxon:noctuoidea
+  fields:
+  - taxon
+  label: Noctuoidea (owlet & tiger moths)
+  parent: taxon:lepidoptera
+  source: LivingLit
+  added: *id002
+- id: taxon:geometroidea
+  fields:
+  - taxon
+  label: Geometroidea (geometer & uraniid moths)
+  parent: taxon:lepidoptera
+  source: LivingLit
+  added: *id002
+- id: taxon:uraniidae
+  fields:
+  - taxon
+  label: Uraniidae (sunset moths)
+  parent: taxon:geometroidea
+  source: LivingLit
+  added: *id002
+- id: taxon:pyraloidea
+  fields:
+  - taxon
+  label: Pyraloidea (snout moths)
+  parent: taxon:lepidoptera
+  source: LivingLit
+  added: *id002
+- id: taxon:riodinidae
+  fields:
+  - taxon
+  label: Riodinidae
+  parent: taxon:papilionoidea
+  source: LivingLit
+  added: *id002
+- id: taxon:hesperiidae
+  fields:
+  - taxon
+  label: Hesperiidae
+  parent: taxon:papilionoidea
+  source: LivingLit
+  added: *id002
+- id: taxon:lycaenidae
+  fields:
+  - taxon
+  label: Lycaenidae
+  parent: taxon:papilionoidea
+  source: LivingLit
+  added: *id002
+- id: taxon:morpho_didius
+  fields:
+  - taxon
+  label: Morpho didius
+  parent: taxon:morpho
+  source: LivingLit
+  added: *id002
+- id: anatomical_region:thorax
+  fields:
+  - anatomical_region
+  label: Thorax
+  source: LivingLit
+  added: *id002
+- id: anatomical_region:abdomen
+  fields:
+  - anatomical_region
+  label: Abdomen
+  source: LivingLit
+  added: *id002
+- id: anatomical_region:antenna
+  fields:
+  - anatomical_region
+  label: Antenna
+  source: LivingLit
+  added: *id002
+- id: anatomical_region:leg
+  fields:
+  - anatomical_region
+  label: Leg
+  source: LivingLit
+  added: *id002
+- id: scale_type:thoracic_acoustic_scale
+  fields:
+  - scale_type
+  label: Thoracic acoustic scale
+  parent: scale_type:wing_scale
+  source: LivingLit
+  added: *id002
+- id: scale_type:transparent_scale
+  fields:
+  - scale_type
+  label: Transparent / glass scale
+  parent: scale_type:wing_scale
+  source: LivingLit
+  added: *id002
+- id: scale_type:piliform_scale
+  fields:
+  - scale_type
+  label: Piliform / hair-like scale
+  parent: scale_type:wing_scale
+  source: LivingLit
+  added: *id002
+- id: functional_architecture:acoustic_metamaterial
+  fields:
+  - functional_architecture
+  label: Acoustic metamaterial / ultrasonic absorber
+  source: LivingLit
+  added: *id002
+- id: functional_architecture:broadband_ultrasonic_absorber
+  fields:
+  - functional_architecture
+  label: Broadband ultrasonic porous absorber
+  parent: functional_architecture:acoustic_metamaterial
+  source: LivingLit
+  added: *id002
+- id: functional_architecture:resonant_scale_lamina
+  fields:
+  - functional_architecture
+  label: Resonant acoustic scale lamina
+  parent: functional_architecture:acoustic_metamaterial
+  source: LivingLit
+  added: *id002
+- id: functional_architecture:thermal_wetting
+  fields:
+  - functional_architecture
+  label: Thermal / wetting microtexture
+  source: LivingLit
+  added: *id002
+- id: functional_architecture:radiative_cooler
+  fields:
+  - functional_architecture
+  label: Radiative thermal cooler
+  parent: functional_architecture:thermal_wetting
+  source: LivingLit
+  added: *id002
+- id: functional_architecture:superhydrophobic
+  fields:
+  - functional_architecture
+  label: Superhydrophobic surface microtexture
+  parent: functional_architecture:thermal_wetting
+  source: LivingLit
+  added: *id002
+- id: functional_architecture:gyroid_3d
+  fields:
+  - functional_architecture
+  label: 3D gyroid photonic crystal
+  source: LivingLit
+  added: *id002
+- id: functional_architecture:ommochrome
+  fields:
+  - functional_architecture
+  label: Ommochrome pigment
+  source: LivingLit
+  added: *id002
+- id: functional_architecture:papiliochrome
+  fields:
+  - functional_architecture
+  label: Papiliochrome pigment
+  source: LivingLit
+  added: *id002
+- id: imaging_modality:ultrasound_vibrometry
+  fields:
+  - imaging_modality
+  label: Ultrasound vibrometry / acoustic reflectivity
+  source: LivingLit
+  added: *id002
+- id: imaging_modality:ftir
+  fields:
+  - imaging_modality
+  label: FTIR spectroscopy
+  source: LivingLit
+  added: *id002
+- id: measure:actin_bundle_number
+  fields:
+  - measure
+  label: Actin bundle number per scale
+  source: LivingLit
+  added: *id002
+- id: measure:crossrib_height
+  fields:
+  - measure
+  label: Cross-rib height
+  source: LivingLit
+  added: *id002
+- id: measure:sub_ridge_air_thickness
+  fields:
+  - measure
+  label: Sub-ridge air layer thickness
+  source: LivingLit
+  added: *id002
+- id: measure:sub_crossrib_air_thickness
+  fields:
+  - measure
+  label: Sub-crossrib air layer thickness
+  source: LivingLit
+  added: *id002
+- id: measure:spectral_hue_shift
+  fields:
+  - measure
+  label: Spectral hue shift (abaxial vs adaxial)
+  source: LivingLit
+  added: *id002
+- id: measure:spectral_fwhm_shift
+  fields:
+  - measure
+  label: Spectral bandwidth (FWHM) shift
+  source: LivingLit
+  added: *id002
+- id: measure:peak_reflectance_shift
+  fields:
+  - measure
+  label: Peak reflectance shift
+  source: LivingLit
+  added: *id002
+- id: measure:ultrasonic_absorption
+  fields:
+  - measure
+  label: Ultrasonic acoustic absorption
+  source: LivingLit
+  added: *id002
+- id: perturbation_modality:fib_milling
+  fields:
+  - perturbation_modality
+  label: FIB milling
+  source: LivingLit
+  added: *id002
+standing_keys:
+  measure:ridge_spacing:
+    value:
+      must_match:
+      - scale_type@2
+      - photonic_architecture@3
+      - life_stage
+      - view_orientation@1
+      - hydration_and_prep@1
+      - perturbation_modality
+      may_vary:
+      - taxon
+      - sex
+      - wing_surface
+      - pattern_element
+      - imaging_modality
+    direction:
+      must_match:
+      - contrast
+      may_vary: []
+    added: *id001
+  measure:ridge_height:
+    value:
+      must_match:
+      - scale_type@2
+      - life_stage
+      - pupal_stage_pct
+      - view_orientation@1
+      - perturbation_modality
+      may_vary:
+      - taxon
+      - wing_surface
+      - imaging_modality
+    direction:
+      must_match:
+      - contrast
+      may_vary: []
+    added: *id001
+  measure:crossrib_spacing:
+    value:
+      must_match:
+      - scale_type@2
+      - photonic_architecture@2
+      - life_stage
+      - view_orientation@1
+      - perturbation_modality
+      may_vary:
+      - taxon
+      - imaging_modality
+    direction:
+      must_match:
+      - contrast
+      may_vary: []
+    added: *id001
+  measure:scale_width:
+    value:
+      must_match:
+      - scale_type@2
+      - life_stage
+      - hydration_and_prep@1
+      - perturbation_modality
+      may_vary:
+      - taxon
+      - wing_surface
+      - pattern_element
+    direction:
+      must_match:
+      - contrast
+      may_vary: []
+    added: *id001
+  measure:honeycomb_lattice_height:
+    value:
+      must_match:
+      - life_stage
+      - view_orientation@1
+      - perturbation_modality
+      may_vary:
+      - taxon
+    direction:
+      must_match:
+      - contrast
+      may_vary: []
+    added: *id001

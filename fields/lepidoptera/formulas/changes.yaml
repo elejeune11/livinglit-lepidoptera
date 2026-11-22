@@ -1,0 +1,227 @@
+# Append-only log of accepted formula entries (04-formulas). Entry files are rebuilt from it.
+- version: 1
+  paper: 2018_Parnell
+  agent:
+    model: prototype-builder
+    instructions: formulas_v1
+    run: null
+  events:
+  - event: add
+    entry:
+      formula: ridge_density_from_spacing
+      kind: definition
+      statement: Linear ridge density (number of parallel ridges per unit width) is the reciprocal of ridge spacing d.
+      equations:
+      - rho = 1/d
+      variables:
+        rho: 1/length
+        d: length
+      assumes:
+      - ridges are parallel and periodically spaced across the measured region
+      does_not_apply: disordered or branching ridges without a well-defined mean spacing
+      tests:
+      - given:
+          d: 1.0
+        expect:
+          rho: 1.0
+      - given:
+          d: 0.8
+        expect:
+          rho: 1.25
+      cites:
+        text: Standard spatial frequency definition (f0 = 1/d) used in 2D FFT ridge spacing analysis (McDougal et al. 2021,
+          PNAS 118:e2112009118).
+        url: https://doi.org/10.1073/pnas.2112009118
+  - event: add
+    entry:
+      formula: tilted_sem_foreshortening
+      kind: model
+      statement: Apparent ridge spacing d_app in a planar SEM tilted by angle theta (radians) around the ridge axis is foreshortened
+        by cos(theta).
+      equations:
+      - d_app = d*cos(theta)
+      variables:
+        d_app: length
+        d: length
+        theta: dimensionless
+      assumes:
+      - orthographic SEM projection
+      - tilt axis parallel to longitudinal ridges
+      - flat scale lamina
+      does_not_apply: curved scales or tilt around an axis perpendicular to the ridges
+      tests:
+      - given:
+          d: 1.0
+          theta: 0.0
+        expect:
+          d_app: 1.0
+      - given:
+          d: 1.0
+          theta: 1.0471975512
+        expect:
+          d_app: 0.5
+      cites:
+        text: Standard orthographic foreshortening projection for tilted scanning electron microscopy.
+        url: https://doi.org/10.1098/rsif.2017.0948
+- version: 2
+  paper: 2024_Totz
+  agent:
+    model: livinglit-8paper-audit
+    instructions: formulas_v2
+    run: null
+  events:
+  - event: add
+    entry:
+      formula: saxs_bragg_spacing
+      kind: definition
+      statement: Real-space grating period d from first-order small-angle X-ray scattering (SAXS) wavevector peak q.
+      equations:
+      - d = 2*pi/q
+      variables:
+        d: length
+        q: 1/length
+      assumes:
+      - first-order Bragg peak (m = 1) of a periodic 1D grating
+      does_not_apply: higher-order harmonics without harmonic index or disordered non-periodic scatterers
+      tests:
+      - given:
+          q: 0.006283185307179587
+        expect:
+          d: 1000.0
+      - given:
+          q: 0.008467904726657125
+        expect:
+          d: 742.0
+      cites:
+        text: Small-angle X-ray scattering grating period d = 2*pi/q (Parnell et al. 2018, J. R. Soc. Interface 15:20170948).
+        url: https://doi.org/10.1098/rsif.2017.0948
+  - event: add
+    entry:
+      formula: fvk_critical_buckling_strain
+      kind: model
+      statement: Critical biaxial compressive growth strain g_c for clamped Föppl–von Kármán plate buckling of a scale plasma
+        membrane of thickness h between parallel actin bundles separated by distance L.
+      equations:
+      - g_c = pi**2*(h/L)**2/(3*(1 - nu**2))
+      variables:
+        g_c: dimensionless
+        h: length
+        L: length
+        nu: dimensionless
+      assumes:
+      - clamped boundary conditions at parallel actin bundles
+      - zero transmembrane pressure p = 0
+      - isotropic linear elastic thin plate
+      does_not_apply: post-buckling large-deflection regime or unattached actin bundles
+      tests:
+      - given:
+          h: 0.02
+          L: 1.6
+          nu: 0.5
+        expect:
+          g_c: 0.0006853891945200942
+      - given:
+          h: 0.02
+          L: 0.8
+          nu: 0.5
+        expect:
+          g_c: 0.002741556778080377
+      cites:
+        text: Equation 4 of Totz et al. 2024, Cell Reports Physical Science 5:102063.
+        url: https://doi.org/10.1016/j.xcrp.2024.102063
+  - event: add
+    entry:
+      formula: thin_film_ridge_interference
+      kind: model
+      statement: Constructive interference peak wavelength lambda of a chitinous scale ridge of height h and refractive index
+        n_r in air (n_a) at interference order m.
+      equations:
+      - lam = 2*(n_r - n_a)*h/m
+      variables:
+        lam: length
+        h: length
+        n_r: dimensionless
+        n_a: dimensionless
+        m: dimensionless
+      assumes:
+      - normal incidence optical path difference between ridge chitin and surrounding air
+      - constructive phase difference 2*pi*m
+      does_not_apply: multilayer Bragg stacks or pigmenary absorption-dominated spectra
+      tests:
+      - given:
+          h: 400.0
+          n_r: 1.56
+          n_a: 1.0
+          m: 1.0
+        expect:
+          lam: 448.0
+      - given:
+          h: 800.0
+          n_r: 1.56
+          n_a: 1.0
+          m: 2.0
+        expect:
+          lam: 448.0
+      cites:
+        text: Ridge height phase-interference model in Finet et al. 2026, iScience 29:115374.
+        url: https://doi.org/10.1016/j.isci.2026.115374
+  - event: add
+    entry:
+      formula: scale_rectangular_area
+      kind: model
+      statement: Approximate planar wing scale area A as product of total scale length L_s and midpoint width W_s.
+      equations:
+      - A = L_s*W_s
+      variables:
+        A: area
+        L_s: length
+        W_s: length
+      assumes:
+      - elongated sub-rectangular scale blade geometry
+      does_not_apply: deeply forked or highly tapered hair-like scales
+      tests:
+      - given:
+          L_s: 100.0
+          W_s: 30.0
+        expect:
+          A: 3000.0
+      cites:
+        text: Scale area definition (area = length * midpoint.width) in SEM_ANALYSIS_LLOYD_2024.R (Lloyd et al. 2024, Nat.
+          Commun. 15:4079).
+        url: https://doi.org/10.1038/s41467-024-48060-3
+- version: 3
+  paper: 2021_McDougal
+  agent:
+    model: domain-adapter
+    instructions: field_set_2
+  events:
+  - event: add
+    entry:
+      formula: relative_pupal_stage
+      kind: definition
+      statement: Relative pupal developmental stage (%) equals post-pupation elapsed time divided by total pupal duration
+        at the rearing temperature, times 100.
+      equations:
+      - stage_frac = t_apf / D_pupa
+      variables:
+        stage_frac: dimensionless
+        t_apf: time
+        D_pupa: time
+      assumes:
+      - constant ectotherm rearing temperature across the pupal cohort
+      does_not_apply: diapausing pupae or fluctuating thermal regimes where developmental rate is non-linear
+      tests:
+      - given:
+          t_apf: 194.88
+          D_pupa: 234.8
+        expect:
+          stage_frac: 0.8299829642
+      - given:
+          t_apf: 24.0
+          D_pupa: 144.0
+        expect:
+          stage_frac: 0.1666666667
+      cites:
+        text: Normalized percentage of total pupal development (% APF) used across Lepidoptera morphogenesis (Seah et al.
+          2023 eLife 12:e89082; Totz et al. 2024 Cell Rep Phys Sci 5:102063).
+        url: https://doi.org/10.7554/eLife.89082

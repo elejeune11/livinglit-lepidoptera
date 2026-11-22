@@ -1,0 +1,179 @@
+# livinglit-lepidoptera context schema — field_set 3 (extensible butterflies & moths).
+name: lepidoptera
+description: >-
+  Audited comparative literature schema for Lepidoptera (butterflies and moths):
+  scale morphogenesis, cellular/subcellular ultrastructure, biophotonics, and extensible
+  functional directions (ultrasonic acoustics, pigments, thermal/wetting mechanics, and wing patterning).
+policy:
+  oa_only: true
+separators:
+  - '+'
+  - ','
+  - ';'
+  - and
+  - with
+  - /
+named_states:
+  - not stated
+  - not applicable
+  - none
+  - not stated in this source
+field_set: 3
+fields:
+  taxon:
+    kind: terms
+    set: true
+    scope: >-
+      Lepidoptera phylogenetic tree spanning butterflies (Papilionoidea) and moths
+      (Bombycoidea, Noctuoidea, Geometroidea, Pyraloidea, Saturniidae, Sphingidae, Uraniidae…)
+      with pinned NCBITaxon xrefs.
+  sex:
+    kind: terms
+    set: true
+    scope: specimen biological sex (male, female, male and female).
+  anatomical_region:
+    kind: terms
+    set: true
+    scope: >-
+      Anatomical body or wing region sampled (wing -> forewing/hindwing -> dorsal/ventral,
+      margin/discal; plus thorax, abdomen, antenna, leg for moth acoustic/thermal scales).
+  pattern_element:
+    kind: terms
+    set: true
+    scope: >-
+      Homologous Nymphalid Groundplan (NGP) symmetry element, eyespot, band, wing compartment,
+      or moth camouflage/acoustic zone.
+    states:
+      - not applicable
+  scale_type:
+    kind: terms
+    set: true
+    scope: >-
+      Homologous scale layer and specialization tree (cover, ground, UVI, spatulate,
+      androconia, transparent/glass, piliform hair-like, thoracic acoustic scale).
+  functional_architecture:
+    kind: terms
+    set: true
+    scope: >-
+      Extensible physical/chemical mechanism hierarchy: optical structural (ridge multilayer,
+      lower-lamina thin film, inter-ridge honeycomb, 3D gyroid, cross-rib diffuser), pigmentary
+      (melanin, pterin, ommochrome, papiliochrome, bile), acoustic (ultrasonic broadband absorber,
+      resonant lamina), thermal and wetting (radiative cooler, superhydrophobic microtexture).
+  life_stage:
+    kind: terms
+    set: true
+    scope: organismal developmental stage at sampling (egg, larva, pupa, adult).
+  pupal_stage_pct:
+    kind: quantity
+    scope: normalized percentage of total pupal development (% APF) at sampling or live imaging.
+    states:
+      - not applicable
+  target_gene:
+    kind: terms
+    set: true
+    scope: >-
+      Homologous developmental gene, transcription factor, signaling pathway, or cytoskeletal
+      complex targeted or profiled (with pinned FlyBase FBgn ortholog xrefs).
+    states:
+      - none
+  perturbation_modality:
+    kind: terms
+    set: true
+    scope: >-
+      Experimental or evolutionary perturbation design (wild type, G0 CRISPR mosaic, knockout,
+      RNAi, artificial selection, small-molecule inhibitor, FIB milling, mechanical ablation,
+      thermal/humidity shift, vehicle control).
+    states:
+      - wild type
+  chemical_agent:
+    kind: terms
+    set: true
+    scope: pharmacological inhibitor, pigment precursor, or vehicle solvent (with pinned ChEBI xrefs).
+    states:
+      - none
+  imaging_modality:
+    kind: terms
+    set: true
+    scope: >-
+      Hierarchical microscopy (SEM, FIB-SEM, TEM, confocal, SIM, AFM, optical), scattering
+      (SAXS, USAXS), spectroscopy (microspectrophotometry, goniometry, Raman, FTIR), acoustic
+      (ultrasound vibrometry, anechoic reflectivity), or genomics (snRNA-seq, ChIP-seq, ATAC-seq).
+  view_orientation:
+    kind: terms
+    set: true
+    scope: >-
+      Viewing geometry relative to scale plane (planar apical top-down, tilted oblique,
+      cross-section, 3D volumetric).
+    states:
+      - not applicable
+  hydration_and_prep:
+    kind: terms
+    set: true
+    scope: >-
+      Cuticle hydration state and specimen preparation (live in vivo, fixed hydrated, dry native,
+      vacuum sputter-coated, FIB-milled, critical-point dried).
+  measure:
+    kind: measure
+    scope: quantitative morphological, developmental, biomechanical, optical, acoustic, thermal, or genomic trait.
+
+# Context fields that commonly explain numeric differences across studies (flagged transparently, never silently hidden)
+confounder_fields:
+  - view_orientation
+  - hydration_and_prep
+  - imaging_modality
+  - perturbation_modality
+
+linked:
+  - [target_gene, perturbation_modality]
+  - [chemical_agent, perturbation_modality]
+  - [chemical_agent, perturbation_modality, target_gene]
+  - [functional_architecture, taxon]
+  - [functional_architecture, scale_type, sex, pattern_element, anatomical_region]
+
+measure_qualifiers:
+  expressed_as:
+    - absolute
+    - '% of baseline'
+    - '% change'
+    - fold
+    - normalised
+  normalised_to: null
+  level: null
+
+# Shift #2: Relaxed standing keys — minimal hard blockers (physical measure + unit compatibility only).
+# All biological & experimental context dimensions stay in may_vary so researchers choose what to match or relax!
+default_key:
+  value:
+    must_match: []
+    may_vary:
+      - taxon
+      - sex
+      - anatomical_region
+      - pattern_element
+      - scale_type
+      - functional_architecture
+      - life_stage
+      - pupal_stage_pct
+      - target_gene
+      - perturbation_modality
+      - chemical_agent
+      - imaging_modality
+      - view_orientation
+      - hydration_and_prep
+  direction:
+    must_match: []
+    may_vary:
+      - taxon
+      - sex
+      - anatomical_region
+      - pattern_element
+      - scale_type
+      - functional_architecture
+      - life_stage
+      - pupal_stage_pct
+      - target_gene
+      - perturbation_modality
+      - chemical_agent
+      - imaging_modality
+      - view_orientation
+      - hydration_and_prep

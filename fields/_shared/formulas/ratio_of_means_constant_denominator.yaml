@@ -1,0 +1,31 @@
+# Written by code from changes.yaml (version 1); never edited.
+formula: ratio_of_means_constant_denominator
+kind: derived
+statement: The mean of ratios equals the ratio of means only when the denominator is one constant.
+equations:
+- mr = ma/b
+variables:
+  mr: D/D2
+  ma: D
+  b: D2
+  Sr: D/D2
+  Sa: D
+  n: count
+assumes:
+- Sr = Sa/b
+uses:
+- formula: mean_def
+  subs:
+    m: mr
+    S: Sr
+- formula: mean_def
+  subs:
+    m: ma
+    S: Sa
+does_not_apply: a denominator that varies by sample
+tests:
+- given:
+    ma: 6.0
+    b: 2.0
+  expect:
+    mr: 3.0

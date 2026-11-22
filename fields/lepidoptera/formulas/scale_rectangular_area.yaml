@@ -1,0 +1,23 @@
+# Written by code from changes.yaml (version 2); never edited.
+formula: scale_rectangular_area
+kind: model
+statement: Approximate planar wing scale area A as product of total scale length L_s and midpoint width W_s.
+equations:
+- A = L_s*W_s
+variables:
+  A: area
+  L_s: length
+  W_s: length
+assumes:
+- elongated sub-rectangular scale blade geometry
+does_not_apply: deeply forked or highly tapered hair-like scales
+tests:
+- given:
+    L_s: 100.0
+    W_s: 30.0
+  expect:
+    A: 3000.0
+cites:
+  text: Scale area definition (area = length * midpoint.width) in SEM_ANALYSIS_LLOYD_2024.R (Lloyd et al. 2024, Nat. Commun.
+    15:4079).
+  url: https://doi.org/10.1038/s41467-024-48060-3
