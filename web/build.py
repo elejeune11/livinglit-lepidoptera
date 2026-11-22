@@ -237,8 +237,9 @@ def _build_thumbs(
     manifests: dict[str, dict[str, Any]],
     papers_dir: Path,
     cache_path: Path,
-    max_side: int = 760,
-    jpeg_q: int = 80,
+    max_side: int = 480,
+    max_side_hi: int = 640,
+    webp_q: int = 72,
 ) -> dict[str, str]:
     cache: dict[str, str] = {}
     if cache_path.is_file():
@@ -272,13 +273,19 @@ def _build_thumbs(
         crop = im[y0:y1, x0:x1]
         if crop.size == 0:
             continue
+        d = p.get("data") or {}
+        is_hi = (
+            any(d.get(k) for k in ("curves", "digitized_scatter", "digitized_boxplots", "dotplot_matrix"))
+            or d.get("periodic_fft_um") is not None
+        )
+        limit = max_side_hi if is_hi else max_side
         h, w = crop.shape[:2]
-        scale = min(1.0, max_side / max(h, w))
+        scale = min(1.0, limit / max(h, w))
         if scale < 1.0:
             crop = cv2.resize(crop, (max(1, int(round(w * scale))), max(1, int(round(h * scale)))), interpolation=cv2.INTER_AREA)
-        ok, buf = cv2.imencode(".jpg", crop, [int(cv2.IMWRITE_JPEG_QUALITY), jpeg_q])
+        ok, buf = cv2.imencode(".webp", crop, [int(cv2.IMWRITE_WEBP_QUALITY), webp_q])
         if ok:
-            b64 = "data:image/jpeg;base64," + base64.b64encode(buf.tobytes()).decode("ascii")
+            b64 = "data:image/webp;base64," + base64.b64encode(buf.tobytes()).decode("ascii")
             thumbs[pid] = b64
             cache[pid] = b64
             dirty = True
@@ -377,7 +384,7 @@ def assemble_bundle(tag: str, releases_dir: Path = ROOT / "releases", papers_dir
     term_usage = _build_term_usage(terms, mappings_rows, items, panels)
 
     manifests = hub.get("manifests") or {}
-    thumbs = _build_thumbs(panels, manifests, papers_dir, rel / "thumbs_cache.json")
+    thumbs = _build_thumbs(panels, manifests, papers_dir, rel / "thumbs_cache_webp.json")
 
     return {
         "tag": tag,
