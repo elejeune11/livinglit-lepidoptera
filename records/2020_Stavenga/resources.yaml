@@ -1,0 +1,21 @@
+record: 2020_Stavenga
+resources:
+  - id: stavenga_supp_fig_s1
+    kind: supplement
+    repository: Publisher_Supplement
+    title: Supplementary Figure S1 — Reflectance spectra of aestivation cave wall granite and bark from 14 Australian tree species (Table 1)
+    url: https://www.frontiersin.org/articles/10.3389/fphys.2020.00095/full#supplementary-material
+    doi: 10.3389/fphys.2020.00095
+    license: CC-BY-4.0
+    local_files: []
+    feeds_panels:
+      - 2020_Stavenga/F6/A
+      - 2020_Stavenga/F7/A
+    feeds_items:
+      - F6_granite_vs_bark
+      - F7_forewing_vs_bark
+    summary:
+      n_tree_species: 14
+      n_likely_resting_spots: 7
+      cave_site: South Rams Head, Kosciuszko National Park, NSW (1860 m)
+      note: Online supplementary PDF/image figure on Frontiers in Physiology; main bark vs forewing comparison spectra are digitized directly from Figs. 6 and 7.

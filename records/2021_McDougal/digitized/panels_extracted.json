@@ -1,0 +1,8400 @@
+[
+  {
+    "id": "2021_McDougal/F1/A",
+    "paper": "2021_McDougal",
+    "figure_id": "F1",
+    "figure_label": "Fig. 1",
+    "panel_id": "A",
+    "panel_label": "1A",
+    "title": "Macro photograph of adult painted lady butterfly Vanessa cardui",
+    "archetype": "macro_morphology",
+    "file": "pnas.202112009fig01.jpg",
+    "bbox": [
+      2,
+      2,
+      115,
+      103
+    ],
+    "pixel_size": [
+      113,
+      101
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "life_stage": "adult",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Imaging the structure of fully formed butterfly scales. (A) The painted lady butterfly, V. cardui."
+  },
+  {
+    "id": "2021_McDougal/F1/B",
+    "paper": "2021_McDougal",
+    "figure_id": "F1",
+    "figure_label": "Fig. 1",
+    "panel_id": "B",
+    "panel_label": "1B",
+    "title": "Optical micrograph of overlapping orange and black adult wing scales (200 \u00b5m bar)",
+    "archetype": "macro_morphology",
+    "file": "pnas.202112009fig01.jpg",
+    "bbox": [
+      2,
+      109,
+      115,
+      212
+    ],
+    "pixel_size": [
+      113,
+      103
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "life_stage": "adult",
+      "imaging_modality": "light microscopy",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 200.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 30.92,
+      "um_per_px": 6.46885,
+      "fov_um": [
+        730.98,
+        666.29
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 72,
+          "y0": 90,
+          "x1": 102,
+          "y1": 94,
+          "um": 200.0,
+          "um_per_px": 6.468849
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Imaging the structure of fully formed butterfly scales. (A) The painted lady butterfly, V. cardui."
+  },
+  {
+    "id": "2021_McDougal/F1/C",
+    "paper": "2021_McDougal",
+    "figure_id": "F1",
+    "figure_label": "Fig. 1",
+    "panel_id": "C",
+    "panel_label": "1C",
+    "title": "Planar SEM of adult wing scales with longitudinal ridges (20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig01.jpg",
+    "bbox": [
+      122,
+      2,
+      332,
+      212
+    ],
+    "pixel_size": [
+      210,
+      210
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "life_stage": "adult",
+      "imaging_modality": "SEM",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 50.8,
+      "um_per_px": 0.39374,
+      "fov_um": [
+        82.68,
+        82.68
+      ],
+      "periodic_fft_um": 1.913,
+      "periodic_fft_interval_um": [
+        1.8564,
+        1.9696
+      ],
+      "periodic_snr": 38774.4,
+      "wavevector_deg": 24.6,
+      "periodic_transect_um": 2.0094,
+      "periodic_transect_sd_um": 0.0,
+      "transect_points_um": [
+        2.0094,
+        2.0094,
+        2.0094,
+        2.0094,
+        2.0094,
+        2.0094,
+        2.0094,
+        2.0094,
+        2.0094,
+        2.0094
+      ],
+      "harmonic_guard": {
+        "status": "pass",
+        "fft_transect_delta_pct": 5.04,
+        "harmonic_ratio_2f": 0.12,
+        "snr": 38774.4,
+        "issues": []
+      },
+      "overlay_meta": {
+        "kind": "microscopy_fft",
+        "scale_bar_px": {
+          "x0": 10,
+          "y0": 197,
+          "x1": 59,
+          "y1": 201,
+          "um": 20.0,
+          "um_per_px": 0.393736
+        },
+        "roi_px": [
+          10,
+          45,
+          76,
+          165
+        ],
+        "grating": {
+          "period_px": 4.86,
+          "period_um": 1.913,
+          "wavevector_deg": 24.6,
+          "phase_shift_px": 1.82,
+          "snr": 38774.4
+        },
+        "crossrib_grating": null,
+        "transects": [
+          {
+            "p0": [
+              35.1,
+              46.2
+            ],
+            "p1": [
+              73.1,
+              63.6
+            ],
+            "peaks_px": [
+              [
+                39.7,
+                48.4
+              ],
+              [
+                44.4,
+                50.5
+              ],
+              [
+                48.1,
+                52.2
+              ],
+              [
+                52.7,
+                54.3
+              ],
+              [
+                57.4,
+                56.4
+              ],
+              [
+                62.0,
+                58.6
+              ],
+              [
+                66.6,
+                60.7
+              ],
+              [
+                71.3,
+                62.8
+              ]
+            ]
+          },
+          {
+            "p0": [
+              29.5,
+              55.9
+            ],
+            "p1": [
+              73.1,
+              75.9
+            ],
+            "peaks_px": [
+              [
+                31.4,
+                56.8
+              ],
+              [
+                35.1,
+                58.5
+              ],
+              [
+                39.7,
+                60.6
+              ],
+              [
+                44.4,
+                62.7
+              ],
+              [
+                48.1,
+                64.4
+              ],
+              [
+                52.7,
+                66.6
+              ],
+              [
+                57.4,
+                68.7
+              ],
+              [
+                62.0,
+                70.8
+              ],
+              [
+                66.7,
+                72.9
+              ],
+              [
+                71.3,
+                75.1
+              ]
+            ]
+          },
+          {
+            "p0": [
+              24.9,
+              66.1
+            ],
+            "p1": [
+              73.2,
+              88.2
+            ],
+            "peaks_px": [
+              [
+                26.7,
+                66.9
+              ],
+              [
+                30.5,
+                68.6
+              ],
+              [
+                35.1,
+                70.7
+              ],
+              [
+                39.7,
+                72.9
+              ],
+              [
+                43.5,
+                74.6
+              ],
+              [
+                48.1,
+                76.7
+              ],
+              [
+                52.7,
+                78.8
+              ],
+              [
+                57.4,
+                80.9
+              ],
+              [
+                62.0,
+                83.1
+              ],
+              [
+                66.7,
+                85.2
+              ],
+              [
+                70.4,
+                86.9
+              ]
+            ]
+          },
+          {
+            "p0": [
+              20.3,
+              76.2
+            ],
+            "p1": [
+              73.2,
+              100.4
+            ],
+            "peaks_px": [
+              [
+                22.1,
+                77.1
+              ],
+              [
+                26.8,
+                79.2
+              ],
+              [
+                30.5,
+                80.9
+              ],
+              [
+                35.1,
+                83.0
+              ],
+              [
+                38.8,
+                84.7
+              ],
+              [
+                43.5,
+                86.8
+              ],
+              [
+                48.1,
+                89.0
+              ],
+              [
+                52.7,
+                91.1
+              ],
+              [
+                57.4,
+                93.2
+              ],
+              [
+                62.0,
+                95.3
+              ],
+              [
+                65.7,
+                97.0
+              ],
+              [
+                70.4,
+                99.1
+              ]
+            ]
+          },
+          {
+            "p0": [
+              15.6,
+              86.3
+            ],
+            "p1": [
+              73.2,
+              112.7
+            ],
+            "peaks_px": [
+              [
+                17.5,
+                87.2
+              ],
+              [
+                22.1,
+                89.3
+              ],
+              [
+                25.8,
+                91.0
+              ],
+              [
+                30.5,
+                93.1
+              ],
+              [
+                35.1,
+                95.3
+              ],
+              [
+                38.8,
+                97.0
+              ],
+              [
+                43.5,
+                99.1
+              ],
+              [
+                48.1,
+                101.2
+              ],
+              [
+                52.7,
+                103.3
+              ],
+              [
+                56.5,
+                105.0
+              ],
+              [
+                61.1,
+                107.2
+              ],
+              [
+                65.7,
+                109.3
+              ],
+              [
+                70.4,
+                111.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              11.9,
+              96.9
+            ],
+            "p1": [
+              70.4,
+              123.7
+            ],
+            "peaks_px": [
+              [
+                12.8,
+                97.3
+              ],
+              [
+                17.5,
+                99.5
+              ],
+              [
+                21.2,
+                101.1
+              ],
+              [
+                25.8,
+                103.3
+              ],
+              [
+                30.5,
+                105.4
+              ],
+              [
+                34.2,
+                107.1
+              ],
+              [
+                38.8,
+                109.2
+              ],
+              [
+                43.5,
+                111.3
+              ],
+              [
+                48.1,
+                113.5
+              ],
+              [
+                51.8,
+                115.2
+              ],
+              [
+                56.5,
+                117.3
+              ],
+              [
+                61.1,
+                119.4
+              ],
+              [
+                65.7,
+                121.5
+              ]
+            ]
+          },
+          {
+            "p0": [
+              11.9,
+              109.2
+            ],
+            "p1": [
+              65.7,
+              133.8
+            ],
+            "peaks_px": [
+              [
+                16.6,
+                111.3
+              ],
+              [
+                21.2,
+                113.4
+              ],
+              [
+                25.8,
+                115.5
+              ],
+              [
+                30.5,
+                117.7
+              ],
+              [
+                34.2,
+                119.4
+              ],
+              [
+                38.8,
+                121.5
+              ],
+              [
+                43.5,
+                123.6
+              ],
+              [
+                47.2,
+                125.3
+              ],
+              [
+                51.8,
+                127.4
+              ],
+              [
+                56.5,
+                129.5
+              ],
+              [
+                61.1,
+                131.7
+              ]
+            ]
+          },
+          {
+            "p0": [
+              11.9,
+              121.4
+            ],
+            "p1": [
+              61.1,
+              143.9
+            ],
+            "peaks_px": [
+              [
+                16.6,
+                123.5
+              ],
+              [
+                21.2,
+                125.7
+              ],
+              [
+                25.8,
+                127.8
+              ],
+              [
+                29.6,
+                129.5
+              ],
+              [
+                34.2,
+                131.6
+              ],
+              [
+                38.8,
+                133.7
+              ],
+              [
+                42.5,
+                135.4
+              ],
+              [
+                47.2,
+                137.6
+              ],
+              [
+                51.8,
+                139.7
+              ],
+              [
+                56.5,
+                141.8
+              ]
+            ]
+          },
+          {
+            "p0": [
+              11.9,
+              133.7
+            ],
+            "p1": [
+              56.5,
+              154.1
+            ],
+            "peaks_px": [
+              [
+                16.6,
+                135.8
+              ],
+              [
+                21.2,
+                137.9
+              ],
+              [
+                24.9,
+                139.6
+              ],
+              [
+                29.6,
+                141.7
+              ],
+              [
+                34.2,
+                143.9
+              ],
+              [
+                37.9,
+                145.6
+              ],
+              [
+                42.6,
+                147.7
+              ],
+              [
+                47.2,
+                149.8
+              ],
+              [
+                51.8,
+                151.9
+              ]
+            ]
+          },
+          {
+            "p0": [
+              11.9,
+              145.9
+            ],
+            "p1": [
+              49.1,
+              162.9
+            ],
+            "peaks_px": [
+              [
+                16.6,
+                148.1
+              ],
+              [
+                20.3,
+                149.8
+              ],
+              [
+                24.9,
+                151.9
+              ],
+              [
+                28.6,
+                153.6
+              ],
+              [
+                33.3,
+                155.7
+              ],
+              [
+                37.9,
+                157.8
+              ],
+              [
+                42.6,
+                159.9
+              ],
+              [
+                47.2,
+                162.1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "n_digitized_points": 11,
+    "linked_items": [
+      "F1_adult_ridge_fft"
+    ],
+    "linked_claims": [
+      "C1_srpm_live_imaging"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Imaging the structure of fully formed butterfly scales. (A) The painted lady butterfly, V. cardui."
+  },
+  {
+    "id": "2021_McDougal/F1/D",
+    "paper": "2021_McDougal",
+    "figure_id": "F1",
+    "figure_label": "Fig. 1",
+    "panel_id": "D",
+    "panel_label": "1D",
+    "title": "High-magnification SEM of adult scale finger showing stacked ridge lamellae and transverse crossribs (5 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig01.jpg",
+    "bbox": [
+      202,
+      115,
+      332,
+      212
+    ],
+    "pixel_size": [
+      130,
+      97
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "life_stage": "adult",
+      "imaging_modality": "SEM",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 5.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 40.75,
+      "um_per_px": 0.12271,
+      "fov_um": [
+        15.95,
+        11.9
+      ],
+      "periodic_fft_um": 1.8062,
+      "periodic_fft_interval_um": [
+        1.669,
+        1.9434
+      ],
+      "periodic_snr": 2291.2,
+      "wavevector_deg": 24.8,
+      "periodic_transect_um": 1.8121,
+      "periodic_transect_sd_um": 0.0902,
+      "transect_points_um": [
+        1.6813,
+        1.7436,
+        1.7436,
+        1.7436,
+        1.7436,
+        1.8682,
+        1.8682,
+        1.8682,
+        1.9304,
+        1.9304
+      ],
+      "harmonic_guard": {
+        "status": "pass",
+        "fft_transect_delta_pct": 0.33,
+        "harmonic_ratio_2f": 0.12,
+        "snr": 2291.2,
+        "issues": []
+      },
+      "crossrib_fft_um": 0.4778,
+      "crossrib_snr": 30.4,
+      "overlay_meta": {
+        "kind": "microscopy_fft",
+        "scale_bar_px": {
+          "x0": 79,
+          "y0": 84,
+          "x1": 119,
+          "y1": 88,
+          "um": 5.0,
+          "um_per_px": 0.122707
+        },
+        "roi_px": [
+          22,
+          18,
+          108,
+          76
+        ],
+        "grating": {
+          "period_px": 14.72,
+          "period_um": 1.8062,
+          "wavevector_deg": 24.8,
+          "phase_shift_px": -5.93,
+          "snr": 2291.2
+        },
+        "crossrib_grating": {
+          "period_px": 3.89,
+          "period_um": 0.4778,
+          "wavevector_deg": -71.8,
+          "phase_shift_px": -1.27,
+          "snr": 30.4
+        },
+        "transects": [
+          {
+            "p0": [
+              62.3,
+              19.0
+            ],
+            "p1": [
+              105.6,
+              39.0
+            ],
+            "peaks_px": [
+              [
+                67.8,
+                21.6
+              ],
+              [
+                79.8,
+                27.1
+              ],
+              [
+                92.7,
+                33.0
+              ]
+            ]
+          },
+          {
+            "p0": [
+              49.9,
+              19.2
+            ],
+            "p1": [
+              105.2,
+              44.8
+            ],
+            "peaks_px": [
+              [
+                53.6,
+                20.9
+              ],
+              [
+                65.5,
+                26.5
+              ],
+              [
+                78.4,
+                32.4
+              ],
+              [
+                91.3,
+                38.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              36.6,
+              19.0
+            ],
+            "p1": [
+              105.7,
+              50.9
+            ],
+            "peaks_px": [
+              [
+                50.4,
+                25.4
+              ],
+              [
+                63.3,
+                31.4
+              ],
+              [
+                76.2,
+                37.3
+              ],
+              [
+                89.1,
+                43.3
+              ],
+              [
+                102.0,
+                49.2
+              ]
+            ]
+          },
+          {
+            "p0": [
+              29.7,
+              21.8
+            ],
+            "p1": [
+              105.3,
+              56.7
+            ],
+            "peaks_px": [
+              [
+                39.8,
+                26.5
+              ],
+              [
+                48.1,
+                30.3
+              ],
+              [
+                61.0,
+                36.2
+              ],
+              [
+                73.9,
+                42.2
+              ],
+              [
+                87.7,
+                48.6
+              ],
+              [
+                99.7,
+                54.1
+              ]
+            ]
+          },
+          {
+            "p0": [
+              27.4,
+              26.7
+            ],
+            "p1": [
+              104.8,
+              62.4
+            ],
+            "peaks_px": [
+              [
+                34.8,
+                30.1
+              ],
+              [
+                44.9,
+                34.8
+              ],
+              [
+                58.8,
+                41.1
+              ],
+              [
+                71.7,
+                47.1
+              ],
+              [
+                85.5,
+                53.5
+              ],
+              [
+                98.4,
+                59.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              25.2,
+              31.6
+            ],
+            "p1": [
+              102.6,
+              67.3
+            ],
+            "peaks_px": [
+              [
+                30.7,
+                34.1
+              ],
+              [
+                42.7,
+                39.7
+              ],
+              [
+                56.5,
+                46.0
+              ],
+              [
+                69.4,
+                52.0
+              ],
+              [
+                83.2,
+                58.4
+              ],
+              [
+                97.0,
+                64.8
+              ]
+            ]
+          },
+          {
+            "p0": [
+              23.8,
+              36.9
+            ],
+            "p1": [
+              100.3,
+              72.2
+            ],
+            "peaks_px": [
+              [
+                26.6,
+                38.2
+              ],
+              [
+                40.4,
+                44.6
+              ],
+              [
+                54.2,
+                50.9
+              ],
+              [
+                67.1,
+                56.9
+              ],
+              [
+                81.0,
+                63.3
+              ],
+              [
+                94.8,
+                69.7
+              ]
+            ]
+          },
+          {
+            "p0": [
+              23.4,
+              42.6
+            ],
+            "p1": [
+              90.7,
+              73.7
+            ],
+            "peaks_px": [
+              [
+                37.2,
+                49.0
+              ],
+              [
+                52.0,
+                55.8
+              ],
+              [
+                64.9,
+                61.8
+              ],
+              [
+                78.7,
+                68.2
+              ]
+            ]
+          },
+          {
+            "p0": [
+              23.9,
+              48.8
+            ],
+            "p1": [
+              78.3,
+              73.9
+            ],
+            "peaks_px": [
+              [
+                35.0,
+                53.9
+              ],
+              [
+                48.8,
+                60.3
+              ],
+              [
+                63.5,
+                67.1
+              ]
+            ]
+          },
+          {
+            "p0": [
+              23.5,
+              54.6
+            ],
+            "p1": [
+              65.0,
+              73.7
+            ],
+            "peaks_px": [
+              [
+                32.7,
+                58.8
+              ],
+              [
+                46.5,
+                65.2
+              ],
+              [
+                61.3,
+                72.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "n_digitized_points": 12,
+    "linked_items": [
+      "F1_adult_ridge_fft",
+      "F1_adult_crossrib_fft"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Imaging the structure of fully formed butterfly scales. (A) The painted lady butterfly, V. cardui."
+  },
+  {
+    "id": "2021_McDougal/F1/E",
+    "paper": "2021_McDougal",
+    "figure_id": "F1",
+    "figure_label": "Fig. 1",
+    "panel_id": "E",
+    "panel_label": "1E",
+    "title": "Volumetric SRPM depth-coded amplitude image (0\u20136 \u00b5m) of adult wing scale (20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig01.jpg",
+    "bbox": [
+      339,
+      2,
+      549,
+      212
+    ],
+    "pixel_size": [
+      210,
+      210
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "life_stage": "adult",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 55.62,
+      "um_per_px": 0.35959,
+      "fov_um": [
+        75.51,
+        75.51
+      ],
+      "periodic_fft_um": 2.1055,
+      "periodic_fft_interval_um": [
+        2.0431,
+        2.1679
+      ],
+      "periodic_snr": 129.3,
+      "wavevector_deg": 25.4,
+      "periodic_transect_um": 2.1016,
+      "periodic_transect_sd_um": 0.2446,
+      "transect_points_um": [
+        1.8117,
+        1.8117,
+        2.5364,
+        1.8117,
+        1.9929,
+        2.3552,
+        2.174,
+        2.174,
+        2.174,
+        2.174
+      ],
+      "harmonic_guard": {
+        "status": "pass",
+        "fft_transect_delta_pct": 0.18,
+        "harmonic_ratio_2f": 0.352,
+        "snr": 129.3,
+        "issues": []
+      },
+      "overlay_meta": {
+        "kind": "microscopy_fft",
+        "scale_bar_px": {
+          "x0": 145,
+          "y0": 197,
+          "x1": 200,
+          "y1": 200,
+          "um": 20.0,
+          "um_per_px": 0.359592
+        },
+        "roi_px": [
+          55,
+          65,
+          145,
+          165
+        ],
+        "grating": {
+          "period_px": 5.86,
+          "period_um": 2.1055,
+          "wavevector_deg": 25.4,
+          "phase_shift_px": 2.77,
+          "snr": 129.3
+        },
+        "crossrib_grating": null,
+        "transects": [
+          {
+            "p0": [
+              95.8,
+              66.4
+            ],
+            "p1": [
+              142.2,
+              88.5
+            ],
+            "peaks_px": [
+              [
+                101.2,
+                69.0
+              ],
+              [
+                105.8,
+                71.2
+              ],
+              [
+                111.2,
+                73.8
+              ],
+              [
+                115.8,
+                75.9
+              ],
+              [
+                126.7,
+                81.1
+              ],
+              [
+                130.3,
+                82.8
+              ],
+              [
+                135.8,
+                85.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              73.5,
+              66.2
+            ],
+            "p1": [
+              142.7,
+              99.1
+            ],
+            "peaks_px": [
+              [
+                80.8,
+                69.7
+              ],
+              [
+                90.8,
+                74.4
+              ],
+              [
+                95.4,
+                76.6
+              ],
+              [
+                103.6,
+                80.5
+              ],
+              [
+                106.3,
+                81.8
+              ],
+              [
+                110.9,
+                83.9
+              ],
+              [
+                118.1,
+                87.4
+              ],
+              [
+                122.7,
+                89.6
+              ],
+              [
+                127.2,
+                91.7
+              ],
+              [
+                131.8,
+                93.9
+              ],
+              [
+                136.3,
+                96.0
+              ]
+            ]
+          },
+          {
+            "p0": [
+              69.5,
+              74.6
+            ],
+            "p1": [
+              142.3,
+              109.2
+            ],
+            "peaks_px": [
+              [
+                82.3,
+                80.7
+              ],
+              [
+                92.3,
+                85.5
+              ],
+              [
+                96.8,
+                87.6
+              ],
+              [
+                103.2,
+                90.6
+              ],
+              [
+                109.6,
+                93.7
+              ],
+              [
+                115.9,
+                96.7
+              ],
+              [
+                124.1,
+                100.6
+              ],
+              [
+                133.2,
+                104.9
+              ],
+              [
+                139.6,
+                107.9
+              ]
+            ]
+          },
+          {
+            "p0": [
+              65.5,
+              83.1
+            ],
+            "p1": [
+              142.9,
+              119.8
+            ],
+            "peaks_px": [
+              [
+                81.9,
+                90.9
+              ],
+              [
+                88.3,
+                93.9
+              ],
+              [
+                92.8,
+                96.1
+              ],
+              [
+                101.0,
+                100.0
+              ],
+              [
+                105.6,
+                102.1
+              ],
+              [
+                109.2,
+                103.8
+              ],
+              [
+                121.9,
+                109.9
+              ],
+              [
+                126.5,
+                112.1
+              ],
+              [
+                131.0,
+                114.2
+              ],
+              [
+                139.2,
+                118.1
+              ]
+            ]
+          },
+          {
+            "p0": [
+              61.5,
+              91.5
+            ],
+            "p1": [
+              142.5,
+              130.0
+            ],
+            "peaks_px": [
+              [
+                68.8,
+                95.0
+              ],
+              [
+                74.2,
+                97.6
+              ],
+              [
+                83.3,
+                101.9
+              ],
+              [
+                88.8,
+                104.5
+              ],
+              [
+                95.2,
+                107.5
+              ],
+              [
+                99.7,
+                109.7
+              ],
+              [
+                104.3,
+                111.9
+              ],
+              [
+                107.9,
+                113.6
+              ],
+              [
+                117.9,
+                118.3
+              ],
+              [
+                128.9,
+                123.5
+              ],
+              [
+                138.0,
+                127.9
+              ]
+            ]
+          },
+          {
+            "p0": [
+              57.5,
+              100.0
+            ],
+            "p1": [
+              138.5,
+              138.5
+            ],
+            "peaks_px": [
+              [
+                70.2,
+                106.0
+              ],
+              [
+                73.9,
+                107.8
+              ],
+              [
+                80.2,
+                110.8
+              ],
+              [
+                85.7,
+                113.4
+              ],
+              [
+                92.1,
+                116.4
+              ],
+              [
+                94.8,
+                117.7
+              ],
+              [
+                100.3,
+                120.3
+              ],
+              [
+                106.6,
+                123.3
+              ],
+              [
+                110.3,
+                125.1
+              ],
+              [
+                120.3,
+                129.8
+              ],
+              [
+                127.6,
+                133.3
+              ]
+            ]
+          },
+          {
+            "p0": [
+              56.2,
+              109.7
+            ],
+            "p1": [
+              134.5,
+              146.9
+            ],
+            "peaks_px": [
+              [
+                60.8,
+                111.9
+              ],
+              [
+                66.2,
+                114.5
+              ],
+              [
+                76.2,
+                119.2
+              ],
+              [
+                85.3,
+                123.6
+              ],
+              [
+                91.7,
+                126.6
+              ],
+              [
+                98.1,
+                129.6
+              ],
+              [
+                102.6,
+                131.8
+              ],
+              [
+                108.1,
+                134.4
+              ],
+              [
+                113.5,
+                137.0
+              ],
+              [
+                119.9,
+                140.0
+              ],
+              [
+                124.5,
+                142.2
+              ],
+              [
+                129.9,
+                144.7
+              ]
+            ]
+          },
+          {
+            "p0": [
+              56.7,
+              120.3
+            ],
+            "p1": [
+              130.5,
+              155.4
+            ],
+            "peaks_px": [
+              [
+                61.3,
+                122.5
+              ],
+              [
+                65.9,
+                124.7
+              ],
+              [
+                71.3,
+                127.2
+              ],
+              [
+                77.7,
+                130.3
+              ],
+              [
+                81.3,
+                132.0
+              ],
+              [
+                92.2,
+                137.2
+              ],
+              [
+                98.6,
+                140.2
+              ],
+              [
+                107.7,
+                144.5
+              ],
+              [
+                114.1,
+                147.6
+              ],
+              [
+                119.5,
+                150.2
+              ],
+              [
+                125.0,
+                152.8
+              ]
+            ]
+          },
+          {
+            "p0": [
+              56.4,
+              130.5
+            ],
+            "p1": [
+              124.6,
+              162.9
+            ],
+            "peaks_px": [
+              [
+                60.9,
+                132.7
+              ],
+              [
+                67.3,
+                135.7
+              ],
+              [
+                83.7,
+                143.5
+              ],
+              [
+                88.2,
+                145.6
+              ],
+              [
+                91.9,
+                147.4
+              ],
+              [
+                100.1,
+                151.3
+              ],
+              [
+                103.7,
+                153.0
+              ],
+              [
+                110.1,
+                156.0
+              ],
+              [
+                121.9,
+                161.6
+              ]
+            ]
+          },
+          {
+            "p0": [
+              56.0,
+              140.7
+            ],
+            "p1": [
+              102.4,
+              162.7
+            ],
+            "peaks_px": [
+              [
+                58.7,
+                142.0
+              ],
+              [
+                63.3,
+                144.1
+              ],
+              [
+                68.7,
+                146.7
+              ],
+              [
+                74.2,
+                149.3
+              ],
+              [
+                82.4,
+                153.2
+              ],
+              [
+                90.6,
+                157.1
+              ],
+              [
+                93.3,
+                158.4
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "n_digitized_points": 11,
+    "linked_items": [
+      "F1_adult_ridge_fft"
+    ],
+    "linked_claims": [
+      "C1_srpm_live_imaging"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Imaging the structure of fully formed butterfly scales. (A) The painted lady butterfly, V. cardui."
+  },
+  {
+    "id": "2021_McDougal/F1/F",
+    "paper": "2021_McDougal",
+    "figure_id": "F1",
+    "figure_label": "Fig. 1",
+    "panel_id": "F",
+    "panel_label": "1F",
+    "title": "Single-slice SRPM wrapped phase image (-pi to +pi) of adult wing scale (20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig01.jpg",
+    "bbox": [
+      556,
+      2,
+      766,
+      212
+    ],
+    "pixel_size": [
+      210,
+      210
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "life_stage": "adult",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 55.85,
+      "um_per_px": 0.3581,
+      "fov_um": [
+        75.2,
+        75.2
+      ],
+      "periodic_fft_um": 2.1301,
+      "periodic_fft_interval_um": [
+        2.0663,
+        2.1938
+      ],
+      "periodic_snr": 144.0,
+      "wavevector_deg": 25.3,
+      "periodic_transect_um": 2.2163,
+      "periodic_transect_sd_um": 0.2255,
+      "transect_points_um": [
+        1.982,
+        1.982,
+        2.1622,
+        2.5226,
+        2.1622,
+        2.5226,
+        1.982,
+        2.5226,
+        2.1622,
+        2.1622
+      ],
+      "harmonic_guard": {
+        "status": "pass",
+        "fft_transect_delta_pct": 4.05,
+        "harmonic_ratio_2f": 0.157,
+        "snr": 144.0,
+        "issues": []
+      },
+      "overlay_meta": {
+        "kind": "microscopy_fft",
+        "scale_bar_px": {
+          "x0": 145,
+          "y0": 197,
+          "x1": 199,
+          "y1": 200,
+          "um": 20.0,
+          "um_per_px": 0.358102
+        },
+        "roi_px": [
+          55,
+          65,
+          145,
+          165
+        ],
+        "grating": {
+          "period_px": 5.95,
+          "period_um": 2.1301,
+          "wavevector_deg": 25.3,
+          "phase_shift_px": 2.7,
+          "snr": 144.0
+        },
+        "crossrib_grating": null,
+        "transects": [
+          {
+            "p0": [
+              94.7,
+              66.1
+            ],
+            "p1": [
+              143.0,
+              88.8
+            ],
+            "peaks_px": [
+              [
+                101.1,
+                69.1
+              ],
+              [
+                106.6,
+                71.6
+              ],
+              [
+                111.1,
+                73.8
+              ],
+              [
+                114.7,
+                75.5
+              ],
+              [
+                127.5,
+                81.5
+              ],
+              [
+                135.7,
+                85.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              73.4,
+              66.3
+            ],
+            "p1": [
+              142.6,
+              99.0
+            ],
+            "peaks_px": [
+              [
+                80.7,
+                69.8
+              ],
+              [
+                96.2,
+                77.1
+              ],
+              [
+                100.7,
+                79.2
+              ],
+              [
+                110.8,
+                83.9
+              ],
+              [
+                116.2,
+                86.5
+              ],
+              [
+                123.5,
+                90.0
+              ],
+              [
+                127.1,
+                91.7
+              ],
+              [
+                131.7,
+                93.8
+              ],
+              [
+                137.2,
+                96.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              69.5,
+              74.8
+            ],
+            "p1": [
+              142.3,
+              109.1
+            ],
+            "peaks_px": [
+              [
+                76.7,
+                78.2
+              ],
+              [
+                85.8,
+                82.5
+              ],
+              [
+                91.3,
+                85.1
+              ],
+              [
+                96.8,
+                87.7
+              ],
+              [
+                102.2,
+                90.2
+              ],
+              [
+                110.4,
+                94.1
+              ],
+              [
+                118.6,
+                98.0
+              ],
+              [
+                122.2,
+                99.7
+              ],
+              [
+                128.6,
+                102.7
+              ],
+              [
+                132.3,
+                104.4
+              ],
+              [
+                139.5,
+                107.8
+              ]
+            ]
+          },
+          {
+            "p0": [
+              65.5,
+              83.2
+            ],
+            "p1": [
+              142.8,
+              119.7
+            ],
+            "peaks_px": [
+              [
+                71.8,
+                86.2
+              ],
+              [
+                80.0,
+                90.1
+              ],
+              [
+                87.3,
+                93.5
+              ],
+              [
+                92.8,
+                96.1
+              ],
+              [
+                102.8,
+                100.8
+              ],
+              [
+                109.2,
+                103.8
+              ],
+              [
+                113.7,
+                106.0
+              ],
+              [
+                120.1,
+                109.0
+              ],
+              [
+                123.7,
+                110.7
+              ],
+              [
+                131.9,
+                114.6
+              ]
+            ]
+          },
+          {
+            "p0": [
+              61.5,
+              91.7
+            ],
+            "p1": [
+              142.5,
+              129.9
+            ],
+            "peaks_px": [
+              [
+                73.3,
+                97.3
+              ],
+              [
+                83.3,
+                102.0
+              ],
+              [
+                88.8,
+                104.6
+              ],
+              [
+                94.3,
+                107.1
+              ],
+              [
+                99.7,
+                109.7
+              ],
+              [
+                107.0,
+                113.1
+              ],
+              [
+                119.7,
+                119.2
+              ],
+              [
+                129.8,
+                123.9
+              ],
+              [
+                137.9,
+                127.7
+              ]
+            ]
+          },
+          {
+            "p0": [
+              57.5,
+              100.1
+            ],
+            "p1": [
+              138.5,
+              138.3
+            ],
+            "peaks_px": [
+              [
+                63.9,
+                103.1
+              ],
+              [
+                70.2,
+                106.1
+              ],
+              [
+                80.3,
+                110.8
+              ],
+              [
+                92.1,
+                116.4
+              ],
+              [
+                101.2,
+                120.7
+              ],
+              [
+                106.7,
+                123.3
+              ],
+              [
+                113.0,
+                126.3
+              ],
+              [
+                130.3,
+                134.5
+              ],
+              [
+                133.0,
+                135.8
+              ]
+            ]
+          },
+          {
+            "p0": [
+              56.3,
+              109.8
+            ],
+            "p1": [
+              134.5,
+              146.8
+            ],
+            "peaks_px": [
+              [
+                75.4,
+                118.9
+              ],
+              [
+                86.3,
+                124.0
+              ],
+              [
+                98.1,
+                129.6
+              ],
+              [
+                102.7,
+                131.7
+              ],
+              [
+                108.1,
+                134.3
+              ],
+              [
+                119.1,
+                139.5
+              ],
+              [
+                123.6,
+                141.6
+              ],
+              [
+                130.0,
+                144.6
+              ]
+            ]
+          },
+          {
+            "p0": [
+              56.8,
+              120.4
+            ],
+            "p1": [
+              130.5,
+              155.2
+            ],
+            "peaks_px": [
+              [
+                63.2,
+                123.4
+              ],
+              [
+                70.5,
+                126.9
+              ],
+              [
+                76.8,
+                129.9
+              ],
+              [
+                86.9,
+                134.6
+              ],
+              [
+                91.4,
+                136.8
+              ],
+              [
+                96.0,
+                138.9
+              ],
+              [
+                98.7,
+                140.2
+              ],
+              [
+                107.8,
+                144.5
+              ],
+              [
+                115.1,
+                147.9
+              ],
+              [
+                119.6,
+                150.1
+              ],
+              [
+                126.0,
+                153.1
+              ]
+            ]
+          },
+          {
+            "p0": [
+              56.5,
+              130.6
+            ],
+            "p1": [
+              124.7,
+              162.8
+            ],
+            "peaks_px": [
+              [
+                59.2,
+                131.9
+              ],
+              [
+                72.9,
+                138.3
+              ],
+              [
+                78.3,
+                140.9
+              ],
+              [
+                84.7,
+                143.9
+              ],
+              [
+                94.7,
+                148.6
+              ],
+              [
+                105.6,
+                153.8
+              ],
+              [
+                111.1,
+                156.4
+              ],
+              [
+                116.5,
+                158.9
+              ]
+            ]
+          },
+          {
+            "p0": [
+              56.1,
+              140.8
+            ],
+            "p1": [
+              102.5,
+              162.7
+            ],
+            "peaks_px": [
+              [
+                57.0,
+                141.2
+              ],
+              [
+                63.4,
+                144.2
+              ],
+              [
+                68.9,
+                146.8
+              ],
+              [
+                78.9,
+                151.5
+              ],
+              [
+                90.7,
+                157.1
+              ],
+              [
+                94.4,
+                158.8
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "n_digitized_points": 11,
+    "linked_items": [
+      "F1_adult_ridge_fft"
+    ],
+    "linked_claims": [
+      "C1_srpm_live_imaging"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Imaging the structure of fully formed butterfly scales. (A) The painted lady butterfly, V. cardui."
+  },
+  {
+    "id": "2021_McDougal/F2/A",
+    "paper": "2021_McDougal",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "A",
+    "panel_label": "2A",
+    "title": "Surgical optical window schematic lifting cuticle and forewing flap and sealing coverslip with biocompatible adhesive",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pnas.202112009fig02.jpg",
+    "bbox": [
+      2,
+      2,
+      339,
+      76
+    ],
+    "pixel_size": [
+      337,
+      74
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "life_stage": "pupa"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Optical window and in vivo microscopy to image developing scales. (A) Creating an optical window into the chrysalis"
+  },
+  {
+    "id": "2021_McDougal/F2/B",
+    "paper": "2021_McDougal",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "B",
+    "panel_label": "2B",
+    "title": "Macro photograph of exposed pupal wing through coverslip window at 2% development (1 mm bar)",
+    "archetype": "macro_morphology",
+    "file": "pnas.202112009fig02.jpg",
+    "bbox": [
+      2,
+      82,
+      339,
+      226
+    ],
+    "pixel_size": [
+      337,
+      144
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "2%",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 1000.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 28.0,
+      "um_per_px": 35.71468,
+      "fov_um": [
+        12035.85,
+        5142.91
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 294,
+          "y0": 132,
+          "x1": 321,
+          "y1": 135,
+          "um": 1000.0,
+          "um_per_px": 35.714678
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Optical window and in vivo microscopy to image developing scales. (A) Creating an optical window into the chrysalis"
+  },
+  {
+    "id": "2021_McDougal/F2/C",
+    "paper": "2021_McDougal",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "C",
+    "panel_label": "2C",
+    "title": "Optically accessible translucent pupal wing area at 3% development (1 mm bar)",
+    "archetype": "macro_morphology",
+    "file": "pnas.202112009fig02.jpg",
+    "bbox": [
+      364,
+      2,
+      487,
+      73
+    ],
+    "pixel_size": [
+      123,
+      71
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "3%",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 1000.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 26.3,
+      "um_per_px": 38.01753,
+      "fov_um": [
+        4676.16,
+        2699.24
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 90,
+          "y0": 64,
+          "x1": 116,
+          "y1": 66,
+          "um": 1000.0,
+          "um_per_px": 38.017528
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Optical window and in vivo microscopy to image developing scales. (A) Creating an optical window into the chrysalis"
+  },
+  {
+    "id": "2021_McDougal/F2/D",
+    "paper": "2021_McDougal",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "D",
+    "panel_label": "2D",
+    "title": "Optically accessible pupal wing area at 73% development showing emerging reflectivity (1 mm bar)",
+    "archetype": "macro_morphology",
+    "file": "pnas.202112009fig02.jpg",
+    "bbox": [
+      364,
+      77,
+      487,
+      149
+    ],
+    "pixel_size": [
+      123,
+      72
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "73%",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 1000.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 26.4,
+      "um_per_px": 37.87795,
+      "fov_um": [
+        4658.99,
+        2727.21
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 90,
+          "y0": 65,
+          "x1": 116,
+          "y1": 68,
+          "um": 1000.0,
+          "um_per_px": 37.877949
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Optical window and in vivo microscopy to image developing scales. (A) Creating an optical window into the chrysalis"
+  },
+  {
+    "id": "2021_McDougal/F2/E",
+    "paper": "2021_McDougal",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "E",
+    "panel_label": "2E",
+    "title": "Optically accessible pupal wing area at 100% development minutes before eclosion showing mature pigment patterns (1 mm bar)",
+    "archetype": "macro_morphology",
+    "file": "pnas.202112009fig02.jpg",
+    "bbox": [
+      364,
+      154,
+      487,
+      226
+    ],
+    "pixel_size": [
+      123,
+      72
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "100%",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 1000.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 26.5,
+      "um_per_px": 37.73383,
+      "fov_um": [
+        4641.26,
+        2716.84
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 90,
+          "y0": 65,
+          "x1": 116,
+          "y1": 67,
+          "um": 1000.0,
+          "um_per_px": 37.733828
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Optical window and in vivo microscopy to image developing scales. (A) Creating an optical window into the chrysalis"
+  },
+  {
+    "id": "2021_McDougal/F2/F",
+    "paper": "2021_McDougal",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "F",
+    "panel_label": "2F",
+    "title": "Optical schematic of dynamic-speckle reflection phase microscopy interferometric setup (PBS, QWP, off-axis holography)",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pnas.202112009fig02.jpg",
+    "bbox": [
+      500,
+      2,
+      764,
+      226
+    ],
+    "pixel_size": [
+      264,
+      224
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "life_stage": "pupa"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Optical window and in vivo microscopy to image developing scales. (A) Creating an optical window into the chrysalis"
+  },
+  {
+    "id": "2021_McDougal/F2/G",
+    "paper": "2021_McDougal",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "G",
+    "panel_label": "2G",
+    "title": "Single slice of deconvolved reflected light amplitude of live pupal forewing scales at 83% development / 8.12 d (20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig02.jpg",
+    "bbox": [
+      2,
+      248,
+      188,
+      435
+    ],
+    "pixel_size": [
+      186,
+      187
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "forewing",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "83%",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 50.06,
+      "um_per_px": 0.39954,
+      "fov_um": [
+        74.31,
+        74.71
+      ],
+      "periodic_fft_um": 2.0386,
+      "periodic_fft_interval_um": [
+        1.961,
+        2.1161
+      ],
+      "periodic_snr": 68.0,
+      "wavevector_deg": -63.2,
+      "periodic_transect_um": 2.1877,
+      "periodic_transect_sd_um": 0.3232,
+      "transect_points_um": [
+        2.1877,
+        2.0054,
+        2.0054,
+        2.1877,
+        2.1877,
+        2.1877,
+        1.8231,
+        2.917
+      ],
+      "harmonic_guard": {
+        "status": "pass",
+        "fft_transect_delta_pct": 7.32,
+        "harmonic_ratio_2f": 0.27,
+        "snr": 68.0,
+        "issues": []
+      },
+      "overlay_meta": {
+        "kind": "microscopy_fft",
+        "scale_bar_px": {
+          "x0": 123,
+          "y0": 173,
+          "x1": 172,
+          "y1": 177,
+          "um": 20.0,
+          "um_per_px": 0.399539
+        },
+        "roi_px": [
+          112,
+          85,
+          174,
+          142
+        ],
+        "grating": {
+          "period_px": 5.1,
+          "period_um": 2.0386,
+          "wavevector_deg": -63.2,
+          "phase_shift_px": -0.72,
+          "snr": 68.0
+        },
+        "crossrib_grating": null,
+        "transects": [
+          {
+            "p0": [
+              113.1,
+              114.2
+            ],
+            "p1": [
+              127.1,
+              86.5
+            ],
+            "peaks_px": [
+              [
+                115.1,
+                110.1
+              ],
+              [
+                117.6,
+                105.2
+              ],
+              [
+                122.5,
+                95.5
+              ],
+              [
+                124.2,
+                92.2
+              ],
+              [
+                126.7,
+                87.3
+              ]
+            ]
+          },
+          {
+            "p0": [
+              113.3,
+              126.6
+            ],
+            "p1": [
+              133.5,
+              86.7
+            ],
+            "peaks_px": [
+              [
+                115.8,
+                121.7
+              ],
+              [
+                122.4,
+                108.7
+              ],
+              [
+                125.3,
+                103.0
+              ],
+              [
+                127.4,
+                98.9
+              ],
+              [
+                129.8,
+                94.0
+              ],
+              [
+                131.9,
+                90.0
+              ]
+            ]
+          },
+          {
+            "p0": [
+              116.9,
+              132.5
+            ],
+            "p1": [
+              140.4,
+              86.1
+            ],
+            "peaks_px": [
+              [
+                118.2,
+                130.1
+              ],
+              [
+                121.9,
+                122.8
+              ],
+              [
+                125.6,
+                115.4
+              ],
+              [
+                130.5,
+                105.7
+              ],
+              [
+                135.1,
+                96.7
+              ],
+              [
+                137.1,
+                92.6
+              ],
+              [
+                139.6,
+                87.7
+              ]
+            ]
+          },
+          {
+            "p0": [
+              122.2,
+              135.2
+            ],
+            "p1": [
+              146.9,
+              86.3
+            ],
+            "peaks_px": [
+              [
+                123.0,
+                133.5
+              ],
+              [
+                128.3,
+                123.0
+              ],
+              [
+                130.8,
+                118.1
+              ],
+              [
+                139.9,
+                100.2
+              ],
+              [
+                142.4,
+                95.3
+              ],
+              [
+                145.2,
+                89.6
+              ]
+            ]
+          },
+          {
+            "p0": [
+              127.4,
+              137.8
+            ],
+            "p1": [
+              153.4,
+              86.5
+            ],
+            "peaks_px": [
+              [
+                134.0,
+                124.8
+              ],
+              [
+                140.6,
+                111.8
+              ],
+              [
+                143.9,
+                105.3
+              ],
+              [
+                148.0,
+                97.1
+              ],
+              [
+                149.7,
+                93.9
+              ]
+            ]
+          },
+          {
+            "p0": [
+              133.1,
+              139.7
+            ],
+            "p1": [
+              158.6,
+              89.2
+            ],
+            "peaks_px": [
+              [
+                133.9,
+                138.0
+              ],
+              [
+                146.2,
+                113.6
+              ],
+              [
+                148.7,
+                108.7
+              ],
+              [
+                155.3,
+                95.7
+              ]
+            ]
+          },
+          {
+            "p0": [
+              139.5,
+              139.9
+            ],
+            "p1": [
+              163.8,
+              91.8
+            ],
+            "peaks_px": [
+              [
+                158.5,
+                102.4
+              ],
+              [
+                160.5,
+                98.3
+              ]
+            ]
+          },
+          {
+            "p0": [
+              146.4,
+              139.3
+            ],
+            "p1": [
+              169.1,
+              94.5
+            ],
+            "peaks_px": [
+              [
+                160.4,
+                111.6
+              ],
+              [
+                163.7,
+                105.1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "n_digitized_points": 9,
+    "linked_items": [
+      "F2_forewing_timing",
+      "F2_forewing_stage_frac",
+      "F2_forewing_ridge_fft"
+    ],
+    "linked_claims": [
+      "C1_srpm_live_imaging"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Optical window and in vivo microscopy to image developing scales. (A) Creating an optical window into the chrysalis"
+  },
+  {
+    "id": "2021_McDougal/F2/H",
+    "paper": "2021_McDougal",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "H",
+    "panel_label": "2H",
+    "title": "Depth-coded 6-\u00b5m volumetric SRPM amplitude stack of live 83% pupal forewing scales (20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig02.jpg",
+    "bbox": [
+      191,
+      248,
+      377,
+      435
+    ],
+    "pixel_size": [
+      186,
+      187
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "forewing",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "83%",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 50.16,
+      "um_per_px": 0.39874,
+      "fov_um": [
+        74.16,
+        74.56
+      ],
+      "periodic_fft_um": 2.0407,
+      "periodic_fft_interval_um": [
+        1.9683,
+        2.1131
+      ],
+      "periodic_snr": 39.3,
+      "wavevector_deg": -66.9,
+      "periodic_transect_um": 2.0332,
+      "periodic_transect_sd_um": 0.3348,
+      "transect_points_um": [
+        2.0131,
+        2.4157,
+        2.2144,
+        2.0131,
+        2.0131,
+        2.4157,
+        2.0131,
+        2.0131,
+        2.0131,
+        1.2078
+      ],
+      "harmonic_guard": {
+        "status": "pass",
+        "fft_transect_delta_pct": 0.37,
+        "harmonic_ratio_2f": 0.26,
+        "snr": 39.3,
+        "issues": []
+      },
+      "overlay_meta": {
+        "kind": "microscopy_fft",
+        "scale_bar_px": {
+          "x0": 124,
+          "y0": 173,
+          "x1": 173,
+          "y1": 177,
+          "um": 20.0,
+          "um_per_px": 0.398736
+        },
+        "roi_px": [
+          98,
+          55,
+          168,
+          120
+        ],
+        "grating": {
+          "period_px": 5.12,
+          "period_um": 2.0407,
+          "wavevector_deg": -66.9,
+          "phase_shift_px": 2.04,
+          "snr": 39.3
+        },
+        "crossrib_grating": null,
+        "transects": [
+          {
+            "p0": [
+              99.1,
+              93.3
+            ],
+            "p1": [
+              114.9,
+              56.2
+            ],
+            "peaks_px": [
+              [
+                100.3,
+                90.5
+              ],
+              [
+                102.2,
+                85.9
+              ],
+              [
+                104.2,
+                81.2
+              ],
+              [
+                105.8,
+                77.5
+              ],
+              [
+                109.8,
+                68.2
+              ],
+              [
+                112.9,
+                60.8
+              ]
+            ]
+          },
+          {
+            "p0": [
+              99.8,
+              107.9
+            ],
+            "p1": [
+              121.6,
+              56.8
+            ],
+            "peaks_px": [
+              [
+                101.4,
+                104.2
+              ],
+              [
+                103.4,
+                99.6
+              ],
+              [
+                107.0,
+                91.2
+              ],
+              [
+                110.1,
+                83.8
+              ],
+              [
+                112.9,
+                77.3
+              ],
+              [
+                115.3,
+                71.7
+              ],
+              [
+                118.9,
+                63.3
+              ],
+              [
+                121.2,
+                57.8
+              ]
+            ]
+          },
+          {
+            "p0": [
+              105.7,
+              110.4
+            ],
+            "p1": [
+              128.7,
+              56.6
+            ],
+            "peaks_px": [
+              [
+                106.5,
+                108.6
+              ],
+              [
+                110.1,
+                100.2
+              ],
+              [
+                117.2,
+                83.5
+              ],
+              [
+                119.2,
+                78.9
+              ],
+              [
+                121.6,
+                73.3
+              ],
+              [
+                126.4,
+                62.2
+              ]
+            ]
+          },
+          {
+            "p0": [
+              111.6,
+              113.0
+            ],
+            "p1": [
+              135.8,
+              56.3
+            ],
+            "peaks_px": [
+              [
+                112.4,
+                111.1
+              ],
+              [
+                118.4,
+                97.2
+              ],
+              [
+                121.6,
+                89.7
+              ],
+              [
+                124.7,
+                82.3
+              ],
+              [
+                127.9,
+                74.9
+              ],
+              [
+                132.3,
+                64.7
+              ],
+              [
+                134.2,
+                60.0
+              ]
+            ]
+          },
+          {
+            "p0": [
+              117.6,
+              115.5
+            ],
+            "p1": [
+              142.5,
+              57.0
+            ],
+            "peaks_px": [
+              [
+                119.5,
+                110.8
+              ],
+              [
+                121.5,
+                106.2
+              ],
+              [
+                123.5,
+                101.6
+              ],
+              [
+                125.5,
+                96.9
+              ],
+              [
+                127.1,
+                93.2
+              ],
+              [
+                129.1,
+                88.6
+              ],
+              [
+                131.0,
+                83.9
+              ],
+              [
+                133.4,
+                78.3
+              ],
+              [
+                135.4,
+                73.7
+              ],
+              [
+                139.4,
+                64.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              123.9,
+              117.1
+            ],
+            "p1": [
+              148.4,
+              59.5
+            ],
+            "peaks_px": [
+              [
+                125.0,
+                114.3
+              ],
+              [
+                127.4,
+                108.7
+              ],
+              [
+                131.4,
+                99.4
+              ],
+              [
+                134.6,
+                92.0
+              ],
+              [
+                136.9,
+                86.4
+              ],
+              [
+                140.9,
+                77.2
+              ],
+              [
+                144.9,
+                67.9
+              ],
+              [
+                146.9,
+                63.2
+              ]
+            ]
+          },
+          {
+            "p0": [
+              130.6,
+              117.8
+            ],
+            "p1": [
+              154.4,
+              62.0
+            ],
+            "peaks_px": [
+              [
+                132.9,
+                112.2
+              ],
+              [
+                137.3,
+                102.0
+              ],
+              [
+                141.3,
+                92.7
+              ],
+              [
+                143.3,
+                88.0
+              ],
+              [
+                145.2,
+                83.4
+              ],
+              [
+                151.2,
+                69.5
+              ]
+            ]
+          },
+          {
+            "p0": [
+              137.7,
+              117.5
+            ],
+            "p1": [
+              160.3,
+              64.6
+            ],
+            "peaks_px": [
+              [
+                138.5,
+                115.6
+              ],
+              [
+                141.2,
+                109.1
+              ],
+              [
+                142.8,
+                105.4
+              ],
+              [
+                146.4,
+                97.1
+              ],
+              [
+                151.1,
+                85.9
+              ],
+              [
+                153.1,
+                81.3
+              ],
+              [
+                155.1,
+                76.6
+              ],
+              [
+                156.7,
+                72.9
+              ]
+            ]
+          },
+          {
+            "p0": [
+              144.8,
+              117.2
+            ],
+            "p1": [
+              165.8,
+              68.0
+            ],
+            "peaks_px": [
+              [
+                147.1,
+                111.7
+              ],
+              [
+                153.5,
+                96.8
+              ],
+              [
+                157.9,
+                86.6
+              ],
+              [
+                160.6,
+                80.1
+              ],
+              [
+                162.2,
+                76.4
+              ],
+              [
+                164.2,
+                71.7
+              ]
+            ]
+          },
+          {
+            "p0": [
+              151.5,
+              117.9
+            ],
+            "p1": [
+              165.7,
+              84.5
+            ],
+            "peaks_px": [
+              [
+                157.8,
+                103.0
+              ],
+              [
+                159.0,
+                100.3
+              ],
+              [
+                163.0,
+                91.0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "n_digitized_points": 11,
+    "linked_items": [
+      "F2_forewing_ridge_fft"
+    ],
+    "linked_claims": [
+      "C1_srpm_live_imaging"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Optical window and in vivo microscopy to image developing scales. (A) Creating an optical window into the chrysalis"
+  },
+  {
+    "id": "2021_McDougal/F2/I",
+    "paper": "2021_McDougal",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "I",
+    "panel_label": "2I",
+    "title": "Live 83% pupal forewing scale local phase-gradient orientation map resolving individual longitudinal ridges (20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig02.jpg",
+    "bbox": [
+      380,
+      248,
+      567,
+      435
+    ],
+    "pixel_size": [
+      187,
+      187
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "forewing",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "83%",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 50.27,
+      "um_per_px": 0.39782,
+      "fov_um": [
+        74.39,
+        74.39
+      ],
+      "periodic_fft_um": 2.0731,
+      "periodic_fft_interval_um": [
+        1.9937,
+        2.1525
+      ],
+      "periodic_snr": 57.4,
+      "wavevector_deg": -66.7,
+      "periodic_transect_um": 2.0414,
+      "periodic_transect_sd_um": 0.303,
+      "transect_points_um": [
+        1.8558,
+        2.2269,
+        1.6702,
+        1.8558,
+        1.8558,
+        2.2269,
+        2.2269,
+        2.5981,
+        2.2269,
+        1.6702
+      ],
+      "harmonic_guard": {
+        "status": "pass",
+        "fft_transect_delta_pct": 1.53,
+        "harmonic_ratio_2f": 0.373,
+        "snr": 57.4,
+        "issues": []
+      },
+      "overlay_meta": {
+        "kind": "microscopy_fft",
+        "scale_bar_px": {
+          "x0": 125,
+          "y0": 173,
+          "x1": 174,
+          "y1": 177,
+          "um": 20.0,
+          "um_per_px": 0.397821
+        },
+        "roi_px": [
+          116,
+          48,
+          178,
+          108
+        ],
+        "grating": {
+          "period_px": 5.21,
+          "period_um": 2.0731,
+          "wavevector_deg": -66.7,
+          "phase_shift_px": -1.52,
+          "snr": 57.4
+        },
+        "crossrib_grating": null,
+        "transects": [
+          {
+            "p0": [
+              117.4,
+              82.0
+            ],
+            "p1": [
+              131.4,
+              49.4
+            ],
+            "peaks_px": [
+              [
+                117.7,
+                81.2
+              ],
+              [
+                120.3,
+                75.2
+              ],
+              [
+                122.2,
+                70.9
+              ],
+              [
+                124.0,
+                66.6
+              ],
+              [
+                125.8,
+                62.3
+              ],
+              [
+                127.3,
+                58.9
+              ],
+              [
+                130.6,
+                51.2
+              ]
+            ]
+          },
+          {
+            "p0": [
+              117.1,
+              97.1
+            ],
+            "p1": [
+              137.7,
+              49.1
+            ],
+            "peaks_px": [
+              [
+                120.0,
+                90.3
+              ],
+              [
+                121.5,
+                86.8
+              ],
+              [
+                124.4,
+                80.0
+              ],
+              [
+                127.8,
+                72.3
+              ],
+              [
+                129.2,
+                68.8
+              ],
+              [
+                132.2,
+                62.0
+              ],
+              [
+                135.9,
+                53.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              122.3,
+              99.4
+            ],
+            "p1": [
+              143.7,
+              49.7
+            ],
+            "peaks_px": [
+              [
+                123.4,
+                96.8
+              ],
+              [
+                124.9,
+                93.4
+              ],
+              [
+                126.7,
+                89.1
+              ],
+              [
+                128.2,
+                85.7
+              ],
+              [
+                130.0,
+                81.4
+              ],
+              [
+                131.5,
+                77.9
+              ],
+              [
+                134.8,
+                70.2
+              ],
+              [
+                137.0,
+                65.1
+              ],
+              [
+                141.1,
+                55.7
+              ]
+            ]
+          },
+          {
+            "p0": [
+              127.5,
+              101.6
+            ],
+            "p1": [
+              150.0,
+              49.3
+            ],
+            "peaks_px": [
+              [
+                128.3,
+                99.9
+              ],
+              [
+                130.1,
+                95.6
+              ],
+              [
+                131.6,
+                92.2
+              ],
+              [
+                133.8,
+                87.1
+              ],
+              [
+                135.3,
+                83.6
+              ],
+              [
+                139.3,
+                74.2
+              ],
+              [
+                142.3,
+                67.3
+              ],
+              [
+                144.1,
+                63.1
+              ],
+              [
+                146.3,
+                57.9
+              ]
+            ]
+          },
+          {
+            "p0": [
+              132.8,
+              103.9
+            ],
+            "p1": [
+              156.0,
+              49.9
+            ],
+            "peaks_px": [
+              [
+                133.5,
+                102.2
+              ],
+              [
+                135.0,
+                98.7
+              ],
+              [
+                136.8,
+                94.4
+              ],
+              [
+                140.5,
+                85.9
+              ],
+              [
+                143.1,
+                79.9
+              ],
+              [
+                145.3,
+                74.7
+              ],
+              [
+                147.5,
+                69.6
+              ],
+              [
+                149.0,
+                66.2
+              ],
+              [
+                150.8,
+                61.9
+              ],
+              [
+                153.0,
+                56.7
+              ],
+              [
+                154.9,
+                52.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              138.4,
+              105.3
+            ],
+            "p1": [
+              161.2,
+              52.1
+            ],
+            "peaks_px": [
+              [
+                140.2,
+                101.0
+              ],
+              [
+                142.4,
+                95.8
+              ],
+              [
+                145.7,
+                88.1
+              ],
+              [
+                148.0,
+                83.0
+              ],
+              [
+                149.4,
+                79.6
+              ],
+              [
+                152.4,
+                72.7
+              ],
+              [
+                154.6,
+                67.6
+              ],
+              [
+                157.5,
+                60.7
+              ],
+              [
+                159.4,
+                56.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              144.4,
+              105.8
+            ],
+            "p1": [
+              166.5,
+              54.4
+            ],
+            "peaks_px": [
+              [
+                146.2,
+                101.5
+              ],
+              [
+                148.8,
+                95.5
+              ],
+              [
+                151.7,
+                88.7
+              ],
+              [
+                153.6,
+                84.4
+              ],
+              [
+                155.4,
+                80.1
+              ],
+              [
+                157.6,
+                74.9
+              ],
+              [
+                159.8,
+                69.8
+              ],
+              [
+                161.3,
+                66.4
+              ],
+              [
+                163.5,
+                61.2
+              ]
+            ]
+          },
+          {
+            "p0": [
+              150.7,
+              105.5
+            ],
+            "p1": [
+              171.7,
+              56.6
+            ],
+            "peaks_px": [
+              [
+                152.2,
+                102.1
+              ],
+              [
+                154.7,
+                96.1
+              ],
+              [
+                157.7,
+                89.2
+              ],
+              [
+                161.0,
+                81.5
+              ],
+              [
+                162.9,
+                77.2
+              ],
+              [
+                165.1,
+                72.1
+              ],
+              [
+                168.0,
+                65.2
+              ],
+              [
+                171.3,
+                57.5
+              ]
+            ]
+          },
+          {
+            "p0": [
+              157.0,
+              105.2
+            ],
+            "p1": [
+              175.8,
+              61.4
+            ],
+            "peaks_px": [
+              [
+                160.0,
+                98.3
+              ],
+              [
+                162.2,
+                93.2
+              ],
+              [
+                164.4,
+                88.0
+              ],
+              [
+                166.2,
+                83.7
+              ],
+              [
+                169.9,
+                75.2
+              ],
+              [
+                173.2,
+                67.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              163.0,
+              105.7
+            ],
+            "p1": [
+              175.9,
+              75.7
+            ],
+            "peaks_px": [
+              [
+                164.8,
+                101.4
+              ],
+              [
+                166.3,
+                98.0
+              ],
+              [
+                170.4,
+                88.6
+              ],
+              [
+                172.2,
+                84.3
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "n_digitized_points": 11,
+    "linked_items": [
+      "F2_forewing_ridge_fft"
+    ],
+    "linked_claims": [
+      "C1_srpm_live_imaging"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Optical window and in vivo microscopy to image developing scales. (A) Creating an optical window into the chrysalis"
+  },
+  {
+    "id": "2021_McDougal/F2/J",
+    "paper": "2021_McDougal",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "J",
+    "panel_label": "2J",
+    "title": "Unwrapped phase surface height profile across ridges at 83% forewing development (0\u20139 \u00b5m, 0\u2013300 nm)",
+    "archetype": "spectral_or_profile",
+    "file": "pnas.202112009fig02.jpg",
+    "bbox": [
+      570,
+      244,
+      764,
+      335
+    ],
+    "pixel_size": [
+      194,
+      91
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "forewing",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "83%",
+      "imaging_modality": "speckle-correlation reflection phase microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f2_profiles.py",
+    "data": {
+      "curves": {
+        "across_ridges_profile": {
+          "x": [
+            -0.125,
+            -0.057,
+            0.011,
+            0.079,
+            0.147,
+            0.215,
+            0.283,
+            0.351,
+            0.419,
+            0.487,
+            0.555,
+            0.623,
+            0.691,
+            0.759,
+            0.827,
+            0.895,
+            0.963,
+            1.031,
+            1.099,
+            1.167,
+            1.235,
+            1.303,
+            1.371,
+            1.439,
+            1.507,
+            1.575,
+            1.643,
+            1.711,
+            1.779,
+            1.847,
+            1.915,
+            1.984,
+            2.052,
+            2.12,
+            2.188,
+            2.256,
+            2.324,
+            2.392,
+            2.46,
+            2.528,
+            2.596,
+            2.664,
+            2.732,
+            2.8,
+            2.868,
+            2.936,
+            3.004,
+            3.072,
+            3.14,
+            3.208,
+            3.276,
+            3.344,
+            3.412,
+            3.48,
+            3.548,
+            3.616,
+            3.684,
+            3.752,
+            3.82,
+            3.888,
+            3.956,
+            4.024,
+            4.092,
+            4.16,
+            4.228,
+            4.296,
+            4.364,
+            4.432,
+            4.5,
+            4.568,
+            4.636,
+            4.704,
+            4.772,
+            4.84,
+            4.908,
+            4.976,
+            5.044,
+            5.112,
+            5.18,
+            5.248,
+            5.316,
+            5.384,
+            5.452,
+            5.52,
+            5.588,
+            5.656,
+            5.724,
+            5.792,
+            5.86,
+            5.928,
+            5.996,
+            6.064,
+            6.132,
+            6.2,
+            6.268,
+            6.336,
+            6.404,
+            6.472,
+            6.54,
+            6.608,
+            6.676,
+            6.744,
+            6.812,
+            6.88,
+            6.948,
+            7.016,
+            7.085,
+            7.153,
+            7.221,
+            7.289,
+            7.357,
+            7.425,
+            7.493,
+            7.561,
+            7.629,
+            7.697,
+            7.765,
+            7.833,
+            7.901,
+            7.969,
+            8.037,
+            8.105,
+            8.173,
+            8.241,
+            8.309,
+            8.377,
+            8.445,
+            8.513,
+            8.581,
+            8.649,
+            8.717,
+            8.785,
+            8.853,
+            8.921,
+            8.989,
+            9.057
+          ],
+          "y": [
+            100.51,
+            81.23,
+            79.57,
+            80.97,
+            77.17,
+            73.35,
+            69.16,
+            67.35,
+            68.52,
+            67.51,
+            74.58,
+            121.06,
+            166.61,
+            177.3,
+            188.23,
+            208.27,
+            212.0,
+            213.55,
+            213.51,
+            210.17,
+            205.46,
+            202.9,
+            198.91,
+            188.06,
+            172.77,
+            162.25,
+            146.87,
+            131.89,
+            121.16,
+            106.4,
+            99.53,
+            85.23,
+            69.58,
+            54.67,
+            47.72,
+            48.38,
+            74.75,
+            105.64,
+            125.66,
+            131.4,
+            131.47,
+            167.4,
+            188.91,
+            193.26,
+            229.06,
+            248.28,
+            250.05,
+            248.09,
+            245.33,
+            240.18,
+            241.45,
+            243.47,
+            244.12,
+            243.56,
+            242.5,
+            235.42,
+            228.69,
+            218.98,
+            209.04,
+            198.43,
+            183.14,
+            167.65,
+            152.21,
+            131.63,
+            110.84,
+            90.26,
+            64.67,
+            44.23,
+            28.29,
+            8.4,
+            6.61,
+            18.04,
+            43.97,
+            59.37,
+            95.42,
+            146.83,
+            170.64,
+            172.02,
+            176.29,
+            181.13,
+            184.25,
+            183.65,
+            184.67,
+            186.0,
+            186.62,
+            185.39,
+            177.77,
+            167.78,
+            151.83,
+            131.42,
+            115.52,
+            100.37,
+            74.66,
+            49.05,
+            37.92,
+            35.49,
+            39.45,
+            54.33,
+            79.84,
+            95.22,
+            95.33,
+            79.97,
+            64.64,
+            53.75,
+            48.28,
+            64.56,
+            110.59,
+            136.61,
+            147.55,
+            177.6,
+            208.64,
+            224.56,
+            222.81,
+            218.04,
+            216.95,
+            217.71,
+            220.07,
+            222.02,
+            227.79,
+            232.69,
+            234.81,
+            232.11,
+            223.67,
+            213.32,
+            202.86,
+            193.5,
+            162.2,
+            94.87,
+            95.56,
+            104.76,
+            108.91,
+            109.09,
+            105.23,
+            99.37,
+            85.5,
+            74.18
+          ],
+          "peak_x": 3.004,
+          "peak_y": 250.05,
+          "x_unit": "\u00b5m",
+          "y_unit": "nm"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          39,
+          6,
+          175,
+          66
+        ],
+        "x_range": [
+          -0.1249,
+          9.1249
+        ],
+        "y_range": [
+          -12.5964,
+          295.8869
+        ],
+        "x_misfit_px": 0.15,
+        "y_misfit_px": 0.209,
+        "kind": "curves"
+      },
+      "x_tick_misfit_px": 0.15,
+      "y_tick_misfit_px": 0.209,
+      "height_min_nm": 6.6,
+      "height_max_nm": 250.1,
+      "peak_to_trough_nm": 243.4,
+      "n_peaks": 5,
+      "peak_positions_um": [
+        1.03,
+        3.0,
+        5.59,
+        6.68,
+        8.04
+      ],
+      "peak_heights_nm": [
+        213.6,
+        250.1,
+        186.6,
+        95.3,
+        234.8
+      ],
+      "mean_peak_spacing_um": 1.752
+    },
+    "n_digitized_points": 136,
+    "linked_items": [
+      "F2_forewing_ridge_fft"
+    ],
+    "linked_claims": [
+      "C1_srpm_live_imaging"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Optical window and in vivo microscopy to image developing scales. (A) Creating an optical window into the chrysalis"
+  },
+  {
+    "id": "2021_McDougal/F2/K",
+    "paper": "2021_McDougal",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "K",
+    "panel_label": "2K",
+    "title": "Unwrapped phase surface height profile along ridge showing lamellae elevation at 83% forewing development (0\u20139 \u00b5m)",
+    "archetype": "spectral_or_profile",
+    "file": "pnas.202112009fig02.jpg",
+    "bbox": [
+      570,
+      335,
+      764,
+      436
+    ],
+    "pixel_size": [
+      194,
+      101
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "forewing",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "83%",
+      "imaging_modality": "speckle-correlation reflection phase microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f2_profiles.py",
+    "data": {
+      "curves": {
+        "along_ridge_lamellae_profile": {
+          "x": [
+            -0.113,
+            -0.046,
+            0.022,
+            0.09,
+            0.158,
+            0.226,
+            0.294,
+            0.361,
+            0.429,
+            0.497,
+            0.565,
+            0.633,
+            0.701,
+            0.769,
+            0.836,
+            0.904,
+            0.972,
+            1.04,
+            1.108,
+            1.176,
+            1.243,
+            1.311,
+            1.379,
+            1.447,
+            1.515,
+            1.583,
+            1.65,
+            1.718,
+            1.786,
+            1.854,
+            1.922,
+            1.99,
+            2.058,
+            2.125,
+            2.193,
+            2.261,
+            2.329,
+            2.397,
+            2.465,
+            2.532,
+            2.6,
+            2.668,
+            2.736,
+            2.804,
+            2.872,
+            2.94,
+            3.007,
+            3.075,
+            3.143,
+            3.211,
+            3.279,
+            3.347,
+            3.414,
+            3.482,
+            3.55,
+            3.618,
+            3.686,
+            3.754,
+            3.822,
+            3.889,
+            3.957,
+            4.025,
+            4.093,
+            4.161,
+            4.229,
+            4.296,
+            4.364,
+            4.432,
+            4.5,
+            4.568,
+            4.636,
+            4.704,
+            4.771,
+            4.839,
+            4.907,
+            4.975,
+            5.043,
+            5.111,
+            5.178,
+            5.246,
+            5.314,
+            5.382,
+            5.45,
+            5.518,
+            5.586,
+            5.653,
+            5.721,
+            5.789,
+            5.857,
+            5.925,
+            5.993,
+            6.06,
+            6.128,
+            6.196,
+            6.264,
+            6.332,
+            6.4,
+            6.468,
+            6.535,
+            6.603,
+            6.671,
+            6.739,
+            6.807,
+            6.875,
+            6.942,
+            7.01,
+            7.078,
+            7.146,
+            7.214,
+            7.282,
+            7.35,
+            7.417,
+            7.485,
+            7.553,
+            7.621,
+            7.689,
+            7.757,
+            7.824,
+            7.892,
+            7.96,
+            8.028,
+            8.096,
+            8.164,
+            8.231,
+            8.299,
+            8.367,
+            8.435,
+            8.503,
+            8.571,
+            8.639,
+            8.706,
+            8.774,
+            8.842,
+            8.91,
+            8.978,
+            9.046
+          ],
+          "y": [
+            56.86,
+            58.27,
+            60.0,
+            58.86,
+            62.3,
+            65.73,
+            73.04,
+            79.55,
+            88.15,
+            93.43,
+            96.02,
+            96.22,
+            90.0,
+            84.66,
+            78.7,
+            68.59,
+            58.81,
+            48.27,
+            43.95,
+            42.01,
+            41.75,
+            41.74,
+            34.2,
+            28.52,
+            22.46,
+            19.38,
+            19.16,
+            19.66,
+            26.93,
+            33.73,
+            47.39,
+            54.11,
+            62.04,
+            65.8,
+            68.86,
+            73.41,
+            72.94,
+            71.68,
+            69.62,
+            66.5,
+            68.84,
+            70.89,
+            74.37,
+            74.59,
+            72.69,
+            72.21,
+            67.59,
+            67.03,
+            65.92,
+            64.99,
+            62.38,
+            49.34,
+            38.36,
+            17.44,
+            6.23,
+            3.98,
+            3.79,
+            4.17,
+            4.28,
+            5.51,
+            7.8,
+            11.26,
+            14.43,
+            15.9,
+            19.54,
+            24.25,
+            27.69,
+            33.3,
+            39.37,
+            41.15,
+            44.62,
+            44.39,
+            45.26,
+            45.32,
+            43.63,
+            38.41,
+            31.88,
+            26.33,
+            21.74,
+            20.6,
+            17.85,
+            12.3,
+            10.32,
+            3.93,
+            3.74,
+            4.54,
+            7.21,
+            13.64,
+            27.89,
+            38.54,
+            52.18,
+            58.47,
+            64.77,
+            73.09,
+            78.55,
+            82.32,
+            85.78,
+            83.96,
+            81.81,
+            78.01,
+            65.57,
+            59.11,
+            52.44,
+            51.94,
+            58.03,
+            64.48,
+            72.3,
+            76.79,
+            80.38,
+            80.78,
+            82.04,
+            85.18,
+            88.72,
+            93.84,
+            96.86,
+            98.2,
+            96.04,
+            91.52,
+            87.46,
+            82.69,
+            77.83,
+            69.32,
+            59.79,
+            54.47,
+            49.63,
+            43.07,
+            27.8,
+            16.96,
+            12.06,
+            13.83,
+            22.7,
+            41.4,
+            47.82,
+            58.53,
+            60.47,
+            58.87
+          ],
+          "peak_x": 7.689,
+          "peak_y": 98.2,
+          "x_unit": "\u00b5m",
+          "y_unit": "nm"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          39,
+          9,
+          175,
+          69
+        ],
+        "x_range": [
+          -0.1135,
+          9.1135
+        ],
+        "y_range": [
+          -13.0435,
+          293.8619
+        ],
+        "x_misfit_px": 0.299,
+        "y_misfit_px": 0.209,
+        "kind": "curves"
+      },
+      "x_tick_misfit_px": 0.299,
+      "y_tick_misfit_px": 0.209,
+      "height_min_nm": 3.7,
+      "height_max_nm": 98.2,
+      "peak_to_trough_nm": 94.5,
+      "n_peaks": 5,
+      "peak_positions_um": [
+        0.63,
+        2.8,
+        4.84,
+        6.4,
+        7.69
+      ],
+      "peak_heights_nm": [
+        96.2,
+        74.6,
+        45.3,
+        85.8,
+        98.2
+      ],
+      "mean_peak_spacing_um": 1.764
+    },
+    "n_digitized_points": 136,
+    "linked_items": [],
+    "linked_claims": [
+      "C1_srpm_live_imaging"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Optical window and in vivo microscopy to image developing scales. (A) Creating an optical window into the chrysalis"
+  },
+  {
+    "id": "2021_McDougal/F3/A",
+    "paper": "2021_McDougal",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "A",
+    "panel_label": "3A",
+    "title": "Live hindwing epidermal monolayer at 5% pupal development undergoing in-plane mitoses (10 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig03.jpg",
+    "bbox": [
+      2,
+      2,
+      151,
+      60
+    ],
+    "pixel_size": [
+      149,
+      58
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "5%",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 10.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 20.08,
+      "um_per_px": 0.49791,
+      "fov_um": [
+        74.19,
+        28.88
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 123,
+          "y0": 49,
+          "x1": 142,
+          "y1": 51,
+          "um": 10.0,
+          "um_per_px": 0.497911
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_developmental_milestones"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Continuous imaging of scale growth on an individual V. cardui pupa. (A) Wing tissue at 5% of pupal development"
+  },
+  {
+    "id": "2021_McDougal/F3/B",
+    "paper": "2021_McDougal",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "B",
+    "panel_label": "3B",
+    "title": "Enlarged raised scale precursor cells (red spheroids) at 15% pupal development (10 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig03.jpg",
+    "bbox": [
+      2,
+      66,
+      151,
+      151
+    ],
+    "pixel_size": [
+      149,
+      85
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "15%",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 10.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 20.02,
+      "um_per_px": 0.49959,
+      "fov_um": [
+        74.44,
+        42.47
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 123,
+          "y0": 77,
+          "x1": 142,
+          "y1": 79,
+          "um": 10.0,
+          "um_per_px": 0.499588
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_developmental_milestones"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Continuous imaging of scale growth on an individual V. cardui pupa. (A) Wing tissue at 5% of pupal development"
+  },
+  {
+    "id": "2021_McDougal/F3/C",
+    "paper": "2021_McDougal",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "C",
+    "panel_label": "3C",
+    "title": "Protruding cover and ground scales emerging from sockets at 34% pupal development (16.8 \u00b5m depth, 20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig03.jpg",
+    "bbox": [
+      156,
+      2,
+      305,
+      151
+    ],
+    "pixel_size": [
+      149,
+      149
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "34%",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 40.0,
+      "um_per_px": 0.50001,
+      "fov_um": [
+        74.5,
+        74.5
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 102,
+          "y0": 141,
+          "x1": 142,
+          "y1": 143,
+          "um": 20.0,
+          "um_per_px": 0.500015
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_developmental_milestones"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Continuous imaging of scale growth on an individual V. cardui pupa. (A) Wing tissue at 5% of pupal development"
+  },
+  {
+    "id": "2021_McDougal/F3/D",
+    "paper": "2021_McDougal",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "D",
+    "panel_label": "3D",
+    "title": "Expanding live scales initiating distal finger formation at 44% pupal development (20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig03.jpg",
+    "bbox": [
+      309,
+      2,
+      459,
+      151
+    ],
+    "pixel_size": [
+      150,
+      149
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "44%",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 40.06,
+      "um_per_px": 0.49927,
+      "fov_um": [
+        74.89,
+        74.39
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 103,
+          "y0": 141,
+          "x1": 142,
+          "y1": 143,
+          "um": 20.0,
+          "um_per_px": 0.49927
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_developmental_milestones"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Continuous imaging of scale growth on an individual V. cardui pupa. (A) Wing tissue at 5% of pupal development"
+  },
+  {
+    "id": "2021_McDougal/F3/E",
+    "paper": "2021_McDougal",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "E",
+    "panel_label": "3E",
+    "title": "Final-size scales with pronounced fingers and faint longitudinal structures at 62% pupal development (20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig03.jpg",
+    "bbox": [
+      463,
+      2,
+      613,
+      151
+    ],
+    "pixel_size": [
+      150,
+      149
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "62%",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 40.01,
+      "um_per_px": 0.49986,
+      "fov_um": [
+        74.98,
+        74.48
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 103,
+          "y0": 141,
+          "x1": 142,
+          "y1": 143,
+          "um": 20.0,
+          "um_per_px": 0.499859
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_developmental_milestones"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Continuous imaging of scale growth on an individual V. cardui pupa. (A) Wing tissue at 5% of pupal development"
+  },
+  {
+    "id": "2021_McDougal/F3/F",
+    "paper": "2021_McDougal",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "F",
+    "panel_label": "3F",
+    "title": "Mature live scales showing lower lamina (green) underneath developed ridges (red) at 99% development (20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig03.jpg",
+    "bbox": [
+      617,
+      2,
+      766,
+      151
+    ],
+    "pixel_size": [
+      149,
+      149
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "99%",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 39.91,
+      "um_per_px": 0.50109,
+      "fov_um": [
+        74.66,
+        74.66
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 103,
+          "y0": 141,
+          "x1": 142,
+          "y1": 143,
+          "um": 20.0,
+          "um_per_px": 0.501087
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_developmental_milestones",
+      "F3_pupal_duration"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Continuous imaging of scale growth on an individual V. cardui pupa. (A) Wing tissue at 5% of pupal development"
+  },
+  {
+    "id": "2021_McDougal/F3/G",
+    "paper": "2021_McDougal",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "G",
+    "panel_label": "3G",
+    "title": "Phenomenological timeline of V. cardui scale cell morphogenesis events from 0% to 100% pupal development",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pnas.202112009fig03.jpg",
+    "bbox": [
+      2,
+      155,
+      766,
+      345
+    ],
+    "pixel_size": [
+      764,
+      190
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_developmental_milestones",
+      "F3_pupal_duration"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Continuous imaging of scale growth on an individual V. cardui pupa. (A) Wing tissue at 5% of pupal development"
+  },
+  {
+    "id": "2021_McDougal/F4/A",
+    "paper": "2021_McDougal",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "A",
+    "panel_label": "4A",
+    "title": "Volumetric SRPM of roughly aligned cover scale precursor cells (1, 2, 3) at 13% development (20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig04.jpg",
+    "bbox": [
+      2,
+      2,
+      178,
+      177
+    ],
+    "pixel_size": [
+      176,
+      175
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "13%",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 46.88,
+      "um_per_px": 0.42658,
+      "fov_um": [
+        75.08,
+        74.65
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 121,
+          "y0": 166,
+          "x1": 167,
+          "y1": 169,
+          "um": 20.0,
+          "um_per_px": 0.426578
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_developmental_milestones"
+    ],
+    "linked_claims": [
+      "C2_two_stage_precursor_patterning"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Scale precursor cells appear in two stages. Cover scale precursor cells (raised red spheroids) are labeled 1, 2, and 3"
+  },
+  {
+    "id": "2021_McDougal/F4/B",
+    "paper": "2021_McDougal",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "B",
+    "panel_label": "4B",
+    "title": "Volumetric SRPM of shifting cover scale precursor cells (1, 2, 3) at 15% development",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig04.jpg",
+    "bbox": [
+      185,
+      2,
+      361,
+      177
+    ],
+    "pixel_size": [
+      176,
+      175
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "15%",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 46.88,
+      "um_per_px": 0.42662,
+      "fov_um": [
+        75.09,
+        74.66
+      ]
+    },
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [
+      "C2_two_stage_precursor_patterning"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Scale precursor cells appear in two stages. Cover scale precursor cells (raised red spheroids) are labeled 1, 2, and 3"
+  },
+  {
+    "id": "2021_McDougal/F4/C",
+    "paper": "2021_McDougal",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "C",
+    "panel_label": "4C",
+    "title": "Volumetric SRPM at 16% development showing nascent ground scale precursor cell (a) enlarging between cells 2 and 3",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig04.jpg",
+    "bbox": [
+      368,
+      2,
+      544,
+      177
+    ],
+    "pixel_size": [
+      176,
+      175
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "16%",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 46.88,
+      "um_per_px": 0.42662,
+      "fov_um": [
+        75.09,
+        74.66
+      ]
+    },
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [
+      "C2_two_stage_precursor_patterning"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Scale precursor cells appear in two stages. Cover scale precursor cells (raised red spheroids) are labeled 1, 2, and 3"
+  },
+  {
+    "id": "2021_McDougal/F4/D",
+    "paper": "2021_McDougal",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "D",
+    "panel_label": "4D",
+    "title": "Volumetric SRPM at 18% development showing ground scale precursors (a, b) matched in size and aligned in straight row",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig04.jpg",
+    "bbox": [
+      548,
+      2,
+      725,
+      177
+    ],
+    "pixel_size": [
+      177,
+      175
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "18%",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 46.88,
+      "um_per_px": 0.42662,
+      "fov_um": [
+        75.51,
+        74.66
+      ]
+    },
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_developmental_milestones"
+    ],
+    "linked_claims": [
+      "C2_two_stage_precursor_patterning"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Scale precursor cells appear in two stages. Cover scale precursor cells (raised red spheroids) are labeled 1, 2, and 3"
+  },
+  {
+    "id": "2021_McDougal/F4/A_prime",
+    "paper": "2021_McDougal",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "A_prime",
+    "panel_label": "4A'",
+    "title": "Schematic depiction of initial loose row of cover scale precursor cells (1, 2, 3) at 13% development",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pnas.202112009fig04.jpg",
+    "bbox": [
+      2,
+      185,
+      178,
+      355
+    ],
+    "pixel_size": [
+      176,
+      170
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "13%"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [
+      "C2_two_stage_precursor_patterning"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Scale precursor cells appear in two stages. Cover scale precursor cells (raised red spheroids) are labeled 1, 2, and 3"
+  },
+  {
+    "id": "2021_McDougal/F4/B_prime",
+    "paper": "2021_McDougal",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "B_prime",
+    "panel_label": "4B'",
+    "title": "Schematic depiction of shifting cover scale precursor row at 15% development",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pnas.202112009fig04.jpg",
+    "bbox": [
+      185,
+      185,
+      361,
+      355
+    ],
+    "pixel_size": [
+      176,
+      170
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "15%"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [
+      "C2_two_stage_precursor_patterning"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Scale precursor cells appear in two stages. Cover scale precursor cells (raised red spheroids) are labeled 1, 2, and 3"
+  },
+  {
+    "id": "2021_McDougal/F4/C_prime",
+    "paper": "2021_McDougal",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "C_prime",
+    "panel_label": "4C'",
+    "title": "Schematic depiction of intercalating ground scale precursor cell (a) at 16% development",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pnas.202112009fig04.jpg",
+    "bbox": [
+      368,
+      185,
+      544,
+      355
+    ],
+    "pixel_size": [
+      176,
+      170
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "16%"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [
+      "C2_two_stage_precursor_patterning"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Scale precursor cells appear in two stages. Cover scale precursor cells (raised red spheroids) are labeled 1, 2, and 3"
+  },
+  {
+    "id": "2021_McDougal/F4/D_prime",
+    "paper": "2021_McDougal",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "D_prime",
+    "panel_label": "4D'",
+    "title": "Schematic depiction of alternating cover and ground scale precursors (a, b) aligned in neat row at 18% development",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pnas.202112009fig04.jpg",
+    "bbox": [
+      548,
+      185,
+      725,
+      355
+    ],
+    "pixel_size": [
+      177,
+      170
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "18%"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [
+      "C2_two_stage_precursor_patterning"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Scale precursor cells appear in two stages. Cover scale precursor cells (raised red spheroids) are labeled 1, 2, and 3"
+  },
+  {
+    "id": "2021_McDougal/F5/A_top",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "A_top",
+    "panel_label": "5A (Top)",
+    "title": "Volumetric SRPM amplitude image (0\u20136 \u00b5m) of midsized cover scales at 35% development (20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      6,
+      2,
+      155,
+      153
+    ],
+    "pixel_size": [
+      149,
+      151
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "35%",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 36.1,
+      "um_per_px": 0.55402,
+      "fov_um": [
+        82.55,
+        83.66
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 102,
+          "y0": 138,
+          "x1": 144,
+          "y1": 146,
+          "um": 20.0,
+          "um_per_px": 0.554017
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F5_scale_width",
+      "F5_scale_length",
+      "F5_scale_thickness"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  },
+  {
+    "id": "2021_McDougal/F5/A_mid",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "A_mid",
+    "panel_label": "5A (Middle)",
+    "title": "Phase-gradient map of smooth cover scale surface at 35% development from boxed ROI (10 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      20,
+      154,
+      154,
+      288
+    ],
+    "pixel_size": [
+      134,
+      134
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "35%",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 10.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 49.03,
+      "um_per_px": 0.20396,
+      "fov_um": [
+        27.33,
+        27.33
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 79,
+          "y0": 125,
+          "x1": 128,
+          "y1": 128,
+          "um": 10.0,
+          "um_per_px": 0.203961
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  },
+  {
+    "id": "2021_McDougal/F5/A_bot",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "A_bot",
+    "panel_label": "5A (Bottom)",
+    "title": "Unwrapped phase surface height profile h (nm) across smooth scale at 35% development (0\u20137 \u00b5m)",
+    "archetype": "spectral_or_profile",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      18,
+      293,
+      162,
+      361
+    ],
+    "pixel_size": [
+      144,
+      68
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "35%"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f5_profiles.py",
+    "data": {
+      "curves": {
+        "surface_height_35pct": {
+          "x": [
+            -0.0,
+            0.074,
+            0.148,
+            0.222,
+            0.296,
+            0.37,
+            0.444,
+            0.519,
+            0.593,
+            0.667,
+            0.741,
+            0.815,
+            0.889,
+            0.963,
+            1.037,
+            1.111,
+            1.185,
+            1.259,
+            1.333,
+            1.407,
+            1.481,
+            1.556,
+            1.63,
+            1.704,
+            1.778,
+            1.852,
+            1.926,
+            2.0,
+            2.074,
+            2.148,
+            2.222,
+            2.296,
+            2.37,
+            2.444,
+            2.519,
+            2.593,
+            2.667,
+            2.741,
+            2.815,
+            2.889,
+            2.963,
+            3.037,
+            3.111,
+            3.185,
+            3.259,
+            3.333,
+            3.407,
+            3.481,
+            3.556,
+            3.63,
+            3.704,
+            3.778,
+            3.852,
+            3.926,
+            4.0,
+            4.074,
+            4.148,
+            4.222,
+            4.296,
+            4.37,
+            4.444,
+            4.519,
+            4.593,
+            4.667,
+            4.741,
+            4.815,
+            4.889,
+            4.963,
+            5.037,
+            5.111,
+            5.185,
+            5.259,
+            5.333,
+            5.407,
+            5.481,
+            5.556,
+            5.63,
+            5.704,
+            5.778,
+            5.852,
+            5.926,
+            6.0,
+            6.074,
+            6.148,
+            6.222,
+            6.296,
+            6.37,
+            6.444,
+            6.519,
+            6.593,
+            6.667,
+            6.741,
+            6.815,
+            6.889,
+            6.963
+          ],
+          "y": [
+            61.23,
+            60.46,
+            58.12,
+            56.24,
+            53.88,
+            51.14,
+            51.09,
+            51.58,
+            51.41,
+            50.37,
+            48.68,
+            48.32,
+            47.53,
+            46.8,
+            47.37,
+            47.35,
+            47.03,
+            46.85,
+            46.2,
+            43.36,
+            42.42,
+            40.27,
+            35.4,
+            32.05,
+            31.0,
+            28.61,
+            29.12,
+            29.62,
+            27.93,
+            25.95,
+            25.56,
+            24.58,
+            21.35,
+            16.68,
+            13.23,
+            12.81,
+            13.55,
+            14.0,
+            12.12,
+            7.79,
+            6.49,
+            7.88,
+            10.46,
+            14.44,
+            18.1,
+            18.07,
+            18.28,
+            18.79,
+            18.15,
+            16.7,
+            17.47,
+            19.59,
+            20.05,
+            15.86,
+            15.46,
+            16.36,
+            18.86,
+            22.03,
+            23.94,
+            20.55,
+            18.31,
+            16.71,
+            14.27,
+            10.86,
+            7.44,
+            5.71,
+            5.71,
+            5.88,
+            7.35,
+            11.04,
+            14.98,
+            18.24,
+            18.55,
+            14.95,
+            18.41,
+            23.94,
+            30.92,
+            36.72,
+            41.3,
+            40.36,
+            41.26,
+            45.01,
+            49.13,
+            53.99,
+            58.21,
+            61.16,
+            59.73,
+            55.89,
+            55.48,
+            58.7,
+            63.89,
+            68.06,
+            68.14,
+            63.4,
+            62.72
+          ],
+          "peak_x": 6.815,
+          "peak_y": 68.14,
+          "x_unit": "\u00b5m",
+          "y_unit": "nm"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          36,
+          6,
+          134,
+          37
+        ],
+        "x_range": [
+          -0.1481,
+          7.1111
+        ],
+        "y_range": [
+          -10.5978,
+          157.8804
+        ],
+        "x_misfit_px": 0.0,
+        "y_misfit_px": 0.112,
+        "kind": "curves"
+      },
+      "x_tick_misfit_px": 0.0,
+      "y_tick_misfit_px": 0.112,
+      "height_min_nm": 5.7,
+      "height_max_nm": 68.1,
+      "peak_to_trough_nm": 62.4,
+      "n_peaks": 0,
+      "mean_proto_ridge_spacing_um": null
+    },
+    "n_digitized_points": 95,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  },
+  {
+    "id": "2021_McDougal/F5/B_top",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "B_top",
+    "panel_label": "5B (Top)",
+    "title": "Volumetric SRPM amplitude image (0\u20136 \u00b5m) of cover scales with emerging fingers at 41% development (20 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      176,
+      2,
+      326,
+      153
+    ],
+    "pixel_size": [
+      150,
+      151
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "41%",
+      "view_orientation": "3D volumetric"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 20.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 36.1,
+      "um_per_px": 0.55397,
+      "fov_um": [
+        83.1,
+        83.65
+      ],
+      "overlay_meta": {
+        "kind": "microscopy_scale",
+        "scale_bar_px": {
+          "x0": 105,
+          "y0": 141,
+          "x1": 141,
+          "y1": 144,
+          "um": 20.0,
+          "um_per_px": 0.553968
+        }
+      }
+    },
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F5_scale_width",
+      "F5_scale_length",
+      "F5_scale_thickness"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  },
+  {
+    "id": "2021_McDougal/F5/B_mid",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "B_mid",
+    "panel_label": "5B (Middle)",
+    "title": "Phase-gradient map at 41% development showing regularly spaced nascent proto-ridges (~1.4 \u00b5m pitch, 10 \u00b5m bar)",
+    "archetype": "planar_microscopy",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      190,
+      154,
+      324,
+      288
+    ],
+    "pixel_size": [
+      134,
+      134
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "41%",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": 10.0,
+    "extractor_script": null,
+    "data": {
+      "scale_bar_px": 48.73,
+      "um_per_px": 0.20521,
+      "fov_um": [
+        27.5,
+        27.5
+      ],
+      "periodic_fft_um": 1.4038,
+      "periodic_fft_interval_um": [
+        1.3313,
+        1.4763
+      ],
+      "periodic_snr": 10.8,
+      "wavevector_deg": -33.9,
+      "periodic_transect_um": 1.4423,
+      "periodic_transect_sd_um": 0.2452,
+      "transect_points_um": [
+        1.1943,
+        1.1943,
+        1.378,
+        1.4699,
+        1.378,
+        1.2861,
+        1.378,
+        1.4699,
+        1.6536,
+        2.0211
+      ],
+      "harmonic_guard": {
+        "status": "pass",
+        "fft_transect_delta_pct": 2.74,
+        "harmonic_ratio_2f": 0.04,
+        "snr": 10.8,
+        "issues": []
+      },
+      "overlay_meta": {
+        "kind": "microscopy_fft",
+        "scale_bar_px": {
+          "x0": 79,
+          "y0": 125,
+          "x1": 128,
+          "y1": 128,
+          "um": 10.0,
+          "um_per_px": 0.205214
+        },
+        "roi_px": [
+          30,
+          62,
+          82,
+          114
+        ],
+        "grating": {
+          "period_px": 6.84,
+          "period_um": 1.4038,
+          "wavevector_deg": -33.9,
+          "phase_shift_px": 0.09,
+          "snr": 10.8
+        },
+        "crossrib_grating": null,
+        "transects": [
+          {
+            "p0": [
+              31.2,
+              76.0
+            ],
+            "p1": [
+              49.8,
+              63.5
+            ],
+            "peaks_px": [
+              [
+                36.4,
+                72.5
+              ],
+              [
+                40.8,
+                69.5
+              ],
+              [
+                46.0,
+                66.0
+              ]
+            ]
+          },
+          {
+            "p0": [
+              31.2,
+              82.4
+            ],
+            "p1": [
+              59.4,
+              63.4
+            ],
+            "peaks_px": [
+              [
+                35.6,
+                79.4
+              ],
+              [
+                40.1,
+                76.4
+              ],
+              [
+                45.3,
+                72.9
+              ],
+              [
+                49.0,
+                70.4
+              ],
+              [
+                56.4,
+                65.4
+              ]
+            ]
+          },
+          {
+            "p0": [
+              31.2,
+              88.8
+            ],
+            "p1": [
+              69.0,
+              63.3
+            ],
+            "peaks_px": [
+              [
+                34.1,
+                86.8
+              ],
+              [
+                38.6,
+                83.8
+              ],
+              [
+                42.3,
+                81.3
+              ],
+              [
+                48.2,
+                77.3
+              ],
+              [
+                53.4,
+                73.8
+              ],
+              [
+                60.9,
+                68.8
+              ],
+              [
+                66.8,
+                64.8
+              ]
+            ]
+          },
+          {
+            "p0": [
+              31.1,
+              95.2
+            ],
+            "p1": [
+              75.0,
+              65.7
+            ],
+            "peaks_px": [
+              [
+                34.1,
+                93.2
+              ],
+              [
+                44.5,
+                86.2
+              ],
+              [
+                52.7,
+                80.7
+              ],
+              [
+                57.9,
+                77.2
+              ],
+              [
+                63.8,
+                73.2
+              ],
+              [
+                73.5,
+                66.7
+              ]
+            ]
+          },
+          {
+            "p0": [
+              31.1,
+              101.5
+            ],
+            "p1": [
+              77.9,
+              70.1
+            ],
+            "peaks_px": [
+              [
+                39.3,
+                96.0
+              ],
+              [
+                44.5,
+                92.6
+              ],
+              [
+                50.4,
+                88.6
+              ],
+              [
+                55.6,
+                85.1
+              ],
+              [
+                63.1,
+                80.1
+              ],
+              [
+                68.3,
+                76.6
+              ],
+              [
+                76.4,
+                71.1
+              ]
+            ]
+          },
+          {
+            "p0": [
+              34.1,
+              105.9
+            ],
+            "p1": [
+              79.4,
+              75.5
+            ],
+            "peaks_px": [
+              [
+                38.5,
+                102.9
+              ],
+              [
+                50.4,
+                94.9
+              ],
+              [
+                53.4,
+                92.9
+              ],
+              [
+                58.6,
+                89.4
+              ],
+              [
+                63.8,
+                85.9
+              ],
+              [
+                75.7,
+                78.0
+              ]
+            ]
+          },
+          {
+            "p0": [
+              37.0,
+              110.3
+            ],
+            "p1": [
+              79.4,
+              81.8
+            ],
+            "peaks_px": [
+              [
+                37.8,
+                109.8
+              ],
+              [
+                41.5,
+                107.3
+              ],
+              [
+                47.4,
+                103.3
+              ],
+              [
+                54.1,
+                98.8
+              ],
+              [
+                61.5,
+                93.8
+              ],
+              [
+                66.0,
+                90.8
+              ],
+              [
+                71.2,
+                87.3
+              ]
+            ]
+          },
+          {
+            "p0": [
+              44.4,
+              111.7
+            ],
+            "p1": [
+              79.4,
+              88.2
+            ],
+            "peaks_px": [
+              [
+                56.3,
+                103.7
+              ],
+              [
+                63.0,
+                99.2
+              ],
+              [
+                69.0,
+                95.2
+              ],
+              [
+                74.9,
+                91.2
+              ]
+            ]
+          },
+          {
+            "p0": [
+              54.1,
+              111.6
+            ],
+            "p1": [
+              79.3,
+              94.6
+            ],
+            "peaks_px": [
+              [
+                57.8,
+                109.1
+              ],
+              [
+                64.5,
+                104.6
+              ],
+              [
+                71.2,
+                100.1
+              ],
+              [
+                74.9,
+                97.6
+              ]
+            ]
+          },
+          {
+            "p0": [
+              63.7,
+              111.5
+            ],
+            "p1": [
+              79.3,
+              101.0
+            ],
+            "peaks_px": [
+              [
+                67.4,
+                109.0
+              ],
+              [
+                75.6,
+                103.5
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "n_digitized_points": 11,
+    "linked_items": [
+      "F5_actin_ridge_spacing",
+      "F5_proto_ridge_height"
+    ],
+    "linked_claims": [
+      "C6_irregular_to_regular_ridge_onset"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  },
+  {
+    "id": "2021_McDougal/F5/B_bot",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "B_bot",
+    "panel_label": "5B (Bottom)",
+    "title": "Unwrapped phase surface height profile h (nm) across ~100 nm proto-ridges at 41% development (0\u20137 \u00b5m)",
+    "archetype": "spectral_or_profile",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      184,
+      293,
+      335,
+      361
+    ],
+    "pixel_size": [
+      151,
+      68
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy",
+      "pupal_stage_pct": "41%"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f5_profiles.py",
+    "data": {
+      "curves": {
+        "proto_ridge_height_41pct": {
+          "x": [
+            -0.038,
+            0.038,
+            0.113,
+            0.189,
+            0.264,
+            0.34,
+            0.415,
+            0.491,
+            0.566,
+            0.642,
+            0.717,
+            0.792,
+            0.868,
+            0.943,
+            1.019,
+            1.094,
+            1.17,
+            1.245,
+            1.321,
+            1.396,
+            1.472,
+            1.547,
+            1.623,
+            1.698,
+            1.774,
+            1.849,
+            1.925,
+            2.0,
+            2.075,
+            2.151,
+            2.226,
+            2.302,
+            2.377,
+            2.453,
+            2.528,
+            2.604,
+            2.679,
+            2.755,
+            2.83,
+            2.906,
+            2.981,
+            3.057,
+            3.132,
+            3.208,
+            3.283,
+            3.358,
+            3.434,
+            3.509,
+            3.585,
+            3.66,
+            3.736,
+            3.811,
+            3.887,
+            3.962,
+            4.038,
+            4.113,
+            4.189,
+            4.264,
+            4.34,
+            4.415,
+            4.491,
+            4.566,
+            4.642,
+            4.717,
+            4.792,
+            4.868,
+            4.943,
+            5.019,
+            5.094,
+            5.17,
+            5.245,
+            5.321,
+            5.396,
+            5.472,
+            5.547,
+            5.623,
+            5.698,
+            5.774,
+            5.849,
+            5.925,
+            6.0,
+            6.075,
+            6.151,
+            6.226,
+            6.302,
+            6.377,
+            6.453,
+            6.528,
+            6.604,
+            6.679,
+            6.755,
+            6.83,
+            6.906
+          ],
+          "y": [
+            10.04,
+            8.28,
+            5.47,
+            5.23,
+            5.95,
+            4.9,
+            7.1,
+            14.84,
+            25.49,
+            31.01,
+            36.49,
+            47.29,
+            54.5,
+            59.65,
+            70.07,
+            86.14,
+            95.03,
+            97.56,
+            95.47,
+            95.94,
+            101.29,
+            101.41,
+            96.83,
+            81.17,
+            42.68,
+            15.38,
+            6.89,
+            10.31,
+            21.53,
+            33.01,
+            42.34,
+            58.59,
+            69.0,
+            74.01,
+            80.85,
+            92.43,
+            101.9,
+            104.81,
+            110.82,
+            107.58,
+            101.91,
+            96.65,
+            92.9,
+            86.43,
+            69.71,
+            53.36,
+            44.98,
+            44.92,
+            43.25,
+            43.43,
+            49.74,
+            60.06,
+            80.0,
+            86.84,
+            102.6,
+            114.64,
+            119.07,
+            108.83,
+            86.49,
+            60.2,
+            53.86,
+            43.52,
+            36.55,
+            33.49,
+            31.08,
+            25.02,
+            25.63,
+            27.14,
+            20.9,
+            14.17,
+            17.09,
+            26.76,
+            38.2,
+            44.23,
+            53.87,
+            70.07,
+            79.54,
+            84.83,
+            89.88,
+            90.49,
+            80.97,
+            64.79,
+            43.09,
+            21.5,
+            10.08,
+            5.44,
+            5.95,
+            10.35,
+            12.49,
+            15.91,
+            37.39,
+            70.43,
+            96.83
+          ],
+          "peak_x": 4.189,
+          "peak_y": 119.07,
+          "x_unit": "\u00b5m",
+          "y_unit": "nm"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          42,
+          6,
+          138,
+          37
+        ],
+        "x_range": [
+          -0.1132,
+          7.1321
+        ],
+        "y_range": [
+          -11.7486,
+          157.6503
+        ],
+        "x_misfit_px": 0.0,
+        "y_misfit_px": 0.137,
+        "kind": "curves"
+      },
+      "x_tick_misfit_px": 0.0,
+      "y_tick_misfit_px": 0.137,
+      "height_min_nm": 4.9,
+      "height_max_nm": 119.1,
+      "peak_to_trough_nm": 114.2,
+      "n_peaks": 4,
+      "mean_proto_ridge_spacing_um": 1.459
+    },
+    "n_digitized_points": 93,
+    "linked_items": [
+      "F5_proto_ridge_height"
+    ],
+    "linked_claims": [
+      "C6_irregular_to_regular_ridge_onset"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  },
+  {
+    "id": "2021_McDougal/F5/C",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "C",
+    "panel_label": "5C",
+    "title": "Cover scale length (\u00b5m) vs pupal development (28\u201355%) showing peak at ~37% and slight retraction",
+    "archetype": "quantitative_plot",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      336,
+      17,
+      525,
+      96
+    ],
+    "pixel_size": [
+      189,
+      79
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f5_shape.py",
+    "data": {
+      "curves": {
+        "cover_scale_length_mean": {
+          "x": [
+            30.22,
+            35.87,
+            41.13,
+            47.14,
+            53.69
+          ],
+          "y": [
+            43.11,
+            133.82,
+            143.8,
+            151.7,
+            143.54
+          ],
+          "peak_x": 47.14,
+          "peak_y": 151.7,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        }
+      },
+      "digitized_scatter": {
+        "cover_scale_length": {
+          "x": [
+            29.77,
+            30.34,
+            30.56,
+            34.42,
+            34.79,
+            35.17,
+            35.18,
+            36.93,
+            37.15,
+            37.47,
+            40.82,
+            41.44,
+            47.14,
+            47.14,
+            53.69
+          ],
+          "y": [
+            46.3,
+            34.45,
+            48.59,
+            97.12,
+            88.46,
+            98.08,
+            113.56,
+            167.74,
+            212.93,
+            158.88,
+            147.76,
+            139.83,
+            127.21,
+            176.19,
+            143.54
+          ],
+          "n": 15,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          59,
+          10,
+          181,
+          70
+        ],
+        "x_range": [
+          28.2177,
+          54.7823
+        ],
+        "y_range": [
+          4.7619,
+          249.6599
+        ],
+        "y_misfit_px": 0.236,
+        "mode": "scatter_2d",
+        "kind": "scatter"
+      },
+      "y_tick_misfit_px": 0.236,
+      "n_markers_total": 15
+    },
+    "n_digitized_points": 20,
+    "linked_items": [
+      "F5_scale_length"
+    ],
+    "linked_claims": [
+      "C3_anisotropic_scale_growth"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_scale_measurements",
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  },
+  {
+    "id": "2021_McDougal/F5/D",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "D",
+    "panel_label": "5D",
+    "title": "Cover scale width (\u00b5m) vs pupal development (28\u201355%) showing >5-fold lateral expansion",
+    "archetype": "quantitative_plot",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      336,
+      98,
+      525,
+      175
+    ],
+    "pixel_size": [
+      189,
+      77
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f5_shape.py",
+    "data": {
+      "curves": {
+        "cover_scale_width_mean": {
+          "x": [
+            29.76,
+            35.89,
+            40.97,
+            47.06,
+            53.69
+          ],
+          "y": [
+            8.38,
+            27.84,
+            45.47,
+            40.05,
+            46.0
+          ],
+          "peak_x": 53.69,
+          "peak_y": 46.0,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        }
+      },
+      "digitized_scatter": {
+        "cover_scale_width": {
+          "x": [
+            29.14,
+            29.75,
+            30.4,
+            34.39,
+            34.55,
+            35.14,
+            36.9,
+            36.93,
+            37.45,
+            40.78,
+            40.84,
+            40.88,
+            41.38,
+            46.74,
+            47.38,
+            53.69
+          ],
+          "y": [
+            7.25,
+            9.89,
+            8.0,
+            26.61,
+            23.08,
+            25.26,
+            32.5,
+            28.76,
+            30.81,
+            52.71,
+            41.0,
+            44.93,
+            43.23,
+            41.09,
+            39.0,
+            46.0
+          ],
+          "n": 16,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          59,
+          10,
+          181,
+          71
+        ],
+        "x_range": [
+          28.2177,
+          54.7823
+        ],
+        "y_range": [
+          1.0,
+          62.0
+        ],
+        "y_misfit_px": 0.5,
+        "mode": "scatter_2d",
+        "kind": "scatter"
+      },
+      "y_tick_misfit_px": 0.5,
+      "n_markers_total": 16
+    },
+    "n_digitized_points": 21,
+    "linked_items": [
+      "F5_scale_width",
+      "F5_width_expansion_contrast"
+    ],
+    "linked_claims": [
+      "C3_anisotropic_scale_growth"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_scale_measurements",
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  },
+  {
+    "id": "2021_McDougal/F5/E",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "E",
+    "panel_label": "5E",
+    "title": "Cover scale thickness (\u00b5m) vs pupal development (28\u201355%) showing gradual blade thinning",
+    "archetype": "quantitative_plot",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      336,
+      176,
+      525,
+      253
+    ],
+    "pixel_size": [
+      189,
+      77
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f5_shape.py",
+    "data": {
+      "curves": {
+        "cover_scale_thickness_mean": {
+          "x": [
+            29.74,
+            35.67,
+            40.8,
+            46.93,
+            53.74
+          ],
+          "y": [
+            6.24,
+            5.93,
+            5.08,
+            5.05,
+            4.28
+          ],
+          "peak_x": 29.74,
+          "peak_y": 6.24,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        }
+      },
+      "digitized_scatter": {
+        "cover_scale_thickness": {
+          "x": [
+            29.74,
+            29.74,
+            29.74,
+            34.75,
+            34.75,
+            34.77,
+            35.3,
+            36.9,
+            37.55,
+            40.25,
+            40.71,
+            40.78,
+            41.45,
+            46.58,
+            47.1,
+            47.12,
+            53.74
+          ],
+          "y": [
+            5.44,
+            6.03,
+            7.26,
+            5.21,
+            6.99,
+            6.29,
+            6.64,
+            5.12,
+            5.35,
+            5.24,
+            4.49,
+            5.51,
+            5.08,
+            5.07,
+            5.45,
+            4.62,
+            4.28
+          ],
+          "n": 17,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          59,
+          13,
+          181,
+          74
+        ],
+        "x_range": [
+          28.2177,
+          54.7823
+        ],
+        "y_range": [
+          0.137,
+          8.4932
+        ],
+        "y_misfit_px": 0.5,
+        "mode": "scatter_2d",
+        "kind": "scatter"
+      },
+      "y_tick_misfit_px": 0.5,
+      "n_markers_total": 17
+    },
+    "n_digitized_points": 22,
+    "linked_items": [
+      "F5_scale_thickness",
+      "F5_thinning_contrast"
+    ],
+    "linked_claims": [
+      "C3_anisotropic_scale_growth",
+      "C4_scale_thinning_during_expansion"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_scale_measurements",
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  },
+  {
+    "id": "2021_McDougal/F5/F",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "F",
+    "panel_label": "5F",
+    "title": "Estimated scale volume (pink) and surface area (black) as % of maximum vs pupal development (28\u201355%)",
+    "archetype": "quantitative_plot",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      336,
+      254,
+      525,
+      361
+    ],
+    "pixel_size": [
+      189,
+      107
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f5_shape.py",
+    "data": {
+      "curves": {
+        "est_volume_pct_mean": {
+          "x": [
+            30.18,
+            36.15,
+            41.06,
+            46.98,
+            53.72
+          ],
+          "y": [
+            10.02,
+            68.02,
+            99.48,
+            89.97,
+            86.67
+          ],
+          "peak_x": 41.06,
+          "peak_y": 99.48,
+          "x_unit": "% development",
+          "y_unit": "%"
+        },
+        "est_surface_area_pct_mean": {
+          "x": [
+            29.73,
+            35.95,
+            41.05,
+            47.15,
+            53.72
+          ],
+          "y": [
+            8.99,
+            65.62,
+            99.31,
+            93.34,
+            99.74
+          ],
+          "peak_x": 53.72,
+          "peak_y": 99.74,
+          "x_unit": "% development",
+          "y_unit": "%"
+        }
+      },
+      "digitized_scatter": {
+        "est_volume_pct": {
+          "x": [
+            29.58,
+            30.79,
+            34.45,
+            34.73,
+            35.19,
+            36.97,
+            37.06,
+            37.15,
+            37.5,
+            40.7,
+            41.06,
+            41.43,
+            46.62,
+            47.09,
+            47.09,
+            47.11,
+            53.72
+          ],
+          "y": [
+            8.01,
+            12.03,
+            39.0,
+            57.69,
+            38.74,
+            72.31,
+            80.9,
+            111.11,
+            76.37,
+            86.93,
+            124.44,
+            87.08,
+            86.45,
+            82.22,
+            100.05,
+            91.14,
+            86.67
+          ],
+          "n": 17,
+          "x_unit": "% development",
+          "y_unit": "%"
+        },
+        "est_surface_area_pct": {
+          "x": [
+            29.73,
+            34.56,
+            34.57,
+            35.11,
+            36.75,
+            37.15,
+            37.57,
+            41.03,
+            41.06,
+            41.06,
+            47.14,
+            47.16,
+            53.72
+          ],
+          "y": [
+            8.99,
+            35.8,
+            48.47,
+            42.14,
+            78.11,
+            108.79,
+            80.44,
+            87.06,
+            97.54,
+            113.33,
+            77.75,
+            108.93,
+            99.74
+          ],
+          "n": 13,
+          "x_unit": "% development",
+          "y_unit": "%"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          59,
+          16,
+          181,
+          77
+        ],
+        "x_range": [
+          28.2177,
+          54.7823
+        ],
+        "y_range": [
+          2.2222,
+          137.7778
+        ],
+        "y_misfit_px": 0.0,
+        "mode": "scatter_2d",
+        "kind": "scatter"
+      },
+      "y_tick_misfit_px": 0.0,
+      "n_markers_total": 30
+    },
+    "n_digitized_points": 40,
+    "linked_items": [
+      "D2_scale_area_41pct"
+    ],
+    "linked_claims": [
+      "C3_anisotropic_scale_growth"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_scale_measurements",
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  },
+  {
+    "id": "2021_McDougal/F5/G",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "G",
+    "panel_label": "5G",
+    "title": "Continuous actin bundle and ridge spacing (\u00b5m) tracked on individual scales from 38% to 89% development",
+    "archetype": "quantitative_plot",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      530,
+      17,
+      764,
+      185
+    ],
+    "pixel_size": [
+      234,
+      168
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f5_ridges.py",
+    "data": {
+      "curves": {
+        "group2_scale1_upper": {
+          "x": [
+            46.76,
+            47.14,
+            47.53,
+            47.91,
+            48.29,
+            48.67,
+            49.06,
+            49.44,
+            49.82,
+            50.21,
+            50.59,
+            50.97,
+            51.35,
+            51.74,
+            52.12,
+            52.5,
+            52.89,
+            53.27,
+            53.65,
+            54.03,
+            54.42,
+            54.8,
+            55.18,
+            55.57,
+            55.95,
+            56.33,
+            56.71,
+            57.1,
+            57.48,
+            57.86,
+            58.25,
+            58.63,
+            59.01,
+            59.39,
+            59.78,
+            60.16,
+            60.54,
+            60.93
+          ],
+          "y": [
+            1.913,
+            1.913,
+            1.913,
+            1.913,
+            1.913,
+            1.913,
+            1.913,
+            1.913,
+            1.913,
+            1.913,
+            1.913,
+            1.923,
+            1.923,
+            1.923,
+            1.923,
+            1.923,
+            1.923,
+            1.923,
+            1.923,
+            1.923,
+            1.932,
+            1.932,
+            1.932,
+            1.932,
+            1.932,
+            1.932,
+            1.932,
+            1.932,
+            1.932,
+            1.941,
+            1.941,
+            1.941,
+            1.941,
+            1.941,
+            1.941,
+            1.941,
+            1.941,
+            1.932
+          ],
+          "peak_x": 57.86,
+          "peak_y": 1.941,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        },
+        "group2_scale2_midhi": {
+          "x": [
+            46.76,
+            47.14,
+            47.53,
+            47.91,
+            48.29,
+            48.67,
+            49.06,
+            49.44,
+            49.82,
+            50.21,
+            50.59,
+            50.97,
+            51.35,
+            51.74,
+            52.12,
+            52.5,
+            52.89,
+            53.27,
+            53.65,
+            54.03,
+            54.42,
+            54.8,
+            55.18,
+            55.57,
+            55.95,
+            56.33,
+            56.71,
+            57.1,
+            57.48,
+            57.86,
+            58.25,
+            58.63,
+            59.01,
+            59.39,
+            59.78,
+            60.16,
+            60.54,
+            60.93
+          ],
+          "y": [
+            1.831,
+            1.831,
+            1.831,
+            1.84,
+            1.84,
+            1.84,
+            1.849,
+            1.849,
+            1.849,
+            1.858,
+            1.858,
+            1.867,
+            1.867,
+            1.867,
+            1.877,
+            1.877,
+            1.877,
+            1.877,
+            1.877,
+            1.877,
+            1.877,
+            1.877,
+            1.877,
+            1.877,
+            1.877,
+            1.877,
+            1.877,
+            1.877,
+            1.877,
+            1.867,
+            1.867,
+            1.867,
+            1.867,
+            1.867,
+            1.867,
+            1.867,
+            1.877,
+            1.877
+          ],
+          "peak_x": 52.12,
+          "peak_y": 1.877,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        },
+        "group2_scale3_midlo": {
+          "x": [
+            46.76,
+            47.14,
+            47.53,
+            47.91,
+            48.29,
+            48.67,
+            49.06,
+            49.44,
+            49.82,
+            50.21,
+            50.59,
+            50.97,
+            51.35,
+            51.74,
+            52.12,
+            52.5,
+            52.89,
+            53.27,
+            53.65,
+            54.03,
+            54.42,
+            54.8,
+            55.18,
+            55.57,
+            55.95,
+            56.33,
+            56.71,
+            57.1,
+            57.48,
+            57.86,
+            58.25,
+            58.63,
+            59.01,
+            59.39,
+            59.78,
+            60.16,
+            60.54,
+            60.93
+          ],
+          "y": [
+            1.693,
+            1.693,
+            1.693,
+            1.693,
+            1.693,
+            1.684,
+            1.684,
+            1.675,
+            1.675,
+            1.675,
+            1.665,
+            1.665,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.656,
+            1.665,
+            1.665,
+            1.665,
+            1.665,
+            1.665,
+            1.665,
+            1.665,
+            1.665,
+            1.665,
+            1.656
+          ],
+          "peak_x": 46.76,
+          "peak_y": 1.693,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        },
+        "group2_scale4_lower": {
+          "x": [
+            46.76,
+            47.14,
+            47.53,
+            47.91,
+            48.29,
+            48.67,
+            49.06,
+            49.44,
+            49.82,
+            50.21,
+            50.59,
+            50.97,
+            51.35,
+            51.74,
+            52.12,
+            52.5,
+            52.89,
+            53.27,
+            53.65,
+            54.03,
+            54.42,
+            54.8,
+            55.18,
+            55.57,
+            55.95,
+            56.33,
+            56.71,
+            57.1,
+            57.48,
+            57.86,
+            58.25,
+            58.63,
+            59.01,
+            59.39,
+            59.78,
+            60.16,
+            60.54,
+            60.93
+          ],
+          "y": [
+            1.592,
+            1.583,
+            1.583,
+            1.573,
+            1.573,
+            1.573,
+            1.573,
+            1.573,
+            1.573,
+            1.573,
+            1.573,
+            1.564,
+            1.564,
+            1.564,
+            1.564,
+            1.564,
+            1.564,
+            1.564,
+            1.573,
+            1.573,
+            1.573,
+            1.573,
+            1.573,
+            1.583,
+            1.583,
+            1.583,
+            1.592,
+            1.592,
+            1.592,
+            1.592,
+            1.601,
+            1.601,
+            1.601,
+            1.601,
+            1.601,
+            1.61,
+            1.61,
+            1.601
+          ],
+          "peak_x": 60.16,
+          "peak_y": 1.61,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        },
+        "group3_late_ridges_band": {
+          "x": [
+            61.31,
+            61.69,
+            62.07,
+            62.46,
+            62.84,
+            63.22,
+            63.61,
+            63.99,
+            64.37,
+            64.75,
+            65.14,
+            65.52,
+            65.9,
+            66.29,
+            66.67,
+            67.05,
+            67.43,
+            67.82,
+            68.2,
+            68.58,
+            68.97,
+            69.35,
+            69.73,
+            70.11,
+            70.5,
+            70.88,
+            71.26,
+            71.65,
+            72.03,
+            72.41,
+            72.79,
+            73.18,
+            73.56,
+            73.94,
+            74.33,
+            74.71,
+            75.09,
+            75.47,
+            75.86,
+            76.24,
+            76.62,
+            77.01,
+            77.39,
+            77.77,
+            78.15,
+            78.54,
+            78.92,
+            79.3,
+            79.69,
+            80.07,
+            80.45,
+            80.83,
+            81.22,
+            81.6,
+            81.98,
+            82.37,
+            82.75,
+            83.13,
+            83.51,
+            83.9,
+            84.28,
+            84.66,
+            85.05,
+            85.43,
+            85.81,
+            86.19,
+            86.58,
+            86.96,
+            87.34,
+            87.73
+          ],
+          "y": [
+            1.817,
+            1.815,
+            1.811,
+            1.811,
+            1.81,
+            1.809,
+            1.81,
+            1.809,
+            1.809,
+            1.81,
+            1.814,
+            1.815,
+            1.815,
+            1.816,
+            1.812,
+            1.811,
+            1.811,
+            1.813,
+            1.81,
+            1.81,
+            1.81,
+            1.81,
+            1.81,
+            1.81,
+            1.81,
+            1.81,
+            1.81,
+            1.805,
+            1.805,
+            1.804,
+            1.807,
+            1.807,
+            1.806,
+            1.809,
+            1.802,
+            1.808,
+            1.808,
+            1.81,
+            1.806,
+            1.812,
+            1.81,
+            1.807,
+            1.81,
+            1.807,
+            1.808,
+            1.807,
+            1.807,
+            1.808,
+            1.804,
+            1.802,
+            1.805,
+            1.805,
+            1.804,
+            1.804,
+            1.802,
+            1.801,
+            1.8,
+            1.8,
+            1.798,
+            1.798,
+            1.799,
+            1.803,
+            1.804,
+            1.798,
+            1.797,
+            1.796,
+            1.797,
+            1.798,
+            1.797,
+            1.795
+          ],
+          "lo": [
+            1.794,
+            1.785,
+            1.785,
+            1.794,
+            1.794,
+            1.794,
+            1.794,
+            1.794,
+            1.794,
+            1.794,
+            1.794,
+            1.794,
+            1.794,
+            1.794,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.776,
+            1.776,
+            1.776,
+            1.776,
+            1.776,
+            1.776,
+            1.776,
+            1.776,
+            1.776,
+            1.776,
+            1.757,
+            1.757,
+            1.766,
+            1.766,
+            1.757,
+            1.776,
+            1.776,
+            1.776,
+            1.776,
+            1.776,
+            1.776,
+            1.776,
+            1.776,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.785,
+            1.794,
+            1.794,
+            1.785,
+            1.785,
+            1.785,
+            1.766,
+            1.776,
+            1.776,
+            1.766
+          ],
+          "hi": [
+            1.858,
+            1.867,
+            1.858,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.849,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.822,
+            1.84,
+            1.84,
+            1.84,
+            1.858,
+            1.849,
+            1.849,
+            1.858,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.84,
+            1.849,
+            1.84,
+            1.84,
+            1.849
+          ],
+          "peak_x": 61.31,
+          "peak_y": 1.817,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        }
+      },
+      "digitized_scatter": {
+        "group1_early_actin": {
+          "x": [
+            37.68,
+            38.72,
+            39.16,
+            41.25,
+            41.66,
+            43.44,
+            43.46
+          ],
+          "y": [
+            1.075,
+            0.986,
+            1.062,
+            1.125,
+            1.222,
+            1.319,
+            1.408
+          ],
+          "n": 7,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          54,
+          10,
+          227,
+          138
+        ],
+        "x_range": [
+          28.3829,
+          94.6171
+        ],
+        "y_range": [
+          0.9121,
+          2.0879
+        ],
+        "y_misfit_px": 0.12,
+        "mode": "scatter_2d",
+        "kind": "scatter"
+      },
+      "y_tick_misfit_px": 0.12,
+      "group1_n_points": 7,
+      "group1_spacing_range_um": [
+        0.986,
+        1.408
+      ],
+      "group2_mean_um": 1.76,
+      "group3_mean_um": 1.807
+    },
+    "n_digitized_points": 229,
+    "linked_items": [
+      "F5_actin_ridge_spacing",
+      "D1_ridge_density"
+    ],
+    "linked_claims": [
+      "C5_actin_bundle_widening",
+      "C7_constant_ridge_spacing_refutes_contraction"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  },
+  {
+    "id": "2021_McDougal/F5/H_height",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "H_height",
+    "panel_label": "5H (Height)",
+    "title": "Nascent ridge height (nm, mean \u00b1 SD across 3 scales) from smooth (34.8%) through irregular to regular ridges (41.0%)",
+    "archetype": "quantitative_plot",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      530,
+      186,
+      764,
+      301
+    ],
+    "pixel_size": [
+      234,
+      115
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f5_ridges.py",
+    "data": {
+      "digitized_scatter": {
+        "ridge_height_mean_sd": {
+          "x": [
+            34.82,
+            35.51,
+            37.15,
+            38.94,
+            39.3,
+            39.62,
+            39.99,
+            40.36,
+            40.68,
+            41.04
+          ],
+          "y": [
+            12.5,
+            19.853,
+            52.206,
+            35.294,
+            59.559,
+            44.118,
+            48.529,
+            66.912,
+            77.206,
+            86.765
+          ],
+          "y_lo": [
+            4.412,
+            10.294,
+            30.882,
+            22.059,
+            39.706,
+            26.471,
+            26.471,
+            23.529,
+            50.0,
+            54.412
+          ],
+          "y_hi": [
+            20.588,
+            29.412,
+            73.529,
+            48.529,
+            79.412,
+            61.765,
+            70.588,
+            110.294,
+            104.412,
+            119.118
+          ],
+          "n": 10,
+          "x_unit": "% development",
+          "y_unit": "nm"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          54,
+          11,
+          227,
+          114
+        ],
+        "x_range": [
+          34.0412,
+          41.9588
+        ],
+        "y_range": [
+          -0.0,
+          151.4706
+        ],
+        "x_misfit_px": 0.141,
+        "y_misfit_px": 0.0,
+        "mode": "crosshair_errorbars",
+        "kind": "scatter"
+      },
+      "x_tick_misfit_px": 0.141,
+      "y_tick_misfit_px": 0.0,
+      "n_timepoints": 10,
+      "final_41pct_mean": 86.765,
+      "final_41pct_sd": 32.353
+    },
+    "n_digitized_points": 10,
+    "linked_items": [
+      "F5_proto_ridge_height"
+    ],
+    "linked_claims": [
+      "C6_irregular_to_regular_ridge_onset"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_phase_profiles",
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  },
+  {
+    "id": "2021_McDougal/F5/H_spacing",
+    "paper": "2021_McDougal",
+    "figure_id": "F5",
+    "figure_label": "Fig. 5",
+    "panel_id": "H_spacing",
+    "panel_label": "5H (Spacing)",
+    "title": "Nascent ridge periodicity (\u00b5m, mean \u00b1 SD across 3 scales) tightening from irregular undulations to regular ~1.5 \u00b5m spacing",
+    "archetype": "quantitative_plot",
+    "file": "pnas.202112009fig05.jpg",
+    "bbox": [
+      530,
+      300,
+      764,
+      361
+    ],
+    "pixel_size": [
+      234,
+      61
+    ],
+    "context": {
+      "species": "Vanessa cardui",
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "life_stage": "pupa",
+      "scale_type": "cover scale",
+      "imaging_modality": "speckle-correlation reflection phase microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f5_ridges.py",
+    "data": {
+      "digitized_scatter": {
+        "ridge_spacing_mean_sd": {
+          "x": [
+            34.82,
+            35.51,
+            37.15,
+            38.94,
+            39.26,
+            39.62,
+            39.99,
+            40.49,
+            40.86,
+            41.14
+          ],
+          "y": [
+            0.667,
+            1.0,
+            1.833,
+            1.556,
+            1.778,
+            1.222,
+            1.333,
+            1.611,
+            1.444,
+            1.611
+          ],
+          "y_lo": [
+            0.444,
+            0.778,
+            1.111,
+            0.667,
+            0.556,
+            0.778,
+            1.0,
+            1.444,
+            1.111,
+            1.556
+          ],
+          "y_hi": [
+            0.889,
+            1.222,
+            2.556,
+            2.444,
+            3.0,
+            1.667,
+            1.667,
+            1.778,
+            1.778,
+            1.667
+          ],
+          "n": 10,
+          "x_unit": "% development",
+          "y_unit": "\u00b5m"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          54,
+          2,
+          227,
+          31
+        ],
+        "x_range": [
+          34.0412,
+          41.9588
+        ],
+        "y_range": [
+          0.1111,
+          3.3333
+        ],
+        "x_misfit_px": 0.141,
+        "y_misfit_px": 0.5,
+        "mode": "crosshair_errorbars",
+        "kind": "scatter"
+      },
+      "x_tick_misfit_px": 0.141,
+      "y_tick_misfit_px": 0.5,
+      "n_timepoints": 10,
+      "final_41pct_mean": 1.611,
+      "final_41pct_sd": 0.055
+    },
+    "n_digitized_points": 10,
+    "linked_items": [
+      "F5_actin_ridge_spacing"
+    ],
+    "linked_claims": [
+      "C6_irregular_to_regular_ridge_onset"
+    ],
+    "linked_resources": [
+      "mcdougal_zenodo_phase_profiles",
+      "mcdougal_zenodo_matlab_code"
+    ],
+    "caption_quote": "Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development."
+  }
+]

@@ -1,0 +1,177 @@
+{
+  "paper": "2020_Stavenga",
+  "n_figures": 8,
+  "n_atomic_panels": 22,
+  "composite_panels": 0,
+  "n_custom_extractors": 5,
+  "n_fft_panels": 2,
+  "flagged_panels": [],
+  "panels": {
+    "2020_Stavenga/F1/A": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2020_Stavenga/F1/B": {
+      "archetype": "spectral_or_profile",
+      "n_points": 229,
+      "method": "custom:extractors/f1_wings.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2020_Stavenga/F2/A": {
+      "archetype": "planar_microscopy",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2020_Stavenga/F2/B": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 2.2738,
+      "transect_um": 2.1783,
+      "fft_transect_delta_pct": 4.2,
+      "harmonic_ratio_2f": 0.008,
+      "harmonic_guard": "pass",
+      "snr": 37416.1,
+      "confidence": "verified"
+    },
+    "2020_Stavenga/F2/C": {
+      "archetype": "planar_microscopy",
+      "n_points": 12,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 1.9642,
+      "transect_um": 2.0122,
+      "fft_transect_delta_pct": 2.44,
+      "harmonic_ratio_2f": 0.056,
+      "harmonic_guard": "pass",
+      "snr": 105.3,
+      "confidence": "verified"
+    },
+    "2020_Stavenga/F2/D": {
+      "archetype": "planar_microscopy",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2020_Stavenga/F3/A": {
+      "archetype": "spectral_or_profile",
+      "n_points": 345,
+      "method": "custom:extractors/f3_transmittance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2020_Stavenga/F4/A": {
+      "archetype": "planar_microscopy",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2020_Stavenga/F4/B": {
+      "archetype": "planar_microscopy",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2020_Stavenga/F4/C": {
+      "archetype": "planar_microscopy",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2020_Stavenga/F4/D": {
+      "archetype": "planar_microscopy",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2020_Stavenga/F4/E": {
+      "archetype": "spectral_or_profile",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2020_Stavenga/F4/F": {
+      "archetype": "spectral_or_profile",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2020_Stavenga/F4/G": {
+      "archetype": "spectral_or_profile",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2020_Stavenga/F5/A": {
+      "archetype": "spectral_or_profile",
+      "n_points": 230,
+      "method": "custom:extractors/f5_scale_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2020_Stavenga/F5/B": {
+      "archetype": "spectral_or_profile",
+      "n_points": 230,
+      "method": "custom:extractors/f5_scale_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2020_Stavenga/F5/C": {
+      "archetype": "spectral_or_profile",
+      "n_points": 345,
+      "method": "custom:extractors/f5_scale_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2020_Stavenga/F6/A": {
+      "archetype": "spectral_or_profile",
+      "n_points": 252,
+      "method": "custom:extractors/f6_granite_bark.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2020_Stavenga/F7/A": {
+      "archetype": "spectral_or_profile",
+      "n_points": 882,
+      "method": "custom:extractors/f7_forewing_bark.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2020_Stavenga/F8/a": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2020_Stavenga/F8/b": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2020_Stavenga/F8/c": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    }
+  }
+}

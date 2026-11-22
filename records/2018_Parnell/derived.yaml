@@ -1,0 +1,81 @@
+record: 2018_Parnell
+formula_library_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_ingest
+derived:
+  sara_saxs_bragg_q:
+    item: T1_saxs_ridge_spacing
+    group: h_sara_ecuador
+    formula: q = 2*pi/d
+    anchor:
+      quote: one-dimensional scattering plots of scattered intensity, I, as a function of momentum transfer q, where q = (4πsinθ)/λ
+      where: Material and methods
+    library:
+      formula: saxs_bragg_spacing
+      vars:
+        d: d
+        q: q
+    inputs:
+      d:
+        value: T1_saxs_ridge_spacing.values.sara_saxs
+        kind: per sample
+    aggregation: of means
+    note: Rebuilds first-order SAXS momentum transfer peak q = 2*pi / 742 nm = 0.008468 nm^-1 (8.468e6 m^-1) for Ecuadorian H. sara via saxs_bragg_spacing.
+  cyrbia_saxs_bragg_q:
+    item: T1_saxs_ridge_spacing
+    group: h_erato_cyrbia
+    formula: q = 2*pi/d
+    anchor:
+      quote: one-dimensional scattering plots of scattered intensity, I, as a function of momentum transfer q, where q = (4πsinθ)/λ
+      where: Material and methods
+    library:
+      formula: saxs_bragg_spacing
+      vars:
+        d: d
+        q: q
+    inputs:
+      d:
+        value: T1_saxs_ridge_spacing.values.cyrbia_saxs
+        kind: per sample
+    aggregation: of means
+    note: Rebuilds first-order SAXS momentum transfer peak q = 2*pi / 812 nm = 0.007738 nm^-1 (7.738e6 m^-1) for H. erato cyrbia via saxs_bragg_spacing.
+  sara_ridge_density:
+    item: D2_ridge_density
+    group: h_sara_ecuador
+    formula: rho = 1/d
+    anchor:
+      quote: Taxa with lower ridge spacing (higher ridge density) have higher peak reflectance.
+      where: Fig 10 caption
+    library:
+      formula: ridge_density_from_spacing
+      vars:
+        rho: rho
+        d: d
+    inputs:
+      d:
+        value: T1_saxs_ridge_spacing.values.sara_saxs
+        kind: per sample
+    output: D2_ridge_density.values.sara_rho
+    aggregation: of means
+    note: Reciprocal ridge density rho = 1 / 742 nm = 1.348e6 m^-1 (1.35 ridges/um) for iridescent H. sara.
+  demophoon_ridge_density:
+    item: D2_ridge_density
+    group: h_erato_demophoon
+    formula: rho = 1/d
+    anchor:
+      quote: Taxa with lower ridge spacing (higher ridge density) have higher peak reflectance.
+      where: Fig 10 caption
+    library:
+      formula: ridge_density_from_spacing
+      vars:
+        rho: rho
+        d: d
+    inputs:
+      d:
+        value: T1_saxs_ridge_spacing.values.demophoon_saxs
+        kind: per sample
+    output: D2_ridge_density.values.demophoon_rho
+    aggregation: of means
+    note: Reciprocal ridge density rho = 1 / 1063 nm = 0.941e6 m^-1 (0.94 ridges/um) for non-iridescent H. erato demophoon.
+proposals: []

@@ -1,0 +1,1198 @@
+id: 2023_Seah
+field_set: 4
+source:
+  title: Hierarchical morphogenesis of swallowtail butterfly wing scale nanostructures
+  doi: 10.7554/eLife.89082
+  year: '2023'
+  first_author: Kwi Shan Seah
+  last_author: Vinodkumar Saranathan
+  lab: Saranathan lab, Yale-NUS College / National University of Singapore
+  journal: eLife
+  files:
+    - PMC10538957.xml
+    - elife-89082-fig1.jpg
+    - elife-89082-fig2.jpg
+    - elife-89082-fig3.jpg
+    - elife-89082-fig4.jpg
+    - elife-89082-fig5.jpg
+    - elife-89082-fig6.jpg
+    - elife-89082-fig4-figsupp5.jpg
+    - elife-89082-fig4-figsupp5-data1.xlsx
+  not_used:
+    - file: fig1.jpg
+      why: Duplicate copy of elife-89082-fig1.jpg (main Figure 1 segmented from elife-89082-fig1.jpg)
+    - file: fig1_s1.jpg
+      why: Duplicate copy of elife-89082-fig1-figsupp1.jpg (comparative Papilionidae adult SEM plate)
+    - file: elife-89082-fig1-figsupp1.jpg
+      why: Unsegmented supplemental adult scale SEM gallery across Papilionidae and Hypolimnas bolina
+    - file: elife-89082-fig2-figsupp1.jpg
+      why: Unsegmented supplemental 60x confocal time series (38-48% development) of early ridge formation in P. eurimedes
+    - file: elife-89082-fig2-figsupp2.jpg
+      why: Supplemental single-channel split of Figure 2 (48% development P. eurimedes female yellow cover scales)
+    - file: elife-89082-fig2-figsupp3.jpg
+      why: Supplemental single-channel split of Figure 2 (52% development P. eurimedes female yellow cover scales)
+    - file: elife-89082-fig2-figsupp4.jpg
+      why: Supplemental single-channel split of Figure 2 (62% development P. eurimedes female yellow cover scales)
+    - file: elife-89082-fig2-figsupp5.jpg
+      why: Supplemental single-channel split of Figure 2 (~62% development P. eurimedes male black dorsal forewing scales)
+    - file: elife-89082-fig3-figsupp1.jpg
+      why: Supplemental single-channel split of Figure 3 (57% development P. eurimedes lattice SIM)
+    - file: elife-89082-fig3-figsupp2.jpg
+      why: Supplemental single-channel split of Figure 3 (67% development P. eurimedes lattice SIM)
+    - file: elife-89082-fig3-figsupp3.jpg
+      why: Supplemental single-channel split of Figure 3 (76% development P. eurimedes lattice SIM)
+    - file: elife-89082-fig4-figsupp1.jpg
+      why: Supplemental single-channel split of Figure 4 (~52% development P. eurimedes anti-Arp2/phalloidin)
+    - file: elife-89082-fig4-figsupp2.jpg
+      why: Supplemental single-channel split of Figure 4 (~62% development P. eurimedes anti-Arp2/phalloidin)
+    - file: elife-89082-fig4-figsupp3.jpg
+      why: Supplemental single-channel split of Figure 4 (~76% development P. eurimedes anti-Arp2/phalloidin)
+    - file: elife-89082-fig4-figsupp4.jpg
+      why: Supplemental secondary-antibody-only negative controls for Arp2 immunofluorescence at ~62% and ~76% development
+    - file: elife-89082-fig4-figsupp6.jpg
+      why: Unsegmented supplemental confocal and SEM development series of Papilio polytes black cover scales (no honeycombs)
+  missing:
+    - Figure 4—figure supplements 7–8 images (Papilio polytes CK-666 confocal/SEM plates) and Figure 3/5 videos (not harvested locally)
+
+context_anchors:
+  - field: taxon
+    value: Parides eurimedes
+    anchor:
+      quote: Hierarchical nanostructure of wing scales in Parides eurimedes (Papilionidae).
+      where: Fig 1 caption
+  - field: taxon
+    value: Parides iphidamas
+    anchor:
+      quote: FIJI/ImageJ (version 2.1.0/1.53c) measurements of scanning electron microscopy (SEM) images of developing Parides eurimedes and P. iphidamas scales
+      where: Fig 4—figure supplement 5—source data 1 caption
+  - field: taxon
+    value: Papilio polytes
+    anchor:
+      quote: Despite having a few model species (e.g., Papilio xuthus, Papilio polytes, and Papilio machaon)
+      where: Introduction
+  - field: taxon
+    value: P. arcas
+    anchor:
+      quote: In adult male P. arcas, green scales have well-developed honeycomb lattice walls that sit above single gyroid crystals
+      where: Results
+  - field: taxon
+    value: P. nireus
+    anchor:
+      quote: The same is observed in P. nireus, where the upper lamina of adult blue scales consists of an elaborate honeycomb lattice
+      where: Results
+  - field: sex
+    value: male
+    anchor:
+      quote: Adult male with structurally colored green patches on their dorsal forewings.
+      where: Fig 1 caption
+  - field: anatomical_region
+    value: dorsal forewing
+    anchor:
+      quote: Morphogenetic time series of the development of cuticular disks in pupal P. eurimedes dorsal forewing scales, acquired with a 100× confocal microscope.
+      where: Fig 2 caption
+  - field: pattern_element
+    value: green patches
+    anchor:
+      quote: Adult male with structurally colored green patches on their dorsal forewings.
+      where: Fig 1 caption
+  - field: scale_type
+    value: green cover scales
+    anchor:
+      quote: Early development of dorsal forewing green cover scales in pupal male P. eurimedes acquired with 60× confocal microscope.
+      where: Fig 2—figure supplement 1 caption
+  - field: scale_type
+    value: cover scales
+    anchor:
+      quote: Early development of dorsal forewing green cover scales in pupal male P. eurimedes acquired with 60× confocal microscope.
+      where: Fig 2—figure supplement 1 caption
+  - field: functional_architecture
+    value: honeycomb lattices
+    anchor:
+      quote: We comparatively studied the wing scale growth in P. polytes and P. eurimedes, which have irregular crossribs and honeycomb lattices, respectively.
+      where: Results
+  - field: functional_architecture
+    value: irregular crossribs
+    anchor:
+      quote: We comparatively studied the wing scale growth in P. polytes and P. eurimedes, which have irregular crossribs and honeycomb lattices, respectively.
+      where: Results
+  - field: life_stage
+    value: Adult
+    anchor:
+      quote: Adult male with structurally colored green patches on their dorsal forewings.
+      where: Fig 1 caption
+  - field: life_stage
+    value: pupal
+    anchor:
+      quote: Morphogenetic time series of the development of cuticular disks in pupal P. eurimedes dorsal forewing scales, acquired with a 100× confocal microscope.
+      where: Fig 2 caption
+  - field: pupal_stage_pct
+    value: 52%
+    anchor:
+      quote: At 52% pupal development, plasma membrane shows distinct pleating corresponding to the developing ridges, with irregular crossribs in between
+      where: Results
+  - field: pupal_stage_pct
+    value: 57%
+    anchor:
+      quote: Furthermore, in P. eurimedes, the height of the honeycombs in scales from pupae injected at 57% development was higher on average than those treated at 52% development
+      where: Results
+  - field: pupal_stage_pct
+    value: 62%
+    anchor:
+      quote: At around 62% pupal development, ridges appear to have grown to their near-final configuration
+      where: Results
+  - field: pupal_stage_pct
+    value: 67%
+    anchor:
+      quote: As the scales became more sclerotized and flattened out later in development (at 67%), disintegrating F-actin appears to reorganize
+      where: Results
+  - field: pupal_stage_pct
+    value: 76%
+    anchor:
+      quote: By 76% development, the cuticular disks appeared hollow and are surrounded by distinct bulb-like structures formed by the disintegrated F-actin bundles
+      where: Results
+  - field: target_gene
+    value: Arp2/3 complex
+    anchor:
+      quote: we carried out pharmacological disruption experiments in pupae of both Parides and Papilio species using CK-666, a known inhibitor of the Arp2/3 complex
+      where: Results
+  - field: target_gene
+    value: F-actin
+    anchor:
+      quote: We also co-stain chitin and F-actin on the developing pupal scales to investigate the role of cytoskeleton in scale nanostructure formation.
+      where: Results
+  - field: perturbation_modality
+    value: pharmacological disruption
+    anchor:
+      quote: we carried out pharmacological disruption experiments in pupae of both Parides and Papilio species using CK-666, a known inhibitor of the Arp2/3 complex
+      where: Results
+  - field: perturbation_modality
+    value: negative control
+    anchor:
+      quote: Violin plots depict the distribution of honeycomb lattice heights measured from multiple scales of a single emerged male individual either treated with CK-666 or DMSO (negative control) as pupae
+      where: Fig 4—figure supplement 5 caption
+  - field: chemical_agent
+    value: CK-666
+    anchor:
+      quote: we carried out pharmacological disruption experiments in pupae of both Parides and Papilio species using CK-666, a known inhibitor of the Arp2/3 complex
+      where: Results
+  - field: chemical_agent
+    value: DMSO
+    anchor:
+      quote: Violin plots depict the distribution of honeycomb lattice heights measured from multiple scales of a single emerged male individual either treated with CK-666 or DMSO (negative control) as pupae
+      where: Fig 4—figure supplement 5 caption
+  - field: imaging_modality
+    value: Scanning electron microscopy (SEM)
+    anchor:
+      quote: Scanning electron microscopy (SEM) top view and (C) Focused ion beam (FIB)-SEM cross-sectional image of an adult green scale
+      where: Fig 1 caption
+  - field: imaging_modality
+    value: confocal microscope
+    anchor:
+      quote: Morphogenetic time series of the development of cuticular disks in pupal P. eurimedes dorsal forewing scales, acquired with a 100× confocal microscope.
+      where: Fig 2 caption
+  - field: imaging_modality
+    value: lattice structured illumination microscopy (SIM)
+    anchor:
+      quote: Morphogenetic time series of the development of columnar honeycomb lattice in pupal P. eurimedes dorsal forewing scale cells acquired with super-resolution lattice structured illumination microscopy (SIM).
+      where: Fig 3 caption
+  - field: imaging_modality
+    value: 3D structured illumination microscopy (3D-SIM)
+    anchor:
+      quote: Maximum projected 3D structured illumination microscopy (3D-SIM) micrograph of green cover scales in pupal male P. arcas
+      where: Fig 5 caption
+  - field: view_orientation
+    value: top view
+    anchor:
+      quote: Scanning electron microscopy (SEM) top view and (C) Focused ion beam (FIB)-SEM cross-sectional image of an adult green scale
+      where: Fig 1 caption
+  - field: view_orientation
+    value: cross-sections
+    anchor:
+      quote: along with representative scanning electron microscopy (SEM) images of scale cross-sections used in measurements for P. eurimedes (A–C) and P. iphidamas (D–F).
+      where: Fig 4—figure supplement 5 caption
+  - field: hydration_and_prep
+    value: sputter-coated with platinum or gold
+    anchor:
+      quote: All samples were sputter-coated with platinum or gold to increase conductivity and reduce charging.
+      where: Materials and methods
+  - field: hydration_and_prep
+    value: fixed in 4% PEM-PFA
+    anchor:
+      quote: Wings from each pupa were dissected in cold phosphate buffer saline (PBS) and immediately fixed in 4% PEM-PFA at room temperature for 15 min.
+      where: Materials and methods
+
+default_context:
+  genetic_element_type: not applicable
+  allele_or_zygosity: wild type
+
+units:
+  F1_ADULT_ULTRASTRUCTURE:
+    where: Fig. 1B–C, Results, Materials and methods
+    title: Adult Parides eurimedes green dorsal forewing cover scale hierarchical honeycomb ultrastructure
+    context:
+      taxon: Parides eurimedes
+      sex: male
+      anatomical_region: dorsal forewing
+      pattern_element: green patches
+      scale_type: green cover scales
+      functional_architecture: honeycomb lattices
+      life_stage: Adult
+      pupal_stage_pct: not applicable
+      target_gene: none
+      perturbation_modality: wild type
+      chemical_agent: none
+      imaging_modality: Scanning electron microscopy (SEM)
+      view_orientation: top view
+      hydration_and_prep: sputter-coated with platinum or gold
+    groups:
+      eurimedes_adult_green:
+        label: Adult male P. eurimedes green dorsal forewing cover scale (Fig 1B SEM)
+        kind: natural
+        context: {}
+
+  F2_F4_PUPAL_TIMELINE:
+    where: Fig. 2–4, Results, Materials and methods
+    title: Time-resolved pupal developmental duration and cytoskeletal/ridge morphogenesis in Parides eurimedes and Papilio polytes
+    context:
+      sex: male
+      anatomical_region: dorsal forewing
+      pattern_element: green patches
+      scale_type: cover scales
+      life_stage: pupal
+      perturbation_modality: wild type
+      chemical_agent: none
+      hydration_and_prep: fixed in 4% PEM-PFA
+    groups:
+      eurimedes_pupal_duration:
+        label: Parides eurimedes total pupal developmental duration (21 d)
+        kind: natural
+        context:
+          taxon: Parides eurimedes
+          functional_architecture: honeycomb lattices
+          pupal_stage_pct: not applicable
+          target_gene: none
+          imaging_modality: confocal microscope
+          view_orientation: not applicable
+      polytes_pupal_duration:
+        label: Papilio polytes total pupal developmental duration (10 d)
+        kind: natural
+        context:
+          taxon: Papilio polytes
+          functional_architecture: irregular crossribs
+          pupal_stage_pct: not applicable
+          target_gene: none
+          imaging_modality: confocal microscope
+          view_orientation: not applicable
+      eurimedes_52pct_actin:
+        label: P. eurimedes ~52% pupal scales with intact linear F-actin bundles (Fig 4A–B)
+        kind: natural
+        context:
+          taxon: Parides eurimedes
+          functional_architecture: honeycomb lattices
+          pupal_stage_pct: 52%
+          target_gene: F-actin
+          imaging_modality: confocal microscope
+          view_orientation: top view
+      eurimedes_57pct_sim:
+        label: P. eurimedes 57% pupal scales with cuticular disk rows and disintegrating F-actin (Fig 3A–B)
+        kind: natural
+        context:
+          taxon: Parides eurimedes
+          functional_architecture: honeycomb lattices
+          pupal_stage_pct: 57%
+          target_gene: F-actin
+          imaging_modality: lattice structured illumination microscopy (SIM)
+          view_orientation: top view
+      eurimedes_67pct_sim:
+        label: P. eurimedes 67% pupal scales with reorganizing F-actin meshwork and tubular disks (Fig 3A')
+        kind: natural
+        context:
+          taxon: Parides eurimedes
+          functional_architecture: honeycomb lattices
+          pupal_stage_pct: 67%
+          target_gene: F-actin
+          imaging_modality: lattice structured illumination microscopy (SIM)
+          view_orientation: top view
+      eurimedes_76pct_sim:
+        label: P. eurimedes 76% pupal scales with hollow tubular honeycomb walls and bulb-like F-actin (Fig 3A'')
+        kind: natural
+        context:
+          taxon: Parides eurimedes
+          functional_architecture: honeycomb lattices
+          pupal_stage_pct: 76%
+          target_gene: F-actin
+          imaging_modality: lattice structured illumination microscopy (SIM)
+          view_orientation: top view
+
+  F4S5_EURIMEDES_CK666:
+    where: Fig. 4—figure supplement 5A–C, Source data 1 (Panel A), Results
+    title: Pharmacological Arp2/3 inhibition (100 µM CK-666) vs DMSO vehicle control on honeycomb lattice height in Parides eurimedes
+    context:
+      taxon: Parides eurimedes
+      sex: male
+      anatomical_region: dorsal forewing
+      pattern_element: green patches
+      scale_type: green cover scales
+      functional_architecture: honeycomb lattices
+      life_stage: Adult
+      imaging_modality: Scanning electron microscopy (SEM)
+      view_orientation: cross-sections
+      hydration_and_prep: sputter-coated with platinum or gold
+    groups:
+      eur_52_ck666:
+        label: P. eurimedes 100 µM CK-666 injected at 52% (11 d) pupal development
+        kind: perturbed
+        context:
+          pupal_stage_pct: 52%
+          target_gene: Arp2/3 complex
+          perturbation_modality: pharmacological disruption
+          chemical_agent: CK-666
+      eur_52_dmso:
+        label: P. eurimedes DMSO vehicle control injected at 52% (11 d) pupal development
+        kind: wild type
+        context:
+          pupal_stage_pct: 52%
+          target_gene: none
+          perturbation_modality: negative control
+          chemical_agent: DMSO
+      eur_57_ck666:
+        label: P. eurimedes 100 µM CK-666 injected at 57% (12 d) pupal development
+        kind: perturbed
+        context:
+          pupal_stage_pct: 57%
+          target_gene: Arp2/3 complex
+          perturbation_modality: pharmacological disruption
+          chemical_agent: CK-666
+      eur_57_dmso:
+        label: P. eurimedes DMSO vehicle control injected at 57% (12 d) pupal development
+        kind: wild type
+        context:
+          pupal_stage_pct: 57%
+          target_gene: none
+          perturbation_modality: negative control
+          chemical_agent: DMSO
+      eur_67_dmso:
+        label: P. eurimedes DMSO vehicle control injected at 67% (14 d) pupal development
+        kind: wild type
+        context:
+          pupal_stage_pct: 67%
+          target_gene: none
+          perturbation_modality: negative control
+          chemical_agent: DMSO
+
+  F4S5_IPHIDAMAS_CK666:
+    where: Fig. 4—figure supplement 5D–F, Source data 1 (Panel D), Results
+    title: Pharmacological Arp2/3 inhibition (100 µM CK-666) vs DMSO vehicle control on honeycomb lattice height in Parides iphidamas
+    context:
+      taxon: Parides iphidamas
+      sex: male
+      anatomical_region: dorsal forewing
+      pattern_element: green patches
+      scale_type: green cover scales
+      functional_architecture: honeycomb lattices
+      life_stage: Adult
+      pupal_stage_pct: 52%
+      imaging_modality: Scanning electron microscopy (SEM)
+      view_orientation: cross-sections
+      hydration_and_prep: sputter-coated with platinum or gold
+    groups:
+      iph_52_ck666:
+        label: P. iphidamas 100 µM CK-666 injected at 52% (11 d) pupal development
+        kind: perturbed
+        context:
+          target_gene: Arp2/3 complex
+          perturbation_modality: pharmacological disruption
+          chemical_agent: CK-666
+      iph_52_dmso:
+        label: P. iphidamas DMSO vehicle control injected at 52% (11 d) pupal development
+        kind: wild type
+        context:
+          target_gene: none
+          perturbation_modality: negative control
+          chemical_agent: DMSO
+
+  F5_COMPARATIVE_PAPILIONIDAE:
+    where: Fig. 5, Results
+    title: Comparative pupal honeycomb and inter-ridge disk ultrastructure across Papilionidae (Parides arcas and Papilio nireus)
+    context:
+      sex: male
+      anatomical_region: dorsal forewing
+      pattern_element: not applicable
+      scale_type: cover scales
+      functional_architecture: honeycomb lattices
+      life_stage: pupal
+      pupal_stage_pct: not stated
+      target_gene: F-actin
+      perturbation_modality: wild type
+      chemical_agent: none
+      imaging_modality: 3D structured illumination microscopy (3D-SIM)
+      view_orientation: top view
+      hydration_and_prep: fixed in 4% PEM-PFA
+    groups:
+      parides_arcas_pupal:
+        label: Pupal male P. arcas green cover scale (Fig 5B–B' 3D-SIM)
+        kind: natural
+        context:
+          taxon: P. arcas
+      papilio_nireus_pupal:
+        label: Pupal male P. nireus blue cover scale (Fig 5E 3D-SIM)
+        kind: natural
+        context:
+          taxon: P. nireus
+
+evidence:
+  F1B_sem_ridge_spacing:
+    unit: F1_ADULT_ULTRASTRUCTURE
+    measure: ridge spacing
+    method: LivingLit calibrated 2D-FFT and 10-transect profiling on Fig 1B planar SEM (1 µm scale bar)
+    finding: Adult male P. eurimedes dorsal forewing green cover scale longitudinal ridge spacing measures 1.197 µm by 2D-FFT (10-transect mean 1.167 µm, SNR 263)
+    groups:
+      - eurimedes_adult_green
+    values:
+      adult_ridge_d:
+        printed: '1.197'
+        unit: µm
+        kind: value
+        group: eurimedes_adult_green
+        spread: none
+    anchor:
+      quote: Scanning electron microscopy (SEM) top view and (C) Focused ion beam (FIB)-SEM cross-sectional image of an adult green scale showing ridges and honeycomb lattice
+      where: Fig 1 caption
+
+  F1B_sem_crossrib_spacing:
+    unit: F1_ADULT_ULTRASTRUCTURE
+    measure: crossrib spacing
+    method: LivingLit calibrated orthogonal 2D-FFT on Fig 1B planar SEM (1 µm scale bar)
+    finding: Inter-ridge honeycomb pore spacing along the ridge axis of adult P. eurimedes green cover scales measures 0.355 µm (orthogonal 2D-FFT, SNR 38.8)
+    groups:
+      - eurimedes_adult_green
+    values:
+      adult_crossrib_d:
+        printed: '0.355'
+        unit: µm
+        kind: value
+        group: eurimedes_adult_green
+        spread: none
+    anchor:
+      quote: Scanning electron microscopy (SEM) top view and (C) Focused ion beam (FIB)-SEM cross-sectional image of an adult green scale showing ridges and honeycomb lattice
+      where: Fig 1 caption
+
+  D1_eurimedes_ridge_density:
+    unit: F1_ADULT_ULTRASTRUCTURE
+    measure: ridge density
+    method: Reciprocal spatial frequency rho = 1/d derived from Fig 1B adult green cover scale ridge spacing
+    finding: Adult male P. eurimedes green cover scales exhibit a linear ridge density of 0.835 ridges/µm (8.35e5 m^-1)
+    groups:
+      - eurimedes_adult_green
+    values:
+      adult_rho:
+        printed: '0.835e6'
+        unit: m^-1
+        kind: value
+        group: eurimedes_adult_green
+        spread: none
+    anchor:
+      quote: Scanning electron microscopy (SEM) top view and (C) Focused ion beam (FIB)-SEM cross-sectional image of an adult green scale showing ridges and honeycomb lattice
+      where: Fig 1 caption
+
+  M_pupal_duration:
+    unit: F2_F4_PUPAL_TIMELINE
+    measure: developmental milestone timing
+    method: Direct pupation-to-emergence tracking in reared reference batches of P. eurimedes and P. polytes
+    finding: Average total pupal duration from pupation to adult emergence is 21 d for Parides eurimedes and 10 d for Papilio polytes
+    groups:
+      - eurimedes_pupal_duration
+      - polytes_pupal_duration
+    values:
+      eurimedes_total_d:
+        printed: '21'
+        unit: d
+        kind: mean
+        group: eurimedes_pupal_duration
+        spread: not stated
+      polytes_total_d:
+        printed: '10'
+        unit: d
+        kind: mean
+        group: polytes_pupal_duration
+        spread: not stated
+    anchor:
+      quote: The average duration from pupation to emergence is 10 d for P. polytes and 21 d for P. eurimedes.
+      where: Materials and methods
+
+  M_ck666_injection_day:
+    unit: F2_F4_PUPAL_TIMELINE
+    measure: developmental milestone timing
+    method: Pupal injection day post-pupation recorded in Figure 4—figure supplement 5—source data 1 (Panel A)
+    finding: P. eurimedes CK-666 and DMSO pupal injections were administered at 11 d, 12 d, and 14 d after pupation
+    groups:
+      - eurimedes_52pct_actin
+      - eurimedes_57pct_sim
+      - eurimedes_67pct_sim
+    values:
+      day_52pct:
+        printed: '11'
+        unit: d
+        kind: value
+        group: eurimedes_52pct_actin
+        spread: none
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: A6
+      day_57pct:
+        printed: '12'
+        unit: d
+        kind: value
+        group: eurimedes_57pct_sim
+        spread: none
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: A92
+      day_67pct:
+        printed: '14'
+        unit: d
+        kind: value
+        group: eurimedes_67pct_sim
+        spread: none
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: A198
+    anchor:
+      quote: Developmental stage of the pupae at the time of injection are as marked.
+      where: Fig 4—figure supplement 5 caption
+
+  M_ck666_injection_stage_pct:
+    unit: F2_F4_PUPAL_TIMELINE
+    measure: relative pupal development
+    method: Normalization of post-pupation injection days (11 d, 12 d, 14 d) by 21 d total P. eurimedes pupal duration
+    finding: P. eurimedes CK-666 and DMSO injections at 11 d, 12 d, and 14 d APF correspond to 52%, 57%, and 67% relative pupal development
+    groups:
+      - eurimedes_52pct_actin
+      - eurimedes_57pct_sim
+      - eurimedes_67pct_sim
+    values:
+      stage_52pct:
+        printed: '52'
+        unit: '%'
+        kind: value
+        group: eurimedes_52pct_actin
+        spread: none
+      stage_57pct:
+        printed: '57'
+        unit: '%'
+        kind: value
+        group: eurimedes_57pct_sim
+        spread: none
+      stage_67pct:
+        printed: '67'
+        unit: '%'
+        kind: value
+        group: eurimedes_67pct_sim
+        spread: none
+    anchor:
+      quote: We report the percentage of development in our time series for ease of comparison between species with different developmental rates.
+      where: Materials and methods
+
+  F4_actin_bundle_spacing:
+    unit: F2_F4_PUPAL_TIMELINE
+    measure: actin bundle spacing
+    method: LivingLit calibrated 2D-FFT on magenta phalloidin channel of Fig 4A and 4B confocal micrographs (~52% pupal P. eurimedes)
+    finding: Intact linear F-actin bundles in ~52% pupal P. eurimedes scales exhibit a periodic spacing of 1.67 µm in high-magnification Fig 4B (SNR 621, 10-transect mean 1.67 µm)
+    groups:
+      - eurimedes_52pct_actin
+    values:
+      actin_52pct_d:
+        printed: '1.673'
+        unit: µm
+        kind: value
+        group: eurimedes_52pct_actin
+        spread: none
+    anchor:
+      quote: Initially (~52% development), Arp2/3 complex appear as sparse punctate dots while the F-actin bundles are still intact.
+      where: Fig 4 caption
+
+  F3_sim_ridge_spacing:
+    unit: F2_F4_PUPAL_TIMELINE
+    measure: ridge spacing
+    method: LivingLit calibrated 2D-FFT on isolated yellow WGA chitin channel of Fig 3A (57%), 3A' (67%), and 3A'' (76%) lattice SIM micrographs
+    finding: Hydrated pupal P. eurimedes chitinous ridge/disk-row period tracks from 1.78 µm at 57% (Fig 3A) to 1.38 µm at 67% (Fig 3A') and 1.11 µm at 76% development (Fig 3A'')
+    groups:
+      - eurimedes_57pct_sim
+      - eurimedes_67pct_sim
+      - eurimedes_76pct_sim
+    values:
+      sim_57pct_d:
+        printed: '1.783'
+        unit: µm
+        kind: value
+        group: eurimedes_57pct_sim
+        spread: none
+      sim_67pct_d:
+        printed: '1.375'
+        unit: µm
+        kind: value
+        group: eurimedes_67pct_sim
+        spread: none
+      sim_76pct_d:
+        printed: '1.108'
+        unit: µm
+        kind: value
+        group: eurimedes_76pct_sim
+        spread: none
+    anchor:
+      quote: Morphogenetic time series of the development of columnar honeycomb lattice in pupal P. eurimedes dorsal forewing scale cells acquired with super-resolution lattice structured illumination microscopy (SIM).
+      where: Fig 3 caption
+
+  F4S5_eur_all_heights:
+    unit: F4S5_EURIMEDES_CK666
+    measure: honeycomb lattice height
+    method: FIJI/ImageJ (v2.1.0/1.53c) measurements of fractured SEM scale cross-sections from emerged male P. eurimedes pupae injected with 100 µM CK-666 or DMSO (Source data 1, Panel A, N=229)
+    finding: Mean P. eurimedes honeycomb lattice height is 1652.7 ± 539.2 nm (n=40) after 52% CK-666 vs 1859.9 ± 265.9 nm (n=46) in 52% DMSO, 1947.2 ± 311.0 nm (n=70) in 57% CK-666, 1968.1 ± 293.2 nm (n=36) in 57% DMSO, and 1852.3 ± 229.0 nm (n=37) in 67% DMSO
+    groups:
+      - eur_52_ck666
+      - eur_52_dmso
+      - eur_57_ck666
+      - eur_57_dmso
+      - eur_67_dmso
+    n:
+      printed: N = 40 (52% CK-666), 46 (52% DMSO), 70 (57% CK-666), 36 (57% DMSO), 37 (67% DMSO) scale measurements
+      per_group:
+        eur_52_ck666: '40'
+        eur_52_dmso: '46'
+        eur_57_ck666: '70'
+        eur_57_dmso: '36'
+        eur_67_dmso: '37'
+      counts: scale measurements
+      levels:
+        individuals: 1
+        scales: 40
+      test_unit: scales
+      origin: from data
+      data:
+        file: elife-89082-fig4-figsupp5-data1.xlsx
+        sheet: Panel A (P. eurimedes)
+        cells: B6:B234
+    values:
+      eur_52_ck666_h:
+        printed: 1652.7 ± 539.2
+        unit: nm
+        kind: mean
+        group: eur_52_ck666
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B6:B45
+      eur_52_dmso_h:
+        printed: 1859.9 ± 265.9
+        unit: nm
+        kind: mean
+        group: eur_52_dmso
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B46:B91
+      eur_57_ck666_h:
+        printed: 1947.2 ± 311.0
+        unit: nm
+        kind: mean
+        group: eur_57_ck666
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B92:B161
+      eur_57_dmso_h:
+        printed: 1968.1 ± 293.2
+        unit: nm
+        kind: mean
+        group: eur_57_dmso
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B162:B197
+      eur_67_dmso_h:
+        printed: 1852.3 ± 229.0
+        unit: nm
+        kind: mean
+        group: eur_67_dmso
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B198:B234
+    anchor:
+      quote: Violin plots depict the distribution of honeycomb lattice heights measured from multiple scales of a single emerged male individual either treated with CK-666 or DMSO (negative control) as pupae
+      where: Fig 4—figure supplement 5 caption
+
+  F4S5_eur_52_vs_ctrl:
+    unit: F4S5_EURIMEDES_CK666
+    measure: honeycomb lattice height
+    method: One-sided pairwise t-test with pooled SD and Holm multiple-comparison correction in R v4.1.2 (Source data 1, Panel A)
+    finding: 100 µM CK-666 injection at 52% pupal development lowers P. eurimedes honeycomb lattice height by 11.1% vs 52% DMSO control (1652.7 ± 539.2 vs 1859.9 ± 265.9 nm; one-sided Holm p = 0.02169, *p < 0.05)
+    compares:
+      - eur_52_ck666
+      - eur_52_dmso
+    test_of: pair
+    n:
+      printed: n = 40 (52% CK-666) vs n = 46 (52% DMSO) scale measurements from single emerged males
+      per_group:
+        eur_52_ck666: '40'
+        eur_52_dmso: '46'
+      counts: scale measurements
+      levels:
+        individuals: 1
+        scales: 40
+      test_unit: scales
+      origin: from data
+      data:
+        file: elife-89082-fig4-figsupp5-data1.xlsx
+        sheet: Panel A (P. eurimedes)
+        cells: B6:B91
+    values:
+      ck666_52:
+        printed: 1652.7 ± 539.2
+        unit: nm
+        kind: mean
+        group: eur_52_ck666
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B6:B45
+      dmso_52:
+        printed: 1859.9 ± 265.9
+        unit: nm
+        kind: mean
+        group: eur_52_dmso
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B46:B91
+    stats:
+      test: one-sided Student pairwise t-test with pooled SD (Holm-adjusted)
+      p: p < 0.05
+    stated_direction:
+      direction: down
+      anchor:
+        quote: However, the height of the honeycombs in scales from pupae treated on 52% development was on average lower than the control
+        where: Results
+    anchor:
+      quote: However, the height of the honeycombs in scales from pupae treated on 52% development was on average lower than the control
+      where: Results
+    note: Source data 1 cell F8 reports one-sided Holm-adjusted pooled-SD p = 0.02169 (two-sided Holm p = 0.04338, both < 0.05).
+
+  F4S5_eur_52_vs_57_ck666:
+    unit: F4S5_EURIMEDES_CK666
+    measure: honeycomb lattice height
+    method: One-sided pairwise t-test with pooled SD and Holm multiple-comparison correction in R v4.1.2 (Source data 1, Panel A)
+    finding: P. eurimedes pupae injected with CK-666 at 52% development yield significantly shorter honeycomb walls than pupae injected later at 57% development (1652.7 ± 539.2 vs 1947.2 ± 311.0 nm; one-sided Holm p = 0.0001, **p < 0.01)
+    compares:
+      - eur_52_ck666
+      - eur_57_ck666
+    test_of: pair
+    n:
+      printed: n = 40 (52% CK-666) vs n = 70 (57% CK-666) scale measurements
+      per_group:
+        eur_52_ck666: '40'
+        eur_57_ck666: '70'
+      counts: scale measurements
+      levels:
+        individuals: 1
+        scales: 40
+      test_unit: scales
+      origin: from data
+      data:
+        file: elife-89082-fig4-figsupp5-data1.xlsx
+        sheet: Panel A (P. eurimedes)
+        cells: B6:B45,B92:B161
+    values:
+      ck666_52:
+        printed: 1652.7 ± 539.2
+        unit: nm
+        kind: mean
+        group: eur_52_ck666
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B6:B45
+      ck666_57:
+        printed: 1947.2 ± 311.0
+        unit: nm
+        kind: mean
+        group: eur_57_ck666
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B92:B161
+    stats:
+      test: one-sided Student pairwise t-test with pooled SD (Holm-adjusted)
+      p: p < 0.01
+    stated_direction:
+      direction: down
+      anchor:
+        quote: Furthermore, in P. eurimedes, the height of the honeycombs in scales from pupae injected at 57% development was higher on average than those treated at 52% development
+        where: Results
+    anchor:
+      quote: Furthermore, in P. eurimedes, the height of the honeycombs in scales from pupae injected at 57% development was higher on average than those treated at 52% development
+      where: Results
+    note: Source data 1 cell F9 reports one-sided Holm-adjusted pooled-SD p = 0.0001 (two-sided Holm p = 0.00020, both < 0.01).
+
+  F4S5_eur_57_vs_ctrl:
+    unit: F4S5_EURIMEDES_CK666
+    measure: honeycomb lattice height
+    method: One-sided pairwise t-test with pooled SD and Holm multiple-comparison correction in R v4.1.2 (Source data 1, Panel A)
+    finding: CK-666 injection at 57% development produces honeycomb heights indistinguishable from 57% DMSO controls in P. eurimedes (1947.2 ± 311.0 vs 1968.1 ± 293.2 nm; Holm p = 1.0)
+    compares:
+      - eur_57_ck666
+      - eur_57_dmso
+    test_of: pair
+    n:
+      printed: n = 70 (57% CK-666) vs n = 36 (57% DMSO) scale measurements
+      per_group:
+        eur_57_ck666: '70'
+        eur_57_dmso: '36'
+      counts: scale measurements
+      levels:
+        individuals: 1
+        scales: 36
+      test_unit: scales
+      origin: from data
+      data:
+        file: elife-89082-fig4-figsupp5-data1.xlsx
+        sheet: Panel A (P. eurimedes)
+        cells: B92:B197
+    values:
+      ck666_57:
+        printed: 1947.2 ± 311.0
+        unit: nm
+        kind: mean
+        group: eur_57_ck666
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B92:B161
+      dmso_57:
+        printed: 1968.1 ± 293.2
+        unit: nm
+        kind: mean
+        group: eur_57_dmso
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B162:B197
+    stats:
+      test: one-sided Student pairwise t-test with pooled SD (Holm-adjusted)
+      p: p = 1
+    stated_direction:
+      direction: none
+      anchor:
+        quote: the height of the honeycombs in scales from pupae injected at 57% development was higher on average than those treated at 52% development, but indistinguishable from any controls
+        where: Results
+    anchor:
+      quote: the height of the honeycombs in scales from pupae injected at 57% development was higher on average than those treated at 52% development, but indistinguishable from any controls
+      where: Results
+    note: Source data 1 cell H10 reports Holm-adjusted pooled-SD p = 1 (two-sided Holm p = 1.0).
+
+  F4S5_eur_52_vs_67_ctrl:
+    unit: F4S5_EURIMEDES_CK666
+    measure: honeycomb lattice height
+    method: One-sided pairwise t-test with pooled SD and Holm multiple-comparison correction in R v4.1.2 (Source data 1, Panel A)
+    finding: DMSO vehicle controls injected at 52% and 67% development yield identical adult P. eurimedes honeycomb heights (1859.9 ± 265.9 vs 1852.3 ± 229.0 nm; Holm p = 1.0)
+    compares:
+      - eur_52_dmso
+      - eur_67_dmso
+    test_of: pair
+    n:
+      printed: n = 46 (52% DMSO) vs n = 37 (67% DMSO) scale measurements
+      per_group:
+        eur_52_dmso: '46'
+        eur_67_dmso: '37'
+      counts: scale measurements
+      levels:
+        individuals: 1
+        scales: 37
+      test_unit: scales
+      origin: from data
+      data:
+        file: elife-89082-fig4-figsupp5-data1.xlsx
+        sheet: Panel A (P. eurimedes)
+        cells: B46:B91,B198:B234
+    values:
+      dmso_52:
+        printed: 1859.9 ± 265.9
+        unit: nm
+        kind: mean
+        group: eur_52_dmso
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B46:B91
+      dmso_67:
+        printed: 1852.3 ± 229.0
+        unit: nm
+        kind: mean
+        group: eur_67_dmso
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel A (P. eurimedes)
+          cells: B198:B234
+    stats:
+      test: one-sided Student pairwise t-test with pooled SD (Holm-adjusted)
+      p: p = 1
+    stated_direction:
+      direction: none
+      anchor:
+        quote: Violin plots depict the distribution of honeycomb lattice heights measured from multiple scales of a single emerged male individual either treated with CK-666 or DMSO (negative control) as pupae
+        where: Fig 4—figure supplement 5 caption
+    anchor:
+      quote: Violin plots depict the distribution of honeycomb lattice heights measured from multiple scales of a single emerged male individual either treated with CK-666 or DMSO (negative control) as pupae
+      where: Fig 4—figure supplement 5 caption
+    note: Source data 1 cell G11 reports Holm-adjusted pooled-SD p = 1 across 52% vs 67% DMSO controls.
+
+  F4S5_iph_52_vs_ctrl:
+    unit: F4S5_IPHIDAMAS_CK666
+    measure: honeycomb lattice height
+    method: One-sided two-sample Student t-test with pooled SD in R v4.1.2 (Source data 1, Panel D, N=41)
+    finding: 100 µM CK-666 injection at 52% pupal development reduces P. iphidamas honeycomb lattice height by 27.0% vs DMSO control (1410.2 ± 161.5 vs 1931.7 ± 350.7 nm; one-sided p = 4.4e-07, ***p << 0.01)
+    compares:
+      - iph_52_ck666
+      - iph_52_dmso
+    test_of: pair
+    n:
+      printed: n = 18 (52% CK-666) vs n = 23 (52% DMSO) scale measurements from single emerged males
+      per_group:
+        iph_52_ck666: '18'
+        iph_52_dmso: '23'
+      counts: scale measurements
+      levels:
+        individuals: 1
+        scales: 18
+      test_unit: scales
+      origin: from data
+      data:
+        file: elife-89082-fig4-figsupp5-data1.xlsx
+        sheet: Panel D (P. iphidamas)
+        cells: B6:B46
+    values:
+      ck666_52:
+        printed: 1410.2 ± 161.5
+        unit: nm
+        kind: mean
+        group: iph_52_ck666
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel D (P. iphidamas)
+          cells: B6:B23
+      dmso_52:
+        printed: 1931.7 ± 350.7
+        unit: nm
+        kind: mean
+        group: iph_52_dmso
+        spread: SD
+        origin: from data
+        data:
+          file: elife-89082-fig4-figsupp5-data1.xlsx
+          sheet: Panel D (P. iphidamas)
+          cells: B24:B46
+    stats:
+      test: one-sided Student pairwise t-test with pooled SD
+      p: p < 0.01
+    stated_direction:
+      direction: down
+      anchor:
+        quote: However, the height of the honeycombs in scales from pupae treated on 52% development was on average lower than the control
+        where: Results
+    anchor:
+      quote: However, the height of the honeycombs in scales from pupae treated on 52% development was on average lower than the control
+      where: Results
+    note: Source data 1 Panel D cell F7 reports one-sided pooled-SD p = 4.4e-07 (two-sided p = 8.85e-07, ***p << 0.01 in Fig 4—figure supplement 5D).
+
+  F5_comparative_sim_ridge_spacing:
+    unit: F5_COMPARATIVE_PAPILIONIDAE
+    measure: ridge spacing
+    method: LivingLit calibrated 2D-FFT on isolated yellow WGA channel of Fig 5B/5B' (P. arcas) and Fig 5E (P. nireus) 3D-SIM micrographs (1 µm scale bars)
+    finding: Pupal cover scale inter-ridge spacing measures 2.13 µm in P. arcas (Fig 5B', SNR 136.9) and 2.68 µm in P. nireus (Fig 5E, SNR 126.3), with conserved inter-ridge cuticular disk and crossrib templates
+    groups:
+      - parides_arcas_pupal
+      - papilio_nireus_pupal
+    values:
+      arcas_ridge_d:
+        printed: '2.134'
+        unit: µm
+        kind: value
+        group: parides_arcas_pupal
+        spread: none
+      nireus_ridge_d:
+        printed: '2.679'
+        unit: µm
+        kind: value
+        group: papilio_nireus_pupal
+        spread: none
+    anchor:
+      quote: Conservation of honeycomb lattice development in Papilionidae.
+      where: Fig 5 caption
+
+claims:
+  C1_conserved_actin_ridge_spacers:
+    kind: stated
+    quote: Our results uphold the putative conserved role of F-actin bundles in acting as spacers between developing ridges, as previously documented in several nymphalid species.
+    where: Abstract
+    scope: Parides eurimedes and Papilio polytes pupal wing scales
+    direction: linear F-actin bundles pre-pattern periodic longitudinal ridges
+    rests_on:
+      - F4_actin_bundle_spacing
+      - F1B_sem_ridge_spacing
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C2_membrane_crossrib_disk_scaffold:
+    kind: stated
+    quote: By 52% development, hollow vein-like crossribs appear on plasma membrane in between ridges that serve as a scaffold for cuticle accretion.
+    where: Fig 2 caption
+    scope: Parides eurimedes pupal dorsal forewing cover scales (52–62% development)
+    direction: plasma membrane crossribs precede and template planar cuticular disk deposition
+    rests_on:
+      - M_ck666_injection_stage_pct
+      - F3_sim_ridge_spacing
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C3_actin_reorganization_honeycomb_extrusion:
+    kind: stated
+    quote: By 76% development, the cuticular disks appeared hollow and are surrounded by distinct bulb-like structures formed by the disintegrated F-actin bundles
+    where: Results
+    scope: Parides eurimedes pupal dorsal forewing scales (57–76% development)
+    direction: disintegrating F-actin reorganizes around cuticular disks during lumen extrusion into hollow honeycomb tubes
+    rests_on:
+      - F3_sim_ridge_spacing
+      - F4_actin_bundle_spacing
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C4_ck666_52pct_reduces_honeycomb_height:
+    kind: stated
+    quote: However, the height of the honeycombs in scales from pupae treated on 52% development was on average lower than the control
+    where: Results
+    scope: Parides eurimedes and Parides iphidamas adult male scales injected with 100 µM CK-666 at 52% pupal development
+    direction: CK-666 Arp2/3 inhibition at 52% lowers honeycomb lattice height relative to DMSO control
+    asserts_direction: down
+    rests_on:
+      - F4S5_eur_52_vs_ctrl
+      - F4S5_iph_52_vs_ctrl
+      - F4S5_eur_all_heights
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: overstated
+      strength: follows
+      presence: follows
+    note: Raw eLife data confirm lower mean height in both species (P. eurimedes -11.1%, p=0.0217; P. iphidamas -27.0%, p=4.4e-7), but all measurements per group derive from a single emerged male individual (pseudo-replicated scale-level t-tests, as the authors acknowledge in the next sentence).
+
+  C5_ck666_stage_window_57pct_recovery:
+    kind: stated
+    quote: the height of the honeycombs in scales from pupae injected at 57% development was higher on average than those treated at 52% development, but indistinguishable from any controls
+    where: Results
+    scope: Parides eurimedes pupae injected with 100 µM CK-666 at 57% vs 52% development
+    direction: CK-666 loses inhibitory effect on honeycomb height by 57% pupal development
+    asserts_direction: none
+    rests_on:
+      - F4S5_eur_52_vs_57_ck666
+      - F4S5_eur_57_vs_ctrl
+      - F4S5_eur_52_vs_67_ctrl
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: overstated
+      strength: follows
+      presence: follows
+    note: Matches raw eLife data (57% CK-666 mean 1947.2 nm vs 57% DMSO 1968.1 nm, Holm p=1.0; vs 52% CK-666 1652.7 nm, Holm p=0.0001), with replication noted as 1–2 individuals per treatment group.
+
+  C6_ck666_cautious_validation_needed:
+    kind: stated
+    quote: we require data with robust sample sizes and younger time points (i.e., 28–48% development) for Parides spp. in future experiments to validate the role of Arp2/3.
+    where: Results
+    scope: Pharmacological Arp2/3 inhibition across Parides species
+    direction: current CK-666 trend supports a putative Arp2/3 role but requires larger individual-level N and earlier stages
+    rests_on:
+      - F4S5_eur_52_vs_ctrl
+      - F4S5_iph_52_vs_ctrl
+      - M_pupal_duration
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C7_honeycomb_program_conserved_papilionidae:
+    kind: stated
+    quote: Overall, the presence of chitinous disks followed by F-actin reorganization appears to be specific to species with extended honeycomb lattice walls, for example, P. eurimedes, P. arcas, and P. nireus
+    where: Discussion
+    scope: Comparative Papilionidae cover scales (Parides eurimedes, P. arcas, Papilio nireus vs Papilio polytes)
+    direction: cuticular disk accretion and dendritic F-actin reorganization are conserved across honeycomb-bearing papilionids
+    rests_on:
+      - F5_comparative_sim_ridge_spacing
+      - F3_sim_ridge_spacing
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows

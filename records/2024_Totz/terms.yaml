@@ -1,0 +1,43 @@
+record: 2024_Totz
+vocabulary_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_mechanics
+edits: []
+mappings:
+  - field: scale_type
+    stated: cover scales
+    terms: [scale_type:cover_scale]
+  - field: scale_type
+    stated: wing scales
+    terms: [scale_type:wing_scale]
+  - field: scale_type
+    stated: silver wing scale
+    terms: [scale_type:wing_scale]
+  - field: life_stage
+    stated: pupal stage
+    terms: [life_stage:pupa]
+  - field: target_gene
+    stated: actin bundles
+    terms: [target_gene:f_actin_cytoskeleton]
+  - field: imaging_modality
+    stated: scanning electron microscopy
+    terms: [imaging_modality:sem]
+  - field: imaging_modality
+    stated: Transmission electron microscopy
+    terms: [imaging_modality:electron_microscopy]
+  - field: imaging_modality
+    stated: Confocal fluorescence
+    terms: [imaging_modality:confocal]
+  - field: view_orientation
+    stated: surface height
+    terms: [view_orientation:volumetric_3d]
+  - field: view_orientation
+    stated: upper surface
+    terms: [view_orientation:top_down_apical]
+  - field: hydration_and_prep
+    stated: in vivo
+    terms: [hydration_and_prep:live_in_vivo]
+  - field: hydration_and_prep
+    stated: thin gold layer
+    terms: [hydration_and_prep:vacuum_sputter_coated]

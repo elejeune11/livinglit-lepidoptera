@@ -1,0 +1,31 @@
+id: 2024_Livraghi
+doi: 10.1073/pnas.2403326121
+title: A long noncoding RNA at the cortex locus controls adaptive coloration in butterflies
+year: 2024
+journal: PNAS
+oa_status: open_access
+license: CC-BY-NC-ND-4.0
+figure_embed_policy: public_thumbnails
+repositories:
+  - kind: ncbi_sra
+    url: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1031670
+    note: Whole-genome sequencing of Vanessa cardui ivory G1/G2 deletion mutants and wild-type controls (BioProject PRJNA1031670)
+  - kind: osf
+    url: https://osf.io/q3sy7/
+    doi: 10.17605/OSF.IO/Q3SY7
+    note: De novo Trinity transcriptome assemblies for H. erato and H. melpomene morphs and study datasets
+  - kind: ncbi_sra
+    url: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA552081
+    note: Reanalyzed H. melpomene and H. erato pupal wing RNA-seq reads (Hanly et al. 2019, BioProject PRJNA552081)
+files:
+  - file: PMC11388343.xml
+    role: main_text
+  - file: pnas.2403326121fig01.jpg
+    role: main_figure
+  - file: pnas.2403326121fig02.jpg
+    role: main_figure
+  - file: pnas.2403326121fig03.jpg
+    role: main_figure
+  - file: pnas.2403326121fig04.jpg
+    role: main_figure
+not_used: []

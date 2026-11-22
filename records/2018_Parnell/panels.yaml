@@ -1,0 +1,855 @@
+record: 2018_Parnell
+default_context:
+  family: Nymphalidae
+  subfamily: Heliconiinae
+  genus: Heliconius
+  life_stage: adult
+  pattern_element: blue/black wing regions
+figures:
+  F1:
+    label: Fig 1
+    file: rsif20170948-g1.jpg
+    xml_id: RSIF20170948F1
+    title: General ultrastructure of a Heliconius eleuchia blue wing scale tip showing ridges, ridge lamellae, micro-ribs, and trabeculae
+    caption_anchor:
+      quote: The general structures seen on a Heliconius wing scale. The dominant structures are the ridges
+      where: Fig 1
+    context:
+      taxon: Heliconius eleuchia
+      anatomical_region: wing
+      scale_type: wing scale
+      functional_architecture: ridge-lamellar multilayer
+    panels:
+      A:
+        label: 1A
+        title: High-magnification SEM of blue H. eleuchia wing scale tip with overlapping ridge lamellae, micro-ribs (mr), and trabeculae (t) (0.5 µm bar)
+        bbox: [0, 0, 736, 736]
+        archetype: planar_microscopy
+        context:
+          imaging_modality: SEM
+          view_orientation: top-down apical
+          hydration_and_prep: vacuum sputter-coated
+        scale_bar:
+          um: 0.5
+          search_box: [600, 650, 725, 700]
+          polarity: bright
+        periodic_spec:
+          roi: [200, 280, 660, 700]
+          spacing_range_um: [0.5, 1.5]
+          wavevector_angle_deg: [15, 45]
+        linked_items: [F4_F5_sem_ridge_fft]
+        linked_claims: [C1_ridge_lamellae_multilayer]
+
+  F2:
+    label: Fig 2
+    file: rsif20170948-g2.jpg
+    xml_id: RSIF20170948F2
+    title: Heliconius time-calibrated phylogeny (0–15 Myr) highlighting multiple evolutionary origins of iridescent blue colour and mimetic wing phenotypes
+    caption_anchor:
+      quote: Phylogenetic relationships of the species and subspecies investigated in this work
+      where: Fig 2
+    context:
+      anatomical_region: wing
+    panels:
+      A:
+        label: 2A
+        title: Time-calibrated Heliconius phylogeny with dorsal forewing/hindwing photographs of the 7 sampled iridescent and non-iridescent taxa
+        bbox: [0, 0, 632, 991]
+        archetype: phylogeny_or_schematic
+        context:
+          imaging_modality: light microscopy
+          view_orientation: whole-mount
+
+  F3:
+    label: Fig 3
+    file: rsif20170948-g3.jpg
+    xml_id: RSIF20170948F3
+    title: Angle-dependent forewing reflectance profiles across all seven Heliconius taxa and anterior–posterior rotation geometry
+    caption_anchor:
+      quote: Representative reflectance profiles taken from one individual forewing of each of the seven taxa with varying angles.
+      where: Fig 3
+    context:
+      anatomical_region: forewing
+      imaging_modality: microspectrophotometry
+      hydration_and_prep: dry native
+    panels:
+      A:
+        label: 3A
+        title: H. erato cyrbia angular forewing reflectance spectra (-18° to +20°, peak ~22.4% at +12°/411 nm, asymmetric negative angles)
+        bbox: [0, 0, 308, 296]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius erato cyrbia
+          functional_architecture: ridge-lamellar multilayer
+        extractor: extractors/f3_angular_reflectance.py
+        linked_items: [T1_max_reflectance, T1_peak_wavelength]
+        linked_resources: [parnell_reflectance_csv, parnell_pavo_code]
+      B:
+        label: 3B
+        title: H. melpomene cythera angular forewing reflectance spectra (0° to +20°, UV-blue peak ~9.6% at +6°)
+        bbox: [308, 0, 604, 296]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius melpomene cythera
+          functional_architecture: ridge-lamellar multilayer
+        extractor: extractors/f3_angular_reflectance.py
+        linked_items: [T1_max_reflectance, T1_peak_wavelength]
+        linked_resources: [parnell_reflectance_csv]
+      C:
+        label: 3C
+        title: H. erato demophoon non-iridescent angular forewing reflectance spectra (0° to +24°, low flat <2.5% reflectance)
+        bbox: [0, 296, 308, 604]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius erato demophoon
+          functional_architecture: melanin pigmentary
+        extractor: extractors/f3_angular_reflectance.py
+        linked_items: [T1_max_reflectance]
+        linked_resources: [parnell_reflectance_csv]
+      D:
+        label: 3D
+        title: H. melpomene rosina non-iridescent angular forewing reflectance spectra (0° to +14°, low flat <2% reflectance)
+        bbox: [308, 296, 604, 604]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius melpomene rosina
+          functional_architecture: melanin pigmentary
+        extractor: extractors/f3_angular_reflectance.py
+        linked_items: [T1_max_reflectance]
+        linked_resources: [parnell_reflectance_csv]
+      E:
+        label: 3E
+        title: H. eleuchia angular forewing reflectance spectra (0° to +14°, peak ~12.5% near 0°/467 nm)
+        bbox: [0, 604, 308, 912]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius eleuchia
+          functional_architecture: ridge-lamellar multilayer
+        extractor: extractors/f3_angular_reflectance.py
+        linked_items: [T1_max_reflectance, T1_peak_wavelength]
+        linked_resources: [parnell_reflectance_csv]
+      F:
+        label: 3F
+        title: H. cydno angular forewing reflectance spectra (0° to +30°, weak iridescent blue reflectance <2.5%)
+        bbox: [308, 604, 604, 912]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius cydno
+          functional_architecture: ridge-lamellar multilayer
+        extractor: extractors/f3_angular_reflectance.py
+        linked_items: [T1_max_reflectance, T1_peak_wavelength]
+        linked_resources: [parnell_reflectance_csv]
+      G:
+        label: 3G
+        title: H. sara angular forewing reflectance spectra (0° to +10°, bright green-blue peak ~22.3% at +4°/487 nm)
+        bbox: [0, 912, 308, 1203]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius sara
+          functional_architecture: ridge-lamellar multilayer
+        extractor: extractors/f3_angular_reflectance.py
+        linked_items: [T1_max_reflectance, T1_peak_wavelength]
+        linked_resources: [parnell_reflectance_csv]
+      H:
+        label: 3H
+        title: Schematic of anterior–posterior forewing rotation axis (+ proximal, - distal) with H. erato cyrbia wing photo and inset SEM
+        bbox: [308, 912, 604, 1203]
+        archetype: phylogeny_or_schematic
+        context:
+          taxon: Heliconius erato cyrbia
+
+  F4:
+    label: Fig 4
+    file: rsif20170948-g4.jpg
+    xml_id: RSIF20170948F4
+    title: Mean ± SD forewing/hindwing reflectance spectra (n=4) and high-mag SEM wing scale ultrastructure for H. erato group taxa
+    caption_anchor:
+      quote: Reflectance spectra and scanning electron micrographs of wing scales for H. erato group species.
+      where: Fig 4
+    context:
+      scale_type: wing scale
+    panels:
+      A:
+        label: 4A
+        title: H. erato cyrbia mean ± SD reflectance spectra (forewing red solid peaking at 395 nm / 19.3%, hindwing blue dashed)
+        bbox: [0, 0, 355, 274]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius erato cyrbia
+          anatomical_region: forewing and hindwing
+          functional_architecture: ridge-lamellar multilayer
+          imaging_modality: microspectrophotometry
+        extractor: extractors/f4_f5_reflectance.py
+        linked_items: [T1_max_reflectance, T1_peak_wavelength]
+        linked_resources: [parnell_reflectance_csv]
+      B:
+        label: 4B
+        title: High-mag SEM of H. erato cyrbia iridescent blue cover scale ridges showing angled overlapping lamellae (1 µm bar)
+        bbox: [360, 0, 714, 250]
+        archetype: planar_microscopy
+        context:
+          taxon: Heliconius erato cyrbia
+          functional_architecture: ridge-lamellar multilayer
+          imaging_modality: SEM
+          view_orientation: tilted oblique
+          hydration_and_prep: vacuum sputter-coated
+        scale_bar:
+          um: 1.0
+          search_box: [220, 5, 348, 45]
+          polarity: bright
+        periodic_spec:
+          roi: [10, 80, 340, 248]
+          spacing_range_um: [0.4, 1.5]
+          wavevector_angle_deg: [70, -70]
+        linked_items: [F4_F5_sem_ridge_fft]
+        linked_claims: [C1_ridge_lamellae_multilayer]
+      C:
+        label: 4C
+        title: H. erato demophoon mean ± SD non-iridescent reflectance spectra (forewing and hindwing <2.5%)
+        bbox: [0, 275, 355, 564]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius erato demophoon
+          anatomical_region: forewing and hindwing
+          functional_architecture: melanin pigmentary
+          imaging_modality: microspectrophotometry
+        extractor: extractors/f4_f5_reflectance.py
+        linked_items: [T1_max_reflectance]
+        linked_resources: [parnell_reflectance_csv]
+      D:
+        label: 4D
+        title: High-mag SEM of H. erato demophoon non-iridescent black scale ridges showing non-overlapping lamellae (1 µm bar)
+        bbox: [360, 286, 714, 536]
+        archetype: planar_microscopy
+        context:
+          taxon: Heliconius erato demophoon
+          functional_architecture: melanin pigmentary
+          imaging_modality: SEM
+          view_orientation: tilted oblique
+          hydration_and_prep: vacuum sputter-coated
+        scale_bar:
+          um: 1.0
+          search_box: [240, 5, 348, 45]
+          polarity: bright
+        periodic_spec:
+          roi: [10, 45, 340, 240]
+          spacing_range_um: [0.4, 1.8]
+          wavevector_angle_deg: [65, -65]
+        linked_items: [F4_F5_sem_ridge_fft]
+        linked_claims: [C1_ridge_lamellae_multilayer]
+      E:
+        label: 4E
+        title: H. eleuchia mean ± SD reflectance spectra (forewing red solid peaking at 449 nm / 14.3%, hindwing blue dashed)
+        bbox: [0, 565, 355, 854]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius eleuchia
+          anatomical_region: forewing and hindwing
+          functional_architecture: ridge-lamellar multilayer
+          imaging_modality: microspectrophotometry
+        extractor: extractors/f4_f5_reflectance.py
+        linked_items: [T1_max_reflectance, T1_peak_wavelength]
+        linked_resources: [parnell_reflectance_csv]
+      F:
+        label: 4F
+        title: High-mag planar SEM of H. eleuchia iridescent blue scale ridges and cross-ribs (1 µm bar, FFT 0.830 µm)
+        bbox: [360, 577, 714, 827]
+        archetype: planar_microscopy
+        context:
+          taxon: Heliconius eleuchia
+          functional_architecture: ridge-lamellar multilayer
+          imaging_modality: SEM
+          view_orientation: top-down apical
+          hydration_and_prep: vacuum sputter-coated
+        scale_bar:
+          um: 1.0
+          search_box: [260, 5, 348, 45]
+          polarity: bright
+        periodic_spec:
+          roi: [10, 35, 290, 240]
+          spacing_range_um: [0.5, 1.8]
+          wavevector_angle_deg: [65, -65]
+        linked_items: [F4_F5_sem_ridge_fft]
+        linked_claims: [C1_ridge_lamellae_multilayer]
+      G:
+        label: 4G
+        title: H. sara (Ecuador) mean ± SD reflectance spectra (forewing red solid peaking at 495 nm / 30.5%, hindwing blue dashed)
+        bbox: [0, 855, 355, 1157]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius sara
+          anatomical_region: forewing and hindwing
+          functional_architecture: ridge-lamellar multilayer
+          imaging_modality: microspectrophotometry
+        extractor: extractors/f4_f5_reflectance.py
+        linked_items: [T1_max_reflectance, T1_peak_wavelength]
+        linked_claims: [C2_sara_fib_bragg_agreement, C6_sara_regional_hue_divergence]
+        linked_resources: [parnell_reflectance_csv]
+      H:
+        label: 4H
+        title: High-mag SEM of H. sara iridescent blue-green scale showing flat uninterrupted densely packed ridges (1 µm bar)
+        bbox: [360, 867, 714, 1117]
+        archetype: planar_microscopy
+        context:
+          taxon: Heliconius sara
+          functional_architecture: ridge-lamellar multilayer
+          imaging_modality: SEM
+          view_orientation: tilted oblique
+          hydration_and_prep: vacuum sputter-coated
+        scale_bar:
+          um: 1.0
+          search_box: [250, 5, 348, 45]
+          polarity: bright
+        periodic_spec:
+          roi: [10, 35, 340, 240]
+          spacing_range_um: [0.4, 1.5]
+          wavevector_angle_deg: [65, -65]
+        linked_items: [F4_F5_sem_ridge_fft]
+        linked_claims: [C1_ridge_lamellae_multilayer]
+
+  F5:
+    label: Fig 5
+    file: rsif20170948-g5.jpg
+    xml_id: RSIF20170948F5
+    title: Mean ± SD forewing/hindwing reflectance spectra (n=4) and high-mag SEM wing scale ultrastructure for H. melpomene group taxa
+    caption_anchor:
+      quote: Reflectance spectra and scanning electron micrographs of wing scales for H. melpomene group species.
+      where: Fig 5
+    context:
+      scale_type: wing scale
+    panels:
+      A:
+        label: 5A
+        title: H. melpomene cythera mean ± SD reflectance spectra (forewing red solid peaking at 355–362 nm / 6.4%, hindwing blue dashed)
+        bbox: [0, 0, 355, 268]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius melpomene cythera
+          anatomical_region: forewing and hindwing
+          functional_architecture: ridge-lamellar multilayer
+          imaging_modality: microspectrophotometry
+        extractor: extractors/f4_f5_reflectance.py
+        linked_items: [T1_max_reflectance, T1_peak_wavelength]
+        linked_resources: [parnell_reflectance_csv]
+      B:
+        label: 5B
+        title: High-mag planar SEM of H. melpomene cythera iridescent blue scale ridges with curved interrupted lamellae (1 µm bar, FFT 0.835 µm)
+        bbox: [362, 0, 716, 249]
+        archetype: planar_microscopy
+        context:
+          taxon: Heliconius melpomene cythera
+          functional_architecture: ridge-lamellar multilayer
+          imaging_modality: SEM
+          view_orientation: top-down apical
+          hydration_and_prep: vacuum sputter-coated
+        scale_bar:
+          um: 1.0
+          search_box: [230, 15, 348, 55]
+          polarity: bright
+        periodic_spec:
+          roi: [10, 50, 340, 240]
+          spacing_range_um: [0.5, 1.8]
+          wavevector_angle_deg: [65, -65]
+        linked_items: [F4_F5_sem_ridge_fft]
+        linked_claims: [C1_ridge_lamellae_multilayer, C4_clade_reflectance_efficiency]
+      C:
+        label: 5C
+        title: H. melpomene rosina mean ± SD non-iridescent reflectance spectra (forewing and hindwing <2.6%)
+        bbox: [0, 268, 355, 545]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius melpomene rosina
+          anatomical_region: forewing and hindwing
+          functional_architecture: melanin pigmentary
+          imaging_modality: microspectrophotometry
+        extractor: extractors/f4_f5_reflectance.py
+        linked_items: [T1_max_reflectance]
+        linked_resources: [parnell_reflectance_csv]
+      D:
+        label: 5D
+        title: High-mag planar SEM of H. melpomene rosina non-iridescent black scale ridges and wide cross-rib windows (1 µm bar, FFT 1.135 µm)
+        bbox: [362, 273, 716, 523]
+        archetype: planar_microscopy
+        context:
+          taxon: Heliconius melpomene rosina
+          functional_architecture: melanin pigmentary
+          imaging_modality: SEM
+          view_orientation: top-down apical
+          hydration_and_prep: vacuum sputter-coated
+        scale_bar:
+          um: 1.0
+          search_box: [240, 5, 348, 45]
+          polarity: bright
+        periodic_spec:
+          roi: [5, 5, 255, 248]
+          spacing_range_um: [0.6, 1.8]
+          wavevector_angle_deg: [70, -70]
+        linked_items: [F4_F5_sem_ridge_fft]
+      E:
+        label: 5E
+        title: H. cydno mean ± SD reflectance spectra (forewing red solid weak peak ~3.4% at 390 nm, hindwing blue dashed)
+        bbox: [0, 545, 355, 832]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius cydno
+          anatomical_region: forewing and hindwing
+          functional_architecture: ridge-lamellar multilayer
+          imaging_modality: microspectrophotometry
+        extractor: extractors/f4_f5_reflectance.py
+        linked_items: [T1_max_reflectance, T1_peak_wavelength]
+        linked_resources: [parnell_reflectance_csv]
+      F:
+        label: 5F
+        title: High-mag planar SEM of H. cydno iridescent blue scale ridges with curved saw-tooth lamellae (1 µm bar, FFT 0.818 µm)
+        bbox: [362, 547, 716, 797]
+        archetype: planar_microscopy
+        context:
+          taxon: Heliconius cydno
+          functional_architecture: ridge-lamellar multilayer
+          imaging_modality: SEM
+          view_orientation: top-down apical
+          hydration_and_prep: vacuum sputter-coated
+        scale_bar:
+          um: 1.0
+          search_box: [260, 5, 348, 45]
+          polarity: bright
+        periodic_spec:
+          roi: [10, 35, 340, 240]
+          spacing_range_um: [0.5, 1.8]
+          wavevector_angle_deg: [65, -65]
+        linked_items: [F4_F5_sem_ridge_fft]
+        linked_claims: [C4_clade_reflectance_efficiency]
+
+  F6:
+    label: Fig 6
+    file: rsif20170948-g6.jpg
+    xml_id: RSIF20170948F6
+    title: Dark-field optical microscopy and 3D Zeta-20 optical profiler localizing blue reflection to longitudinal ridges in Heliconius vs lower lamina in Aglais io
+    caption_anchor:
+      quote: Optical microscope images showing that the blue colour localizes to the ridge structures in Heliconius.
+      where: Fig 6
+    context:
+      imaging_modality: light microscopy
+      hydration_and_prep: dry native
+    panels:
+      A:
+        label: 6A
+        title: Extended-focus dark-field optical micrograph of H. erato cyrbia scales showing punctuated blue lines strictly along ridges (10 µm dark bar, FFT 0.787 µm)
+        bbox: [0, 0, 391, 392]
+        archetype: planar_microscopy
+        context:
+          taxon: Heliconius erato cyrbia
+          functional_architecture: ridge-lamellar multilayer
+          view_orientation: top-down apical
+        scale_bar:
+          um: 10.0
+          search_box: [260, 10, 385, 45]
+          polarity: dark
+        periodic_spec:
+          roi: [80, 80, 320, 360]
+          spacing_range_um: [0.5, 1.8]
+          wavevector_angle_deg: [-35, 35]
+        linked_claims: [C1_ridge_lamellae_multilayer]
+      B:
+        label: 6B
+        title: Dark-field optical micrograph of Aglais io lower-lamina blue reflector scales showing broad inter-ridge lamina reflection (10 µm bright bar)
+        bbox: [391, 0, 783, 392]
+        archetype: planar_microscopy
+        context:
+          taxon: Aglais io
+          functional_architecture: lower-lamina thin film
+          view_orientation: top-down apical
+        scale_bar:
+          um: 10.0
+          search_box: [30, 10, 160, 45]
+          polarity: bright
+      C:
+        label: 6C
+        title: True-colour 3D Zeta-20 optical profiler surface reconstruction of H. erato cyrbia overlapping cover scales
+        bbox: [0, 392, 783, 787]
+        archetype: macro_morphology
+        context:
+          taxon: Heliconius erato cyrbia
+          functional_architecture: ridge-lamellar multilayer
+          view_orientation: 3D volumetric
+
+  F7:
+    label: Fig 7
+    file: rsif20170948-g7.jpg
+    xml_id: RSIF20170948F7
+    title: Single-scale 514.5 nm Raman spectra showing comparable melanin bands (1408 and 1588 cm^-1) in iridescent blue and non-iridescent black Heliconius cover scales vs low-melanin Aglais io
+    caption_anchor:
+      quote: Single scale Raman spectra measurements from cover scales.
+      where: Fig 7
+    context:
+      scale_type: cover scale
+      hydration_and_prep: dry native
+    panels:
+      A:
+        label: 7A
+        title: Single-scale Raman spectra (1000–2000 cm^-1) for all 7 Heliconius taxa and Aglais io with melanin aromatic stretching peaks at 1408 and 1588 cm^-1
+        bbox: [0, 0, 711, 393]
+        archetype: spectral_or_profile
+        context:
+          imaging_modality: Raman spectroscopy
+        extractor: extractors/f7_raman.py
+        linked_claims: [C1_ridge_lamellae_multilayer]
+
+  F8:
+    label: Fig 8
+    file: rsif20170948-g8.jpg
+    xml_id: RSIF20170948F8
+    title: FIB-SEM vertical ridge cross-sections contrasting smooth triangular ridges in non-iridescent H. erato demophoon against periodic crenelated multilayer lamellae in iridescent H. sara
+    caption_anchor:
+      quote: Focused ion beam interrogation of the surface of a H. erato demophoon cover scale (a) and a H. sara cover scale (b)
+      where: Fig 8
+    context:
+      scale_type: cover scale
+      imaging_modality: FIB-SEM
+      view_orientation: cross-section
+      hydration_and_prep: FIB milled
+    panels:
+      A:
+        label: 8A
+        title: FIB-SEM milled cross-section overview of non-iridescent H. erato demophoon cover scale ridges under protective Pt cap (2 µm bar)
+        bbox: [0, 0, 330, 280]
+        archetype: cross_section
+        context:
+          taxon: Heliconius erato demophoon
+          functional_architecture: melanin pigmentary
+        scale_bar:
+          um: 2.0
+          search_box: [200, 5, 325, 35]
+          polarity: bright
+        linked_claims: [C1_ridge_lamellae_multilayer]
+      B:
+        label: 8B
+        title: FIB-SEM milled cross-section overview of iridescent H. sara cover scale ridges showing crenelated periodic lamellae (2 µm bar)
+        bbox: [330, 0, 661, 280]
+        archetype: cross_section
+        context:
+          taxon: Heliconius sara
+          functional_architecture: ridge-lamellar multilayer
+        scale_bar:
+          um: 2.0
+          search_box: [190, 250, 325, 278]
+          polarity: bright
+        linked_items: [F8_sara_lamella_wavelength]
+        linked_claims: [C1_ridge_lamellae_multilayer, C2_sara_fib_bragg_agreement]
+      C:
+        label: 8C
+        title: Zoomed FIB-SEM vertical ridge profile of H. erato demophoon highlighted in white showing smooth triangular non-periodic profile (0.5 µm bar)
+        bbox: [0, 280, 330, 447]
+        archetype: cross_section
+        context:
+          taxon: Heliconius erato demophoon
+          functional_architecture: melanin pigmentary
+        scale_bar:
+          um: 0.5
+          search_box: [5, 115, 70, 145]
+          polarity: bright
+        linked_claims: [C1_ridge_lamellae_multilayer]
+      D:
+        label: 8D
+        title: Zoomed FIB-SEM vertical ridge profile of H. sara highlighted in white showing ~2 periodic chitin/air lamellar protrusions (204 ± 10 nm period, 0.5 µm bar)
+        bbox: [330, 280, 661, 447]
+        archetype: cross_section
+        context:
+          taxon: Heliconius sara
+          functional_architecture: ridge-lamellar multilayer
+        scale_bar:
+          um: 0.5
+          search_box: [250, 115, 325, 145]
+          polarity: bright
+        linked_items: [F8_sara_lamella_wavelength]
+        linked_claims: [C1_ridge_lamellae_multilayer, C2_sara_fib_bragg_agreement]
+
+  F9:
+    label: Fig 9
+    file: rsif20170948-g9.jpg
+    xml_id: RSIF20170948F9
+    title: Tapping-mode AFM longitudinal ridge curvature profiles (all 7 taxa), H. cydno surface topography, and transverse ridge height profiles
+    caption_anchor:
+      quote: The ridge profile extracted from a single ridge for each of the seven taxa using AFM scans.
+      where: Fig 9
+    context:
+      scale_type: cover scale
+      imaging_modality: AFM/SPM
+      hydration_and_prep: dry native
+    panels:
+      A:
+        label: 9A
+        title: Longitudinal single-ridge AFM height profiles (0–7 µm) across all 7 taxa showing flat H. sara/eleuchia ridges vs curved saw-tooth H. melpomene/cydno profiles
+        bbox: [0, 0, 312, 334]
+        archetype: spectral_or_profile
+        extractor: extractors/f9_afm_profiles.py
+        partial_x_range: true
+        linked_items: [T1_afm_ridge_spacing]
+        linked_claims: [C4_clade_reflectance_efficiency]
+      B:
+        label: 9B
+        title: Representative tapping-mode AFM height topography image (271–1085 nm) of H. cydno iridescent blue scale with longitudinal/transverse transect lines (1 µm bar, FFT 1.011 µm)
+        bbox: [312, 0, 700, 334]
+        archetype: planar_microscopy
+        context:
+          taxon: Heliconius cydno
+          functional_architecture: ridge-lamellar multilayer
+          view_orientation: top-down apical
+        scale_bar:
+          um: 1.0
+          search_box: [30, 35, 105, 40]
+          px: 72.0
+          polarity: bright
+        periodic_spec:
+          roi: [25, 65, 295, 295]
+          spacing_range_um: [0.6, 1.8]
+          wavevector_angle_deg: [-35, 10]
+        linked_items: [T1_afm_ridge_spacing]
+      C:
+        label: 9C
+        title: Transverse AFM cross-ridge height profile of iridescent H. sara showing tightly spaced ~0.72 µm ridges and ~1.0 µm relief
+        bbox: [0, 334, 316, 525]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius sara
+          functional_architecture: ridge-lamellar multilayer
+        extractor: extractors/f9_afm_profiles.py
+        partial_x_range: true
+        linked_items: [T1_afm_ridge_spacing]
+      D:
+        label: 9D
+        title: Transverse AFM cross-ridge height profile of non-iridescent H. erato demophoon showing wider ~1.15 µm ridges and ~1.1 µm relief
+        bbox: [316, 334, 700, 525]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius erato demophoon
+          functional_architecture: melanin pigmentary
+        extractor: extractors/f9_afm_profiles.py
+        linked_items: [T1_afm_ridge_spacing]
+      E:
+        label: 9E
+        title: Transverse AFM cross-ridge height profile of iridescent H. erato cyrbia showing ~0.89 µm ridge spacing
+        bbox: [0, 525, 316, 714]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius erato cyrbia
+          functional_architecture: ridge-lamellar multilayer
+        extractor: extractors/f9_afm_profiles.py
+        linked_items: [T1_afm_ridge_spacing]
+      F:
+        label: 9F
+        title: Transverse AFM cross-ridge height profile of non-iridescent H. melpomene rosina showing wide ~1.25 µm ridge spacing
+        bbox: [316, 525, 700, 714]
+        archetype: spectral_or_profile
+        context:
+          taxon: Heliconius melpomene rosina
+          functional_architecture: melanin pigmentary
+        extractor: extractors/f9_afm_profiles.py
+        linked_items: [T1_afm_ridge_spacing]
+
+  F10:
+    label: Fig 10
+    file: rsif20170948-g10.jpg
+    xml_id: RSIF20170948F10
+    title: Negative correlation between SAXS ridge spacing (mean ± SD, nm) and forewing maximum reflectance (mean ± SD, %) across all seven Heliconius taxa
+    caption_anchor:
+      quote: Taxa with lower ridge spacing (higher ridge density) have higher peak reflectance.
+      where: Fig 10
+    context:
+      imaging_modality: SAXS
+      hydration_and_prep: dry native
+    panels:
+      A:
+        label: 10A
+        title: SAXS ridge spacing (700–1100 nm) vs forewing maximum reflectance (0–40%) with bidirectional ±SD error bars for all 7 taxa (r = -0.829, p = 0.021)
+        bbox: [0, 0, 631, 557]
+        archetype: quantitative_plot
+        extractor: extractors/f10_saxs_reflectance.py
+        linked_items: [T1_saxs_ridge_spacing, T1_max_reflectance, F10_spacing_reflectance_corr]
+        linked_claims: [C3_saxs_spacing_reflectance_correlation, C4_clade_reflectance_efficiency, C5_comimetic_ridge_density_convergence]
+        linked_resources: [parnell_saxs_1d, parnell_reflectance_csv]
+
+  F11:
+    label: Fig 11
+    file: rsif20170948-g11.jpg
+    xml_id: RSIF20170948F11
+    title: PAVO receptor-noise chromatic and achromatic visual discriminability (JNDs) of co-mimetic pairs across 5 visual systems, forewing/hindwing, and daylight/forest shade
+    caption_anchor:
+      quote: Discriminabilities of co-mimetic species pairs (H. erato cyrbia versus H. melpomene cythera and H. cydno versus H. eleuchia) for iridescent forewing and hindwing regions
+      where: Fig 11
+    context:
+      imaging_modality: microspectrophotometry
+      functional_architecture: ridge-lamellar multilayer
+    panels:
+      A:
+        label: 11A
+        title: Forewing daylight chromatic JNDs for H. erato cyrbia vs H. melpomene cythera (avian vs Heliconius types I–IV)
+        bbox: [0, 0, 239, 276]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: forewing
+          taxon: Heliconius erato cyrbia / Heliconius melpomene cythera
+        extractor: extractors/f11_pavo_jnd.py
+        linked_items: [F11_chromatic_jnd_cyrbia_cythera]
+        linked_claims: [C7_avian_exceeds_heliconius_discrimination]
+        linked_resources: [parnell_pavo_code]
+      B:
+        label: 11B
+        title: Forewing daylight chromatic JNDs for H. cydno vs H. eleuchia (avian vs Heliconius types I–IV)
+        bbox: [239, 0, 474, 276]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: forewing
+          taxon: Heliconius cydno / Heliconius eleuchia
+        extractor: extractors/f11_pavo_jnd.py
+        linked_items: [F11_chromatic_jnd_cydno_eleuchia]
+        linked_claims: [C7_avian_exceeds_heliconius_discrimination]
+        linked_resources: [parnell_pavo_code]
+      C:
+        label: 11C
+        title: Forewing daylight achromatic JNDs for H. erato cyrbia vs H. melpomene cythera (avian vs Heliconius)
+        bbox: [474, 0, 618, 276]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: forewing
+          taxon: Heliconius erato cyrbia / Heliconius melpomene cythera
+        extractor: extractors/f11_pavo_jnd.py
+        linked_items: [F11_achromatic_jnd]
+        linked_resources: [parnell_pavo_code]
+      D:
+        label: 11D
+        title: Forewing daylight achromatic JNDs for H. cydno vs H. eleuchia (avian vs Heliconius)
+        bbox: [618, 0, 755, 276]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: forewing
+          taxon: Heliconius cydno / Heliconius eleuchia
+        extractor: extractors/f11_pavo_jnd.py
+        linked_items: [F11_achromatic_jnd]
+        linked_resources: [parnell_pavo_code]
+      E:
+        label: 11E
+        title: Forewing forest-shade chromatic JNDs for H. erato cyrbia vs H. melpomene cythera (avian vs Heliconius types I–IV)
+        bbox: [0, 276, 239, 548]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: forewing
+          taxon: Heliconius erato cyrbia / Heliconius melpomene cythera
+        extractor: extractors/f11_pavo_jnd.py
+        linked_claims: [C7_avian_exceeds_heliconius_discrimination]
+        linked_resources: [parnell_pavo_code]
+      F:
+        label: 11F
+        title: Forewing forest-shade chromatic JNDs for H. cydno vs H. eleuchia (avian vs Heliconius types I–IV)
+        bbox: [239, 276, 474, 548]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: forewing
+          taxon: Heliconius cydno / Heliconius eleuchia
+        extractor: extractors/f11_pavo_jnd.py
+        linked_claims: [C7_avian_exceeds_heliconius_discrimination]
+        linked_resources: [parnell_pavo_code]
+      G:
+        label: 11G
+        title: Forewing forest-shade achromatic JNDs for H. erato cyrbia vs H. melpomene cythera (avian vs Heliconius)
+        bbox: [474, 276, 618, 548]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: forewing
+          taxon: Heliconius erato cyrbia / Heliconius melpomene cythera
+        extractor: extractors/f11_pavo_jnd.py
+        linked_resources: [parnell_pavo_code]
+      H:
+        label: 11H
+        title: Forewing forest-shade achromatic JNDs for H. cydno vs H. eleuchia (avian vs Heliconius)
+        bbox: [618, 276, 755, 548]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: forewing
+          taxon: Heliconius cydno / Heliconius eleuchia
+        extractor: extractors/f11_pavo_jnd.py
+        linked_resources: [parnell_pavo_code]
+      I:
+        label: 11I
+        title: Hindwing daylight chromatic JNDs for H. erato cyrbia vs H. melpomene cythera (avian vs Heliconius types I–IV)
+        bbox: [0, 548, 239, 820]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: hindwing
+          taxon: Heliconius erato cyrbia / Heliconius melpomene cythera
+        extractor: extractors/f11_pavo_jnd.py
+        linked_claims: [C7_avian_exceeds_heliconius_discrimination]
+        linked_resources: [parnell_pavo_code]
+      J:
+        label: 11J
+        title: Hindwing daylight chromatic JNDs for H. cydno vs H. eleuchia (avian vs Heliconius types I–IV)
+        bbox: [239, 548, 474, 820]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: hindwing
+          taxon: Heliconius cydno / Heliconius eleuchia
+        extractor: extractors/f11_pavo_jnd.py
+        linked_claims: [C7_avian_exceeds_heliconius_discrimination]
+        linked_resources: [parnell_pavo_code]
+      K:
+        label: 11K
+        title: Hindwing daylight achromatic JNDs for H. erato cyrbia vs H. melpomene cythera (avian vs Heliconius)
+        bbox: [474, 548, 618, 820]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: hindwing
+          taxon: Heliconius erato cyrbia / Heliconius melpomene cythera
+        extractor: extractors/f11_pavo_jnd.py
+        linked_resources: [parnell_pavo_code]
+      L:
+        label: 11L
+        title: Hindwing daylight achromatic JNDs for H. cydno vs H. eleuchia (avian vs Heliconius)
+        bbox: [618, 548, 755, 820]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: hindwing
+          taxon: Heliconius cydno / Heliconius eleuchia
+        extractor: extractors/f11_pavo_jnd.py
+        linked_resources: [parnell_pavo_code]
+      M:
+        label: 11M
+        title: Hindwing forest-shade chromatic JNDs for H. erato cyrbia vs H. melpomene cythera (avian vs Heliconius types I–IV)
+        bbox: [0, 820, 239, 1077]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: hindwing
+          taxon: Heliconius erato cyrbia / Heliconius melpomene cythera
+        extractor: extractors/f11_pavo_jnd.py
+        linked_claims: [C7_avian_exceeds_heliconius_discrimination]
+        linked_resources: [parnell_pavo_code]
+      N:
+        label: 11N
+        title: Hindwing forest-shade chromatic JNDs for H. cydno vs H. eleuchia (avian vs Heliconius types I–IV)
+        bbox: [239, 820, 474, 1077]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: hindwing
+          taxon: Heliconius cydno / Heliconius eleuchia
+        extractor: extractors/f11_pavo_jnd.py
+        linked_claims: [C7_avian_exceeds_heliconius_discrimination]
+        linked_resources: [parnell_pavo_code]
+      O:
+        label: 11O
+        title: Hindwing forest-shade achromatic JNDs for H. erato cyrbia vs H. melpomene cythera (avian vs Heliconius)
+        bbox: [474, 820, 618, 1077]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: hindwing
+          taxon: Heliconius erato cyrbia / Heliconius melpomene cythera
+        extractor: extractors/f11_pavo_jnd.py
+        linked_resources: [parnell_pavo_code]
+      P:
+        label: 11P
+        title: Hindwing forest-shade achromatic JNDs for H. cydno vs H. eleuchia (avian vs Heliconius)
+        bbox: [618, 820, 755, 1077]
+        archetype: quantitative_plot
+        context:
+          anatomical_region: hindwing
+          taxon: Heliconius cydno / Heliconius eleuchia
+        extractor: extractors/f11_pavo_jnd.py
+        linked_resources: [parnell_pavo_code]

@@ -1,0 +1,107 @@
+record: 2021_McDougal
+resources:
+  - id: mcdougal_zenodo_scale_measurements
+    kind: dataset
+    repository: Zenodo
+    title: Pupal cover scale 3D length, width, and thickness measurements for specimen A40 (Fig. 5C–F)
+    url: https://doi.org/10.5281/zenodo.5532941
+    doi: 10.5281/zenodo.5532941
+    license: CC-BY-NC-ND-4.0
+    local_files:
+      - measured_A40ScaleMeasurements.xlsx
+    feeds_panels:
+      - 2021_McDougal/F5/C
+      - 2021_McDougal/F5/D
+      - 2021_McDougal/F5/E
+      - 2021_McDougal/F5/F
+    feeds_items:
+      - F5_scale_width
+      - F5_scale_thickness
+      - F5_scale_length
+      - F5_width_expansion_contrast
+      - F5_thinning_contrast
+      - D2_scale_area_41pct
+    summary:
+      specimen: A40
+      full_pupal_duration_d: 11.848
+      time_points: 6
+      n_scale_observations: 15
+      age_range_d: [3.52, 6.36]
+      stage_range_pct: [29.7, 53.7]
+
+  - id: mcdougal_zenodo_phase_profiles
+    kind: dataset
+    repository: Zenodo
+    title: Ten unwrapped 1D phase-profile .mat tables for pupa A40 ridge height and periodicity (34.8–41.0% development, Fig. 5H)
+    url: https://doi.org/10.5281/zenodo.5532941
+    doi: 10.5281/zenodo.5532941
+    license: CC-BY-NC-ND-4.0
+    local_files:
+      - measured_A-40-01_10_10_52_set_97-d4.12phaseProfiles.mat
+      - measured_A-40-01_10_12_52_set_99-d4.21phaseProfiles.mat
+      - measured_A-40-01_10_17_34_set_104-d4.40phaseProfiles.mat
+      - measured_A-40-01_10_22_34_set_109-d4.61phaseProfiles.mat
+      - measured_A-40-01_10_23_34_set_110-d4.65phaseProfiles.mat
+      - measured_A-40-01_11_00_34_set_111-d4.70phaseProfiles.mat
+      - measured_A-40-01_11_01_34_set_112-d4.74phaseProfiles.mat
+      - measured_A-40-01_11_02_34_set_113-d4.78phaseProfiles.mat
+      - measured_A-40-01_11_03_34_set_114-d4.82phaseProfiles.mat
+      - measured_A-40-01_11_04_34_set_115-d4.86phaseProfiles.mat
+    feeds_panels:
+      - 2021_McDougal/F5/H_height
+      - 2021_McDougal/F5/H_spacing
+    feeds_items:
+      - F5_proto_ridge_height
+      - F5_actin_ridge_spacing
+    summary:
+      n_timepoints: 10
+      age_range_d: [4.12, 4.86]
+      stage_range_pct: [34.8, 41.0]
+
+  - id: mcdougal_zenodo_matlab_code
+    kind: code
+    repository: Zenodo
+    title: MATLAB figure generation, phase unwrapping, deconvolution, and 2D Fourier periodicity scripts
+    url: https://doi.org/10.5281/zenodo.5532941
+    doi: 10.5281/zenodo.5532941
+    license: CC-BY-NC-ND-4.0
+    local_files:
+      - README.md
+      - makeFig1.m
+      - makeFig2.m
+      - makeFig3.m
+      - makeFig4.m
+      - makeFig5AB.m
+      - makeFig5CDEF.m
+      - makeFig5G.m
+      - makeFig5H.m
+      - analyzePhaseProfile.m
+      - analyzeActinRidgePeriod.m
+      - lineplaneL.m
+      - phaseGradOr.m
+      - phaseProfiler2.m
+      - pooledMeanVar.m
+    feeds_panels:
+      - 2021_McDougal/F1/E
+      - 2021_McDougal/F1/F
+      - 2021_McDougal/F2/G
+      - 2021_McDougal/F2/H
+      - 2021_McDougal/F2/I
+      - 2021_McDougal/F2/J
+      - 2021_McDougal/F2/K
+      - 2021_McDougal/F5/A_bot
+      - 2021_McDougal/F5/B_bot
+      - 2021_McDougal/F5/C
+      - 2021_McDougal/F5/D
+      - 2021_McDougal/F5/E
+      - 2021_McDougal/F5/F
+      - 2021_McDougal/F5/G
+      - 2021_McDougal/F5/H_height
+      - 2021_McDougal/F5/H_spacing
+    feeds_items:
+      - F5_scale_length
+      - F5_actin_ridge_spacing
+      - F5_proto_ridge_height
+    summary:
+      n_scripts_total: 33
+      language: MATLAB R2019b

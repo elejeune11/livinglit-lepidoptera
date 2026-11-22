@@ -1,0 +1,865 @@
+id: 2024_Livraghi
+field_set: 4
+source:
+  title: A long noncoding RNA at the cortex locus controls adaptive coloration in butterflies
+  doi: 10.1073/pnas.2403326121
+  year: '2024'
+  first_author: Luca Livraghi
+  last_author: Arnaud Martin
+  lab: Martin lab, George Washington University
+  journal: PNAS
+  files:
+    - PMC11388343.xml
+  not_used:
+    - file: pnas.2403326121fig01.jpg
+      why: Decomposed into atomic macro_morphology and genomic_track_or_locus panels in panels.yaml
+    - file: pnas.2403326121fig02.jpg
+      why: Decomposed into 27 atomic crispant_phenotype_plate, macro_morphology, and expression_imaging panels in panels.yaml
+    - file: pnas.2403326121fig03.jpg
+      why: Decomposed into 14 atomic crispant, radiolabeling, WGS depth, Sanger ICE, and structural panels in panels.yaml with custom plot extractors
+    - file: pnas.2403326121fig04.jpg
+      why: Decomposed into 36 atomic crispant_phenotype_plate and macro_morphology panels for A. incarnata and D. plexippus in panels.yaml
+  missing:
+    - SI Appendix 01 PDF (Figs. S1–S19 and Tables S1–S4 with per-species CRISPR injection counts, sgRNA sequences, and riboprobe primers; referenced in XML as local-data)
+
+context_anchors:
+  - field: taxon
+    value: Heliconius melpomene
+    anchor:
+      quote: Heliconius melpomene and Heliconius erato each exhibit intraspecific variation in their color patterns across the Neotropics.
+      where: Introduction
+  - field: taxon
+    value: Heliconius erato
+    anchor:
+      quote: Heliconius melpomene and Heliconius erato each exhibit intraspecific variation in their color patterns across the Neotropics.
+      where: Introduction
+  - field: taxon
+    value: Heliconius melpomene and Heliconius erato
+    anchor:
+      quote: Heliconius melpomene and Heliconius erato each exhibit intraspecific variation in their color patterns across the Neotropics.
+      where: Introduction
+  - field: taxon
+    value: H. erato, H. charithonia, and Vanessa cardui
+    anchor:
+      quote: These mosaic knock-outs, conducted in H. erato, H. charithonia, and Vanessa cardui, generated butterflies with pronounced shifts in pigmentation
+      where: Results
+  - field: taxon
+    value: Vanessa cardui
+    anchor:
+      quote: Genotyping of Vanessa cardui germline mutants associates these phenotypes to small on-target deletions at the conserved first exon of ivory.
+      where: Abstract
+  - field: taxon
+    value: Agraulis incarnata
+    anchor:
+      quote: CRISPR/Cas9 targeting of ivory in Agraulis incarnata and Danaus plexippus resulted in crispants displaying scale transformations from melanic to yellow-white states
+      where: Results
+  - field: taxon
+    value: Danaus plexippus
+    anchor:
+      quote: CRISPR/Cas9 targeting of ivory in Agraulis incarnata and Danaus plexippus resulted in crispants displaying scale transformations from melanic to yellow-white states
+      where: Results
+  - field: life_stage
+    value: pupal
+    anchor:
+      quote: we reanalyzed RNA-seq data from pupal wings of H. melpomene and H. erato
+      where: Results
+  - field: life_stage
+    value: adult
+    anchor:
+      quote: Expression of ivory in 30% pupal wing tissue of H. erato prefigures adult melanic scales
+      where: Fig 2 caption
+  - field: life_stage
+    value: adults
+    anchor:
+      quote: The high penetrance of this phenotype (in 57% of adults), as well as the large size of mutant clones
+      where: Results
+  - field: pupal_stage_pct
+    value: 20%
+    anchor:
+      quote: From 36 h after pupa formation, or ∼20% of pupal development, cortex expression significantly decreases and ivory is detected
+      where: Results
+  - field: pupal_stage_pct
+    value: 30%
+    anchor:
+      quote: Expression of ivory in 30% pupal wing tissue of H. erato prefigures adult melanic scales
+      where: Fig 2 caption
+  - field: pupal_stage_pct
+    value: 20 to 35%
+    anchor:
+      quote: Developing wings were dissected at 20 to 35% pupal development, incubated in fixative for 30 to 40 min
+      where: Methods
+  - field: anatomical_region
+    value: pupal wings
+    anchor:
+      quote: we reanalyzed RNA-seq data from pupal wings of H. melpomene and H. erato
+      where: Results
+  - field: anatomical_region
+    value: pupal hindwings
+    anchor:
+      quote: ATAC-seq tracks from normalized average read depth from 36 h pupal hindwings are shown in green
+      where: Fig 1 caption
+  - field: anatomical_region
+    value: wings
+    anchor:
+      quote: produced F 1 individuals, again displaying no pigmentation changes on their wings
+      where: Results
+  - field: anatomical_region
+    value: wings and body
+    anchor:
+      quote: These scale color shifts were observed both on the wings and body.
+      where: Discussion
+  - field: anatomical_region
+    value: both wing surfaces
+    anchor:
+      quote: These effects were consistent on both wing surfaces in D. plexippus
+      where: Results
+  - field: pattern_element
+    value: yellow hindwing bar
+    anchor:
+      quote: including for two H. erato morphs that differ in the presence–absence of the yellow hindwing bar.
+      where: Results
+  - field: pattern_element
+    value: marginal patterns
+    anchor:
+      quote: others showed complete conversion to white, such as the marginal patterns and venous black markings
+      where: Results
+  - field: scale_type
+    value: scales
+    anchor:
+      quote: ivory mutagenesis yields transformations of dark pigmented scales into white or light-colored scales.
+      where: Abstract
+  - field: scale_type
+    value: epithelial scales
+    anchor:
+      quote: with no detectable effects other than in epithelial scales throughout the adult wing and body.
+      where: Results
+  - field: functional_architecture
+    value: melanic
+    anchor:
+      quote: consisting of scale transformations from melanic to yellow-white states
+      where: Results
+  - field: functional_architecture
+    value: ommochrome
+    anchor:
+      quote: Tryptophan radiolabeling revealing the distribution of ommochrome-containing patterns. Ommochromes are not affected by ivory KOs in V. cardui
+      where: Fig 3 caption
+  - field: functional_architecture
+    value: melanin and ommochrome
+    anchor:
+      quote: Tyrosine and Tryptophan radiolabeling experiments—melanin and ommochrome precursors, respectively—indicate a strong correspondence between ivory KOs and melanin-containing scales
+      where: Results
+  - field: functional_architecture
+    value: reflective white/silver scales
+    anchor:
+      quote: In A. incarnata, ivory mKOs resulted in scale transformations from melanic to reflective white/silver scales
+      where: Results
+  - field: target_gene
+    value: ivory
+    anchor:
+      quote: identified a polyadenylated, alternatively spliced lncRNA that is transcribed upstream of cortex , hereafter called ivory
+      where: Results
+  - field: target_gene
+    value: cortex
+    anchor:
+      quote: we generated V. cardui null mutants targeting the second exon of cortex
+      where: Results
+  - field: genetic_element_type
+    value: lncRNA
+    anchor:
+      quote: identified a polyadenylated, alternatively spliced lncRNA that is transcribed upstream of cortex , hereafter called ivory
+      where: Results
+  - field: genetic_element_type
+    value: promoter
+    anchor:
+      quote: the ivory first exon is immediately 3’ of a region of differential accessibility specific to pupal wing tissues, consistent with a promoter function
+      where: Results
+  - field: genetic_element_type
+    value: promoter and first exon
+    anchor:
+      quote: we next used CRISPR/Cas9 mutagenesis targeting the ivory promoter and first exon in order to test its putative function in wing patterning.
+      where: Results
+  - field: genetic_element_type
+    value: second exon
+    anchor:
+      quote: we generated V. cardui null mutants targeting the second exon of cortex
+      where: Results
+  - field: allele_or_zygosity
+    value: mosaic knock-outs
+    anchor:
+      quote: These mosaic knock-outs, conducted in H. erato, H. charithonia, and Vanessa cardui, generated butterflies with pronounced shifts in pigmentation
+      where: Results
+  - field: allele_or_zygosity
+    value: crispants
+    anchor:
+      quote: CRISPR/Cas9 targeting of ivory in Agraulis incarnata and Danaus plexippus resulted in crispants displaying scale transformations from melanic to yellow-white states
+      where: Results
+  - field: allele_or_zygosity
+    value: biallelic deletion
+    anchor:
+      quote: we established that a biallelic deletion spanning 82/97 bp across the lncRNA first exon is sufficient to generate a strong ivory phenotype
+      where: Results
+  - field: allele_or_zygosity
+    value: compound heterozygous
+    anchor:
+      quote: We recovered several compound heterozygous mutants, harboring two null alleles with premature stop codons
+      where: Results
+  - field: allele_or_zygosity
+    value: color pattern polymorphisms
+    anchor:
+      quote: Examples of H. melpomene and H. erato morphs exhibiting color pattern polymorphisms associated with the cortex locus
+      where: Fig 1 caption
+  - field: perturbation_modality
+    value: CRISPR/Cas9 mutagenesis
+    anchor:
+      quote: we next used CRISPR/Cas9 mutagenesis targeting the ivory promoter and first exon in order to test its putative function in wing patterning.
+      where: Results
+  - field: perturbation_modality
+    value: germline mutants
+    anchor:
+      quote: Genotyping of Vanessa cardui germline mutants associates these phenotypes to small on-target deletions at the conserved first exon of ivory.
+      where: Abstract
+  - field: perturbation_modality
+    value: association mapping
+    anchor:
+      quote: association mapping has implicated discrete, modular noncoding intervals centered around cortex
+      where: Introduction
+  - field: imaging_modality
+    value: RNA-seq
+    anchor:
+      quote: we reanalyzed RNA-seq data from pupal wings of H. melpomene and H. erato
+      where: Results
+  - field: imaging_modality
+    value: ATAC-seq
+    anchor:
+      quote: ATAC-seq tracks from normalized average read depth from 36 h pupal hindwings are shown in green
+      where: Fig 1 caption
+  - field: imaging_modality
+    value: ChIP-seq
+    anchor:
+      quote: we reanalyzed Hi-C and histone ChIP-seq data previously generated in H. erato pupal wings
+      where: Results
+  - field: imaging_modality
+    value: in situ hybridizations
+    anchor:
+      quote: in situ hybridizations against the first exon of ivory showed that the ivory lncRNA is expressed in perfect correlation with melanic scales
+      where: Results
+  - field: imaging_modality
+    value: radiolabeling
+    anchor:
+      quote: Tyrosine and Tryptophan radiolabeling experiments—melanin and ommochrome precursors, respectively—indicate a strong correspondence between ivory KOs and melanin-containing scales
+      where: Results
+  - field: imaging_modality
+    value: Whole-genome sequencing
+    anchor:
+      quote: Whole-genome sequencing of G 1 and G 2 individuals revealed that compound heterozygosity at the targeted site
+      where: Results
+  - field: view_orientation
+    value: Ventral wing views
+    anchor:
+      quote: Ventral wing views of A. incarnata comparing wild-type to full (nonmosaic) ivory crispant and a clonal ivory crispant
+      where: Fig 4 caption
+  - field: view_orientation
+    value: Dorsal views
+    anchor:
+      quote: Dorsal views, featuring ivory crispant clones with lightened orange and black coloration
+      where: Fig 4 caption
+  - field: hydration_and_prep
+    value: incubated in fixative
+    anchor:
+      quote: Developing wings were dissected at 20 to 35% pupal development, incubated in fixative for 30 to 40 min
+      where: Methods
+
+default_context:
+  chemical_agent: none
+  sex: not stated
+
+units:
+  F1_IVORY_LOCUS:
+    where: Fig. 1A–B and Results
+    title: Genomic architecture, developmental expression timing, ATAC-seq accessibility, and H3K4me3 active promoter chromatin state of ivory lncRNA in Heliconius
+    context:
+      life_stage: pupal
+      pattern_element: not applicable
+      scale_type: scales
+      functional_architecture: melanic
+      target_gene: ivory
+      view_orientation: not applicable
+      hydration_and_prep: not stated
+    groups:
+      heliconius_onset_36h:
+        label: H. melpomene & H. erato pupal wing RNA-seq at 36 h APF (~20% pupal development)
+        kind: natural
+        context:
+          taxon: Heliconius melpomene and Heliconius erato
+          pupal_stage_pct: 20%
+          anatomical_region: pupal wings
+          genetic_element_type: lncRNA
+          allele_or_zygosity: color pattern polymorphisms
+          perturbation_modality: association mapping
+          imaging_modality: RNA-seq
+      heliconius_persist_60h:
+        label: H. melpomene & H. erato pupal wing RNA-seq at 60 h APF
+        kind: natural
+        context:
+          taxon: Heliconius melpomene and Heliconius erato
+          pupal_stage_pct: not stated
+          anatomical_region: pupal wings
+          genetic_element_type: lncRNA
+          allele_or_zygosity: color pattern polymorphisms
+          perturbation_modality: association mapping
+          imaging_modality: RNA-seq
+      h_melpomene_atac:
+        label: H. melpomene 36 h pupal hindwing ATAC-seq (Hmel215003o, 138 kb ivory locus)
+        kind: natural
+        context:
+          taxon: Heliconius melpomene
+          pupal_stage_pct: 20%
+          anatomical_region: pupal hindwings
+          genetic_element_type: promoter
+          allele_or_zygosity: wild type
+          perturbation_modality: wild type
+          imaging_modality: ATAC-seq
+      h_erato_atac:
+        label: H. erato 36 h pupal hindwing ATAC-seq (Hera1505, 205 kb ivory locus)
+        kind: natural
+        context:
+          taxon: Heliconius erato
+          pupal_stage_pct: 20%
+          anatomical_region: pupal hindwings
+          genetic_element_type: promoter
+          allele_or_zygosity: wild type
+          perturbation_modality: wild type
+          imaging_modality: ATAC-seq
+      h_erato_h3k4me3:
+        label: H. erato 3-day-old pupal wing H3K4me3 histone ChIP-seq & Hi-C TAD at ivory 5' promoter
+        kind: natural
+        context:
+          taxon: Heliconius erato
+          pupal_stage_pct: not stated
+          anatomical_region: pupal wings
+          genetic_element_type: promoter
+          allele_or_zygosity: wild type
+          perturbation_modality: wild type
+          imaging_modality: ChIP-seq
+
+  F2_IVORY_MKO_ISH:
+    where: Fig. 2A–O'' and Results
+    title: High-penetrance ivory CRISPR G0 mosaic knockouts and pupal wing RNA in situ hybridization prefiguring melanic scales across Heliconius and Vanessa
+    context:
+      target_gene: ivory
+      view_orientation: not stated
+    groups:
+      ivory_g0_mko_pooled:
+        label: Pooled ivory promoter/exon 1 G0 mosaic crispants (H. erato, H. charithonia, V. cardui)
+        kind: perturbed
+        context:
+          taxon: H. erato, H. charithonia, and Vanessa cardui
+          life_stage: adults
+          pupal_stage_pct: not applicable
+          anatomical_region: wings and body
+          pattern_element: not stated
+          scale_type: epithelial scales
+          functional_architecture: melanic
+          genetic_element_type: promoter and first exon
+          allele_or_zygosity: mosaic knock-outs
+          perturbation_modality: CRISPR/Cas9 mutagenesis
+          imaging_modality: not stated
+          hydration_and_prep: not stated
+      h_erato_ish_30pct:
+        label: H. erato 30% pupal wing ivory RNA in situ hybridization (banded vs unbanded morphs)
+        kind: natural
+        context:
+          taxon: Heliconius erato
+          life_stage: pupal
+          pupal_stage_pct: 30%
+          anatomical_region: pupal wings
+          pattern_element: yellow hindwing bar
+          scale_type: scales
+          functional_architecture: melanic
+          genetic_element_type: lncRNA
+          allele_or_zygosity: color pattern polymorphisms
+          perturbation_modality: wild type
+          imaging_modality: in situ hybridizations
+          hydration_and_prep: incubated in fixative
+      v_cardui_ish_pupal:
+        label: V. cardui 20–35% pupal wing ivory RNA in situ hybridization
+        kind: natural
+        context:
+          taxon: Vanessa cardui
+          life_stage: pupal
+          pupal_stage_pct: 20 to 35%
+          anatomical_region: pupal wings
+          pattern_element: not stated
+          scale_type: scales
+          functional_architecture: melanic
+          genetic_element_type: lncRNA
+          allele_or_zygosity: wild type
+          perturbation_modality: wild type
+          imaging_modality: in situ hybridizations
+          hydration_and_prep: incubated in fixative
+
+  F3_VC_IVORY_GERMLINE:
+    where: Fig. 3A–F and Results
+    title: Vanessa cardui ivory germline G1/G2 exon 1 biallelic deletions and Tyrosine vs Tryptophan radiolabeling separating melanin loss from preserved ommochromes
+    context:
+      taxon: Vanessa cardui
+      life_stage: adult
+      pupal_stage_pct: not applicable
+      anatomical_region: wings and body
+      pattern_element: not stated
+      scale_type: scales
+      view_orientation: not stated
+      hydration_and_prep: not stated
+    groups:
+      vc_ivory_germline_ko:
+        label: V. cardui G1/G2 compound heterozygous ivory exon 1 deletion mutants (82/97 bp)
+        kind: perturbed
+        context:
+          functional_architecture: melanic
+          target_gene: ivory
+          genetic_element_type: lncRNA
+          allele_or_zygosity: biallelic deletion
+          perturbation_modality: germline mutants
+          imaging_modality: Whole-genome sequencing
+      vc_tyr_radiolabel:
+        label: V. cardui [14C]-Tyrosine radiolabeling (melanin-containing scales matching ivory KO loss)
+        kind: natural
+        context:
+          functional_architecture: melanic
+          target_gene: none
+          genetic_element_type: not applicable
+          allele_or_zygosity: wild type
+          perturbation_modality: wild type
+          imaging_modality: radiolabeling
+      vc_trp_radiolabel:
+        label: V. cardui [14C]-Tryptophan radiolabeling (ommochrome-containing patterns preserved in ivory KOs)
+        kind: natural
+        context:
+          functional_architecture: ommochrome
+          target_gene: none
+          genetic_element_type: not applicable
+          allele_or_zygosity: wild type
+          perturbation_modality: wild type
+          imaging_modality: radiolabeling
+
+  F3_VC_CORTEX_VS_IVORY:
+    where: Fig. 3G–K and Results
+    title: Vanessa cardui cortex coding exon 2 CRISPR G0 mosaic and F1 compound heterozygous null (Δ8/Δ10nt) knockouts ruling out wing pigmentation function
+    context:
+      taxon: Vanessa cardui
+      life_stage: adults
+      pupal_stage_pct: not applicable
+      anatomical_region: wings
+      pattern_element: not stated
+      scale_type: scales
+      functional_architecture: melanic
+      imaging_modality: not stated
+      view_orientation: not stated
+      hydration_and_prep: not stated
+    groups:
+      vc_cortex_g0_mko:
+        label: V. cardui cortex exon 2 G0 mosaic crispants (7 genotyped haemolymph individuals, 63.8–98.8% indel efficiency, 0 wing phenotypes)
+        kind: perturbed
+        context:
+          target_gene: cortex
+          genetic_element_type: second exon
+          allele_or_zygosity: crispants
+          perturbation_modality: CRISPR/Cas9 mutagenesis
+      vc_cortex_f1_null:
+        label: V. cardui cortex exon 2 F1 compound heterozygous null (Δ8/Δ10nt, p.Gln69fs/p.Phe67fs, viable but infertile, 0 wing phenotypes)
+        kind: perturbed
+        context:
+          target_gene: cortex
+          genetic_element_type: second exon
+          allele_or_zygosity: compound heterozygous
+          perturbation_modality: germline mutants
+      vc_ivory_g0_mko:
+        label: Ivory promoter/first-exon G0 mosaic crispants (57% adult wing phenotype penetrance reference)
+        kind: perturbed
+        context:
+          target_gene: ivory
+          genetic_element_type: promoter and first exon
+          allele_or_zygosity: crispants
+          perturbation_modality: CRISPR/Cas9 mutagenesis
+
+  F4_CONSERVED_NYMPHALIDAE:
+    where: Fig. 4A–T'' and Results
+    title: Conserved ivory CRISPR G0 mosaic knockout phenotypes across Agraulis incarnata and Danaus plexippus spanning ~80 MY of Nymphalidae evolution
+    context:
+      life_stage: adult
+      pupal_stage_pct: not applicable
+      scale_type: scales
+      target_gene: ivory
+      genetic_element_type: promoter and first exon
+      allele_or_zygosity: crispants
+      perturbation_modality: CRISPR/Cas9 mutagenesis
+      imaging_modality: not stated
+      hydration_and_prep: not stated
+    groups:
+      a_incarnata_ivory_mko:
+        label: Agraulis incarnata ivory G0 crispants (melanic-to-reflective white/silver conversion; lighter orange preserving ommochrome)
+        kind: perturbed
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: both wing surfaces
+          pattern_element: marginal patterns
+          functional_architecture: reflective white/silver scales
+          view_orientation: Ventral wing views
+      d_plexippus_ivory_mko:
+        label: Danaus plexippus ivory G0 crispants (melanic-to-white conversion on dorsal/ventral wings; local ventral forewing white-to-orange switch)
+        kind: perturbed
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: both wing surfaces
+          pattern_element: not stated
+          functional_architecture: melanic
+          view_orientation: Dorsal views
+
+evidence:
+  F1_ivory_onset_timing:
+    unit: F1_IVORY_LOCUS
+    measure: developmental milestone timing
+    method: Reference-based RNA-seq alignments and de novo Trinity transcriptome assemblies from H. melpomene and H. erato pupal wings (PRJNA552081)
+    finding: Ivory encodes a ~1.3 kb, up to 8-exon lncRNA (>138 kb span in H. melpomene; >205 kb in H. erato) that initiates at 36 h APF (~20% pupal development) as cortex declines and persists through at least 60 h APF
+    groups:
+      - heliconius_onset_36h
+      - heliconius_persist_60h
+    values:
+      t_onset:
+        printed: '36'
+        unit: h
+        kind: value
+        group: heliconius_onset_36h
+        spread: none
+      t_persist:
+        printed: '60'
+        unit: h
+        kind: value
+        group: heliconius_persist_60h
+        spread: none
+    anchor:
+      quote: From 36 h after pupa formation, or ∼20% of pupal development, cortex expression significantly decreases and ivory is detected and persists up until at least 60 h after pupa formation.
+      where: Results
+
+  F1_ivory_onset_pct:
+    unit: F1_IVORY_LOCUS
+    measure: relative pupal development
+    method: Pupal wing RNA-seq developmental staging in H. melpomene and H. erato
+    finding: Onset of ivory lncRNA transcription and simultaneous decline of cortex expression occur at approximately 20% of pupal development (36 h APF)
+    groups:
+      - heliconius_onset_36h
+    values:
+      onset_pct:
+        printed: '~20'
+        unit: '%'
+        kind: value
+        group: heliconius_onset_36h
+        spread: none
+    anchor:
+      quote: From 36 h after pupa formation, or ∼20% of pupal development, cortex expression significantly decreases and ivory is detected and persists up until at least 60 h after pupa formation.
+      where: Results
+
+  F1_ivory_atac_h3k4me3:
+    unit: F1_IVORY_LOCUS
+    measure: developmental milestone timing
+    method: 36 h pupal hindwing ATAC-seq (H. melpomene and H. erato) and 3-day-old pupal wing H3K4me3 histone ChIP-seq + Hi-C TAD reanalysis (H. erato)
+    finding: ATAC-seq at 36 h APF reveals pupal-wing-specific open chromatin immediately 5' of ivory exon 1 in both species, and 3-day-old (72 h) H. erato wings show strong H3K4me3 active-promoter enrichment within a TAD centered on ivory
+    groups:
+      - h_melpomene_atac
+      - h_erato_atac
+      - h_erato_h3k4me3
+    values:
+      atac_stage_hm:
+        printed: '36'
+        unit: h
+        kind: value
+        group: h_melpomene_atac
+        spread: none
+      atac_stage_he:
+        printed: '36'
+        unit: h
+        kind: value
+        group: h_erato_atac
+        spread: none
+      chip_stage_he:
+        printed: '3'
+        unit: day
+        kind: value
+        group: h_erato_h3k4me3
+        spread: none
+    anchor:
+      quote: histone modification profiling performed in three-day-old pupal wings reveals that the ivory 5’ region coincides with a strong H3K4me3 signal, a hallmark of transcriptionally active promoters
+      where: Results
+
+  F2_ivory_g0_penetrance:
+    unit: F2_IVORY_MKO_ISH
+    measure: crispant phenotype penetrance
+    method: CRISPR/Cas9 embryonic microinjection targeting the conserved ivory promoter and first exon across H. erato, H. charithonia, and V. cardui
+    finding: Targeting the ivory promoter and first exon yields high-penetrance (57% of adults) transformations of melanic scales to yellow-white states with large healthy mutant clones and no non-scale pleiotropy
+    groups:
+      - ivory_g0_mko_pooled
+    values:
+      ivory_mko_penetrance:
+        printed: '57'
+        unit: '%'
+        kind: percent
+        group: ivory_g0_mko_pooled
+        spread: none
+    anchor:
+      quote: The high penetrance of this phenotype (in 57% of adults), as well as the large size of mutant clones, often spanning entire individuals that emerged healthily
+      where: Results
+
+  F2_ivory_ish_prefiguring:
+    unit: F2_IVORY_MKO_ISH
+    measure: relative pupal development
+    method: Chromogenic DIG-labeled RNA in situ hybridization targeting the conserved first exon of ivory in dissected pupal wings (20–35% pupal development)
+    finding: At 30% pupal development in H. erato (and 20–35% in V. cardui and H. charithonia), ivory RNA expression strictly prefigures adult melanic scales (including the melanized yellow-bar region of unbanded H. erato morphs) and is absent from red, yellow, and white non-melanic scales
+    groups:
+      - h_erato_ish_30pct
+      - v_cardui_ish_pupal
+    values:
+      h_erato_ish_pct:
+        printed: '30'
+        unit: '%'
+        kind: value
+        group: h_erato_ish_30pct
+        spread: none
+    anchor:
+      quote: Expression of ivory in 30% pupal wing tissue of H. erato prefigures adult melanic scales, and mKO results in a complete loss of black scales.
+      where: Fig 2 caption
+
+  F3_ivory_germline_radiolabel:
+    unit: F3_VC_IVORY_GERMLINE
+    measure: crispant wing phenotype count
+    method: G1/G2 germline crosses of V. cardui ivory crispants with WGS genotyping and [14C]-Tyrosine / [14C]-Tryptophan metabolic radiolabeling
+    finding: Viable G1/G2 V. cardui germline mutants carrying biallelic 82/97 bp deletions across ivory exon 1 lose melanin across all wing and body scales matching Tyrosine radiolabeling, while Tryptophan-labeled ommochrome scales remain completely intact
+    groups:
+      - vc_ivory_germline_ko
+      - vc_tyr_radiolabel
+      - vc_trp_radiolabel
+    anchor:
+      quote: we established that a biallelic deletion spanning 82/97 bp across the lncRNA first exon is sufficient to generate a strong ivory phenotype
+      where: Results
+
+  F3_cortex_g0_counts:
+    unit: F3_VC_CORTEX_VS_IVORY
+    measure: crispant wing phenotype count
+    method: CRISPR/Cas9 targeting of obligatory cortex coding exon 2 (C-Box motif) in V. cardui with haemolymph Sanger genotyping of 7 G0 adults
+    finding: Zero of 7 genotyped high-mutation-rate V. cardui cortex exon 2 G0 crispants (including female 63.8% and male 98.8% indel efficiency parents) exhibited any wing pigmentation phenotype
+    groups:
+      - vc_cortex_g0_mko
+    n:
+      printed: 7 G 0 individuals
+      per_group:
+        vc_cortex_g0_mko: '7'
+      counts: individuals
+    values:
+      n_genotyped:
+        printed: '7'
+        unit: count
+        kind: count
+        group: vc_cortex_g0_mko
+        spread: none
+      n_wing_phenotype:
+        printed: '0'
+        unit: count
+        kind: count
+        group: vc_cortex_g0_mko
+        spread: none
+    anchor:
+      quote: The resulting cortex crispants were indistinguishable from wild-type controls, in spite of high mutation rates observed in the genotyped haemolymph of 7 G 0 individuals
+      where: Results
+
+  F3_cortex_g0_penetrance:
+    unit: F3_VC_CORTEX_VS_IVORY
+    measure: crispant phenotype penetrance
+    method: Wing phenotype scoring of confirmed cortex exon 2 G0 crispants (N=7 genotyped) and F1 compound heterozygous truncating null mutants (Δ8/Δ10nt)
+    finding: Both high-efficiency cortex exon 2 G0 crispants (0/7 = 0%) and viable but infertile F1 compound heterozygous null butterflies (Δ8/Δ10nt truncating the WD40 beta-propeller) show 0% wing pigmentation defects
+    groups:
+      - vc_cortex_g0_mko
+      - vc_cortex_f1_null
+    values:
+      cortex_g0_pen:
+        printed: '0'
+        unit: '%'
+        kind: percent
+        group: vc_cortex_g0_mko
+        spread: none
+      cortex_f1_pen:
+        printed: '0'
+        unit: '%'
+        kind: percent
+        group: vc_cortex_f1_null
+        spread: none
+    anchor:
+      quote: produced F 1 individuals, again displaying no pigmentation changes on their wings ( Fig. 3 I and I ’ ).
+      where: Results
+
+  F3_cortex_vs_ivory_penetrance:
+    unit: F3_VC_CORTEX_VS_IVORY
+    measure: crispant phenotype penetrance
+    method: Direct functional comparison of coding cortex exon 2 CRISPR knockouts (0% wing penetrance) versus noncoding ivory promoter/first-exon CRISPR knockouts (57% adult wing penetrance)
+    finding: Disrupting coding cortex exon 2 produces 0% wing pigmentation phenotypes (0/7 G0 and F1 Δ8/Δ10nt nulls), whereas disrupting the adjacent ivory lncRNA promoter/exon 1 produces 57% penetrance of melanic scale loss
+    compares:
+      - vc_cortex_g0_mko
+      - vc_ivory_g0_mko
+    test_of: pair
+    values:
+      cortex_pen:
+        printed: '0'
+        unit: '%'
+        kind: percent
+        group: vc_cortex_g0_mko
+        spread: none
+      ivory_pen:
+        printed: '57'
+        unit: '%'
+        kind: percent
+        group: vc_ivory_g0_mko
+        spread: none
+    stated_direction:
+      direction: down
+      anchor:
+        quote: Together, these results rule out a function for cortex in V. cardui wing scale pigmentation.
+        where: Results
+    anchor:
+      quote: Together, these results rule out a function for cortex in V. cardui wing scale pigmentation.
+      where: Results
+
+  F4_nymphalidae_conservation:
+    unit: F4_CONSERVED_NYMPHALIDAE
+    measure: crispant wing phenotype count
+    method: CRISPR/Cas9 mosaic mutagenesis of the conserved ivory promoter and first exon in Agraulis incarnata and Danaus plexippus (~80 MY divergence)
+    finding: Ivory mKOs convert melanic scales to reflective white/silver scales with ectopic upper-lamina lamination in A. incarnata (preserving ommochrome in lighter orange regions) and convert melanic scales to white across both wing surfaces in D. plexippus (with local ventral forewing distal white-to-orange and orange-to-white switches)
+    groups:
+      - a_incarnata_ivory_mko
+      - d_plexippus_ivory_mko
+    anchor:
+      quote: CRISPR/Cas9 targeting of ivory in Agraulis incarnata and Danaus plexippus resulted in crispants displaying scale transformations from melanic to yellow-white states, as well as lighter orange colors
+      where: Results
+
+claims:
+  C1_ivory_lncrna_at_cortex_locus:
+    kind: stated
+    quote: ivory encodes a ∼1.3 kb transcript, containing up to eight exons spanning over 138 kb in H. melpomene and 205 kb in H. erato
+    where: Results
+    scope: Heliconius melpomene and Heliconius erato pupal wings (36–60 h APF)
+    direction: ivory lncRNA turns on at 36 h (~20% pupal development) as cortex declines
+    rests_on:
+      - F1_ivory_onset_timing
+      - F1_ivory_onset_pct
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C2_ivory_promoter_chromatin_state:
+    kind: stated
+    quote: histone modification profiling performed in three-day-old pupal wings reveals that the ivory 5’ region coincides with a strong H3K4me3 signal, a hallmark of transcriptionally active promoters
+    where: Results
+    scope: Heliconius erato and Heliconius melpomene pupal wings
+    direction: active promoter chromatin state at ivory exon 1 consistent with trans rather than cis-enhancer function
+    rests_on:
+      - F1_ivory_atac_h3k4me3
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Direct downstream trans targets of ivory/miR-193 are inferred from chromatin architecture, cortex KO exclusion, and companion studies (Fandino et al. 2024; Tian et al. 2024).
+
+  C3_ivory_mko_high_penetrance_melanic_loss:
+    kind: stated
+    quote: The high penetrance of this phenotype (in 57% of adults), as well as the large size of mutant clones, often spanning entire individuals that emerged healthily
+    where: Results
+    scope: Heliconius erato, Heliconius charithonia, and Vanessa cardui G0 ivory crispants
+    direction: ivory promoter and first-exon KO causes high-penetrance melanic-to-yellow-white scale conversion
+    rests_on:
+      - F2_ivory_g0_penetrance
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Pooled adult penetrance (57%) is reported in main text; per-species injection and survival denominators reside in SI Appendix Tables S1–S2.
+
+  C4_ivory_ish_prefigures_melanic_scales:
+    kind: stated
+    quote: in situ hybridizations against the first exon of ivory showed that the ivory lncRNA is expressed in perfect correlation with melanic scales during pupal wing development
+    where: Results
+    scope: Heliconius erato (banded and unbanded morphs), Heliconius charithonia, and Vanessa cardui pupal wings
+    direction: ivory spatial expression prefigures melanic scales and is absent from red/yellow/white scales
+    rests_on:
+      - F2_ivory_ish_prefiguring
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C5_ivory_germline_melanin_vs_ommochrome:
+    kind: stated
+    quote: Tyrosine and Tryptophan radiolabeling experiments—melanin and ommochrome precursors, respectively—indicate a strong correspondence between ivory KOs and melanin-containing scales
+    where: Results
+    scope: Vanessa cardui G1/G2 germline ivory exon 1 deletion mutants (82/97 bp)
+    direction: ivory germline KO eliminates melanin-containing scales while preserving ommochrome-containing patterns
+    rests_on:
+      - F3_ivory_germline_radiolabel
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C6_cortex_null_no_wing_phenotype:
+    kind: stated
+    quote: Together, these results rule out a function for cortex in V. cardui wing scale pigmentation.
+    where: Results
+    scope: Vanessa cardui cortex exon 2 G0 crispants (N=7 genotyped) and F1 compound heterozygous Δ8/Δ10nt null mutants
+    direction: coding cortex exon 2 knockout yields 0% wing pigmentation phenotypes versus 57% for ivory
+    asserts_direction: down
+    rests_on:
+      - F3_cortex_g0_counts
+      - F3_cortex_g0_penetrance
+      - F3_cortex_vs_ivory_penetrance
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C7_ivory_conserved_80my_nymphalidae:
+    kind: stated
+    quote: CRISPR/Cas9 targeting of ivory in Agraulis incarnata and Danaus plexippus resulted in crispants displaying scale transformations from melanic to yellow-white states, as well as lighter orange colors
+    where: Results
+    scope: Agraulis incarnata and Danaus plexippus across ~80 MY of Nymphalidae divergence
+    direction: conserved requirement of ivory for melanic scale identity across Nymphalidae
+    rests_on:
+      - F4_nymphalidae_conservation
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows

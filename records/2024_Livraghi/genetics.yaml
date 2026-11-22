@@ -1,0 +1,268 @@
+record: 2024_Livraghi
+relations:
+  - id: ivory_required_for_melanic_heliconius
+    source: target_gene:ivory_lncrna
+    source_label: ivory (lncRNA)
+    source_type: noncoding_rna
+    relation: required_for_phenotype
+    target: functional_architecture:melanin_pigmentary
+    target_label: Melanic scale pigmentation (black scales in Heliconius)
+    target_type: architecture
+    evidence_tier: perturbation_only
+    effect_direction: abolish
+    assays:
+      - crispr_g0_mosaic
+      - light_microscopy
+    context:
+      taxon: Heliconius erato
+      life_stage: adult
+      anatomical_region: wing
+      genetic_element_type: promoter, long non-coding RNA (lncRNA)
+      allele_or_zygosity: G0 somatic mosaic
+    linked_items:
+      - F2_ivory_g0_penetrance
+    linked_panels:
+      - 2024_Livraghi/F2/B
+      - 2024_Livraghi/F2/D_prime
+      - 2024_Livraghi/F2/E_prime
+      - 2024_Livraghi/F2/G
+    anchor:
+      quote: These mosaic knock-outs, conducted in H. erato, H. charithonia, and Vanessa cardui, generated butterflies with pronounced shifts in pigmentation, consisting of scale transformations from melanic to yellow-white states
+      where: Results
+    note: High-penetrance (57% of adults) melanic-to-yellow/white scale transformations phenocopying the H. melpomene ivory Δ78k spontaneous deletion.
+
+  - id: ivory_required_for_melanic_v_cardui_germline
+    source: target_gene:ivory_lncrna
+    source_label: ivory (lncRNA)
+    source_type: noncoding_rna
+    relation: required_for_phenotype
+    target: functional_architecture:melanin_pigmentary
+    target_label: Melanic scale pigmentation (Tyrosine-labeled wings & body)
+    target_type: architecture
+    evidence_tier: perturbation_only
+    effect_direction: abolish
+    assays:
+      - crispr_germline_ko
+      - wgs_gwas
+      - radiolabeling
+    context:
+      taxon: Vanessa cardui
+      life_stage: adult
+      anatomical_region: wing
+      genetic_element_type: long non-coding RNA (lncRNA)
+      allele_or_zygosity: homozygous null
+    linked_items:
+      - F3_ivory_germline_radiolabel
+    linked_panels:
+      - 2024_Livraghi/F3/B
+      - 2024_Livraghi/F3/C
+      - 2024_Livraghi/F3/D
+      - 2024_Livraghi/F3/E
+      - 2024_Livraghi/F3/F
+    anchor:
+      quote: we established that a biallelic deletion spanning 82/97 bp across the lncRNA first exon is sufficient to generate a strong ivory phenotype
+      where: Results
+    note: Compound heterozygous 82/97 bp deletions at ivory exon 1 abolish melanin across wings and body (matching [14C]-Tyrosine domains) while preserving [14C]-Tryptophan ommochrome patterns.
+
+  - id: ivory_required_for_melanic_a_incarnata
+    source: target_gene:ivory_lncrna
+    source_label: ivory (lncRNA)
+    source_type: noncoding_rna
+    relation: required_for_phenotype
+    target: functional_architecture:melanin_pigmentary
+    target_label: Melanic vs reflective silver scale identity (A. incarnata)
+    target_type: architecture
+    evidence_tier: perturbation_only
+    effect_direction: switch
+    assays:
+      - crispr_g0_mosaic
+      - sem
+      - light_microscopy
+    context:
+      taxon: Agraulis incarnata
+      life_stage: adult
+      anatomical_region: both wing surfaces
+      genetic_element_type: promoter, long non-coding RNA (lncRNA)
+      allele_or_zygosity: G0 somatic mosaic
+    linked_items:
+      - F4_nymphalidae_conservation
+    linked_panels:
+      - 2024_Livraghi/F4/B
+      - 2024_Livraghi/F4/C
+      - 2024_Livraghi/F4/G
+      - 2024_Livraghi/F4/H
+      - 2024_Livraghi/F4/J_prime
+      - 2024_Livraghi/F4/J_dprime
+    anchor:
+      quote: In A. incarnata, ivory mKOs resulted in scale transformations from melanic to reflective white/silver scales
+      where: Results
+    note: Melanic scales transform into reflective white/silver scales with ectopic upper-lamina lamination (SEM), while orange ommochrome scales lighten partially due to mixed melanin/ommochrome pigment loss.
+
+  - id: ivory_required_for_melanic_d_plexippus
+    source: target_gene:ivory_lncrna
+    source_label: ivory (lncRNA)
+    source_type: noncoding_rna
+    relation: required_for_phenotype
+    target: functional_architecture:melanin_pigmentary
+    target_label: Melanic scale pigmentation (D. plexippus vein margins & wing blade)
+    target_type: architecture
+    evidence_tier: perturbation_only
+    effect_direction: switch
+    assays:
+      - crispr_g0_mosaic
+      - light_microscopy
+    context:
+      taxon: Danaus plexippus
+      life_stage: adult
+      anatomical_region: both wing surfaces
+      genetic_element_type: promoter, long non-coding RNA (lncRNA)
+      allele_or_zygosity: G0 somatic mosaic
+    linked_items:
+      - F4_nymphalidae_conservation
+    linked_panels:
+      - 2024_Livraghi/F4/L
+      - 2024_Livraghi/F4/M
+      - 2024_Livraghi/F4/N_prime
+      - 2024_Livraghi/F4/Q
+      - 2024_Livraghi/F4/R
+      - 2024_Livraghi/F4/S_prime
+      - 2024_Livraghi/F4/T_prime
+    anchor:
+      quote: In D. plexippus ivory crispants, melanic scales again turned white, and orange scales also appeared lighter, an effect especially pronounced on ventral wing surfaces
+      where: Results
+    note: Conserved across ~80 MY of Nymphalidae divergence; ventral forewing distal white spots also switch from white to orange while distal orange areas switch to white.
+
+  - id: ivory_represses_3ohk_yellow_heliconius
+    source: target_gene:ivory_lncrna
+    source_label: ivory (lncRNA)
+    source_type: noncoding_rna
+    relation: represses_phenotype
+    target: functional_architecture:ommochrome
+    target_label: 3-OHK yellow pigment incorporation in melanic scales (Heliconius)
+    target_type: architecture
+    evidence_tier: perturbation_only
+    effect_direction: down
+    assays:
+      - crispr_g0_mosaic
+      - hcr_in_situ
+    context:
+      taxon: Heliconius erato
+      life_stage: adult
+      anatomical_region: wing
+      pattern_element: central symmetry system band
+      genetic_element_type: promoter, long non-coding RNA (lncRNA)
+      allele_or_zygosity: G0 somatic mosaic
+    linked_items:
+      - F2_ivory_g0_penetrance
+      - F2_ivory_ish_prefiguring
+    linked_panels:
+      - 2024_Livraghi/F2/B
+      - 2024_Livraghi/F2/E_prime
+      - 2024_Livraghi/F2/G
+    anchor:
+      quote: We thus conclude that ivory acts to prevent 3-OHK incorporation into melanic scales
+      where: Discussion
+    note: In H. erato and H. charithonia ivory crispants, formerly black scales incorporate hemolymph-derived 3-hydroxykynurenine (3-OHK) yellow pigment, whereas unbanded H. erato morphs express ivory across the presumptive hindwing yellow bar to specify black.
+
+  - id: ivory_ish_prefigures_melanic_scales
+    source: target_gene:ivory_lncrna
+    source_label: ivory (lncRNA)
+    source_type: noncoding_rna
+    relation: associated_with_locus
+    target: functional_architecture:melanin_pigmentary
+    target_label: Presumptive adult melanic scales (20–35% pupal wing ISH)
+    target_type: architecture
+    evidence_tier: correlative
+    effect_direction: up
+    assays:
+      - hcr_in_situ
+      - bulk_rna_seq
+    context:
+      taxon: Heliconius erato
+      life_stage: pupa
+      pupal_stage_pct: 30%
+      anatomical_region: wing
+      genetic_element_type: long non-coding RNA (lncRNA)
+    linked_items:
+      - F2_ivory_ish_prefiguring
+      - F1_ivory_onset_timing
+    linked_panels:
+      - 2024_Livraghi/F2/C
+      - 2024_Livraghi/F2/D_dprime
+      - 2024_Livraghi/F2/E_dprime
+      - 2024_Livraghi/F2/H
+      - 2024_Livraghi/F2/M
+    anchor:
+      quote: Expression of ivory in 30% pupal wing tissue of H. erato prefigures adult melanic scales, and mKO results in a complete loss of black scales.
+      where: Fig 2 caption
+    note: Conserved spatial prefiguring of future black scales across H. erato (banded & unbanded), H. charithonia, and V. cardui; absent from red/orange ommochrome and yellow/white scales.
+
+  - id: ivory_promoter_pupal_chromatin
+    source: target_gene:ivory_lncrna
+    source_label: ivory (lncRNA)
+    source_type: noncoding_rna
+    relation: associated_with_locus
+    target: genetic_element_type:promoter
+    target_label: Pupal-wing-specific accessible H3K4me3 promoter 5' of ivory exon 1
+    target_type: cre
+    evidence_tier: chromatin_or_binding_only
+    effect_direction: up
+    assays:
+      - atac_seq
+      - chip_seq
+      - bulk_rna_seq
+    context:
+      taxon: Heliconius erato
+      life_stage: pupa
+      pupal_stage_pct: 20%
+      anatomical_region: hindwing
+      genetic_element_type: promoter
+    linked_items:
+      - F1_ivory_atac_h3k4me3
+      - F1_ivory_onset_timing
+    linked_panels:
+      - 2024_Livraghi/F1/B
+    anchor:
+      quote: the ivory first exon is immediately 3’ of a region of differential accessibility specific to pupal wing tissues, consistent with a promoter function
+      where: Results
+    note: 36 h pupal hindwing ATAC-seq (H. melpomene & H. erato) plus 3-day pupal wing H3K4me3 ChIP-seq and Hi-C TAD (H. erato) confirm an active promoter rather than a cis-enhancer of cortex.
+
+  - id: cortex_coding_null_no_melanic_effect
+    source: target_gene:cortex
+    source_label: cortex (cort)
+    source_type: gene
+    relation: associated_with_locus
+    target: functional_architecture:melanin_pigmentary
+    target_label: Wing scale melanin pigmentation (ruled out in cortex exon 2 Δ8/Δ10nt null)
+    target_type: architecture
+    evidence_tier: perturbation_only
+    effect_direction: none
+    assays:
+      - crispr_g0_mosaic
+      - crispr_germline_ko
+      - light_microscopy
+    context:
+      taxon: Vanessa cardui
+      life_stage: adult
+      anatomical_region: wing
+      genetic_element_type: coding exon
+      allele_or_zygosity: homozygous null
+    linked_items:
+      - F3_cortex_g0_counts
+      - F3_cortex_g0_penetrance
+      - F3_cortex_vs_ivory_penetrance
+    linked_panels:
+      - 2024_Livraghi/F3/G
+      - 2024_Livraghi/F3/G_prime
+      - 2024_Livraghi/F3/H_female
+      - 2024_Livraghi/F3/H_male
+      - 2024_Livraghi/F3/I
+      - 2024_Livraghi/F3/I_prime
+      - 2024_Livraghi/F3/J
+      - 2024_Livraghi/F3/K
+    anchor:
+      quote: In contrast, cortex germline mutant butterflies with confirmed null alleles lack any wing phenotype and exclude a color patterning role for this adjacent gene.
+      where: Abstract
+    note: Decisive negative perturbation result (0/7 genotyped G0 crispants with 63.8–98.8% indel rates and viable infertile F1 Δ8/Δ10nt nulls truncating the WD40 propeller) proving ivory lncRNA — not coding cortex — is the causal pigmentation switch.
+
+genomic_tables: []

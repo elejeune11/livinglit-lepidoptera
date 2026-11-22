@@ -1,0 +1,748 @@
+id: 2020_Stavenga
+field_set: 4
+source:
+  title: Bogong Moths Are Well Camouflaged by Effectively Decolourized Wing Scales
+  doi: 10.3389/fphys.2020.00095
+  year: '2020'
+  first_author: Doekele G. Stavenga
+  last_author: Eric J. Warrant
+  lab: Stavenga lab, University of Groningen / Warrant lab, Lund University & ANU
+  journal: Frontiers in Physiology
+  files:
+    - PMC7026391.xml
+    - fphys-11-00095-g001.jpg
+    - fphys-11-00095-g002.jpg
+    - fphys-11-00095-g003.jpg
+    - fphys-11-00095-g004.jpg
+    - fphys-11-00095-g005.jpg
+    - fphys-11-00095-g006.jpg
+    - fphys-11-00095-g007.jpg
+    - fphys-11-00095-g008.jpg
+  not_used: []
+  missing:
+    - Supplementary Figure S1 (Frontiers online supplement showing individual bifurcated-probe reflectance spectra for cave wall granite and 14 Australian tree species listed in Table 1)
+
+context_anchors:
+  - field: taxon
+    value: Agrotis infusa
+    anchor:
+      quote: comparing the reflectance spectra of the wings and scales of the Australian Bogong moth (Agrotis infusa) with those of objects in their natural environment.
+      where: Abstract
+  - field: life_stage
+    value: adults
+    anchor:
+      quote: Bogong moths used in this study were bred in Lund from adults captured in Australia.
+      where: Materials and Methods
+  - field: sex
+    value: female
+    anchor:
+      quote: the reflectance spectra of the forewings of the rather dark female Bogong moths we were using vary in the same range (Figure 7).
+      where: Results
+  - field: anatomical_region
+    value: dorsal forewings
+    anchor:
+      quote: The dorsal forewings are dark-brown with black patches, which cover (when resting) the more or less uniformly light brown dorsal hindwings
+      where: Results
+  - field: anatomical_region
+    value: dorsal hindwings
+    anchor:
+      quote: The dorsal forewings are dark-brown with black patches, which cover (when resting) the more or less uniformly light brown dorsal hindwings
+      where: Results
+  - field: anatomical_region
+    value: forewing
+    anchor:
+      quote: Scanning electron micrographs of a forewing scale.
+      where: Fig. 2 caption
+  - field: anatomical_region
+    value: forewings
+    anchor:
+      quote: the reflectance spectra of the forewings of the rather dark female Bogong moths we were using vary in the same range (Figure 7).
+      where: Results
+  - field: scale_type
+    value: wing scales
+    anchor:
+      quote: The size of the wing scales appears to be rather variable, but the structure adheres to the classical format.
+      where: Results
+  - field: scale_type
+    value: forewing scale
+    anchor:
+      quote: Scanning electron micrographs of a forewing scale.
+      where: Fig. 2 caption
+  - field: functional_architecture
+    value: melanin-pigmented
+    anchor:
+      quote: In both cases, the reflectance increases monotonically with increasing wavelength, which is characteristic of a melanin-pigmented tissue (Figure 1B).
+      where: Results
+  - field: functional_architecture
+    value: ridges
+    anchor:
+      quote: The upper side is an array of ridges that are connected by cross-ribs, which leave minor open windows (Figures 2A–C)
+      where: Results
+  - field: functional_architecture
+    value: melanin-like pigment
+    anchor:
+      quote: To first check whether the scales contain a melanin-like pigment, we performed transmission-microspectrophotometry on single scales immersed in oil (Figure 3).
+      where: Results
+  - field: functional_architecture
+    value: thin film
+    anchor:
+      quote: the lower lamina of the scales, acting as a thin film reflector, has a variable thickness (Figure 4B).
+      where: Results
+  - field: functional_architecture
+    value: melanin
+    anchor:
+      quote: the thin film reflections that are intrinsic to the lower lamina are effectively removed in that area by a high concentration of melanin pigment.
+      where: Results
+  - field: functional_architecture
+    value: melanin pigmentation
+    anchor:
+      quote: Due to the melanin pigmentation and its effective blocking of the thin film reflections, the coloration of Bogong moths is not particularly striking
+      where: Results
+  - field: imaging_modality
+    value: bifurcated reflection probe
+    anchor:
+      quote: Reflectance spectra of the upper sides of the hind and fore wing measured with a bifurcated reflection probe.
+      where: Fig. 1 caption
+  - field: imaging_modality
+    value: SEM
+    anchor:
+      quote: The preparations were viewed using a scanning electron microscope (SEM; Hitachi SU3500) at 5 kV.
+      where: Materials and Methods
+  - field: imaging_modality
+    value: microspectrophotometer
+    anchor:
+      quote: Reflectance spectra of an isolated scale measured with a microspectrophotometer.
+      where: Fig. 5 caption
+  - field: view_orientation
+    value: upper sides
+    anchor:
+      quote: Reflectance spectra of the upper sides of the hind and fore wing measured with a bifurcated reflection probe.
+      where: Fig. 1 caption
+  - field: view_orientation
+    value: abwing (upper) side
+    anchor:
+      quote: Magnified view of the abwing (upper) side of the tip area of (A).
+      where: Fig. 2 caption
+  - field: view_orientation
+    value: normally incident
+    anchor:
+      quote: The reflectance spectra of chitinous optical thin films in air were calculated for normally incident light using an expression derived from the classical Airy formula
+      where: Materials and Methods
+  - field: hydration_and_prep
+    value: pinned specimen
+    anchor:
+      quote: A pinned specimen with exposed fore and hind wings
+      where: Fig. 1 caption
+  - field: hydration_and_prep
+    value: sputter-coating with gold
+    anchor:
+      quote: Wing pieces and isolated scales were prepared for scanning electron microscopy by sputter-coating with gold (Cressington 108 auto, 45 s, 20 mA).
+      where: Materials and Methods
+  - field: hydration_and_prep
+    value: immersed in immersion oil
+    anchor:
+      quote: Transmittance spectra of an isolated forewing scale immersed in immersion oil, in the root (1), middle (2), and tip (3) area, measured with a microspectrophotometer.
+      where: Fig. 3 caption
+  - field: hydration_and_prep
+    value: glued to a glass micropipette
+    anchor:
+      quote: Epi-illumination of the adwing side of an isolated forewing scale glued to a glass micropipette.
+      where: Fig. 4 caption
+
+default_context:
+  pattern_element: not applicable
+  pupal_stage_pct: not applicable
+  target_gene: none
+  genetic_element_type: not applicable
+  allele_or_zygosity: wild type
+  perturbation_modality: wild type
+  chemical_agent: none
+
+units:
+  F1_WING_REFLECTANCE:
+    where: Figure 1 and Results
+    title: Dorsal forewing vs dorsal hindwing reflectance spectra of intact Agrotis infusa measured with a bifurcated reflection probe
+    context:
+      taxon: Agrotis infusa
+      sex: not stated
+      life_stage: adults
+      scale_type: wing scales
+      functional_architecture: melanin-pigmented
+      imaging_modality: bifurcated reflection probe
+      view_orientation: upper sides
+      hydration_and_prep: pinned specimen
+    groups:
+      dorsal_forewing:
+        label: Dark-brown dorsal forewing (exposed at rest)
+        kind: natural
+        context:
+          anatomical_region: dorsal forewings
+      dorsal_hindwing:
+        label: Light-brown dorsal hindwing (covered at rest)
+        kind: natural
+        context:
+          anatomical_region: dorsal hindwings
+
+  F2_SCALE_SEM:
+    where: Figure 2 and Results
+    title: Scanning electron microscopy ultrastructure of an isolated Agrotis infusa forewing scale (scale dimensions, ridge spacing, and cross-rib spacing)
+    context:
+      taxon: Agrotis infusa
+      sex: not stated
+      life_stage: adults
+      anatomical_region: forewing
+      scale_type: forewing scale
+      functional_architecture: ridges
+      imaging_modality: SEM
+      view_orientation: abwing (upper) side
+      hydration_and_prep: sputter-coating with gold
+    groups:
+      scale_whole_sem:
+        label: Whole isolated forewing scale (Fig. 2A, 50 µm scale bar)
+        kind: natural
+        context: {}
+      scale_tip_sem:
+        label: Magnified abwing scale tip area (Fig. 2B, shared 25 µm scale bar)
+        kind: natural
+        context: {}
+      scale_highmag_sem:
+        label: High-magnification abwing ridges and cross-ribs (Fig. 2C, 2.5 µm scale bar)
+        kind: natural
+        context: {}
+
+  F3_TRANSMITTANCE:
+    where: Figure 3 and Results
+    title: Longitudinal melanin transmittance gradient (root, middle, tip) of an oil-immersed isolated forewing scale
+    context:
+      taxon: Agrotis infusa
+      sex: not stated
+      life_stage: adults
+      anatomical_region: forewing
+      scale_type: forewing scale
+      functional_architecture: melanin-like pigment
+      imaging_modality: microspectrophotometer
+      view_orientation: not applicable
+      hydration_and_prep: immersed in immersion oil
+    groups:
+      scale_root_1:
+        label: Proximal root area (#1, nearly transparent)
+        kind: natural
+        context: {}
+      scale_middle_2:
+        label: Middle blade area (#2, intermediate melanization)
+        kind: natural
+        context: {}
+      scale_tip_3:
+        label: Distal exposed tip area (#3, dense melanin filter)
+        kind: natural
+        context: {}
+
+  F5_SCALE_OPTICS:
+    where: Figures 4, 5 and Results
+    title: Isolated forewing scale adwing lower-lamina thin-film reflectance (230 nm / 290 nm Airy models) vs abwing melanin-filtered reflectance
+    context:
+      taxon: Agrotis infusa
+      sex: not stated
+      life_stage: adults
+      anatomical_region: forewing
+      scale_type: forewing scale
+      imaging_modality: microspectrophotometer
+      view_orientation: normally incident
+      hydration_and_prep: glued to a glass micropipette
+    groups:
+      adwing_area1_230nm:
+        label: Adwing area #1 (blue proximal region, modeled 230 nm chitin thin film)
+        kind: natural
+        context:
+          functional_architecture: thin film
+      adwing_area2_290nm:
+        label: Adwing area #2 (yellow-purple central region, modeled 290 nm chitin thin film)
+        kind: natural
+        context:
+          functional_architecture: thin film
+      abwing_area3_root:
+        label: Abwing area #3 (blue-green root with weak melanin filtering)
+        kind: natural
+        context:
+          functional_architecture: thin film
+      abwing_area5_tip:
+        label: Abwing area #5 (exposed melanized distal tip)
+        kind: natural
+        context:
+          functional_architecture: melanin
+
+  F6_SUBSTRATES:
+    where: Figure 6, Table 1, and Results
+    title: Reflectance spectra of alpine aestivation cave granite (South Ramshead) vs Argyle apple (Eucalyptus cinerea) tree bark
+    context:
+      taxon: not applicable
+      sex: not applicable
+      anatomical_region: not applicable
+      scale_type: not applicable
+      functional_architecture: not applicable
+      life_stage: not applicable
+      imaging_modality: bifurcated reflection probe
+      view_orientation: not applicable
+      hydration_and_prep: not stated
+    groups:
+      cave_granite:
+        label: Cave wall granite with thin green algal coating (South Ramshead, 1860 m)
+        kind: natural
+        context: {}
+      e_cinerea_bark:
+        label: Argyle apple (Eucalyptus cinerea) brown tree bark
+        kind: natural
+        context: {}
+
+  F7_CAMOUFLAGE:
+    where: Figures 7, 8, Table 1, and Results
+    title: Dorsal forewing reflectance spectra of dark female Bogong moths compared against likely resting-spot tree barks
+    context:
+      taxon: Agrotis infusa
+      sex: female
+      life_stage: adults
+      anatomical_region: forewings
+      scale_type: wing scales
+      functional_architecture: melanin pigmentation
+      imaging_modality: bifurcated reflection probe
+      view_orientation: not applicable
+      hydration_and_prep: not stated
+    groups:
+      female_forewings:
+        label: Dark female Agrotis infusa dorsal forewings (7 measured wing spots, Fig. 7 bold curves)
+        kind: natural
+        context: {}
+
+evidence:
+  F1_wing_reflectance:
+    unit: F1_WING_REFLECTANCE
+    measure: maximum reflectance
+    method: Bifurcated reflection probe (Avantes FCR 7-UV-200) against WS-2 white diffuse tile, digitized from Fig. 1B (300–800 nm)
+    finding: "Both dorsal forewing and hindwing reflectance increase monotonically with wavelength (hallmark of melanin), with the exposed dark-brown forewing strongly darker than the covered light-brown hindwing (digitized at 700 nm: 9.1% vs 29.5%; forewing reaches 13.6% at 797 nm while hindwing exceeds 30% above 706 nm)"
+    compares:
+      - dorsal_forewing
+      - dorsal_hindwing
+    test_of: pair
+    values:
+      forewing_700nm:
+        printed: '9.1'
+        unit: '%'
+        kind: value
+        group: dorsal_forewing
+        x: 700 nm
+        spread: none
+      hindwing_700nm:
+        printed: '29.5'
+        unit: '%'
+        kind: value
+        group: dorsal_hindwing
+        x: 700 nm
+        spread: none
+    stated_direction:
+      direction: down
+      anchor:
+        quote: The dorsal forewings are dark-brown with black patches, which cover (when resting) the more or less uniformly light brown dorsal hindwings
+        where: Results
+    anchor:
+      quote: In both cases, the reflectance increases monotonically with increasing wavelength, which is characteristic of a melanin-pigmented tissue (Figure 1B).
+      where: Results
+
+  F2_ridge_spacing:
+    unit: F2_SCALE_SEM
+    measure: ridge spacing
+    method: LivingLit calibrated 2D-FFT and 10-transect profiling on gold-sputtered forewing scale SEM micrographs (Fig. 2B 25 µm bar; Fig. 2C 2.5 µm bar)
+    finding: Calibrated 2D-FFT on Bogong moth forewing scale SEMs measures parallel longitudinal ridge spacing of 1.964 µm (transect 2.012 ± 0.034 µm, SNR 105) in high-magnification Fig. 2C and 2.274 µm (transect 2.178 µm, SNR 37,416) across the wider distal tip in Fig. 2B
+    groups:
+      - scale_tip_sem
+      - scale_highmag_sem
+    values:
+      fig2b_fft:
+        printed: '2.27'
+        unit: µm
+        kind: value
+        group: scale_tip_sem
+        spread: none
+      fig2c_fft:
+        printed: '1.96'
+        unit: µm
+        kind: value
+        group: scale_highmag_sem
+        spread: none
+    anchor:
+      quote: The scale ridges, consisting of slightly overlapping lamellae and connected by cross-ribs, which leave minor open windows.
+      where: Fig. 2 caption
+
+  F2_ridge_density:
+    unit: F2_SCALE_SEM
+    measure: ridge density
+    method: Reciprocal spatial frequency rho = 1/d derived from calibrated Fig. 2C SEM ridge spacing (1.96 µm)
+    finding: Forewing scale longitudinal ridge density in high-magnification Fig. 2C is 5.10e5 m^-1 (0.51 ridges/µm), matching canonical pigmentary lepidopteran scales (~0.5 ridges/µm)
+    groups:
+      - scale_highmag_sem
+    values:
+      fig2c_rho:
+        printed: '5.10e5'
+        unit: m^-1
+        kind: value
+        group: scale_highmag_sem
+        spread: none
+    anchor:
+      quote: The scale ridges, consisting of slightly overlapping lamellae and connected by cross-ribs, which leave minor open windows.
+      where: Fig. 2 caption
+    scaling:
+      independent_measure: ridge spacing
+      direction: down
+      anchor:
+        quote: The scale ridges, consisting of slightly overlapping lamellae and connected by cross-ribs, which leave minor open windows.
+        where: Fig. 2 caption
+
+  F2_crossrib_spacing:
+    unit: F2_SCALE_SEM
+    measure: crossrib spacing
+    method: LivingLit orthogonal 2D-FFT cross-rib profiling on Fig. 2C SEM (calibrated 2.5 µm scale bar)
+    finding: Transverse cross-rib and window lattice periodicity between longitudinal ridges in Fig. 2C is 0.572 µm (wavevector 86.7 deg, SNR 19.2)
+    groups:
+      - scale_highmag_sem
+    values:
+      fig2c_crossrib:
+        printed: '0.572'
+        unit: µm
+        kind: value
+        group: scale_highmag_sem
+        spread: none
+    anchor:
+      quote: The scale ridges, consisting of slightly overlapping lamellae and connected by cross-ribs, which leave minor open windows.
+      where: Fig. 2 caption
+
+  F2_scale_length:
+    unit: F2_SCALE_SEM
+    measure: scale length
+    method: Calibrated planar pixel extent of isolated forewing scale blade in Fig. 2A SEM (50 µm scale bar, 1.060 µm/px)
+    finding: Isolated forewing scale in Fig. 2A measures 504 µm in tip-to-pedicel length (with max distal width 79.5 µm and midpoint width 59.4 µm)
+    groups:
+      - scale_whole_sem
+    values:
+      fig2a_len:
+        printed: '504'
+        unit: µm
+        kind: value
+        group: scale_whole_sem
+        spread: none
+    anchor:
+      quote: An isolated scale with dented tip area and on the other end the root.
+      where: Fig. 2 caption
+
+  F2_scale_width:
+    unit: F2_SCALE_SEM
+    measure: scale width
+    method: Calibrated transverse blade width of isolated forewing scale in Fig. 2A SEM (50 µm scale bar, 1.060 µm/px)
+    finding: Isolated forewing scale in Fig. 2A spans 79.5 µm maximum width near the dented distal tip and 59.4 µm at mid-blade
+    groups:
+      - scale_whole_sem
+    values:
+      fig2a_max_w:
+        printed: '79.5'
+        unit: µm
+        kind: value
+        group: scale_whole_sem
+        spread: none
+    anchor:
+      quote: An isolated scale with dented tip area and on the other end the root.
+      where: Fig. 2 caption
+
+  F3_scale_transmittance:
+    unit: F3_TRANSMITTANCE
+    measure: transmittance
+    method: Transmission microspectrophotometry (Leitz Ortholux, 20x NA 0.46, 5–10 µm square diaphragm) of single forewing scale in immersion oil (n = 1.515), digitized from Fig. 3 (350–800 nm)
+    finding: Scale transmittance drops sharply from root to tip along the melanin gradient—at 500 nm from 86.8% (root #1) to 25.3% (middle #2) and 10.7% (tip #3), confirming the paper's statement that tip transmittance is hardly more than ~10% across the visible range (8.0–18.1% over 350–700 nm)
+    groups:
+      - scale_root_1
+      - scale_middle_2
+      - scale_tip_3
+    values:
+      root_500nm:
+        printed: '86.8'
+        unit: '%'
+        kind: value
+        group: scale_root_1
+        x: 500 nm
+        spread: none
+      middle_500nm:
+        printed: '25.3'
+        unit: '%'
+        kind: value
+        group: scale_middle_2
+        x: 500 nm
+        spread: none
+      tip_visible:
+        printed: '~10'
+        unit: '%'
+        kind: value
+        group: scale_tip_3
+        spread: none
+    anchor:
+      quote: but near the tip the transmittance was hardly more than ∼10% across the whole visible wavelength range (Figure 3, #3).
+      where: Results
+
+  F5_lower_lamina_thickness:
+    unit: F5_SCALE_OPTICS
+    measure: lower lamina thickness
+    method: Classical Airy optical thin-film modeling of chitin in air fitted to normal-incidence adwing microspectrophotometer reflectance spectra (Fig. 5A, 5B)
+    finding: Adwing reflectance spectra at blue proximal area #1 and yellow-purple central area #2 closely match modeled chitin thin films in air with lower-lamina thicknesses of 230 nm and 290 nm, respectively (aside from a diffuse upper-lamina backscatter offset)
+    groups:
+      - adwing_area1_230nm
+      - adwing_area2_290nm
+    values:
+      area1_d:
+        printed: '230'
+        unit: nm
+        kind: value
+        group: adwing_area1_230nm
+        spread: none
+      area2_d:
+        printed: '290'
+        unit: nm
+        kind: value
+        group: adwing_area2_290nm
+        spread: none
+    anchor:
+      quote: Except for a background offset, the spectra closely resemble the reflectance spectra of thin films with thickness 230 and 290 nm, respectively (Figures 5A,B, dotted curves).
+      where: Results
+
+  F5_thin_film_peak_wavelength:
+    unit: F5_SCALE_OPTICS
+    measure: peak reflectance wavelength
+    method: Microspectrophotometry and Airy thin-film constructive-interference peak positions digitized from Fig. 5A and 5B
+    finding: Increasing modeled lower-lamina thickness from 230 nm (area #1) to 290 nm (area #2) redshifts the visible constructive interference peak from 477 nm (measured 476.8 nm, Airy model 472.9 nm) to 596 nm (measured 590.1 nm, Airy model 595 nm; secondary UV peak at 367 nm)
+    groups:
+      - adwing_area1_230nm
+      - adwing_area2_290nm
+    values:
+      area1_lam_peak:
+        printed: '477'
+        unit: nm
+        kind: value
+        group: adwing_area1_230nm
+        spread: none
+      area2_lam_peak:
+        printed: '596'
+        unit: nm
+        kind: value
+        group: adwing_area2_290nm
+        spread: none
+    anchor:
+      quote: Except for a background offset, the spectra closely resemble the reflectance spectra of thin films with thickness 230 and 290 nm, respectively (Figures 5A,B, dotted curves).
+      where: Results
+    scaling:
+      independent_measure: lower lamina thickness
+      direction: up
+      anchor:
+        quote: the lower lamina of the scales, acting as a thin film reflector, has a variable thickness (Figure 4B).
+        where: Results
+
+  F5_abwing_melanin_filtering:
+    unit: F5_SCALE_OPTICS
+    measure: maximum reflectance
+    method: Microspectrophotometry comparing adwing thin-film area #1 (Fig. 5A) vs melanized abwing distal tip area #5 (Fig. 5C)
+    finding: Dense upper-lamina melanin at the exposed abwing tip (area #5) extinguishes the blue lower-lamina thin-film interference peak—reducing reflectance at 475 nm from 26.9% (adwing #1 peak) to 4.1% (abwing #5) and peak reflectance across 350–800 nm from 26.9% to 12.0%
+    compares:
+      - abwing_area5_tip
+      - adwing_area1_230nm
+    test_of: pair
+    values:
+      adwing1_max:
+        printed: '26.9'
+        unit: '%'
+        kind: value
+        group: adwing_area1_230nm
+        spread: none
+      abwing5_max:
+        printed: '12.0'
+        unit: '%'
+        kind: value
+        group: abwing_area5_tip
+        spread: none
+    stated_direction:
+      direction: down
+      anchor:
+        quote: the reflectance spectra of the more distal areas (Figure 4C, #4, 5) are dominated by melanin filtering (Figure 5C).
+        where: Results
+    anchor:
+      quote: the reflectance spectra of the more distal areas (Figure 4C, #4, 5) are dominated by melanin filtering (Figure 5C).
+      where: Results
+
+  F6_granite_vs_bark:
+    unit: F6_SUBSTRATES
+    measure: maximum reflectance
+    method: Bifurcated reflection probe (Avantes FCR 7-UV-200) on South Ramshead cave granite and Eucalyptus cinerea bark, digitized from Fig. 6 (300–800 nm)
+    finding: Cave granite exhibits a distinct algal green reflectance hump peaking at 560 nm (13.5%) followed by a chlorophyll absorption dip at 675 nm (8.0%) and red-edge rise to 31.4% (797 nm), whereas Eucalyptus cinerea bark rises smoothly and monotonically from 5.2% (350 nm) through 8.6% (560 nm) and 18.7% (700 nm) to 31.8% (797 nm)
+    groups:
+      - cave_granite
+      - e_cinerea_bark
+    values:
+      granite_560nm:
+        printed: '13.5'
+        unit: '%'
+        kind: value
+        group: cave_granite
+        x: 560 nm
+        spread: none
+      bark_560nm:
+        printed: '8.6'
+        unit: '%'
+        kind: value
+        group: e_cinerea_bark
+        x: 560 nm
+        spread: none
+    anchor:
+      quote: The reflectance spectrum of the granite has a slight hump in the green part of the spectrum, presumably due to a thin algal coating
+      where: Results
+
+  F7_forewing_vs_bark:
+    unit: F7_CAMOUFLAGE
+    measure: maximum reflectance
+    method: Bifurcated reflection probe across 7 spots on dark female Bogong moth dorsal forewings overlaid on likely resting-spot tree barks (Table 1), digitized from Fig. 7 (300–800 nm)
+    finding: Seven dorsal forewing spectra of dark female Bogong moths increase monotonically with wavelength—spanning 4.2–7.7% at 350 nm, 8.1–20.6% at 600 nm, and 18.9–44.5% at 800 nm—falling directly within the reflectance range of the 7 likely resting-spot tree species listed in Table 1
+    groups:
+      - female_forewings
+    values:
+      forewing_800nm_range:
+        printed: 18.9 to 44.5
+        unit: '%'
+        kind: value
+        group: female_forewings
+        x: 800 nm
+        spread: range
+    anchor:
+      quote: the reflectance spectra of the forewings of the rather dark female Bogong moths we were using vary in the same range (Figure 7).
+      where: Results
+
+claims:
+  C1_abstract_camouflage_spectra:
+    kind: stated
+    quote: The similarity of the spectra underscores the effective camouflaging strategies of this moth species.
+    where: Abstract
+    scope: Australian Bogong moth (Agrotis infusa) wings and scales compared to bark and cave granite
+    rests_on:
+      - F1_wing_reflectance
+      - F6_granite_vs_bark
+      - F7_forewing_vs_bark
+    judgement:
+      direction: follows
+      support: cannot judge
+      comparison: follows
+      scope: follows
+      replication: cannot judge
+      strength: follows
+      presence: follows
+    note: Spectral overlap is demonstrated visually in Figs. 6–7 without receptor-noise JND visual modeling or reported sample sizes (N individuals/bark replicates).
+
+  C2_results_transmittance_gradient:
+    kind: stated
+    quote: Near the root, the transmittance was high, i.e., at this location the scale is almost transparent (Figure 3, #1), but near the tip the transmittance was hardly more than ∼10%
+    where: Results
+    scope: Longitudinal melanin transmittance gradient along an isolated oil-immersed forewing scale (Fig. 3)
+    rests_on:
+      - F3_scale_transmittance
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: cannot judge
+      strength: follows
+      presence: follows
+    note: Single representative scale measured (digitized 500 nm transmittance drops from 86.8% at root to 10.7% at tip); inter-scale variance not reported.
+
+  C3_results_thin_film_thickness:
+    kind: stated
+    quote: Except for a background offset, the spectra closely resemble the reflectance spectra of thin films with thickness 230 and 290 nm, respectively (Figures 5A,B, dotted curves).
+    where: Results
+    scope: Isolated forewing scale adwing lower lamina modeled as a chitin thin film in air (Figs. 5A–B)
+    rests_on:
+      - F5_lower_lamina_thickness
+      - F5_thin_film_peak_wavelength
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: cannot judge
+      strength: follows
+      presence: follows
+    note: Airy thin-film peak wavelengths match digitized adwing peaks (477 vs 473 nm; 590 vs 595 nm); authors appropriately note TEM is needed to directly confirm thickness.
+
+  C4_results_tip_melanin_blocks_thin_film:
+    kind: stated
+    quote: because the tip area is fully exposed in intact moths, the thin film reflections that are intrinsic to the lower lamina are effectively removed in that area
+    where: Results
+    scope: Overlapping scale lattice on intact Agrotis infusa dorsal forewings
+    direction: High distal melanin concentration suppresses lower-lamina thin-film interference peaks on the exposed scale tip
+    asserts_direction: down
+    rests_on:
+      - F3_scale_transmittance
+      - F5_abwing_melanin_filtering
+      - F1_wing_reflectance
+      - F7_forewing_vs_bark
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C5_results_upper_lamina_neglected:
+    kind: stated
+    quote: the overlap of the ridge lamellae in Bogong moth scales is very minor, so that a possible structural coloration of the scales’ upper lamina can be neglected.
+    where: Results
+    scope: Abwing upper lamina ridges of Agrotis infusa forewing scales (Fig. 2C)
+    rests_on:
+      - F2_ridge_spacing
+      - F2_crossrib_spacing
+      - F5_abwing_melanin_filtering
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: cannot judge
+      strength: follows
+      presence: follows
+
+  C6_results_granite_worse_match:
+    kind: stated
+    quote: The greenish surface of the cave granite is clearly less well matched to the Bogong moth’s wing color than the trees’ bark
+    where: Results
+    scope: South Ramshead alpine cave granite vs Australian resting-spot tree bark (Figs. 6–8)
+    rests_on:
+      - F6_granite_vs_bark
+      - F7_forewing_vs_bark
+    judgement:
+      direction: follows
+      support: cannot judge
+      comparison: follows
+      scope: follows
+      replication: cannot judge
+      strength: follows
+      presence: follows
+    note: Granite shows a pronounced algal green hump at 560 nm (13.5%) and chlorophyll dip at 675 nm (8.0%) absent from moth forewings and E. cinerea bark; no quantitative predator JND metric reported.
+
+  C7_discussion_cost_optimization:
+    kind: stated
+    quote: Interestingly, the melanin pigment is deposited preferentially in the tip of the wing scale, suggesting that this is an optimization of production costs.
+    where: Discussion
+    scope: Evolutionary/energetic interpretation of the proximal-to-distal melanin gradient in Bogong moth scales
+    rests_on:
+      - F3_scale_transmittance
+      - F5_abwing_melanin_filtering
+    judgement:
+      direction: follows
+      support: cannot judge
+      comparison: cannot judge
+      scope: follows
+      replication: cannot judge
+      strength: follows
+      presence: follows
+    note: Appropriately hedged ("suggesting"); metabolic cost of melanization is inferred by analogy to Pararge aegeria (Talloen et al., 2004) rather than directly tested in A. infusa.

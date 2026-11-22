@@ -1,0 +1,26 @@
+record: 2023_Banerjee
+resources:
+  - id: banerjee_supp_materials
+    kind: supplement
+    repository: Publisher_Supplement
+    title: Supplementary Materials PDF — Tables S1–S4 (CRISPR sgRNAs, primers, Table S2 injection/survival summary, buffer recipes) and Figs. S1–S15 (Wnt/fz phylogenies, Spalt/Arm larval IF, arm and Wnt7 CRISPR phenotypes)
+    url: https://www.science.org/doi/suppl/10.1126/sciadv.adg3877/suppl_file/sciadv.adg3877_sm.pdf
+    doi: 10.1126/sciadv.adg3877
+    license: CC-BY-4.0
+    local_files: []
+    feeds_panels:
+      - 2023_Banerjee/F5/N
+      - 2023_Banerjee/F8/K
+    feeds_items:
+      - E2_arm_crispant_loss
+      - E3_arm_crispant_split
+      - E4_arm_crispant_margin
+      - E7_wnt7_ectopic_veins_eyespots
+      - E9_wnta_crispant_defects
+      - E12_fz4_eyespot_duplication
+      - E13_fz4_pcp_scale_orientation
+      - E14_fz4_margin_defects
+    summary:
+      tables: [Table S1, Table S2, Table S3, Table S4]
+      figures: Figs. S1–S15
+      note: Referenced in PMC10371022.xml; not harvested into local folder.

@@ -1,0 +1,37 @@
+id: 2024_Totz
+doi: 10.1016/j.xcrp.2024.102063
+title: Cell membrane buckling governs early-stage ridge formation in butterfly wing scales
+year: 2024
+journal: Cell Reports Physical Science
+oa_status: open_access
+license: CC-BY-NC-ND-4.0
+figure_embed_policy: public_thumbnails
+repositories:
+  - kind: zenodo
+    url: https://doi.org/10.5281/zenodo.8369073
+    doi: 10.5281/zenodo.8369073
+    note: Raw in vivo speckle-correlation reflection phase microscopy interferogram dataset of live developing Vanessa cardui pupal hindwing scales
+  - kind: zenodo
+    url: https://doi.org/10.5281/zenodo.10994275
+    doi: 10.5281/zenodo.10994275
+    note: MATLAB phase-unwrapping and protoridge segmentation code plus 21 segmented scale *_meas.mat datasets and 3 Fig 1 example unwraps (harvested locally as associated/buckling_data_proc.zip)
+  - kind: zenodo
+    url: https://doi.org/10.5281/zenodo.11375797
+    doi: 10.5281/zenodo.11375797
+    note: Mathematica 13.1 Föppl-von Kármán plate mechanics notebook and meanProfileDataExperiment.mat (harvested locally as associated/plate_mechanics_code.zip)
+files:
+  - file: PMC11905118.xml
+    role: main_text
+  - file: fig1.jpg
+    role: main_figure
+  - file: fig2.jpg
+    role: main_figure
+  - file: fig3.jpg
+    role: main_figure
+  - file: fig4.jpg
+    role: main_figure
+  - file: associated/buckling_data_proc.zip
+    role: raw_data
+  - file: associated/plate_mechanics_code.zip
+    role: code
+not_used: []

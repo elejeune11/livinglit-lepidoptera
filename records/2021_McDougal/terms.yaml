@@ -1,0 +1,46 @@
+record: 2021_McDougal
+vocabulary_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_ingest
+edits: []
+mappings:
+  - field: scale_type
+    stated: adult scales
+    terms: [scale_type:wing_scale]
+  - field: scale_type
+    stated: wing scales
+    terms: [scale_type:wing_scale]
+  - field: scale_type
+    stated: precursor cells
+    terms: [scale_type:wing_scale]
+  - field: scale_type
+    stated: ground scale precursor cells
+    terms: [scale_type:ground_scale]
+  - field: scale_type
+    stated: cover scales and ground scales
+    terms: [scale_type:cover_scale, scale_type:ground_scale]
+  - field: scale_type
+    stated: cover scales
+    terms: [scale_type:cover_scale]
+  - field: imaging_modality
+    stated: Scanning electron micrograph
+    terms: [imaging_modality:sem]
+  - field: view_orientation
+    stated: upper surface
+    terms: [view_orientation:top_down_apical]
+  - field: view_orientation
+    stated: Volumetric
+    terms: [view_orientation:volumetric_3d]
+  - field: view_orientation
+    stated: single slice
+    terms: [view_orientation:top_down_apical]
+  - field: view_orientation
+    stated: 3D amplitude data
+    terms: [view_orientation:volumetric_3d]
+  - field: hydration_and_prep
+    stated: Scanning electron micrograph
+    terms: [hydration_and_prep:vacuum_sputter_coated]
+  - field: hydration_and_prep
+    stated: live and unlabeled
+    terms: [hydration_and_prep:live_in_vivo]

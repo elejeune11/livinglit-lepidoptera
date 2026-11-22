@@ -1,0 +1,75 @@
+record: 2024_Livraghi
+formula_library_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_genetics
+derived:
+  cortex_exon2_g0_penetrance:
+    item: F3_cortex_g0_penetrance
+    group: vc_cortex_g0_mko
+    formula: pen = n_phenotype / n_emerged
+    anchor:
+      quote: The resulting cortex crispants were indistinguishable from wild-type controls, in spite of high mutation rates observed in the genotyped haemolymph of 7 G 0 individuals
+      where: Results
+    library:
+      formula: crispr_penetrance
+      vars:
+        pen: pen
+        n_phenotype: n_phenotype
+        n_emerged: n_emerged
+    inputs:
+      n_phenotype:
+        value: F3_cortex_g0_counts.values.n_wing_phenotype
+        kind: constant
+      n_emerged:
+        value: F3_cortex_g0_counts.values.n_genotyped
+        kind: constant
+    output: F3_cortex_g0_penetrance.values.cortex_g0_pen
+    note: Confirms 0/7 = 0% wing pigmentation penetrance in genotyped high-efficiency V. cardui cortex exon 2 G0 crispants.
+
+  heliconius_pupal_duration_from_onset:
+    item: F1_ivory_onset_timing
+    group: heliconius_onset_36h
+    formula: D_pupa = t_apf / stage_frac
+    anchor:
+      quote: From 36 h after pupa formation, or ∼20% of pupal development, cortex expression significantly decreases and ivory is detected and persists up until at least 60 h after pupa formation.
+      where: Results
+    library:
+      formula: relative_pupal_stage
+      vars:
+        stage_frac: stage_frac
+        t_apf: t_apf
+        D_pupa: D_pupa
+    inputs:
+      t_apf:
+        value: F1_ivory_onset_timing.values.t_onset
+        kind: constant
+      stage_frac:
+        value: F1_ivory_onset_pct.values.onset_pct
+        kind: constant
+    output_unit: h
+    note: Rebuilds total Heliconius pupal duration (180 h = 7.5 d) implied by 36 h APF = ~20% pupal development.
+
+  ivory_persistence_pupal_stage:
+    item: F1_ivory_onset_timing
+    group: heliconius_persist_60h
+    formula: stage_frac = t_apf / D_pupa
+    anchor:
+      quote: From 36 h after pupa formation, or ∼20% of pupal development, cortex expression significantly decreases and ivory is detected and persists up until at least 60 h after pupa formation.
+      where: Results
+    library:
+      formula: relative_pupal_stage
+      vars:
+        stage_frac: stage_frac
+        t_apf: t_apf
+        D_pupa: D_pupa
+    inputs:
+      t_apf:
+        value: F1_ivory_onset_timing.values.t_persist
+        kind: constant
+      D_pupa:
+        derived: heliconius_pupal_duration_from_onset
+        kind: constant
+    output_unit: '%'
+    note: Converts 60 h APF ivory persistence timepoint to 33.3% relative pupal development, matching the 20–35% ISH window (30% in Fig. 2).
+proposals: []

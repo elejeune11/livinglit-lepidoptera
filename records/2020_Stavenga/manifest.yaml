@@ -1,0 +1,33 @@
+id: 2020_Stavenga
+doi: 10.3389/fphys.2020.00095
+title: Bogong Moths Are Well Camouflaged by Effectively Decolourized Wing Scales
+year: 2020
+journal: Frontiers in Physiology
+oa_status: open_access
+license: CC-BY-4.0
+figure_embed_policy: public_thumbnails
+repositories:
+  - kind: publisher_supplement
+    url: https://www.frontiersin.org/articles/10.3389/fphys.2020.00095/full#supplementary-material
+    doi: 10.3389/fphys.2020.00095
+    note: Supplementary Figure S1 (reflectance spectra of aestivation cave wall granite and 14 Australian tree species barks listed in Table 1).
+files:
+  - file: PMC7026391.xml
+    role: main_text
+  - file: fphys-11-00095-g001.jpg
+    role: main_figure
+  - file: fphys-11-00095-g002.jpg
+    role: main_figure
+  - file: fphys-11-00095-g003.jpg
+    role: main_figure
+  - file: fphys-11-00095-g004.jpg
+    role: main_figure
+  - file: fphys-11-00095-g005.jpg
+    role: main_figure
+  - file: fphys-11-00095-g006.jpg
+    role: main_figure
+  - file: fphys-11-00095-g007.jpg
+    role: main_figure
+  - file: fphys-11-00095-g008.jpg
+    role: main_figure
+not_used: []

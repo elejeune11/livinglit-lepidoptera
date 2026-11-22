@@ -1,0 +1,1192 @@
+id: 2021_McDougal
+field_set: 4
+source:
+  title: In vivo visualization of butterfly scale cell morphogenesis in Vanessa cardui
+  doi: 10.1073/pnas.2112009118
+  year: '2021'
+  first_author: Anthony D. McDougal
+  last_author: Mathias Kolle
+  lab: Kolle & So labs, Massachusetts Institute of Technology
+  journal: PNAS
+  files:
+    - PMC8670486.xml
+    - measured_A40ScaleMeasurements.xlsx
+  not_used:
+    - file: pnas.202112009fig01.jpg
+      why: Decomposed into atomic panels (macro morphology, SEM and SRPM scale bars, and 2D-FFT ridge/crossrib metrology) in panels.yaml
+    - file: pnas.202112009fig02.jpg
+      why: Decomposed into atomic panels (surgical schematic, optical window macro photos, SRPM 2D-FFT, and surface profile extractors) in panels.yaml
+    - file: pnas.202112009fig03.jpg
+      why: Decomposed into atomic panels (calibrated live SRPM developmental timeline 5-99% and milestone schematic) in panels.yaml
+    - file: pnas.202112009fig04.jpg
+      why: Decomposed into atomic panels (13-18% two-stage precursor cell SRPM series and schematics 4A'-4D') in panels.yaml
+    - file: pnas.202112009fig05.jpg
+      why: Decomposed into atomic panels (35% and 41% volumetric/phase/profile views, 2D-FFT proto-ridges, and 7 bespoke quantitative plot extractors) in panels.yaml
+  missing:
+    - SI Appendix (Figs. S1-S11, Movies S1-S5) and raw 3D interferogram .mat stacks / Group1-3 .mat files (hosted on Zenodo 10.5281/zenodo.5532941; measured_A40ScaleMeasurements.xlsx, 10 phaseProfiles.mat tables, and 33 MATLAB scripts harvested locally)
+
+context_anchors:
+  - field: taxon
+    value: Vanessa cardui
+    anchor:
+      quote: Here, we report the continuous, in vivo, label-free imaging of growing scale cells of Vanessa cardui using speckle-correlation reflection phase microscopy.
+      where: Abstract
+  - field: life_stage
+    value: adult
+    anchor:
+      quote: Scanning electron micrograph of individual adult scales, with ridges running down the length of the scale.
+      where: Fig. 1 caption
+  - field: life_stage
+    value: pupa
+    anchor:
+      quote: showing the tips of forewing scales in a pupa at 83% development (8.12 d for this specimen).
+      where: Fig. 2 caption
+  - field: pupal_stage_pct
+    value: 5%
+    anchor:
+      quote: Wing tissue at 5% of pupal development, exhibiting cell division prior to precursor cell differentiation.
+      where: Fig. 3 caption
+  - field: pupal_stage_pct
+    value: 15%
+    anchor:
+      quote: Enlarged, raised precursor cells (red, encircled by dashed line) are identifiable at 15% development.
+      where: Fig. 3 caption
+  - field: pupal_stage_pct
+    value: 13 to 18%
+    anchor:
+      quote: Cover scale precursor cells (raised red spheroids) are labeled 1, 2, and 3 and are tracked over 13 to 18% of development in a single pupa.
+      where: Fig. 4 caption
+  - field: pupal_stage_pct
+    value: 34%
+    anchor:
+      quote: Scales (two are emphasized by the dashed outlines) have begun to grow away from the sockets on the wing (one is emphasized by the dotted outline) at 34% development
+      where: Fig. 3 caption
+  - field: pupal_stage_pct
+    value: 35%
+    anchor:
+      quote: Scale morphology at 35% of pupal development.
+      where: Fig. 5 caption
+  - field: pupal_stage_pct
+    value: 37%
+    anchor:
+      quote: The onset of ridge formation appears to start near the end of the scales’ expansion (∼37% of development for this specimen)
+      where: Results
+  - field: pupal_stage_pct
+    value: 39%
+    anchor:
+      quote: At ∼39% of development, long spars of material running down the length of the scale become visible in the amplitude data (Fig. 5G).
+      where: Results
+  - field: pupal_stage_pct
+    value: 41%
+    anchor:
+      quote: Scale morphology at 41% of pupal development.
+      where: Fig. 5 caption
+  - field: pupal_stage_pct
+    value: 44%
+    anchor:
+      quote: Expanding scales and the beginning of finger formation at 44% development.
+      where: Fig. 3 caption
+  - field: pupal_stage_pct
+    value: 47%
+    anchor:
+      quote: our quantification of the spacing and height of scale ridges reveals that the ridge spacing remains constant from the first occurrence of ridges at about 47% development
+      where: Conclusion
+  - field: pupal_stage_pct
+    value: 47% to 89%
+    anchor:
+      quote: ridge spacing remains constant from the first occurrence of ridges at about 47% development to at least 89% development.
+      where: Conclusion
+  - field: pupal_stage_pct
+    value: 62%
+    anchor:
+      quote: Scales at their final size with well-pronounced fingers at 62% development.
+      where: Fig. 3 caption
+  - field: pupal_stage_pct
+    value: 83%
+    anchor:
+      quote: showing the tips of forewing scales in a pupa at 83% development (8.12 d for this specimen).
+      where: Fig. 2 caption
+  - field: pupal_stage_pct
+    value: 99%
+    anchor:
+      quote: Scales show a lower lamina (green zone) underneath developed ridges (red zone) at 99% development.
+      where: Fig. 3 caption
+  - field: anatomical_region
+    value: wing
+    anchor:
+      quote: Optical micrograph of orange and black wing scales.
+      where: Fig. 1 caption
+  - field: anatomical_region
+    value: forewing
+    anchor:
+      quote: showing the tips of forewing scales in a pupa at 83% development (8.12 d for this specimen).
+      where: Fig. 2 caption
+  - field: anatomical_region
+    value: hindwing
+    anchor:
+      quote: To expose the hindwing for continuous imaging, we adapted the surgical strategy described by Otaki and coworkers (35, 44).
+      where: Materials and Methods
+  - field: scale_type
+    value: adult scales
+    anchor:
+      quote: Scanning electron micrograph of individual adult scales, with ridges running down the length of the scale.
+      where: Fig. 1 caption
+  - field: scale_type
+    value: wing scales
+    anchor:
+      quote: The functional structures of butterfly wing scales form during pupal development
+      where: Introduction
+  - field: scale_type
+    value: cover scales
+    anchor:
+      quote: We use Dragonfly (Object Research Systems) to measure length, width, and thickness of cover scales in deconvolved 3D amplitude data
+      where: Materials and Methods
+  - field: scale_type
+    value: precursor cells
+    anchor:
+      quote: Enlarged, raised precursor cells (red, encircled by dashed line) are identifiable at 15% development.
+      where: Fig. 3 caption
+  - field: scale_type
+    value: ground scale precursor cells
+    anchor:
+      quote: New ground scale precursor cells (arrowheads) are now of comparable size to the older ones; all precursor cells are arranged in a straight row.
+      where: Fig. 4 caption
+  - field: scale_type
+    value: cover scales and ground scales
+    anchor:
+      quote: cover scales (arrows) and ground scales (arrowheads) are easily distinguishable.
+      where: Fig. 3 caption
+  - field: imaging_modality
+    value: Scanning electron micrograph
+    anchor:
+      quote: Scanning electron micrograph of individual adult scales, with ridges running down the length of the scale.
+      where: Fig. 1 caption
+  - field: imaging_modality
+    value: speckle-correlation reflection phase microscopy
+    anchor:
+      quote: Here, we report the continuous, in vivo, label-free imaging of growing scale cells of Vanessa cardui using speckle-correlation reflection phase microscopy.
+      where: Abstract
+  - field: view_orientation
+    value: upper surface
+    anchor:
+      quote: In general, the upper surface of a scale consists of ridges running down its length; these ridges are composed of overlapping lamellae and are connected by crossribs
+      where: Introduction
+  - field: view_orientation
+    value: Volumetric
+    anchor:
+      quote: Volumetric amplitude stack showing overlapping scales (red, highest slice; green, lowest slice through a 6-µm depth).
+      where: Fig. 2 caption
+  - field: view_orientation
+    value: single slice
+    anchor:
+      quote: A single slice of deconvolved reflected light amplitude data, showing the tips of forewing scales in a pupa at 83% development
+      where: Fig. 2 caption
+  - field: view_orientation
+    value: 3D amplitude data
+    anchor:
+      quote: We use Dragonfly (Object Research Systems) to measure length, width, and thickness of cover scales in deconvolved 3D amplitude data
+      where: Materials and Methods
+  - field: hydration_and_prep
+    value: live and unlabeled
+    anchor:
+      quote: This interferometric approach yields both phase and amplitude data from live and unlabeled specimens, with excellent axial sectioning, rejecting out-of-focus information
+      where: Results
+  - field: hydration_and_prep
+    value: Scanning electron micrograph
+    anchor:
+      quote: Scanning electron micrograph of individual adult scales, with ridges running down the length of the scale.
+      where: Fig. 1 caption
+
+default_context:
+  taxon: Vanessa cardui
+  sex: not stated
+  pattern_element: not applicable
+  functional_architecture: not stated
+  target_gene: none
+  genetic_element_type: not applicable
+  allele_or_zygosity: wild type
+  perturbation_modality: wild type
+  chemical_agent: none
+
+units:
+  U1_ADULT_SCALE:
+    where: Fig. 1C–F and Introduction
+    title: Adult Vanessa cardui wing scale ridge, crossrib, and lower-lamina ultrastructure across SEM and SRPM
+    context:
+      life_stage: adult
+      pupal_stage_pct: not applicable
+      anatomical_region: wing
+      scale_type: adult scales
+    groups:
+      adult_sem:
+        label: Adult V. cardui wing scale (planar SEM, Fig. 1C–D)
+        kind: natural
+        context:
+          imaging_modality: Scanning electron micrograph
+          view_orientation: upper surface
+          hydration_and_prep: Scanning electron micrograph
+      adult_srpm_vol:
+        label: Adult V. cardui wing scale (volumetric SRPM, Fig. 1E)
+        kind: natural
+        context:
+          imaging_modality: speckle-correlation reflection phase microscopy
+          view_orientation: Volumetric
+          hydration_and_prep: not stated
+      adult_srpm_phase:
+        label: Adult V. cardui wing scale (single-slice phase SRPM, Fig. 1F)
+        kind: natural
+        context:
+          imaging_modality: speckle-correlation reflection phase microscopy
+          view_orientation: single slice
+          hydration_and_prep: not stated
+
+  U2_FOREWING_LIVE:
+    where: Fig. 2G–K and Results
+    title: In vivo single-timepoint SRPM of late-pupal (83% / 8.12 d) forewing scale ridges and lamellae
+    context:
+      life_stage: pupa
+      pupal_stage_pct: 83%
+      anatomical_region: forewing
+      scale_type: wing scales
+      imaging_modality: speckle-correlation reflection phase microscopy
+      hydration_and_prep: live and unlabeled
+    groups:
+      pupa_83pct_slice:
+        label: Live pupal forewing scales at 83% development (8.12 d, single amplitude/phase slice, Fig. 2G, I–K)
+        kind: natural
+        context:
+          view_orientation: single slice
+      pupa_83pct_vol:
+        label: Live pupal forewing scales at 83% development (8.12 d, 6-µm volumetric stack, Fig. 2H)
+        kind: natural
+        context:
+          view_orientation: Volumetric
+
+  U3_TIMELINE_PATTERNING:
+    where: Figs. 3–4 and Results
+    title: Continuous in vivo developmental timeline of Vanessa cardui hindwing scale precursor patterning and morphogenesis
+    context:
+      life_stage: pupa
+      anatomical_region: hindwing
+      imaging_modality: speckle-correlation reflection phase microscopy
+      view_orientation: Volumetric
+      hydration_and_prep: live and unlabeled
+    groups:
+      epidermal_5pct:
+        label: Generalized epidermal sheet mitoses at 5% pupal development (Fig. 3A)
+        kind: natural
+        context:
+          scale_type: wing scales
+          pupal_stage_pct: 5%
+      precursor_15pct:
+        label: Enlarged raised cover scale precursor cells at 15% development (Fig. 3B)
+        kind: natural
+        context:
+          scale_type: precursor cells
+          pupal_stage_pct: 15%
+      precursor_two_stage:
+        label: Two-stage intercalation of ground scale precursor cells between cover precursors (13–18%, Fig. 4)
+        kind: natural
+        context:
+          scale_type: ground scale precursor cells
+          pupal_stage_pct: 13 to 18%
+      protrusion_34pct:
+        label: Protruding cover and ground scales at 34% development (Fig. 3C)
+        kind: natural
+        context:
+          scale_type: cover scales and ground scales
+          pupal_stage_pct: 34%
+      fingers_44pct:
+        label: Expanding scales initiating apical fingers at 44% development (Fig. 3D)
+        kind: natural
+        context:
+          scale_type: cover scales and ground scales
+          pupal_stage_pct: 44%
+      final_size_62pct:
+        label: Final-size scales with pronounced fingers at 62% development (Fig. 3E)
+        kind: natural
+        context:
+          scale_type: cover scales and ground scales
+          pupal_stage_pct: 62%
+      lamina_99pct:
+        label: Mature scales with lower lamina beneath developed ridges at 99% development (Fig. 3F)
+        kind: natural
+        context:
+          scale_type: cover scales and ground scales
+          pupal_stage_pct: 99%
+
+  U4_COVER_SCALE_GROWTH:
+    where: Fig. 5C–F, Results, and measured_A40ScaleMeasurements.xlsx
+    title: Quantitative in vivo 3D growth trajectories of hindwing cover scale length, width, and thickness in pupa A40
+    context:
+      life_stage: pupa
+      anatomical_region: hindwing
+      scale_type: cover scales
+      imaging_modality: speckle-correlation reflection phase microscopy
+      view_orientation: 3D amplitude data
+      hydration_and_prep: live and unlabeled
+    groups:
+      a40_30pct:
+        label: Pupa A40 cover scales at 3.52 d (29.7% development, n=3 scales)
+        kind: natural
+        context:
+          pupal_stage_pct:
+            value: 29.7% (3.52 d)
+            anchor:
+              quote: measured_A40ScaleMeasurements.xlsx!Sheet1!E2
+              where: measured_A40ScaleMeasurements.xlsx Sheet1 E2
+              kind: dataset cell
+      a40_35pct:
+        label: Pupa A40 cover scales at 4.12 d (35% development, Fig. 5A, n=3 scales)
+        kind: natural
+        context:
+          pupal_stage_pct: 35%
+      a40_37pct:
+        label: Pupa A40 cover scales at 4.40 d (37% development, ridge onset, n=3 scales)
+        kind: natural
+        context:
+          pupal_stage_pct: 37%
+      a40_41pct:
+        label: Pupa A40 cover scales at 4.86 d (41% development, Fig. 5B, n=3 scales)
+        kind: natural
+        context:
+          pupal_stage_pct: 41%
+      a40_47pct:
+        label: Pupa A40 cover scales at 5.57 d (47% development, n=2 scales)
+        kind: natural
+        context:
+          pupal_stage_pct: 47%
+      a40_54pct:
+        label: Pupa A40 cover scales at 6.36 d (53.7% development, n=1 scale)
+        kind: natural
+        context:
+          pupal_stage_pct:
+            value: 53.7% (6.36 d)
+            anchor:
+              quote: measured_A40ScaleMeasurements.xlsx!Sheet1!E66
+              where: measured_A40ScaleMeasurements.xlsx Sheet1 E66
+              kind: dataset cell
+
+  U5_ACTIN_RIDGE_DYNAMICS:
+    where: Fig. 5A–B, G–H and Results
+    title: In vivo actin bundle widening, nascent proto-ridge height growth, and constant ridge periodicity (35–89% development)
+    context:
+      life_stage: pupa
+      anatomical_region: hindwing
+      scale_type: cover scales
+      imaging_modality: speckle-correlation reflection phase microscopy
+      hydration_and_prep: live and unlabeled
+    groups:
+      actin_widening_39pct:
+        label: Widening longitudinal actin bundles in smooth scales (~39–44% development, Fig. 5G)
+        kind: natural
+        context:
+          pupal_stage_pct: 39%
+          view_orientation: 3D amplitude data
+      proto_ridges_41pct:
+        label: Nascent regularly spaced proto-ridges on pupa A40 at 41% development (Fig. 5B, 5H)
+        kind: natural
+        context:
+          pupal_stage_pct: 41%
+          view_orientation: single slice
+      stable_ridges_47_89pct:
+        label: Constant-spacing developing scale ridges tracked continuously (47–89% development, Fig. 5G)
+        kind: natural
+        context:
+          pupal_stage_pct: 47% to 89%
+          view_orientation: 3D amplitude data
+
+evidence:
+  F1_adult_ridge_fft:
+    unit: U1_ADULT_SCALE
+    measure: ridge spacing
+    method: LivingLit calibrated 2D-FFT and 10-transect profiling on Fig. 1C–F adult SEM and SRPM micrographs
+    finding: Calibrated 2D-FFT recovers adult V. cardui longitudinal ridge spacing of 1.81–1.91 µm in SEM (Fig. 1C–D) and 2.11–2.13 µm in volumetric/single-slice SRPM (Fig. 1E–F)
+    groups:
+      - adult_sem
+      - adult_srpm_vol
+      - adult_srpm_phase
+    anchor:
+      quote: Scanning electron micrograph of individual adult scales, with ridges running down the length of the scale.
+      where: Fig. 1 caption
+
+  F1_adult_crossrib_fft:
+    unit: U1_ADULT_SCALE
+    measure: crossrib spacing
+    method: LivingLit calibrated orthogonal 2D-FFT on Fig. 1D high-magnification SEM scale finger (5 µm bar)
+    finding: Orthogonal 2D-FFT on the adult SEM finger (Fig. 1D) measures transverse crossrib spacing of 0.48 µm (SNR 30.4)
+    groups:
+      - adult_sem
+    anchor:
+      quote: Magnification of scale finger showing that ridges consist of stacked lamellae and are connected by crossribs.
+      where: Fig. 1 caption
+
+  F1_lower_lamina_thickness:
+    unit: U1_ADULT_SCALE
+    measure: lower lamina thickness
+    method: Reference adult scale blueprint thickness stated in Introduction
+    finding: Adult V. cardui scales feature a thin basal lower lamina on the order of 100 nm in thickness
+    groups:
+      - adult_sem
+    values:
+      lower_lamina:
+        printed: '100'
+        unit: nm
+        kind: value
+        group: adult_sem
+        spread: none
+    anchor:
+      quote: Supporting trabeculae bridge the upper features and lower scale surface, which is essentially a thin lamina on the order of 100 nm in thickness.
+      where: Introduction
+
+  F2_forewing_timing:
+    unit: U2_FOREWING_LIVE
+    measure: developmental milestone timing
+    method: Direct pupation timestamping to within 15 min prior to single-timepoint forewing SRPM imaging
+    finding: Live forewing scale tips were imaged in vivo at 8.12 d post-pupation (83% development for specimen F43)
+    groups:
+      - pupa_83pct_slice
+    values:
+      forewing_age_d:
+        printed: '8.12'
+        unit: d
+        kind: value
+        group: pupa_83pct_slice
+        spread: none
+    anchor:
+      quote: showing the tips of forewing scales in a pupa at 83% development (8.12 d for this specimen).
+      where: Fig. 2 caption
+
+  F2_forewing_stage_frac:
+    unit: U2_FOREWING_LIVE
+    measure: relative pupal development
+    method: Normalized fraction of total pupal duration at forewing imaging (specimen F43)
+    finding: Live forewing SRPM snapshot corresponds to 83% (0.83 fraction) of pupal development at 8.12 d APF
+    groups:
+      - pupa_83pct_slice
+    values:
+      stage_frac_83:
+        printed: '0.83'
+        unit: '1'
+        kind: fraction
+        group: pupa_83pct_slice
+        spread: none
+    anchor:
+      quote: showing the tips of forewing scales in a pupa at 83% development (8.12 d for this specimen).
+      where: Fig. 2 caption
+
+  F2_forewing_ridge_fft:
+    unit: U2_FOREWING_LIVE
+    measure: ridge spacing
+    method: LivingLit calibrated 2D-FFT on Fig. 2G–I live pupal forewing SRPM amplitude, volumetric, and phase-gradient images
+    finding: Calibrated 2D-FFT on 83% live pupal forewing scales recovers consistent 2.01–2.04 µm ridge spacing across amplitude (2.04 µm), volumetric (2.04 µm), and phase-gradient (2.01 µm) views
+    groups:
+      - pupa_83pct_slice
+      - pupa_83pct_vol
+    anchor:
+      quote: Visualization of micro- and nanoscale features on scales via the phase gradient associated with the amplitude data in G.
+      where: Fig. 2 caption
+
+  F3_pupal_duration:
+    unit: U3_TIMELINE_PATTERNING
+    measure: developmental milestone timing
+    method: Continuous pupal cohort monitoring from larval skin molt to adult eclosion
+    finding: Total V. cardui pupal duration (100% development) averages about 10 d and varies by up to 2 d across individuals
+    groups:
+      - lamina_99pct
+    values:
+      pupal_duration_d:
+        printed: 10 ± 2
+        unit: d
+        kind: mean
+        group: lamina_99pct
+        spread: range
+    anchor:
+      quote: the duration of the pupal stage (100% development) is typically about 10 d and can vary by up to 2 d
+      where: Results
+
+  F3_developmental_milestones:
+    unit: U3_TIMELINE_PATTERNING
+    measure: relative pupal development
+    method: Continuous in vivo volumetric SRPM tracking (15-min cycles) from pupation to eclosion
+    finding: Continuous live imaging maps epidermal mitoses (5%), cover precursor enlargement (15%), two-stage ground precursor intercalation (13–18%), protrusion (34%), finger onset (44%), final size (62%), and lower lamina (99%)
+    groups:
+      - epidermal_5pct
+      - precursor_15pct
+      - precursor_two_stage
+      - protrusion_34pct
+      - fingers_44pct
+      - final_size_62pct
+      - lamina_99pct
+    values:
+      mitoses_pct:
+        printed: '5'
+        unit: '%'
+        kind: value
+        group: epidermal_5pct
+        spread: none
+      precursor_pct:
+        printed: '15'
+        unit: '%'
+        kind: value
+        group: precursor_15pct
+        spread: none
+      ground_intercalation_end_pct:
+        printed: '18'
+        unit: '%'
+        kind: value
+        group: precursor_two_stage
+        spread: none
+      protrusion_pct:
+        printed: '34'
+        unit: '%'
+        kind: value
+        group: protrusion_34pct
+        spread: none
+      finger_onset_pct:
+        printed: '44'
+        unit: '%'
+        kind: value
+        group: fingers_44pct
+        spread: none
+      final_size_pct:
+        printed: '62'
+        unit: '%'
+        kind: value
+        group: final_size_62pct
+        spread: none
+      lower_lamina_pct:
+        printed: '99'
+        unit: '%'
+        kind: value
+        group: lamina_99pct
+        spread: none
+    anchor:
+      quote: By tracking gradual changes in scale growth over time, we can explicitly define the timing of specific developmental events within individual pupae
+      where: Results
+
+  F5_scale_width:
+    unit: U4_COVER_SCALE_GROWTH
+    measure: scale width
+    method: Dragonfly 3D morphometry on deconvolved live SRPM volumes of pupa A40 cover scales (measured_A40ScaleMeasurements.xlsx)
+    finding: Cover scale width expands 5.3-fold from 8.58 ± 0.91 µm at 3.52 d (29.7%) to 24.74 ± 1.75 µm (35%), 30.75 ± 1.93 µm (37%), 45.77 ± 6.21 µm (41%), 39.97 ± 1.29 µm (47%), and 46.17 µm (53.7%)
+    groups:
+      - a40_30pct
+      - a40_35pct
+      - a40_37pct
+      - a40_41pct
+      - a40_47pct
+      - a40_54pct
+    n:
+      printed: three scales (n=3 at 3.52–4.86 d, n=2 at 5.57 d, n=1 at 6.36 d in pupa A40)
+      per_group:
+        a40_30pct: '3'
+        a40_35pct: '3'
+        a40_37pct: '3'
+        a40_41pct: '3'
+        a40_47pct: '2'
+        a40_54pct: '1'
+      counts: scales
+      levels:
+        individuals: 1
+        scales: 3
+      test_unit: scales
+      origin: from data
+      data:
+        file: measured_A40ScaleMeasurements.xlsx
+        sheet: Sheet1
+        cells: G4:G81
+    values:
+      w_30pct:
+        printed: 8.58 ± 0.91
+        unit: µm
+        kind: mean
+        group: a40_30pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G4,G8,G12
+      w_35pct:
+        printed: 24.74 ± 1.75
+        unit: µm
+        kind: mean
+        group: a40_35pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G22,G26,G30
+      w_37pct:
+        printed: 30.75 ± 1.93
+        unit: µm
+        kind: mean
+        group: a40_37pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G37,G41,G45
+      w_41pct:
+        printed: 45.77 ± 6.21
+        unit: µm
+        kind: mean
+        group: a40_41pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G52,G56,G61
+      w_47pct:
+        printed: 39.97 ± 1.29
+        unit: µm
+        kind: mean
+        group: a40_47pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G76,G81
+      w_54pct:
+        printed: '46.17'
+        unit: µm
+        kind: value
+        group: a40_54pct
+        spread: none
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G68
+    anchor:
+      quote: We use Dragonfly (Object Research Systems) to measure length, width, and thickness of cover scales in deconvolved 3D amplitude data
+      where: Materials and Methods
+
+  F5_scale_thickness:
+    unit: U4_COVER_SCALE_GROWTH
+    measure: scale thickness
+    method: Dragonfly 3D morphometry on deconvolved live SRPM volumes of pupa A40 cover scales (measured_A40ScaleMeasurements.xlsx)
+    finding: Cover scale blade thickness gradually thins during lateral expansion from 6.26 ± 0.96 µm at 29.7% and 6.18 ± 0.90 µm at 35% down to 5.17 ± 0.17 µm (37%), 5.04 ± 0.54 µm (41%), 5.03 ± 0.61 µm (47%), and 4.31 µm (53.7%)
+    groups:
+      - a40_30pct
+      - a40_35pct
+      - a40_37pct
+      - a40_41pct
+      - a40_47pct
+      - a40_54pct
+    n:
+      printed: three scales (n=3 at 3.52–4.86 d, n=2 at 5.57 d, n=1 at 6.36 d in pupa A40)
+      per_group:
+        a40_30pct: '3'
+        a40_35pct: '3'
+        a40_37pct: '3'
+        a40_41pct: '3'
+        a40_47pct: '2'
+        a40_54pct: '1'
+      counts: scales
+      levels:
+        individuals: 1
+        scales: 3
+      test_unit: scales
+      origin: from data
+      data:
+        file: measured_A40ScaleMeasurements.xlsx
+        sheet: Sheet1
+        cells: G5:G82
+    values:
+      t_30pct:
+        printed: 6.26 ± 0.96
+        unit: µm
+        kind: mean
+        group: a40_30pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G5,G9,G13
+      t_35pct:
+        printed: 6.18 ± 0.90
+        unit: µm
+        kind: mean
+        group: a40_35pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G23,G27,G31
+      t_37pct:
+        printed: 5.17 ± 0.17
+        unit: µm
+        kind: mean
+        group: a40_37pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G38,G42,G46
+      t_41pct:
+        printed: 5.04 ± 0.54
+        unit: µm
+        kind: mean
+        group: a40_41pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G53,G57,G62
+      t_47pct:
+        printed: 5.03 ± 0.61
+        unit: µm
+        kind: mean
+        group: a40_47pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G77,G82
+      t_54pct:
+        printed: '4.31'
+        unit: µm
+        kind: value
+        group: a40_54pct
+        spread: none
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G69
+    anchor:
+      quote: During much of scale expansion, the already-slender scale gradually continues to thin (Fig. 5E).
+      where: Results
+
+  F5_scale_length:
+    unit: U4_COVER_SCALE_GROWTH
+    measure: scale length
+    method: 3D tip-to-wing-membrane line-plane extrapolation from deconvolved SRPM volumes (lineplaneL.m / makeFig5CDEF.m, Fig. 5C)
+    finding: Cover scale length rises from 40.3 ± 2.0 µm (29.7%) and 97.3 ± 8.7 µm (35%) to a peak of 178.8 ± 28.8 µm at 37%, then retracts slightly to 141.6 ± 5.5 µm (41%), 151.5 ± 34.5 µm (47%), and 143.1 µm (53.7%)
+    groups:
+      - a40_30pct
+      - a40_35pct
+      - a40_37pct
+      - a40_41pct
+      - a40_47pct
+      - a40_54pct
+    n:
+      printed: three scales (n=3 at 3.52–4.86 d, n=2 at 5.57 d, n=1 at 6.36 d in pupa A40)
+      per_group:
+        a40_30pct: '3'
+        a40_35pct: '3'
+        a40_37pct: '3'
+        a40_41pct: '3'
+        a40_47pct: '2'
+        a40_54pct: '1'
+      counts: scales
+      levels:
+        individuals: 1
+        scales: 3
+      test_unit: scales
+    values:
+      len_30pct:
+        printed: 40.3 ± 2.0
+        unit: µm
+        kind: mean
+        group: a40_30pct
+        spread: SD
+      len_35pct:
+        printed: 97.3 ± 8.7
+        unit: µm
+        kind: mean
+        group: a40_35pct
+        spread: SD
+      len_37pct:
+        printed: 178.8 ± 28.8
+        unit: µm
+        kind: mean
+        group: a40_37pct
+        spread: SD
+      len_41pct:
+        printed: 141.6 ± 5.5
+        unit: µm
+        kind: mean
+        group: a40_41pct
+        spread: SD
+      len_47pct:
+        printed: 151.5 ± 34.5
+        unit: µm
+        kind: mean
+        group: a40_47pct
+        spread: SD
+      len_54pct:
+        printed: '143.1'
+        unit: µm
+        kind: value
+        group: a40_54pct
+        spread: none
+    anchor:
+      quote: Scale length and width develop on different timelines, with the length retracting slightly even before the scale reaches its terminal width (Fig. 5C and D).
+      where: Results
+
+  F5_width_expansion_contrast:
+    unit: U4_COVER_SCALE_GROWTH
+    measure: scale width
+    method: Developmental comparison of pupa A40 cover scale width at 41% vs 29.7% development (measured_A40ScaleMeasurements.xlsx)
+    finding: Cover scale width expands more than 5-fold between 29.7% (8.58 ± 0.91 µm) and 41% development (45.77 ± 6.21 µm)
+    compares:
+      - a40_41pct
+      - a40_30pct
+    test_of: pair
+    n:
+      printed: n = 3 cover scales per stage in pupa A40
+      per_group:
+        a40_41pct: '3'
+        a40_30pct: '3'
+      counts: scales
+      levels:
+        individuals: 1
+        scales: 3
+      test_unit: scales
+    values:
+      w_41:
+        printed: 45.77 ± 6.21
+        unit: µm
+        kind: mean
+        group: a40_41pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G52,G56,G61
+      w_30:
+        printed: 8.58 ± 0.91
+        unit: µm
+        kind: mean
+        group: a40_30pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G4,G8,G12
+    stated_direction:
+      direction: up
+      anchor:
+        quote: The scale then expands (Fig. 3D), ultimately reaching its final length and width before 60% of pupal development.
+        where: Results
+    anchor:
+      quote: Scale length and width develop on different timelines, with the length retracting slightly even before the scale reaches its terminal width (Fig. 5C and D).
+      where: Results
+
+  F5_thinning_contrast:
+    unit: U4_COVER_SCALE_GROWTH
+    measure: scale thickness
+    method: Developmental comparison of pupa A40 cover scale thickness at 41% vs 29.7% development (measured_A40ScaleMeasurements.xlsx)
+    finding: Cover scale blade thickness decreases from 6.26 ± 0.96 µm at 29.7% to 5.04 ± 0.54 µm at 41% development during lateral expansion
+    compares:
+      - a40_41pct
+      - a40_30pct
+    test_of: pair
+    n:
+      printed: n = 3 cover scales per stage in pupa A40
+      per_group:
+        a40_41pct: '3'
+        a40_30pct: '3'
+      counts: scales
+      levels:
+        individuals: 1
+        scales: 3
+      test_unit: scales
+    values:
+      t_41:
+        printed: 5.04 ± 0.54
+        unit: µm
+        kind: mean
+        group: a40_41pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G53,G57,G62
+      t_30:
+        printed: 6.26 ± 0.96
+        unit: µm
+        kind: mean
+        group: a40_30pct
+        spread: SD
+        origin: from data
+        data:
+          file: measured_A40ScaleMeasurements.xlsx
+          sheet: Sheet1
+          cells: G5,G9,G13
+    stated_direction:
+      direction: down
+      anchor:
+        quote: During much of scale expansion, the already-slender scale gradually continues to thin (Fig. 5E).
+        where: Results
+    anchor:
+      quote: During much of scale expansion, the already-slender scale gradually continues to thin (Fig. 5E).
+      where: Results
+
+  D2_scale_area_41pct:
+    unit: U4_COVER_SCALE_GROWTH
+    measure: scale area
+    method: Planar bounding-box area A = L_s * W_s from pupa A40 41% mean cover scale length and width
+    finding: At 41% pupal development, cover scale planar projected area reaches approximately 6,481 µm^2 (141.6 µm × 45.77 µm)
+    groups:
+      - a40_41pct
+    values:
+      area_41pct:
+        printed: '6481'
+        unit: µm^2
+        kind: value
+        group: a40_41pct
+        spread: none
+    anchor:
+      quote: Surface area and volume are estimated using the measured length, width, and thickness to define the presumptive bounding box of the scale.
+      where: Materials and Methods
+
+  F5_key_window_timing:
+    unit: U4_COVER_SCALE_GROWTH
+    measure: developmental milestone timing
+    method: Continuous SRPM time-lapse tracking of pupa A40 across the 35–40% key morphogenetic window
+    finding: The rapid morphogenetic transition (35–40% development) spans roughly 100 h to 114 h APF
+    groups:
+      - a40_35pct
+      - a40_41pct
+    values:
+      window_start_h:
+        printed: '100'
+        unit: h
+        kind: value
+        group: a40_35pct
+        spread: none
+      window_end_h:
+        printed: '114'
+        unit: h
+        kind: value
+        group: a40_41pct
+        spread: none
+    anchor:
+      quote: A relatively short window of time, roughly 35 to 40% of development (around 100 h to 114 h), contains many key moments of scale formation
+      where: Results
+
+  F5_actin_ridge_spacing:
+    unit: U5_ACTIN_RIDGE_DYNAMICS
+    measure: ridge spacing
+    method: 2D Fourier analysis of reoriented live SRPM 3D amplitude slices (Fig. 5G) and LivingLit 2D-FFT on Fig. 5B phase gradient
+    finding: Longitudinal actin bundles widen with the expanding scale to ~1.8 µm separation, nascent 41% proto-ridges show ~1.40 µm FFT spacing, and established ridges stay constant (~1.6–1.9 µm) from 47% to at least 89% development
+    groups:
+      - actin_widening_39pct
+      - proto_ridges_41pct
+      - stable_ridges_47_89pct
+    values:
+      actin_plateau_um:
+        printed: '1.8'
+        unit: µm
+        kind: value
+        group: actin_widening_39pct
+        spread: none
+      ridge_constant_um:
+        printed: '1.8'
+        unit: µm
+        kind: value
+        group: stable_ridges_47_89pct
+        spread: none
+    anchor:
+      quote: As the scale widens, the spacing of actin bundles also widens until it reaches ∼1.8-µm separation.
+      where: Results
+
+  D1_ridge_density:
+    unit: U5_ACTIN_RIDGE_DYNAMICS
+    measure: ridge density
+    method: Reciprocal spatial frequency rho = 1/d derived from the ~1.8 µm plateau ridge spacing
+    finding: The ~1.8 µm constant ridge spacing corresponds to a linear spatial frequency of 0.56 × 10^6 m^-1 (~0.56 ridges/µm)
+    groups:
+      - stable_ridges_47_89pct
+    values:
+      rho_1p8:
+        printed: 0.56e6
+        unit: m^-1
+        kind: value
+        group: stable_ridges_47_89pct
+        spread: none
+    anchor:
+      quote: As the scale widens, the spacing of actin bundles also widens until it reaches ∼1.8-µm separation.
+      where: Results
+    scaling:
+      independent_measure: ridge spacing
+      direction: down
+      anchor:
+        quote: We then find the dominant spatial frequency via 2D Fourier analysis.
+        where: Materials and Methods
+
+  F5_proto_ridge_height:
+    unit: U5_ACTIN_RIDGE_DYNAMICS
+    measure: ridge buckling amplitude
+    method: 1D unwrapped phase surface height profiling across three live scales in pupa A40 (Fig. 5B, 5H)
+    finding: Regular proto-ridges emerge by 39% development and grow to approximately 100 nm peak-to-trough height by 41% development
+    groups:
+      - proto_ridges_41pct
+    n:
+      printed: measurements from three scales
+      per_group:
+        proto_ridges_41pct: '3'
+      counts: scales
+      levels:
+        individuals: 1
+        scales: 3
+      test_unit: scales
+    values:
+      proto_height_41pct:
+        printed: '100'
+        unit: nm
+        kind: value
+        group: proto_ridges_41pct
+        spread: none
+    anchor:
+      quote: Phase data (Middle) from marked region indicate regular spacing of proto-ridges, which are about 100 nm in height
+      where: Fig. 5 caption
+
+claims:
+  C1_srpm_live_imaging:
+    kind: stated
+    quote: This interferometric approach yields both phase and amplitude data from live and unlabeled specimens, with excellent axial sectioning, rejecting out-of-focus information
+    where: Results
+    scope: Live pupal Vanessa cardui wing scales imaged through a coverslip window
+    direction: Label-free SRPM resolves live 3D scale amplitude and ~10-nm nanoscale surface height across pupal development
+    rests_on:
+      - F1_adult_ridge_fft
+      - F2_forewing_ridge_fft
+      - F5_proto_ridge_height
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C2_two_stage_precursor_patterning:
+    kind: stated
+    quote: the formation of tight rows of scales is primarily enabled by the differentiation of a second set of scale precursor cells that spatially alternate in line with the first set.
+    where: Results
+    scope: Early pupal Vanessa cardui hindwing epithelium (13–18% development)
+    direction: Ground scale precursors differentiate sequentially between pre-existing cover scale precursors to form tight alternating rows
+    rests_on:
+      - F3_developmental_milestones
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C3_anisotropic_scale_growth:
+    kind: stated
+    quote: Scale length and width develop on different timelines, with the length retracting slightly even before the scale reaches its terminal width (Fig. 5C and D).
+    where: Results
+    scope: Developing Vanessa cardui cover scales in pupa A40 (29.7–53.7% development)
+    direction: Length peaks at ~37% and retracts slightly while width expands >5-fold and thickness gradually thins
+    rests_on:
+      - F5_scale_length
+      - F5_scale_width
+      - F5_scale_thickness
+      - F5_width_expansion_contrast
+      - F5_thinning_contrast
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C4_scale_thinning_during_expansion:
+    kind: stated
+    quote: During much of scale expansion, the already-slender scale gradually continues to thin (Fig. 5E).
+    where: Results
+    scope: Developing Vanessa cardui cover scales in pupa A40 (29.7–53.7% development)
+    direction: Cover scale blade thickness decreases as the scale blade expands laterally
+    asserts_direction: down
+    rests_on:
+      - F5_scale_thickness
+      - F5_thinning_contrast
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C5_actin_bundle_widening:
+    kind: stated
+    quote: As the scale widens, the spacing of actin bundles also widens until it reaches ∼1.8-µm separation.
+    where: Results
+    scope: Developing Vanessa cardui scales starting ~39% pupal development
+    direction: Longitudinal actin bundle spacing increases during scale widening up to ~1.8 µm
+    rests_on:
+      - F5_actin_ridge_spacing
+      - D1_ridge_density
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C6_irregular_to_regular_ridge_onset:
+    kind: stated
+    quote: Then, at ∼39% development, periodicity becomes highly regular and remains regular as the nascent ridges grow in height.
+    where: Results
+    scope: Developing Vanessa cardui cover scales in pupa A40 (35–41% development)
+    direction: Surface undulations transition from irregular at ~37% to regular periodicity at ~39% while ridge height grows to ~100 nm by 41%
+    rests_on:
+      - F5_proto_ridge_height
+      - F5_actin_ridge_spacing
+      - F5_scale_length
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C7_constant_ridge_spacing_refutes_contraction:
+    kind: stated
+    quote: However, our data indicate that ridge spacing remains constant after initial ridge appearance, implying that a decrease in actin bundle spacing is unlikely and thus cannot drive ridge formation.
+    where: Results
+    scope: Individual Vanessa cardui scales tracked continuously from ~47% to 89% pupal development
+    direction: Constant ridge spacing (~1.6–1.9 µm) rules out actin-spacing contraction as the buckling driver, favoring constrained surface-growth buckling
+    rests_on:
+      - F5_actin_ridge_spacing
+      - D1_ridge_density
+      - F5_proto_ridge_height
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows

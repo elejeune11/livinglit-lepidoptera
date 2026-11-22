@@ -1,0 +1,1212 @@
+record: 2024_Livraghi
+default_context:
+  family: Nymphalidae
+  anatomical_region: wing
+figures:
+  F1:
+    label: Fig. 1
+    file: pnas.2403326121fig01.jpg
+    xml_id: fig01
+    title: Heliconius morph polymorphisms at the cortex/ivory locus and comparative genomic, RNA-seq, and ATAC-seq architecture
+    caption_anchor:
+      quote: Expression and CRISPR mKOs of the ivory lncRNA reveal color patterning roles.
+      where: Fig 1 caption
+    context:
+      target_gene: ivory (lncRNA)
+    panels:
+      A:
+        label: 1A
+        title: Representative Heliconius melpomene (melpomene, rosina, malleti, cythera, iv Δ78k +/+, +/-, -/-) and Heliconius erato (hydara, demophoon, favorinus, cyrbia) morphs
+        bbox: [0, 0, 716, 98]
+        archetype: macro_morphology
+        context:
+          taxon: Heliconius melpomene, Heliconius erato
+          life_stage: adult
+          allele_or_zygosity: natural polymorphism
+          imaging_modality: light microscopy
+          view_orientation: top-down apical
+        linked_items: [F1_ivory_onset_timing]
+        linked_claims: [C1_ivory_lncrna_at_cortex_locus]
+      B:
+        label: 1B
+        title: Comparative H. melpomene (Hmel215003o) and H. erato (Hera1505) cortex/ivory locus showing GWAS intervals, RNA-seq splice junctions, miR-193/miR-2788, parn, and 36 h pupal hindwing ATAC-seq tracks
+        bbox: [0, 99, 716, 486]
+        archetype: genomic_track_or_locus
+        context:
+          taxon: Heliconius melpomene, Heliconius erato
+          life_stage: pupa
+          pupal_stage_pct: 20%
+          anatomical_region: hindwing
+          genetic_element_type: long non-coding RNA (lncRNA), promoter
+          imaging_modality: ATAC-seq, bulk RNA-seq
+        genomic_locus:
+          scaffolds: [Hmel215003o, Hera1505]
+          intervals:
+            H_melpomene_Yb_d: 1403500-1405500
+            H_melpomene_Yb_v: 1429500-1430000
+            H_melpomene_ivory_del78k: 1494903-1573176
+            H_erato_Cr1: 2053037-2171230
+            H_erato_FBs: 2110000-2113800
+            H_erato_Cr2: 2211881-2315926
+          annotated_genes: [ivory (lncRNA, + strand), cortex (- strand), miR-193, miR-2788, parn]
+          assays: [RNA-seq splice junctions, 36 h pupal hindwing ATAC-seq, GWAS association intervals]
+          span_kb:
+            H_melpomene_ivory: 138
+            H_erato_ivory: 205
+        linked_items: [F1_ivory_onset_timing, F1_ivory_onset_pct, F1_ivory_atac_h3k4me3]
+        linked_claims: [C1_ivory_lncrna_at_cortex_locus, C2_ivory_promoter_chromatin_state]
+        linked_resources: [livraghi_osf_transcriptomes, livraghi_sra_heliconius_rnaseq]
+
+  F2:
+    label: Fig. 2
+    file: pnas.2403326121fig02.jpg
+    xml_id: fig02
+    title: Spatial expression of ivory in pupal wings prefigures melanic scales and CRISPR G0 mKO eliminates black scales across H. erato, H. charithonia, and V. cardui
+    caption_anchor:
+      quote: Expression of ivory associates with melanic scales in nymphalid butterflies.
+      where: Fig 2 caption
+    context:
+      target_gene: ivory (lncRNA)
+    panels:
+      A:
+        label: 2A
+        title: Heliconius erato wild-type banded morph (and unbanded hindwing inset) adult wing phenotype
+        bbox: [22, 14, 183, 201]
+        archetype: macro_morphology
+        context:
+          taxon: Heliconius erato
+          life_stage: adult
+          perturbation_modality: wild type
+          imaging_modality: light microscopy
+        linked_items: [F2_ivory_g0_penetrance]
+      B:
+        label: 2B
+        title: Heliconius erato ivory promoter/exon 1 G0 mosaic crispant showing complete loss of melanic black scales (banded & unbanded morphs)
+        bbox: [184, 14, 321, 201]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Heliconius erato
+          life_stage: adult
+          genetic_element_type: promoter, long non-coding RNA (lncRNA)
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          penetrance_pct: 57
+          phenotype: Complete conversion of black melanic scales to pale yellow/white states while red forewing band persists
+        linked_items: [F2_ivory_g0_penetrance]
+        linked_claims: [C3_ivory_mko_high_penetrance_melanic_loss]
+        linked_resources: [livraghi_pnas_si_appendix]
+      C:
+        label: 2C
+        title: Heliconius erato 30% pupal wing DIG chromogenic RNA ISH of ivory prefiguring adult melanic scales (including unbanded hindwing yellow-bar domain)
+        bbox: [322, 14, 460, 201]
+        archetype: expression_imaging
+        context:
+          taxon: Heliconius erato
+          life_stage: pupa
+          pupal_stage_pct: 30%
+          imaging_modality: HCR/in situ
+          hydration_and_prep: fixed and stained
+        stains_or_markers: [ivory exon 1 DIG riboprobe (BM Purple)]
+        channel_gene_map:
+          purple: ivory lncRNA (exon 1 mRNA/lncRNA ISH)
+        linked_items: [F2_ivory_ish_prefiguring]
+        linked_claims: [C4_ivory_ish_prefigures_melanic_scales]
+      D:
+        label: 2D
+        title: H. erato wild-type forewing red ommochrome band and adjacent melanic scale border (magnified)
+        bbox: [462, 14, 545, 107]
+        archetype: macro_morphology
+        context:
+          taxon: Heliconius erato
+          life_stage: adult
+          anatomical_region: forewing
+          functional_architecture: Ommochrome pigment, melanic pigmentary
+          perturbation_modality: wild type
+      D_prime:
+        label: 2D'
+        title: H. erato ivory G0 mKO forewing red band magnified showing black-to-white conversion with red ommochrome retained
+        bbox: [546, 14, 628, 107]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Heliconius erato
+          life_stage: adult
+          anatomical_region: forewing
+          genetic_element_type: promoter, long non-coding RNA (lncRNA)
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Black scales surrounding red band convert to pale yellow-white; red band preserved
+        linked_items: [F2_ivory_g0_penetrance]
+      D_dprime:
+        label: 2D''
+        title: H. erato 30% pupal forewing ivory RNA ISH showing absence of ivory expression inside presumptive red band
+        bbox: [629, 14, 712, 107]
+        archetype: expression_imaging
+        context:
+          taxon: Heliconius erato
+          life_stage: pupa
+          pupal_stage_pct: 30%
+          anatomical_region: forewing
+          imaging_modality: HCR/in situ
+        stains_or_markers: [ivory exon 1 DIG riboprobe (BM Purple)]
+        channel_gene_map:
+          purple: ivory lncRNA (absent in red band, strong in surrounding black domain)
+        linked_items: [F2_ivory_ish_prefiguring]
+        linked_claims: [C4_ivory_ish_prefigures_melanic_scales]
+      E:
+        label: 2E
+        title: H. erato wild-type banded hindwing yellow bar and adjacent black border (magnified)
+        bbox: [462, 108, 545, 201]
+        archetype: macro_morphology
+        context:
+          taxon: Heliconius erato
+          life_stage: adult
+          anatomical_region: hindwing
+          pattern_element: central symmetry system band
+          perturbation_modality: wild type
+      E_prime:
+        label: 2E'
+        title: H. erato ivory G0 mKO hindwing yellow-bar zone showing conversion of adjacent melanic scales to pale yellow 3-OHK state
+        bbox: [546, 108, 628, 201]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Heliconius erato
+          life_stage: adult
+          anatomical_region: hindwing
+          pattern_element: central symmetry system band
+          genetic_element_type: promoter, long non-coding RNA (lncRNA)
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Melanic scales bordering hindwing bar transform into uniform pale yellow (3-OHK) state
+        linked_items: [F2_ivory_g0_penetrance]
+      E_dprime:
+        label: 2E''
+        title: H. erato 30% pupal hindwing ivory RNA ISH showing absence of ivory expression in presumptive yellow bar
+        bbox: [629, 108, 712, 201]
+        archetype: expression_imaging
+        context:
+          taxon: Heliconius erato
+          life_stage: pupa
+          pupal_stage_pct: 30%
+          anatomical_region: hindwing
+          pattern_element: central symmetry system band
+          imaging_modality: HCR/in situ
+        stains_or_markers: [ivory exon 1 DIG riboprobe (BM Purple)]
+        channel_gene_map:
+          purple: ivory lncRNA (absent in yellow bar, strong in surrounding melanic scales)
+        linked_items: [F2_ivory_ish_prefiguring]
+        linked_claims: [C4_ivory_ish_prefigures_melanic_scales]
+      F:
+        label: 2F
+        title: Heliconius charithonia wild-type zebra-striped adult wings
+        bbox: [22, 202, 183, 391]
+        archetype: macro_morphology
+        context:
+          taxon: Heliconius charithonia
+          life_stage: adult
+          perturbation_modality: wild type
+      G:
+        label: 2G
+        title: Heliconius charithonia ivory G0 mosaic crispant showing full conversion of black stripes to yellow/white scales
+        bbox: [184, 202, 321, 391]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Heliconius charithonia
+          life_stage: adult
+          genetic_element_type: promoter, long non-coding RNA (lncRNA)
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Complete loss of black melanic stripes converting to yellow/white 3-OHK scales
+        linked_items: [F2_ivory_g0_penetrance]
+        linked_claims: [C3_ivory_mko_high_penetrance_melanic_loss]
+      H:
+        label: 2H
+        title: Heliconius charithonia pupal wing ivory RNA ISH strongly marking future black stripes and excluded from yellow stripes
+        bbox: [322, 202, 460, 391]
+        archetype: expression_imaging
+        context:
+          taxon: Heliconius charithonia
+          life_stage: pupa
+          imaging_modality: HCR/in situ
+          hydration_and_prep: fixed and stained
+        stains_or_markers: [ivory exon 1 DIG riboprobe (BM Purple)]
+        channel_gene_map:
+          purple: ivory lncRNA (marks presumptive black stripes)
+        linked_items: [F2_ivory_ish_prefiguring]
+        linked_claims: [C4_ivory_ish_prefigures_melanic_scales]
+      I:
+        label: 2I
+        title: H. charithonia wild-type forewing yellow/black stripe boundary (magnified)
+        bbox: [462, 202, 545, 296]
+        archetype: macro_morphology
+        context:
+          taxon: Heliconius charithonia
+          life_stage: adult
+          anatomical_region: forewing
+          perturbation_modality: wild type
+      I_prime:
+        label: 2I'
+        title: H. charithonia ivory G0 mKO forewing magnified showing black-to-yellow conversion
+        bbox: [546, 202, 628, 296]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Heliconius charithonia
+          life_stage: adult
+          anatomical_region: forewing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Melanic forewing bands convert to yellow
+      I_dprime:
+        label: 2I''
+        title: H. charithonia pupal forewing ivory RNA ISH magnified showing sharp exclusion from yellow band
+        bbox: [629, 202, 712, 296]
+        archetype: expression_imaging
+        context:
+          taxon: Heliconius charithonia
+          life_stage: pupa
+          anatomical_region: forewing
+          imaging_modality: HCR/in situ
+        stains_or_markers: [ivory exon 1 DIG riboprobe (BM Purple)]
+        channel_gene_map:
+          purple: ivory lncRNA
+      J:
+        label: 2J
+        title: H. charithonia wild-type hindwing yellow/black stripe boundary (magnified)
+        bbox: [462, 297, 545, 391]
+        archetype: macro_morphology
+        context:
+          taxon: Heliconius charithonia
+          life_stage: adult
+          anatomical_region: hindwing
+          perturbation_modality: wild type
+      J_prime:
+        label: 2J'
+        title: H. charithonia ivory G0 mKO hindwing magnified showing loss of melanic border scales
+        bbox: [546, 297, 628, 391]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Heliconius charithonia
+          life_stage: adult
+          anatomical_region: hindwing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Melanic hindwing stripes convert to pale yellow
+      J_dprime:
+        label: 2J''
+        title: H. charithonia pupal hindwing ivory RNA ISH magnified showing sharp boundary matching future black scales
+        bbox: [629, 297, 712, 391]
+        archetype: expression_imaging
+        context:
+          taxon: Heliconius charithonia
+          life_stage: pupa
+          anatomical_region: hindwing
+          imaging_modality: HCR/in situ
+        stains_or_markers: [ivory exon 1 DIG riboprobe (BM Purple)]
+        channel_gene_map:
+          purple: ivory lncRNA
+      K:
+        label: 2K
+        title: Vanessa cardui wild-type ventral adult wing phenotype
+        bbox: [22, 392, 183, 586]
+        archetype: macro_morphology
+        context:
+          taxon: Vanessa cardui
+          life_stage: adult
+          anatomical_region: ventral wing
+          perturbation_modality: wild type
+      L:
+        label: 2L
+        title: Vanessa cardui ivory G0 mosaic crispant showing conserved loss of black/brown melanic scales with orange-red ommochrome preserved
+        bbox: [184, 392, 321, 586]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Vanessa cardui
+          life_stage: adult
+          anatomical_region: ventral wing
+          genetic_element_type: promoter, long non-coding RNA (lncRNA)
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Loss of melanic scales across ventral wings while red-orange ommochrome patches persist
+        linked_items: [F2_ivory_g0_penetrance]
+        linked_claims: [C3_ivory_mko_high_penetrance_melanic_loss]
+      M:
+        label: 2M
+        title: Vanessa cardui pupal wing ivory RNA ISH prefiguring adult black patterns
+        bbox: [322, 392, 460, 586]
+        archetype: expression_imaging
+        context:
+          taxon: Vanessa cardui
+          life_stage: pupa
+          pupal_stage_pct: 20 to 35%
+          imaging_modality: HCR/in situ
+          hydration_and_prep: fixed and stained
+        stains_or_markers: [ivory exon 1 DIG riboprobe (BM Purple)]
+        channel_gene_map:
+          purple: ivory lncRNA (correlates with future adult black scales)
+        linked_items: [F2_ivory_ish_prefiguring]
+        linked_claims: [C4_ivory_ish_prefigures_melanic_scales]
+      N:
+        label: 2N
+        title: V. cardui wild-type ventral forewing orange-red ommochrome and black melanin patches (magnified)
+        bbox: [462, 392, 545, 488]
+        archetype: macro_morphology
+        context:
+          taxon: Vanessa cardui
+          life_stage: adult
+          anatomical_region: ventral forewing
+          functional_architecture: Ommochrome pigment, melanic pigmentary
+          perturbation_modality: wild type
+      N_prime:
+        label: 2N'
+        title: V. cardui ivory G0 mKO ventral forewing showing melanic-to-white conversion with orange-red ommochrome unaffected
+        bbox: [546, 392, 628, 488]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Vanessa cardui
+          life_stage: adult
+          anatomical_region: ventral forewing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Black scales lost; ventral forewing orange-red ommochrome scales completely preserved
+      N_dprime:
+        label: 2N''
+        title: V. cardui pupal ventral forewing ivory RNA ISH showing absence of ivory expression from orange-red ommochrome domain
+        bbox: [629, 392, 712, 488]
+        archetype: expression_imaging
+        context:
+          taxon: Vanessa cardui
+          life_stage: pupa
+          anatomical_region: ventral forewing
+          imaging_modality: HCR/in situ
+        stains_or_markers: [ivory exon 1 DIG riboprobe (BM Purple)]
+        channel_gene_map:
+          purple: ivory lncRNA (absent in orange-red ommochrome domain)
+      O:
+        label: 2O
+        title: V. cardui wild-type ventral hindwing eyespot ring and white marginal patterns (magnified)
+        bbox: [462, 489, 545, 586]
+        archetype: macro_morphology
+        context:
+          taxon: Vanessa cardui
+          life_stage: adult
+          anatomical_region: ventral hindwing
+          pattern_element: eyespot ring, marginal band
+          perturbation_modality: wild type
+      O_prime:
+        label: 2O'
+        title: V. cardui ivory G0 mKO ventral hindwing eyespot showing loss of black ring while yellow eyespot ring persists
+        bbox: [546, 489, 628, 586]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Vanessa cardui
+          life_stage: adult
+          anatomical_region: ventral hindwing
+          pattern_element: eyespot ring, marginal band
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Black melanic eyespot rings abolished while yellow eyespot ring remains intact
+      O_dprime:
+        label: 2O''
+        title: V. cardui pupal ventral hindwing ivory RNA ISH showing absence from white margin patterns and yellow eyespot rings
+        bbox: [629, 489, 712, 586]
+        archetype: expression_imaging
+        context:
+          taxon: Vanessa cardui
+          life_stage: pupa
+          anatomical_region: ventral hindwing
+          pattern_element: eyespot ring, marginal band
+          imaging_modality: HCR/in situ
+        stains_or_markers: [ivory exon 1 DIG riboprobe (BM Purple)]
+        channel_gene_map:
+          purple: ivory lncRNA (absent in yellow eyespot rings & white margin)
+
+  F3:
+    label: Fig. 3
+    file: pnas.2403326121fig03.jpg
+    xml_id: fig03
+    title: V. cardui ivory germline biallelic exon 1 deletions abolish Tyrosine-labeled melanin while preserving Tryptophan-labeled ommochromes, whereas cortex exon 2 nulls have no wing phenotype
+    caption_anchor:
+      quote: Phenotypes are explained by ivory- specific mutations.
+      where: Fig 3 caption
+    context:
+      taxon: Vanessa cardui
+    panels:
+      A:
+        label: 3A
+        title: Vanessa cardui wild-type adult forewing and hindwing control
+        bbox: [22, 1, 93, 126]
+        archetype: macro_morphology
+        context:
+          life_stage: adult
+          perturbation_modality: wild type
+      B:
+        label: 3B
+        title: V. cardui ivory G1 germline compound heterozygous mutant (82/97 bp exon 1 deletion) showing complete melanic loss with preserved pink-red ommochrome
+        bbox: [94, 1, 165, 126]
+        archetype: crispant_phenotype_plate
+        context:
+          life_stage: adult
+          target_gene: ivory (lncRNA)
+          genetic_element_type: long non-coding RNA (lncRNA)
+          allele_or_zygosity: homozygous null
+          perturbation_modality: CRISPR germline knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: lncrna_exon1
+          allele: homozygous_null
+          deletion_bp: [82, 97]
+          phenotype: Complete loss of melanic scales across wings and body; ventral pink-red ommochrome preserved
+        linked_items: [F3_ivory_germline_radiolabel]
+        linked_claims: [C5_ivory_germline_melanin_vs_ommochrome]
+      C:
+        label: 3C
+        title: V. cardui ivory G2 germline mutant confirming heritable melanic scale loss and intact ommochrome patterns
+        bbox: [166, 1, 237, 126]
+        archetype: crispant_phenotype_plate
+        context:
+          life_stage: adult
+          target_gene: ivory (lncRNA)
+          genetic_element_type: long non-coding RNA (lncRNA)
+          allele_or_zygosity: homozygous null
+          perturbation_modality: CRISPR germline knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: lncrna_exon1
+          allele: homozygous_null
+          phenotype: Heritable G2 melanic-to-white conversion with intact ommochrome domains
+        linked_items: [F3_ivory_germline_radiolabel]
+        linked_claims: [C5_ivory_germline_melanin_vs_ommochrome]
+      D:
+        label: 3D
+        title: V. cardui [14C]-Tyrosine autoradiography mapping melanin-synthesizing scales matching ivory KO loss
+        bbox: [238, 1, 304, 126]
+        archetype: expression_imaging
+        context:
+          life_stage: adult
+          functional_architecture: melanic pigmentary
+          imaging_modality: metabolic radiolabeling
+        stains_or_markers: ['[14C]-Tyrosine (melanin precursor)']
+        channel_gene_map:
+          white: '[14C]-Tyrosine incorporation (melanin-containing scales)'
+        linked_items: [F3_ivory_germline_radiolabel]
+        linked_claims: [C5_ivory_germline_melanin_vs_ommochrome]
+      E:
+        label: 3E
+        title: V. cardui [14C]-Tryptophan autoradiography mapping ommochrome-synthesizing scales unaffected by ivory KO
+        bbox: [305, 1, 370, 126]
+        archetype: expression_imaging
+        context:
+          life_stage: adult
+          functional_architecture: Ommochrome pigment
+          imaging_modality: metabolic radiolabeling
+        stains_or_markers: ['[14C]-Tryptophan (ommochrome precursor)']
+        channel_gene_map:
+          white: '[14C]-Tryptophan incorporation (ommochrome-containing patterns)'
+        linked_items: [F3_ivory_germline_radiolabel]
+        linked_claims: [C5_ivory_germline_melanin_vs_ommochrome]
+      F:
+        label: 3F
+        title: Normalized WGS sequencing depth across V. cardui ivory exon 1 (2,030,100-2,030,975 bp) showing 82/97 bp compound heterozygous bi-allelic deletion in ivory KO vs WT average
+        bbox: [380, 0, 695, 138]
+        archetype: quantitative_plot
+        context:
+          life_stage: adult
+          target_gene: ivory (lncRNA)
+          genetic_element_type: long non-coding RNA (lncRNA)
+          allele_or_zygosity: homozygous null
+          perturbation_modality: CRISPR germline knockout
+          imaging_modality: WGS / GWAS
+        genomic_locus:
+          locus_gene: ivory (exon 1)
+          interval: 2030100-2030975 bp
+          alleles: [82 bp deletion, 97 bp deletion]
+          bioproject: PRJNA1031670
+        extractor: extractors/f3_genotyping.py:extract_3f
+        linked_items: [F3_ivory_germline_radiolabel]
+        linked_claims: [C5_ivory_germline_melanin_vs_ommochrome]
+        linked_resources: [livraghi_sra_vc_wgs]
+      G:
+        label: 3G
+        title: Female V. cardui cortex exon 2 G0 crispant (63.8% haemolymph indel efficiency) displaying wild-type dorsal and ventral wing pigmentation
+        bbox: [22, 136, 170, 288]
+        archetype: crispant_phenotype_plate
+        context:
+          sex: female
+          life_stage: adult
+          target_gene: cortex (cort)
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:cortex
+          element_type: coding_exon2_cbox
+          allele: g0_somatic_mosaic
+          indel_efficiency_pct: 63.8
+          phenotype: No wing pigmentation phenotype (indistinguishable from wild type)
+        linked_items: [F3_cortex_g0_counts, F3_cortex_g0_penetrance]
+        linked_claims: [C6_cortex_null_no_wing_phenotype]
+      G_prime:
+        label: 3G'
+        title: Male V. cardui cortex exon 2 G0 crispant (98.8% haemolymph indel efficiency) displaying wild-type dorsal and ventral wing pigmentation
+        bbox: [222, 136, 370, 288]
+        archetype: crispant_phenotype_plate
+        context:
+          sex: male
+          life_stage: adult
+          target_gene: cortex (cort)
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:cortex
+          element_type: coding_exon2_cbox
+          allele: g0_somatic_mosaic
+          indel_efficiency_pct: 98.8
+          phenotype: No wing pigmentation phenotype (indistinguishable from wild type)
+        linked_items: [F3_cortex_g0_counts, F3_cortex_g0_penetrance]
+        linked_claims: [C6_cortex_null_no_wing_phenotype]
+      H_female:
+        label: 3H (female)
+        title: Sanger sequencing aberrant-trace efficiency plot for female cortex exon 2 G0 crispant parent (Total efficiency = 63.8% downstream of C-Box cut site)
+        bbox: [380, 139, 695, 211]
+        archetype: quantitative_plot
+        context:
+          sex: female
+          life_stage: adult
+          target_gene: cortex (cort)
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        genomic_locus:
+          locus_gene: cortex (exon 2 / C-Box)
+          sanger_efficiency_pct: 63.8
+        extractor: extractors/f3_genotyping.py:extract_3h_female
+        linked_items: [F3_cortex_g0_counts, F3_cortex_g0_penetrance]
+        linked_claims: [C6_cortex_null_no_wing_phenotype]
+        linked_resources: [livraghi_pnas_si_appendix]
+      H_male:
+        label: 3H (male)
+        title: Sanger sequencing aberrant-trace efficiency plot for male cortex exon 2 G0 crispant parent (Total efficiency = 98.8% downstream of C-Box cut site)
+        bbox: [380, 211, 695, 288]
+        archetype: quantitative_plot
+        context:
+          sex: male
+          life_stage: adult
+          target_gene: cortex (cort)
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        genomic_locus:
+          locus_gene: cortex (exon 2 / C-Box)
+          sanger_efficiency_pct: 98.8
+        extractor: extractors/f3_genotyping.py:extract_3h_male
+        linked_items: [F3_cortex_g0_counts, F3_cortex_g0_penetrance]
+        linked_claims: [C6_cortex_null_no_wing_phenotype]
+        linked_resources: [livraghi_pnas_si_appendix]
+      I:
+        label: 3I
+        title: F1 compound heterozygous cortex Δ8/Δ10nt null butterfly #1 displaying completely wild-type dorsal and ventral wing pigmentation
+        bbox: [22, 297, 170, 450]
+        archetype: crispant_phenotype_plate
+        context:
+          life_stage: adult
+          target_gene: cortex (cort)
+          genetic_element_type: coding exon
+          allele_or_zygosity: homozygous null
+          perturbation_modality: CRISPR germline knockout
+        crispant_summary:
+          target_gene: target_gene:cortex
+          element_type: coding_exon2_cbox
+          allele: homozygous_null
+          alleles: [delta_8nt, delta_10nt]
+          phenotype: Zero wing pigmentation defects; viable but infertile
+        linked_items: [F3_cortex_g0_penetrance, F3_cortex_vs_ivory_penetrance]
+        linked_claims: [C6_cortex_null_no_wing_phenotype]
+      I_prime:
+        label: 3I'
+        title: F1 compound heterozygous cortex Δ8/Δ10nt null butterfly #2 confirming absence of wing color phenotype
+        bbox: [222, 297, 370, 450]
+        archetype: crispant_phenotype_plate
+        context:
+          life_stage: adult
+          target_gene: cortex (cort)
+          genetic_element_type: coding exon
+          allele_or_zygosity: homozygous null
+          perturbation_modality: CRISPR germline knockout
+        crispant_summary:
+          target_gene: target_gene:cortex
+          element_type: coding_exon2_cbox
+          allele: homozygous_null
+          alleles: [delta_8nt, delta_10nt]
+          phenotype: Zero wing pigmentation defects; viable but infertile
+        linked_items: [F3_cortex_g0_penetrance, F3_cortex_vs_ivory_penetrance]
+        linked_claims: [C6_cortex_null_no_wing_phenotype]
+      J:
+        label: 3J
+        title: Predicted 3D structure of WT Cortex (WD40 beta-propeller) vs truncated frameshift alleles Δ8nt (p.Gln69fs) and Δ10nt (p.Phe67fs) losing all secondary structure
+        bbox: [380, 295, 695, 450]
+        archetype: phylogeny_or_schematic
+        context:
+          target_gene: cortex (cort)
+          genetic_element_type: coding exon
+          allele_or_zygosity: homozygous null
+        linked_items: [F3_cortex_g0_penetrance]
+        linked_claims: [C6_cortex_null_no_wing_phenotype]
+      K:
+        label: 3K
+        title: Nucleotide and translated amino acid alignment of V. cardui cortex exon 2 C-Box showing sgRNA, PAM, cut site, and premature stop codons in Δ8nt and Δ10nt alleles
+        bbox: [0, 455, 695, 533]
+        archetype: genomic_track_or_locus
+        context:
+          target_gene: cortex (cort)
+          genetic_element_type: coding exon
+          allele_or_zygosity: homozygous null
+        genomic_locus:
+          locus_gene: cortex (exon 2, C-Box)
+          sgrna: ACTCTTTCGGTGAGGCACGG
+          pam: AGG
+          alleles: [WT, delta_8nt (p.Gln69fs*), delta_10nt (p.Phe67fs*)]
+        linked_items: [F3_cortex_g0_penetrance]
+        linked_claims: [C6_cortex_null_no_wing_phenotype]
+
+  F4:
+    label: Fig. 4
+    file: pnas.2403326121fig04.jpg
+    xml_id: fig04
+    title: Conserved and pattern-specific effects of ivory CRISPR G0 mKOs in Agraulis incarnata and Danaus plexippus (~80 MY Nymphalidae divergence)
+    caption_anchor:
+      quote: Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies.
+      where: Fig 4 caption
+    context:
+      life_stage: adult
+      target_gene: ivory (lncRNA)
+      genetic_element_type: promoter, long non-coding RNA (lncRNA)
+    panels:
+      A:
+        label: 4A
+        title: Agraulis incarnata wild-type ventral wings
+        bbox: [22, 15, 168, 209]
+        archetype: macro_morphology
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: ventral wing
+          perturbation_modality: wild type
+      B:
+        label: 4B
+        title: A. incarnata full (nonmosaic) ivory G0 crispant ventral wings showing melanic-to-silver conversion and lighter orange
+        bbox: [169, 15, 307, 209]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: ventral wing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Full ventral melanic (black/brown)-to-reflective silver conversion and lighter orange
+        linked_items: [F4_nymphalidae_conservation]
+        linked_claims: [C7_ivory_conserved_80my_nymphalidae]
+        linked_resources: [livraghi_pnas_si_appendix]
+      C:
+        label: 4C
+        title: A. incarnata clonal (mosaic) ivory G0 crispant ventral wings showing sharp WT vs silver mutant boundaries
+        bbox: [308, 15, 460, 209]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: ventral wing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          clone_contrast: Sharp ventral clonal mosaics separating WT brown/black and mutant reflective silver scales
+        linked_items: [F4_nymphalidae_conservation]
+        linked_claims: [C7_ivory_conserved_80my_nymphalidae]
+      D:
+        label: 4D
+        title: A. incarnata wild-type ventral forewing Cu1-Cu2 spot magnified
+        bbox: [461, 15, 544, 111]
+        archetype: macro_morphology
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: ventral forewing
+          perturbation_modality: wild type
+      D_prime:
+        label: 4D'
+        title: A. incarnata full ivory crispant ventral forewing Cu1-Cu2 spot showing black-to-silver conversion
+        bbox: [545, 15, 628, 111]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: ventral forewing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Forewing Cu1-Cu2 black spot converts to reflective silver
+      D_dprime:
+        label: 4D''
+        title: A. incarnata clonal ivory crispant ventral forewing Cu1-Cu2 spot with sharp mosaic boundary
+        bbox: [629, 15, 712, 111]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: ventral forewing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          clone_contrast: Mosaic boundary bisecting Cu1-Cu2 melanic spot into black WT and silver KO clones
+      E:
+        label: 4E
+        title: A. incarnata wild-type ventral hindwing Cu1-Cu2 silver spot with dark brown border magnified
+        bbox: [461, 112, 544, 209]
+        archetype: macro_morphology
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: ventral hindwing
+          perturbation_modality: wild type
+      E_prime:
+        label: 4E'
+        title: A. incarnata full ivory crispant ventral hindwing Cu1-Cu2 showing complete brown-to-silver expansion
+        bbox: [545, 112, 628, 209]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: ventral hindwing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Dark brown borders convert into reflective silver scales
+      E_dprime:
+        label: 4E''
+        title: A. incarnata clonal ivory crispant ventral hindwing Cu1-Cu2 showing mosaic loss of brown melanin border
+        bbox: [629, 112, 712, 209]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: ventral hindwing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          clone_contrast: Clonal silver expansion interrupting brown melanic border
+      F:
+        label: 4F
+        title: Agraulis incarnata wild-type dorsal wings
+        bbox: [22, 210, 168, 405]
+        archetype: macro_morphology
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: dorsal wing
+          perturbation_modality: wild type
+      G:
+        label: 4G
+        title: A. incarnata full ivory G0 crispant dorsal wings showing white marginal/venous conversion and lightened orange
+        bbox: [169, 210, 307, 405]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: dorsal wing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Dorsal marginal and venous black scales turn white; orange scales lighten while retaining ommochrome
+        linked_items: [F4_nymphalidae_conservation]
+        linked_claims: [C7_ivory_conserved_80my_nymphalidae]
+      H:
+        label: 4H
+        title: A. incarnata clonal ivory G0 crispant dorsal wings showing fragmented WT vs depigmented clones
+        bbox: [308, 210, 460, 405]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: dorsal wing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          clone_contrast: Fragmented dorsal mosaic clones showing white marginal/venous conversions
+      I:
+        label: 4I
+        title: A. incarnata wild-type dorsal Discalis II spots magnified
+        bbox: [461, 210, 544, 307]
+        archetype: macro_morphology
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: dorsal forewing
+          pattern_element: discal spot
+          perturbation_modality: wild type
+      I_prime:
+        label: 4I'
+        title: A. incarnata full ivory crispant dorsal Discalis II spots showing lightened black/brown and orange scales
+        bbox: [545, 210, 628, 307]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: dorsal forewing
+          pattern_element: discal spot
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Partial lightening of dorsal Discalis II melanic rings and surrounding orange
+      I_dprime:
+        label: 4I''
+        title: A. incarnata clonal ivory crispant dorsal Discalis II spots magnified
+        bbox: [629, 210, 712, 307]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: dorsal forewing
+          pattern_element: discal spot
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          clone_contrast: Clonal lightening across Discalis II melanic spots
+      J:
+        label: 4J
+        title: A. incarnata wild-type dorsal marginal M3-Cu2 melanic chevron patterns magnified
+        bbox: [461, 308, 544, 405]
+        archetype: macro_morphology
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: dorsal wing
+          pattern_element: marginal band
+          perturbation_modality: wild type
+      J_prime:
+        label: 4J'
+        title: A. incarnata full ivory crispant dorsal marginal M3-Cu2 showing complete melanic-to-white conversion
+        bbox: [545, 308, 628, 405]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: dorsal wing
+          pattern_element: marginal band
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Complete conversion of dorsal M3-Cu2 marginal black markings to white
+      J_dprime:
+        label: 4J''
+        title: A. incarnata clonal ivory crispant dorsal marginal M3-Cu2 showing sharp black-to-white clonal border
+        bbox: [629, 308, 712, 405]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Agraulis incarnata
+          anatomical_region: dorsal wing
+          pattern_element: marginal band
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          clone_contrast: Sharp clonal mosaic converting black marginal chevrons to white
+      K:
+        label: 4K
+        title: Danaus plexippus wild-type ventral wings
+        bbox: [22, 406, 168, 603]
+        archetype: macro_morphology
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: ventral wing
+          perturbation_modality: wild type
+      L:
+        label: 4L
+        title: D. plexippus full ivory G0 crispant ventral wings showing global melanic-to-white conversion and pale orange/cream shifts
+        bbox: [169, 406, 307, 603]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: ventral wing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Complete ventral melanic vein-border loss to white and pronounced lightening of orange domains
+        linked_items: [F4_nymphalidae_conservation]
+        linked_claims: [C7_ivory_conserved_80my_nymphalidae]
+      M:
+        label: 4M
+        title: D. plexippus clonal ivory G0 crispant ventral wings showing sharp WT vs depigmented mosaic patches
+        bbox: [308, 406, 460, 603]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: ventral wing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          clone_contrast: Sharp ventral mosaic patches converting black veins and orange sectors to pale cream/white
+      N:
+        label: 4N
+        title: D. plexippus wild-type ventral forewing M1-M3 distal white spots and black margins magnified
+        bbox: [461, 406, 544, 505]
+        archetype: macro_morphology
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: ventral forewing
+          pattern_element: distal wing field
+          perturbation_modality: wild type
+      N_prime:
+        label: 4N'
+        title: D. plexippus full ivory crispant ventral forewing M1-M3 showing distal white spots converting to orange while surrounding black/orange turns pale white
+        bbox: [545, 406, 628, 505]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: ventral forewing
+          pattern_element: distal wing field
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Local switch where distal white spots turn orange while melanic and distal orange areas turn white
+        linked_items: [F4_nymphalidae_conservation]
+      N_dprime:
+        label: 4N''
+        title: D. plexippus clonal ivory crispant ventral forewing M1-M3 magnified
+        bbox: [629, 406, 712, 505]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: ventral forewing
+          pattern_element: distal wing field
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          clone_contrast: Clonal inversion of white spot and melanic margin states
+      O:
+        label: 4O
+        title: D. plexippus wild-type ventral hindwing discal crossvein melanic markings magnified
+        bbox: [461, 506, 544, 603]
+        archetype: macro_morphology
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: ventral hindwing
+          pattern_element: discal spot
+          perturbation_modality: wild type
+      O_prime:
+        label: 4O'
+        title: D. plexippus full ivory crispant ventral hindwing discal crossvein showing melanic-to-white conversion
+        bbox: [545, 506, 628, 603]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: ventral hindwing
+          pattern_element: discal spot
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Complete loss of black discal crossvein scales to pale cream-white
+      O_dprime:
+        label: 4O''
+        title: D. plexippus clonal ivory crispant ventral hindwing discal crossvein magnified
+        bbox: [629, 506, 712, 603]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: ventral hindwing
+          pattern_element: discal spot
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          clone_contrast: Clonal fragmentation of black crossvein scales into pale white clones
+      P:
+        label: 4P
+        title: Danaus plexippus wild-type dorsal wings
+        bbox: [22, 604, 168, 799]
+        archetype: macro_morphology
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: dorsal wing
+          perturbation_modality: wild type
+      Q:
+        label: 4Q
+        title: D. plexippus full ivory G0 crispant dorsal wings showing melanic vein/margin-to-white conversion with residual proximal orange
+        bbox: [169, 604, 307, 799]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: dorsal wing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Dorsal melanic margins and vein borders turn white while proximal orange persists partially
+        linked_items: [F4_nymphalidae_conservation]
+        linked_claims: [C7_ivory_conserved_80my_nymphalidae]
+      R:
+        label: 4R
+        title: D. plexippus clonal ivory G0 crispant dorsal wings showing mosaic black-to-white clones
+        bbox: [308, 604, 460, 799]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: dorsal wing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          clone_contrast: Sharp dorsal clonal mosaic patches separating black WT and white KO scales
+      S:
+        label: 4S
+        title: D. plexippus wild-type dorsal forewing Cu1-Cu2 vein junction magnified
+        bbox: [461, 604, 544, 700]
+        archetype: macro_morphology
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: dorsal forewing
+          perturbation_modality: wild type
+      S_prime:
+        label: 4S'
+        title: D. plexippus full ivory crispant dorsal forewing Cu1-Cu2 vein junction showing melanic-to-white transformation
+        bbox: [545, 604, 628, 700]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: dorsal forewing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Pronounced melanic-to-white conversion around forewing Cu1-Cu2 vein margin
+      S_dprime:
+        label: 4S''
+        title: D. plexippus clonal ivory crispant dorsal forewing Cu1-Cu2 vein junction magnified
+        bbox: [629, 604, 712, 700]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: dorsal forewing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          clone_contrast: Sharp mosaic boundary across Cu1-Cu2 melanic vein border
+      T:
+        label: 4T
+        title: D. plexippus wild-type dorsal hindwing M1-M2 vein junction magnified
+        bbox: [461, 701, 544, 799]
+        archetype: macro_morphology
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: dorsal hindwing
+          perturbation_modality: wild type
+      T_prime:
+        label: 4T'
+        title: D. plexippus full ivory crispant dorsal hindwing M1-M2 vein junction showing melanic-to-white transformation
+        bbox: [545, 701, 628, 799]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: dorsal hindwing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          phenotype: Pronounced melanic-to-white conversion around hindwing M1-M2 vein margin
+      T_dprime:
+        label: 4T''
+        title: D. plexippus clonal ivory crispant dorsal hindwing M1-M2 vein junction magnified
+        bbox: [629, 701, 712, 799]
+        archetype: crispant_phenotype_plate
+        context:
+          taxon: Danaus plexippus
+          anatomical_region: dorsal hindwing
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        crispant_summary:
+          target_gene: target_gene:ivory_lncrna
+          element_type: promoter_and_exon1_lncrna
+          allele: g0_somatic_mosaic
+          clone_contrast: Sharp clonal mosaic across hindwing M1-M2 vein border

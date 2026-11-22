@@ -1,0 +1,340 @@
+data:
+  # Cover scale widths (um) from measured_A40ScaleMeasurements.xlsx!Sheet1 (n=15 scale measurements across 6 ages)
+  - item: F5_scale_width
+    group: a40_30pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G4
+    value: '8.38'
+    unit: µm
+  - item: F5_width_expansion_contrast
+    group: a40_30pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G4
+    value: '8.38'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_30pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G8
+    value: '9.58'
+    unit: µm
+  - item: F5_width_expansion_contrast
+    group: a40_30pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G8
+    value: '9.58'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_30pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G12
+    value: '7.79'
+    unit: µm
+  - item: F5_width_expansion_contrast
+    group: a40_30pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G12
+    value: '7.79'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_35pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G22
+    value: '25.48'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_35pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G26
+    value: '22.74'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_35pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G30
+    value: '26'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_37pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G37
+    value: '32.49'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_37pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G41
+    value: '28.68'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_37pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G45
+    value: '31.07'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_41pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G52
+    value: '52.84'
+    unit: µm
+  - item: F5_width_expansion_contrast
+    group: a40_41pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G52
+    value: '52.84'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_41pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G56
+    value: '43.32'
+    unit: µm
+  - item: F5_width_expansion_contrast
+    group: a40_41pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G56
+    value: '43.32'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_41pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G61
+    value: '41.16'
+    unit: µm
+  - item: F5_width_expansion_contrast
+    group: a40_41pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G61
+    value: '41.16'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_47pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G76
+    value: '40.88'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_47pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G81
+    value: '39.06'
+    unit: µm
+  - item: F5_scale_width
+    group: a40_54pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G68
+    value: '46.17'
+    unit: µm
+
+  # Cover scale thicknesses (um) from measured_A40ScaleMeasurements.xlsx!Sheet1 (n=15 scale measurements across 6 ages)
+  - item: F5_scale_thickness
+    group: a40_30pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G5
+    value: '7.31'
+    unit: µm
+  - item: F5_thinning_contrast
+    group: a40_30pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G5
+    value: '7.31'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_30pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G9
+    value: '6.05'
+    unit: µm
+  - item: F5_thinning_contrast
+    group: a40_30pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G9
+    value: '6.05'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_30pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G13
+    value: '5.43'
+    unit: µm
+  - item: F5_thinning_contrast
+    group: a40_30pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G13
+    value: '5.43'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_35pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G23
+    value: '5.23'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_35pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G27
+    value: '6.3'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_35pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G31
+    value: '7.02'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_37pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G38
+    value: '5.37'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_37pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G42
+    value: '5.04'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_37pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G46
+    value: '5.11'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_41pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G53
+    value: '5.55'
+    unit: µm
+  - item: F5_thinning_contrast
+    group: a40_41pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G53
+    value: '5.55'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_41pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G57
+    value: '4.48'
+    unit: µm
+  - item: F5_thinning_contrast
+    group: a40_41pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G57
+    value: '4.48'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_41pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G62
+    value: '5.09'
+    unit: µm
+  - item: F5_thinning_contrast
+    group: a40_41pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G62
+    value: '5.09'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_47pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G77
+    value: '4.6'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_47pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G82
+    value: '5.46'
+    unit: µm
+  - item: F5_scale_thickness
+    group: a40_54pct
+    kind: point
+    file: measured_A40ScaleMeasurements.xlsx
+    sheet: Sheet1
+    cell: G69
+    value: '4.31'
+    unit: µm

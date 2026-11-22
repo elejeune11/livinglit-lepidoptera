@@ -1,0 +1,79 @@
+record: 2023_Banerjee
+vocabulary_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_genetics
+edits: []
+mappings:
+  - field: life_stage
+    stated: pupal
+    terms: [life_stage:pupa]
+  - field: anatomical_region
+    stated: wings
+    terms: [anatomical_region:wing]
+  - field: pattern_element
+    stated: eyespot foci and wing margin
+    terms: [pattern_element:eyespot_focus, pattern_element:marginal_band]
+  - field: pattern_element
+    stated: wing margin
+    terms: [pattern_element:marginal_band]
+  - field: pattern_element
+    stated: eyespot
+    terms: [pattern_element:border_ocelli_eyespot]
+  - field: pattern_element
+    stated: eyespot centers
+    terms: [pattern_element:eyespot_focus]
+  - field: pattern_element
+    stated: CSS and BSS
+    terms: [pattern_element:central_symmetry_band]
+  - field: pattern_element
+    stated: CSS, BSS, and marginal chevrons
+    terms: [pattern_element:central_symmetry_band, pattern_element:marginal_band]
+  - field: pattern_element
+    stated: wing sectors
+    terms: [pattern_element:ngp_compartment, pattern_element:border_ocelli_eyespot]
+  - field: scale_type
+    stated: scale cells
+    terms: [scale_type:wing_scale]
+  - field: scale_type
+    stated: scales
+    terms: [scale_type:wing_scale]
+  - field: target_gene
+    stated: arm
+    terms: [target_gene:armadillo_beta_catenin]
+  - field: target_gene
+    stated: Wnt1
+    terms: [target_gene:wingless_wnt1]
+  - field: target_gene
+    stated: Wnt7
+    terms: [target_gene:signaling_pathway]
+  - field: target_gene
+    stated: frizzled2, frizzled4
+    terms: [target_gene:frizzled2, target_gene:frizzled4]
+  - field: target_gene
+    stated: frizzled4
+    terms: [target_gene:frizzled4]
+  - field: allele_or_zygosity
+    stated: mosaic crispants
+    terms: [allele_or_zygosity:g0_somatic_mosaic]
+  - field: perturbation_modality
+    stated: CRISPR-Cas9
+    terms: [perturbation_modality:crispr_g0_mosaic]
+  - field: imaging_modality
+    stated: immunostainings
+    terms: [imaging_modality:immunofluorescence, imaging_modality:confocal]
+  - field: imaging_modality
+    stated: HCR3.0
+    terms: [imaging_modality:hcr_in_situ]
+  - field: imaging_modality
+    stated: HCR3.0 and in situ hybridization
+    terms: [imaging_modality:hcr_in_situ]
+  - field: imaging_modality
+    stated: Leica DMS1000 microscope
+    terms: [imaging_modality:light_microscopy]
+  - field: hydration_and_prep
+    stated: fixed in 4% formaldehyde
+    terms: [hydration_and_prep:fixed_hydrated]
+  - field: hydration_and_prep
+    stated: frozen at −20°C
+    terms: [hydration_and_prep:dry_native]

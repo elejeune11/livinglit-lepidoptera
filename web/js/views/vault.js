@@ -53,7 +53,7 @@ window.LL = window.LL || {};
           <option value="ALL">All papers (${allPlots.length} digitized plots)</option>
           ${papers.map((pid) => `<option value="${LL.esc(pid)}" ${st.vaultPaper === pid ? "selected" : ""}>${LL.esc(pid)}</option>`).join("")}
         </select>
-        <div style="display:flex;gap:5px;flex-wrap:wrap;flex:1" id="vt-pills">
+        <div style="display:flex;gap:5px;flex-wrap:wrap;flex:1;max-height:84px;overflow-y:auto;padding:2px 4px 2px 0" id="vt-pills">
           ${list.map((p) => `
             <button type="button" class="btn btn-sm ${p.id === st.selectedVaultId ? "primary" : ""}" data-vault-id="${LL.esc(p.id)}">
               ${LL.esc(p.paper.split("_")[1])} ${LL.esc(p.figure_id)}/${LL.esc(p.panel_label)}

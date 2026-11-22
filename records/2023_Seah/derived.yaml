@@ -1,0 +1,98 @@
+record: 2023_Seah
+formula_library_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_ingestion
+derived:
+  eurimedes_adult_ridge_density:
+    item: D1_eurimedes_ridge_density
+    group: eurimedes_adult_green
+    formula: rho = 1/d
+    anchor:
+      quote: Scanning electron microscopy (SEM) top view and (C) Focused ion beam (FIB)-SEM cross-sectional image of an adult green scale showing ridges and honeycomb lattice
+      where: Fig 1 caption
+    library:
+      formula: ridge_density_from_spacing
+      vars:
+        rho: rho
+        d: d
+    inputs:
+      d:
+        value: F1B_sem_ridge_spacing.values.adult_ridge_d
+        kind: constant
+    output: D1_eurimedes_ridge_density.values.adult_rho
+    aggregation: of means
+    note: Reciprocal linear ridge density (0.835 ridges/µm = 8.35e5 m^-1) from Fig 1B calibrated 2D-FFT ridge spacing (1.197 µm).
+
+  eurimedes_stage_52pct:
+    item: M_ck666_injection_stage_pct
+    group: eurimedes_52pct_actin
+    formula: stage_frac = t_apf / D_pupa
+    anchor:
+      quote: The average duration from pupation to emergence is 10 d for P. polytes and 21 d for P. eurimedes.
+      where: Materials and methods
+    library:
+      formula: relative_pupal_stage
+      vars:
+        stage_frac: stage_frac
+        t_apf: t_apf
+        D_pupa: D_pupa
+    inputs:
+      t_apf:
+        value: M_ck666_injection_day.values.day_52pct
+        kind: constant
+      D_pupa:
+        value: M_pupal_duration.values.eurimedes_total_d
+        kind: constant
+    output: M_ck666_injection_stage_pct.values.stage_52pct
+    output_unit: '%'
+    note: Verifies 11 d / 21 d = 52.38% (reported as 52% pupal development in Source data 1 Panel A).
+
+  eurimedes_stage_57pct:
+    item: M_ck666_injection_stage_pct
+    group: eurimedes_57pct_sim
+    formula: stage_frac = t_apf / D_pupa
+    anchor:
+      quote: The average duration from pupation to emergence is 10 d for P. polytes and 21 d for P. eurimedes.
+      where: Materials and methods
+    library:
+      formula: relative_pupal_stage
+      vars:
+        stage_frac: stage_frac
+        t_apf: t_apf
+        D_pupa: D_pupa
+    inputs:
+      t_apf:
+        value: M_ck666_injection_day.values.day_57pct
+        kind: constant
+      D_pupa:
+        value: M_pupal_duration.values.eurimedes_total_d
+        kind: constant
+    output: M_ck666_injection_stage_pct.values.stage_57pct
+    output_unit: '%'
+    note: Verifies 12 d / 21 d = 57.14% (reported as 57% pupal development in Source data 1 Panel A).
+
+  eurimedes_stage_67pct:
+    item: M_ck666_injection_stage_pct
+    group: eurimedes_67pct_sim
+    formula: stage_frac = t_apf / D_pupa
+    anchor:
+      quote: The average duration from pupation to emergence is 10 d for P. polytes and 21 d for P. eurimedes.
+      where: Materials and methods
+    library:
+      formula: relative_pupal_stage
+      vars:
+        stage_frac: stage_frac
+        t_apf: t_apf
+        D_pupa: D_pupa
+    inputs:
+      t_apf:
+        value: M_ck666_injection_day.values.day_67pct
+        kind: constant
+      D_pupa:
+        value: M_pupal_duration.values.eurimedes_total_d
+        kind: constant
+    output: M_ck666_injection_stage_pct.values.stage_67pct
+    output_unit: '%'
+    note: Verifies 14 d / 21 d = 66.67% (reported as 67% pupal development in Source data 1 Panel A).
+proposals: []

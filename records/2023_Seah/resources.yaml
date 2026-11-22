@@ -1,0 +1,60 @@
+record: 2023_Seah
+resources:
+  - id: seah_elife_ck666_data
+    kind: dataset
+    repository: eLife_CDN
+    title: Figure 4—figure supplement 5—source data 1 — FIJI/ImageJ SEM honeycomb lattice height measurements in CK-666 vs DMSO treated Parides eurimedes (N=229) and P. iphidamas (N=41)
+    url: https://elifesciences.org/articles/89082/figures#fig4s5sdata1
+    doi: 10.7554/eLife.89082
+    license: CC-BY-4.0
+    local_files:
+      - elife-89082-fig4-figsupp5-data1.xlsx
+    feeds_panels:
+      - 2023_Seah/F4S5/A
+      - 2023_Seah/F4S5/B
+      - 2023_Seah/F4S5/C
+      - 2023_Seah/F4S5/D
+      - 2023_Seah/F4S5/E
+      - 2023_Seah/F4S5/F
+    feeds_items:
+      - F4S5_eur_all_heights
+      - F4S5_eur_52_vs_ctrl
+      - F4S5_eur_52_vs_57_ck666
+      - F4S5_eur_57_vs_ctrl
+      - F4S5_eur_52_vs_67_ctrl
+      - F4S5_iph_52_vs_ctrl
+    summary:
+      n_total: 270
+      n_eurimedes: 229
+      n_iphidamas: 41
+      eurimedes_52_ck666_mean_nm: 1652.73
+      eurimedes_52_dmso_mean_nm: 1859.93
+      eurimedes_57_ck666_mean_nm: 1947.25
+      eurimedes_57_dmso_mean_nm: 1968.05
+      eurimedes_67_dmso_mean_nm: 1852.33
+      iphidamas_52_ck666_mean_nm: 1410.16
+      iphidamas_52_dmso_mean_nm: 1931.71
+      p_eurimedes_52_holm_1sided: 0.02169
+      p_iphidamas_52_1sided: 4.4e-07
+
+  - id: seah_elife_supp1
+    kind: supplement
+    repository: eLife_CDN
+    title: Supplementary file 1 — CK-666 pupal injection batch details and fates across Parides eurimedes (N=9), P. iphidamas (N=6), and Papilio polytes (N=40)
+    url: https://elifesciences.org/articles/89082#supp1
+    doi: 10.7554/eLife.89082
+    license: CC-BY-4.0
+    local_files:
+      - elife-89082-supp1.docx
+    feeds_panels:
+      - 2023_Seah/F4S5/A
+      - 2023_Seah/F4S5/D
+    feeds_items:
+      - F4S5_eur_all_heights
+      - F4S5_iph_52_vs_ctrl
+    summary:
+      n_parides_pupae_total: 15
+      n_eurimedes_pupae: 9
+      n_iphidamas_pupae: 6
+      n_polytes_pupae: 40
+      ck666_concentration_uM: 100

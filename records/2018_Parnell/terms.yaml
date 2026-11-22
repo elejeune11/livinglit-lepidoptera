@@ -1,0 +1,70 @@
+record: 2018_Parnell
+vocabulary_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_ingest
+edits: []
+mappings:
+  - field: taxon
+    stated: H. erato cyrbia and H. melpomene cythera
+    terms: [taxon:heliconius_erato_cyrbia, taxon:heliconius_melpomene_cythera]
+  - field: taxon
+    stated: H. cydno and H. eleuchia
+    terms: [taxon:heliconius_cydno, taxon:heliconius_eleuchia]
+  - field: life_stage
+    stated: butterflies
+    terms: [life_stage:adult]
+  - field: anatomical_region
+    stated: forewings
+    terms: [anatomical_region:forewing]
+  - field: pattern_element
+    stated: blue/black wing regions
+    terms: [pattern_element:ngp_compartment]
+  - field: scale_type
+    stated: cover scales
+    terms: [scale_type:cover_scale]
+  - field: functional_architecture
+    stated: multilayer reflectors
+    terms: [functional_architecture:ridge_lamellar_multilayer]
+  - field: functional_architecture
+    stated: non-iridescent
+    terms: [functional_architecture:melanin_pigmentary]
+  - field: imaging_modality
+    stated: small angle X-ray scattering
+    terms: [imaging_modality:saxs]
+  - field: imaging_modality
+    stated: atomic force microscopy
+    terms: [imaging_modality:afm_spm]
+  - field: imaging_modality
+    stated: Scanning electron microscopy
+    terms: [imaging_modality:sem]
+  - field: imaging_modality
+    stated: focused ion beam
+    terms: [imaging_modality:fib_sem]
+  - field: imaging_modality
+    stated: Reflectance spectra
+    terms: [imaging_modality:microspectrophotometry]
+  - field: view_orientation
+    stated: Transmission
+    terms: [view_orientation:whole_mount]
+  - field: view_orientation
+    stated: surface
+    terms: [view_orientation:top_down_apical]
+  - field: view_orientation
+    stated: cross sections
+    terms: [view_orientation:cross_section]
+  - field: view_orientation
+    stated: normal incidence
+    terms: [view_orientation:whole_mount]
+  - field: hydration_and_prep
+    stated: wings in their natural state
+    terms: [hydration_and_prep:dry_native]
+  - field: hydration_and_prep
+    stated: coated with a few nanometres of gold
+    terms: [hydration_and_prep:vacuum_sputter_coated]
+  - field: hydration_and_prep
+    stated: sputter coated with a few nanometres of gold–palladium
+    terms: [hydration_and_prep:fib_milled]
+  - field: hydration_and_prep
+    stated: wings or pieces of wings to glass slides
+    terms: [hydration_and_prep:dry_native]

@@ -1,0 +1,120 @@
+record: 2020_Stavenga
+formula_library_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_moths
+derived:
+  lower_lamina_230nm_peak:
+    item: F5_thin_film_peak_wavelength
+    group: adwing_area1_230nm
+    formula: lam = 2*(n_r - n_a)*h/m
+    anchor:
+      quote: The reflectance spectra of chitinous optical thin films in air were calculated for normally incident light using an expression derived from the classical Airy formula (Stavenga, 2014).
+      where: Materials and Methods
+    library:
+      formula: thin_film_ridge_interference
+      vars:
+        lam: lam
+        h: h
+        n_r: n_r
+        n_a: n_a
+        m: m
+    inputs:
+      h:
+        value: F5_lower_lamina_thickness.values.area1_d
+        kind: constant
+      n_r:
+        printed: '1.556'
+        unit: '1'
+        kind: constant
+        anchor:
+          quote: "dashed curve: modeled reflectance spectrum for a chitinous thin film in air with thickness 230 nm."
+          where: Fig. 5 caption
+      n_a:
+        printed: '0.0'
+        unit: '1'
+        kind: constant
+        anchor:
+          quote: The reflectance spectra of chitinous optical thin films in air were calculated for normally incident light using an expression derived from the classical Airy formula (Stavenga, 2014).
+          where: Materials and Methods
+      m:
+        printed: '1.5'
+        unit: '1'
+        kind: constant
+        anchor:
+          quote: The reflectance spectra of chitinous optical thin films in air were calculated for normally incident light using an expression derived from the classical Airy formula (Stavenga, 2014).
+          where: Materials and Methods
+    output: F5_thin_film_peak_wavelength.values.area1_lam_peak
+    note: >-
+      Evaluated via library thin_film_ridge_interference algebraic form lam = 2*(n_r - n_a)*h/m
+      with n_a = 0 and half-integer Airy constructive order m = 1.5 (k - 1/2 for k = 2) representing
+      round-trip chitin thin-film reflectance in air lam = 2*n_c*h/(k - 1/2) (Stavenga 2014 Cauchy
+      dispersion n_c(475 nm) = 1.556); rebuilt 477.2 nm matches Fig. 5A digitized measured peak 476.8 nm
+      and modeled peak 472.9 nm.
+
+  lower_lamina_290nm_peak:
+    item: F5_thin_film_peak_wavelength
+    group: adwing_area2_290nm
+    formula: lam = 2*(n_r - n_a)*h/m
+    anchor:
+      quote: The reflectance spectra of chitinous optical thin films in air were calculated for normally incident light using an expression derived from the classical Airy formula (Stavenga, 2014).
+      where: Materials and Methods
+    library:
+      formula: thin_film_ridge_interference
+      vars:
+        lam: lam
+        h: h
+        n_r: n_r
+        n_a: n_a
+        m: m
+    inputs:
+      h:
+        value: F5_lower_lamina_thickness.values.area2_d
+        kind: constant
+      n_r:
+        printed: '1.542'
+        unit: '1'
+        kind: constant
+        anchor:
+          quote: "dashed curve: modeled reflectance spectrum for a chitinous thin film in air with thickness 290 nm."
+          where: Fig. 5 caption
+      n_a:
+        printed: '0.0'
+        unit: '1'
+        kind: constant
+        anchor:
+          quote: The reflectance spectra of chitinous optical thin films in air were calculated for normally incident light using an expression derived from the classical Airy formula (Stavenga, 2014).
+          where: Materials and Methods
+      m:
+        printed: '1.5'
+        unit: '1'
+        kind: constant
+        anchor:
+          quote: The reflectance spectra of chitinous optical thin films in air were calculated for normally incident light using an expression derived from the classical Airy formula (Stavenga, 2014).
+          where: Materials and Methods
+    output: F5_thin_film_peak_wavelength.values.area2_lam_peak
+    note: >-
+      Evaluated via library thin_film_ridge_interference form with n_a = 0 and Airy constructive
+      order m = 1.5 (Stavenga 2014 Cauchy dispersion n_c(595 nm) = 1.542); rebuilt 596.2 nm matches
+      Fig. 5B digitized modeled peak 595 nm and measured peak 590.1 nm.
+
+  forewing_ridge_density:
+    item: F2_ridge_density
+    group: scale_highmag_sem
+    formula: rho = 1/d
+    anchor:
+      quote: The scale ridges, consisting of slightly overlapping lamellae and connected by cross-ribs, which leave minor open windows.
+      where: Fig. 2 caption
+    library:
+      formula: ridge_density_from_spacing
+      vars:
+        rho: rho
+        d: d
+    inputs:
+      d:
+        value: F2_ridge_spacing.values.fig2c_fft
+        kind: per sample
+    output: F2_ridge_density.values.fig2c_rho
+    aggregation: of means
+    note: Reciprocal ridge spatial frequency rho = 1/d from calibrated 2D-FFT spacing (1.96 µm -> 5.10e5 m^-1 = 0.51 ridges/µm).
+proposals: []

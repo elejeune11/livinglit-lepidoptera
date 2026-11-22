@@ -1,0 +1,75 @@
+id: 2021_McDougal
+doi: 10.1073/pnas.2112009118
+title: In vivo visualization of butterfly scale cell morphogenesis in Vanessa cardui
+year: 2021
+journal: PNAS
+oa_status: open_access
+license: CC-BY-NC-ND-4.0
+figure_embed_policy: public_thumbnails
+repositories:
+  - kind: Zenodo
+    url: https://doi.org/10.5281/zenodo.5532941
+    doi: 10.5281/zenodo.5532941
+    note: Butterfly scale measurement workbook (measured_A40ScaleMeasurements.xlsx), 10 pupal phase-profile .mat tables (measured_A-40-01_*phaseProfiles.mat), and 33 MATLAB figure and analysis scripts harvested locally.
+files:
+  - file: PMC8670486.xml
+    role: main_text
+  - file: pnas.202112009fig01.jpg
+    role: main_figure
+  - file: pnas.202112009fig02.jpg
+    role: main_figure
+  - file: pnas.202112009fig03.jpg
+    role: main_figure
+  - file: pnas.202112009fig04.jpg
+    role: main_figure
+  - file: pnas.202112009fig05.jpg
+    role: main_figure
+  - file: measured_A40ScaleMeasurements.xlsx
+    role: raw_data
+  - file: associated/measured_A40ScaleMeasurements.xlsx
+    role: raw_data
+  - file: associated/measured_A-40-01_10_10_52_set_97-d4.12phaseProfiles.mat
+    role: raw_data
+  - file: associated/measured_A-40-01_10_12_52_set_99-d4.21phaseProfiles.mat
+    role: raw_data
+  - file: associated/measured_A-40-01_10_17_34_set_104-d4.40phaseProfiles.mat
+    role: raw_data
+  - file: associated/measured_A-40-01_10_22_34_set_109-d4.61phaseProfiles.mat
+    role: raw_data
+  - file: associated/measured_A-40-01_10_23_34_set_110-d4.65phaseProfiles.mat
+    role: raw_data
+  - file: associated/measured_A-40-01_11_00_34_set_111-d4.70phaseProfiles.mat
+    role: raw_data
+  - file: associated/measured_A-40-01_11_01_34_set_112-d4.74phaseProfiles.mat
+    role: raw_data
+  - file: associated/measured_A-40-01_11_02_34_set_113-d4.78phaseProfiles.mat
+    role: raw_data
+  - file: associated/measured_A-40-01_11_03_34_set_114-d4.82phaseProfiles.mat
+    role: raw_data
+  - file: associated/measured_A-40-01_11_04_34_set_115-d4.86phaseProfiles.mat
+    role: raw_data
+  - file: associated/makeFig1.m
+    role: code
+  - file: associated/makeFig2.m
+    role: code
+  - file: associated/makeFig3.m
+    role: code
+  - file: associated/makeFig4.m
+    role: code
+  - file: associated/makeFig5AB.m
+    role: code
+  - file: associated/makeFig5CDEF.m
+    role: code
+  - file: associated/makeFig5G.m
+    role: code
+  - file: associated/makeFig5H.m
+    role: code
+  - file: associated/analyzePhaseProfile.m
+    role: code
+  - file: associated/analyzeActinRidgePeriod.m
+    role: code
+  - file: associated/lineplaneL.m
+    role: code
+  - file: associated/README.md
+    role: code
+not_used: []

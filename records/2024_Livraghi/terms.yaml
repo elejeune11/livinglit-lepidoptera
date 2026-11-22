@@ -1,0 +1,104 @@
+record: 2024_Livraghi
+vocabulary_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_genetics
+edits: []
+mappings:
+  - field: taxon
+    stated: H. erato, H. charithonia, and Vanessa cardui
+    terms: [taxon:heliconius_erato, taxon:heliconius, taxon:vanessa_cardui]
+    note: H. charithonia mapped to parent genus taxon:heliconius in v4 vocabulary.
+  - field: life_stage
+    stated: pupal
+    terms: [life_stage:pupa]
+  - field: life_stage
+    stated: adults
+    terms: [life_stage:adult]
+  - field: anatomical_region
+    stated: pupal wings
+    terms: [anatomical_region:wing]
+  - field: anatomical_region
+    stated: pupal hindwings
+    terms: [anatomical_region:hindwing]
+  - field: anatomical_region
+    stated: wings
+    terms: [anatomical_region:wing]
+  - field: anatomical_region
+    stated: wings and body
+    terms: [anatomical_region:wing, anatomical_region:thorax, anatomical_region:abdomen, anatomical_region:antenna]
+  - field: anatomical_region
+    stated: both wing surfaces
+    terms: [anatomical_region:dorsal_wing, anatomical_region:ventral_wing]
+  - field: pattern_element
+    stated: yellow hindwing bar
+    terms: [pattern_element:central_symmetry_band]
+  - field: pattern_element
+    stated: marginal patterns
+    terms: [pattern_element:marginal_band]
+  - field: scale_type
+    stated: scales
+    terms: [scale_type:wing_scale]
+  - field: scale_type
+    stated: epithelial scales
+    terms: [scale_type:wing_scale]
+  - field: functional_architecture
+    stated: melanic
+    terms: [functional_architecture:melanin_pigmentary]
+  - field: functional_architecture
+    stated: ommochrome
+    terms: [functional_architecture:ommochrome]
+  - field: functional_architecture
+    stated: reflective white/silver scales
+    terms: [functional_architecture:melanin_pigmentary, functional_architecture:structural_reflector]
+  - field: genetic_element_type
+    stated: promoter and first exon
+    terms: [genetic_element_type:promoter, genetic_element_type:lncrna]
+  - field: genetic_element_type
+    stated: second exon
+    terms: [genetic_element_type:coding_exon]
+  - field: allele_or_zygosity
+    stated: color pattern polymorphisms
+    terms: [allele_or_zygosity:natural_polymorphism]
+  - field: allele_or_zygosity
+    stated: mosaic knock-outs
+    terms: [allele_or_zygosity:g0_somatic_mosaic]
+  - field: allele_or_zygosity
+    stated: crispants
+    terms: [allele_or_zygosity:g0_somatic_mosaic]
+  - field: allele_or_zygosity
+    stated: biallelic deletion
+    terms: [allele_or_zygosity:homozygous_null]
+  - field: allele_or_zygosity
+    stated: compound heterozygous
+    terms: [allele_or_zygosity:homozygous_null]
+  - field: perturbation_modality
+    stated: association mapping
+    terms: [perturbation_modality:natural_cross_or_gwas]
+  - field: perturbation_modality
+    stated: CRISPR/Cas9 mutagenesis
+    terms: [perturbation_modality:crispr_g0_mosaic]
+  - field: perturbation_modality
+    stated: germline mutants
+    terms: [perturbation_modality:crispr_germline_ko]
+  - field: imaging_modality
+    stated: RNA-seq
+    terms: [imaging_modality:bulk_rna_seq]
+  - field: imaging_modality
+    stated: in situ hybridizations
+    terms: [imaging_modality:hcr_in_situ]
+  - field: imaging_modality
+    stated: Whole-genome sequencing
+    terms: [imaging_modality:wgs_gwas]
+  - field: imaging_modality
+    stated: radiolabeling
+    terms: [imaging_modality:radiolabeling]
+  - field: view_orientation
+    stated: Ventral wing views
+    terms: [view_orientation:top_down_apical]
+  - field: view_orientation
+    stated: Dorsal views
+    terms: [view_orientation:top_down_apical]
+  - field: hydration_and_prep
+    stated: incubated in fixative
+    terms: [hydration_and_prep:fixed_hydrated]

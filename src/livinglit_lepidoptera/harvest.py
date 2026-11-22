@@ -418,8 +418,87 @@ def parse_code_registry(papers_dir: Path = PAPERS_DIR) -> list[dict[str, Any]]:
     return registry
 
 
+def _parse_genomic_row_block(
+    raw_rows: list[list[str]],
+    gt: Any,
+    extra: dict[str, Any] | None = None,
+) -> list[dict[str, Any]]:
+    """Locate header row (scanning up to first 15 rows for Excel title banners) and parse mapped records."""
+    if not raw_rows:
+        return []
+    str_specs = [v for v in gt.columns.values() if isinstance(v, str)]
+    hdr_idx = 0
+    if str_specs:
+        found = None
+        for idx, row in enumerate(raw_rows[:15]):
+            cells = [c.strip() for c in row]
+            if all(s in cells for s in str_specs):
+                found = idx
+                break
+        if found is None:
+            for idx, row in enumerate(raw_rows[:15]):
+                cells = [c.strip() for c in row]
+                if any(s in cells for s in str_specs):
+                    found = idx
+                    break
+        if found is None:
+            return []
+        hdr_idx = found
+
+    header = [c.strip() for c in raw_rows[hdr_idx]]
+    col_idx: dict[str, int] = {}
+    for norm_k, spec_col in gt.columns.items():
+        if isinstance(spec_col, int):
+            col_idx[norm_k] = spec_col
+        elif spec_col in header:
+            col_idx[norm_k] = header.index(spec_col)
+
+    out: list[dict[str, Any]] = []
+    float_keys = ("log2fc", "p_val", "p_adj", "pct_1", "pct_2", "spacing_um", "value", "score")
+    int_keys = ("chip_peaks", "n_injected", "n_hatched", "n_emerged", "n_phenotype")
+    for r in raw_rows[hdr_idx + 1 :]:
+        if col_idx:
+            mapped_vals = [r[idx].strip() if idx < len(r) else "" for idx in col_idx.values()]
+            if not any(mapped_vals):
+                continue
+            # Skip trailing notes or separator rows where primary morphometric numeric column is blank/non-numeric
+            if gt.kind == "scale_morphometrics":
+                num_k = "spacing_um" if "spacing_um" in col_idx else ("value" if "value" in col_idx else None)
+                if num_k is not None:
+                    raw_num = r[col_idx[num_k]].strip() if col_idx[num_k] < len(r) else ""
+                    try:
+                        float(raw_num)
+                    except ValueError:
+                        continue
+            rec_row: dict[str, Any] = dict(extra or {})
+            for norm_k, idx in col_idx.items():
+                val = r[idx].strip() if idx < len(r) else ""
+                if norm_k in float_keys:
+                    try:
+                        rec_row[norm_k] = float(val)
+                    except ValueError:
+                        rec_row[norm_k] = val
+                elif norm_k in int_keys:
+                    try:
+                        rec_row[norm_k] = int(float(val))
+                    except ValueError:
+                        rec_row[norm_k] = val
+                else:
+                    rec_row[norm_k] = val.replace("_", " ") if norm_k == "product" else val
+            out.append(rec_row)
+        else:
+            if not any(c.strip() for c in r):
+                continue
+            rec_row = dict(extra or {})
+            for i in range(len(header)):
+                if header[i]:
+                    rec_row[header[i]] = r[i].strip() if i < len(r) else ""
+            out.append(rec_row)
+    return out
+
+
 def parse_genomic_tables(records_dir: Path, papers_dir: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    """Schema-driven ingestion of supplemental genomics/genetics/morphometrics CSVs declared in genetics.yaml."""
+    """Schema-driven ingestion of supplemental genomics/genetics/morphometrics CSV/TSV/XLSX files declared in genetics.yaml."""
     from .models import GeneticsFile
 
     tables_out: list[dict[str, Any]] = []
@@ -432,40 +511,24 @@ def parse_genomic_tables(records_dir: Path, papers_dir: Path) -> tuple[list[dict
         for gt in gf.genomic_tables:
             fpath = papers_dir / paper / gt.file
             rows_parsed: list[dict[str, Any]] = []
-            if fpath.is_file() and fpath.suffix.lower() in (".csv", ".tsv"):
-                delim = "\t" if fpath.suffix.lower() == ".tsv" else ","
-                with open(fpath, encoding="utf-8-sig") as fh:
-                    raw_rows = list(csv.reader(fh, delimiter=delim))
-                if raw_rows:
-                    header = raw_rows[0]
-                    col_idx: dict[str, int] = {}
-                    for norm_k, spec_col in gt.columns.items():
-                        if isinstance(spec_col, int):
-                            col_idx[norm_k] = spec_col
-                        elif spec_col in header:
-                            col_idx[norm_k] = header.index(spec_col)
-                    for r in raw_rows[1:]:
-                        if not any(c.strip() for c in r):
-                            continue
-                        if col_idx:
-                            rec_row: dict[str, Any] = {}
-                            for norm_k, idx in col_idx.items():
-                                val = r[idx].strip() if idx < len(r) else ""
-                                if norm_k in ("log2fc", "p_val", "p_adj", "pct_1", "pct_2", "spacing_um", "value", "score"):
-                                    try:
-                                        rec_row[norm_k] = float(val)
-                                    except ValueError:
-                                        rec_row[norm_k] = val
-                                elif norm_k in ("chip_peaks", "n_injected", "n_hatched", "n_emerged", "n_phenotype"):
-                                    try:
-                                        rec_row[norm_k] = int(float(val))
-                                    except ValueError:
-                                        rec_row[norm_k] = val
-                                else:
-                                    rec_row[norm_k] = val.replace("_", " ") if norm_k == "product" else val
-                            rows_parsed.append(rec_row)
-                        else:
-                            rows_parsed.append({header[i]: (r[i].strip() if i < len(r) else "") for i in range(len(header))})
+            if fpath.is_file():
+                sfx = fpath.suffix.lower()
+                if sfx in (".csv", ".tsv"):
+                    delim = "\t" if sfx == ".tsv" else ","
+                    with open(fpath, encoding="utf-8-sig") as fh:
+                        raw_rows = list(csv.reader(fh, delimiter=delim))
+                    rows_parsed.extend(_parse_genomic_row_block(raw_rows, gt))
+                elif sfx in (".xlsx", ".xlsm"):
+                    wb = openpyxl.load_workbook(fpath, data_only=True, read_only=True)
+                    try:
+                        multi = len(wb.sheetnames) > 1
+                        for sn in wb.sheetnames:
+                            ws = wb[sn]
+                            sheet_rows = [["" if c is None else str(c).strip() for c in row] for row in ws.iter_rows(values_only=True)]
+                            extra = {"sheet": sn} if multi else None
+                            rows_parsed.extend(_parse_genomic_row_block(sheet_rows, gt, extra=extra))
+                    finally:
+                        wb.close()
             tables_out.append({
                 "paper": paper,
                 "id": gt.id,

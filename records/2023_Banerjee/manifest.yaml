@@ -1,0 +1,40 @@
+id: 2023_Banerjee
+doi: 10.1126/sciadv.adg3877
+title: Spatial and temporal regulation of Wnt signaling pathway members in the development of butterfly wing patterns
+year: 2023
+journal: Science Advances
+oa_status: open_access
+license: CC-BY-4.0
+figure_embed_policy: public_thumbnails
+repositories:
+  - kind: publisher_supplement
+    url: https://www.science.org/doi/suppl/10.1126/sciadv.adg3877/suppl_file/sciadv.adg3877_sm.pdf
+    doi: 10.1126/sciadv.adg3877
+    note: Supplementary Materials PDF (Tables S1-S4 including CRISPR injection/survival counts in Table S2 and sgRNA/primer/probe sequences; Figs. S1-S15 including arm and Wnt7 crispant plates)
+  - kind: ncbi_lepbase_flybase
+    url: https://www.ncbi.nlm.nih.gov/
+    note: Bicyclus anynana genome assemblies (nBa.0.1, v1.2, v2.0 in Lepbase / NCBI taxid:110368) and Drosophila melanogaster orthologs (FlyBase) used for Wnt and frizzled phylogenetics
+files:
+  - file: PMC10371022.xml
+    role: main_text
+  - file: sciadv.adg3877-f1.jpg
+    role: main_figure
+  - file: sciadv.adg3877-f2.jpg
+    role: main_figure
+  - file: sciadv.adg3877-f3.jpg
+    role: main_figure
+  - file: sciadv.adg3877-f4.jpg
+    role: main_figure
+  - file: sciadv.adg3877-f5.jpg
+    role: main_figure
+  - file: sciadv.adg3877-f6.jpg
+    role: main_figure
+  - file: sciadv.adg3877-f7.jpg
+    role: main_figure
+  - file: sciadv.adg3877-f8.jpg
+    role: main_figure
+  - file: sciadv.adg3877-f9.jpg
+    role: main_figure
+  - file: sciadv.adg3877-f10.jpg
+    role: main_figure
+not_used: []

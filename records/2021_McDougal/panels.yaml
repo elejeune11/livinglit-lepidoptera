@@ -1,0 +1,631 @@
+record: 2021_McDougal
+default_context:
+  species: Vanessa cardui
+  family: Nymphalidae
+  anatomical_region: wing
+figures:
+  F1:
+    label: Fig. 1
+    file: pnas.202112009fig01.jpg
+    xml_id: fig01
+    title: Adult Vanessa cardui wing scale architecture imaged by optical microscopy, SEM, and speckle-correlation reflection phase microscopy
+    caption_anchor:
+      quote: Imaging the structure of fully formed butterfly scales. (A) The painted lady butterfly, V. cardui.
+      where: Fig. 1 caption
+    context:
+      life_stage: adult
+    panels:
+      A:
+        label: 1A
+        title: Macro photograph of adult painted lady butterfly Vanessa cardui
+        bbox: [2, 2, 115, 103]
+        archetype: macro_morphology
+        context:
+          imaging_modality: light microscopy
+      B:
+        label: 1B
+        title: Optical micrograph of overlapping orange and black adult wing scales (200 µm bar)
+        bbox: [2, 109, 115, 212]
+        archetype: macro_morphology
+        context:
+          imaging_modality: light microscopy
+          view_orientation: top-down apical
+        scale_bar:
+          um: 200.0
+          search_box: [64, 84, 110, 100]
+          polarity: bright
+      C:
+        label: 1C
+        title: Planar SEM of adult wing scales with longitudinal ridges (20 µm bar)
+        bbox: [122, 2, 332, 212]
+        archetype: planar_microscopy
+        context:
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 20.0
+          search_box: [1, 191, 67, 207]
+          polarity: bright
+        periodic_spec:
+          roi: [10, 45, 76, 165]
+          spacing_range_um: [1.0, 4.0]
+          wavevector_angle_deg: [-40, 40]
+          channel: gray
+        linked_items: [F1_adult_ridge_fft]
+        linked_claims: [C1_srpm_live_imaging]
+      D:
+        label: 1D
+        title: High-magnification SEM of adult scale finger showing stacked ridge lamellae and transverse crossribs (5 µm bar)
+        bbox: [202, 115, 332, 212]
+        archetype: planar_microscopy
+        context:
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [71, 78, 127, 94]
+          polarity: bright
+        periodic_spec:
+          roi: [22, 18, 108, 76]
+          spacing_range_um: [1.0, 3.5]
+          wavevector_angle_deg: [-40, 40]
+          channel: gray
+          measure_crossrib: true
+          crossrib_range_um: [0.3, 1.2]
+        linked_items: [F1_adult_ridge_fft, F1_adult_crossrib_fft]
+      E:
+        label: 1E
+        title: Volumetric SRPM depth-coded amplitude image (0–6 µm) of adult wing scale (20 µm bar)
+        bbox: [339, 2, 549, 212]
+        archetype: planar_microscopy
+        context:
+          imaging_modality: speckle-correlation reflection phase microscopy
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 20.0
+          search_box: [137, 191, 208, 206]
+          polarity: bright
+        periodic_spec:
+          roi: [55, 65, 145, 165]
+          spacing_range_um: [1.2, 3.5]
+          wavevector_angle_deg: [-40, 40]
+          channel: magenta
+        linked_items: [F1_adult_ridge_fft]
+        linked_claims: [C1_srpm_live_imaging]
+        linked_resources: [mcdougal_zenodo_matlab_code]
+      F:
+        label: 1F
+        title: Single-slice SRPM wrapped phase image (-pi to +pi) of adult wing scale (20 µm bar)
+        bbox: [556, 2, 766, 212]
+        archetype: planar_microscopy
+        context:
+          imaging_modality: speckle-correlation reflection phase microscopy
+          view_orientation: top-down apical
+        scale_bar:
+          um: 20.0
+          search_box: [140, 193, 204, 204]
+          polarity: bright
+        periodic_spec:
+          roi: [55, 65, 145, 165]
+          spacing_range_um: [1.2, 3.5]
+          wavevector_angle_deg: [-40, 40]
+          channel: blue
+        linked_items: [F1_adult_ridge_fft]
+        linked_claims: [C1_srpm_live_imaging]
+        linked_resources: [mcdougal_zenodo_matlab_code]
+
+  F2:
+    label: Fig. 2
+    file: pnas.202112009fig02.jpg
+    xml_id: fig02
+    title: Optical window surgery, in vivo SRPM interferometry setup, and 83% live pupal forewing scale amplitude, phase gradient, and surface height profiles
+    caption_anchor:
+      quote: Optical window and in vivo microscopy to image developing scales. (A) Creating an optical window into the chrysalis
+      where: Fig. 2 caption
+    context:
+      life_stage: pupa
+    panels:
+      A:
+        label: 2A
+        title: Surgical optical window schematic lifting cuticle and forewing flap and sealing coverslip with biocompatible adhesive
+        bbox: [2, 2, 339, 76]
+        archetype: phylogeny_or_schematic
+      B:
+        label: 2B
+        title: Macro photograph of exposed pupal wing through coverslip window at 2% development (1 mm bar)
+        bbox: [2, 82, 339, 226]
+        archetype: macro_morphology
+        context:
+          pupal_stage_pct: '2%'
+          imaging_modality: light microscopy
+        scale_bar:
+          um: 1000.0
+          search_box: [286, 126, 329, 141]
+          polarity: dark
+      C:
+        label: 2C
+        title: Optically accessible translucent pupal wing area at 3% development (1 mm bar)
+        bbox: [364, 2, 487, 73]
+        archetype: macro_morphology
+        context:
+          pupal_stage_pct: '3%'
+          imaging_modality: light microscopy
+        scale_bar:
+          um: 1000.0
+          search_box: [82, 57, 123, 71]
+          polarity: bright
+      D:
+        label: 2D
+        title: Optically accessible pupal wing area at 73% development showing emerging reflectivity (1 mm bar)
+        bbox: [364, 77, 487, 149]
+        archetype: macro_morphology
+        context:
+          pupal_stage_pct: '73%'
+          imaging_modality: light microscopy
+        scale_bar:
+          um: 1000.0
+          search_box: [82, 59, 123, 72]
+          polarity: bright
+      E:
+        label: 2E
+        title: Optically accessible pupal wing area at 100% development minutes before eclosion showing mature pigment patterns (1 mm bar)
+        bbox: [364, 154, 487, 226]
+        archetype: macro_morphology
+        context:
+          pupal_stage_pct: '100%'
+          imaging_modality: light microscopy
+        scale_bar:
+          um: 1000.0
+          search_box: [82, 59, 123, 72]
+          polarity: bright
+      F:
+        label: 2F
+        title: Optical schematic of dynamic-speckle reflection phase microscopy interferometric setup (PBS, QWP, off-axis holography)
+        bbox: [500, 2, 764, 226]
+        archetype: phylogeny_or_schematic
+      G:
+        label: 2G
+        title: Single slice of deconvolved reflected light amplitude of live pupal forewing scales at 83% development / 8.12 d (20 µm bar)
+        bbox: [2, 248, 188, 435]
+        archetype: planar_microscopy
+        context:
+          anatomical_region: forewing
+          pupal_stage_pct: '83%'
+          imaging_modality: speckle-correlation reflection phase microscopy
+          view_orientation: top-down apical
+        scale_bar:
+          um: 20.0
+          search_box: [114, 167, 180, 183]
+          polarity: bright
+        periodic_spec:
+          roi: [112, 85, 174, 142]
+          spacing_range_um: [1.4, 3.0]
+          wavevector_angle_deg: [-85, -35]
+          channel: gray
+        linked_items: [F2_forewing_timing, F2_forewing_stage_frac, F2_forewing_ridge_fft]
+        linked_claims: [C1_srpm_live_imaging]
+        linked_resources: [mcdougal_zenodo_matlab_code]
+      H:
+        label: 2H
+        title: Depth-coded 6-µm volumetric SRPM amplitude stack of live 83% pupal forewing scales (20 µm bar)
+        bbox: [191, 248, 377, 435]
+        archetype: planar_microscopy
+        context:
+          anatomical_region: forewing
+          pupal_stage_pct: '83%'
+          imaging_modality: speckle-correlation reflection phase microscopy
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 20.0
+          search_box: [116, 167, 181, 183]
+          polarity: bright
+        periodic_spec:
+          roi: [98, 55, 168, 120]
+          spacing_range_um: [1.3, 3.0]
+          wavevector_angle_deg: [-85, -35]
+          channel: gray
+        linked_items: [F2_forewing_ridge_fft]
+        linked_claims: [C1_srpm_live_imaging]
+        linked_resources: [mcdougal_zenodo_matlab_code]
+      I:
+        label: 2I
+        title: Live 83% pupal forewing scale local phase-gradient orientation map resolving individual longitudinal ridges (20 µm bar)
+        bbox: [380, 248, 567, 435]
+        archetype: planar_microscopy
+        context:
+          anatomical_region: forewing
+          pupal_stage_pct: '83%'
+          imaging_modality: speckle-correlation reflection phase microscopy
+          view_orientation: top-down apical
+        scale_bar:
+          um: 20.0
+          search_box: [117, 167, 182, 183]
+          polarity: bright
+        periodic_spec:
+          roi: [116, 48, 178, 108]
+          spacing_range_um: [1.2, 3.5]
+          wavevector_angle_deg: [-90, -25]
+          channel: red
+        linked_items: [F2_forewing_ridge_fft]
+        linked_claims: [C1_srpm_live_imaging]
+        linked_resources: [mcdougal_zenodo_matlab_code]
+      J:
+        label: 2J
+        title: Unwrapped phase surface height profile across ridges at 83% forewing development (0–9 µm, 0–300 nm)
+        bbox: [570, 244, 764, 335]
+        archetype: spectral_or_profile
+        context:
+          anatomical_region: forewing
+          pupal_stage_pct: '83%'
+          imaging_modality: speckle-correlation reflection phase microscopy
+        extractor: extractors/f2_profiles.py
+        linked_items: [F2_forewing_ridge_fft]
+        linked_claims: [C1_srpm_live_imaging]
+        linked_resources: [mcdougal_zenodo_matlab_code]
+      K:
+        label: 2K
+        title: Unwrapped phase surface height profile along ridge showing lamellae elevation at 83% forewing development (0–9 µm)
+        bbox: [570, 335, 764, 436]
+        archetype: spectral_or_profile
+        context:
+          anatomical_region: forewing
+          pupal_stage_pct: '83%'
+          imaging_modality: speckle-correlation reflection phase microscopy
+        extractor: extractors/f2_profiles.py
+        linked_claims: [C1_srpm_live_imaging]
+        linked_resources: [mcdougal_zenodo_matlab_code]
+
+  F3:
+    label: Fig. 3
+    file: pnas.202112009fig03.jpg
+    xml_id: fig03
+    title: Continuous in vivo SRPM time-lapse of scale cell morphogenesis from 5% to 99% pupal development and phenomenological milestone timeline
+    caption_anchor:
+      quote: Continuous imaging of scale growth on an individual V. cardui pupa. (A) Wing tissue at 5% of pupal development
+      where: Fig. 3 caption
+    context:
+      life_stage: pupa
+      anatomical_region: hindwing
+      imaging_modality: speckle-correlation reflection phase microscopy
+    panels:
+      A:
+        label: 3A
+        title: Live hindwing epidermal monolayer at 5% pupal development undergoing in-plane mitoses (10 µm bar)
+        bbox: [2, 2, 151, 60]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '5%'
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 10.0
+          search_box: [115, 43, 149, 57]
+          polarity: bright
+        linked_items: [F3_developmental_milestones]
+      B:
+        label: 3B
+        title: Enlarged raised scale precursor cells (red spheroids) at 15% pupal development (10 µm bar)
+        bbox: [2, 66, 151, 151]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '15%'
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 10.0
+          search_box: [115, 71, 149, 85]
+          polarity: bright
+        linked_items: [F3_developmental_milestones]
+      C:
+        label: 3C
+        title: Protruding cover and ground scales emerging from sockets at 34% pupal development (16.8 µm depth, 20 µm bar)
+        bbox: [156, 2, 305, 151]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '34%'
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 20.0
+          search_box: [94, 135, 149, 149]
+          polarity: bright
+        linked_items: [F3_developmental_milestones]
+      D:
+        label: 3D
+        title: Expanding live scales initiating distal finger formation at 44% pupal development (20 µm bar)
+        bbox: [309, 2, 459, 151]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '44%'
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 20.0
+          search_box: [95, 135, 150, 149]
+          polarity: bright
+        linked_items: [F3_developmental_milestones]
+      E:
+        label: 3E
+        title: Final-size scales with pronounced fingers and faint longitudinal structures at 62% pupal development (20 µm bar)
+        bbox: [463, 2, 613, 151]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '62%'
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 20.0
+          search_box: [98, 138, 146, 146]
+          polarity: bright
+        linked_items: [F3_developmental_milestones]
+      F:
+        label: 3F
+        title: Mature live scales showing lower lamina (green) underneath developed ridges (red) at 99% development (20 µm bar)
+        bbox: [617, 2, 766, 151]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '99%'
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 20.0
+          search_box: [95, 135, 149, 149]
+          polarity: bright
+        linked_items: [F3_developmental_milestones, F3_pupal_duration]
+      G:
+        label: 3G
+        title: Phenomenological timeline of V. cardui scale cell morphogenesis events from 0% to 100% pupal development
+        bbox: [2, 155, 766, 345]
+        archetype: phylogeny_or_schematic
+        linked_items: [F3_developmental_milestones, F3_pupal_duration]
+
+  F4:
+    label: Fig. 4
+    file: pnas.202112009fig04.jpg
+    xml_id: fig04
+    title: Two-stage appearance and alignment of cover and ground scale precursor cells (13–18% pupal development)
+    caption_anchor:
+      quote: Scale precursor cells appear in two stages. Cover scale precursor cells (raised red spheroids) are labeled 1, 2, and 3
+      where: Fig. 4 caption
+    context:
+      life_stage: pupa
+      anatomical_region: hindwing
+      imaging_modality: speckle-correlation reflection phase microscopy
+    panels:
+      A:
+        label: 4A
+        title: Volumetric SRPM of roughly aligned cover scale precursor cells (1, 2, 3) at 13% development (20 µm bar)
+        bbox: [2, 2, 178, 177]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '13%'
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 20.0
+          search_box: [113, 160, 175, 175]
+          polarity: bright
+        linked_items: [F3_developmental_milestones]
+        linked_claims: [C2_two_stage_precursor_patterning]
+      B:
+        label: 4B
+        title: Volumetric SRPM of shifting cover scale precursor cells (1, 2, 3) at 15% development
+        bbox: [185, 2, 361, 177]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '15%'
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 20.0
+          px: 46.88
+          source: Fig. 4A matched magnification series
+        linked_claims: [C2_two_stage_precursor_patterning]
+      C:
+        label: 4C
+        title: Volumetric SRPM at 16% development showing nascent ground scale precursor cell (a) enlarging between cells 2 and 3
+        bbox: [368, 2, 544, 177]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '16%'
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 20.0
+          px: 46.88
+          source: Fig. 4A matched magnification series
+        linked_claims: [C2_two_stage_precursor_patterning]
+      D:
+        label: 4D
+        title: Volumetric SRPM at 18% development showing ground scale precursors (a, b) matched in size and aligned in straight row
+        bbox: [548, 2, 725, 177]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '18%'
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 20.0
+          px: 46.88
+          source: Fig. 4A matched magnification series
+        linked_items: [F3_developmental_milestones]
+        linked_claims: [C2_two_stage_precursor_patterning]
+      A_prime:
+        label: 4A'
+        title: Schematic depiction of initial loose row of cover scale precursor cells (1, 2, 3) at 13% development
+        bbox: [2, 185, 178, 355]
+        archetype: phylogeny_or_schematic
+        context:
+          pupal_stage_pct: '13%'
+        linked_claims: [C2_two_stage_precursor_patterning]
+      B_prime:
+        label: 4B'
+        title: Schematic depiction of shifting cover scale precursor row at 15% development
+        bbox: [185, 185, 361, 355]
+        archetype: phylogeny_or_schematic
+        context:
+          pupal_stage_pct: '15%'
+        linked_claims: [C2_two_stage_precursor_patterning]
+      C_prime:
+        label: 4C'
+        title: Schematic depiction of intercalating ground scale precursor cell (a) at 16% development
+        bbox: [368, 185, 544, 355]
+        archetype: phylogeny_or_schematic
+        context:
+          pupal_stage_pct: '16%'
+        linked_claims: [C2_two_stage_precursor_patterning]
+      D_prime:
+        label: 4D'
+        title: Schematic depiction of alternating cover and ground scale precursors (a, b) aligned in neat row at 18% development
+        bbox: [548, 185, 725, 355]
+        archetype: phylogeny_or_schematic
+        context:
+          pupal_stage_pct: '18%'
+        linked_claims: [C2_two_stage_precursor_patterning]
+
+  F5:
+    label: Fig. 5
+    file: pnas.202112009fig05.jpg
+    xml_id: fig05
+    title: Quantification of pupal cover scale 3D shape evolution (length, width, thickness, volume/area) and nascent ridge spacing and height growth
+    caption_anchor:
+      quote: Quantification of scale shape evolution and ridge growth. (A) Scale morphology at 35% of pupal development.
+      where: Fig. 5 caption
+    context:
+      life_stage: pupa
+      anatomical_region: hindwing
+      scale_type: cover scale
+      imaging_modality: speckle-correlation reflection phase microscopy
+    panels:
+      A_top:
+        label: 5A (Top)
+        title: Volumetric SRPM amplitude image (0–6 µm) of midsized cover scales at 35% development (20 µm bar)
+        bbox: [6, 2, 155, 153]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '35%'
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 20.0
+          search_box: [102, 138, 144, 146]
+          px: 36.1
+          polarity: bright
+          source: caption + Fig. 5B Top matched FOV
+        linked_items: [F5_scale_width, F5_scale_length, F5_scale_thickness]
+      A_mid:
+        label: 5A (Middle)
+        title: Phase-gradient map of smooth cover scale surface at 35% development from boxed ROI (10 µm bar)
+        bbox: [20, 154, 154, 288]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '35%'
+          view_orientation: top-down apical
+        scale_bar:
+          um: 10.0
+          search_box: [71, 119, 134, 134]
+          polarity: bright
+      A_bot:
+        label: 5A (Bottom)
+        title: Unwrapped phase surface height profile h (nm) across smooth scale at 35% development (0–7 µm)
+        bbox: [18, 293, 162, 361]
+        archetype: spectral_or_profile
+        context:
+          pupal_stage_pct: '35%'
+        extractor: extractors/f5_profiles.py
+        linked_resources: [mcdougal_zenodo_matlab_code]
+      B_top:
+        label: 5B (Top)
+        title: Volumetric SRPM amplitude image (0–6 µm) of cover scales with emerging fingers at 41% development (20 µm bar)
+        bbox: [176, 2, 326, 153]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '41%'
+          view_orientation: 3D volumetric
+        scale_bar:
+          um: 20.0
+          search_box: [97, 135, 148, 150]
+          polarity: bright
+        linked_items: [F5_scale_width, F5_scale_length, F5_scale_thickness]
+      B_mid:
+        label: 5B (Middle)
+        title: Phase-gradient map at 41% development showing regularly spaced nascent proto-ridges (~1.4 µm pitch, 10 µm bar)
+        bbox: [190, 154, 324, 288]
+        archetype: planar_microscopy
+        context:
+          pupal_stage_pct: '41%'
+          view_orientation: top-down apical
+        scale_bar:
+          um: 10.0
+          search_box: [71, 119, 134, 134]
+          polarity: bright
+        periodic_spec:
+          roi: [30, 62, 82, 114]
+          spacing_range_um: [1.0, 2.2]
+          wavevector_angle_deg: [-65, -10]
+          channel: gray
+        linked_items: [F5_actin_ridge_spacing, F5_proto_ridge_height]
+        linked_claims: [C6_irregular_to_regular_ridge_onset]
+      B_bot:
+        label: 5B (Bottom)
+        title: Unwrapped phase surface height profile h (nm) across ~100 nm proto-ridges at 41% development (0–7 µm)
+        bbox: [184, 293, 335, 361]
+        archetype: spectral_or_profile
+        context:
+          pupal_stage_pct: '41%'
+        extractor: extractors/f5_profiles.py
+        linked_items: [F5_proto_ridge_height]
+        linked_claims: [C6_irregular_to_regular_ridge_onset]
+        linked_resources: [mcdougal_zenodo_matlab_code]
+      C:
+        label: 5C
+        title: Cover scale length (µm) vs pupal development (28–55%) showing peak at ~37% and slight retraction
+        bbox: [336, 17, 525, 96]
+        archetype: quantitative_plot
+        extractor: extractors/f5_shape.py
+        linked_items: [F5_scale_length]
+        linked_claims: [C3_anisotropic_scale_growth]
+        linked_resources: [mcdougal_zenodo_scale_measurements, mcdougal_zenodo_matlab_code]
+      D:
+        label: 5D
+        title: Cover scale width (µm) vs pupal development (28–55%) showing >5-fold lateral expansion
+        bbox: [336, 98, 525, 175]
+        archetype: quantitative_plot
+        extractor: extractors/f5_shape.py
+        linked_items: [F5_scale_width, F5_width_expansion_contrast]
+        linked_claims: [C3_anisotropic_scale_growth]
+        linked_resources: [mcdougal_zenodo_scale_measurements, mcdougal_zenodo_matlab_code]
+      E:
+        label: 5E
+        title: Cover scale thickness (µm) vs pupal development (28–55%) showing gradual blade thinning
+        bbox: [336, 176, 525, 253]
+        archetype: quantitative_plot
+        extractor: extractors/f5_shape.py
+        linked_items: [F5_scale_thickness, F5_thinning_contrast]
+        linked_claims: [C3_anisotropic_scale_growth, C4_scale_thinning_during_expansion]
+        linked_resources: [mcdougal_zenodo_scale_measurements, mcdougal_zenodo_matlab_code]
+      F:
+        label: 5F
+        title: Estimated scale volume (pink) and surface area (black) as % of maximum vs pupal development (28–55%)
+        bbox: [336, 254, 525, 361]
+        archetype: quantitative_plot
+        extractor: extractors/f5_shape.py
+        linked_items: [D2_scale_area_41pct]
+        linked_claims: [C3_anisotropic_scale_growth]
+        linked_resources: [mcdougal_zenodo_scale_measurements, mcdougal_zenodo_matlab_code]
+      G:
+        label: 5G
+        title: Continuous actin bundle and ridge spacing (µm) tracked on individual scales from 38% to 89% development
+        bbox: [530, 17, 764, 185]
+        archetype: quantitative_plot
+        extractor: extractors/f5_ridges.py
+        linked_items: [F5_actin_ridge_spacing, D1_ridge_density]
+        linked_claims: [C5_actin_bundle_widening, C7_constant_ridge_spacing_refutes_contraction]
+        linked_resources: [mcdougal_zenodo_matlab_code]
+      H_height:
+        label: 5H (Height)
+        title: Nascent ridge height (nm, mean ± SD across 3 scales) from smooth (34.8%) through irregular to regular ridges (41.0%)
+        bbox: [530, 186, 764, 301]
+        archetype: quantitative_plot
+        extractor: extractors/f5_ridges.py
+        linked_items: [F5_proto_ridge_height]
+        linked_claims: [C6_irregular_to_regular_ridge_onset]
+        linked_resources: [mcdougal_zenodo_phase_profiles, mcdougal_zenodo_matlab_code]
+      H_spacing:
+        label: 5H (Spacing)
+        title: Nascent ridge periodicity (µm, mean ± SD across 3 scales) tightening from irregular undulations to regular ~1.5 µm spacing
+        bbox: [530, 300, 764, 361]
+        archetype: quantitative_plot
+        extractor: extractors/f5_ridges.py
+        linked_items: [F5_actin_ridge_spacing]
+        linked_claims: [C6_irregular_to_regular_ridge_onset]
+        linked_resources: [mcdougal_zenodo_phase_profiles, mcdougal_zenodo_matlab_code]

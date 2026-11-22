@@ -1,0 +1,436 @@
+record: 2024_Totz
+default_context:
+  species: Vanessa cardui
+  family: Nymphalidae
+  anatomical_region: hindwing
+figures:
+  F1:
+    label: Fig. 1
+    file: fig1.jpg
+    xml_id: F1
+    title: Adult Vanessa cardui scale ridge ultrastructure and live in vivo phase microscopy of early protoridge emergence (35.8%–41.0% pupal development)
+    caption_anchor:
+      quote: In vivo phase data from the surface of young scales shows the early formation of ridges
+      where: Fig 1
+    context: {}
+    panels:
+      Ai:
+        label: 1Ai
+        title: Dorsal whole-butterfly photograph of adult Vanessa cardui (Painted Lady)
+        bbox: [4, 5, 290, 515]
+        archetype: macro_morphology
+        context:
+          imaging_modality: light microscopy
+          view_orientation: whole-mount
+      Aii:
+        label: 1Aii
+        title: Optical micrograph of overlapping wing scales on Vanessa cardui wing surface (200 µm bar)
+        bbox: [4, 520, 290, 874]
+        archetype: macro_morphology
+        context:
+          scale_type: wing scale
+          imaging_modality: light microscopy
+          view_orientation: top-down apical
+        scale_bar:
+          um: 200.0
+          search_box: [200, 320, 286, 352]
+          polarity: bright
+      Aiii:
+        label: 1Aiii
+        title: Whole-scale scanning electron micrograph of Vanessa cardui wing scale showing parallel longitudinal ridges (20 µm bar)
+        bbox: [290, 30, 786, 764]
+        archetype: planar_microscopy
+        context:
+          scale_type: wing scale
+          imaging_modality: SEM
+          view_orientation: top-down apical
+          hydration_and_prep: sputter coated
+        scale_bar:
+          um: 20.0
+          search_box: [370, 682, 480, 722]
+          polarity: bright
+        periodic_spec:
+          roi: [60, 145, 220, 505]
+          spacing_range_um: [1.0, 3.5]
+          wavevector_angle_deg: [-20, 20]
+        linked_items: [F1_adult_sem_ridges]
+      Aiv:
+        label: 1Aiv
+        title: High-magnification apical SEM of Vanessa cardui longitudinal ridges and transverse crossribs (2 µm bar)
+        bbox: [626, 232, 918, 492]
+        archetype: planar_microscopy
+        context:
+          scale_type: wing scale
+          imaging_modality: SEM
+          view_orientation: top-down apical
+          hydration_and_prep: sputter coated
+        scale_bar:
+          um: 2.0
+          search_box: [168, 229, 286, 248]
+          polarity: bright
+        periodic_spec:
+          roi: [8, 20, 282, 218]
+          spacing_range_um: [1.0, 3.0]
+          wavevector_angle_deg: [-25, 25]
+          measure_crossrib: true
+          crossrib_range_um: [0.3, 1.0]
+        harmonic_verified: true
+        linked_items: [F1_adult_sem_ridges, F1_adult_sem_crossribs]
+      B:
+        label: 1B
+        title: In vivo quantitative phase surface height map of smooth pre-buckling V. cardui scale at 35.8% pupal development (2 µm bar)
+        bbox: [1008, 214, 1371, 578]
+        archetype: planar_microscopy
+        context:
+          life_stage: pupa
+          pupal_stage_pct: 35.8%
+          scale_type: cover scale
+          imaging_modality: speckle-correlation reflection phase microscopy
+          view_orientation: 3D volumetric
+          hydration_and_prep: live in vivo
+        scale_bar:
+          um: 2.0
+          search_box: [195, 326, 358, 360]
+          polarity: bright
+        linked_items: [F1_onset_timing, F1_protoridge_height_onset]
+        linked_claims: [C1_in_vivo_protoridge_emergence]
+        linked_resources: [totz_zenodo_raw_phase, totz_zenodo_proc_data]
+      C:
+        label: 1C
+        title: In vivo quantitative phase surface height map of emerging protoridges on V. cardui scale at 40.0% pupal development (2 µm bar)
+        bbox: [1386, 214, 1745, 578]
+        archetype: planar_microscopy
+        context:
+          life_stage: pupa
+          pupal_stage_pct: 40.0%
+          scale_type: cover scale
+          imaging_modality: speckle-correlation reflection phase microscopy
+          view_orientation: 3D volumetric
+          hydration_and_prep: live in vivo
+        scale_bar:
+          um: 2.0
+          search_box: [195, 326, 355, 360]
+          polarity: bright
+        linked_items: [F1_onset_timing, F1_protoridge_height_onset]
+        linked_claims: [C1_in_vivo_protoridge_emergence]
+        linked_resources: [totz_zenodo_raw_phase, totz_zenodo_proc_data]
+      D:
+        label: 1D
+        title: In vivo quantitative phase surface height map of regular parallel protoridges on V. cardui scale at 41.0% pupal development (2 µm bar)
+        bbox: [1760, 214, 2120, 578]
+        archetype: planar_microscopy
+        context:
+          life_stage: pupa
+          pupal_stage_pct: 41.0%
+          scale_type: cover scale
+          imaging_modality: speckle-correlation reflection phase microscopy
+          view_orientation: 3D volumetric
+          hydration_and_prep: live in vivo
+        scale_bar:
+          um: 2.0
+          search_box: [195, 326, 356, 360]
+          polarity: bright
+        periodic_spec:
+          roi: [10, 200, 345, 320]
+          spacing_range_um: [1.2, 2.3]
+          wavevector_angle_deg: [-20, 20]
+          channel: green
+        linked_items: [F1_onset_timing, F1_protoridge_height_onset]
+        linked_claims: [C1_in_vivo_protoridge_emergence]
+        linked_resources: [totz_zenodo_raw_phase, totz_zenodo_proc_data]
+      E:
+        label: 1E
+        title: In vivo centerline surface height profile across V. cardui scale at 35.8% pupal development
+        bbox: [890, 610, 1378, 878]
+        archetype: spectral_or_profile
+        context:
+          life_stage: pupa
+          pupal_stage_pct: 35.8%
+          scale_type: cover scale
+          imaging_modality: speckle-correlation reflection phase microscopy
+        extractor: extractors/f1_profiles.py
+        linked_items: [F1_protoridge_height_onset]
+        linked_claims: [C1_in_vivo_protoridge_emergence]
+        linked_resources: [totz_zenodo_raw_phase, totz_zenodo_proc_data]
+      F:
+        label: 1F
+        title: In vivo centerline surface height profile across V. cardui scale at 40.0% pupal development
+        bbox: [1378, 610, 1752, 878]
+        archetype: spectral_or_profile
+        context:
+          life_stage: pupa
+          pupal_stage_pct: 40.0%
+          scale_type: cover scale
+          imaging_modality: speckle-correlation reflection phase microscopy
+        extractor: extractors/f1_profiles.py
+        linked_items: [F1_protoridge_height_onset]
+        linked_claims: [C1_in_vivo_protoridge_emergence]
+        linked_resources: [totz_zenodo_raw_phase, totz_zenodo_proc_data]
+      G:
+        label: 1G
+        title: In vivo centerline surface height profile across V. cardui scale at 41.0% pupal development (~100 nm protoridge height)
+        bbox: [1752, 610, 2132, 878]
+        archetype: spectral_or_profile
+        context:
+          life_stage: pupa
+          pupal_stage_pct: 41.0%
+          scale_type: cover scale
+          imaging_modality: speckle-correlation reflection phase microscopy
+        extractor: extractors/f1_profiles.py
+        linked_items: [F1_protoridge_height_onset]
+        linked_claims: [C1_in_vivo_protoridge_emergence]
+        linked_resources: [totz_zenodo_raw_phase, totz_zenodo_proc_data]
+
+  F2:
+    label: Fig. 2
+    file: fig2.jpg
+    xml_id: F2
+    title: Föppl–von Kármán constrained-growth plate buckling model and parameter sweep of membrane ridge height profiles
+    caption_anchor:
+      quote: Plate model of constrained growth leads to ridge buckling
+      where: Fig 2
+    context:
+      life_stage: pupa
+    panels:
+      A:
+        label: 2A
+        title: Confocal fluorescence projection of parallel longitudinal F-actin bundles in developing scale (adapted from Pomerantz et al. 2021; 5 µm bar)
+        bbox: [4, 4, 650, 735]
+        archetype: planar_microscopy
+        context:
+          scale_type: wing scale
+          target_gene: F-actin bundles
+          imaging_modality: confocal
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [420, 610, 560, 670]
+          polarity: dark
+        periodic_spec:
+          roi: [180, 120, 440, 380]
+          spacing_range_um: [0.5, 3.0]
+          wavevector_angle_deg: [-25, 25]
+          channel: blue
+      B:
+        label: 2B
+        title: TEM cross-section of developing scale showing apical cell membrane/cuticle (blue) anchored at parallel actin bundles (orange; 500 nm bar)
+        bbox: [4, 745, 650, 1410]
+        archetype: cross_section
+        context:
+          scale_type: wing scale
+          target_gene: F-actin bundles
+          imaging_modality: electron microscopy
+          view_orientation: cross-section
+        scale_bar:
+          um: 0.5
+          search_box: [480, 610, 644, 655]
+          polarity: dark
+      C:
+        label: 2C
+        title: Mechanical schematic of plate growth, biaxial compression, bending, actin-membrane attachment, and internal cytoplasmic pressure
+        bbox: [715, 5, 2060, 735]
+        archetype: phylogeny_or_schematic
+      D:
+        label: 2D
+        title: 3D numerical solutions of Föppl–von Kármán plate equations showing transition from flat to outward-buckled protoridge membrane
+        bbox: [715, 745, 2060, 1445]
+        archetype: phylogeny_or_schematic
+      E_g:
+        label: 2E (g)
+        title: FvK plate model buckling profile w(x) across growth strain g = 0.0%, 0.5%, 1.0% (nu=0.5, p=10 Pa, Y=1 MPa, h=20 nm, L=1.8 µm)
+        bbox: [2080, 4, 2790, 730]
+        archetype: quantitative_plot
+        extractor: extractors/f2_sweeps.py
+        partial_x_range: true
+        linked_items: [F3_fvk_critical_strain]
+        linked_resources: [totz_zenodo_plate_code]
+      E_Y:
+        label: 2E (Y)
+        title: FvK plate model buckling profile w(x) across Young's modulus Y = 10^5, 10^6, 10^8 Pa
+        bbox: [2800, 4, 3386, 730]
+        archetype: quantitative_plot
+        extractor: extractors/f2_sweeps.py
+        partial_x_range: true
+        linked_items: [F3_fvk_critical_strain]
+        linked_resources: [totz_zenodo_plate_code]
+      E_L:
+        label: 2E (L)
+        title: FvK plate model buckling profile w(x) across actin bundle spacing 0.5L, 1.0L, 1.5L (L = 1.8 µm)
+        bbox: [2080, 735, 2790, 1506]
+        archetype: quantitative_plot
+        extractor: extractors/f2_sweeps.py
+        partial_x_range: true
+        linked_items: [F3_fvk_critical_strain]
+        linked_claims: [C6_critical_strain_inverse_square_scaling]
+        linked_resources: [totz_zenodo_plate_code]
+      E_p:
+        label: 2E (p)
+        title: FvK plate model buckling profile w(x) across transmembrane pressure p = 10, 50, 100 Pa
+        bbox: [2800, 735, 3386, 1506]
+        archetype: quantitative_plot
+        extractor: extractors/f2_sweeps.py
+        partial_x_range: true
+        linked_items: [F3_fvk_critical_strain]
+        linked_resources: [totz_zenodo_plate_code]
+
+  F3:
+    label: Fig. 3
+    file: fig3.jpg
+    xml_id: F3
+    title: Validation of mechanical buckling model against 3,722 in vivo Vanessa cardui protoridge profiles across 39.6%–41.0% pupal development
+    caption_anchor:
+      quote: Validation of mechanical buckling hypothesis for early ridge formation
+      where: Fig 3
+    context:
+      life_stage: pupa
+      scale_type: cover scale
+      imaging_modality: speckle-correlation reflection phase microscopy
+      hydration_and_prep: live in vivo
+    panels:
+      A:
+        label: 3A
+        title: Mean ± SD in vivo protoridge height profile vs FvK model fit at 39.6% pupal development (n = 607 profiles, rescaled to L = 1.6 µm)
+        bbox: [4, 2, 745, 700]
+        archetype: spectral_or_profile
+        context:
+          pupal_stage_pct: 39.6%
+        extractor: extractors/f3_profiles.py
+        linked_items: [F3_buckling_amplitude_timeseries, F3_amplitude_progression]
+        linked_claims: [C2_gradual_amplitude_increase, C4_fvk_model_profile_agreement]
+        linked_resources: [totz_zenodo_proc_data, totz_zenodo_plate_code]
+      B:
+        label: 3B
+        title: Mean ± SD in vivo protoridge height profile vs FvK model fit at 40.0% pupal development (n = 639 profiles, rescaled to L = 1.6 µm)
+        bbox: [770, 2, 1385, 700]
+        archetype: spectral_or_profile
+        context:
+          pupal_stage_pct: 40.0%
+        extractor: extractors/f3_profiles.py
+        linked_items: [F3_buckling_amplitude_timeseries]
+        linked_claims: [C2_gradual_amplitude_increase, C4_fvk_model_profile_agreement]
+        linked_resources: [totz_zenodo_proc_data, totz_zenodo_plate_code]
+      C:
+        label: 3C
+        title: Mean ± SD in vivo protoridge height profile vs FvK model fit at 40.3% pupal development (n = 744 profiles, rescaled to L = 1.6 µm)
+        bbox: [1400, 2, 2015, 700]
+        archetype: spectral_or_profile
+        context:
+          pupal_stage_pct: 40.3%
+        extractor: extractors/f3_profiles.py
+        linked_items: [F3_buckling_amplitude_timeseries]
+        linked_claims: [C2_gradual_amplitude_increase, C4_fvk_model_profile_agreement]
+        linked_resources: [totz_zenodo_proc_data, totz_zenodo_plate_code]
+      D:
+        label: 3D
+        title: Mean ± SD in vivo protoridge height profile vs FvK model fit at 40.7% pupal development (n = 821 profiles, rescaled to L = 1.6 µm)
+        bbox: [2030, 2, 2642, 700]
+        archetype: spectral_or_profile
+        context:
+          pupal_stage_pct: 40.7%
+        extractor: extractors/f3_profiles.py
+        linked_items: [F3_buckling_amplitude_timeseries]
+        linked_claims: [C2_gradual_amplitude_increase, C4_fvk_model_profile_agreement]
+        linked_resources: [totz_zenodo_proc_data, totz_zenodo_plate_code]
+      E:
+        label: 3E
+        title: Mean ± SD in vivo protoridge height profile vs FvK model fit at 41.0% pupal development (n = 911 profiles, rescaled to L = 1.6 µm)
+        bbox: [2658, 2, 3272, 700]
+        archetype: spectral_or_profile
+        context:
+          pupal_stage_pct: 41.0%
+        extractor: extractors/f3_profiles.py
+        linked_items: [F3_buckling_amplitude_timeseries, F3_amplitude_progression]
+        linked_claims: [C2_gradual_amplitude_increase, C4_fvk_model_profile_agreement]
+        linked_resources: [totz_zenodo_proc_data, totz_zenodo_plate_code]
+      F:
+        label: 3F
+        title: Violin and boxplot distributions of scaled in vivo protoridge amplitudes w_0 (nm) across 39.6%–41.0% pupal development (N = 3,722 profiles)
+        bbox: [4, 1080, 1400, 1705]
+        archetype: quantitative_plot
+        extractor: extractors/f3_violins.py
+        linked_items: [F3_buckling_amplitude_timeseries, F3_amplitude_progression]
+        linked_claims: [C2_gradual_amplitude_increase]
+        linked_resources: [totz_zenodo_proc_data]
+      G:
+        label: 3G
+        title: Violin and boxplot distributions of unscaled in vivo protoridge widths L (µm) across 39.6%–41.0% pupal development (N = 3,722 profiles)
+        bbox: [4, 1710, 1400, 2466]
+        archetype: quantitative_plot
+        extractor: extractors/f3_violins.py
+        linked_items: [F3_protoridge_width, D1_vc_protoridge_density]
+        linked_claims: [C3_constant_protoridge_width]
+        linked_resources: [totz_zenodo_proc_data]
+      H:
+        label: 3H
+        title: Buckling amplitude w_0 phase space over Young's modulus Y (10^5–10^8 Pa) and growth strain g (%) with empirical stage isocontours
+        bbox: [1455, 1080, 3376, 2466]
+        archetype: quantitative_plot
+        extractor: extractors/f3_phase.py
+        partial_x_range: true
+        linked_items: [F3_fvk_critical_strain, F3_buckling_amplitude_timeseries]
+        linked_claims: [C4_fvk_model_profile_agreement, C5_cuticle_stiffness_lower_bound]
+        linked_resources: [totz_zenodo_plate_code]
+
+  F4:
+    label: Fig. 4
+    file: fig4.jpg
+    xml_id: F4
+    title: Interstitial actin bundle spacing L governs protoridge buckling versus flat-lamina suppression across Colias eurytheme, Agraulis vanillae, and Vanessa cardui
+    caption_anchor:
+      quote: Protoridges form on the upper surface, which has ample spacing L 1 between bundles of actin
+      where: Fig 4
+    context:
+      life_stage: pupa
+      target_gene: F-actin bundles
+    panels:
+      A:
+        label: 4A
+        title: TEM cross-section of developing Colias eurytheme scale comparing upper wide actin gap L1 (protoridge) vs lower narrow gap L2 (flat lamina; 200 nm bar)
+        bbox: [4, 4, 745, 520]
+        archetype: cross_section
+        context:
+          species: Colias eurytheme
+          family: Pieridae
+          anatomical_region: wing
+          scale_type: wing scale
+          imaging_modality: electron microscopy
+          view_orientation: cross-section
+        scale_bar:
+          um: 0.2
+          search_box: [525, 420, 675, 456]
+          polarity: bright
+        linked_items: [F4_actin_bundle_spacing, F4_colias_critical_strain]
+        linked_claims: [C7_small_bundle_spacing_suppresses_ridges]
+      B:
+        label: 4B
+        title: Confocal fluorescence image of Agraulis vanillae silver wing scale showing alternating wide L1 (blue protoridge) and narrow L2 actin gaps (2 µm bar)
+        bbox: [824, 4, 1630, 475]
+        archetype: planar_microscopy
+        context:
+          species: Agraulis incarnata
+          family: Nymphalidae
+          anatomical_region: wing
+          scale_type: wing scale
+          imaging_modality: confocal
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box: [580, 415, 735, 455]
+          polarity: bright
+        periodic_spec:
+          roi: [20, 50, 620, 400]
+          spacing_range_um: [1.0, 3.0]
+          wavevector_angle_deg: [-45, 45]
+          channel: blue
+        linked_items: [F4_actin_bundle_spacing]
+        linked_claims: [C7_small_bundle_spacing_suppresses_ridges]
+      C:
+        label: 4C
+        title: Buckling amplitude w_0 phase space over actin bundle spacing L (0–2.0 µm) and growth strain g (%) with 0.1/1/10 nm contours and 3-species empirical spacings
+        bbox: [4, 585, 1644, 1472]
+        archetype: quantitative_plot
+        extractor: extractors/f4_phase.py
+        partial_x_range: true
+        linked_items: [F4_actin_bundle_spacing, F4_colias_critical_strain, F3_fvk_critical_strain]
+        linked_claims: [C6_critical_strain_inverse_square_scaling, C7_small_bundle_spacing_suppresses_ridges]
+        linked_resources: [totz_zenodo_plate_code]

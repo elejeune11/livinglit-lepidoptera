@@ -137,6 +137,7 @@ window.LL = window.LL || {};
         const rid = grnBtn.getAttribute("data-jump-grn");
         const tabHint = grnBtn.getAttribute("data-jump-grn-tab");
         LL.state.graphTab = tabHint || "grn";
+        LL.state.grnPaper = "ALL";
         LL.state.grnTier = "ALL";
         if (rid) LL.state.grnSelectedRel = rid;
         LL.state.view = "graph";

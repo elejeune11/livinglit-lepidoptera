@@ -1,0 +1,1585 @@
+record: 2023_Banerjee
+default_context:
+  species: Bicyclus anynana
+  family: Nymphalidae
+  subfamily: Satyrinae
+  sex: male and female
+figures:
+  F1:
+    label: Fig. 1
+    file: sciadv.adg3877-f1.jpg
+    xml_id: F1
+    title: Spatiotemporal localization of Armadillo (Arm) protein across larval and pupal wings of Bicyclus anynana
+    caption_anchor:
+      quote: Localization of Arm in B. anynana.(A and B) Arm is present homogeneously throughout the larval forewing and hindwing tissue till stage 0.50.
+      where: Fig. 1
+    context:
+      target_gene: Armadillo / beta-catenin
+      imaging_modality: immunofluorescence (IF)
+      view_orientation: whole-mount
+      hydration_and_prep: fixed and stained
+    panels:
+      A:
+        label: 1A
+        title: Larval forewing Armadillo confocal IF developmental series (stages 0.25–2.00; 250 µm bars)
+        bbox: [40, 2, 706, 150]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+          pattern_element: eyespot focus
+        stains_or_markers: [anti-Arm AF488]
+        channel_gene_map:
+          green: Armadillo / beta-catenin (Arm)
+        linked_claims: [C1_arm_essential_eyespot_foci]
+      B:
+        label: 1B
+        title: Larval hindwing Armadillo confocal IF developmental series (stages 0.25–2.00; 250 µm bars)
+        bbox: [40, 151, 706, 270]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+          pattern_element: eyespot focus
+        stains_or_markers: [anti-Arm AF488]
+        channel_gene_map:
+          green: Armadillo / beta-catenin (Arm)
+        linked_claims: [C1_arm_essential_eyespot_foci]
+      C:
+        label: 1C
+        title: Pupal forewing Armadillo confocal IF from 19:30 to 24:00 h AP with magnified focal insets (1000 µm bars)
+        bbox: [40, 272, 735, 463]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: forewing
+          pattern_element: eyespot focus
+        stains_or_markers: [anti-Arm AF488]
+        channel_gene_map:
+          green: Armadillo / beta-catenin (Arm)
+        linked_items: [E1_arm_pupal_window]
+        linked_claims: [C1_arm_essential_eyespot_foci]
+      D:
+        label: 1D
+        title: Pupal hindwing Armadillo confocal IF from 15:00 to 23:00 h AP with magnified focal insets (600 µm bars)
+        bbox: [40, 464, 735, 668]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+          pattern_element: eyespot focus
+        stains_or_markers: [anti-Arm AF488]
+        channel_gene_map:
+          green: Armadillo / beta-catenin (Arm)
+        linked_items: [E1_arm_pupal_window]
+        linked_claims: [C1_arm_essential_eyespot_foci]
+      E:
+        label: 1E
+        title: High-magnification confocal IF of Armadillo spanning an eyespot focus and surrounding epithelium (25 µm bar)
+        bbox: [64, 669, 281, 874]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          pattern_element: eyespot focus
+        stains_or_markers: [anti-Arm AF488]
+        channel_gene_map:
+          green: Armadillo / beta-catenin (Arm)
+        scale_bar:
+          um: 25.0
+          px: 43.0
+          polarity: bright
+      F:
+        label: 1F
+        title: High-magnification zoom inside eyespot focus showing cytoplasmic and nuclear Armadillo accumulation (5 µm bar)
+        bbox: [291, 669, 499, 874]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          pattern_element: eyespot focus
+        stains_or_markers: [anti-Arm AF488]
+        channel_gene_map:
+          green: Armadillo / beta-catenin (Arm — cytoplasmic and nuclear)
+        scale_bar:
+          um: 5.0
+          px: 49.0
+          polarity: bright
+      G:
+        label: 1G
+        title: High-magnification zoom outside eyespot focus showing cortical/membrane-localized Armadillo (10 µm bar)
+        bbox: [510, 669, 718, 874]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          pattern_element: eyespot field
+        stains_or_markers: [anti-Arm AF488]
+        channel_gene_map:
+          green: Armadillo / beta-catenin (Arm — membrane localized)
+        scale_bar:
+          um: 10.0
+          px: 53.0
+          polarity: bright
+
+  F2:
+    label: Fig. 2
+    file: sciadv.adg3877-f2.jpg
+    xml_id: F2
+    title: Expression of canonical Wnt ligands (Wnt1, Wnt6, Wnt10) in larval and pupal wings via HCR3.0 and chromogenic ISH
+    caption_anchor:
+      quote: Expression of canonical Wnt ligands using HCR3.0 and in situ hybridization in larval and pupal wings.
+      where: Fig. 2
+    context:
+      imaging_modality: HCR/in situ
+      view_orientation: whole-mount
+      hydration_and_prep: fixed and stained
+    panels:
+      A:
+        label: 2A
+        title: Larval forewing HCR3.0 expression of Wnt1 (yellow), Wnt6 (magenta), and Wnt10 (cyan) restricted to wing margin and discal spot (300 µm bars)
+        bbox: [4, 2, 349, 504]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+          pattern_element: marginal band
+          target_gene: Wnt1 / Wingless
+        stains_or_markers: [Wnt1 HCR3.0, Wnt6 HCR3.0, Wnt10 HCR3.0]
+        channel_gene_map:
+          yellow: Wnt1 / Wingless
+          magenta: Wnt6
+          cyan: Wnt10
+        linked_claims: [C7_canonical_wnt_margin_restriction]
+      B:
+        label: 2B
+        title: Larval hindwing HCR3.0 expression of Wnt1 (yellow), Wnt6 (magenta), and Wnt10 (cyan) restricted to wing margin and discal spot (300 µm bars)
+        bbox: [352, 2, 698, 504]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+          pattern_element: marginal band
+          target_gene: Wnt1 / Wingless
+        stains_or_markers: [Wnt1 HCR3.0, Wnt6 HCR3.0, Wnt10 HCR3.0]
+        channel_gene_map:
+          yellow: Wnt1 / Wingless
+          magenta: Wnt6
+          cyan: Wnt10
+        linked_claims: [C7_canonical_wnt_margin_restriction]
+      C:
+        label: 2C
+        title: Pupal hindwing chromogenic ISH (18:00–21:00 h AP) showing Wnt1 transcripts in eyespot foci and wing margin (500 µm bars)
+        bbox: [10, 507, 696, 764]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+          pattern_element: eyespot focus
+          target_gene: Wnt1 / Wingless
+        stains_or_markers: [Wnt1 DIG-BCIP/NBT ISH]
+        channel_gene_map:
+          blue: Wnt1 / Wingless (BCIP/NBT chromogenic mRNA)
+        linked_items: [E5_canonical_wnt_pupal_window]
+        linked_claims: [C7_canonical_wnt_margin_restriction]
+      D:
+        label: 2D
+        title: Pupal 18:00–20:00 h AP HCR3.0 showing Wnt1 (yellow) in eyespot foci and wing margin (650 µm bar)
+        bbox: [12, 773, 244, 971]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+          pattern_element: eyespot focus
+          target_gene: Wnt1 / Wingless
+        stains_or_markers: [Wnt1 HCR3.0]
+        channel_gene_map:
+          yellow: Wnt1 / Wingless
+        scale_bar:
+          um: 650.0
+          search_box: [15, 186, 70, 198]
+          polarity: bright
+        linked_items: [E5_canonical_wnt_pupal_window]
+        linked_claims: [C7_canonical_wnt_margin_restriction]
+      E:
+        label: 2E
+        title: Pupal 18:00–20:00 h AP HCR3.0 showing Wnt6 (magenta) restricted to wing margin and absent from foci (650 µm bar)
+        bbox: [246, 773, 469, 971]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+          pattern_element: marginal band
+          target_gene: Wnt6
+        stains_or_markers: [Wnt6 HCR3.0]
+        channel_gene_map:
+          magenta: Wnt6
+        scale_bar:
+          um: 650.0
+          search_box: [15, 186, 70, 198]
+          polarity: bright
+        linked_items: [E5_canonical_wnt_pupal_window]
+      F:
+        label: 2F
+        title: Pupal 18:00–20:00 h AP HCR3.0 showing Wnt10 (cyan) restricted to wing margin and absent from foci (650 µm bar)
+        bbox: [471, 773, 698, 971]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+          pattern_element: marginal band
+          target_gene: Wnt10
+        stains_or_markers: [Wnt10 HCR3.0]
+        channel_gene_map:
+          cyan: Wnt10
+        scale_bar:
+          um: 650.0
+          search_box: [15, 186, 70, 198]
+          polarity: bright
+        linked_items: [E5_canonical_wnt_pupal_window]
+
+  F3:
+    label: Fig. 3
+    file: sciadv.adg3877-f3.jpg
+    xml_id: F3
+    title: Multiplexed HCR3.0 expression of Wnt1, Distal-less (Dll), and vestigial (vg) in larval wings and Dll in 18 h pupal wing
+    caption_anchor:
+      quote: Expression of Wnt1, Dll, and vg in larval wings.(A) Wnt1 is expressed along the wing margin.
+      where: Fig. 3
+    context:
+      imaging_modality: HCR/in situ
+      view_orientation: whole-mount
+      hydration_and_prep: fixed and stained
+    panels:
+      A:
+        label: 3A
+        title: Early larval (stage 0.50) hindwing Wnt1 HCR3.0 along wing margin (blue)
+        bbox: [28, 4, 198, 170]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+          pattern_element: marginal band
+          target_gene: Wnt1 / Wingless
+        stains_or_markers: [Wnt1 HCR3.0]
+        channel_gene_map:
+          blue: Wnt1 / Wingless
+      B:
+        label: 3B
+        title: Early larval (stage 0.50) hindwing Dll HCR3.0 in cells projecting inward from wing margin (green)
+        bbox: [200, 4, 349, 170]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+          target_gene: Distal-less (Dll)
+        stains_or_markers: [Dll HCR3.0]
+        channel_gene_map:
+          green: Distal-less (Dll)
+      C:
+        label: 3C
+        title: Early larval (stage 0.50) hindwing vg HCR3.0 in broader sub-marginal domain (orange)
+        bbox: [351, 4, 510, 170]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+          target_gene: transcription factor
+        stains_or_markers: [vg HCR3.0]
+        channel_gene_map:
+          orange: vestigial (vg)
+      D:
+        label: 3D
+        title: Early larval (stage 0.50) hindwing merged Wnt1 (blue), Dll (green), and vg (orange) gradient (200 µm bar)
+        bbox: [512, 4, 696, 170]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+          target_gene: Wnt1 / Wingless
+        stains_or_markers: [Wnt1 HCR3.0, Dll HCR3.0, vg HCR3.0]
+        channel_gene_map:
+          blue: Wnt1 / Wingless
+          green: Distal-less (Dll)
+          orange: vestigial (vg)
+        scale_bar:
+          um: 200.0
+          search_box: [116, 144, 174, 164]
+          polarity: bright
+      E:
+        label: 3E
+        title: Late larval (stage 2.00) hindwing Dll HCR3.0 in eyespot foci and intervein fingers (green; 200 µm bar)
+        bbox: [28, 172, 170, 309]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+          pattern_element: eyespot focus
+          target_gene: Distal-less (Dll)
+        stains_or_markers: [Dll HCR3.0]
+        channel_gene_map:
+          green: Distal-less (Dll)
+      F:
+        label: 3F
+        title: High-magnification zoom of late larval hindwing eyespot focus Dll HCR3.0 (green; 70 µm bar)
+        bbox: [28, 311, 164, 396]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+          pattern_element: eyespot focus
+          target_gene: Distal-less (Dll)
+        stains_or_markers: [Dll HCR3.0]
+        channel_gene_map:
+          green: Distal-less (Dll)
+        scale_bar:
+          um: 70.0
+          search_box: [70, 68, 134, 84]
+          polarity: bright
+      G:
+        label: 3G
+        title: Late larval (stage 2.00) hindwing vg HCR3.0 in broader wing margin and focal domains (orange; 200 µm bar)
+        bbox: [171, 172, 315, 309]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+          pattern_element: eyespot focus
+          target_gene: transcription factor
+        stains_or_markers: [vg HCR3.0]
+        channel_gene_map:
+          orange: vestigial (vg)
+      H:
+        label: 3H
+        title: High-magnification zoom of late larval hindwing eyespot focus vg HCR3.0 (orange; 70 µm bar)
+        bbox: [170, 311, 308, 396]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+          pattern_element: eyespot focus
+          target_gene: transcription factor
+        stains_or_markers: [vg HCR3.0]
+        channel_gene_map:
+          orange: vestigial (vg)
+        scale_bar:
+          um: 70.0
+          search_box: [78, 68, 136, 84]
+          polarity: bright
+      I:
+        label: 3I
+        title: Late larval (stage 2.00) forewing Dll HCR3.0 in margin fingers and eyespot focus (green)
+        bbox: [340, 178, 452, 396]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+          pattern_element: eyespot focus
+          target_gene: Distal-less (Dll)
+        stains_or_markers: [Dll HCR3.0]
+        channel_gene_map:
+          green: Distal-less (Dll)
+      J:
+        label: 3J
+        title: Late larval (stage 2.00) forewing vg HCR3.0 in broader margin and focal domains (orange)
+        bbox: [453, 178, 567, 396]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+          pattern_element: eyespot focus
+          target_gene: transcription factor
+        stains_or_markers: [vg HCR3.0]
+        channel_gene_map:
+          orange: vestigial (vg)
+      K:
+        label: 3K
+        title: Late larval (stage 2.00) forewing merged Dll (green) and vg (orange) co-expression (200 µm bar)
+        bbox: [568, 178, 696, 396]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+          pattern_element: eyespot focus
+          target_gene: Distal-less (Dll)
+        stains_or_markers: [Dll HCR3.0, vg HCR3.0]
+        channel_gene_map:
+          green: Distal-less (Dll)
+          orange: vestigial (vg)
+      L:
+        label: 3L
+        title: High-magnification larval forewing eyespot center Dll HCR3.0 showing compact focal domain (green)
+        bbox: [24, 400, 138, 676]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+          pattern_element: eyespot focus
+          target_gene: Distal-less (Dll)
+        stains_or_markers: [Dll HCR3.0]
+        channel_gene_map:
+          green: Distal-less (Dll)
+      M:
+        label: 3M
+        title: High-magnification larval forewing eyespot center vg HCR3.0 showing broader focal domain (orange)
+        bbox: [140, 400, 248, 676]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+          pattern_element: eyespot focus
+          target_gene: transcription factor
+        stains_or_markers: [vg HCR3.0]
+        channel_gene_map:
+          orange: vestigial (vg)
+      N:
+        label: 3N
+        title: High-magnification larval forewing eyespot center merged Dll (green) and vg (orange; 40 µm bar)
+        bbox: [250, 400, 360, 676]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+          pattern_element: eyespot focus
+          target_gene: Distal-less (Dll)
+        stains_or_markers: [Dll HCR3.0, vg HCR3.0]
+        channel_gene_map:
+          green: Distal-less (Dll)
+          orange: vestigial (vg)
+        scale_bar:
+          um: 40.0
+          search_box: [65, 241, 110, 250]
+          polarity: bright
+      O:
+        label: 3O
+        title: Pupal 18-hour hindwing Dll HCR3.0 marking future black eyespot scale cell rows (green; 200 µm bar)
+        bbox: [392, 400, 696, 676]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+          pattern_element: eyespot ring
+          scale_type: wing scale
+          target_gene: Distal-less (Dll)
+        stains_or_markers: [Dll HCR3.0]
+        channel_gene_map:
+          green: Distal-less (Dll)
+        scale_bar:
+          um: 200.0
+          search_box: [188, 250, 266, 268]
+          polarity: bright
+        linked_items: [E6_dll_pupal_timing]
+
+  F4:
+    label: Fig. 4
+    file: sciadv.adg3877-f4.jpg
+    xml_id: F4
+    title: Absence of localized wing expression for noncanonical Wnt ligands Wnt5, Wnt7, Wnt9, and Wnt11 in larval and pupal wings
+    caption_anchor:
+      quote: Expression of Wnt ligands Wnt5, Wnt7, Wnt9, and Wnt11 in the larval and pupal wings.
+      where: Fig. 4
+    context:
+      target_gene: signaling pathway component
+      imaging_modality: HCR/in situ
+      view_orientation: whole-mount
+      hydration_and_prep: fixed and stained
+    panels:
+      A:
+        label: 4A
+        title: Larval forewing (stage 1.25) Wnt5 HCR3.0 showing no localized pattern expression (cyan; 150 µm bar)
+        bbox: [46, 40, 208, 202]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+        stains_or_markers: [Wnt5 HCR3.0]
+        channel_gene_map:
+          cyan: Wnt5 (no specific domain)
+      B:
+        label: 4B
+        title: Larval hindwing (stage 1.00) Wnt5 HCR3.0 showing no localized pattern expression (cyan; 150 µm bar)
+        bbox: [46, 204, 208, 358]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+        stains_or_markers: [Wnt5 HCR3.0]
+        channel_gene_map:
+          cyan: Wnt5 (no specific domain)
+      C:
+        label: 4C
+        title: Larval forewing (stage 1.25) Wnt7 HCR3.0 showing no localized pattern expression (green; 150 µm bar)
+        bbox: [210, 40, 372, 202]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+        stains_or_markers: [Wnt7 HCR3.0]
+        channel_gene_map:
+          green: Wnt7 (no specific domain)
+        linked_claims: [C6_wnt7_indirect_vein_effect]
+      D:
+        label: 4D
+        title: Larval hindwing (stage 1.00) Wnt7 HCR3.0 showing no localized pattern expression (green; 150 µm bar)
+        bbox: [210, 204, 372, 358]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+        stains_or_markers: [Wnt7 HCR3.0]
+        channel_gene_map:
+          green: Wnt7 (no specific domain)
+        linked_claims: [C6_wnt7_indirect_vein_effect]
+      E:
+        label: 4E
+        title: Larval forewing (stage 1.50) Wnt9 HCR3.0 showing no localized pattern expression (magenta; 150 µm bar)
+        bbox: [374, 40, 536, 202]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+        stains_or_markers: [Wnt9 HCR3.0]
+        channel_gene_map:
+          magenta: Wnt9 (no specific domain)
+      F:
+        label: 4F
+        title: Larval hindwing (stage 1.75) Wnt9 HCR3.0 showing no localized pattern expression (magenta; 150 µm bar)
+        bbox: [374, 204, 536, 358]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+        stains_or_markers: [Wnt9 HCR3.0]
+        channel_gene_map:
+          magenta: Wnt9 (no specific domain)
+      G:
+        label: 4G
+        title: Larval forewing (stage 1.75) Wnt11 HCR3.0 showing no localized pattern expression (yellow; 150 µm bar)
+        bbox: [538, 40, 696, 202]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+        stains_or_markers: [Wnt11 HCR3.0]
+        channel_gene_map:
+          yellow: Wnt11 (no specific domain)
+      H:
+        label: 4H
+        title: Larval hindwing (stage 0.75) Wnt11 HCR3.0 showing no localized pattern expression (yellow; 150 µm bar)
+        bbox: [538, 204, 696, 358]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+        stains_or_markers: [Wnt11 HCR3.0]
+        channel_gene_map:
+          yellow: Wnt11 (no specific domain)
+      I:
+        label: 4I
+        title: Pupal 18–24 h hindwing Wnt5 HCR3.0 showing only background tracheal autofluorescence (cyan; 1000 µm bar)
+        bbox: [48, 360, 375, 622]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+        stains_or_markers: [Wnt5 HCR3.0]
+        channel_gene_map:
+          cyan: Wnt5 (no specific domain)
+      J:
+        label: 4J
+        title: Pupal 18–24 h hindwing Wnt7 HCR3.0 showing only background tracheal autofluorescence (green; 1000 µm bar)
+        bbox: [378, 360, 698, 622]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+        stains_or_markers: [Wnt7 HCR3.0]
+        channel_gene_map:
+          green: Wnt7 (no specific domain)
+        linked_claims: [C6_wnt7_indirect_vein_effect]
+      K:
+        label: 4K
+        title: Pupal 18–24 h hindwing Wnt9 HCR3.0 showing no specific expression domain (magenta; 1000 µm bar)
+        bbox: [48, 624, 375, 898]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+        stains_or_markers: [Wnt9 HCR3.0]
+        channel_gene_map:
+          magenta: Wnt9 (no specific domain)
+      L:
+        label: 4L
+        title: Pupal 18–24 h hindwing Wnt11 HCR3.0 showing only tracheal autofluorescence (yellow; 1000 µm bar)
+        bbox: [378, 624, 698, 898]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+        stains_or_markers: [Wnt11 HCR3.0]
+        channel_gene_map:
+          yellow: Wnt11 (no specific domain)
+
+  F5:
+    label: Fig. 5
+    file: sciadv.adg3877-f5.jpg
+    xml_id: F5
+    title: Expression of WntA and Optix in larval and pupal wings and functional CRISPR-Cas9 knockout of WntA in CSS and BSS
+    caption_anchor:
+      quote: Expression of WntA and Optix in larval and pupal wings and function of WntA in the CCS and BSS.
+      where: Fig. 5
+    context:
+      target_gene: WntA
+    panels:
+      A:
+        label: 5A
+        title: Nymphalid groundplan (NGP) schematic mapped onto Bicyclus anynana forewing and hindwing (BSS, DS, CSS, BoSS, Oc, pPf, dPf, MBS, E1, E2)
+        bbox: [2, 4, 304, 372]
+        archetype: phylogeny_or_schematic
+        context:
+          pattern_element: central symmetry system band
+      B:
+        label: 5B
+        title: Larval forewing (stage 1.00) WntA HCR3.0 along CSS and MBS domains (cyan; 100 µm bar)
+        bbox: [2, 375, 152, 538]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: forewing
+          pattern_element: central symmetry system band
+          imaging_modality: HCR/in situ
+        stains_or_markers: [WntA HCR3.0]
+        channel_gene_map:
+          cyan: WntA (CSS and MBS)
+      C:
+        label: 5C
+        title: Larval hindwing (stage 0.75) WntA HCR3.0 along CSS and MBS domains (cyan; 100 µm bar)
+        bbox: [154, 375, 314, 538]
+        archetype: expression_imaging
+        context:
+          life_stage: larva
+          anatomical_region: hindwing
+          pattern_element: central symmetry system band
+          imaging_modality: HCR/in situ
+        stains_or_markers: [WntA HCR3.0]
+        channel_gene_map:
+          cyan: WntA (CSS and MBS)
+      D:
+        label: 5D
+        title: Pupal 24–30 h forewing WntA HCR3.0 along CSS and BSS bands (cyan; 1000 µm bar)
+        bbox: [328, 12, 573, 185]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: forewing
+          pattern_element: central symmetry system band
+          imaging_modality: HCR/in situ
+        stains_or_markers: [WntA HCR3.0]
+        channel_gene_map:
+          cyan: WntA (CSS and BSS)
+        linked_items: [E8_wnta_optix_pupal_window]
+      E:
+        label: 5E
+        title: Pupal 24–30 h forewing Optix HCR3.0 at CSS boundary and orange eyespot rings (magenta; 1000 µm bar)
+        bbox: [328, 186, 573, 362]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: forewing
+          target_gene: Optix
+          imaging_modality: HCR/in situ
+        stains_or_markers: [Optix HCR3.0]
+        channel_gene_map:
+          magenta: Optix (CSS boundary and eyespot orange ring)
+        linked_items: [E8_wnta_optix_pupal_window]
+      F:
+        label: 5F
+        title: Pupal 24–30 h forewing merged WntA (cyan) and Optix (magenta) showing sharp complementary band boundary (1000 µm bar)
+        bbox: [328, 363, 573, 538]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: forewing
+          pattern_element: central symmetry system band
+          imaging_modality: HCR/in situ
+        stains_or_markers: [WntA HCR3.0, Optix HCR3.0]
+        channel_gene_map:
+          cyan: WntA
+          magenta: Optix
+        linked_items: [E8_wnta_optix_pupal_window]
+      G:
+        label: 5G
+        title: Pupal 24–30 h hindwing WntA HCR3.0 along single CSS band (cyan; 1000 µm bar)
+        bbox: [575, 12, 798, 185]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+          pattern_element: central symmetry system band
+          imaging_modality: HCR/in situ
+        stains_or_markers: [WntA HCR3.0]
+        channel_gene_map:
+          cyan: WntA (CSS band)
+        linked_items: [E8_wnta_optix_pupal_window]
+      H:
+        label: 5H
+        title: Pupal 24–30 h hindwing Optix HCR3.0 bordering WntA domain and marking eyespot orange rings (magenta; 1000 µm bar)
+        bbox: [575, 186, 798, 362]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+          target_gene: Optix
+          imaging_modality: HCR/in situ
+        stains_or_markers: [Optix HCR3.0]
+        channel_gene_map:
+          magenta: Optix (CSS boundary and eyespot orange rings)
+        linked_items: [E8_wnta_optix_pupal_window]
+      I:
+        label: 5I
+        title: Pupal 24–30 h hindwing merged WntA (cyan) and Optix (magenta) showing abutting domains (1000 µm bar)
+        bbox: [575, 363, 798, 538]
+        archetype: expression_imaging
+        context:
+          life_stage: pupa
+          anatomical_region: hindwing
+          pattern_element: central symmetry system band
+          imaging_modality: HCR/in situ
+        stains_or_markers: [WntA HCR3.0, Optix HCR3.0]
+        channel_gene_map:
+          cyan: WntA
+          magenta: Optix
+        linked_items: [E8_wnta_optix_pupal_window]
+      J:
+        label: 5J
+        title: Wild-type (WT) adult Bicyclus anynana ventral wings showing intact brown CSS/BSS bands and marginal chevrons
+        bbox: [2, 542, 260, 768]
+        archetype: crispant_phenotype_plate
+        context:
+          life_stage: adult
+          anatomical_region: ventral wing
+          perturbation_modality: wild type
+          allele_or_zygosity: wild type
+          imaging_modality: light microscopy
+        linked_items: [E9_wnta_crispant_defects]
+      K:
+        label: 5K
+        title: WntA CRISPR G0 crispant adult showing ectopic orange scales along CSS/BSS, distorted CSS width, and disrupted marginal chevrons
+        bbox: [261, 542, 535, 768]
+        archetype: crispant_phenotype_plate
+        context:
+          life_stage: adult
+          anatomical_region: ventral wing
+          pattern_element: central symmetry system band
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:wnta
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          n_crispants: 28
+          phenotype: Ectopic orange scales along CSS/BSS, narrowed/distorted CSS, disrupted marginal chevrons, intact eyespots
+        linked_items: [E9_wnta_crispant_defects, E10_wnta_crispant_no_eyespot]
+        linked_claims: [C2_wnta_css_bss_identity, C3_wnta_spares_eyespots]
+      L:
+        label: 5L
+        title: WntA CRISPR G0 crispant adult showing CSS band narrowing, shape change, and brown-to-orange scale transformation
+        bbox: [536, 542, 798, 768]
+        archetype: crispant_phenotype_plate
+        context:
+          life_stage: adult
+          anatomical_region: ventral wing
+          pattern_element: central symmetry system band
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:wnta
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          n_crispants: 28
+          phenotype: Reduced CSS width and altered outer band boundary; eyespots unaffected
+        linked_items: [E9_wnta_crispant_defects, E10_wnta_crispant_no_eyespot]
+        linked_claims: [C2_wnta_css_bss_identity, C3_wnta_spares_eyespots]
+      M:
+        label: 5M
+        title: WntA CRISPR G0 crispant adult showing loss of brown scale identity across CSS and forewing BSS bands
+        bbox: [2, 770, 260, 972]
+        archetype: crispant_phenotype_plate
+        context:
+          life_stage: adult
+          anatomical_region: ventral wing
+          pattern_element: central symmetry system band
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:wnta
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          n_crispants: 28
+          phenotype: Loss of dark brown scale identity along CSS and forewing BSS; eyespots intact
+        linked_items: [E9_wnta_crispant_defects, E10_wnta_crispant_no_eyespot]
+        linked_claims: [C2_wnta_css_bss_identity, C3_wnta_spares_eyespots]
+      N:
+        label: 5N
+        title: Illumina amplicon sequencing alignment confirming indels at two WntA CRISPR-Cas9 coding-sequence target sites
+        bbox: [261, 770, 798, 972]
+        archetype: genomic_track_or_locus
+        context:
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        genomic_locus:
+          locus_gene: WntA (coding exon dual-sgRNA target sites)
+          assay: Illumina amplicon sequencing (Geneious R10 alignment)
+          target_sites: 2
+        linked_items: [E9_wnta_crispant_defects]
+        linked_resources: [banerjee_supp_materials]
+
+  F6:
+    label: Fig. 6
+    file: sciadv.adg3877-f6.jpg
+    xml_id: F6
+    title: Larval wing HCR3.0 expression of frizzled4, frizzled9, frizzled2, and frizzled in Bicyclus anynana
+    caption_anchor:
+      quote: Expression of frizzled4 and frizzled9 in the larval wings of B. anynana.
+      where: Fig. 6
+    context:
+      life_stage: larva
+      imaging_modality: HCR/in situ
+      view_orientation: whole-mount
+      hydration_and_prep: fixed and stained
+    panels:
+      A:
+        label: 6A
+        title: Early larval forewing (stage 1.25) frizzled4 HCR3.0 in intervein cells (magenta; 200 µm bar)
+        bbox: [34, 52, 274, 298]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+      B:
+        label: 6B
+        title: Early larval forewing (stage 1.25) frizzled9 HCR3.0 along wing margin and intervein fingers (yellow)
+        bbox: [276, 52, 524, 298]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          target_gene: signaling pathway component
+        stains_or_markers: [frizzled9 HCR3.0]
+        channel_gene_map:
+          yellow: frizzled9 (fz9)
+      C:
+        label: 6C
+        title: Early larval forewing (stage 1.25) merged frizzled4 (magenta) and frizzled9 (yellow) showing complementary domains
+        bbox: [526, 52, 780, 298]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0, frizzled9 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+          yellow: frizzled9 (fz9)
+      D:
+        label: 6D
+        title: Early larval hindwing (stage 1.00) frizzled4 HCR3.0 in intervein cells (magenta; 200 µm bar)
+        bbox: [34, 300, 274, 540]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+      E:
+        label: 6E
+        title: Early larval hindwing (stage 1.00) frizzled9 HCR3.0 along wing margin and intervein fingers (yellow)
+        bbox: [276, 300, 524, 540]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          target_gene: signaling pathway component
+        stains_or_markers: [frizzled9 HCR3.0]
+        channel_gene_map:
+          yellow: frizzled9 (fz9)
+      F:
+        label: 6F
+        title: Early larval hindwing (stage 1.00) merged frizzled4 (magenta) and frizzled9 (yellow) anti-colocalization
+        bbox: [526, 300, 780, 540]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0, frizzled9 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+          yellow: frizzled9 (fz9)
+      G:
+        label: 6G
+        title: Late larval forewing (stage 2.00) frizzled4 HCR3.0 downregulated in eyespot foci and margin fingers (magenta; 200 µm bar)
+        bbox: [34, 542, 274, 798]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          pattern_element: eyespot focus
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+      H:
+        label: 6H
+        title: Late larval forewing (stage 2.00) frizzled9 HCR3.0 restricted to wing margin and lower posterior zone (yellow)
+        bbox: [276, 542, 524, 798]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          pattern_element: marginal band
+          target_gene: signaling pathway component
+        stains_or_markers: [frizzled9 HCR3.0]
+        channel_gene_map:
+          yellow: frizzled9 (fz9)
+      I:
+        label: 6I
+        title: Late larval forewing (stage 2.00) merged frizzled4 (magenta) and frizzled9 (yellow) showing mutually exclusive expression
+        bbox: [526, 542, 780, 798]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0, frizzled9 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+          yellow: frizzled9 (fz9)
+      J:
+        label: 6J
+        title: Late larval hindwing (stage 2.00) frizzled4 HCR3.0 downregulated in eyespot foci and margin fingers (magenta; 200 µm bar)
+        bbox: [34, 800, 274, 1040]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: eyespot focus
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+      K:
+        label: 6K
+        title: Late larval hindwing (stage 2.00) frizzled9 HCR3.0 restricted to wing margin (yellow)
+        bbox: [276, 800, 524, 1040]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: marginal band
+          target_gene: signaling pathway component
+        stains_or_markers: [frizzled9 HCR3.0]
+        channel_gene_map:
+          yellow: frizzled9 (fz9)
+      L:
+        label: 6L
+        title: Late larval hindwing (stage 2.00) merged frizzled4 (magenta) and frizzled9 (yellow) anti-colocalization
+        bbox: [526, 800, 780, 1040]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0, frizzled9 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+          yellow: frizzled9 (fz9)
+      M:
+        label: 6M
+        title: Larval forewing (stage 2.00) frizzled2 HCR3.0 restricted to proximal wing domain (yellow; 200 µm bar)
+        bbox: [34, 1072, 276, 1300]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          pattern_element: proximal wing field
+          target_gene: frizzled2 (fz2)
+        stains_or_markers: [frizzled2 HCR3.0]
+        channel_gene_map:
+          yellow: frizzled2 (fz2)
+      N:
+        label: 6N
+        title: Larval hindwing (stage 2.00) frizzled2 HCR3.0 restricted to proximal wing domain (yellow; 200 µm bar)
+        bbox: [34, 1302, 276, 1524]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: proximal wing field
+          target_gene: frizzled2 (fz2)
+        stains_or_markers: [frizzled2 HCR3.0]
+        channel_gene_map:
+          yellow: frizzled2 (fz2)
+      O:
+        label: 6O
+        title: Late larval forewing (stage 2.50) frizzled2 HCR3.0 along proximal band (yellow; 200 µm bar)
+        bbox: [278, 1072, 514, 1300]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          pattern_element: proximal wing field
+          target_gene: frizzled2 (fz2)
+        stains_or_markers: [frizzled2 HCR3.0]
+        channel_gene_map:
+          yellow: frizzled2 (fz2)
+      P:
+        label: 6P
+        title: Late larval hindwing (stage 2.25) frizzled2 HCR3.0 along proximal band (yellow; 200 µm bar)
+        bbox: [278, 1302, 514, 1524]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: proximal wing field
+          target_gene: frizzled2 (fz2)
+        stains_or_markers: [frizzled2 HCR3.0]
+        channel_gene_map:
+          yellow: frizzled2 (fz2)
+      Q:
+        label: 6Q
+        title: Larval forewing (stage 2.00) frizzled (fz) HCR3.0 showing no specific localized domain (orange; 200 µm bar)
+        bbox: [542, 1072, 780, 1300]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          target_gene: signaling pathway component
+        stains_or_markers: [frizzled HCR3.0]
+        channel_gene_map:
+          orange: frizzled (no localized larval domain)
+      R:
+        label: 6R
+        title: Larval hindwing (stage 2.00) frizzled (fz) HCR3.0 showing no specific localized domain (orange; 200 µm bar)
+        bbox: [542, 1302, 780, 1524]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          target_gene: signaling pathway component
+        stains_or_markers: [frizzled HCR3.0]
+        channel_gene_map:
+          orange: frizzled (no localized larval domain)
+
+  F7:
+    label: Fig. 7
+    file: sciadv.adg3877-f7.jpg
+    xml_id: F7
+    title: Pupal (18–24 h AP) HCR3.0 expression and anti-colocalization of frizzled2, frizzled4, frizzled9, and Wnt1
+    caption_anchor:
+      quote: Expression of frizzled2, frizzled4, frizzled9, and Wnt1 in 18 to 24 hours pupal wings of B. anynana.
+      where: Fig. 7
+    context:
+      life_stage: pupa
+      imaging_modality: HCR/in situ
+      view_orientation: whole-mount
+      hydration_and_prep: fixed and stained
+    panels:
+      A:
+        label: 7A
+        title: Pupal forewing frizzled4 HCR3.0 spanning the eyespot field (magenta; 700 µm bar)
+        bbox: [34, 4, 286, 204]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          pattern_element: eyespot field
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+        linked_items: [E11_fz_pupal_window]
+        linked_claims: [C5_fz4_pcp_scale_orientation]
+      B:
+        label: 7B
+        title: Pupal hindwing frizzled4 HCR3.0 spanning serial eyespot fields (magenta; 700 µm bar)
+        bbox: [300, 4, 551, 204]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: eyespot field
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+        linked_items: [E11_fz_pupal_window]
+        linked_claims: [C5_fz4_pcp_scale_orientation]
+      C:
+        label: 7C
+        title: Pupal hindwing frizzled2 HCR3.0 in proximal and distal domains flanking the WntA CSS band (yellow; 600 µm bar)
+        bbox: [34, 208, 297, 456]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: central symmetry system band
+          target_gene: frizzled2 (fz2)
+        stains_or_markers: [frizzled2 HCR3.0]
+        channel_gene_map:
+          yellow: frizzled2 (fz2)
+        linked_items: [E11_fz_pupal_window]
+        linked_claims: [C8_fz2_anticolocalization]
+      D:
+        label: 7D
+        title: Pupal hindwing eyespot zoom showing frizzled2 present in foci (arrows) but depleted in orange eyespot rings (yellow; 150 µm bar)
+        bbox: [298, 208, 551, 456]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: eyespot field
+          target_gene: frizzled2 (fz2)
+        stains_or_markers: [frizzled2 HCR3.0]
+        channel_gene_map:
+          yellow: frizzled2 (fz2)
+        scale_bar:
+          um: 150.0
+          px: 56.0
+          polarity: bright
+        linked_items: [E11_fz_pupal_window]
+        linked_claims: [C8_fz2_anticolocalization]
+      E:
+        label: 7E
+        title: Pupal forewing Cu1 eyespot frizzled2 HCR3.0 showing focal enrichment and ring depletion (yellow; 200 µm bar)
+        bbox: [554, 4, 698, 154]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          pattern_element: eyespot field
+          target_gene: frizzled2 (fz2)
+        stains_or_markers: [frizzled2 HCR3.0]
+        channel_gene_map:
+          yellow: frizzled2 (fz2)
+        scale_bar:
+          um: 200.0
+          search_box: [68, 138, 141, 147]
+          polarity: bright
+        linked_items: [E11_fz_pupal_window]
+        linked_claims: [C8_fz2_anticolocalization]
+      F:
+        label: 7F
+        title: Pupal forewing Cu1 eyespot frizzled4 HCR3.0 highly expressed across eyespot rings (magenta; 200 µm bar)
+        bbox: [554, 156, 698, 305]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          pattern_element: eyespot field
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+        scale_bar:
+          um: 200.0
+          search_box: [68, 138, 141, 147]
+          polarity: bright
+        linked_items: [E11_fz_pupal_window]
+        linked_claims: [C8_fz2_anticolocalization]
+      G:
+        label: 7G
+        title: Pupal forewing Cu1 eyespot merged frizzled2 (yellow) and frizzled4 (magenta) demonstrating complementary exclusion (200 µm bar)
+        bbox: [554, 307, 698, 456]
+        archetype: expression_imaging
+        context:
+          anatomical_region: forewing
+          pattern_element: eyespot field
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled2 HCR3.0, frizzled4 HCR3.0]
+        channel_gene_map:
+          yellow: frizzled2 (fz2)
+          magenta: frizzled4 (fz4)
+        scale_bar:
+          um: 200.0
+          px: 61.0
+          polarity: bright
+        linked_items: [E11_fz_pupal_window]
+        linked_claims: [C8_fz2_anticolocalization]
+      H:
+        label: 7H
+        title: Pupal hindwing frizzled9 HCR3.0 localized along the wing margin (green; 600 µm bar)
+        bbox: [34, 459, 296, 661]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: marginal band
+          target_gene: signaling pathway component
+        stains_or_markers: [frizzled9 HCR3.0]
+        channel_gene_map:
+          green: frizzled9 (fz9)
+        linked_claims: [C8_fz2_anticolocalization]
+      I:
+        label: 7I
+        title: Pupal hindwing margin zoom showing frizzled9 HCR3.0 (green; 250 µm bar)
+        bbox: [298, 459, 498, 661]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: marginal band
+          target_gene: signaling pathway component
+        stains_or_markers: [frizzled9 HCR3.0]
+        channel_gene_map:
+          green: frizzled9 (fz9)
+      J:
+        label: 7J
+        title: Pupal hindwing margin zoom showing frizzled4 HCR3.0 in eyespot foci and rings (magenta; 250 µm bar)
+        bbox: [500, 459, 698, 661]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: eyespot field
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+      K:
+        label: 7K
+        title: Pupal hindwing zoom merged frizzled9 (green, margin) and frizzled4 (magenta, eyespots; 250 µm bar)
+        bbox: [34, 663, 237, 864]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled9 HCR3.0, frizzled4 HCR3.0]
+        channel_gene_map:
+          green: frizzled9 (fz9)
+          magenta: frizzled4 (fz4)
+      L:
+        label: 7L
+        title: Pupal hindwing focus zoom showing Wnt1 HCR3.0 focal transcript spot (cyan; 200 µm bar)
+        bbox: [239, 663, 391, 864]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: eyespot focus
+          target_gene: Wnt1 / Wingless
+        stains_or_markers: [Wnt1 HCR3.0]
+        channel_gene_map:
+          cyan: Wnt1 / Wingless
+      M:
+        label: 7M
+        title: Pupal hindwing focus zoom showing frizzled4 HCR3.0 across eyespot center and rings (magenta; 200 µm bar)
+        bbox: [393, 663, 545, 864]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: eyespot field
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [frizzled4 HCR3.0]
+        channel_gene_map:
+          magenta: frizzled4 (fz4)
+      N:
+        label: 7N
+        title: Pupal hindwing focus zoom merged Wnt1 (cyan) and frizzled4 (magenta) showing focal overlap (200 µm bar)
+        bbox: [547, 663, 698, 864]
+        archetype: expression_imaging
+        context:
+          anatomical_region: hindwing
+          pattern_element: eyespot focus
+          target_gene: frizzled4 (fz4)
+        stains_or_markers: [Wnt1 HCR3.0, frizzled4 HCR3.0]
+        channel_gene_map:
+          cyan: Wnt1 / Wingless
+          magenta: frizzled4 (fz4)
+
+  F8:
+    label: Fig. 8
+    file: sciadv.adg3877-f8.jpg
+    xml_id: F8
+    title: Functional CRISPR-Cas9 knockout of frizzled4 causing eyespot duplication and PCP scale orientation defects
+    caption_anchor:
+      quote: Function of frizzled4 in eyespot center formation and PCP in B. anynana.(A and B) WT forewing and hindwing.
+      where: Fig. 8
+    context:
+      life_stage: adult
+      target_gene: frizzled4 (fz4)
+    panels:
+      A:
+        label: 8A
+        title: Wild-type (WT) adult Bicyclus anynana ventral forewing (5 mm bar)
+        bbox: [22, 26, 242, 202]
+        archetype: crispant_phenotype_plate
+        context:
+          anatomical_region: ventral forewing
+          perturbation_modality: wild type
+          allele_or_zygosity: wild type
+          imaging_modality: light microscopy
+        scale_bar:
+          um: 5000.0
+          search_box: [165, 155, 220, 174]
+          polarity: dark
+      B:
+        label: 8B
+        title: Wild-type (WT) adult Bicyclus anynana ventral hindwing (5 mm bar)
+        bbox: [22, 212, 242, 412]
+        archetype: crispant_phenotype_plate
+        context:
+          anatomical_region: ventral hindwing
+          perturbation_modality: wild type
+          allele_or_zygosity: wild type
+          imaging_modality: light microscopy
+        scale_bar:
+          um: 5000.0
+          search_box: [173, 173, 220, 193]
+          polarity: dark
+      C:
+        label: 8C
+        title: frizzled4 CRISPR G0 crispant forewing differentiating two eyespots in the anterior sector (red box; 5 mm bar)
+        bbox: [243, 26, 464, 202]
+        archetype: crispant_phenotype_plate
+        context:
+          anatomical_region: ventral forewing
+          pattern_element: eyespot focus
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:frizzled4
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          n_crispants: 18
+          phenotype: Duplicated forewing eyespot centers within a single wing sector without ectopic venation
+        scale_bar:
+          um: 5000.0
+          search_box: [159, 157, 218, 175]
+          polarity: dark
+        linked_items: [E12_fz4_eyespot_duplication]
+        linked_claims: [C4_fz4_prevents_eyespot_duplication]
+      D:
+        label: 8D
+        title: frizzled4 CRISPR G0 crispant hindwing differentiating paired eyespots along the proximal-distal axis (red box; 5 mm bar)
+        bbox: [243, 212, 464, 412]
+        archetype: crispant_phenotype_plate
+        context:
+          anatomical_region: ventral hindwing
+          pattern_element: eyespot focus
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:frizzled4
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          n_crispants: 18
+          phenotype: Paired proximal-distal hindwing eyespots within the same wing sector
+        scale_bar:
+          um: 5000.0
+          px: 43.0
+          polarity: dark
+        linked_items: [E12_fz4_eyespot_duplication]
+        linked_claims: [C4_fz4_prevents_eyespot_duplication]
+      E:
+        label: 8E
+        title: Magnified frizzled4 CRISPR forewing double-focus eyespot (1.25 mm bar)
+        bbox: [467, 26, 698, 202]
+        archetype: crispant_phenotype_plate
+        context:
+          anatomical_region: ventral forewing
+          pattern_element: eyespot focus
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:frizzled4
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          n_crispants: 18
+          phenotype: Twin white eyespot foci sharing fused black/orange rings
+        scale_bar:
+          um: 1250.0
+          search_box: [171, 162, 227, 171]
+          polarity: dark
+        linked_items: [E12_fz4_eyespot_duplication]
+        linked_claims: [C4_fz4_prevents_eyespot_duplication]
+      F:
+        label: 8F
+        title: Magnified frizzled4 CRISPR hindwing showing two separated eyespots within a single sector (1.25 mm bar)
+        bbox: [467, 212, 698, 412]
+        archetype: crispant_phenotype_plate
+        context:
+          anatomical_region: ventral hindwing
+          pattern_element: eyespot focus
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:frizzled4
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          n_crispants: 18
+          phenotype: Two complete concentric eyespots aligned proximo-distally in one intervein sector
+        scale_bar:
+          um: 1250.0
+          px: 47.0
+          polarity: dark
+        linked_items: [E12_fz4_eyespot_duplication]
+        linked_claims: [C4_fz4_prevents_eyespot_duplication]
+      G:
+        label: 8G
+        title: Wild-type (WT) eyespot close-up showing uniformly oriented scale rows (1.25 mm bar)
+        bbox: [4, 438, 164, 586]
+        archetype: crispant_phenotype_plate
+        context:
+          pattern_element: eyespot field
+          scale_type: wing scale
+          perturbation_modality: wild type
+          allele_or_zygosity: wild type
+          imaging_modality: light microscopy
+        scale_bar:
+          um: 1250.0
+          search_box: [90, 128, 159, 146]
+          polarity: bright
+      H:
+        label: 8H
+        title: frizzled4 CRISPR eyespot combining twin white foci with localized PCP scale orientation swirl (1.25 mm bar)
+        bbox: [167, 438, 315, 586]
+        archetype: crispant_phenotype_plate
+        context:
+          pattern_element: eyespot field
+          scale_type: wing scale
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:frizzled4
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          n_crispants: 2
+          phenotype: Twin eyespot foci paired with swirling orange/black scale orientation PCP defect
+        scale_bar:
+          um: 1250.0
+          search_box: [76, 128, 147, 146]
+          polarity: bright
+        linked_items: [E12_fz4_eyespot_duplication, E13_fz4_pcp_scale_orientation]
+        linked_claims: [C4_fz4_prevents_eyespot_duplication, C5_fz4_pcp_scale_orientation]
+      I:
+        label: 8I
+        title: High-magnification frizzled4 CRISPR PCP scale orientation whorl in orange and black eyespot ring scales (500 µm bar)
+        bbox: [317, 438, 513, 586]
+        archetype: crispant_phenotype_plate
+        context:
+          pattern_element: eyespot ring
+          scale_type: wing scale
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:frizzled4
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          n_crispants: 2
+          phenotype: Disorganized radial whorl of orange and black scales in eyespot ring (PCP defect)
+        scale_bar:
+          um: 500.0
+          search_box: [124, 128, 193, 146]
+          polarity: bright
+        linked_items: [E13_fz4_pcp_scale_orientation]
+        linked_claims: [C5_fz4_pcp_scale_orientation]
+      J:
+        label: 8J
+        title: High-magnification frizzled4 CRISPR PCP scale orientation defect around white focal scales (500 µm bar)
+        bbox: [515, 438, 698, 586]
+        archetype: crispant_phenotype_plate
+        context:
+          pattern_element: eyespot focus
+          scale_type: wing scale
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+          imaging_modality: light microscopy
+        crispant_summary:
+          target_gene: target_gene:frizzled4
+          element_type: coding_exon
+          allele: g0_somatic_mosaic
+          n_crispants: 2
+          phenotype: Misoriented focal white and adjacent ring scales in frizzled4 G0 crispant
+        scale_bar:
+          um: 500.0
+          search_box: [115, 128, 182, 146]
+          polarity: bright
+        linked_items: [E13_fz4_pcp_scale_orientation]
+        linked_claims: [C5_fz4_pcp_scale_orientation]
+      K:
+        label: 8K
+        title: Sanger/ICE sequencing alignment of frizzled4 crispants showing indels at the second coding-sequence CRISPR target site
+        bbox: [2, 592, 698, 760]
+        archetype: genomic_track_or_locus
+        context:
+          genetic_element_type: coding exon
+          allele_or_zygosity: G0 somatic mosaic
+          perturbation_modality: CRISPR G0 mosaic knockout
+        genomic_locus:
+          locus_gene: frizzled4 (coding exon dual-sgRNA target sites)
+          assay: Sanger sequencing + Synthego ICE v3.0 indel analysis
+          target_sites: 2
+        linked_items: [E12_fz4_eyespot_duplication, E13_fz4_pcp_scale_orientation, E14_fz4_margin_defects]
+        linked_resources: [banerjee_supp_materials]
+
+  F9:
+    label: Fig. 9
+    file: sciadv.adg3877-f9.jpg
+    xml_id: F9
+    title: Regulatory models for spatial control of Armadillo in larval wings and frizzled2 repression in pupal wings
+    caption_anchor:
+      quote: Models for the spatial control of Arm in the larval wings and frizzled2 in the pupal wings.
+      where: Fig. 9
+    context: {}
+    panels:
+      A:
+        label: 9A
+        title: Larval Arm spatial regulation model — margin Wnt1/Wnt6/Wnt10 + Fz9 activate Arm while intervein Fz4 represses Arm
+        bbox: [0, 0, 310, 558]
+        archetype: phylogeny_or_schematic
+        context:
+          life_stage: larva
+          target_gene: Armadillo / beta-catenin
+        linked_claims: [C1_arm_essential_eyespot_foci, C4_fz4_prevents_eyespot_duplication, C7_canonical_wnt_margin_restriction]
+      B:
+        label: 9B
+        title: Pupal frizzled2 spatial repression model — WntA (CSS), Wnt1/Fz4/Arm (eyespot), and Wnt1/6/10/Fz9/Arm (margin) carve out three fz2-negative domains
+        bbox: [202, 0, 699, 558]
+        archetype: phylogeny_or_schematic
+        context:
+          life_stage: pupa
+          target_gene: frizzled2 (fz2)
+        linked_claims: [C8_fz2_anticolocalization]
+
+  F10:
+    label: Fig. 10
+    file: sciadv.adg3877-f10.jpg
+    xml_id: F10
+    title: Summary atlas of Wnt ligands, Frizzled receptors, and Arm expression and canonical vs PCP signaling mechanisms
+    caption_anchor:
+      quote: Expression of canonical and noncanonical Wnt ligands, receptors and signal transducer (Arm) in larval and pupal wings.
+      where: Fig. 10
+    context: {}
+    panels:
+      A:
+        label: 10A
+        title: Comparative wing-expression atlas of Wnt1, Wnt6, Wnt10, fz9, Arm, fz4, fz2, WntA, and absent Wnt5/7/9/11 across larval and pupal stages
+        bbox: [0, 0, 799, 246]
+        archetype: phylogeny_or_schematic
+        context:
+          target_gene: signaling pathway component
+        linked_claims: [C7_canonical_wnt_margin_restriction, C8_fz2_anticolocalization]
+      B:
+        label: 10B
+        title: Canonical Wnt signaling model in larval eyespot foci and larval/pupal wing margin (Wnt1/Wnt6/Wnt10 -> Fz9 -> nuclear Arm/TCF)
+        bbox: [0, 248, 315, 629]
+        archetype: phylogeny_or_schematic
+        context:
+          life_stage: larva
+          target_gene: Armadillo / beta-catenin
+        linked_claims: [C1_arm_essential_eyespot_foci, C7_canonical_wnt_margin_restriction]
+      C:
+        label: 10C
+        title: Pupal eyespot rings signaling model contrasting canonical Wnt1 -> Fz2/Fz4 -> Arm/TCF/Dll with ligand-independent Fz4 -> PCP scale orientation
+        bbox: [315, 248, 799, 629]
+        archetype: phylogeny_or_schematic
+        context:
+          life_stage: pupa
+          target_gene: frizzled4 (fz4)
+        linked_claims: [C4_fz4_prevents_eyespot_duplication, C5_fz4_pcp_scale_orientation]

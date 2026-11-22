@@ -1,0 +1,70 @@
+record: 2021_McDougal
+formula_library_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_ingest
+derived:
+  ridge_density_from_spacing_1p8um:
+    item: D1_ridge_density
+    group: stable_ridges_47_89pct
+    formula: rho = 1/d
+    anchor:
+      quote: As the scale widens, the spacing of actin bundles also widens until it reaches ∼1.8-µm separation.
+      where: Results
+    library:
+      formula: ridge_density_from_spacing
+      vars:
+        rho: rho
+        d: d
+    inputs:
+      d:
+        value: F5_actin_ridge_spacing.values.ridge_constant_um
+        kind: per sample
+    output: D1_ridge_density.values.rho_1p8
+    aggregation: of means
+  forewing_pupal_relative_stage:
+    item: F2_forewing_stage_frac
+    group: pupa_83pct_slice
+    formula: stage_frac = t_apf / D_pupa
+    anchor:
+      quote: showing the tips of forewing scales in a pupa at 83% development (8.12 d for this specimen).
+      where: Fig. 2 caption
+    library:
+      formula: relative_pupal_stage
+      vars:
+        stage_frac: stage_frac
+        t_apf: t_apf
+        D_pupa: D_pupa
+    inputs:
+      t_apf:
+        value: F2_forewing_timing.values.forewing_age_d
+        kind: per sample
+      D_pupa:
+        value: F3_pupal_duration.values.pupal_duration_d
+        kind: constant
+    output: F2_forewing_stage_frac.values.stage_frac_83
+    aggregation: of means
+    note: 8.12 d / (10 ± 0.5 d printed precision; cohort ~9.78 d) yields 0.812 [0.773, 0.855], consistent with 83% (0.83) pupal development.
+  cover_scale_area_41pct:
+    item: D2_scale_area_41pct
+    group: a40_41pct
+    formula: A = L_s * W_s
+    anchor:
+      quote: Surface area and volume are estimated using the measured length, width, and thickness to define the presumptive bounding box of the scale.
+      where: Materials and Methods
+    library:
+      formula: scale_rectangular_area
+      vars:
+        A: A
+        L_s: L_s
+        W_s: W_s
+    inputs:
+      L_s:
+        value: F5_scale_length.values.len_41pct
+        kind: per sample
+      W_s:
+        value: F5_scale_width.values.w_41pct
+        kind: per sample
+    output: D2_scale_area_41pct.values.area_41pct
+    aggregation: of means
+proposals: []

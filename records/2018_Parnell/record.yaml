@@ -1,0 +1,1117 @@
+id: 2018_Parnell
+field_set: 4
+source:
+  title: Wing scale ultrastructure underlying convergent and divergent iridescent colours in mimetic Heliconius butterflies
+  doi: 10.1098/rsif.2017.0948
+  year: '2018'
+  first_author: Andrew J. Parnell
+  last_author: Nicola J. Nadeau
+  lab: Nadeau & Parnell labs, University of Sheffield
+  journal: Journal of the Royal Society Interface
+  files:
+    - PMC5938584.xml
+    - associated/parnell_si/forupload/AP.spec.data.individual.means.csv
+  not_used:
+    - file: rsif20170948-g1.jpg
+      why: Decomposed into atomic calibrated SEM panel in panels.yaml (F1/A)
+    - file: rsif20170948-g2.jpg
+      why: Decomposed into atomic phylogeny/wing morphology panel in panels.yaml (F2/A)
+    - file: rsif20170948-g3.jpg
+      why: Decomposed into 8 atomic angular reflectance spectra and schematic panels in panels.yaml (F3/A–H)
+    - file: rsif20170948-g4.jpg
+      why: Decomposed into 8 atomic reflectance spectra and calibrated SEM panels in panels.yaml (F4/A–H)
+    - file: rsif20170948-g5.jpg
+      why: Decomposed into 6 atomic reflectance spectra and calibrated SEM panels in panels.yaml (F5/A–F)
+    - file: rsif20170948-g6.jpg
+      why: Decomposed into 3 atomic optical microscopy and 3D profiler panels in panels.yaml (F6/A–C)
+    - file: rsif20170948-g7.jpg
+      why: Decomposed into atomic single-scale Raman spectra panel in panels.yaml (F7/A)
+    - file: rsif20170948-g8.jpg
+      why: Decomposed into 4 atomic calibrated FIB-SEM cross-section panels in panels.yaml (F8/A–D)
+    - file: rsif20170948-g9.jpg
+      why: Decomposed into 6 atomic AFM topography and ridge profile panels in panels.yaml (F9/A–F)
+    - file: rsif20170948-g10.jpg
+      why: Decomposed into atomic SAXS ridge spacing vs reflectance scatter panel in panels.yaml (F10/A)
+    - file: rsif20170948-g11.jpg
+      why: Decomposed into 16 atomic Pavo chromatic/achromatic JND boxplot panels in panels.yaml (F11/A–P)
+  missing: []
+
+context_anchors:
+  - field: taxon
+    value: Heliconius erato cyrbia
+    anchor:
+      quote: Here we characterize the structures responsible for producing iridescence in five subspecies, Heliconius erato cyrbia (Godart, 1819)
+      where: Introduction
+  - field: taxon
+    value: Heliconius erato demophoon
+    anchor:
+      quote: We also investigated the non-iridescent subspecies Heliconius erato demophoon Ménétriés, 1855 and Heliconius melpomene rosina (Boisduval, 1870) from Panama
+      where: Introduction
+  - field: taxon
+    value: Heliconius sara
+    anchor:
+      quote: Heliconius sara sprucei Bates, 1864, Heliconius eleuchia primularis Butler, 1869, Heliconius cydno alithea (Hewitson, 1869)
+      where: Introduction
+  - field: taxon
+    value: Heliconius eleuchia
+    anchor:
+      quote: Heliconius sara sprucei Bates, 1864, Heliconius eleuchia primularis Butler, 1869, Heliconius cydno alithea (Hewitson, 1869)
+      where: Introduction
+  - field: taxon
+    value: Heliconius cydno
+    anchor:
+      quote: Heliconius sara sprucei Bates, 1864, Heliconius eleuchia primularis Butler, 1869, Heliconius cydno alithea (Hewitson, 1869)
+      where: Introduction
+  - field: taxon
+    value: Heliconius melpomene cythera
+    anchor:
+      quote: Heliconius cydno alithea (Hewitson, 1869) and Heliconius melpomene cythera (Hewitson, 1869), likely corresponding to four independent evolutionary origins
+      where: Introduction
+  - field: taxon
+    value: Heliconius melpomene rosina
+    anchor:
+      quote: We also investigated the non-iridescent subspecies Heliconius erato demophoon Ménétriés, 1855 and Heliconius melpomene rosina (Boisduval, 1870) from Panama
+      where: Introduction
+  - field: taxon
+    value: H. erato cyrbia and H. melpomene cythera
+    anchor:
+      quote: mimetic relationships between H. cydno alithea and H. eleuchia primularis and between H. erato cyrbia and H. melpomene cythera.
+      where: Introduction
+  - field: taxon
+    value: H. cydno and H. eleuchia
+    anchor:
+      quote: Note the mimicry between distantly related species pairs H. cydno and H. eleuchia, and between H. melpomene and H. erato.
+      where: Fig 2 caption
+  - field: life_stage
+    value: butterflies
+    anchor:
+      quote: Specimens of the iridescent butterflies, H. erato cyrbia, H. sara, H. eleuchia, H. cydno alithea and H. melpomene cythera
+      where: Material and methods
+  - field: anatomical_region
+    value: wing
+    anchor:
+      quote: Between 8 and 17 measurements were collected over 10–20 mm from one wing of each species/subspecies.
+      where: Material and methods
+  - field: anatomical_region
+    value: forewings
+    anchor:
+      quote: Measurements are from within the bird/butterfly visible range (300–700 nm) from forewings given as mean values from four individuals
+      where: Table 1 footnote
+  - field: pattern_element
+    value: blue/black wing regions
+    anchor:
+      quote: Here we focus on the blue/black wing regions only.
+      where: Fig 2 caption
+  - field: scale_type
+    value: wing scale
+    anchor:
+      quote: The general structures seen on a Heliconius wing scale.
+      where: Fig 1 caption
+  - field: scale_type
+    value: cover scales
+    anchor:
+      quote: In addition, Raman spectra of the blue Heliconius cover scales show a high amount of melanin present
+      where: Results and discussion
+  - field: functional_architecture
+    value: multilayer reflectors
+    anchor:
+      quote: However, iridescent scales have ridges composed of layered lamellae, which act as multilayer reflectors.
+      where: Abstract
+  - field: functional_architecture
+    value: non-iridescent
+    anchor:
+      quote: We also investigated the non-iridescent subspecies Heliconius erato demophoon Ménétriés, 1855 and Heliconius melpomene rosina (Boisduval, 1870)
+      where: Introduction
+  - field: imaging_modality
+    value: small angle X-ray scattering
+    anchor:
+      quote: Transmission small angle X-ray scattering (SAXS) of the butterfly wings was measured at the ID02 beamline
+      where: Material and methods
+  - field: imaging_modality
+    value: atomic force microscopy
+    anchor:
+      quote: A Digital Instruments Dimension 3100 scanning probe microscope (SPM) was used in atomic force microscopy (AFM) tapping mode
+      where: Material and methods
+  - field: imaging_modality
+    value: Scanning electron microscopy
+    anchor:
+      quote: Scanning electron microscopy (SEM) samples were prepared by cutting small regions of the wings and adhering them to SEM stubs
+      where: Material and methods
+  - field: imaging_modality
+    value: focused ion beam
+    anchor:
+      quote: mounting in a FEI Nova 600 Nanolab dual-beam focused ion beam (FIB) and SEM.
+      where: Material and methods
+  - field: imaging_modality
+    value: Reflectance spectra
+    anchor:
+      quote: Reflectance spectra were captured using a spectrometer (Ocean Optics USB2000+, USA) connected through a bifurcated fibre-optic probe
+      where: Material and methods
+  - field: view_orientation
+    value: Transmission
+    anchor:
+      quote: Transmission small angle X-ray scattering (SAXS) of the butterfly wings was measured at the ID02 beamline
+      where: Material and methods
+  - field: view_orientation
+    value: surface
+    anchor:
+      quote: The data were subsequently flattened and analysed, to produce two-dimensional surface topography height images
+      where: Material and methods
+  - field: view_orientation
+    value: cross sections
+    anchor:
+      quote: We made cross sections through the vertical ridge profile of H. erato demophoon and H. sara
+      where: Material and methods
+  - field: view_orientation
+    value: normal incidence
+    anchor:
+      quote: Measurements were taken at normal incidence and at angles parallel to the orientation of the wing scales
+      where: Material and methods
+  - field: hydration_and_prep
+    value: wings in their natural state
+    anchor:
+      quote: Figure 9a shows ridge profiles for each of the seven taxa extracted from SPM data from wings in their natural state.
+      where: Results and discussion
+  - field: hydration_and_prep
+    value: coated with a few nanometres of gold
+    anchor:
+      quote: These were coated with a few nanometres of gold (AGAR) using vacuum evaporation
+      where: Material and methods
+  - field: hydration_and_prep
+    value: sputter coated with a few nanometres of gold–palladium
+    anchor:
+      quote: The samples were sputter coated with a few nanometres of gold–palladium prior to mounting in a FEI Nova 600 Nanolab
+      where: Material and methods
+  - field: hydration_and_prep
+    value: wings or pieces of wings to glass slides
+    anchor:
+      quote: Samples were prepared by sticking either whole wings or pieces of wings to glass slides using a cyanoacrylate-based adhesive.
+      where: Material and methods
+
+default_context:
+  life_stage: butterflies
+  pupal_stage_pct: not applicable
+  sex: not stated
+  pattern_element: blue/black wing regions
+  target_gene: none
+  genetic_element_type: not applicable
+  allele_or_zygosity: wild type
+  perturbation_modality: wild type
+  chemical_agent: none
+
+units:
+  U1_SAXS_RIDGE:
+    where: Table 1, Fig. 10 and Material and methods
+    title: Synchrotron transmission SAXS ensemble-averaged ridge spacing across seven Heliconius taxa
+    context:
+      anatomical_region: wing
+      scale_type: wing scale
+      imaging_modality: small angle X-ray scattering
+      view_orientation: Transmission
+      hydration_and_prep: wings in their natural state
+    groups:
+      h_erato_cyrbia:
+        label: Heliconius erato cyrbia (Ecuador, iridescent)
+        kind: natural
+        context:
+          taxon: Heliconius erato cyrbia
+          functional_architecture: multilayer reflectors
+      h_erato_demophoon:
+        label: Heliconius erato demophoon (Panama, non-iridescent)
+        kind: natural
+        context:
+          taxon: Heliconius erato demophoon
+          functional_architecture: non-iridescent
+      h_sara_ecuador:
+        label: Heliconius sara (Ecuador, iridescent)
+        kind: natural
+        context:
+          taxon: Heliconius sara
+          functional_architecture: multilayer reflectors
+      h_eleuchia:
+        label: Heliconius eleuchia (Ecuador, iridescent)
+        kind: natural
+        context:
+          taxon: Heliconius eleuchia
+          functional_architecture: multilayer reflectors
+      h_cydno:
+        label: Heliconius cydno (Ecuador, iridescent)
+        kind: natural
+        context:
+          taxon: Heliconius cydno
+          functional_architecture: multilayer reflectors
+      h_melpomene_cythera:
+        label: Heliconius melpomene cythera (Ecuador, iridescent)
+        kind: natural
+        context:
+          taxon: Heliconius melpomene cythera
+          functional_architecture: multilayer reflectors
+      h_melpomene_rosina:
+        label: Heliconius melpomene rosina (Panama, non-iridescent)
+        kind: natural
+        context:
+          taxon: Heliconius melpomene rosina
+          functional_architecture: non-iridescent
+
+  U2_AFM_SEM_SCALE:
+    where: Table 1, Figs. 1, 4, 5, 8, 9 and Results
+    title: AFM, planar SEM, and FIB-SEM wing scale ridge spacing and lamellar architecture across Heliconius taxa
+    context:
+      anatomical_region: wing
+      scale_type: cover scales
+    groups:
+      h_erato_cyrbia:
+        label: Heliconius erato cyrbia cover scales
+        kind: natural
+        context:
+          taxon: Heliconius erato cyrbia
+          functional_architecture: multilayer reflectors
+      h_erato_demophoon:
+        label: Heliconius erato demophoon cover scales
+        kind: natural
+        context:
+          taxon: Heliconius erato demophoon
+          functional_architecture: non-iridescent
+      h_sara_ecuador:
+        label: Heliconius sara (Ecuador) cover scales
+        kind: natural
+        context:
+          taxon: Heliconius sara
+          functional_architecture: multilayer reflectors
+      h_eleuchia:
+        label: Heliconius eleuchia cover scales
+        kind: natural
+        context:
+          taxon: Heliconius eleuchia
+          functional_architecture: multilayer reflectors
+      h_cydno:
+        label: Heliconius cydno cover scales
+        kind: natural
+        context:
+          taxon: Heliconius cydno
+          functional_architecture: multilayer reflectors
+      h_melpomene_cythera:
+        label: Heliconius melpomene cythera cover scales
+        kind: natural
+        context:
+          taxon: Heliconius melpomene cythera
+          functional_architecture: multilayer reflectors
+      h_melpomene_rosina:
+        label: Heliconius melpomene rosina cover scales
+        kind: natural
+        context:
+          taxon: Heliconius melpomene rosina
+          functional_architecture: non-iridescent
+
+  U3_REFLECTANCE:
+    where: Table 1, Figs. 3, 4, 5, 10 and Material and methods
+    title: Forewing optical reflectance spectroscopy (maximum reflectance and peak wavelength) across Heliconius taxa
+    context:
+      anatomical_region: forewings
+      scale_type: wing scale
+      imaging_modality: Reflectance spectra
+      view_orientation: normal incidence
+      hydration_and_prep: wings or pieces of wings to glass slides
+    groups:
+      h_erato_cyrbia:
+        label: Heliconius erato cyrbia forewing (n=4)
+        kind: natural
+        context:
+          taxon: Heliconius erato cyrbia
+          functional_architecture: multilayer reflectors
+      h_erato_demophoon:
+        label: Heliconius erato demophoon forewing (n=4)
+        kind: natural
+        context:
+          taxon: Heliconius erato demophoon
+          functional_architecture: non-iridescent
+      h_sara_ecuador:
+        label: Heliconius sara Ecuador forewing (n=4)
+        kind: natural
+        context:
+          taxon: Heliconius sara
+          functional_architecture: multilayer reflectors
+      h_sara_panama:
+        label: Heliconius sara Panama forewing (n=1, 3 scans)
+        kind: natural
+        context:
+          taxon: Heliconius sara
+          functional_architecture: multilayer reflectors
+      h_eleuchia:
+        label: Heliconius eleuchia forewing (n=4)
+        kind: natural
+        context:
+          taxon: Heliconius eleuchia
+          functional_architecture: multilayer reflectors
+      h_cydno:
+        label: Heliconius cydno forewing (n=4)
+        kind: natural
+        context:
+          taxon: Heliconius cydno
+          functional_architecture: multilayer reflectors
+      h_melpomene_cythera:
+        label: Heliconius melpomene cythera forewing (n=4)
+        kind: natural
+        context:
+          taxon: Heliconius melpomene cythera
+          functional_architecture: multilayer reflectors
+      h_melpomene_rosina:
+        label: Heliconius melpomene rosina forewing (n=4)
+        kind: natural
+        context:
+          taxon: Heliconius melpomene rosina
+          functional_architecture: non-iridescent
+
+  U4_PAVO_VISUAL:
+    where: Fig. 11 and Results and discussion
+    title: PAVO v1.1 receptor-noise chromatic and achromatic discriminability (JNDs) of co-mimetic Heliconius pairs under avian vs Heliconius vision
+    context:
+      anatomical_region: forewings
+      scale_type: wing scale
+      functional_architecture: multilayer reflectors
+      imaging_modality: Reflectance spectra
+      view_orientation: normal incidence
+      hydration_and_prep: wings or pieces of wings to glass slides
+    groups:
+      cyrbia_cythera_avian:
+        label: H. erato cyrbia vs H. melpomene cythera (forewing daylight, avian VS model)
+        kind: natural
+        context:
+          taxon: H. erato cyrbia and H. melpomene cythera
+      cyrbia_cythera_heli_I:
+        label: H. erato cyrbia vs H. melpomene cythera (forewing daylight, Heliconius type I model)
+        kind: natural
+        context:
+          taxon: H. erato cyrbia and H. melpomene cythera
+      cydno_eleuchia_avian:
+        label: H. cydno vs H. eleuchia (forewing daylight, avian VS model)
+        kind: natural
+        context:
+          taxon: H. cydno and H. eleuchia
+      cydno_eleuchia_heli_I:
+        label: H. cydno vs H. eleuchia (forewing daylight, Heliconius type I model)
+        kind: natural
+        context:
+          taxon: H. cydno and H. eleuchia
+
+evidence:
+  T1_saxs_ridge_spacing:
+    unit: U1_SAXS_RIDGE
+    measure: ridge spacing
+    method: ESRF ID02 transmission SAXS (0.1 nm X-ray, 20x20 um beam, 30.98 m SDD) across 8–17 positions per wing
+    finding: Iridescent taxa exhibit markedly tighter SAXS ridge spacing (742–929 nm; tightest in H. sara 742 ± 28 nm and co-mimics H. e. cyrbia 812 ± 28 nm / H. m. cythera 823 ± 22 nm) than non-iridescent black sister taxa (1025–1063 nm)
+    groups:
+      - h_erato_cyrbia
+      - h_erato_demophoon
+      - h_sara_ecuador
+      - h_eleuchia
+      - h_cydno
+      - h_melpomene_cythera
+      - h_melpomene_rosina
+    n:
+      printed: 8–17 measurements across one wing of each species/subspecies
+      counts: beam positions
+      per_group:
+        h_erato_cyrbia: '13'
+        h_erato_demophoon: '9'
+        h_sara_ecuador: '10'
+        h_eleuchia: '11'
+        h_cydno: '11'
+        h_melpomene_cythera: '8'
+        h_melpomene_rosina: '18'
+      levels:
+        individuals: 1
+        positions: 8
+      test_unit: positions
+    values:
+      cyrbia_saxs:
+        printed: 812 ± 28
+        unit: nm
+        kind: mean
+        group: h_erato_cyrbia
+        spread: SD
+      demophoon_saxs:
+        printed: 1063 ± 39
+        unit: nm
+        kind: mean
+        group: h_erato_demophoon
+        spread: SD
+      sara_saxs:
+        printed: 742 ± 28
+        unit: nm
+        kind: mean
+        group: h_sara_ecuador
+        spread: SD
+      eleuchia_saxs:
+        printed: 889 ± 73
+        unit: nm
+        kind: mean
+        group: h_eleuchia
+        spread: SD
+      cydno_saxs:
+        printed: 929 ± 58
+        unit: nm
+        kind: mean
+        group: h_cydno
+        spread: SD
+      cythera_saxs:
+        printed: 823 ± 22
+        unit: nm
+        kind: mean
+        group: h_melpomene_cythera
+        spread: SD
+      rosina_saxs:
+        printed: 1025 ± 82
+        unit: nm
+        kind: mean
+        group: h_melpomene_rosina
+        spread: SD
+    anchor:
+      quote: Ridge spacing is calculated from SAXS data from 8–17 measurements across one wing of each species/subspecies.
+      where: Fig 10 caption
+
+  T1_iridescent_vs_noniridescent_erato:
+    unit: U1_SAXS_RIDGE
+    measure: ridge spacing
+    method: SAXS ridge spacing comparison between iridescent H. erato cyrbia and non-iridescent sister race H. erato demophoon (Table 1)
+    finding: Iridescent H. erato cyrbia has 23.6% narrower SAXS ridge spacing than non-iridescent H. erato demophoon (812 ± 28 vs 1063 ± 39 nm)
+    compares:
+      - h_erato_cyrbia
+      - h_erato_demophoon
+    test_of: pair
+    n:
+      printed: 13 positions (H. e. cyrbia) vs 9 positions (H. e. demophoon) on one wing each
+      counts: beam positions
+      per_group:
+        h_erato_cyrbia: '13'
+        h_erato_demophoon: '9'
+      levels:
+        individuals: 1
+        positions: 9
+      test_unit: positions
+    values:
+      cyrbia_d:
+        printed: 812 ± 28
+        unit: nm
+        kind: mean
+        group: h_erato_cyrbia
+        spread: SD
+      demophoon_d:
+        printed: 1063 ± 39
+        unit: nm
+        kind: mean
+        group: h_erato_demophoon
+        spread: SD
+    stated_direction:
+      direction: down
+      anchor:
+        quote: Taxa with lower ridge spacing (higher ridge density) have higher peak reflectance.
+        where: Fig 10 caption
+    anchor:
+      quote: Taxa with lower ridge spacing (higher ridge density) have higher peak reflectance.
+      where: Fig 10 caption
+
+  T1_iridescent_vs_noniridescent_melpomene:
+    unit: U1_SAXS_RIDGE
+    measure: ridge spacing
+    method: SAXS ridge spacing comparison between iridescent H. melpomene cythera and non-iridescent sister race H. melpomene rosina (Table 1)
+    finding: Iridescent H. melpomene cythera has 19.7% narrower SAXS ridge spacing than non-iridescent H. melpomene rosina (823 ± 22 vs 1025 ± 82 nm)
+    compares:
+      - h_melpomene_cythera
+      - h_melpomene_rosina
+    test_of: pair
+    n:
+      printed: 8 positions (H. m. cythera) vs 18 positions (H. m. rosina) on one wing each
+      counts: beam positions
+      per_group:
+        h_melpomene_cythera: '8'
+        h_melpomene_rosina: '18'
+      levels:
+        individuals: 1
+        positions: 8
+      test_unit: positions
+    values:
+      cythera_d:
+        printed: 823 ± 22
+        unit: nm
+        kind: mean
+        group: h_melpomene_cythera
+        spread: SD
+      rosina_d:
+        printed: 1025 ± 82
+        unit: nm
+        kind: mean
+        group: h_melpomene_rosina
+        spread: SD
+    stated_direction:
+      direction: down
+      anchor:
+        quote: Taxa with lower ridge spacing (higher ridge density) have higher peak reflectance.
+        where: Fig 10 caption
+    anchor:
+      quote: Co-mimetic pairs H. e. cyrbia/ H. m. cythera and H. eleuchia/H. cydno have similar ridge density.
+      where: Fig 10 caption
+
+  D2_ridge_density:
+    unit: U1_SAXS_RIDGE
+    measure: ridge density
+    method: Reciprocal spatial frequency rho = 1/d derived from Table 1 SAXS ridge spacing
+    finding: Linear ridge density is 43% higher in iridescent H. sara (1.35e6 m^-1) than in non-iridescent H. erato demophoon (0.941e6 m^-1)
+    groups:
+      - h_sara_ecuador
+      - h_erato_demophoon
+    values:
+      sara_rho:
+        printed: 1.348e6
+        unit: m^-1
+        kind: value
+        group: h_sara_ecuador
+        spread: none
+      demophoon_rho:
+        printed: 0.941e6
+        unit: m^-1
+        kind: value
+        group: h_erato_demophoon
+        spread: none
+    anchor:
+      quote: Taxa with lower ridge spacing (higher ridge density) have higher peak reflectance.
+      where: Fig 10 caption
+    scaling:
+      independent_measure: ridge spacing
+      direction: down
+      anchor:
+        quote: Taxa with lower ridge spacing (higher ridge density) have higher peak reflectance.
+        where: Fig 10 caption
+
+  T1_afm_ridge_spacing:
+    unit: U2_AFM_SEM_SCALE
+    measure: ridge spacing
+    method: Integrated 2D Fourier transform of 10x10 um tapping-mode AFM surface scans (Dimension 3100, Table 1)
+    context:
+      imaging_modality: atomic force microscopy
+      view_orientation: surface
+      hydration_and_prep: wings in their natural state
+    finding: Single-scale 100 um^2 AFM Fourier spacing confirms tightly packed ridges in H. sara (723 nm) and H. erato cyrbia (887 nm) versus >1140 nm in the remaining five taxa
+    groups:
+      - h_erato_cyrbia
+      - h_erato_demophoon
+      - h_sara_ecuador
+      - h_eleuchia
+      - h_cydno
+      - h_melpomene_cythera
+      - h_melpomene_rosina
+    values:
+      cyrbia_afm:
+        printed: '887'
+        unit: nm
+        kind: value
+        group: h_erato_cyrbia
+        spread: none
+      demophoon_afm:
+        printed: '1149'
+        unit: nm
+        kind: value
+        group: h_erato_demophoon
+        spread: none
+      sara_afm:
+        printed: '723'
+        unit: nm
+        kind: value
+        group: h_sara_ecuador
+        spread: none
+      eleuchia_afm:
+        printed: '1159'
+        unit: nm
+        kind: value
+        group: h_eleuchia
+        spread: none
+      cydno_afm:
+        printed: '1143'
+        unit: nm
+        kind: value
+        group: h_cydno
+        spread: none
+      cythera_afm:
+        printed: '1242'
+        unit: nm
+        kind: value
+        group: h_melpomene_cythera
+        spread: none
+      rosina_afm:
+        printed: '1253'
+        unit: nm
+        kind: value
+        group: h_melpomene_rosina
+        spread: none
+    anchor:
+      quote: ridge reflectors were much more densely packed in H. sara (ridge spacing at 723 nm) and H. erato cyrbia (887 nm)
+      where: Results and discussion
+
+  F4_F5_sem_ridge_fft:
+    unit: U2_AFM_SEM_SCALE
+    measure: ridge spacing
+    method: LivingLit calibrated 2D-FFT and 10-transect ridge spacing analysis on Figs. 1, 4, and 5 high-mag SEM panels (1 um and 0.5 um scale bars)
+    context:
+      imaging_modality: Scanning electron microscopy
+      view_orientation: surface
+      hydration_and_prep: coated with a few nanometres of gold
+    finding: Calibrated 2D-FFT on Figs. 4–5 SEMs independently recovers planar spacings matching SAXS in H. eleuchia (830 nm), H. m. cythera (835 nm), H. cydno (818 nm), and H. m. rosina (1135 nm), and reveals oblique-tilt cos(theta) foreshortening in H. sara (589 nm) and H. e. demophoon (673 nm)
+    groups:
+      - h_erato_cyrbia
+      - h_erato_demophoon
+      - h_sara_ecuador
+      - h_eleuchia
+      - h_cydno
+      - h_melpomene_cythera
+      - h_melpomene_rosina
+    anchor:
+      quote: Scanning electron micrographs show one representative region for each species. White bars are 1 µm.
+      where: Fig 4 caption
+
+  F8_sara_lamella_wavelength:
+    unit: U2_AFM_SEM_SCALE
+    measure: peak reflectance wavelength
+    method: FIB-SEM cross-section lamellar periodicity (air 119 ± 6 nm, chitin 85 ± 7 nm, period 204 ± 10 nm, n_eff = 1.22) predicting Bragg interference wavelength
+    context:
+      imaging_modality: focused ion beam
+      view_orientation: cross sections
+      hydration_and_prep: sputter coated with a few nanometres of gold–palladium
+    finding: FIB-SEM cross-section of H. sara cover-scale ridges resolves periodic chitin/air lamellae (period 204 ± 10 nm, n_eff = 1.22), predicting reflected wavelength 499 ± 18 nm matching measured 497 ± 7 nm
+    groups:
+      - h_sara_ecuador
+    values:
+      sara_predicted_wl:
+        printed: 499 ± 18
+        unit: nm
+        kind: mean
+        group: h_sara_ecuador
+        spread: SD
+    anchor:
+      quote: These values can be used to give the reflected wavelength of 499 ± 18 nm [43], in good agreement with the measured reflectance peak
+      where: Results and discussion
+
+  T1_max_reflectance:
+    unit: U3_REFLECTANCE
+    measure: maximum reflectance
+    method: Ocean Optics USB2000+ bifurcated probe spectroscopy at peak reflection angle normalized to Spectralon 99% white standard (PAVO v1.1, Table 1, n=4/taxon)
+    software: PAVO v. 1.1
+    finding: Forewing peak reflectance varies 16-fold across Heliconius taxa, highest in H. sara (30.6 ± 10.1%) and H. erato cyrbia (19.4 ± 9.3%) and lowest in non-iridescent H. e. demophoon (2.4 ± 1.4%) and H. m. rosina (1.9 ± 0.7%); all 7 means reproduce exactly from AP.spec.data.individual.means.csv
+    groups:
+      - h_erato_cyrbia
+      - h_erato_demophoon
+      - h_sara_ecuador
+      - h_sara_panama
+      - h_eleuchia
+      - h_cydno
+      - h_melpomene_cythera
+      - h_melpomene_rosina
+    n:
+      printed: four individuals of each species/subspecies (1 individual, 3 measurements for H. sara Panama)
+      counts: individuals
+      per_group:
+        h_erato_cyrbia: '4'
+        h_erato_demophoon: '4'
+        h_sara_ecuador: '4'
+        h_sara_panama: '1'
+        h_eleuchia: '4'
+        h_cydno: '4'
+        h_melpomene_cythera: '4'
+        h_melpomene_rosina: '4'
+      levels:
+        individuals: 4
+      test_unit: individuals
+    values:
+      cyrbia_maxR:
+        printed: 19.4 ± 9.3
+        unit: '%'
+        kind: mean
+        group: h_erato_cyrbia
+        spread: SD
+      demophoon_maxR:
+        printed: 2.4 ± 1.4
+        unit: '%'
+        kind: mean
+        group: h_erato_demophoon
+        spread: SD
+      sara_ec_maxR:
+        printed: 30.6 ± 10.1
+        unit: '%'
+        kind: mean
+        group: h_sara_ecuador
+        spread: SD
+      sara_pa_maxR:
+        printed: 15.9 ± 2.1
+        unit: '%'
+        kind: mean
+        group: h_sara_panama
+        spread: SD
+      eleuchia_maxR:
+        printed: 14.4 ± 5.3
+        unit: '%'
+        kind: mean
+        group: h_eleuchia
+        spread: SD
+      cydno_maxR:
+        printed: 3.4 ± 1.1
+        unit: '%'
+        kind: mean
+        group: h_cydno
+        spread: SD
+      cythera_maxR:
+        printed: 6.4 ± 2.4
+        unit: '%'
+        kind: mean
+        group: h_melpomene_cythera
+        spread: SD
+      rosina_maxR:
+        printed: 1.9 ± 0.7
+        unit: '%'
+        kind: mean
+        group: h_melpomene_rosina
+        spread: SD
+    anchor:
+      quote: Reflectance measurements were taken for four individuals of each taxon from both the hindwing and forewing.
+      where: Material and methods
+
+  T1_peak_wavelength:
+    unit: U3_REFLECTANCE
+    measure: peak reflectance wavelength
+    method: PAVO v1.1 peakshape wavelength of maximum reflectance within 300–700 nm (Table 1, n=4 forewings/taxon)
+    software: PAVO v. 1.1
+    finding: Iridescent forewing hue spans UV-violet to blue-green (362 nm in H. m. cythera to 497 nm in Ecuadorian H. sara); raw CSV reveals Table 1 H. erato cyrbia value (369 ± 8 nm) is a digit transposition of 396.0 ± 8.0 nm (confirmed by Fig. 4A)
+    groups:
+      - h_erato_cyrbia
+      - h_sara_ecuador
+      - h_sara_panama
+      - h_eleuchia
+      - h_cydno
+      - h_melpomene_cythera
+    n:
+      printed: four individuals per taxon (1 individual, 3 scans for H. sara Panama)
+      counts: individuals
+      per_group:
+        h_erato_cyrbia: '4'
+        h_sara_ecuador: '4'
+        h_sara_panama: '1'
+        h_eleuchia: '4'
+        h_cydno: '4'
+        h_melpomene_cythera: '4'
+      levels:
+        individuals: 4
+      test_unit: individuals
+    values:
+      cyrbia_wl:
+        printed: 369 ± 8
+        unit: nm
+        kind: mean
+        group: h_erato_cyrbia
+        spread: SD
+        suspected_error:
+          what: Digit transposition typo in Table 1 (printed 369 ± 8 nm vs raw CSV 396.0 ± 8.0 nm)
+          why: Individual forewing peak wavelengths in AP.spec.data.individual.means.csv (406, 399, 389, 390 nm) average 396.0 ± 8.0 nm and Fig 4A peaks at 395 nm.
+      sara_ec_wl:
+        printed: 497 ± 7
+        unit: nm
+        kind: mean
+        group: h_sara_ecuador
+        spread: SD
+      sara_pa_wl:
+        printed: 443 ± 3
+        unit: nm
+        kind: mean
+        group: h_sara_panama
+        spread: SD
+      eleuchia_wl:
+        printed: 455 ± 12
+        unit: nm
+        kind: mean
+        group: h_eleuchia
+        spread: SD
+      cydno_wl:
+        printed: 390 ± 2
+        unit: nm
+        kind: mean
+        group: h_cydno
+        spread: SD
+      cythera_wl:
+        printed: 362 ± 10
+        unit: nm
+        kind: mean
+        group: h_melpomene_cythera
+        spread: SD
+    anchor:
+      quote: There were also differences between species in the wavelength of the peak reflectance (hue), with H. sara being the greenest
+      where: Results and discussion
+
+  T1_sara_ecuador_vs_panama_wl:
+    unit: U3_REFLECTANCE
+    measure: peak reflectance wavelength
+    method: Comparison of forewing peak reflectance wavelength between Ecuadorian (n=4) and Panamanian (n=1, 3 scans) H. sara
+    finding: Ecuadorian H. sara sprucei is green-shifted by +54 nm relative to Panamanian H. sara sara (497 ± 7 vs 443 ± 3 nm)
+    groups:
+      - h_sara_ecuador
+      - h_sara_panama
+    n:
+      printed: 4 Ecuadorian individuals vs 1 Panamanian individual (3 measurements)
+      counts: individuals
+      per_group:
+        h_sara_ecuador: '4'
+        h_sara_panama: '1'
+      levels:
+        individuals: 4
+      test_unit: individuals
+    values:
+      sara_ec:
+        printed: 497 ± 7
+        unit: nm
+        kind: mean
+        group: h_sara_ecuador
+        spread: SD
+      sara_pa:
+        printed: 443 ± 3
+        unit: nm
+        kind: mean
+        group: h_sara_panama
+        spread: SD
+    anchor:
+      quote: Our measured wavelength of peak reflectance for H. sara was considerably longer than that reported previously for samples collected from Panama
+      where: Results and discussion
+
+  F10_spacing_reflectance_corr:
+    unit: U3_REFLECTANCE
+    measure: maximum reflectance
+    method: Pearson correlation of species-mean SAXS ridge spacing against forewing maximum reflectance across 7 Heliconius taxa (Fig. 10)
+    finding: Species-mean SAXS ridge spacing correlates strongly and negatively with forewing maximum reflectance (r = -0.829, p = 0.021, n = 7 taxa)
+    groups:
+      - h_erato_cyrbia
+      - h_erato_demophoon
+      - h_sara_ecuador
+      - h_eleuchia
+      - h_cydno
+      - h_melpomene_cythera
+      - h_melpomene_rosina
+    n:
+      printed: 7 species/subspecies mean values
+      counts: taxa
+      levels:
+        taxa: 7
+      test_unit: taxa
+    stats:
+      test: Pearson correlation
+      statistic: r = -0.829
+      p: p = 0.021
+    scaling:
+      independent_measure: ridge spacing
+      direction: down
+      anchor:
+        quote: correlated with peak reflectance (Pearson correlation from mean values, r = −0.829, p = 0.021; table 1 and figure 10).
+        where: Results and discussion
+    anchor:
+      quote: correlated with peak reflectance (Pearson correlation from mean values, r = −0.829, p = 0.021; table 1 and figure 10).
+      where: Results and discussion
+
+  F11_chromatic_jnd_cyrbia_cythera:
+    unit: U4_PAVO_VISUAL
+    measure: chromatic contrast (JND)
+    method: PAVO v1.1 Vorobyev–Osorio receptor-noise chromatic JND modelling (D65 daylight, n=16 pairwise individual comparisons, Fig. 11A)
+    software: PAVO v. 1.1
+    finding: Forewing daylight chromatic discriminability between co-mimics H. erato cyrbia and H. melpomene cythera is substantially higher for avian VS vision (median 5.40 JND) than for Heliconius type I vision (median 1.39 JND), though both exceed 1 JND
+    groups:
+      - cyrbia_cythera_avian
+      - cyrbia_cythera_heli_I
+    n:
+      printed: n = 16 pairwise comparisons between individuals of each species
+      counts: pairwise comparisons
+      per_group:
+        cyrbia_cythera_avian: '16'
+        cyrbia_cythera_heli_I: '16'
+      levels:
+        individuals: 4
+        pairs: 16
+      test_unit: pairwise comparisons
+    anchor:
+      quote: co-mimetic species were more discriminable with the avian visual model than any of the Heliconius models.
+      where: Results and discussion
+
+  F11_chromatic_jnd_cydno_eleuchia:
+    unit: U4_PAVO_VISUAL
+    measure: chromatic contrast (JND)
+    method: PAVO v1.1 Vorobyev–Osorio receptor-noise chromatic JND modelling (D65 daylight, n=16 pairwise individual comparisons, Fig. 11B)
+    software: PAVO v. 1.1
+    finding: Forewing daylight chromatic discriminability between co-mimics H. cydno and H. eleuchia is very high under both visual models and higher under avian VS vision (median 15.97 JND) than Heliconius type I vision (median 8.74 JND)
+    groups:
+      - cydno_eleuchia_avian
+      - cydno_eleuchia_heli_I
+    n:
+      printed: n = 16 pairwise comparisons between individuals of each species
+      counts: pairwise comparisons
+      per_group:
+        cydno_eleuchia_avian: '16'
+        cydno_eleuchia_heli_I: '16'
+      levels:
+        individuals: 4
+        pairs: 16
+      test_unit: pairwise comparisons
+    anchor:
+      quote: co-mimetic species were more discriminable with the avian visual model than any of the Heliconius models.
+      where: Results and discussion
+
+  F11_achromatic_jnd:
+    unit: U4_PAVO_VISUAL
+    measure: achromatic contrast (JND)
+    method: PAVO v1.1 long-wavelength receptor-noise achromatic luminance JND modelling (D65 daylight, n=16 pairwise comparisons, Fig. 11C–D)
+    software: PAVO v. 1.1
+    finding: Forewing daylight achromatic luminance contrasts between co-mimics are very high and comparable across avian and Heliconius models (cyrbia/cythera medians 23.41 vs 25.65 JND; cydno/eleuchia 52.06 vs 42.32 JND)
+    groups:
+      - cyrbia_cythera_avian
+      - cyrbia_cythera_heli_I
+      - cydno_eleuchia_avian
+      - cydno_eleuchia_heli_I
+    n:
+      printed: n = 16 pairwise comparisons between individuals of each species
+      counts: pairwise comparisons
+      levels:
+        individuals: 4
+        pairs: 16
+      test_unit: pairwise comparisons
+    anchor:
+      quote: Achromatic discriminabilites were similar for the birds and butterflies, but very high for both taxa
+      where: Results and discussion
+
+claims:
+  C1_ridge_lamellae_multilayer:
+    kind: stated
+    quote: However, iridescent scales have ridges composed of layered lamellae, which act as multilayer reflectors.
+    where: Abstract
+    scope: Five iridescent Heliconius species/subspecies vs two non-iridescent sister taxa
+    direction: overlapping ridge lamellae generate multilayer structural reflectance
+    rests_on:
+      - F8_sara_lamella_wavelength
+      - T1_max_reflectance
+      - F4_F5_sem_ridge_fft
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C2_sara_fib_bragg_agreement:
+    kind: stated
+    quote: These values can be used to give the reflected wavelength of 499 ± 18 nm [43], in good agreement with the measured reflectance peak
+    where: Results and discussion
+    scope: Heliconius sara (Ecuador) dorsal cover scale ridges
+    direction: FIB-SEM lamellar periodicity (204 ± 10 nm, n_eff = 1.22) matches measured 497 ± 7 nm reflectance peak
+    rests_on:
+      - F8_sara_lamella_wavelength
+      - T1_peak_wavelength
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C3_saxs_spacing_reflectance_correlation:
+    kind: stated
+    quote: Ridge spacing was also inferred from the SAXS patterns (electronic supplementary material, figure S1), and correlated with peak reflectance (Pearson correlation from mean values, r = −0.829, p = 0.021
+    where: Results and discussion
+    scope: Seven Heliconius species/subspecies (mean values across clades)
+    direction: lower SAXS ridge spacing (higher ridge density) correlates with higher maximum reflectance
+    asserts_direction: down
+    rests_on:
+      - T1_saxs_ridge_spacing
+      - T1_max_reflectance
+      - F10_spacing_reflectance_corr
+      - D2_ridge_density
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C4_clade_reflectance_efficiency:
+    kind: stated
+    quote: the H. melpomene clade species (H. cydno and H. melpomene cythera) achieve lower reflectance for a given ridge density than the H. erato clade species
+    where: Results and discussion
+    scope: H. melpomene clade (cydno, cythera) vs H. erato clade (sara, eleuchia, cyrbia)
+    direction: lower peak reflectance per unit ridge density in H. melpomene clade due to curved ridge profiles
+    rests_on:
+      - T1_saxs_ridge_spacing
+      - T1_max_reflectance
+      - T1_iridescent_vs_noniridescent_erato
+      - T1_iridescent_vs_noniridescent_melpomene
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C5_comimetic_ridge_density_convergence:
+    kind: stated
+    quote: Co-mimetic pairs H. e. cyrbia/ H. m. cythera and H. eleuchia/H. cydno have similar ridge density.
+    where: Fig 10 caption
+    scope: Ecuadorian co-mimetic pairs (H. e. cyrbia / H. m. cythera; H. eleuchia / H. cydno)
+    direction: convergent SAXS ridge spacing between distantly related co-mimics (812 vs 823 nm; 889 vs 929 nm)
+    rests_on:
+      - T1_saxs_ridge_spacing
+      - D2_ridge_density
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C6_sara_regional_hue_divergence:
+    kind: stated
+    quote: Our measured wavelength of peak reflectance for H. sara was considerably longer than that reported previously for samples collected from Panama
+    where: Results and discussion
+    scope: Ecuadorian H. sara sprucei (n=4) vs Panamanian H. sara sara (n=1)
+    direction: longer (green-shifted) peak reflectance wavelength in Ecuadorian H. sara (497 vs 443 nm)
+    asserts_direction: up
+    rests_on:
+      - T1_peak_wavelength
+      - T1_sara_ecuador_vs_panama_wl
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: overstated
+      strength: follows
+      presence: follows
+    note: Only a single Panamanian H. sara individual (3 replicate scans) was measured in this study, though consistent with prior Panama spectra (Thurman & Seymoure 2016).
+
+  C7_avian_exceeds_heliconius_discrimination:
+    kind: stated
+    quote: Under both ideal daylight and forest shade lighting and for both forewings and hindwings, co-mimetic species were more discriminable with the avian visual model than any of the Heliconius models.
+    where: Results and discussion
+    scope: Co-mimetic pairs (cyrbia/cythera and cydno/eleuchia) across 5 visual models and 2 illuminants
+    direction: higher chromatic JND contrast in avian VS vision than in Heliconius types I–IV
+    asserts_direction: up
+    rests_on:
+      - F11_chromatic_jnd_cyrbia_cythera
+      - F11_chromatic_jnd_cydno_eleuchia
+      - F11_achromatic_jnd
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: overstated
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Strictly true for all forewing chromatic panels and daylight hindwing panels, but digitized Fig. 11N (hindwing forest shade, H. cydno/eleuchia) shows Heliconius type I/III median (~7.07 JND) slightly exceeding avian median (~6.27 JND).

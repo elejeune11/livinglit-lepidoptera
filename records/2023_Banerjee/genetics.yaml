@@ -1,0 +1,355 @@
+record: 2023_Banerjee
+relations:
+  - id: arm_required_for_eyespot_focus
+    source: target_gene:armadillo_beta_catenin
+    source_label: Armadillo / beta-catenin (Arm)
+    source_type: gene
+    relation: required_for_phenotype
+    target: pattern_element:eyespot_focus
+    target_label: Eyespot center / focus differentiation
+    target_type: pattern_element
+    evidence_tier: perturbation_only
+    effect_direction: abolish
+    assays:
+      - crispr_g0_mosaic
+      - immunofluorescence
+    context:
+      taxon: Bicyclus anynana
+      sex: male and female
+      life_stage: adult
+      anatomical_region: wing
+      pattern_element: eyespot focus
+      genetic_element_type: coding exon
+      allele_or_zygosity: G0 somatic mosaic
+    linked_items:
+      - E1_arm_pupal_window
+      - E2_arm_crispant_loss
+      - E3_arm_crispant_split
+    linked_panels:
+      - 2023_Banerjee/F1/A
+      - 2023_Banerjee/F1/B
+      - 2023_Banerjee/F1/E
+      - 2023_Banerjee/F1/F
+    anchor:
+      quote: Disruptions of arm via CRISPR-cas9 resulted in either a split eyespot or no eyespots, suggesting arm’s essential role in eyespot center cell differentiation (fig. S7, C to H).
+      where: Discussion
+    note: Mosaic arm CRISPR knockouts produced complete eyespot loss (n=1) or split double foci without ectopic venation (n=2), verified by Illumina paired-end sequencing.
+
+  - id: arm_required_for_wing_margin
+    source: target_gene:armadillo_beta_catenin
+    source_label: Armadillo / beta-catenin (Arm)
+    source_type: gene
+    relation: required_for_phenotype
+    target: pattern_element:marginal_band
+    target_label: Wing margin differentiation
+    target_type: pattern_element
+    evidence_tier: perturbation_only
+    effect_direction: abolish
+    assays:
+      - crispr_g0_mosaic
+      - immunofluorescence
+    context:
+      taxon: Bicyclus anynana
+      sex: male and female
+      life_stage: adult
+      anatomical_region: wing
+      pattern_element: marginal band
+      genetic_element_type: coding exon
+      allele_or_zygosity: G0 somatic mosaic
+    linked_items:
+      - E1_arm_pupal_window
+      - E4_arm_crispant_margin
+    linked_panels:
+      - 2023_Banerjee/F1/C
+      - 2023_Banerjee/F1/D
+    anchor:
+      quote: Defects along the wing margin were also observed in four of the arm CRISPR individuals (fig. S7, C to J).
+      where: Results
+    note: Four arm G0 crispants exhibited disrupted wing margins matching continuous larval and pupal (15–24 h AP) Armadillo protein accumulation along the wing margin.
+
+  - id: wnta_required_for_css_bss_bands
+    source: target_gene:wnta
+    source_label: WntA
+    source_type: gene
+    relation: required_for_phenotype
+    target: pattern_element:central_symmetry_band
+    target_label: CSS and BSS brown scale identity and band width
+    target_type: pattern_element
+    evidence_tier: perturbation_only
+    effect_direction: switch
+    assays:
+      - crispr_g0_mosaic
+      - hcr_in_situ
+      - light_microscopy
+    context:
+      taxon: Bicyclus anynana
+      sex: male and female
+      life_stage: adult
+      anatomical_region: wing
+      pattern_element: central symmetry system band
+      genetic_element_type: coding exon
+      allele_or_zygosity: G0 somatic mosaic
+    linked_items:
+      - E8_wnta_optix_pupal_window
+      - E9_wnta_crispant_defects
+      - E10_wnta_crispant_no_eyespot
+    linked_panels:
+      - 2023_Banerjee/F5/B
+      - 2023_Banerjee/F5/D
+      - 2023_Banerjee/F5/K
+      - 2023_Banerjee/F5/L
+      - 2023_Banerjee/F5/M
+      - 2023_Banerjee/F5/N
+    anchor:
+      quote: Functional disruption of WntA using CRISPR-cas9 resulted in the loss of brown color with ectopic orange scales appearing along the CSS and in the BSS
+      where: Results
+    note: 28 WntA G0 crispants showed brown-to-orange scale transformation along CSS/BSS, narrowed/distorted CSS shape, and disrupted marginal chevrons, with 0 eyespot defects.
+
+  - id: wnta_represses_optix_boundary
+    source: target_gene:wnta
+    source_label: WntA
+    source_type: gene
+    relation: represses_expression
+    target: target_gene:optix
+    target_label: Optix (CSS boundary and orange scales)
+    target_type: gene
+    evidence_tier: correlative
+    effect_direction: down
+    assays:
+      - hcr_in_situ
+      - crispr_g0_mosaic
+    context:
+      taxon: Bicyclus anynana
+      sex: male and female
+      life_stage: pupa
+      anatomical_region: forewing and hindwing
+      pattern_element: central symmetry system band
+      genetic_element_type: coding exon
+      allele_or_zygosity: wild type
+    linked_items:
+      - E8_wnta_optix_pupal_window
+      - E9_wnta_crispant_defects
+    linked_panels:
+      - 2023_Banerjee/F5/D
+      - 2023_Banerjee/F5/E
+      - 2023_Banerjee/F5/F
+      - 2023_Banerjee/F5/G
+      - 2023_Banerjee/F5/H
+      - 2023_Banerjee/F5/I
+    anchor:
+      quote: Optix was expressed in cells at the boundary of WntA domains along with expression in the eyespot orange scale cells.
+      where: Fig. 5 caption
+    note: Correlative in B. anynana — supported by sharp WntA/Optix HCR3.0 boundary exclusion at 24–30 h AP and ectopic orange scales in WntA crispants (Optix HCR in WntA KO wings not assayed directly).
+
+  - id: fz4_represses_supernumerary_eyespot_foci
+    source: target_gene:frizzled4
+    source_label: frizzled4 (fz4)
+    source_type: gene
+    relation: represses_phenotype
+    target: pattern_element:eyespot_focus
+    target_label: Supernumerary paired eyespot foci (n=18)
+    target_type: pattern_element
+    evidence_tier: perturbation_only
+    effect_direction: abolish
+    assays:
+      - crispr_g0_mosaic
+      - hcr_in_situ
+      - light_microscopy
+    context:
+      taxon: Bicyclus anynana
+      sex: male and female
+      life_stage: adult
+      anatomical_region: wing
+      pattern_element: eyespot focus
+      genetic_element_type: coding exon
+      allele_or_zygosity: G0 somatic mosaic
+    linked_items:
+      - E11_fz_pupal_window
+      - E12_fz4_eyespot_duplication
+      - E14_fz4_margin_defects
+    linked_panels:
+      - 2023_Banerjee/F6/G
+      - 2023_Banerjee/F6/J
+      - 2023_Banerjee/F8/C
+      - 2023_Banerjee/F8/D
+      - 2023_Banerjee/F8/E
+      - 2023_Banerjee/F8/F
+      - 2023_Banerjee/F8/K
+    anchor:
+      quote: In 18 individuals, mosaic crispant wings differentiated two eyespot centers along the proximal-distal axis (Fig. 8, C to F and H, and fig. S15, E to K).
+      where: Results
+    note: Larval frizzled4 is anti-colocalized with Arm/frizzled9 in intervein cells; G0 CRISPR knockout yields paired eyespots in the same wing sector without ectopic venation (n=18) plus wing margin defects (n=5).
+
+  - id: fz4_required_for_scale_pcp_orientation
+    source: target_gene:frizzled4
+    source_label: frizzled4 (fz4)
+    source_type: gene
+    relation: required_for_phenotype
+    target: scale_type:wing_scale
+    target_label: Planar cell polarity scale orientation in eyespot field
+    target_type: scale_type
+    evidence_tier: perturbation_only
+    effect_direction: switch
+    assays:
+      - crispr_g0_mosaic
+      - hcr_in_situ
+      - light_microscopy
+    context:
+      taxon: Bicyclus anynana
+      sex: male and female
+      life_stage: adult
+      anatomical_region: wing
+      pattern_element: eyespot field
+      scale_type: wing scale
+      genetic_element_type: coding exon
+      allele_or_zygosity: G0 somatic mosaic
+    linked_items:
+      - E11_fz_pupal_window
+      - E13_fz4_pcp_scale_orientation
+    linked_panels:
+      - 2023_Banerjee/F7/A
+      - 2023_Banerjee/F7/B
+      - 2023_Banerjee/F8/H
+      - 2023_Banerjee/F8/I
+      - 2023_Banerjee/F8/J
+    anchor:
+      quote: Two crispants also showed defects in the orientation of the orange and black scale cells in eyespots (Fig. 8, H to J).
+      where: Results
+    note: Matches pupal (18–24 h AP) frizzled4 HCR3.0 expression across the eyespot field; authors propose ligand-independent PCP signaling since Wnt5/7/9/11 show no wing expression.
+
+  - id: wnt1_activates_arm_pupal_foci
+    source: target_gene:wingless_wnt1
+    source_label: Wnt1 / Wingless
+    source_type: gene
+    relation: activates_expression
+    target: target_gene:armadillo_beta_catenin
+    target_label: Nuclear Armadillo in pupal eyespot foci (18–24 h AP)
+    target_type: gene
+    evidence_tier: correlative
+    effect_direction: up
+    assays:
+      - hcr_in_situ
+      - immunofluorescence
+    context:
+      taxon: Bicyclus anynana
+      sex: male and female
+      life_stage: pupa
+      anatomical_region: forewing and hindwing
+      pattern_element: eyespot focus
+      genetic_element_type: not applicable
+      allele_or_zygosity: wild type
+    linked_items:
+      - E1_arm_pupal_window
+      - E5_canonical_wnt_pupal_window
+    linked_panels:
+      - 2023_Banerjee/F1/C
+      - 2023_Banerjee/F1/D
+      - 2023_Banerjee/F2/C
+      - 2023_Banerjee/F2/D
+      - 2023_Banerjee/F7/L
+      - 2023_Banerjee/F7/N
+    anchor:
+      quote: During the pupal stage, the nuclear presence of Arm in the foci is likely driven by the locally transcribed Wnt1.
+      where: Results
+    note: Correlative spatial-temporal co-expression of Wnt1 transcripts (HCR3.0 & chromogenic ISH, 18–24 h AP) and nuclear Armadillo protein (15–24 h AP) in eyespot foci.
+
+  - id: wnt6_activates_arm_margin_larval
+    source: target_gene:wnt6
+    source_label: Wnt6
+    source_type: gene
+    relation: activates_expression
+    target: target_gene:armadillo_beta_catenin
+    target_label: Armadillo accumulation along larval wing margin and foci
+    target_type: gene
+    evidence_tier: correlative
+    effect_direction: up
+    assays:
+      - hcr_in_situ
+      - immunofluorescence
+    context:
+      taxon: Bicyclus anynana
+      sex: male and female
+      life_stage: larva
+      anatomical_region: forewing and hindwing
+      pattern_element: marginal band
+      genetic_element_type: not applicable
+      allele_or_zygosity: wild type
+    linked_items:
+      - E1_arm_pupal_window
+      - E5_canonical_wnt_pupal_window
+    linked_panels:
+      - 2023_Banerjee/F2/A
+      - 2023_Banerjee/F2/B
+      - 2023_Banerjee/F2/E
+      - 2023_Banerjee/F9/A
+    anchor:
+      quote: However, in the larval stage, nuclear Arm at the foci is probably driven by Wnt1, Wnt6, and Wnt10 produced along the wing margin
+      where: Results
+    note: Correlative HCR3.0 mapping; Wnt6 is restricted to wing margin and discal spot in larval wings and exclusively to the wing margin at 18–21 h AP.
+
+  - id: wnt10_activates_arm_margin_larval
+    source: target_gene:wnt10
+    source_label: Wnt10
+    source_type: gene
+    relation: activates_expression
+    target: target_gene:armadillo_beta_catenin
+    target_label: Armadillo accumulation along larval wing margin and foci
+    target_type: gene
+    evidence_tier: correlative
+    effect_direction: up
+    assays:
+      - hcr_in_situ
+      - immunofluorescence
+    context:
+      taxon: Bicyclus anynana
+      sex: male and female
+      life_stage: larva
+      anatomical_region: forewing and hindwing
+      pattern_element: marginal band
+      genetic_element_type: not applicable
+      allele_or_zygosity: wild type
+    linked_items:
+      - E1_arm_pupal_window
+      - E5_canonical_wnt_pupal_window
+    linked_panels:
+      - 2023_Banerjee/F2/A
+      - 2023_Banerjee/F2/B
+      - 2023_Banerjee/F2/F
+      - 2023_Banerjee/F9/A
+    anchor:
+      quote: However, in the larval stage, nuclear Arm at the foci is probably driven by Wnt1, Wnt6, and Wnt10 produced along the wing margin
+      where: Results
+    note: Correlative HCR3.0 mapping; Wnt10 mirrors Wnt6 along larval wing margin/discal spot and pupal wing margin (18–21 h AP).
+
+  - id: wnta_represses_fz2_css_pupal
+    source: target_gene:wnta
+    source_label: WntA
+    source_type: gene
+    relation: represses_expression
+    target: target_gene:frizzled2
+    target_label: frizzled2 (fz2) excluded from pupal CSS band
+    target_type: gene
+    evidence_tier: correlative
+    effect_direction: down
+    assays:
+      - hcr_in_situ
+    context:
+      taxon: Bicyclus anynana
+      sex: male and female
+      life_stage: pupa
+      anatomical_region: hindwing
+      pattern_element: central symmetry system band
+      genetic_element_type: not applicable
+      allele_or_zygosity: wild type
+    linked_items:
+      - E8_wnta_optix_pupal_window
+      - E11_fz_pupal_window
+    linked_panels:
+      - 2023_Banerjee/F7/C
+      - 2023_Banerjee/F9/B
+      - 2023_Banerjee/F10/A
+    anchor:
+      quote: frizzled2 is anti-colocalized with frizzled4 in the eyespot field, with frizzled9 in the pupal wing margin, and with WntA in the CSS band
+      where: Results
+    note: Correlative HCR3.0 spatial exclusion in B. anynana (Fig. 7C, Fig. 9B model), paralleling functional WntA->fz2 repression in Vanessa cardui.
+genomic_tables: []

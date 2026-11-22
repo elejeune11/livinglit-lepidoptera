@@ -1,0 +1,825 @@
+id: 2024_Totz
+field_set: 4
+source:
+  title: Cell membrane buckling governs early-stage ridge formation in butterfly wing scales
+  doi: 10.1016/j.xcrp.2024.102063
+  year: '2024'
+  first_author: Jan F. Totz
+  last_author: Mathias Kolle
+  lab: Kolle lab, MIT & Wilts lab, University of Salzburg
+  journal: Cell Reports Physical Science
+  files:
+    - PMC11905118.xml
+    - fig1.jpg
+    - fig2.jpg
+    - fig3.jpg
+    - fig4.jpg
+  not_used: []
+  missing:
+    - Supplemental Information PDF (Table S1, Note S1, Note S2, Figure S1; hosted online at DOI 10.1016/j.xcrp.2024.102063)
+    - Raw interferogram phase volumes on Zenodo (https://doi.org/10.5281/zenodo.8369073; processed *_meas.mat and meanProfileDataExperiment.mat harvested locally in associated/)
+
+context_anchors:
+  - field: taxon
+    value: Vanessa cardui
+    anchor:
+      quote: Like any other lepidopteran, the Painted Lady butterfly ( Vanessa cardui L., 1758) grows scales that cover its wings during its pupal stage
+      where: Results
+  - field: taxon
+    value: Colias eurytheme
+    anchor:
+      quote: Transmission electron microscopy cross-section of developing scale of Colias eurytheme
+      where: Fig 4 caption
+  - field: taxon
+    value: Agraulis vanillae
+    anchor:
+      quote: Confocal fluorescence image of the upper surface of a silver wing scale on Agraulis vanillae
+      where: Fig 4 caption
+  - field: anatomical_region
+    value: hindwing
+    anchor:
+      quote: We focus our observations on the early-stage patterning of the top (abwing) surface of cells forming cover scales on the hindwing
+      where: Results
+  - field: anatomical_region
+    value: wing
+    anchor:
+      quote: Scales of butterfly wings were imaged on a Zeiss Gemini Ultra 55 field-emission scanning electron microscope
+      where: Experimental Procedures
+  - field: scale_type
+    value: cover scales
+    anchor:
+      quote: We focus our observations on the early-stage patterning of the top (abwing) surface of cells forming cover scales on the hindwing
+      where: Results
+  - field: scale_type
+    value: wing scales
+    anchor:
+      quote: During the development of butterfly wing scales, ordered periodic cell membrane modulations occur at the upper surface of scale-forming cells
+      where: Summary
+  - field: scale_type
+    value: silver wing scale
+    anchor:
+      quote: Confocal fluorescence image of the upper surface of a silver wing scale on Agraulis vanillae
+      where: Fig 4 caption
+  - field: life_stage
+    value: pupal stage
+    anchor:
+      quote: Like any other lepidopteran, the Painted Lady butterfly ( Vanessa cardui L., 1758) grows scales that cover its wings during its pupal stage
+      where: Results
+  - field: pupal_stage_pct
+    value: 35.8%
+    anchor:
+      quote: show the transition from a relatively smooth surface to regular protoridges at 35.8% (B), 40.0% (C), and 41.0% (D) of pupal development.
+      where: Fig 1 caption
+  - field: pupal_stage_pct
+    value: 40.0%
+    anchor:
+      quote: show the transition from a relatively smooth surface to regular protoridges at 35.8% (B), 40.0% (C), and 41.0% (D) of pupal development.
+      where: Fig 1 caption
+  - field: pupal_stage_pct
+    value: 41.0%
+    anchor:
+      quote: show the transition from a relatively smooth surface to regular protoridges at 35.8% (B), 40.0% (C), and 41.0% (D) of pupal development.
+      where: Fig 1 caption
+  - field: pupal_stage_pct
+    value: 35%–45%
+    anchor:
+      quote: After approximately 35%–45% of development (roughly about 3.5–4.5 days) has passed, the flat cell membrane wrinkles
+      where: Results
+  - field: pupal_stage_pct
+    value: 39.6%
+    anchor:
+      quote: translucent dots indicate every profile measured at each time point ( n = 607, 639, 744, 821, and 911, respectively) for development times 39.6%, 40.0%, 40.3%, 40.6%, and 41.0%.
+      where: Fig 3 caption
+  - field: pupal_stage_pct
+    value: 40.3%
+    anchor:
+      quote: We note that the profile amplitudes for 40.3% development time and 40.7% development time are very similar
+      where: Results
+  - field: pupal_stage_pct
+    value: 40.7%
+    anchor:
+      quote: We note that the profile amplitudes for 40.3% development time and 40.7% development time are very similar
+      where: Results
+  - field: target_gene
+    value: actin bundles
+    anchor:
+      quote: Prior studies on various species have shown that the ridges form between large actin bundles that also run the length of the scale
+      where: Results
+  - field: imaging_modality
+    value: speckle-correlation reflection phase microscopy
+    anchor:
+      quote: With speckle-correlation reflection phase microscopy, we can then observe microscopic features with a lateral resolution of ~ 500 nm
+      where: Results
+  - field: imaging_modality
+    value: scanning electron microscopy
+    anchor:
+      quote: the ultrastructure of which we visualize via scanning electron microscopy (iii).
+      where: Fig 1 caption
+  - field: imaging_modality
+    value: Transmission electron microscopy
+    anchor:
+      quote: Transmission electron microscopy cross-section of developing scale of Colias eurytheme
+      where: Fig 4 caption
+  - field: imaging_modality
+    value: Confocal fluorescence
+    anchor:
+      quote: Confocal fluorescence image of the upper surface of a silver wing scale on Agraulis vanillae
+      where: Fig 4 caption
+  - field: view_orientation
+    value: surface height
+    anchor:
+      quote: Surface height maps, derived from in vivo quantitative phase data of wing scales on a single individual
+      where: Fig 1 caption
+  - field: view_orientation
+    value: upper surface
+    anchor:
+      quote: The scales feature prominent ridges that run along the length of the scale on the upper surface (iv).
+      where: Fig 1 caption
+  - field: view_orientation
+    value: cross-section
+    anchor:
+      quote: Transmission electron microscopy cross-section of developing scale of Colias eurytheme
+      where: Fig 4 caption
+  - field: hydration_and_prep
+    value: in vivo
+    anchor:
+      quote: We gathered continuous in vivo quantitative phase imaging data from a single V. cardui pupa throughout almost its entire pupation.
+      where: Experimental Procedures
+  - field: hydration_and_prep
+    value: thin gold layer
+    anchor:
+      quote: after being covered with a thin gold layer of around 5 nm thickness using a Cressington 108Auto sputter coater to prevent charging
+      where: Experimental Procedures
+
+default_context:
+  sex: not stated
+  pattern_element: not applicable
+  functional_architecture: not stated
+  genetic_element_type: not applicable
+  allele_or_zygosity: wild type
+  perturbation_modality: wild type
+  chemical_agent: none
+
+citations:
+  Ghiradella_1974:
+    label: Ghiradella 1974
+    text: Ghiradella H. (1974). Development of ultraviolet-reflecting butterfly scales — how to make an interference filter. J. Morphol. 142, 395–409.
+    year: '1974'
+    purpose:
+      - borrows_data
+      - attributes_finding
+    anchor:
+      quote: Transmission electron microscopy cross-section of developing scale of Colias eurytheme, adapted with permission from Ghiradella
+      where: Fig 4 caption
+  Dinwiddie_2014:
+    label: Dinwiddie et al. 2014
+    text: Dinwiddie A. et al. (2014). Dynamics of F-actin prefigure the structure of butterfly wing scales. Dev. Biol. 392, 404–418.
+    year: '2014'
+    purpose:
+      - borrows_data
+      - attributes_finding
+    anchor:
+      quote: Confocal fluorescence image of the upper surface of a silver wing scale on Agraulis vanillae, adapted with permission from Dinwiddie
+      where: Fig 4 caption
+
+units:
+  F1_IN_VIVO_PHASE:
+    where: Fig. 1B–G and Results
+    title: In vivo speckle-correlation reflection phase microscopy of nascent protoridge emergence in live Vanessa cardui pupal hindwing cover scales
+    context:
+      taxon: Vanessa cardui
+      anatomical_region: hindwing
+      scale_type: cover scales
+      life_stage: pupal stage
+      target_gene: none
+      imaging_modality: speckle-correlation reflection phase microscopy
+      view_orientation: surface height
+      hydration_and_prep: in vivo
+    groups:
+      stage_35_8:
+        label: Live V. cardui cover scale at 35.8% pupal development (smooth pre-buckling)
+        kind: natural
+        context:
+          pupal_stage_pct: 35.8%
+      stage_40_0:
+        label: Live V. cardui cover scale at 40.0% pupal development (emerging protoridges)
+        kind: natural
+        context:
+          pupal_stage_pct: 40.0%
+      stage_41_0:
+        label: Live V. cardui cover scale at 41.0% pupal development (established protoridges)
+        kind: natural
+        context:
+          pupal_stage_pct: 41.0%
+      onset_window:
+        label: Live V. cardui protoridge onset window (35%–45% pupal development)
+        kind: natural
+        context:
+          pupal_stage_pct: 35%–45%
+
+  F1_ADULT_SEM:
+    where: Fig. 1Aiii–iv and Experimental Procedures
+    title: Scanning electron microscopy of Vanessa cardui wing scale apical ridges and crossribs
+    context:
+      taxon: Vanessa cardui
+      anatomical_region: wing
+      scale_type: wing scales
+      life_stage: not stated
+      pupal_stage_pct: not applicable
+      target_gene: none
+      imaging_modality: scanning electron microscopy
+      view_orientation: upper surface
+      hydration_and_prep: thin gold layer
+    groups:
+      adult_scale_sem:
+        label: Vanessa cardui wing scale (Fig 1Aiii–iv SEM)
+        kind: natural
+        context: {}
+
+  F3_BUCKLING_TIMESERIES:
+    where: Fig. 3A–H and Results
+    title: Time-resolved in vivo protoridge buckling amplitude, unscaled ridge width, and Föppl–von Kármán critical strain scaling across 3,722 profiles in Vanessa cardui
+    context:
+      taxon: Vanessa cardui
+      anatomical_region: hindwing
+      scale_type: cover scales
+      life_stage: pupal stage
+      target_gene: none
+      imaging_modality: speckle-correlation reflection phase microscopy
+      view_orientation: surface height
+      hydration_and_prep: in vivo
+    groups:
+      t_39_6:
+        label: 39.6% pupal development (n = 607 profiles across 3 scales)
+        kind: natural
+        context:
+          pupal_stage_pct: 39.6%
+      t_40_0:
+        label: 40.0% pupal development (n = 639 profiles across 4 scales)
+        kind: natural
+        context:
+          pupal_stage_pct: 40.0%
+      t_40_3:
+        label: 40.3% pupal development (n = 744 profiles across 4 scales)
+        kind: natural
+        context:
+          pupal_stage_pct: 40.3%
+      t_40_7:
+        label: 40.7% pupal development (n = 821 profiles across 5 scales)
+        kind: natural
+        context:
+          pupal_stage_pct: 40.7%
+      t_41_0:
+        label: 41.0% pupal development (n = 911 profiles across 5 scales)
+        kind: natural
+        context:
+          pupal_stage_pct: 41.0%
+
+  F4_INTERSPECIES_SPACING:
+    where: Fig. 4A–C and Results
+    title: Interstitial F-actin bundle spacing L controls protoridge buckling versus flat-lamina suppression across Vanessa cardui, Colias eurytheme, and Agraulis vanillae
+    context:
+      life_stage: pupal stage
+      pupal_stage_pct: not stated
+      target_gene: actin bundles
+    groups:
+      vc_upper:
+        label: Vanessa cardui upper cover scale (buckled protoridges, L = 1.6 µm)
+        kind: natural
+        context:
+          taxon: Vanessa cardui
+          anatomical_region: hindwing
+          scale_type: cover scales
+          imaging_modality: speckle-correlation reflection phase microscopy
+          view_orientation: surface height
+          hydration_and_prep: in vivo
+      ce_upper_L1:
+        label: Colias eurytheme upper surface (buckled protoridges, wide actin gap L1 = 0.80 µm)
+        kind: other study
+        citation: Ghiradella_1974
+        context:
+          taxon: Colias eurytheme
+          anatomical_region: wing
+          scale_type: wing scales
+          imaging_modality: Transmission electron microscopy
+          view_orientation: cross-section
+          hydration_and_prep: not stated
+      ce_lower_L2:
+        label: Colias eurytheme lower lamina (flat, suppressed buckling, narrow actin gap L2 = 0.34 µm)
+        kind: other study
+        citation: Ghiradella_1974
+        context:
+          taxon: Colias eurytheme
+          anatomical_region: wing
+          scale_type: wing scales
+          imaging_modality: Transmission electron microscopy
+          view_orientation: cross-section
+          hydration_and_prep: not stated
+      av_wide_L1:
+        label: Agraulis vanillae silver scale alternating wide actin gap L1 = 0.91 µm (buckled protoridge)
+        kind: other study
+        citation: Dinwiddie_2014
+        context:
+          taxon: Agraulis vanillae
+          anatomical_region: wing
+          scale_type: silver wing scale
+          imaging_modality: Confocal fluorescence
+          view_orientation: upper surface
+          hydration_and_prep: not stated
+      av_narrow_L2:
+        label: Agraulis vanillae silver scale alternating narrow actin gap L2 = 0.36 µm (no ridge)
+        kind: other study
+        citation: Dinwiddie_2014
+        context:
+          taxon: Agraulis vanillae
+          anatomical_region: wing
+          scale_type: silver wing scale
+          imaging_modality: Confocal fluorescence
+          view_orientation: upper surface
+          hydration_and_prep: not stated
+
+evidence:
+  F1_onset_timing:
+    unit: F1_IN_VIVO_PHASE
+    measure: relative pupal development
+    method: Continuous live surgical-window speckle-correlation reflection phase microscopy of exposed V. cardui hindwing (lateral resolution ~500 nm, height sensitivity ~10 nm)
+    finding: Nascent protoridges emerge on the top (abwing) surface of V. cardui hindwing cover scales across 35%–45% pupal development (~3.5–4.5 days), transitioning from smooth (35.8%) to emerging (40.0%) to regular protoridges (41.0%)
+    groups:
+      - stage_35_8
+      - stage_40_0
+      - stage_41_0
+    n:
+      printed: a single individual (single V. cardui pupa)
+      counts: pupae
+      levels:
+        pupae: 1
+    values:
+      t_smooth:
+        printed: '35.8'
+        unit: '%'
+        kind: value
+        group: stage_35_8
+        spread: none
+      t_emerging:
+        printed: '40.0'
+        unit: '%'
+        kind: value
+        group: stage_40_0
+        spread: none
+      t_regular:
+        printed: '41.0'
+        unit: '%'
+        kind: value
+        group: stage_41_0
+        spread: none
+    anchor:
+      quote: show the transition from a relatively smooth surface to regular protoridges at 35.8% (B), 40.0% (C), and 41.0% (D) of pupal development.
+      where: Fig 1 caption
+
+  F1_protoridge_height_onset:
+    unit: F1_IN_VIVO_PHASE
+    measure: ridge buckling amplitude
+    method: 2D scikit-image and 1D MATLAB phase unwrapping of in vivo reflection phase microscopy height maps (height sensitivity ~10 nm)
+    finding: During 35%–45% of pupal development, the initially flat scale plasma membrane wrinkles into parallel protoridge undulations reaching ~100 nm in height over ~10 h
+    groups:
+      - onset_window
+    n:
+      printed: a single individual
+      counts: pupae
+      levels:
+        pupae: 1
+    values:
+      undulation_height:
+        printed: '~100'
+        unit: nm
+        kind: value
+        group: onset_window
+        spread: none
+    stated_direction:
+      direction: up
+      anchor:
+        quote: Profiles taken from centerlines in (B)–(D) show the increasing height of the nascent protoridges with increasing pupal development time.
+        where: Fig 1 caption
+    anchor:
+      quote: the flat cell membrane wrinkles to develop into parallel undulations of around 100 nm in height over a time span of about 10 h
+      where: Results
+
+  F1_adult_sem_ridges:
+    unit: F1_ADULT_SEM
+    measure: ridge spacing
+    method: LivingLit calibrated 2D-FFT and 10-transect spacing analysis on Fig 1Aiii (20 µm bar) and Fig 1Aiv (2 µm bar) Zeiss Gemini Ultra 55 SEM micrographs
+    finding: Calibrated 2D-FFT on adult-form V. cardui scale SEMs recovers longitudinal apical ridge spacing of 1.90 µm across the whole scale blade (Fig 1Aiii, SNR 19,284) and ~2.0 µm in the high-magnification inset (Fig 1Aiv)
+    groups:
+      - adult_scale_sem
+    anchor:
+      quote: The scales feature prominent ridges that run along the length of the scale on the upper surface (iv).
+      where: Fig 1 caption
+
+  F1_adult_sem_crossribs:
+    unit: F1_ADULT_SEM
+    measure: crossrib spacing
+    method: LivingLit calibrated orthogonal 2D-FFT on Fig 1Aiv high-magnification SEM micrograph (2 µm bar)
+    finding: Calibrated orthogonal 2D-FFT on Fig 1Aiv independently resolves transverse crossrib spacing of ~0.55 µm (SNR ~42) between parallel longitudinal ridges
+    groups:
+      - adult_scale_sem
+    anchor:
+      quote: The scales feature prominent ridges that run along the length of the scale on the upper surface (iv).
+      where: Fig 1 caption
+
+  F3_buckling_amplitude_timeseries:
+    unit: F3_BUCKLING_TIMESERIES
+    measure: ridge buckling amplitude
+    method: Automated protoridge segmentation and width-normalized height profiling (rescaled to L = 1.6 µm) across 3–5 scales of one V. cardui pupa (Fig 3A–F; exact mean ± SD peaks from Zenodo meanProfileDataExperiment.mat)
+    finding: Across 3,722 filtered in vivo protoridge profiles (after excluding 191 phase-jump and 161 low-edge profiles), width-normalized mean profile peak height increases monotonically from 23.2 ± 20.1 nm (39.6%, n=607) to 32.4 ± 21.3 nm (40.0%, n=639), 40.3 ± 29.5 nm (40.3%, n=744), 41.4 ± 30.1 nm (40.7%, n=821), and 62.4 ± 32.1 nm (41.0%, n=911)
+    groups:
+      - t_39_6
+      - t_40_0
+      - t_40_3
+      - t_40_7
+      - t_41_0
+    n:
+      printed: n = 607, 639, 744, 821, and 911 profiles (3,722 total across 3–5 scales of 1 pupa)
+      per_group:
+        t_39_6: '607'
+        t_40_0: '639'
+        t_40_3: '744'
+        t_40_7: '821'
+        t_41_0: '911'
+      counts: height profiles
+      levels:
+        pupae: 1
+        scales: 5
+        profiles: 3722
+    values:
+      amp_39_6:
+        printed: 23.2 ± 20.1
+        unit: nm
+        kind: mean
+        group: t_39_6
+        spread: SD
+      amp_40_0:
+        printed: 32.4 ± 21.3
+        unit: nm
+        kind: mean
+        group: t_40_0
+        spread: SD
+      amp_40_3:
+        printed: 40.3 ± 29.5
+        unit: nm
+        kind: mean
+        group: t_40_3
+        spread: SD
+      amp_40_7:
+        printed: 41.4 ± 30.1
+        unit: nm
+        kind: mean
+        group: t_40_7
+        spread: SD
+      amp_41_0:
+        printed: 62.4 ± 32.1
+        unit: nm
+        kind: mean
+        group: t_41_0
+        spread: SD
+    anchor:
+      quote: To facilitate comparison across 3,722 height profiles, we examine the scaled maximum amplitude, w 0 , of each profile measurement and find a gradual increase in protoridge height in vivo
+      where: Results
+    note: Mean ± SD peak amplitudes of the rescaled mean height profiles plotted in Fig 3A–E (exact values from Zenodo associated/plate_mechanics_code.zip meanProfileDataExperiment.mat multiplied by L = 1.6 µm); Fig 3F plots per-profile maximum w_0 distributions (slightly higher means due to per-profile peak alignment).
+
+  F3_amplitude_progression:
+    unit: F3_BUCKLING_TIMESERIES
+    measure: ridge buckling amplitude
+    method: Pairwise comparison of width-normalized in vivo mean protoridge buckling peak height between 41.0% and 39.6% pupal development (Fig 3A vs 3E, meanProfileDataExperiment.mat)
+    finding: Protoridge buckling mean profile peak amplitude increases 2.69-fold from 39.6% (23.2 ± 20.1 nm, n = 607) to 41.0% (62.4 ± 32.1 nm, n = 911) pupal development
+    compares:
+      - t_41_0
+      - t_39_6
+    test_of: pair
+    n:
+      printed: n = 911 (41.0%) vs n = 607 (39.6%) profiles
+      per_group:
+        t_41_0: '911'
+        t_39_6: '607'
+      counts: height profiles
+      levels:
+        pupae: 1
+        profiles: 1518
+    values:
+      amp_late:
+        printed: 62.4 ± 32.1
+        unit: nm
+        kind: mean
+        group: t_41_0
+        spread: SD
+      amp_early:
+        printed: 23.2 ± 20.1
+        unit: nm
+        kind: mean
+        group: t_39_6
+        spread: SD
+    stated_direction:
+      direction: up
+      anchor:
+        quote: To facilitate comparison across 3,722 height profiles, we examine the scaled maximum amplitude, w 0 , of each profile measurement and find a gradual increase in protoridge height in vivo
+        where: Results
+    anchor:
+      quote: To facilitate comparison across 3,722 height profiles, we examine the scaled maximum amplitude, w 0 , of each profile measurement and find a gradual increase in protoridge height in vivo
+      where: Results
+
+  F3_protoridge_width:
+    unit: F3_BUCKLING_TIMESERIES
+    measure: ridge spacing
+    method: Unscaled trough-to-trough protoridge width L measured across 3,722 live profiles (Fig 3G) and reference normalization spacing L = 1.6 µm used for FvK modeling (Fig 3H)
+    finding: Mean protoridge width L remains approximately constant around the reference spacing of 1.6 µm (medians ~1.36–1.55 µm across 39.6%–41.0% development) without systematic temporal drift
+    groups:
+      - t_39_6
+      - t_40_0
+      - t_40_3
+      - t_40_7
+      - t_41_0
+    n:
+      printed: n = 607, 639, 744, 821, and 911 profiles (3,722 total)
+      per_group:
+        t_39_6: '607'
+        t_40_0: '639'
+        t_40_3: '744'
+        t_40_7: '821'
+        t_41_0: '911'
+      counts: height profiles
+      levels:
+        pupae: 1
+        scales: 5
+        profiles: 3722
+    values:
+      ref_width:
+        printed: '1.6'
+        unit: µm
+        kind: value
+        group: t_41_0
+        spread: none
+    stated_direction:
+      direction: none
+      anchor:
+        quote: During the observed developmental time span, the mean protoridge widths appear to remain fairly constant and do not vary systematically as the butterfly develops
+        where: Results
+    anchor:
+      quote: To compare these in vivo profiles to each other, we normalize their width to a reference length L = 1.6 μm
+      where: Results
+
+  D1_vc_protoridge_density:
+    unit: F3_BUCKLING_TIMESERIES
+    measure: ridge density
+    method: Reciprocal spatial frequency rho = 1/d derived from reference V. cardui protoridge spacing L = 1.6 µm
+    finding: Reference V. cardui protoridge spacing L = 1.6 µm corresponds to a linear ridge density of 0.625 ridges/µm (6.25 × 10^5 m^-1)
+    groups:
+      - t_41_0
+    values:
+      vc_rho:
+        printed: '6.25e5'
+        unit: m^-1
+        kind: value
+        group: t_41_0
+        spread: none
+    anchor:
+      quote: To compare these in vivo profiles to each other, we normalize their width to a reference length L = 1.6 μm
+      where: Results
+    scaling:
+      independent_measure: ridge spacing
+      direction: down
+      anchor:
+        quote: To compare these in vivo profiles to each other, we normalize their width to a reference length L = 1.6 μm
+        where: Results
+
+  F3_fvk_critical_strain:
+    unit: F3_BUCKLING_TIMESERIES
+    measure: critical buckling strain
+    method: Weakly nonlinear Föppl–von Kármán clamped plate theory (Equation 4, g_c = pi^2 (h/L)^2 / (3 (1 - nu^2))) with h = 20 nm, L = 1.6 µm, nu = 0.5, p = 10 Pa
+    finding: Clamped FvK plate theory yields critical compressive buckling strain g_c = 0.000685 (0.0685%) for V. cardui (L = 1.6 µm, h = 20 nm, nu = 0.5), scaling inversely as L^-2 and bounding non-decreasing cuticle Young's modulus at Y_min = 3.5 × 10^6 Pa
+    groups:
+      - t_41_0
+    values:
+      vc_gc:
+        printed: '0.000685'
+        unit: dimensionless
+        kind: value
+        group: t_41_0
+        spread: none
+    anchor:
+      quote: biologically realistic values of Young’s modulus Y for soft cuticle (10 4 − 10 8 Pa), 43 pressure p = 10 Pa, width L = 1.6 μm
+      where: Results
+    scaling:
+      independent_measure: actin bundle spacing
+      direction: down
+      anchor:
+        quote: reveals that the buckling transition occurs at a critical growth strain, g c ∝ L − 2 ( Equation 4 ).
+        where: Results
+    note: Assuming non-decreasing scale stiffness across 39.6%–41.0% development, the Fig 3H isocontour phase space establishes a lower bound Y_min = 3.5 × 10^6 Pa on soft cuticle Young's modulus.
+
+  F4_actin_bundle_spacing:
+    unit: F4_INTERSPECIES_SPACING
+    measure: actin bundle spacing
+    method: Inner-edge interstitial actin bundle spacing measured from Fig 4A TEM (Colias eurytheme, Ghiradella 1974), Fig 4B confocal (Agraulis vanillae, Dinwiddie et al. 2014, mean of 4 measurements), and V. cardui phase microscopy (Fig 3, 4C; exact values from Zenodo butterfly_scale_mechanics.nb)
+    finding: Ridge-forming interstitial actin bundle gaps (V. cardui L = 1.6 µm; C. eurytheme upper L1 = 0.80 µm; A. vanillae wide L1 = 0.91 µm) are more than double the narrow ridge-suppressed gaps (C. eurytheme lower lamina L2 = 0.34 µm; A. vanillae narrow L2 = 0.36 µm)
+    groups:
+      - vc_upper
+      - ce_upper_L1
+      - ce_lower_L2
+      - av_wide_L1
+      - av_narrow_L2
+    values:
+      vc_L:
+        printed: '1.6'
+        unit: µm
+        kind: value
+        group: vc_upper
+        spread: none
+      ce_L1:
+        printed: '0.80'
+        unit: µm
+        kind: value
+        group: ce_upper_L1
+        spread: none
+      ce_L2:
+        printed: '0.34'
+        unit: µm
+        kind: value
+        group: ce_lower_L2
+        spread: none
+      av_L1:
+        printed: '0.91'
+        unit: µm
+        kind: value
+        group: av_wide_L1
+        spread: none
+      av_L2:
+        printed: '0.36'
+        unit: µm
+        kind: value
+        group: av_narrow_L2
+        spread: none
+    anchor:
+      quote: Regardless of the strategy used, a larger spacing ( L 1 ) leads to ridges, while a smaller spacing ( L 2 ) does not yield appreciable ridges.
+      where: Results
+    note: Exact dashed-line coordinates plotted in Fig 4C and coded in Zenodo associated/plate_mechanics_code.zip (butterfly_scale_mechanics.nb); note that calibrated 2D-FFT on Fig 4B directly recovers the alternating blue protoridge repeat period of 2.21 µm (SNR 106).
+
+  F4_colias_critical_strain:
+    unit: F4_INTERSPECIES_SPACING
+    measure: critical buckling strain
+    method: Föppl–von Kármán Equation 4 evaluated at Colias eurytheme upper (L1 = 0.80 µm) versus lower (L2 = 0.34 µm) actin bundle interstitial spacings (h = 20 nm, nu = 0.5)
+    finding: Reducing interstitial actin bundle spacing from upper-surface L1 = 0.80 µm (g_c = 0.00274) to lower-lamina L2 = 0.34 µm (g_c = 0.0152) raises critical buckling strain 5.5-fold, suppressing protoridge buckling on the flat lower lamina
+    groups:
+      - ce_upper_L1
+      - ce_lower_L2
+    values:
+      ce_upper_gc:
+        printed: '0.00274'
+        unit: dimensionless
+        kind: value
+        group: ce_upper_L1
+        spread: none
+      ce_lower_gc:
+        printed: '0.0152'
+        unit: dimensionless
+        kind: value
+        group: ce_lower_L2
+        spread: none
+    anchor:
+      quote: Thus, smaller interstitial regions require substantially larger area growth to produce a membrane buckle that forms a protoridge.
+      where: Results
+
+claims:
+  C1_in_vivo_protoridge_emergence:
+    kind: stated
+    quote: After approximately 35%–45% of development (roughly about 3.5–4.5 days) has passed, the flat cell membrane wrinkles to develop into parallel undulations of around 100 nm in height
+    where: Results
+    scope: Live Vanessa cardui pupal hindwing cover scales (single pupa)
+    direction: Flat membrane transitions upward to ~100 nm parallel protoridges over ~10 h
+    asserts_direction: up
+    rests_on:
+      - F1_onset_timing
+      - F1_protoridge_height_onset
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Directly observed via in vivo SRPM height maps and centerline profiles in Fig 1B–G (N = 1 pupa explicitly stated).
+
+  C2_gradual_amplitude_increase:
+    kind: stated
+    quote: To facilitate comparison across 3,722 height profiles, we examine the scaled maximum amplitude, w 0 , of each profile measurement and find a gradual increase in protoridge height in vivo
+    where: Results
+    scope: Live Vanessa cardui hindwing cover scales across 39.6%–41.0% pupal development (3–5 scales, 1 pupa)
+    direction: Monotonic increase in width-normalized protoridge buckling amplitude across 5 developmental time points
+    asserts_direction: up
+    rests_on:
+      - F3_buckling_amplitude_timeseries
+      - F3_amplitude_progression
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: 3,722 profiles from 3–5 scales of a single pupa (pseudoreplicated within 1 individual, explicitly disclosed in text); 40.3% and 40.7% plateau transiently before jumping to 62.4 nm at 41.0%.
+
+  C3_constant_protoridge_width:
+    kind: stated
+    quote: During the observed developmental time span, the mean protoridge widths appear to remain fairly constant and do not vary systematically as the butterfly develops
+    where: Results
+    scope: Live Vanessa cardui hindwing cover scales across 39.6%–41.0% pupal development
+    direction: No systematic drift in unscaled protoridge width L (~1.4–1.6 µm)
+    asserts_direction: none
+    rests_on:
+      - F3_protoridge_width
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Appropriately hedged ("appear to remain fairly constant") and confirmed by Fig 3G unscaled width violins across all 5 time points.
+
+  C4_fvk_model_profile_agreement:
+    kind: stated
+    quote: we find that the theoretical predictions agree well with the experimentally observed profiles in amplitude as well as shape
+    where: Results
+    scope: Weakly nonlinear clamped FvK plate model versus mean in vivo V. cardui protoridge profiles (Fig 3A–E)
+    direction: Quantitative match between theoretical buckling profiles and live measured mean profiles
+    rests_on:
+      - F3_buckling_amplitude_timeseries
+      - F3_fvk_critical_strain
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Dashed model curves closely overlay the solid black mean profiles across all 5 time points in Fig 3A–E, though wide per-profile biological SD (~20–32 nm) and fitted (Y, g) degeneracy remain.
+
+  C5_cuticle_stiffness_lower_bound:
+    kind: stated
+    quote: given the increase of cuticle material during scale growth), we find a lower bound of Y min = 3.5 × 10 6 Pa.
+    where: Results
+    scope: Developing Vanessa cardui pupal scale membrane/soft cuticle at 39.6%–41.0% development
+    direction: Model isocontours constrain Young's modulus Y >= 3.5 MPa under non-decreasing stiffness
+    rests_on:
+      - F3_buckling_amplitude_timeseries
+      - F3_fvk_critical_strain
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Model-inferred bound conditional on assumed parameters (p = 10 Pa, h = 20 nm, nu = 0.5, L = 1.6 µm) and monotonic stiffness; not directly measured by AFM/nanoindentation.
+
+  C6_critical_strain_inverse_square_scaling:
+    kind: stated
+    quote: reveals that the buckling transition occurs at a critical growth strain, g c ∝ L − 2 ( Equation 4 ).
+    where: Results
+    scope: Clamped isotropic linear-elastic Föppl–von Kármán thin plate confined between parallel actin bundles
+    direction: Critical buckling strain g_c decreases inversely with the square of actin bundle spacing L
+    asserts_direction: down
+    rests_on:
+      - F3_fvk_critical_strain
+      - F4_colias_critical_strain
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Exact analytical result of clamped Euler/FvK buckling (Equation 4), symbolically verified via SymPy against fvk_critical_buckling_strain.
+
+  C7_small_bundle_spacing_suppresses_ridges:
+    kind: stated
+    quote: Regardless of the strategy used, a larger spacing ( L 1 ) leads to ridges, while a smaller spacing ( L 2 ) does not yield appreciable ridges.
+    where: Results
+    scope: Comparative lower-lamina flatness (Colias eurytheme) and alternating ridge pattern (Agraulis vanillae)
+    direction: Narrower interstitial actin spacing L2 prevents membrane buckling while wider L1 permits protoridges
+    rests_on:
+      - F4_actin_bundle_spacing
+      - F4_colias_critical_strain
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Comparative re-analysis of published micrographs (Ghiradella 1974; Dinwiddie et al. 2014) provides a compelling mechanistic rationale; direct experimental manipulation of bundle spacing L in vivo remains untested.

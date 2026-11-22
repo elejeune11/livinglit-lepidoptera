@@ -1,0 +1,95 @@
+record: 2020_Stavenga
+vocabulary_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_moths
+edits: []
+mappings:
+  - field: life_stage
+    stated: adults
+    terms:
+      - life_stage:adult
+  - field: anatomical_region
+    stated: dorsal forewings
+    terms:
+      - anatomical_region:dorsal_forewing
+  - field: anatomical_region
+    stated: dorsal hindwings
+    terms:
+      - anatomical_region:dorsal_hindwing
+  - field: anatomical_region
+    stated: forewings
+    terms:
+      - anatomical_region:forewing
+  - field: scale_type
+    stated: wing scales
+    terms:
+      - scale_type:wing_scale
+  - field: scale_type
+    stated: forewing scale
+    terms:
+      - scale_type:wing_scale
+  - field: functional_architecture
+    stated: melanin-pigmented
+    terms:
+      - functional_architecture:melanin_pigmentary
+  - field: functional_architecture
+    stated: ridges
+    terms:
+      - functional_architecture:structural_reflector
+  - field: functional_architecture
+    stated: melanin-like pigment
+    terms:
+      - functional_architecture:melanin_pigmentary
+  - field: functional_architecture
+    stated: thin film
+    terms:
+      - functional_architecture:lower_lamina_thin_film
+  - field: functional_architecture
+    stated: melanin
+    terms:
+      - functional_architecture:melanin_pigmentary
+  - field: functional_architecture
+    stated: melanin pigmentation
+    terms:
+      - functional_architecture:melanin_pigmentary
+  - field: imaging_modality
+    stated: bifurcated reflection probe
+    terms:
+      - imaging_modality:microspectrophotometry
+  - field: imaging_modality
+    stated: microspectrophotometer
+    terms:
+      - imaging_modality:microspectrophotometry
+  - field: view_orientation
+    stated: upper sides
+    terms:
+      - view_orientation:whole_mount
+  - field: view_orientation
+    stated: abwing (upper) side
+    terms:
+      - view_orientation:top_down_apical
+  - field: view_orientation
+    stated: normally incident
+    terms:
+      - view_orientation:planar_apical
+  - field: hydration_and_prep
+    stated: pinned specimen
+    terms:
+      - hydration_and_prep:dry_native
+  - field: hydration_and_prep
+    stated: sputter-coating with gold
+    terms:
+      - hydration_and_prep:vacuum_sputter_coated
+  - field: hydration_and_prep
+    stated: immersed in immersion oil
+    terms:
+      - hydration_and_prep:dry_native
+  - field: hydration_and_prep
+    stated: glued to a glass micropipette
+    terms:
+      - hydration_and_prep:dry_native
+  - field: measure
+    stated: transmittance
+    terms:
+      - measure:transmittance

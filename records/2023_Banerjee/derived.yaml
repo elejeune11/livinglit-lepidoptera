@@ -1,0 +1,94 @@
+record: 2023_Banerjee
+formula_library_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_genetics
+derived:
+  wnta_crispant_penetrance:
+    item: E9_wnta_crispant_defects
+    group: wnta_crispant_bands
+    formula: pen = n_phenotype / n_emerged
+    anchor:
+      quote: A total of 28 individuals with wntA-dependent defects were observed.
+      where: Fig. 5 caption
+    library:
+      formula: crispr_penetrance
+      vars:
+        pen: pen
+        n_phenotype: n_phenotype
+        n_emerged: n_emerged
+    inputs:
+      n_phenotype:
+        value: E9_wnta_crispant_defects.values.n_wnta_defects
+        kind: constant
+      n_emerged:
+        not_stated: true
+        note: Total emerged adult denominator for WntA CRISPR is reported only in Supplementary Table S2 (PDF not in local folder).
+    note: SymPy formula check of WntA G0 mosaic penetrance; numerator anchored (n=28), denominator absent from main JATS XML (Table S2).
+
+  fz4_eyespot_duplication_penetrance:
+    item: E12_fz4_eyespot_duplication
+    group: fz4_crispant_eyespot_dup
+    formula: pen = n_phenotype / n_emerged
+    anchor:
+      quote: A total of 18 individuals were observed with two eyespots in the same sector and 5 individuals with wing margin defects.
+      where: Fig. 8 caption
+    library:
+      formula: crispr_penetrance
+      vars:
+        pen: pen
+        n_phenotype: n_phenotype
+        n_emerged: n_emerged
+    inputs:
+      n_phenotype:
+        value: E12_fz4_eyespot_duplication.values.n_double_eyespot
+        kind: constant
+      n_emerged:
+        not_stated: true
+        note: Total emerged adult denominator for frizzled4 CRISPR is reported only in Supplementary Table S2 (PDF not in local folder).
+    note: SymPy formula check of frizzled4 G0 double-eyespot penetrance; numerator anchored (n=18), denominator absent from main JATS XML (Table S2).
+
+  crispr_embryo_hatching_rate:
+    item: E9_wnta_crispant_defects
+    group: wnta_crispant_bands
+    formula: r_hatch = n_hatched / n_injected
+    anchor:
+      quote: arm, WntA, Wnt7, and fz4 embryonic CRISPRs were carried out on the basis of the protocol described in (45, 70) (table S2).
+      where: Materials and Methods
+    library:
+      formula: crispr_hatching_rate
+      vars:
+        r_hatch: r_hatch
+        n_hatched: n_hatched
+        n_injected: n_injected
+    inputs:
+      n_hatched:
+        not_stated: true
+        note: Hatched larval counts for arm, WntA, Wnt7, and fz4 cohorts reside only in Supplementary Table S2 (PDF not in local folder).
+      n_injected:
+        not_stated: true
+        note: Injected embryo counts for arm, WntA, Wnt7, and fz4 cohorts reside only in Supplementary Table S2 (PDF not in local folder).
+    note: SymPy formula check for G0 CRISPR embryonic hatching rate; cohort denominators live in unharvested Table S2.
+
+  crispr_adult_emergence_rate:
+    item: E12_fz4_eyespot_duplication
+    group: fz4_crispant_eyespot_dup
+    formula: r_emerge = n_emerged / n_hatched
+    anchor:
+      quote: arm, WntA, Wnt7, and fz4 embryonic CRISPRs were carried out on the basis of the protocol described in (45, 70) (table S2).
+      where: Materials and Methods
+    library:
+      formula: crispr_emergence_rate
+      vars:
+        r_emerge: r_emerge
+        n_emerged: n_emerged
+        n_hatched: n_hatched
+    inputs:
+      n_emerged:
+        not_stated: true
+        note: Emerged adult counts for arm, WntA, Wnt7, and fz4 cohorts reside only in Supplementary Table S2 (PDF not in local folder).
+      n_hatched:
+        not_stated: true
+        note: Hatched larval counts for arm, WntA, Wnt7, and fz4 cohorts reside only in Supplementary Table S2 (PDF not in local folder).
+    note: SymPy formula check for G0 CRISPR adult emergence rate; cohort denominators live in unharvested Table S2.
+proposals: []

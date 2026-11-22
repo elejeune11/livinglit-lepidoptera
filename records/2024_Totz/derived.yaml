@@ -1,0 +1,148 @@
+record: 2024_Totz
+formula_library_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_mechanics
+derived:
+  vc_critical_buckling_strain:
+    item: F3_fvk_critical_strain
+    group: t_41_0
+    formula: g_c = pi**2*(h/L)**2/(3*(1 - nu**2))
+    anchor:
+      quote: Here, g c is the critical growth strain for the pressure differential between cell inside and outside being p = 0 , which is given by (Equation 4)
+      where: Results
+    library:
+      formula: fvk_critical_buckling_strain
+      vars:
+        g_c: g_c
+        h: h
+        L: L
+        nu: nu
+    inputs:
+      h:
+        printed: '20'
+        unit: nm
+        kind: constant
+        anchor:
+          quote: Poisson ratio ν = 0.5 , and thickness h = 20 nm
+          where: Results
+      L:
+        value: F3_protoridge_width.values.ref_width
+        kind: constant
+      nu:
+        printed: '0.5'
+        unit: dimensionless
+        kind: constant
+        anchor:
+          quote: Poisson ratio ν = 0.5 , and thickness h = 20 nm
+          where: Results
+    output: F3_fvk_critical_strain.values.vc_gc
+    aggregation: of means
+    note: Clamped FvK critical buckling strain g_c = 0.000685 (0.0685%) for V. cardui scale plasma membrane (h = 20 nm, L = 1.6 µm, nu = 0.5).
+
+  colias_upper_critical_buckling_strain:
+    item: F4_colias_critical_strain
+    group: ce_upper_L1
+    formula: g_c = pi**2*(h/L)**2/(3*(1 - nu**2))
+    anchor:
+      quote: reveals that the buckling transition occurs at a critical growth strain, g c ∝ L − 2 ( Equation 4 ).
+      where: Results
+    library:
+      formula: fvk_critical_buckling_strain
+      vars:
+        g_c: g_c
+        h: h
+        L: L
+        nu: nu
+    inputs:
+      h:
+        printed: '20'
+        unit: nm
+        kind: constant
+        anchor:
+          quote: "Model parameters: p = 10 Pa, ν = 0.5 , h = 20 nm, and Y = 1 MPa."
+          where: Fig 4 caption
+      L:
+        value: F4_actin_bundle_spacing.values.ce_L1
+        kind: constant
+      nu:
+        printed: '0.5'
+        unit: dimensionless
+        kind: constant
+        anchor:
+          quote: "Model parameters: p = 10 Pa, ν = 0.5 , h = 20 nm, and Y = 1 MPa."
+          where: Fig 4 caption
+    output: F4_colias_critical_strain.values.ce_upper_gc
+    aggregation: of means
+    note: Upper-lamina Colias eurytheme actin spacing L1 = 0.80 µm yields g_c = 0.00274 (0.274%), 4x V. cardui.
+
+  colias_lower_critical_buckling_strain:
+    item: F4_colias_critical_strain
+    group: ce_lower_L2
+    formula: g_c = pi**2*(h/L)**2/(3*(1 - nu**2))
+    anchor:
+      quote: reveals that the buckling transition occurs at a critical growth strain, g c ∝ L − 2 ( Equation 4 ).
+      where: Results
+    library:
+      formula: fvk_critical_buckling_strain
+      vars:
+        g_c: g_c
+        h: h
+        L: L
+        nu: nu
+    inputs:
+      h:
+        printed: '20'
+        unit: nm
+        kind: constant
+        anchor:
+          quote: "Model parameters: p = 10 Pa, ν = 0.5 , h = 20 nm, and Y = 1 MPa."
+          where: Fig 4 caption
+      L:
+        value: F4_actin_bundle_spacing.values.ce_L2
+        kind: constant
+      nu:
+        printed: '0.5'
+        unit: dimensionless
+        kind: constant
+        anchor:
+          quote: "Model parameters: p = 10 Pa, ν = 0.5 , h = 20 nm, and Y = 1 MPa."
+          where: Fig 4 caption
+    output: F4_colias_critical_strain.values.ce_lower_gc
+    aggregation: of means
+    note: Narrow lower-lamina Colias eurytheme actin spacing L2 = 0.34 µm raises g_c to 0.0152 (1.52%), 5.5x higher than upper L1, suppressing buckling.
+
+  vc_protoridge_density:
+    item: D1_vc_protoridge_density
+    group: t_41_0
+    formula: rho = 1/d
+    anchor:
+      quote: To compare these in vivo profiles to each other, we normalize their width to a reference length L = 1.6 μm
+      where: Results
+    library:
+      formula: ridge_density_from_spacing
+      vars:
+        rho: rho
+        d: d
+    inputs:
+      d:
+        value: F3_protoridge_width.values.ref_width
+        kind: constant
+    output: D1_vc_protoridge_density.values.vc_rho
+    aggregation: of means
+    note: Reciprocal spatial frequency rho = 1 / 1.6 µm = 0.625 ridges/µm (6.25e5 m^-1) for V. cardui protoridges.
+
+assumptions:
+  fvk_plate_buckling:
+    model: fvk_critical_buckling_strain
+    assumptions:
+      clamped boundary conditions at parallel actin bundles:
+        reported:
+          bc: we therefore impose clamped boundary conditions
+      zero transmembrane pressure p = 0:
+        reported:
+          p_zero: critical growth strain for the pressure differential between cell inside and outside being p = 0
+      isotropic linear elastic thin plate:
+        reported:
+          isotropy: Here, we consider the basic case where the membrane growth is locally isotropic
+proposals: []

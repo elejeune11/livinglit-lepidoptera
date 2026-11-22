@@ -63,27 +63,67 @@ window.LL = window.LL || {};
     return termId;
   }
 
+  const GRN_LABEL_MAP = {
+    "target_gene:doublesex::DsxF": "DsxF (female)",
+    "target_gene:doublesex::DsxM": "DsxM (male)",
+    "target_gene:bric_a_brac": "Bric-a-brac (Bab)",
+    "target_gene:doublesex": "Doublesex (Dsx)",
+    "target_gene:eip75b": "Eip75B (54 pks)",
+    "target_gene:multiple_wing_hairs": "Mwh (52 pks)",
+    "target_gene:drak": "Drak (7 pks)",
+    "target_gene:obstructor_family": "Obstructor B/C/D",
+    "target_gene:ivory_lncrna": "ivory (lncRNA)",
+    "target_gene:armadillo_beta_catenin": "Armadillo / β-cat",
+    "target_gene:wnta": "WntA",
+    "target_gene:wingless_wnt1": "Wnt1 / Wingless",
+    "target_gene:wnt6": "Wnt6",
+    "target_gene:wnt10": "Wnt10",
+    "target_gene:frizzled4": "frizzled4 (fz4)",
+    "target_gene:frizzled2": "frizzled2 (fz2)",
+    "target_gene:optix": "Optix",
+    "target_gene:cortex": "cortex (null test)",
+    "target_gene:arp2_3_complex": "Arp2/3 complex",
+    "target_gene:f_actin_cytoskeleton": "F-actin meshwork",
+    "chemical_agent:ck_666": "CK-666 (inhibitor)",
+    "scale_type:uvi_cover_scale": "UVI cover scale",
+    "scale_type:spatulate_scale": "Spatulate scale",
+    "scale_type:spatulate_cover_scale": "Spatulate scale",
+    "scale_type:wing_scale": "Scale PCP orient.",
+    "pattern_element:eyespot_focus": "Eyespot focus",
+    "pattern_element:marginal_band": "Wing margin",
+    "pattern_element:central_symmetry_band": "CSS / BSS bands",
+    "functional_architecture:ridge_lamellar_multilayer": "Obstructor B/C/D",
+    "functional_architecture:melanin_pigmentary": "Melanic scales",
+    "functional_architecture:ommochrome": "3-OHK / Ommochrome",
+    "functional_architecture:interridge_honeycomb_lattice": "Honeycomb lattice",
+    "measure:honeycomb_lattice_height": "Honeycomb height",
+    "genetic_element_type:promoter": "ivory 5′ promoter",
+  };
+
   function grnShortLabel(termId, rawLabel, nodeKey) {
-    if (nodeKey === "target_gene:doublesex::DsxF") return "DsxF (female)";
-    if (nodeKey === "target_gene:doublesex::DsxM") return "DsxM (male)";
+    if (GRN_LABEL_MAP[nodeKey]) return GRN_LABEL_MAP[nodeKey];
+    if (GRN_LABEL_MAP[termId]) return GRN_LABEL_MAP[termId];
     const lbl = String(rawLabel || termId || "");
-    if (lbl.includes("Bric-a-brac")) return "Bric-a-brac (Bab)";
-    if (lbl.includes("Doublesex")) return "Doublesex (Dsx)";
-    if (lbl.includes("Eip75B")) return "Eip75B (54 pks)";
-    if (lbl.includes("Multiple wing hairs")) return "Mwh (52 pks)";
-    if (lbl.includes("Drak")) return "Drak (7 pks)";
-    if (lbl.includes("Obstructor")) return "Obstructor B/C/D";
-    if (lbl.includes("UVI cover scale")) return "UVI cover scale";
-    if (lbl.includes("Spatulate")) return "Spatulate scale";
-    if (lbl.includes("ivory")) return "ivory (lncRNA)";
     return lbl.length > 22 ? lbl.slice(0, 20) + "…" : lbl;
+  }
+
+  function isGrnPhenotypeNode(n) {
+    const t = String(n.termId || "");
+    return (
+      ["scale_type", "phenotype", "pattern_element", "architecture", "measure", "cre"].includes(n.nodeType) ||
+      t.startsWith("scale_type:") ||
+      t.startsWith("pattern_element:") ||
+      t.startsWith("functional_architecture:") ||
+      t.startsWith("measure:") ||
+      t.startsWith("genetic_element_type:")
+    );
   }
 
   function buildGrnLayout(relations) {
     const nodeMap = new Map();
     const edges = [];
 
-    const ensureNode = (key, termId, rawLabel, ntype) => {
+    const ensureNode = (key, termId, rawLabel, ntype, paper) => {
       if (!nodeMap.has(key)) {
         nodeMap.set(key, {
           key,
@@ -93,15 +133,18 @@ window.LL = window.LL || {};
           nodeType: ntype || "gene",
           inDeg: 0,
           outDeg: 0,
+          papers: new Set(),
         });
       }
-      return nodeMap.get(key);
+      const nd = nodeMap.get(key);
+      if (paper) nd.papers.add(paper);
+      return nd;
     };
 
     // Pass 1: register all source nodes first so isoform splits exist
     relations.forEach((r) => {
       const sk = grnNodeKey(r.source, r.source_label, true);
-      ensureNode(sk, r.source, r.source_label, r.source_type);
+      ensureNode(sk, r.source, r.source_label, r.source_type, r.paper);
     });
 
     // Pass 2: link targets (route Bab -> Dsx locus feedback to DsxF if DsxF exists)
@@ -111,8 +154,8 @@ window.LL = window.LL || {};
       if (tk === "target_gene:doublesex" && nodeMap.has("target_gene:doublesex::DsxF")) {
         tk = "target_gene:doublesex::DsxF";
       }
-      const sn = ensureNode(sk, r.source, r.source_label, r.source_type);
-      const tn = ensureNode(tk, r.target, r.target_label, r.target_type);
+      const sn = ensureNode(sk, r.source, r.source_label, r.source_type, r.paper);
+      const tn = ensureNode(tk, r.target, r.target_label, r.target_type, r.paper);
       if (sk !== tk) {
         sn.outDeg++;
         tn.inDeg++;
@@ -120,10 +163,10 @@ window.LL = window.LL || {};
       edges.push({ rel: r, srcKey: sk, tgtKey: tk, selfLoop: sk === tk });
     });
 
-    // Assign columns: 0 = upstream regulators, 1 = central hub TFs, 2 = downstream targets & morphologies
+    // Assign columns: 0 = upstream regulators, 1 = central integrator hubs, 2 = downstream targets & phenotypes
     const cols = [[], [], []];
     nodeMap.forEach((n) => {
-      const isMorph = n.nodeType === "scale_type" || n.nodeType === "phenotype" || String(n.termId).startsWith("scale_type:");
+      const isMorph = isGrnPhenotypeNode(n);
       if (isMorph || (n.outDeg === 0 && n.inDeg > 0)) {
         n.col = 2;
       } else if (n.inDeg > 0 && n.outDeg > 0 && !String(n.key).includes("::Dsx")) {
@@ -134,29 +177,70 @@ window.LL = window.LL || {};
       cols[n.col].push(n);
     });
 
-    // Sort right column: target genes first, then morphologies at bottom for clean crossing-free flow
+    // Sort integrator hub column deterministically by pathway order (Bab -> ivory -> Armadillo)
+    const paperRank = (n) => {
+      const ps = Array.from(n.papers).sort();
+      const p0 = ps[0] || "";
+      if (ps.includes("2025_Loh") && ps.includes("2024_Livraghi")) return 1.5;
+      if (p0 === "2025_Loh") return 1.0;
+      if (p0 === "2024_Livraghi") return 2.0;
+      if (p0 === "2023_Banerjee") return 3.0;
+      if (p0 === "2023_Seah") return 4.0;
+      return 5.0;
+    };
+
+    cols[1].sort((a, b) => paperRank(a) - paperRank(b) || a.label.localeCompare(b.label));
+
+    const maxColNodes = Math.max(1, cols[0].length, cols[1].length, cols[2].length);
+    const W = 860;
+    const H = Math.max(520, maxColNodes * 60 + 115);
+    const colXs = [138, 430, 722];
+
+    const placeCol = (list, ci) => {
+      const n = list.length;
+      if (!n) return;
+      const topPad = ci === 1 && n <= 3 ? Math.max(120, H * 0.22) : 76;
+      const botPad = ci === 1 && n <= 3 ? Math.max(95, H * 0.16) : 54;
+      const span = Math.max(0, H - topPad - botPad);
+      list.forEach((node, idx) => {
+        node.x = colXs[ci];
+        node.y = n === 1 ? (ci === 1 && H <= 560 ? 248 : H * 0.48) : topPad + (span * idx) / (n - 1);
+        node.w = ci === 2 ? 194 : 174;
+        node.h = 44;
+      });
+    };
+
+    // Place hub column first, then order col 0 and col 2 by pathway + connected hub barycenter to minimize crossings
+    placeCol(cols[1], 1);
+
+    const baryScore = (node) => {
+      const hubYs = [];
+      edges.forEach((e) => {
+        if (e.srcKey === node.key) {
+          const t = nodeMap.get(e.tgtKey);
+          if (t && t.col === 1 && t.y != null) hubYs.push(t.y);
+        } else if (e.tgtKey === node.key) {
+          const s = nodeMap.get(e.srcKey);
+          if (s && s.col === 1 && s.y != null) hubYs.push(s.y);
+        }
+      });
+      const pr = paperRank(node);
+      if (hubYs.length) return pr * 1000 + hubYs.reduce((a, b) => a + b, 0) / hubYs.length;
+      return pr * 1000 + 500;
+    };
+
+    cols[0].sort((a, b) => baryScore(a) - baryScore(b) || a.label.localeCompare(b.label));
     cols[2].sort((a, b) => {
-      const aM = a.nodeType === "scale_type" || String(a.termId).startsWith("scale_type:") ? 1 : 0;
-      const bM = b.nodeType === "scale_type" || String(b.termId).startsWith("scale_type:") ? 1 : 0;
+      const ba = baryScore(a), bb = baryScore(b);
+      if (Math.abs(ba - bb) > 1) return ba - bb;
+      const aM = isGrnPhenotypeNode(a) ? 1 : 0;
+      const bM = isGrnPhenotypeNode(b) ? 1 : 0;
       if (aM !== bM) return aM - bM;
       return a.label.localeCompare(b.label);
     });
 
-    const W = 820, H = 540;
-    const colXs = [132, 405, 682];
-    cols.forEach((list, ci) => {
-      const n = list.length;
-      if (!n) return;
-      const topPad = ci === 1 ? 215 : 88;
-      const botPad = ci === 1 ? 215 : 68;
-      const span = Math.max(0, H - topPad - botPad);
-      list.forEach((node, idx) => {
-        node.x = colXs[ci];
-        node.y = n === 1 ? (ci === 1 ? 245 : H * 0.48) : topPad + (span * idx) / (n - 1);
-        node.w = ci === 2 ? 186 : 166;
-        node.h = 44;
-      });
-    });
+    placeCol(cols[0], 0);
+    placeCol(cols[2], 2);
 
     return { nodes: Array.from(nodeMap.values()), nodeMap, edges, W, H };
   }
@@ -168,9 +252,11 @@ window.LL = window.LL || {};
     const laneTxt = dark ? "#64748b" : "#94a3b8";
     const nodeFillGene = dark ? "#1c2633" : "#f8fafc";
     const nodeFillHub = dark ? "#12323d" : "#e6f4f7";
+    const nodeFillCross = dark ? "#2a1b3d" : "#f3e8ff";
     const nodeFillMorph = dark ? "#2d1f16" : "#fff7ed";
     const nodeStrokeGene = dark ? "#3b5169" : "#94a3b8";
     const nodeStrokeHub = dark ? "#4ab3c9" : "#0f5f73";
+    const nodeStrokeCross = dark ? "#c084fc" : "#7e22ce";
     const nodeStrokeMorph = dark ? "#f59e0b" : "#d97706";
     const ink = dark ? "#e2e8f0" : "#0f172a";
     const subInk = dark ? "#94a3b8" : "#64748b";
@@ -193,12 +279,15 @@ window.LL = window.LL || {};
         </marker>`;
     }).join("");
 
-    // Count parallel edges between same (src, tgt) pair to separate curves
+    // Count parallel edges between same (src, tgt) pair to fan curves symmetrically
     const pairCount = new Map();
     edges.forEach((e) => {
       const pk = `${e.srcKey}|${e.tgtKey}`;
       e.pairIdx = pairCount.get(pk) || 0;
       pairCount.set(pk, e.pairIdx + 1);
+    });
+    edges.forEach((e) => {
+      e.pairTotal = pairCount.get(`${e.srcKey}|${e.tgtKey}`) || 1;
     });
 
     const edgePaths = edges.map((e) => {
@@ -211,74 +300,94 @@ window.LL = window.LL || {};
       const sel = r.id === selectedRelId;
       const ck = colorKey(st.color);
       const markerEnd = `url(#grn-${st.marker}-${ck})`;
+      const spread = (e.pairIdx - (e.pairTotal - 1) / 2);
 
       let d = "";
       let lx = 0, ly = 0;
       if (e.selfLoop) {
-        // Neat curved self-autoregulation loop above the hub node
         const x0 = s.x - 28, y0 = s.y - s.h / 2;
         const x1 = s.x + 28, y1 = s.y - s.h / 2;
-        d = `M ${x0} ${y0} C ${x0 - 38} ${y0 - 76}, ${x1 + 38} ${y1 - 76}, ${x1} ${y1 - 3}`;
+        d = `M ${x0} ${y0} C ${x0 - 38} ${y0 - 72}, ${x1 + 38} ${y1 - 72}, ${x1} ${y1 - 3}`;
         lx = s.x;
-        ly = y0 - 62;
+        ly = y0 - 58;
       } else if (s.col > t.col) {
-        // Feedback arc from middle back to left over the top
         const x0 = s.x - s.w / 2 + 12, y0 = s.y - s.h / 2;
         const x1 = t.x + t.w / 2 - 12, y1 = t.y - t.h / 2;
-        const cy = Math.min(y0, y1) - 56;
+        const cy = Math.min(y0, y1) - 52;
         d = `M ${x0} ${y0} Q ${(x0 + x1) / 2} ${cy}, ${x1} ${y1 - 3}`;
         lx = (x0 + x1) / 2;
-        ly = cy + 20;
+        ly = cy + 18;
+      } else if (s.col === t.col) {
+        const x0 = s.x + s.w / 2, y0 = s.y;
+        const x1 = t.x + t.w / 2, y1 = t.y;
+        const cx = x0 + 58 + spread * 14;
+        d = `M ${x0} ${y0} C ${cx} ${y0}, ${cx} ${y1}, ${x1 + 4} ${y1}`;
+        lx = cx - 12;
+        ly = (y0 + y1) / 2;
       } else {
-        // Forward curve (col 0 -> col 1, col 1 -> col 2, or long-range col 0 -> col 2)
+        const yOff = spread * (e.pairTotal > 3 ? 7 : 10);
         const x0 = s.x + s.w / 2;
-        const y0 = s.y + (e.pairIdx * 10);
+        const y0 = s.y + yOff;
         const x1 = t.x - t.w / 2 - 4;
-        const y1 = t.y + (e.pairIdx * 10);
+        const y1 = t.y + yOff;
         const dx = x1 - x0;
         if (t.col - s.col >= 2) {
-          // Long-range bypass arc passing cleanly below the center hub
-          const bendY = Math.max(y0, y1) + 46 + (s.y > 260 ? 22 : -18);
+          // Long-range bypass arc passing gently around middle hubs
+          const midY = (y0 + y1) / 2;
+          const bendDir = midY > H * 0.55 ? 36 : -36;
+          const bendY = midY + bendDir + spread * 28;
           d = `M ${x0} ${y0} C ${x0 + dx * 0.34} ${bendY}, ${x0 + dx * 0.66} ${bendY}, ${x1} ${y1}`;
           lx = (x0 + x1) / 2;
-          ly = 0.25 * y0 + 0.5 * bendY + 0.25 * y1 + (s.y > 260 ? 12 : -6);
+          ly = 0.25 * y0 + 0.5 * bendY + 0.25 * y1;
         } else {
           const cx1 = x0 + dx * 0.44;
           const cx2 = x1 - dx * 0.44;
-          d = `M ${x0} ${y0} C ${cx1} ${y0}, ${cx2} ${y1}, ${x1} ${y1}`;
+          const bow = spread * 28;
+          d = `M ${x0} ${y0} C ${cx1} ${y0 + bow}, ${cx2} ${y1 + bow}, ${x1} ${y1}`;
           lx = (x0 + x1) / 2;
-          ly = (y0 + y1) / 2 - 6;
+          ly = (y0 + y1) / 2 + bow * 0.72 - 6;
         }
       }
 
-      const strokeW = sel ? tm.width + 1.4 : tm.width;
-      const op = selectedRelId && !sel ? 0.52 : 0.94;
+      const strokeW = sel ? tm.width + 1.5 : tm.width;
+      const op = selectedRelId && !sel ? 0.38 : 0.92;
+      const badgeTxt = e.selfLoop
+        ? "auto-binds"
+        : (s.col > t.col ? "feedback ChIP" : (r.context && r.context.taxon && e.pairTotal > 1 ? `${st.verb} (${String(r.context.taxon).split(" ").slice(0, 2).map((w, i) => (i === 0 ? w[0] + "." : w)).join(" ")})` : st.verb));
+      const bw = Math.max(84, badgeTxt.length * 6.0 + 14);
+      const hitW = e.pairTotal > 2 ? 7 : 12;
       return `
         <g class="grn-edge ${sel ? "selected" : ""}" data-select-rel="${LL.esc(r.id)}" style="cursor:pointer">
-          <path d="${d}" fill="none" stroke="transparent" stroke-width="15" />
+          <path d="${d}" fill="none" stroke="transparent" stroke-width="${hitW}" />
           ${sel ? `<path d="${d}" fill="none" stroke="${st.color}" stroke-width="${strokeW + 4.5}" opacity="0.22" />` : ""}
           <path d="${d}" fill="none" stroke="${st.color}" stroke-width="${strokeW}" ${tm.dash ? `stroke-dasharray="${tm.dash}"` : ""} opacity="${op}" marker-end="${markerEnd}" />
           ${sel || e.selfLoop || s.col > t.col ? `
-            <rect x="${lx - 43}" y="${ly - 10}" width="86" height="17" rx="8" fill="${bg}" stroke="${st.color}" stroke-width="${sel ? 1.4 : 0.8}" opacity="0.96" />
-            <text x="${lx}" y="${ly + 2}" text-anchor="middle" font-size="9.5" font-weight="700" fill="${st.color}">${LL.esc(e.selfLoop ? "auto-binds (24)" : (s.col > t.col ? "feedback ChIP" : st.verb))}</text>
+            <rect x="${lx - bw / 2}" y="${ly - 10}" width="${bw}" height="17" rx="8" fill="${bg}" stroke="${st.color}" stroke-width="${sel ? 1.4 : 0.8}" opacity="0.97" />
+            <text x="${lx}" y="${ly + 2}" text-anchor="middle" font-size="9.5" font-weight="700" fill="${st.color}">${LL.esc(badgeTxt)}</text>
           ` : ""}
-          <title>${LL.esc(`${r.source_label} ${st.verb} ${r.target_label} [${tm.label}]`)}</title>
+          <title>${LL.esc(`[${r.paper}] ${r.source_label} ${st.verb} ${r.target_label} [${tm.label}]`)}</title>
         </g>`;
     }).join("");
 
     const nodeBoxes = nodes.map((n) => {
+      const isCrossPaper = n.papers && n.papers.size >= 2;
       const isHub = n.col === 1;
-      const isMorph = n.nodeType === "scale_type" || String(n.termId).startsWith("scale_type:");
-      const fill = isHub ? nodeFillHub : (isMorph ? nodeFillMorph : nodeFillGene);
-      const stroke = isHub ? nodeStrokeHub : (isMorph ? nodeStrokeMorph : nodeStrokeGene);
+      const isMorph = isGrnPhenotypeNode(n);
+      const fill = isCrossPaper ? nodeFillCross : (isHub ? nodeFillHub : (isMorph ? nodeFillMorph : nodeFillGene));
+      const stroke = isCrossPaper ? nodeStrokeCross : (isHub ? nodeStrokeHub : (isMorph ? nodeStrokeMorph : nodeStrokeGene));
       const rx = isMorph ? 20 : 8;
-      const roleTag = isMorph ? "SCALE PHENOTYPE" : (isHub ? "CORE REPRESSOR HUB" : (n.nodeType === "noncoding_rna" ? "lncRNA" : (n.col === 0 ? "UPSTREAM TF" : "TARGET LOCUS")));
+      const roleTag = isCrossPaper
+        ? `★ CROSS-PAPER HUB (${n.papers.size}p)`
+        : (isMorph
+          ? (n.nodeType === "cre" ? "CIS-REGULATORY CRE" : "PHENOTYPE / TRAIT")
+          : (isHub ? "INTEGRATOR HUB" : (n.nodeType === "chemical" ? "SMALL MOLECULE" : (n.nodeType === "noncoding_rna" ? "lncRNA REGULATOR" : (n.col === 0 ? "UPSTREAM REGULATOR" : "TARGET LOCUS")))));
       return `
         <g class="grn-node" data-jump-term="${LL.esc(n.termId)}" style="cursor:pointer">
-          <rect x="${n.x - n.w / 2}" y="${n.y - n.h / 2}" width="${n.w}" height="${n.h}" rx="${rx}" fill="${fill}" stroke="${stroke}" stroke-width="${isHub ? 2.2 : 1.4}" />
+          ${isCrossPaper ? `<rect x="${n.x - n.w / 2 - 3}" y="${n.y - n.h / 2 - 3}" width="${n.w + 6}" height="${n.h + 6}" rx="${rx + 2}" fill="none" stroke="${nodeStrokeCross}" stroke-width="1.3" stroke-dasharray="4 3" opacity="0.85" />` : ""}
+          <rect x="${n.x - n.w / 2}" y="${n.y - n.h / 2}" width="${n.w}" height="${n.h}" rx="${rx}" fill="${fill}" stroke="${stroke}" stroke-width="${isHub || isCrossPaper ? 2.2 : 1.4}" />
           <text x="${n.x}" y="${n.y - 4}" text-anchor="middle" font-size="11.5" font-weight="700" fill="${ink}">${LL.esc(n.label)}</text>
-          <text x="${n.x}" y="${n.y + 12}" text-anchor="middle" font-size="9" font-weight="600" letter-spacing="0.04em" fill="${subInk}">${LL.esc(roleTag)}</text>
-          <title>Click to open ${LL.esc(n.termId)} in Controlled Vocabulary</title>
+          <text x="${n.x}" y="${n.y + 12}" text-anchor="middle" font-size="8.6" font-weight="700" letter-spacing="0.04em" fill="${isCrossPaper ? nodeStrokeCross : subInk}">${LL.esc(roleTag)}</text>
+          <title>Click to open ${LL.esc(n.termId)} in Controlled Vocabulary (${LL.esc(Array.from(n.papers || []).join(", "))})</title>
         </g>`;
     }).join("");
 
@@ -286,12 +395,12 @@ window.LL = window.LL || {};
       <svg viewBox="0 0 ${W} ${H}" class="grn-svg" role="img" aria-label="Directed Gene Regulatory Network">
         <defs>${defs}</defs>
         <rect x="0" y="0" width="${W}" height="${H}" fill="${bg}" />
-        <rect x="16" y="14" width="232" height="${H - 28}" rx="10" fill="${laneBg}" />
-        <rect x="284" y="14" width="242" height="${H - 28}" rx="10" fill="${laneBg}" />
-        <rect x="562" y="14" width="242" height="${H - 28}" rx="10" fill="${laneBg}" />
-        <text x="132" y="34" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="0.06em" fill="${laneTxt}">UPSTREAM REGULATORS</text>
-        <text x="405" y="34" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="0.06em" fill="${laneTxt}">INTEGRATOR HUB</text>
-        <text x="682" y="34" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="0.06em" fill="${laneTxt}">TARGETS &amp; SCALE FATES</text>
+        <rect x="16" y="14" width="244" height="${H - 28}" rx="10" fill="${laneBg}" />
+        <rect x="296" y="14" width="268" height="${H - 28}" rx="10" fill="${laneBg}" />
+        <rect x="600" y="14" width="244" height="${H - 28}" rx="10" fill="${laneBg}" />
+        <text x="138" y="34" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="0.06em" fill="${laneTxt}">UPSTREAM REGULATORS</text>
+        <text x="430" y="34" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="0.06em" fill="${laneTxt}">INTEGRATOR HUBS</text>
+        <text x="722" y="34" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="0.06em" fill="${laneTxt}">TARGETS &amp; PHENOTYPES</text>
         ${edgePaths}
         ${nodeBoxes}
       </svg>`;
@@ -379,9 +488,15 @@ window.LL = window.LL || {};
       return;
     }
 
+    const paperCounts = {};
+    allRels.forEach((r) => { paperCounts[r.paper] = (paperCounts[r.paper] || 0) + 1; });
+    const paperList = Object.keys(paperCounts).sort();
+    if (st.grnPaper !== "ALL" && !paperCounts[st.grnPaper]) st.grnPaper = "ALL";
+    const paperFiltered = st.grnPaper === "ALL" ? allRels : allRels.filter((r) => r.paper === st.grnPaper);
+
     const tierCounts = {};
-    allRels.forEach((r) => { tierCounts[r.evidence_tier] = (tierCounts[r.evidence_tier] || 0) + 1; });
-    const filtered = st.grnTier === "ALL" ? allRels : allRels.filter((r) => r.evidence_tier === st.grnTier);
+    paperFiltered.forEach((r) => { tierCounts[r.evidence_tier] = (tierCounts[r.evidence_tier] || 0) + 1; });
+    const filtered = st.grnTier === "ALL" ? paperFiltered : paperFiltered.filter((r) => r.evidence_tier === st.grnTier);
     if (!st.grnSelectedRel || !filtered.some((r) => r.id === st.grnSelectedRel)) {
       st.grnSelectedRel = filtered[0] ? filtered[0].id : null;
     }
@@ -389,14 +504,20 @@ window.LL = window.LL || {};
     const dark = LL.isDark();
 
     body.innerHTML = `
+      <div class="toolbar" style="margin-bottom:6px">
+        <span style="font-weight:700;font-size:12px">Paper:</span>
+        <button type="button" class="btn btn-sm ${st.grnPaper === "ALL" ? "active" : ""}" data-grn-paper="ALL">All papers (${allRels.length})</button>
+        ${paperList.map((p) => `<button type="button" class="btn btn-sm ${st.grnPaper === p ? "active" : ""}" data-grn-paper="${LL.esc(p)}">${LL.esc(p)} (${paperCounts[p]})</button>`).join("")}
+        <button type="button" class="btn btn-sm" id="grn-export-json" style="margin-left:auto">Export GRN JSON</button>
+      </div>
+
       <div class="toolbar">
         <span style="font-weight:700;font-size:12px">Evidence Tier:</span>
-        <button type="button" class="btn btn-sm ${st.grnTier === "ALL" ? "active" : ""}" data-grn-tier="ALL">All (${allRels.length})</button>
+        <button type="button" class="btn btn-sm ${st.grnTier === "ALL" ? "active" : ""}" data-grn-tier="ALL">All (${paperFiltered.length})</button>
         ${Object.entries(TIER_META).map(([k, m]) => {
           const cnt = tierCounts[k] || 0;
           return `<button type="button" class="btn btn-sm ${st.grnTier === k ? "active" : ""}" data-grn-tier="${k}" title="${LL.esc(m.desc)}">${LL.esc(m.short)} (${cnt})</button>`;
         }).join("")}
-        <button type="button" class="btn btn-sm" id="grn-export-json" style="margin-left:auto">Export GRN JSON</button>
       </div>
 
       <div class="grn-legend">
@@ -405,13 +526,14 @@ window.LL = window.LL || {};
         <span><svg width="26" height="10"><line x1="1" y1="5" x2="25" y2="5" stroke="${dark ? "#4ab3c9" : "#0f5f73"}" stroke-width="2.2" stroke-dasharray="9 3 2 3" /></svg> ChIP binding (dash-dot)</span>
         <span><svg width="26" height="10"><line x1="1" y1="5" x2="25" y2="5" stroke="currentColor" stroke-width="2.2" stroke-dasharray="7 4" /></svg> Perturbation (dashed)</span>
         <span><svg width="26" height="10"><line x1="1" y1="5" x2="25" y2="5" stroke="${dark ? "#fbbf24" : "#b45309"}" stroke-width="2" stroke-dasharray="3 4" /></svg> Correlative (dotted)</span>
+        <span style="color:${dark ? "#c084fc" : "#7e22ce"};font-weight:700">★ Cross-paper hub</span>
         <span class="muted" style="margin-left:auto">Click any edge to inspect anchor · Click any node to open in Vocab</span>
       </div>
 
       <div class="grn-layout">
         <div style="display:flex;flex-direction:column;gap:12px">
           <div class="card" style="padding:10px;overflow:hidden" id="grn-svg-wrap">
-            ${renderGrnSvg(filtered, st.grnSelectedRel, dark)}
+            ${filtered.length ? renderGrnSvg(filtered, st.grnSelectedRel, dark) : `<div class="muted" style="padding:24px;text-align:center">No edges match this Paper + Evidence Tier combination.</div>`}
           </div>
 
           <div class="card" style="padding:12px">
@@ -422,7 +544,7 @@ window.LL = window.LL || {};
             <div style="overflow-x:auto">
               <table class="data-table" style="font-size:12px">
                 <thead>
-                  <tr><th>Source</th><th>Relation</th><th>Target</th><th>Evidence Tier</th><th>Assays</th></tr>
+                  <tr><th>Paper</th><th>Source</th><th>Relation</th><th>Target</th><th>Evidence Tier</th><th>Assays</th></tr>
                 </thead>
                 <tbody>
                   ${filtered.map((r) => {
@@ -431,6 +553,7 @@ window.LL = window.LL || {};
                     const active = r.id === st.grnSelectedRel;
                     return `
                       <tr class="grn-row ${active ? "selected" : ""}" data-select-rel="${LL.esc(r.id)}" style="cursor:pointer">
+                        <td class="mono muted" style="font-size:11px;white-space:nowrap">${LL.esc(r.paper)}</td>
                         <td><strong>${LL.esc(r.source_label)}</strong></td>
                         <td><span class="pill ${rs.pill}">${LL.esc(rs.verb)}</span></td>
                         <td>${LL.esc(r.target_label)}</td>
@@ -455,6 +578,13 @@ window.LL = window.LL || {};
     };
 
     body.onclick = (ev) => {
+      const pBtn = ev.target.closest("[data-grn-paper]");
+      if (pBtn) {
+        st.grnPaper = pBtn.getAttribute("data-grn-paper");
+        st.grnTier = "ALL";
+        renderGrnMode(body, data);
+        return;
+      }
       const tBtn = ev.target.closest("[data-grn-tier]");
       if (tBtn) {
         st.grnTier = tBtn.getAttribute("data-grn-tier");
@@ -569,12 +699,37 @@ window.LL = window.LL || {};
       </svg>`;
   }
 
-  function renderMorphStripSvg(rows, dark) {
+  function detectMorphMeta(tbl) {
+    const sample = (tbl.rows && tbl.rows[0]) || {};
+    const hasSpacing = Object.prototype.hasOwnProperty.call(sample, "spacing_um");
+    const numKey = hasSpacing ? "spacing_um" : (Object.prototype.hasOwnProperty.call(sample, "value") ? "value" : Object.keys(sample).find((k) => typeof sample[k] === "number") || "value");
+    const titleLow = `${tbl.title || ""} ${tbl.note || ""}`.toLowerCase();
+    const unit = hasSpacing ? "µm" : ((/\bnm\b|\(in nm\)/.test(titleLow) || titleLow.includes("honeycomb")) ? "nm" : (/\bµm\b|\bum\b/.test(titleLow) ? "µm" : ""));
+    const measureLabel = hasSpacing ? "Fourier Inter-Ridge Spacing" : (titleLow.includes("honeycomb") ? "Honeycomb Lattice Height" : "Measured Value");
+    const cleanSheet = (s) => {
+      const m = String(s || "").match(/\(([^)]+)\)/);
+      return m ? m[1].trim() : String(s || "").trim();
+    };
+    const groupOf = (r) => {
+      if (r.sex_genotype != null || r.scale_type != null) {
+        return `${r.sex_genotype || ""} | ${r.scale_type || ""}`;
+      }
+      if (r.sheet != null && r.group != null) {
+        return `${cleanSheet(r.sheet)} | ${r.group}`;
+      }
+      if (r.group != null) return String(r.group);
+      return Object.entries(r).filter(([k]) => k !== numKey).map(([, v]) => String(v)).join(" | ") || "all";
+    };
+    return { numKey, unit, measureLabel, hasSpacing, cleanSheet, groupOf };
+  }
+
+  function renderMorphStripSvg(rows, tbl, dark) {
+    const meta = detectMorphMeta(tbl);
     const groups = new Map();
     rows.forEach((r) => {
-      const k = `${r.sex_genotype} | ${r.scale_type}`;
+      const k = meta.groupOf(r);
       if (!groups.has(k)) groups.set(k, []);
-      const v = Number(r.spacing_um);
+      const v = Number(r[meta.numKey]);
       if (Number.isFinite(v)) groups.get(k).push(v);
     });
     const entries = Array.from(groups.entries()).map(([k, vals]) => {
@@ -583,32 +738,47 @@ window.LL = window.LL || {};
       return { k, vals, mean, sd };
     }).sort((a, b) => a.mean - b.mean);
 
-    const W = 740, rowH = 34, padL = 225, padR = 26, padT = 18, padB = 34;
+    if (!entries.length) {
+      return `<div class="muted" style="padding:18px;text-align:center">No numeric rows match the current filter.</div>`;
+    }
+
+    const W = 780, rowH = 34, padL = 248, padR = 128, padT = 18, padB = 34;
     const H = padT + padB + entries.length * rowH;
     const pw = W - padL - padR;
     const bg = dark ? "#141b24" : "#ffffff";
     const grid = dark ? "rgba(148,163,184,0.14)" : "rgba(15,23,42,0.09)";
     const ink = dark ? "#e2e8f0" : "#0f172a";
     const muted = dark ? "#94a3b8" : "#64748b";
-    const maxV = Math.max(5.5, ...rows.map((r) => Number(r.spacing_um) || 0) + 0.3);
+    const rawMax = Math.max(1e-6, ...entries.flatMap((e) => e.vals));
+    const stepBase = Math.pow(10, Math.floor(Math.log10(rawMax / 4.5)));
+    const niceMult = [1, 2, 2.5, 5, 10].find((m) => rawMax / (stepBase * m) <= 6) || 10;
+    const tickStep = stepBase * niceMult;
+    const maxV = Math.ceil((rawMax * 1.05) / tickStep) * tickStep;
+    const ticks = [];
+    for (let t = 0; t <= maxV + 1e-9; t += tickStep) ticks.push(Number(t.toFixed(6)));
     const sx = (v) => padL + (v / maxV) * pw;
-    const ticks = [0, 1, 2, 3, 4, 5].filter((t) => t <= maxV);
+    const dec = maxV >= 100 ? 1 : 2;
 
     return `
-      <svg viewBox="0 0 ${W} ${H}" class="volcano-svg" role="img" aria-label="Scale inter-ridge spacing distribution">
+      <svg viewBox="0 0 ${W} ${H}" class="volcano-svg" role="img" aria-label="${LL.esc(meta.measureLabel)} distribution">
         <rect x="0" y="0" width="${W}" height="${H}" fill="${bg}" />
         ${ticks.map((t) => `<line x1="${sx(t).toFixed(1)}" y1="${padT}" x2="${sx(t).toFixed(1)}" y2="${H - padB}" stroke="${grid}" />`).join("")}
         ${entries.map((g, gi) => {
           const cy = padT + gi * rowH + rowH / 2;
-          const col = g.k.includes("UVI") ? (dark ? "#c084fc" : "#7e22ce") : (g.k.includes("spatulate") ? (dark ? "#fbbf24" : "#b45309") : (dark ? "#4ab3c9" : "#0f5f73"));
+          const low = g.k.toLowerCase();
+          const col = (low.includes("uvi") || low.includes("treatment") || low.includes("ck666"))
+            ? (dark ? "#c084fc" : "#7e22ce")
+            : (low.includes("spatulate") ? (dark ? "#fbbf24" : "#b45309") : (dark ? "#4ab3c9" : "#0f5f73"));
+          const dispLbl = g.k.replace(/_/g, " ");
+          const truncLbl = dispLbl.length > 36 ? dispLbl.slice(0, 34) + "…" : dispLbl;
           return `
-            <text x="${padL - 10}" y="${cy + 3.5}" text-anchor="end" font-size="10.5" font-weight="600" fill="${ink}">${LL.esc(g.k.replace(/_/g, " "))}</text>
-            <line x1="${sx(Math.max(0, g.mean - g.sd)).toFixed(1)}" y1="${cy}" x2="${sx(g.mean + g.sd).toFixed(1)}" y2="${cy}" stroke="${col}" stroke-width="2.5" opacity="0.65" />
-            ${g.vals.map((v, vi) => `<circle cx="${sx(v).toFixed(1)}" cy="${(cy + ((vi % 5) - 2) * 2.2).toFixed(1)}" r="2.8" fill="${col}" fill-opacity="0.72" />`).join("")}
+            <text x="${padL - 10}" y="${cy + 3.5}" text-anchor="end" font-size="10.2" font-weight="600" fill="${ink}">${LL.esc(truncLbl)}</text>
+            <line x1="${sx(Math.max(0, g.mean - g.sd)).toFixed(1)}" y1="${cy}" x2="${sx(Math.min(maxV, g.mean + g.sd)).toFixed(1)}" y2="${cy}" stroke="${col}" stroke-width="2.5" opacity="0.65" />
+            ${g.vals.map((v, vi) => `<circle cx="${sx(v).toFixed(1)}" cy="${(cy + ((vi % 5) - 2) * 2.2).toFixed(1)}" r="2.6" fill="${col}" fill-opacity="0.68" />`).join("")}
             <circle cx="${sx(g.mean).toFixed(1)}" cy="${cy}" r="4.6" fill="${bg}" stroke="${col}" stroke-width="2.4" />
-            <text x="${(sx(g.mean + g.sd) + 7).toFixed(1)}" y="${cy + 3.5}" font-size="10" font-family="monospace" fill="${muted}">${g.mean.toFixed(2)}±${g.sd.toFixed(2)} (n=${g.vals.length})</text>`;
+            <text x="${(padL + pw + 8).toFixed(1)}" y="${cy + 3.5}" font-size="9.8" font-family="monospace" fill="${muted}">${g.mean.toFixed(dec)}±${g.sd.toFixed(dec)} (n=${g.vals.length})</text>`;
         }).join("")}
-        ${ticks.map((t) => `<text x="${sx(t).toFixed(1)}" y="${H - 14}" text-anchor="middle" font-size="10.5" fill="${muted}">${t} µm</text>`).join("")}
+        ${ticks.map((t) => `<text x="${sx(t).toFixed(1)}" y="${H - 14}" text-anchor="middle" font-size="10.5" fill="${muted}">${t}${meta.unit ? " " + meta.unit : ""}</text>`).join("")}
       </svg>`;
   }
 
@@ -624,7 +794,8 @@ window.LL = window.LL || {};
     }
     const tbl = tables.find((t) => `${t.paper}/${t.id}` === st.genomicTableId) || tables[0];
     const isDe = tbl.kind === "de_genes";
-    let sortKey = isDe ? "chip_peaks_desc" : "spacing_asc";
+    const morphMeta = isDe ? null : detectMorphMeta(tbl);
+    let sortKey = isDe ? "chip_peaks_desc" : "val_asc";
     let selGene = null;
 
     body.innerHTML = `
@@ -674,15 +845,15 @@ window.LL = window.LL || {};
       ` : `
         <div class="card" style="margin-bottom:12px;padding:12px">
           <div class="card-title" style="font-size:13px;margin-bottom:6px">
-            <span>Individual Scale Inter-Ridge Distribution (Mean ± SD &amp; Raw Scales)</span>
-            <span class="muted">Reproduces Loh et al. Fig 1D directly from OSF DataS10</span>
+            <span>${LL.esc(morphMeta.measureLabel)} Distribution (Mean ± SD &amp; Individual Measurements)</span>
+            <span class="muted">Direct from ${LL.esc(tbl.paper)} · ${LL.esc(tbl.file.split("/").pop())}</span>
           </div>
-          <div id="gt-plot-wrap">${renderMorphStripSvg(tbl.rows || [], LL.isDark())}</div>
+          <div id="gt-plot-wrap"></div>
         </div>
       `}
 
       <div class="toolbar">
-        <input type="search" id="gt-search" placeholder="${isDe ? "Search gene symbol, LOC ID, or product (e.g. Mwh, Eip75B, chitin, kinase)…" : "Search genotype or scale type (e.g. UVI, Alba, spatulate)…"}" value="${LL.esc(st.genomicTableQuery)}" style="max-width:380px" />
+        <input type="search" id="gt-search" placeholder="${isDe ? "Search gene symbol, LOC ID, or product (e.g. Mwh, Eip75B, chitin, kinase)…" : "Filter species, treatment, genotype, or scale class…"}" value="${LL.esc(st.genomicTableQuery)}" style="max-width:380px" />
         ${isDe ? `
           <label class="chk">Min Bab ChIP peaks:
             <select id="gt-min-peaks">
@@ -699,9 +870,9 @@ window.LL = window.LL || {};
           </select>
         ` : `
           <select id="gt-sort">
-            <option value="spacing_asc">Sort: Spacing ↑</option>
-            <option value="spacing_desc">Sort: Spacing ↓</option>
-            <option value="group_asc">Sort: Scale Class A→Z</option>
+            <option value="val_asc">Sort: Value ↑</option>
+            <option value="val_desc">Sort: Value ↓</option>
+            <option value="group_asc">Sort: Group A→Z</option>
           </select>
         `}
         <span class="muted mono" id="gt-row-count" style="margin-left:auto"></span>
@@ -729,9 +900,10 @@ window.LL = window.LL || {};
         else if (sortKey === "padj_asc") rows.sort((a, b) => (Number(a.p_adj) || 1) - (Number(b.p_adj) || 1));
         else if (sortKey === "sym_asc") rows.sort((a, b) => String(a.symbol || a.gene_id).localeCompare(String(b.symbol || b.gene_id)));
       } else {
-        if (sortKey === "spacing_asc") rows.sort((a, b) => (Number(a.spacing_um) || 0) - (Number(b.spacing_um) || 0));
-        else if (sortKey === "spacing_desc") rows.sort((a, b) => (Number(b.spacing_um) || 0) - (Number(a.spacing_um) || 0));
-        else rows.sort((a, b) => `${a.sex_genotype}${a.scale_type}`.localeCompare(`${b.sex_genotype}${b.scale_type}`));
+        const nk = morphMeta.numKey;
+        if (sortKey === "val_asc") rows.sort((a, b) => (Number(a[nk]) || 0) - (Number(b[nk]) || 0));
+        else if (sortKey === "val_desc") rows.sort((a, b) => (Number(b[nk]) || 0) - (Number(a[nk]) || 0));
+        else rows.sort((a, b) => morphMeta.groupOf(a).localeCompare(morphMeta.groupOf(b)));
       }
       return rows;
     }
@@ -741,10 +913,12 @@ window.LL = window.LL || {};
       const cntEl = body.querySelector("#gt-row-count");
       if (cntEl) cntEl.textContent = `Showing ${rows.length} of ${tbl.n_rows} rows`;
 
+      const plotEl = body.querySelector("#gt-plot-wrap");
       if (isDe) {
         const filtSet = new Set(rows.map((r) => r.gene_id));
-        const plotEl = body.querySelector("#gt-plot-wrap");
         if (plotEl) plotEl.innerHTML = renderVolcanoSvg(tbl.rows || [], filtSet, selGene, LL.isDark());
+      } else if (plotEl) {
+        plotEl.innerHTML = renderMorphStripSvg(rows, tbl, LL.isDark());
       }
 
       const wrap = body.querySelector("#gt-table-wrap");
@@ -782,7 +956,7 @@ window.LL = window.LL || {};
               }).join("")}
             </tbody>
           </table>`;
-      } else {
+      } else if (morphMeta.hasSpacing) {
         wrap.innerHTML = `
           <table class="data-table" style="font-size:12px">
             <thead>
@@ -795,6 +969,25 @@ window.LL = window.LL || {};
                   <td>${LL.esc(String(r.sex_genotype || "").replace(/_/g, " "))}</td>
                   <td><span class="pill">${LL.esc(String(r.scale_type || "").replace(/_/g, " "))}</span></td>
                   <td class="mono" style="font-weight:700">${LL.fmtNum(r.spacing_um, 4)} µm</td>
+                </tr>`).join("")}
+            </tbody>
+          </table>`;
+      } else {
+        const hasSheet = rows.some((r) => r.sheet != null);
+        const nk = morphMeta.numKey;
+        const unitSfx = morphMeta.unit ? ` ${morphMeta.unit}` : "";
+        wrap.innerHTML = `
+          <table class="data-table" style="font-size:12px">
+            <thead>
+              <tr><th>#</th>${hasSheet ? "<th>Species / Sheet</th>" : ""}<th>Treatment / Group</th><th>${LL.esc(morphMeta.measureLabel)}${morphMeta.unit ? ` (${LL.esc(morphMeta.unit)})` : ""}</th></tr>
+            </thead>
+            <tbody>
+              ${rows.map((r, i) => `
+                <tr>
+                  <td class="mono muted">${i + 1}</td>
+                  ${hasSheet ? `<td><strong>${LL.esc(morphMeta.cleanSheet(r.sheet))}</strong></td>` : ""}
+                  <td><span class="pill">${LL.esc(String(r.group || "").replace(/_/g, " "))}</span></td>
+                  <td class="mono" style="font-weight:700">${LL.fmtNum(r[nk], morphMeta.unit === "nm" ? 2 : 4)}${LL.esc(unitSfx)}</td>
                 </tr>`).join("")}
             </tbody>
           </table>`;

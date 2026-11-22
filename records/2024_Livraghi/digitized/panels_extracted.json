@@ -1,0 +1,4877 @@
+[
+  {
+    "id": "2024_Livraghi/F1/A",
+    "paper": "2024_Livraghi",
+    "figure_id": "F1",
+    "figure_label": "Fig. 1",
+    "panel_id": "A",
+    "panel_label": "1A",
+    "title": "Representative Heliconius melpomene (melpomene, rosina, malleti, cythera, iv \u039478k +/+, +/-, -/-) and Heliconius erato (hydara, demophoon, favorinus, cyrbia) morphs",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig01.jpg",
+    "bbox": [
+      0,
+      0,
+      716,
+      98
+    ],
+    "pixel_size": [
+      716,
+      98
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius melpomene, Heliconius erato",
+      "life_stage": "adult",
+      "allele_or_zygosity": "natural polymorphism",
+      "imaging_modality": "light microscopy",
+      "view_orientation": "top-down apical"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F1_ivory_onset_timing"
+    ],
+    "linked_claims": [
+      "C1_ivory_lncrna_at_cortex_locus"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Expression and CRISPR mKOs of the ivory lncRNA reveal color patterning roles."
+  },
+  {
+    "id": "2024_Livraghi/F1/B",
+    "paper": "2024_Livraghi",
+    "figure_id": "F1",
+    "figure_label": "Fig. 1",
+    "panel_id": "B",
+    "panel_label": "1B",
+    "title": "Comparative H. melpomene (Hmel215003o) and H. erato (Hera1505) cortex/ivory locus showing GWAS intervals, RNA-seq splice junctions, miR-193/miR-2788, parn, and 36 h pupal hindwing ATAC-seq tracks",
+    "archetype": "genomic_track_or_locus",
+    "file": "pnas.2403326121fig01.jpg",
+    "bbox": [
+      0,
+      99,
+      716,
+      486
+    ],
+    "pixel_size": [
+      716,
+      387
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius melpomene, Heliconius erato",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "20%",
+      "genetic_element_type": "long non-coding RNA (lncRNA), promoter",
+      "imaging_modality": "ATAC-seq, bulk RNA-seq"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": {
+      "scaffolds": [
+        "Hmel215003o",
+        "Hera1505"
+      ],
+      "intervals": {
+        "H_melpomene_Yb_d": "1403500-1405500",
+        "H_melpomene_Yb_v": "1429500-1430000",
+        "H_melpomene_ivory_del78k": "1494903-1573176",
+        "H_erato_Cr1": "2053037-2171230",
+        "H_erato_FBs": "2110000-2113800",
+        "H_erato_Cr2": "2211881-2315926"
+      },
+      "annotated_genes": [
+        "ivory (lncRNA",
+        "+ strand)",
+        "cortex (- strand)",
+        "miR-193",
+        "miR-2788",
+        "parn"
+      ],
+      "assays": [
+        "RNA-seq splice junctions",
+        "36 h pupal hindwing ATAC-seq",
+        "GWAS association intervals"
+      ],
+      "span_kb": {
+        "H_melpomene_ivory": 138,
+        "H_erato_ivory": 205
+      }
+    },
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F1_ivory_onset_timing",
+      "F1_ivory_onset_pct",
+      "F1_ivory_atac_h3k4me3"
+    ],
+    "linked_claims": [
+      "C1_ivory_lncrna_at_cortex_locus",
+      "C2_ivory_promoter_chromatin_state"
+    ],
+    "linked_resources": [
+      "livraghi_osf_transcriptomes",
+      "livraghi_sra_heliconius_rnaseq"
+    ],
+    "caption_quote": "Expression and CRISPR mKOs of the ivory lncRNA reveal color patterning roles."
+  },
+  {
+    "id": "2024_Livraghi/F2/A",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "A",
+    "panel_label": "2A",
+    "title": "Heliconius erato wild-type banded morph (and unbanded hindwing inset) adult wing phenotype",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      22,
+      14,
+      183,
+      201
+    ],
+    "pixel_size": [
+      161,
+      187
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius erato",
+      "life_stage": "adult",
+      "perturbation_modality": "wild type",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_ivory_g0_penetrance"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/B",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "B",
+    "panel_label": "2B",
+    "title": "Heliconius erato ivory promoter/exon 1 G0 mosaic crispant showing complete loss of melanic black scales (banded & unbanded morphs)",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      184,
+      14,
+      321,
+      201
+    ],
+    "pixel_size": [
+      137,
+      187
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius erato",
+      "life_stage": "adult",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout",
+      "imaging_modality": "light microscopy"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "penetrance_pct": 57,
+      "phenotype": "Complete conversion of black melanic scales to pale yellow/white states while red forewing band persists"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_ivory_g0_penetrance"
+    ],
+    "linked_claims": [
+      "C3_ivory_mko_high_penetrance_melanic_loss"
+    ],
+    "linked_resources": [
+      "livraghi_pnas_si_appendix"
+    ],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/C",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "C",
+    "panel_label": "2C",
+    "title": "Heliconius erato 30% pupal wing DIG chromogenic RNA ISH of ivory prefiguring adult melanic scales (including unbanded hindwing yellow-bar domain)",
+    "archetype": "expression_imaging",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      322,
+      14,
+      460,
+      201
+    ],
+    "pixel_size": [
+      138,
+      187
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius erato",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "30%",
+      "imaging_modality": "HCR/in situ",
+      "hydration_and_prep": "fixed and stained"
+    },
+    "stains_or_markers": [
+      "ivory exon 1 DIG riboprobe (BM Purple)"
+    ],
+    "channel_gene_map": {
+      "purple": "ivory lncRNA (exon 1 mRNA/lncRNA ISH)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_ivory_ish_prefiguring"
+    ],
+    "linked_claims": [
+      "C4_ivory_ish_prefigures_melanic_scales"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/D",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "D",
+    "panel_label": "2D",
+    "title": "H. erato wild-type forewing red ommochrome band and adjacent melanic scale border (magnified)",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      462,
+      14,
+      545,
+      107
+    ],
+    "pixel_size": [
+      83,
+      93
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "forewing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius erato",
+      "life_stage": "adult",
+      "functional_architecture": "Ommochrome pigment, melanic pigmentary",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/D_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "D_prime",
+    "panel_label": "2D'",
+    "title": "H. erato ivory G0 mKO forewing red band magnified showing black-to-white conversion with red ommochrome retained",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      546,
+      14,
+      628,
+      107
+    ],
+    "pixel_size": [
+      82,
+      93
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "forewing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius erato",
+      "life_stage": "adult",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Black scales surrounding red band convert to pale yellow-white; red band preserved"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_ivory_g0_penetrance"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/D_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "D_dprime",
+    "panel_label": "2D''",
+    "title": "H. erato 30% pupal forewing ivory RNA ISH showing absence of ivory expression inside presumptive red band",
+    "archetype": "expression_imaging",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      629,
+      14,
+      712,
+      107
+    ],
+    "pixel_size": [
+      83,
+      93
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "forewing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius erato",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "30%",
+      "imaging_modality": "HCR/in situ"
+    },
+    "stains_or_markers": [
+      "ivory exon 1 DIG riboprobe (BM Purple)"
+    ],
+    "channel_gene_map": {
+      "purple": "ivory lncRNA (absent in red band, strong in surrounding black domain)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_ivory_ish_prefiguring"
+    ],
+    "linked_claims": [
+      "C4_ivory_ish_prefigures_melanic_scales"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/E",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "E",
+    "panel_label": "2E",
+    "title": "H. erato wild-type banded hindwing yellow bar and adjacent black border (magnified)",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      462,
+      108,
+      545,
+      201
+    ],
+    "pixel_size": [
+      83,
+      93
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius erato",
+      "life_stage": "adult",
+      "pattern_element": "central symmetry system band",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/E_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "E_prime",
+    "panel_label": "2E'",
+    "title": "H. erato ivory G0 mKO hindwing yellow-bar zone showing conversion of adjacent melanic scales to pale yellow 3-OHK state",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      546,
+      108,
+      628,
+      201
+    ],
+    "pixel_size": [
+      82,
+      93
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius erato",
+      "life_stage": "adult",
+      "pattern_element": "central symmetry system band",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Melanic scales bordering hindwing bar transform into uniform pale yellow (3-OHK) state"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_ivory_g0_penetrance"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/E_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "E_dprime",
+    "panel_label": "2E''",
+    "title": "H. erato 30% pupal hindwing ivory RNA ISH showing absence of ivory expression in presumptive yellow bar",
+    "archetype": "expression_imaging",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      629,
+      108,
+      712,
+      201
+    ],
+    "pixel_size": [
+      83,
+      93
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius erato",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "30%",
+      "pattern_element": "central symmetry system band",
+      "imaging_modality": "HCR/in situ"
+    },
+    "stains_or_markers": [
+      "ivory exon 1 DIG riboprobe (BM Purple)"
+    ],
+    "channel_gene_map": {
+      "purple": "ivory lncRNA (absent in yellow bar, strong in surrounding melanic scales)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_ivory_ish_prefiguring"
+    ],
+    "linked_claims": [
+      "C4_ivory_ish_prefigures_melanic_scales"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/F",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "F",
+    "panel_label": "2F",
+    "title": "Heliconius charithonia wild-type zebra-striped adult wings",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      22,
+      202,
+      183,
+      391
+    ],
+    "pixel_size": [
+      161,
+      189
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius charithonia",
+      "life_stage": "adult",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/G",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "G",
+    "panel_label": "2G",
+    "title": "Heliconius charithonia ivory G0 mosaic crispant showing full conversion of black stripes to yellow/white scales",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      184,
+      202,
+      321,
+      391
+    ],
+    "pixel_size": [
+      137,
+      189
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius charithonia",
+      "life_stage": "adult",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Complete loss of black melanic stripes converting to yellow/white 3-OHK scales"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_ivory_g0_penetrance"
+    ],
+    "linked_claims": [
+      "C3_ivory_mko_high_penetrance_melanic_loss"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/H",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "H",
+    "panel_label": "2H",
+    "title": "Heliconius charithonia pupal wing ivory RNA ISH strongly marking future black stripes and excluded from yellow stripes",
+    "archetype": "expression_imaging",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      322,
+      202,
+      460,
+      391
+    ],
+    "pixel_size": [
+      138,
+      189
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius charithonia",
+      "life_stage": "pupa",
+      "imaging_modality": "HCR/in situ",
+      "hydration_and_prep": "fixed and stained"
+    },
+    "stains_or_markers": [
+      "ivory exon 1 DIG riboprobe (BM Purple)"
+    ],
+    "channel_gene_map": {
+      "purple": "ivory lncRNA (marks presumptive black stripes)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_ivory_ish_prefiguring"
+    ],
+    "linked_claims": [
+      "C4_ivory_ish_prefigures_melanic_scales"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/I",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "I",
+    "panel_label": "2I",
+    "title": "H. charithonia wild-type forewing yellow/black stripe boundary (magnified)",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      462,
+      202,
+      545,
+      296
+    ],
+    "pixel_size": [
+      83,
+      94
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "forewing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius charithonia",
+      "life_stage": "adult",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/I_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "I_prime",
+    "panel_label": "2I'",
+    "title": "H. charithonia ivory G0 mKO forewing magnified showing black-to-yellow conversion",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      546,
+      202,
+      628,
+      296
+    ],
+    "pixel_size": [
+      82,
+      94
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "forewing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius charithonia",
+      "life_stage": "adult",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Melanic forewing bands convert to yellow"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/I_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "I_dprime",
+    "panel_label": "2I''",
+    "title": "H. charithonia pupal forewing ivory RNA ISH magnified showing sharp exclusion from yellow band",
+    "archetype": "expression_imaging",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      629,
+      202,
+      712,
+      296
+    ],
+    "pixel_size": [
+      83,
+      94
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "forewing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius charithonia",
+      "life_stage": "pupa",
+      "imaging_modality": "HCR/in situ"
+    },
+    "stains_or_markers": [
+      "ivory exon 1 DIG riboprobe (BM Purple)"
+    ],
+    "channel_gene_map": {
+      "purple": "ivory lncRNA"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/J",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "J",
+    "panel_label": "2J",
+    "title": "H. charithonia wild-type hindwing yellow/black stripe boundary (magnified)",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      462,
+      297,
+      545,
+      391
+    ],
+    "pixel_size": [
+      83,
+      94
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius charithonia",
+      "life_stage": "adult",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/J_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "J_prime",
+    "panel_label": "2J'",
+    "title": "H. charithonia ivory G0 mKO hindwing magnified showing loss of melanic border scales",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      546,
+      297,
+      628,
+      391
+    ],
+    "pixel_size": [
+      82,
+      94
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius charithonia",
+      "life_stage": "adult",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Melanic hindwing stripes convert to pale yellow"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/J_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "J_dprime",
+    "panel_label": "2J''",
+    "title": "H. charithonia pupal hindwing ivory RNA ISH magnified showing sharp boundary matching future black scales",
+    "archetype": "expression_imaging",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      629,
+      297,
+      712,
+      391
+    ],
+    "pixel_size": [
+      83,
+      94
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "hindwing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Heliconius charithonia",
+      "life_stage": "pupa",
+      "imaging_modality": "HCR/in situ"
+    },
+    "stains_or_markers": [
+      "ivory exon 1 DIG riboprobe (BM Purple)"
+    ],
+    "channel_gene_map": {
+      "purple": "ivory lncRNA"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/K",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "K",
+    "panel_label": "2K",
+    "title": "Vanessa cardui wild-type ventral adult wing phenotype",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      22,
+      392,
+      183,
+      586
+    ],
+    "pixel_size": [
+      161,
+      194
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral wing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/L",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "L",
+    "panel_label": "2L",
+    "title": "Vanessa cardui ivory G0 mosaic crispant showing conserved loss of black/brown melanic scales with orange-red ommochrome preserved",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      184,
+      392,
+      321,
+      586
+    ],
+    "pixel_size": [
+      137,
+      194
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral wing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Loss of melanic scales across ventral wings while red-orange ommochrome patches persist"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_ivory_g0_penetrance"
+    ],
+    "linked_claims": [
+      "C3_ivory_mko_high_penetrance_melanic_loss"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/M",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "M",
+    "panel_label": "2M",
+    "title": "Vanessa cardui pupal wing ivory RNA ISH prefiguring adult black patterns",
+    "archetype": "expression_imaging",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      322,
+      392,
+      460,
+      586
+    ],
+    "pixel_size": [
+      138,
+      194
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Vanessa cardui",
+      "life_stage": "pupa",
+      "pupal_stage_pct": "20 to 35%",
+      "imaging_modality": "HCR/in situ",
+      "hydration_and_prep": "fixed and stained"
+    },
+    "stains_or_markers": [
+      "ivory exon 1 DIG riboprobe (BM Purple)"
+    ],
+    "channel_gene_map": {
+      "purple": "ivory lncRNA (correlates with future adult black scales)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F2_ivory_ish_prefiguring"
+    ],
+    "linked_claims": [
+      "C4_ivory_ish_prefigures_melanic_scales"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/N",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "N",
+    "panel_label": "2N",
+    "title": "V. cardui wild-type ventral forewing orange-red ommochrome and black melanin patches (magnified)",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      462,
+      392,
+      545,
+      488
+    ],
+    "pixel_size": [
+      83,
+      96
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral forewing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "functional_architecture": "Ommochrome pigment, melanic pigmentary",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/N_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "N_prime",
+    "panel_label": "2N'",
+    "title": "V. cardui ivory G0 mKO ventral forewing showing melanic-to-white conversion with orange-red ommochrome unaffected",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      546,
+      392,
+      628,
+      488
+    ],
+    "pixel_size": [
+      82,
+      96
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral forewing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Black scales lost; ventral forewing orange-red ommochrome scales completely preserved"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/N_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "N_dprime",
+    "panel_label": "2N''",
+    "title": "V. cardui pupal ventral forewing ivory RNA ISH showing absence of ivory expression from orange-red ommochrome domain",
+    "archetype": "expression_imaging",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      629,
+      392,
+      712,
+      488
+    ],
+    "pixel_size": [
+      83,
+      96
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral forewing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Vanessa cardui",
+      "life_stage": "pupa",
+      "imaging_modality": "HCR/in situ"
+    },
+    "stains_or_markers": [
+      "ivory exon 1 DIG riboprobe (BM Purple)"
+    ],
+    "channel_gene_map": {
+      "purple": "ivory lncRNA (absent in orange-red ommochrome domain)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/O",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "O",
+    "panel_label": "2O",
+    "title": "V. cardui wild-type ventral hindwing eyespot ring and white marginal patterns (magnified)",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      462,
+      489,
+      545,
+      586
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral hindwing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "pattern_element": "eyespot ring, marginal band",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/O_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "O_prime",
+    "panel_label": "2O'",
+    "title": "V. cardui ivory G0 mKO ventral hindwing eyespot showing loss of black ring while yellow eyespot ring persists",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      546,
+      489,
+      628,
+      586
+    ],
+    "pixel_size": [
+      82,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral hindwing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "pattern_element": "eyespot ring, marginal band",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Black melanic eyespot rings abolished while yellow eyespot ring remains intact"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F2/O_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F2",
+    "figure_label": "Fig. 2",
+    "panel_id": "O_dprime",
+    "panel_label": "2O''",
+    "title": "V. cardui pupal ventral hindwing ivory RNA ISH showing absence from white margin patterns and yellow eyespot rings",
+    "archetype": "expression_imaging",
+    "file": "pnas.2403326121fig02.jpg",
+    "bbox": [
+      629,
+      489,
+      712,
+      586
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral hindwing",
+      "target_gene": "ivory (lncRNA)",
+      "taxon": "Vanessa cardui",
+      "life_stage": "pupa",
+      "pattern_element": "eyespot ring, marginal band",
+      "imaging_modality": "HCR/in situ"
+    },
+    "stains_or_markers": [
+      "ivory exon 1 DIG riboprobe (BM Purple)"
+    ],
+    "channel_gene_map": {
+      "purple": "ivory lncRNA (absent in yellow eyespot rings & white margin)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Expression of ivory associates with melanic scales in nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F3/A",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "A",
+    "panel_label": "3A",
+    "title": "Vanessa cardui wild-type adult forewing and hindwing control",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      22,
+      1,
+      93,
+      126
+    ],
+    "pixel_size": [
+      71,
+      125
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/B",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "B",
+    "panel_label": "3B",
+    "title": "V. cardui ivory G1 germline compound heterozygous mutant (82/97 bp exon 1 deletion) showing complete melanic loss with preserved pink-red ommochrome",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      94,
+      1,
+      165,
+      126
+    ],
+    "pixel_size": [
+      71,
+      125
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "long non-coding RNA (lncRNA)",
+      "allele_or_zygosity": "homozygous null",
+      "perturbation_modality": "CRISPR germline knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "lncrna_exon1",
+      "allele": "homozygous_null",
+      "deletion_bp": [
+        82,
+        97
+      ],
+      "phenotype": "Complete loss of melanic scales across wings and body; ventral pink-red ommochrome preserved"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_ivory_germline_radiolabel"
+    ],
+    "linked_claims": [
+      "C5_ivory_germline_melanin_vs_ommochrome"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/C",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "C",
+    "panel_label": "3C",
+    "title": "V. cardui ivory G2 germline mutant confirming heritable melanic scale loss and intact ommochrome patterns",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      166,
+      1,
+      237,
+      126
+    ],
+    "pixel_size": [
+      71,
+      125
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "long non-coding RNA (lncRNA)",
+      "allele_or_zygosity": "homozygous null",
+      "perturbation_modality": "CRISPR germline knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "lncrna_exon1",
+      "allele": "homozygous_null",
+      "phenotype": "Heritable G2 melanic-to-white conversion with intact ommochrome domains"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_ivory_germline_radiolabel"
+    ],
+    "linked_claims": [
+      "C5_ivory_germline_melanin_vs_ommochrome"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/D",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "D",
+    "panel_label": "3D",
+    "title": "V. cardui [14C]-Tyrosine autoradiography mapping melanin-synthesizing scales matching ivory KO loss",
+    "archetype": "expression_imaging",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      238,
+      1,
+      304,
+      126
+    ],
+    "pixel_size": [
+      66,
+      125
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "functional_architecture": "melanic pigmentary",
+      "imaging_modality": "metabolic radiolabeling"
+    },
+    "stains_or_markers": [
+      "[14C]-Tyrosine (melanin precursor)"
+    ],
+    "channel_gene_map": {
+      "white": "[14C]-Tyrosine incorporation (melanin-containing scales)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_ivory_germline_radiolabel"
+    ],
+    "linked_claims": [
+      "C5_ivory_germline_melanin_vs_ommochrome"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/E",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "E",
+    "panel_label": "3E",
+    "title": "V. cardui [14C]-Tryptophan autoradiography mapping ommochrome-synthesizing scales unaffected by ivory KO",
+    "archetype": "expression_imaging",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      305,
+      1,
+      370,
+      126
+    ],
+    "pixel_size": [
+      65,
+      125
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "functional_architecture": "Ommochrome pigment",
+      "imaging_modality": "metabolic radiolabeling"
+    },
+    "stains_or_markers": [
+      "[14C]-Tryptophan (ommochrome precursor)"
+    ],
+    "channel_gene_map": {
+      "white": "[14C]-Tryptophan incorporation (ommochrome-containing patterns)"
+    },
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_ivory_germline_radiolabel"
+    ],
+    "linked_claims": [
+      "C5_ivory_germline_melanin_vs_ommochrome"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/F",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "F",
+    "panel_label": "3F",
+    "title": "Normalized WGS sequencing depth across V. cardui ivory exon 1 (2,030,100-2,030,975 bp) showing 82/97 bp compound heterozygous bi-allelic deletion in ivory KO vs WT average",
+    "archetype": "quantitative_plot",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      380,
+      0,
+      695,
+      138
+    ],
+    "pixel_size": [
+      315,
+      138
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "long non-coding RNA (lncRNA)",
+      "allele_or_zygosity": "homozygous null",
+      "perturbation_modality": "CRISPR germline knockout",
+      "imaging_modality": "WGS / GWAS"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": {
+      "locus_gene": "ivory (exon 1)",
+      "interval": "2030100-2030975 bp",
+      "alleles": [
+        "82 bp deletion",
+        "97 bp deletion"
+      ],
+      "bioproject": "PRJNA1031670"
+    },
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f3_genotyping.py",
+    "data": {
+      "curves": {
+        "ivory_ko_depth": {
+          "x": [
+            2030103.1,
+            2030112.5,
+            2030121.9,
+            2030131.2,
+            2030140.6,
+            2030150.0,
+            2030159.4,
+            2030168.7,
+            2030178.1,
+            2030187.5,
+            2030196.9,
+            2030206.2,
+            2030215.6,
+            2030225.0,
+            2030234.4,
+            2030243.7,
+            2030253.1,
+            2030262.5,
+            2030271.9,
+            2030281.2,
+            2030290.6,
+            2030300.0,
+            2030309.4,
+            2030318.7,
+            2030328.1,
+            2030337.5,
+            2030346.9,
+            2030356.2,
+            2030365.6,
+            2030375.0,
+            2030384.4,
+            2030393.7,
+            2030403.1,
+            2030412.5,
+            2030421.9,
+            2030431.2,
+            2030440.6,
+            2030450.0,
+            2030459.4,
+            2030468.7,
+            2030478.1,
+            2030487.5,
+            2030496.9,
+            2030506.2,
+            2030515.6,
+            2030525.0,
+            2030534.4,
+            2030543.7,
+            2030553.1,
+            2030562.5,
+            2030571.9,
+            2030581.2,
+            2030590.6,
+            2030600.0,
+            2030609.4,
+            2030618.7,
+            2030628.1,
+            2030637.5,
+            2030646.9,
+            2030656.2,
+            2030665.6,
+            2030675.0,
+            2030684.4,
+            2030693.7,
+            2030703.1,
+            2030712.5,
+            2030721.9,
+            2030731.2,
+            2030740.6,
+            2030750.0,
+            2030759.4,
+            2030768.7,
+            2030778.1,
+            2030787.5,
+            2030796.9,
+            2030806.2,
+            2030815.6,
+            2030825.0,
+            2030834.4,
+            2030843.7,
+            2030853.1,
+            2030862.5,
+            2030871.9,
+            2030881.2,
+            2030890.6,
+            2030900.0,
+            2030909.4,
+            2030918.7,
+            2030928.1,
+            2030937.5,
+            2030946.9,
+            2030956.2,
+            2030965.6
+          ],
+          "y": [
+            1.236,
+            1.236,
+            1.271,
+            1.447,
+            1.447,
+            1.553,
+            1.553,
+            1.447,
+            1.377,
+            1.342,
+            1.342,
+            1.377,
+            1.377,
+            1.377,
+            1.377,
+            1.377,
+            1.377,
+            1.377,
+            1.13,
+            1.025,
+            1.201,
+            1.236,
+            1.201,
+            1.165,
+            1.165,
+            1.165,
+            1.306,
+            1.342,
+            1.447,
+            1.588,
+            1.623,
+            1.623,
+            1.588,
+            1.588,
+            1.553,
+            1.342,
+            0.532,
+            0.004,
+            0.004,
+            0.004,
+            0.004,
+            0.004,
+            0.004,
+            0.004,
+            0.18,
+            0.567,
+            0.919,
+            1.06,
+            1.412,
+            1.553,
+            1.553,
+            1.553,
+            1.588,
+            1.412,
+            1.412,
+            1.412,
+            1.553,
+            1.694,
+            1.729,
+            1.764,
+            1.694,
+            1.658,
+            1.658,
+            1.658,
+            1.518,
+            1.518,
+            1.482,
+            1.447,
+            1.095,
+            0.954,
+            0.813,
+            0.813,
+            0.954,
+            1.095,
+            1.271,
+            1.342,
+            1.342,
+            1.342,
+            1.342,
+            1.482,
+            1.482,
+            1.623,
+            1.623,
+            1.764,
+            1.905,
+            2.046,
+            2.046,
+            2.081,
+            2.116,
+            1.94,
+            1.799,
+            1.799,
+            1.799
+          ],
+          "x_unit": "bp",
+          "y_unit": "normalized_depth"
+        },
+        "wt_average_depth": {
+          "x": [
+            2030103.1,
+            2030112.5,
+            2030121.9,
+            2030131.2,
+            2030140.6,
+            2030150.0,
+            2030159.4,
+            2030168.7,
+            2030178.1,
+            2030187.5,
+            2030196.9,
+            2030206.2,
+            2030215.6,
+            2030225.0,
+            2030234.4,
+            2030243.7,
+            2030253.1,
+            2030262.5,
+            2030271.9,
+            2030281.2,
+            2030290.6,
+            2030300.0,
+            2030309.4,
+            2030318.7,
+            2030328.1,
+            2030337.5,
+            2030346.9,
+            2030356.2,
+            2030365.6,
+            2030375.0,
+            2030384.4,
+            2030393.7,
+            2030403.1,
+            2030412.5,
+            2030421.9,
+            2030431.2,
+            2030440.6,
+            2030450.0,
+            2030459.4,
+            2030468.7,
+            2030478.1,
+            2030487.5,
+            2030496.9,
+            2030506.2,
+            2030515.6,
+            2030525.0,
+            2030534.4,
+            2030543.7,
+            2030553.1,
+            2030562.5,
+            2030571.9,
+            2030581.2,
+            2030590.6,
+            2030600.0,
+            2030609.4,
+            2030618.7,
+            2030628.1,
+            2030637.5,
+            2030646.9,
+            2030656.2,
+            2030665.6,
+            2030675.0,
+            2030684.4,
+            2030693.7,
+            2030703.1,
+            2030712.5,
+            2030721.9,
+            2030731.2,
+            2030740.6,
+            2030750.0,
+            2030759.4,
+            2030768.7,
+            2030778.1,
+            2030787.5,
+            2030796.9,
+            2030806.2,
+            2030815.6,
+            2030825.0,
+            2030834.4,
+            2030843.7,
+            2030853.1,
+            2030862.5,
+            2030871.9,
+            2030881.2,
+            2030890.6,
+            2030900.0,
+            2030909.4,
+            2030918.7,
+            2030928.1,
+            2030937.5,
+            2030946.9,
+            2030956.2,
+            2030965.6
+          ],
+          "y": [
+            0.954,
+            0.989,
+            1.06,
+            1.095,
+            1.095,
+            1.13,
+            1.13,
+            1.13,
+            1.201,
+            1.201,
+            1.236,
+            1.271,
+            1.236,
+            1.165,
+            1.165,
+            1.095,
+            1.095,
+            1.06,
+            1.06,
+            1.06,
+            1.165,
+            1.165,
+            1.165,
+            1.165,
+            1.201,
+            1.236,
+            1.306,
+            1.306,
+            1.271,
+            1.236,
+            1.201,
+            1.236,
+            1.236,
+            1.306,
+            1.306,
+            1.271,
+            1.236,
+            1.201,
+            1.201,
+            1.201,
+            1.13,
+            1.13,
+            1.13,
+            1.13,
+            1.201,
+            1.271,
+            1.306,
+            1.271,
+            1.271,
+            1.271,
+            1.271,
+            1.271,
+            1.306,
+            1.306,
+            1.342,
+            1.342,
+            1.306,
+            1.236,
+            1.201,
+            1.165,
+            1.13,
+            1.025,
+            1.025,
+            1.025,
+            0.989,
+            0.954,
+            0.919,
+            0.884,
+            0.778,
+            0.778,
+            0.708,
+            0.673,
+            0.673,
+            0.673,
+            0.673,
+            0.673,
+            0.637,
+            0.673,
+            0.743,
+            0.778,
+            0.778,
+            0.743,
+            0.778,
+            0.813,
+            0.813,
+            0.813,
+            0.813,
+            0.884,
+            1.025,
+            1.095,
+            1.095,
+            1.13,
+            1.165
+          ],
+          "x_unit": "bp",
+          "y_unit": "normalized_depth"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          28,
+          27,
+          310,
+          120
+        ],
+        "x_range": [
+          2030096.9,
+          2030978.1
+        ],
+        "y_range": [
+          -0.137,
+          3.137
+        ],
+        "x_misfit_px": 0.0,
+        "y_misfit_px": 0.224,
+        "kind": "curves"
+      },
+      "x_tick_misfit_px": 0.0,
+      "y_tick_misfit_px": 0.224,
+      "deletion_alleles_bp": [
+        82,
+        97
+      ],
+      "ivory_ko_min_depth_in_deletion": 0.004,
+      "wt_mean_depth_in_deletion": 1.16
+    },
+    "n_digitized_points": 186,
+    "linked_items": [
+      "F3_ivory_germline_radiolabel"
+    ],
+    "linked_claims": [
+      "C5_ivory_germline_melanin_vs_ommochrome"
+    ],
+    "linked_resources": [
+      "livraghi_sra_vc_wgs"
+    ],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/G",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "G",
+    "panel_label": "3G",
+    "title": "Female V. cardui cortex exon 2 G0 crispant (63.8% haemolymph indel efficiency) displaying wild-type dorsal and ventral wing pigmentation",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      22,
+      136,
+      170,
+      288
+    ],
+    "pixel_size": [
+      148,
+      152
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "sex": "female",
+      "life_stage": "adult",
+      "target_gene": "cortex (cort)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:cortex",
+      "element_type": "coding_exon2_cbox",
+      "allele": "g0_somatic_mosaic",
+      "indel_efficiency_pct": 63.8,
+      "phenotype": "No wing pigmentation phenotype (indistinguishable from wild type)"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_cortex_g0_counts",
+      "F3_cortex_g0_penetrance"
+    ],
+    "linked_claims": [
+      "C6_cortex_null_no_wing_phenotype"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/G_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "G_prime",
+    "panel_label": "3G'",
+    "title": "Male V. cardui cortex exon 2 G0 crispant (98.8% haemolymph indel efficiency) displaying wild-type dorsal and ventral wing pigmentation",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      222,
+      136,
+      370,
+      288
+    ],
+    "pixel_size": [
+      148,
+      152
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "sex": "male",
+      "life_stage": "adult",
+      "target_gene": "cortex (cort)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:cortex",
+      "element_type": "coding_exon2_cbox",
+      "allele": "g0_somatic_mosaic",
+      "indel_efficiency_pct": 98.8,
+      "phenotype": "No wing pigmentation phenotype (indistinguishable from wild type)"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_cortex_g0_counts",
+      "F3_cortex_g0_penetrance"
+    ],
+    "linked_claims": [
+      "C6_cortex_null_no_wing_phenotype"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/H_female",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "H_female",
+    "panel_label": "3H (female)",
+    "title": "Sanger sequencing aberrant-trace efficiency plot for female cortex exon 2 G0 crispant parent (Total efficiency = 63.8% downstream of C-Box cut site)",
+    "archetype": "quantitative_plot",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      380,
+      139,
+      695,
+      211
+    ],
+    "pixel_size": [
+      315,
+      72
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "sex": "female",
+      "life_stage": "adult",
+      "target_gene": "cortex (cort)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": {
+      "locus_gene": "cortex (exon 2 / C-Box)",
+      "sanger_efficiency_pct": 63.8
+    },
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f3_genotyping.py",
+    "data": {
+      "curves": {
+        "cortex_mko_female_aberrant_pct": {
+          "x": [
+            90.4,
+            94.7,
+            98.9,
+            103.2,
+            107.4,
+            111.7,
+            116.0,
+            120.2,
+            124.5,
+            128.7,
+            133.0,
+            137.2,
+            141.5,
+            145.7,
+            150.0,
+            154.3,
+            158.5,
+            162.8,
+            167.0,
+            171.3,
+            175.5,
+            179.8,
+            184.0,
+            188.3,
+            192.6,
+            196.8,
+            201.1,
+            205.3,
+            209.6,
+            213.8,
+            218.1,
+            222.3,
+            226.6,
+            230.9,
+            235.1,
+            239.4,
+            243.6,
+            247.9,
+            252.1,
+            256.4,
+            260.6,
+            264.9,
+            269.1,
+            273.4,
+            277.7,
+            281.9,
+            286.2,
+            290.4,
+            294.7,
+            298.9,
+            303.2,
+            307.4,
+            311.7,
+            316.0,
+            320.2,
+            324.5,
+            328.7,
+            333.0,
+            337.2,
+            341.5,
+            345.7,
+            350.0,
+            354.3,
+            358.5,
+            362.8,
+            367.0,
+            371.3,
+            375.5,
+            379.8
+          ],
+          "y": [
+            24.0,
+            4.0,
+            14.0,
+            12.0,
+            10.0,
+            12.0,
+            2.0,
+            36.0,
+            14.0,
+            14.0,
+            26.0,
+            16.0,
+            12.0,
+            22.0,
+            16.0,
+            14.0,
+            12.0,
+            20.0,
+            18.0,
+            18.0,
+            12.0,
+            16.0,
+            12.0,
+            16.0,
+            2.0,
+            22.0,
+            16.0,
+            14.0,
+            16.0,
+            10.0,
+            24.0,
+            22.0,
+            18.0,
+            28.0,
+            18.0,
+            18.0,
+            22.0,
+            26.0,
+            16.0,
+            28.0,
+            34.0,
+            22.0,
+            56.0,
+            80.0,
+            70.0,
+            46.0,
+            76.0,
+            48.0,
+            72.0,
+            88.0,
+            58.0,
+            66.0,
+            76.0,
+            70.0,
+            76.0,
+            84.0,
+            68.0,
+            74.0,
+            58.0,
+            60.0,
+            74.0,
+            86.0,
+            64.0,
+            70.0,
+            64.0,
+            56.0,
+            76.0,
+            88.0,
+            68.0
+          ],
+          "x_unit": "bp",
+          "y_unit": "%"
+        },
+        "wt_female_aberrant_pct": {
+          "x": [
+            90.4,
+            94.7,
+            98.9,
+            103.2,
+            107.4,
+            111.7,
+            116.0,
+            120.2,
+            124.5,
+            128.7,
+            133.0,
+            137.2,
+            141.5,
+            145.7,
+            150.0,
+            154.3,
+            158.5,
+            162.8,
+            167.0,
+            171.3,
+            175.5,
+            179.8,
+            184.0,
+            188.3,
+            192.6,
+            196.8,
+            201.1,
+            205.3,
+            209.6,
+            213.8,
+            218.1,
+            222.3,
+            226.6,
+            230.9,
+            235.1,
+            239.4,
+            243.6,
+            247.9,
+            252.1,
+            256.4,
+            260.6,
+            264.9,
+            269.1,
+            273.4,
+            277.7,
+            281.9,
+            286.2,
+            290.4,
+            294.7,
+            298.9,
+            303.2,
+            307.4,
+            311.7,
+            316.0,
+            320.2,
+            324.5,
+            328.7,
+            333.0,
+            337.2,
+            341.5,
+            345.7,
+            350.0,
+            354.3,
+            358.5,
+            362.8,
+            367.0,
+            371.3,
+            375.5,
+            379.8
+          ],
+          "y": [
+            24.0,
+            4.0,
+            14.0,
+            12.0,
+            10.0,
+            12.0,
+            2.0,
+            32.0,
+            14.0,
+            14.0,
+            26.0,
+            12.0,
+            12.0,
+            22.0,
+            16.0,
+            14.0,
+            12.0,
+            20.0,
+            18.0,
+            18.0,
+            12.0,
+            16.0,
+            12.0,
+            16.0,
+            2.0,
+            22.0,
+            16.0,
+            14.0,
+            16.0,
+            10.0,
+            24.0,
+            22.0,
+            18.0,
+            28.0,
+            18.0,
+            18.0,
+            22.0,
+            26.0,
+            16.0,
+            28.0,
+            34.0,
+            22.0,
+            26.0,
+            12.0,
+            22.0,
+            32.0,
+            28.0,
+            12.0,
+            20.0,
+            40.0,
+            16.0,
+            18.0,
+            32.0,
+            20.0,
+            24.0,
+            20.0,
+            14.0,
+            20.0,
+            14.0,
+            16.0,
+            24.0,
+            34.0,
+            12.0,
+            14.0,
+            16.0,
+            14.0,
+            16.0,
+            28.0,
+            36.0
+          ],
+          "x_unit": "bp",
+          "y_unit": "%"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          30,
+          17,
+          310,
+          67
+        ],
+        "x_range": [
+          88.3,
+          386.2
+        ],
+        "y_range": [
+          -0.0,
+          100.0
+        ],
+        "x_misfit_px": 0.0,
+        "y_misfit_px": 0.0,
+        "kind": "curves"
+      },
+      "x_tick_misfit_px": 0.0,
+      "y_tick_misfit_px": 0.0,
+      "total_efficiency_pct": 63.8,
+      "predicted_cut_site_bp": 269.1,
+      "pre_cut_mean_aberrant_pct": 17.2,
+      "post_cut_mean_aberrant_pct": 69.4
+    },
+    "n_digitized_points": 138,
+    "linked_items": [
+      "F3_cortex_g0_counts",
+      "F3_cortex_g0_penetrance"
+    ],
+    "linked_claims": [
+      "C6_cortex_null_no_wing_phenotype"
+    ],
+    "linked_resources": [
+      "livraghi_pnas_si_appendix"
+    ],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/H_male",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "H_male",
+    "panel_label": "3H (male)",
+    "title": "Sanger sequencing aberrant-trace efficiency plot for male cortex exon 2 G0 crispant parent (Total efficiency = 98.8% downstream of C-Box cut site)",
+    "archetype": "quantitative_plot",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      380,
+      211,
+      695,
+      288
+    ],
+    "pixel_size": [
+      315,
+      77
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "sex": "male",
+      "life_stage": "adult",
+      "target_gene": "cortex (cort)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": {
+      "locus_gene": "cortex (exon 2 / C-Box)",
+      "sanger_efficiency_pct": 98.8
+    },
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": "extractors/f3_genotyping.py",
+    "data": {
+      "curves": {
+        "cortex_mko_male_aberrant_pct": {
+          "x": [
+            90.4,
+            94.7,
+            98.9,
+            103.2,
+            107.4,
+            111.7,
+            116.0,
+            120.2,
+            124.5,
+            128.7,
+            133.0,
+            137.2,
+            141.5,
+            145.7,
+            150.0,
+            154.3,
+            158.5,
+            162.8,
+            167.0,
+            171.3,
+            175.5,
+            179.8,
+            184.0,
+            188.3,
+            192.6,
+            196.8,
+            201.1,
+            205.3,
+            209.6,
+            213.8,
+            218.1,
+            222.3,
+            226.6,
+            230.9,
+            235.1,
+            239.4,
+            243.6,
+            247.9,
+            252.1,
+            256.4,
+            260.6,
+            264.9,
+            269.1,
+            273.4,
+            277.7,
+            281.9,
+            286.2,
+            290.4,
+            294.7,
+            298.9,
+            303.2,
+            307.4,
+            311.7,
+            316.0,
+            320.2,
+            324.5,
+            328.7,
+            333.0,
+            337.2,
+            341.5,
+            345.7,
+            350.0,
+            354.3,
+            358.5,
+            362.8,
+            367.0,
+            371.3,
+            375.5,
+            379.8
+          ],
+          "y": [
+            24.76,
+            5.71,
+            15.24,
+            15.24,
+            20.95,
+            13.33,
+            5.71,
+            20.95,
+            19.05,
+            17.14,
+            28.57,
+            17.14,
+            15.24,
+            22.86,
+            17.14,
+            13.33,
+            36.19,
+            22.86,
+            19.05,
+            19.05,
+            13.33,
+            17.14,
+            13.33,
+            15.24,
+            5.71,
+            22.86,
+            17.14,
+            15.24,
+            19.05,
+            11.43,
+            24.76,
+            22.86,
+            19.05,
+            28.57,
+            20.95,
+            20.95,
+            22.86,
+            28.57,
+            17.14,
+            15.24,
+            36.19,
+            22.86,
+            57.14,
+            100.0,
+            91.43,
+            100.0,
+            100.0,
+            99.05,
+            95.24,
+            100.0,
+            99.05,
+            100.0,
+            89.52,
+            100.0,
+            100.0,
+            95.24,
+            100.0,
+            99.05,
+            97.14,
+            91.43,
+            100.0,
+            100.0,
+            100.0,
+            97.14,
+            100.0,
+            100.0,
+            100.0,
+            99.05,
+            97.14
+          ],
+          "x_unit": "bp",
+          "y_unit": "%"
+        },
+        "wt_male_aberrant_pct": {
+          "x": [
+            90.4,
+            94.7,
+            98.9,
+            103.2,
+            107.4,
+            111.7,
+            116.0,
+            120.2,
+            124.5,
+            128.7,
+            133.0,
+            137.2,
+            141.5,
+            145.7,
+            150.0,
+            154.3,
+            158.5,
+            162.8,
+            167.0,
+            171.3,
+            175.5,
+            179.8,
+            184.0,
+            188.3,
+            192.6,
+            196.8,
+            201.1,
+            205.3,
+            209.6,
+            213.8,
+            218.1,
+            222.3,
+            226.6,
+            230.9,
+            235.1,
+            239.4,
+            243.6,
+            247.9,
+            252.1,
+            256.4,
+            260.6,
+            264.9,
+            269.1,
+            273.4,
+            277.7,
+            281.9,
+            286.2,
+            290.4,
+            294.7,
+            298.9,
+            303.2,
+            307.4,
+            311.7,
+            316.0,
+            320.2,
+            324.5,
+            328.7,
+            333.0,
+            337.2,
+            341.5,
+            345.7,
+            350.0,
+            354.3,
+            358.5,
+            362.8,
+            367.0,
+            371.3,
+            375.5,
+            379.8
+          ],
+          "y": [
+            24.76,
+            5.71,
+            15.24,
+            15.24,
+            20.95,
+            13.33,
+            5.71,
+            20.95,
+            19.05,
+            17.14,
+            28.57,
+            17.14,
+            15.24,
+            22.86,
+            17.14,
+            13.33,
+            36.19,
+            22.86,
+            19.05,
+            19.05,
+            13.33,
+            17.14,
+            13.33,
+            15.24,
+            5.71,
+            22.86,
+            17.14,
+            15.24,
+            19.05,
+            11.43,
+            24.76,
+            22.86,
+            19.05,
+            28.57,
+            20.95,
+            20.95,
+            22.86,
+            28.57,
+            17.14,
+            15.24,
+            36.19,
+            22.86,
+            19.05,
+            15.24,
+            24.76,
+            32.38,
+            20.95,
+            13.33,
+            24.76,
+            40.0,
+            17.14,
+            17.14,
+            34.29,
+            20.95,
+            24.76,
+            20.95,
+            15.24,
+            20.95,
+            17.14,
+            19.05,
+            22.86,
+            34.29,
+            13.33,
+            24.76,
+            19.05,
+            17.14,
+            19.05,
+            13.33,
+            40.0
+          ],
+          "x_unit": "bp",
+          "y_unit": "%"
+        }
+      },
+      "overlay_meta": {
+        "plot_box": [
+          30,
+          5,
+          310,
+          58
+        ],
+        "x_range": [
+          88.3,
+          386.2
+        ],
+        "y_range": [
+          -0.0,
+          100.95
+        ],
+        "x_misfit_px": 0.0,
+        "y_misfit_px": 0.0,
+        "kind": "curves"
+      },
+      "x_tick_misfit_px": 0.0,
+      "y_tick_misfit_px": 0.0,
+      "total_efficiency_pct": 98.8,
+      "predicted_cut_site_bp": 269.1,
+      "pre_cut_mean_aberrant_pct": 19.0,
+      "post_cut_mean_aberrant_pct": 98.0
+    },
+    "n_digitized_points": 138,
+    "linked_items": [
+      "F3_cortex_g0_counts",
+      "F3_cortex_g0_penetrance"
+    ],
+    "linked_claims": [
+      "C6_cortex_null_no_wing_phenotype"
+    ],
+    "linked_resources": [
+      "livraghi_pnas_si_appendix"
+    ],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/I",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "I",
+    "panel_label": "3I",
+    "title": "F1 compound heterozygous cortex \u03948/\u039410nt null butterfly",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      22,
+      297,
+      170,
+      450
+    ],
+    "pixel_size": [
+      148,
+      153
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "target_gene": "cortex (cort)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "homozygous null",
+      "perturbation_modality": "CRISPR germline knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:cortex",
+      "element_type": "coding_exon2_cbox",
+      "allele": "homozygous_null",
+      "alleles": [
+        "delta_8nt",
+        "delta_10nt"
+      ],
+      "phenotype": "Zero wing pigmentation defects; viable but infertile"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_cortex_g0_penetrance",
+      "F3_cortex_vs_ivory_penetrance"
+    ],
+    "linked_claims": [
+      "C6_cortex_null_no_wing_phenotype"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/I_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "I_prime",
+    "panel_label": "3I'",
+    "title": "F1 compound heterozygous cortex \u03948/\u039410nt null butterfly",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      222,
+      297,
+      370,
+      450
+    ],
+    "pixel_size": [
+      148,
+      153
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "life_stage": "adult",
+      "target_gene": "cortex (cort)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "homozygous null",
+      "perturbation_modality": "CRISPR germline knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:cortex",
+      "element_type": "coding_exon2_cbox",
+      "allele": "homozygous_null",
+      "alleles": [
+        "delta_8nt",
+        "delta_10nt"
+      ],
+      "phenotype": "Zero wing pigmentation defects; viable but infertile"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_cortex_g0_penetrance",
+      "F3_cortex_vs_ivory_penetrance"
+    ],
+    "linked_claims": [
+      "C6_cortex_null_no_wing_phenotype"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/J",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "J",
+    "panel_label": "3J",
+    "title": "Predicted 3D structure of WT Cortex (WD40 beta-propeller) vs truncated frameshift alleles \u03948nt (p.Gln69fs) and \u039410nt (p.Phe67fs) losing all secondary structure",
+    "archetype": "phylogeny_or_schematic",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      380,
+      295,
+      695,
+      450
+    ],
+    "pixel_size": [
+      315,
+      155
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "target_gene": "cortex (cort)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "homozygous null"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_cortex_g0_penetrance"
+    ],
+    "linked_claims": [
+      "C6_cortex_null_no_wing_phenotype"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F3/K",
+    "paper": "2024_Livraghi",
+    "figure_id": "F3",
+    "figure_label": "Fig. 3",
+    "panel_id": "K",
+    "panel_label": "3K",
+    "title": "Nucleotide and translated amino acid alignment of V. cardui cortex exon 2 C-Box showing sgRNA, PAM, cut site, and premature stop codons in \u03948nt and \u039410nt alleles",
+    "archetype": "genomic_track_or_locus",
+    "file": "pnas.2403326121fig03.jpg",
+    "bbox": [
+      0,
+      455,
+      695,
+      533
+    ],
+    "pixel_size": [
+      695,
+      78
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "wing",
+      "taxon": "Vanessa cardui",
+      "target_gene": "cortex (cort)",
+      "genetic_element_type": "coding exon",
+      "allele_or_zygosity": "homozygous null"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": {
+      "locus_gene": "cortex (exon 2, C-Box)",
+      "sgrna": "ACTCTTTCGGTGAGGCACGG",
+      "pam": "AGG",
+      "alleles": [
+        "WT",
+        "delta_8nt (p.Gln69fs*)",
+        "delta_10nt (p.Phe67fs*)"
+      ]
+    },
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F3_cortex_g0_penetrance"
+    ],
+    "linked_claims": [
+      "C6_cortex_null_no_wing_phenotype"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Phenotypes are explained by ivory- specific mutations."
+  },
+  {
+    "id": "2024_Livraghi/F4/A",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "A",
+    "panel_label": "4A",
+    "title": "Agraulis incarnata wild-type ventral wings",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      22,
+      15,
+      168,
+      209
+    ],
+    "pixel_size": [
+      146,
+      194
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/B",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "B",
+    "panel_label": "4B",
+    "title": "A. incarnata full (nonmosaic) ivory G0 crispant ventral wings showing melanic-to-silver conversion and lighter orange",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      169,
+      15,
+      307,
+      209
+    ],
+    "pixel_size": [
+      138,
+      194
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Full ventral melanic (black/brown)-to-reflective silver conversion and lighter orange"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F4_nymphalidae_conservation"
+    ],
+    "linked_claims": [
+      "C7_ivory_conserved_80my_nymphalidae"
+    ],
+    "linked_resources": [
+      "livraghi_pnas_si_appendix"
+    ],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/C",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "C",
+    "panel_label": "4C",
+    "title": "A. incarnata clonal (mosaic) ivory G0 crispant ventral wings showing sharp WT vs silver mutant boundaries",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      308,
+      15,
+      460,
+      209
+    ],
+    "pixel_size": [
+      152,
+      194
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Sharp ventral clonal mosaics separating WT brown/black and mutant reflective silver scales"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F4_nymphalidae_conservation"
+    ],
+    "linked_claims": [
+      "C7_ivory_conserved_80my_nymphalidae"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/D",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "D",
+    "panel_label": "4D",
+    "title": "A. incarnata wild-type ventral forewing Cu1-Cu2 spot magnified",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      461,
+      15,
+      544,
+      111
+    ],
+    "pixel_size": [
+      83,
+      96
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral forewing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/D_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "D_prime",
+    "panel_label": "4D'",
+    "title": "A. incarnata full ivory crispant ventral forewing Cu1-Cu2 spot showing black-to-silver conversion",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      545,
+      15,
+      628,
+      111
+    ],
+    "pixel_size": [
+      83,
+      96
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral forewing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Forewing Cu1-Cu2 black spot converts to reflective silver"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/D_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "D_dprime",
+    "panel_label": "4D''",
+    "title": "A. incarnata clonal ivory crispant ventral forewing Cu1-Cu2 spot with sharp mosaic boundary",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      629,
+      15,
+      712,
+      111
+    ],
+    "pixel_size": [
+      83,
+      96
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral forewing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Mosaic boundary bisecting Cu1-Cu2 melanic spot into black WT and silver KO clones"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/E",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "E",
+    "panel_label": "4E",
+    "title": "A. incarnata wild-type ventral hindwing Cu1-Cu2 silver spot with dark brown border magnified",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      461,
+      112,
+      544,
+      209
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral hindwing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/E_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "E_prime",
+    "panel_label": "4E'",
+    "title": "A. incarnata full ivory crispant ventral hindwing Cu1-Cu2 showing complete brown-to-silver expansion",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      545,
+      112,
+      628,
+      209
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral hindwing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Dark brown borders convert into reflective silver scales"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/E_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "E_dprime",
+    "panel_label": "4E''",
+    "title": "A. incarnata clonal ivory crispant ventral hindwing Cu1-Cu2 showing mosaic loss of brown melanin border",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      629,
+      112,
+      712,
+      209
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral hindwing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Clonal silver expansion interrupting brown melanic border"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/F",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "F",
+    "panel_label": "4F",
+    "title": "Agraulis incarnata wild-type dorsal wings",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      22,
+      210,
+      168,
+      405
+    ],
+    "pixel_size": [
+      146,
+      195
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/G",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "G",
+    "panel_label": "4G",
+    "title": "A. incarnata full ivory G0 crispant dorsal wings showing white marginal/venous conversion and lightened orange",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      169,
+      210,
+      307,
+      405
+    ],
+    "pixel_size": [
+      138,
+      195
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Dorsal marginal and venous black scales turn white; orange scales lighten while retaining ommochrome"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F4_nymphalidae_conservation"
+    ],
+    "linked_claims": [
+      "C7_ivory_conserved_80my_nymphalidae"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/H",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "H",
+    "panel_label": "4H",
+    "title": "A. incarnata clonal ivory G0 crispant dorsal wings showing fragmented WT vs depigmented clones",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      308,
+      210,
+      460,
+      405
+    ],
+    "pixel_size": [
+      152,
+      195
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Fragmented dorsal mosaic clones showing white marginal/venous conversions"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/I",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "I",
+    "panel_label": "4I",
+    "title": "A. incarnata wild-type dorsal Discalis II spots magnified",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      461,
+      210,
+      544,
+      307
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal forewing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "pattern_element": "discal spot",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/I_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "I_prime",
+    "panel_label": "4I'",
+    "title": "A. incarnata full ivory crispant dorsal Discalis II spots showing lightened black/brown and orange scales",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      545,
+      210,
+      628,
+      307
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal forewing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "pattern_element": "discal spot",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Partial lightening of dorsal Discalis II melanic rings and surrounding orange"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/I_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "I_dprime",
+    "panel_label": "4I''",
+    "title": "A. incarnata clonal ivory crispant dorsal Discalis II spots magnified",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      629,
+      210,
+      712,
+      307
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal forewing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "pattern_element": "discal spot",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Clonal lightening across Discalis II melanic spots"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/J",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "J",
+    "panel_label": "4J",
+    "title": "A. incarnata wild-type dorsal marginal M3-Cu2 melanic chevron patterns magnified",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      461,
+      308,
+      544,
+      405
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "pattern_element": "marginal band",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/J_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "J_prime",
+    "panel_label": "4J'",
+    "title": "A. incarnata full ivory crispant dorsal marginal M3-Cu2 showing complete melanic-to-white conversion",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      545,
+      308,
+      628,
+      405
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "pattern_element": "marginal band",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Complete conversion of dorsal M3-Cu2 marginal black markings to white"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/J_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "J_dprime",
+    "panel_label": "4J''",
+    "title": "A. incarnata clonal ivory crispant dorsal marginal M3-Cu2 showing sharp black-to-white clonal border",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      629,
+      308,
+      712,
+      405
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Agraulis incarnata",
+      "pattern_element": "marginal band",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Sharp clonal mosaic converting black marginal chevrons to white"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/K",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "K",
+    "panel_label": "4K",
+    "title": "Danaus plexippus wild-type ventral wings",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      22,
+      406,
+      168,
+      603
+    ],
+    "pixel_size": [
+      146,
+      197
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/L",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "L",
+    "panel_label": "4L",
+    "title": "D. plexippus full ivory G0 crispant ventral wings showing global melanic-to-white conversion and pale orange/cream shifts",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      169,
+      406,
+      307,
+      603
+    ],
+    "pixel_size": [
+      138,
+      197
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Complete ventral melanic vein-border loss to white and pronounced lightening of orange domains"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F4_nymphalidae_conservation"
+    ],
+    "linked_claims": [
+      "C7_ivory_conserved_80my_nymphalidae"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/M",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "M",
+    "panel_label": "4M",
+    "title": "D. plexippus clonal ivory G0 crispant ventral wings showing sharp WT vs depigmented mosaic patches",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      308,
+      406,
+      460,
+      603
+    ],
+    "pixel_size": [
+      152,
+      197
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Sharp ventral mosaic patches converting black veins and orange sectors to pale cream/white"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/N",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "N",
+    "panel_label": "4N",
+    "title": "D. plexippus wild-type ventral forewing M1-M3 distal white spots and black margins magnified",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      461,
+      406,
+      544,
+      505
+    ],
+    "pixel_size": [
+      83,
+      99
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral forewing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "pattern_element": "distal wing field",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/N_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "N_prime",
+    "panel_label": "4N'",
+    "title": "D. plexippus full ivory crispant ventral forewing M1-M3 showing distal white spots converting to orange while surrounding black/orange turns pale white",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      545,
+      406,
+      628,
+      505
+    ],
+    "pixel_size": [
+      83,
+      99
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral forewing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "pattern_element": "distal wing field",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Local switch where distal white spots turn orange while melanic and distal orange areas turn white"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F4_nymphalidae_conservation"
+    ],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/N_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "N_dprime",
+    "panel_label": "4N''",
+    "title": "D. plexippus clonal ivory crispant ventral forewing M1-M3 magnified",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      629,
+      406,
+      712,
+      505
+    ],
+    "pixel_size": [
+      83,
+      99
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral forewing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "pattern_element": "distal wing field",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Clonal inversion of white spot and melanic margin states"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/O",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "O",
+    "panel_label": "4O",
+    "title": "D. plexippus wild-type ventral hindwing discal crossvein melanic markings magnified",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      461,
+      506,
+      544,
+      603
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral hindwing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "pattern_element": "discal spot",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/O_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "O_prime",
+    "panel_label": "4O'",
+    "title": "D. plexippus full ivory crispant ventral hindwing discal crossvein showing melanic-to-white conversion",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      545,
+      506,
+      628,
+      603
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral hindwing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "pattern_element": "discal spot",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Complete loss of black discal crossvein scales to pale cream-white"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/O_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "O_dprime",
+    "panel_label": "4O''",
+    "title": "D. plexippus clonal ivory crispant ventral hindwing discal crossvein magnified",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      629,
+      506,
+      712,
+      603
+    ],
+    "pixel_size": [
+      83,
+      97
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "ventral hindwing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "pattern_element": "discal spot",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Clonal fragmentation of black crossvein scales into pale white clones"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/P",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "P",
+    "panel_label": "4P",
+    "title": "Danaus plexippus wild-type dorsal wings",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      22,
+      604,
+      168,
+      799
+    ],
+    "pixel_size": [
+      146,
+      195
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/Q",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "Q",
+    "panel_label": "4Q",
+    "title": "D. plexippus full ivory G0 crispant dorsal wings showing melanic vein/margin-to-white conversion with residual proximal orange",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      169,
+      604,
+      307,
+      799
+    ],
+    "pixel_size": [
+      138,
+      195
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Dorsal melanic margins and vein borders turn white while proximal orange persists partially"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [
+      "F4_nymphalidae_conservation"
+    ],
+    "linked_claims": [
+      "C7_ivory_conserved_80my_nymphalidae"
+    ],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/R",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "R",
+    "panel_label": "4R",
+    "title": "D. plexippus clonal ivory G0 crispant dorsal wings showing mosaic black-to-white clones",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      308,
+      604,
+      460,
+      799
+    ],
+    "pixel_size": [
+      152,
+      195
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal wing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Sharp dorsal clonal mosaic patches separating black WT and white KO scales"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/S",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "S",
+    "panel_label": "4S",
+    "title": "D. plexippus wild-type dorsal forewing Cu1-Cu2 vein junction magnified",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      461,
+      604,
+      544,
+      700
+    ],
+    "pixel_size": [
+      83,
+      96
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal forewing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/S_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "S_prime",
+    "panel_label": "4S'",
+    "title": "D. plexippus full ivory crispant dorsal forewing Cu1-Cu2 vein junction showing melanic-to-white transformation",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      545,
+      604,
+      628,
+      700
+    ],
+    "pixel_size": [
+      83,
+      96
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal forewing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Pronounced melanic-to-white conversion around forewing Cu1-Cu2 vein margin"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/S_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "S_dprime",
+    "panel_label": "4S''",
+    "title": "D. plexippus clonal ivory crispant dorsal forewing Cu1-Cu2 vein junction magnified",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      629,
+      604,
+      712,
+      700
+    ],
+    "pixel_size": [
+      83,
+      96
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal forewing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Sharp mosaic boundary across Cu1-Cu2 melanic vein border"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/T",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "T",
+    "panel_label": "4T",
+    "title": "D. plexippus wild-type dorsal hindwing M1-M2 vein junction magnified",
+    "archetype": "macro_morphology",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      461,
+      701,
+      544,
+      799
+    ],
+    "pixel_size": [
+      83,
+      98
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal hindwing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "perturbation_modality": "wild type"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": null,
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/T_prime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "T_prime",
+    "panel_label": "4T'",
+    "title": "D. plexippus full ivory crispant dorsal hindwing M1-M2 vein junction showing melanic-to-white transformation",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      545,
+      701,
+      628,
+      799
+    ],
+    "pixel_size": [
+      83,
+      98
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal hindwing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "phenotype": "Pronounced melanic-to-white conversion around hindwing M1-M2 vein margin"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  },
+  {
+    "id": "2024_Livraghi/F4/T_dprime",
+    "paper": "2024_Livraghi",
+    "figure_id": "F4",
+    "figure_label": "Fig. 4",
+    "panel_id": "T_dprime",
+    "panel_label": "4T''",
+    "title": "D. plexippus clonal ivory crispant dorsal hindwing M1-M2 vein junction magnified",
+    "archetype": "crispant_phenotype_plate",
+    "file": "pnas.2403326121fig04.jpg",
+    "bbox": [
+      629,
+      701,
+      712,
+      799
+    ],
+    "pixel_size": [
+      83,
+      98
+    ],
+    "context": {
+      "family": "Nymphalidae",
+      "anatomical_region": "dorsal hindwing",
+      "life_stage": "adult",
+      "target_gene": "ivory (lncRNA)",
+      "genetic_element_type": "promoter, long non-coding RNA (lncRNA)",
+      "taxon": "Danaus plexippus",
+      "allele_or_zygosity": "G0 somatic mosaic",
+      "perturbation_modality": "CRISPR G0 mosaic knockout"
+    },
+    "stains_or_markers": [],
+    "channel_gene_map": {},
+    "genomic_locus": null,
+    "crispant_summary": {
+      "target_gene": "target_gene:ivory_lncrna",
+      "element_type": "promoter_and_exon1_lncrna",
+      "allele": "g0_somatic_mosaic",
+      "clone_contrast": "Sharp clonal mosaic across hindwing M1-M2 vein border"
+    },
+    "scale_bar_um": null,
+    "extractor_script": null,
+    "data": {},
+    "n_digitized_points": 0,
+    "linked_items": [],
+    "linked_claims": [],
+    "linked_resources": [],
+    "caption_quote": "Conserved and pattern-specific effects of ivory mKOs on nymphalid butterflies."
+  }
+]

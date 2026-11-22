@@ -1,0 +1,889 @@
+id: 2023_Banerjee
+field_set: 4
+source:
+  title: Spatial and temporal regulation of Wnt signaling pathway members in the development of butterfly wing patterns
+  doi: 10.1126/sciadv.adg3877
+  year: '2023'
+  first_author: Tirtha Das Banerjee
+  last_author: Antónia Monteiro
+  lab: Monteiro lab, National University of Singapore
+  journal: Science Advances
+  files:
+    - PMC10371022.xml
+  not_used:
+    - file: sciadv.adg3877-f1.jpg
+      why: Decomposed into 7 atomic expression_imaging panels (1A–1G) in panels.yaml
+    - file: sciadv.adg3877-f2.jpg
+      why: Decomposed into 6 atomic expression_imaging panels (2A–2F) in panels.yaml
+    - file: sciadv.adg3877-f3.jpg
+      why: Decomposed into 15 atomic expression_imaging panels (3A–3O) in panels.yaml
+    - file: sciadv.adg3877-f4.jpg
+      why: Decomposed into 12 atomic expression_imaging panels (4A–4L) in panels.yaml
+    - file: sciadv.adg3877-f5.jpg
+      why: Decomposed into 14 atomic schematic, expression_imaging, crispant_phenotype_plate, and genomic_track_or_locus panels (5A–5N) in panels.yaml
+    - file: sciadv.adg3877-f6.jpg
+      why: Decomposed into 18 atomic expression_imaging panels (6A–6R) in panels.yaml
+    - file: sciadv.adg3877-f7.jpg
+      why: Decomposed into 14 atomic expression_imaging panels (7A–7N) in panels.yaml
+    - file: sciadv.adg3877-f8.jpg
+      why: Decomposed into 11 atomic crispant_phenotype_plate and genomic_track_or_locus panels (8A–8K) in panels.yaml
+    - file: sciadv.adg3877-f9.jpg
+      why: Decomposed into 2 atomic phylogeny_or_schematic regulatory model panels (9A–9B) in panels.yaml
+    - file: sciadv.adg3877-f10.jpg
+      why: Decomposed into 3 atomic phylogeny_or_schematic pathway summary panels (10A–10C) in panels.yaml
+  missing:
+    - Supplementary Materials PDF (sciadv.adg3877_sm.pdf) containing Tables S1–S4 (including Table S2 CRISPR injection, hatching, and adult emergence denominators) and Figs. S1–S15 (including arm crispants fig. S7 and Wnt7 crispants fig. S15)
+
+context_anchors:
+  - field: taxon
+    value: Bicyclus anynana
+    anchor:
+      quote: in eyespot and band development in Bicyclus anynana by localizing Armadillo (Arm)
+      where: Abstract
+  - field: sex
+    value: Male and female
+    anchor:
+      quote: Male and female B. anynana butterflies are not sexually dimorphic with respect to the wing patterns studied in the present work.
+      where: Materials and Methods
+  - field: life_stage
+    value: pupal
+    anchor:
+      quote: During the pupal stage, Arm protein was observed in the eyespot foci and along the wing margin from 15 to 24 hours after pupation (AP) (Fig. 1, C and D).
+      where: Results
+  - field: life_stage
+    value: adult
+    anchor:
+      quote: We confirmed indels at the targeted sites using Illumina sequencing from the affected adult wings (Fig. 5N).
+      where: Results
+  - field: anatomical_region
+    value: forewing and hindwing
+    anchor:
+      quote: During pupal forewing and hindwing development, Arm is observed in the foci from 15 to 24 hours after pupation (AP).
+      where: Fig. 1 caption
+  - field: anatomical_region
+    value: wings
+    anchor:
+      quote: We confirmed indels at the targeted sites using Illumina sequencing from the affected adult wings (Fig. 5N).
+      where: Results
+  - field: anatomical_region
+    value: wing
+    anchor:
+      quote: Expression of Dll in an 18-hour pupal wing showing expression in the future black scale cells.
+      where: Fig. 3 caption
+  - field: pattern_element
+    value: eyespot foci and wing margin
+    anchor:
+      quote: During the pupal stage, Arm protein was observed in the eyespot foci and along the wing margin from 15 to 24 hours after pupation (AP) (Fig. 1, C and D).
+      where: Results
+  - field: pattern_element
+    value: wing margin
+    anchor:
+      quote: Defects along the wing margin were also observed in four of the arm CRISPR individuals (fig. S7, C to J).
+      where: Results
+  - field: pattern_element
+    value: eyespot
+    anchor:
+      quote: No defects in the eyespot pattern were obtained in any individual (Fig. 5, K to M), but the light-colored marginal chevrons of the wing were disrupted
+      where: Results
+  - field: pattern_element
+    value: eyespot field
+    anchor:
+      quote: frizzled4 crispants showed that frizzled4 also plays a role in PCP affecting scale orientation in the eyespot field.
+      where: Fig. 8 caption
+  - field: pattern_element
+    value: eyespot centers
+    anchor:
+      quote: In 18 individuals, mosaic crispant wings differentiated two eyespot centers along the proximal-distal axis (Fig. 8, C to F and H, and fig. S15, E to K).
+      where: Results
+  - field: pattern_element
+    value: CSS and BSS
+    anchor:
+      quote: WntA shows expression along the bands of the CSS and BSS (white arrows) in forewings and in one CSS band (white arrow) in hindwings.
+      where: Fig. 5 caption
+  - field: pattern_element
+    value: CSS, BSS, and marginal chevrons
+    anchor:
+      quote: loss of scale cell identity along the CSS in both forewings and hindwings, in the BSS band in forewings, and in marginal chevrons
+      where: Fig. 5 caption
+  - field: pattern_element
+    value: wing sectors
+    anchor:
+      quote: However, knockouts of Wnt7 using CRISPR-Cas9 resulted in ectopic veins and ectopic eyespots differentiating in the wing sectors in 12 individuals (fig. S15, A to D).
+      where: Results
+  - field: scale_type
+    value: scale cells
+    anchor:
+      quote: Two crispants also showed defects in the orientation of the orange and black scale cells in eyespots (Fig. 8, H to J).
+      where: Results
+  - field: scale_type
+    value: scales
+    anchor:
+      quote: Functional disruption of WntA using CRISPR-cas9 resulted in the loss of brown color with ectopic orange scales appearing along the CSS and in the BSS
+      where: Results
+  - field: target_gene
+    value: arm
+    anchor:
+      quote: Disruptions of arm via CRISPR-cas9 resulted in either a split eyespot or no eyespots, suggesting arm’s essential role in eyespot center cell differentiation (fig. S7, C to H).
+      where: Discussion
+  - field: target_gene
+    value: Wnt1
+    anchor:
+      quote: In 18 to 24 hours pupal wings, however, we confirmed the expression of Wnt1 transcripts in the eyespot foci, as well as expression along the wing margin
+      where: Results
+  - field: target_gene
+    value: Wnt6 and Wnt10
+    anchor:
+      quote: whereas Wnt6 and Wnt10 were only expressed along the wing margin (Fig. 2, E and F, and fig. S9, B, E, and M).
+      where: Results
+  - field: target_gene
+    value: Dll
+    anchor:
+      quote: Expression of Dll in an 18-hour pupal wing showing expression in the future black scale cells.
+      where: Fig. 3 caption
+  - field: target_gene
+    value: Wnt7
+    anchor:
+      quote: However, knockouts of Wnt7 using CRISPR-Cas9 resulted in ectopic veins and ectopic eyespots differentiating in the wing sectors in 12 individuals (fig. S15, A to D).
+      where: Results
+  - field: target_gene
+    value: WntA
+    anchor:
+      quote: Functional disruption of WntA using CRISPR-cas9 resulted in the loss of brown color with ectopic orange scales appearing along the CSS and in the BSS
+      where: Results
+  - field: target_gene
+    value: WntA and Optix
+    anchor:
+      quote: Expression of WntA and Optix in 24 to 30 hours pupal (D to F) forewing and (G to I) hindwing.
+      where: Fig. 5 caption
+  - field: target_gene
+    value: frizzled2, frizzled4
+    anchor:
+      quote: Expression of frizzled2, frizzled4, frizzled9, and Wnt1 in 18 to 24 hours pupal wings of B. anynana.
+      where: Fig. 7 caption
+  - field: target_gene
+    value: frizzled4
+    anchor:
+      quote: To test the role of frizzled4, we knocked it out using CRISPR-Cas9 at the embryonic stage.
+      where: Results
+  - field: genetic_element_type
+    value: coding sequence
+    anchor:
+      quote: One to two RNA guides were designed using CRISPRdirect or CHOPCHOP to target the coding sequence of these genes (see the Supplementary Materials for sequences).
+      where: Materials and Methods
+  - field: allele_or_zygosity
+    value: mosaic crispants
+    anchor:
+      quote: Knockout of arm using CRISPR-cas9 resulted in mosaic crispants that showed either a complete loss of the eyespot (one individual) (fig. S7, C and D) or split eyespots (two individuals)
+      where: Results
+  - field: perturbation_modality
+    value: CRISPR-Cas9
+    anchor:
+      quote: To test the role of frizzled4, we knocked it out using CRISPR-Cas9 at the embryonic stage.
+      where: Results
+  - field: imaging_modality
+    value: immunostainings
+    anchor:
+      quote: To extend these findings, we used immunostainings to document Arm’s spatial-temporal expression across both larval and pupal wings at multiple time points
+      where: Results
+  - field: imaging_modality
+    value: HCR3.0
+    anchor:
+      quote: we used hybridization chain reaction [Hybridization Chain Reaction v3.0 (HCR3.0)] (48).
+      where: Results
+  - field: imaging_modality
+    value: HCR3.0 and in situ hybridization
+    anchor:
+      quote: Expression of canonical Wnt ligands using HCR3.0 and in situ hybridization in larval and pupal wings.
+      where: Fig. 2 caption
+  - field: imaging_modality
+    value: Leica DMS1000 microscope
+    anchor:
+      quote: after eclosion, the adults were frozen at −20°C and imaged under a Leica DMS1000 microscope.
+      where: Materials and Methods
+  - field: hydration_and_prep
+    value: fixed in 4% formaldehyde
+    anchor:
+      quote: Briefly, wings were dissected in 1× PBS and fixed in 4% formaldehyde in 1× PBST.
+      where: Materials and Methods
+  - field: hydration_and_prep
+    value: frozen at −20°C
+    anchor:
+      quote: after eclosion, the adults were frozen at −20°C and imaged under a Leica DMS1000 microscope.
+      where: Materials and Methods
+
+default_context:
+  taxon: Bicyclus anynana
+  sex: Male and female
+  chemical_agent: none
+  view_orientation: not stated
+
+units:
+  U1_ARM_TIMING_AND_KO:
+    where: Fig. 1, fig. S7, and Results
+    title: Spatiotemporal localization of Armadillo (Arm) protein in pupal wings and arm CRISPR-Cas9 G0 mosaic knockout phenotypes
+    context:
+      target_gene: arm
+      functional_architecture: not stated
+    groups:
+      arm_pupal_if:
+        label: Wild-type pupal wing Armadillo immunofluorescence (15–24 h AP)
+        kind: natural
+        context:
+          life_stage: pupal
+          pupal_stage_pct: not stated
+          anatomical_region: forewing and hindwing
+          pattern_element: eyespot foci and wing margin
+          scale_type: not applicable
+          genetic_element_type: not applicable
+          allele_or_zygosity: wild type
+          perturbation_modality: wild type
+          imaging_modality: immunostainings
+          hydration_and_prep: fixed in 4% formaldehyde
+      arm_crispant_eyespot:
+        label: arm CRISPR-Cas9 G0 mosaic crispants (eyespot phenotypes)
+        kind: perturbed
+        context:
+          life_stage: adult
+          pupal_stage_pct: not applicable
+          anatomical_region: wings
+          pattern_element: eyespot
+          scale_type: scales
+          genetic_element_type: coding sequence
+          allele_or_zygosity: mosaic crispants
+          perturbation_modality: CRISPR-Cas9
+          imaging_modality: Leica DMS1000 microscope
+          hydration_and_prep: frozen at −20°C
+      arm_crispant_margin:
+        label: arm CRISPR-Cas9 G0 mosaic crispants (wing margin defects)
+        kind: perturbed
+        context:
+          life_stage: adult
+          pupal_stage_pct: not applicable
+          anatomical_region: wings
+          pattern_element: wing margin
+          scale_type: scales
+          genetic_element_type: coding sequence
+          allele_or_zygosity: mosaic crispants
+          perturbation_modality: CRISPR-Cas9
+          imaging_modality: Leica DMS1000 microscope
+          hydration_and_prep: frozen at −20°C
+
+  U2_CANONICAL_WNT_EXPRESSION:
+    where: Fig. 2, Fig. 3, and Results
+    title: Pupal wing expression timing of canonical Wnt ligands (Wnt1, Wnt6, Wnt10) and target Distal-less (Dll)
+    context:
+      life_stage: pupal
+      pupal_stage_pct: not stated
+      functional_architecture: not applicable
+      genetic_element_type: not applicable
+      allele_or_zygosity: wild type
+      perturbation_modality: wild type
+      hydration_and_prep: fixed in 4% formaldehyde
+    groups:
+      wnt1_pupal_foci:
+        label: Pupal Wnt1 transcript expression in eyespot foci and wing margin
+        kind: natural
+        context:
+          anatomical_region: forewing and hindwing
+          pattern_element: eyespot foci and wing margin
+          scale_type: not applicable
+          target_gene: Wnt1
+          imaging_modality: HCR3.0 and in situ hybridization
+      wnt6_wnt10_pupal_margin:
+        label: Pupal Wnt6 and Wnt10 transcript expression restricted to wing margin
+        kind: natural
+        context:
+          anatomical_region: forewing and hindwing
+          pattern_element: wing margin
+          scale_type: not applicable
+          target_gene: Wnt6 and Wnt10
+          imaging_modality: HCR3.0
+      dll_pupal_eyespot:
+        label: Pupal Dll transcript expression in future black eyespot scale cells
+        kind: natural
+        context:
+          anatomical_region: wing
+          pattern_element: eyespot
+          scale_type: scale cells
+          target_gene: Dll
+          imaging_modality: HCR3.0
+
+  U3_WNT7_CRISPANT:
+    where: Fig. 4, fig. S15, and Results
+    title: Wnt7 CRISPR-Cas9 G0 mosaic knockouts yielding ectopic wing veins and secondary ectopic eyespots
+    context:
+      life_stage: adult
+      pupal_stage_pct: not applicable
+      anatomical_region: wings
+      pattern_element: wing sectors
+      scale_type: scales
+      functional_architecture: not stated
+      target_gene: Wnt7
+      genetic_element_type: coding sequence
+      allele_or_zygosity: mosaic crispants
+      perturbation_modality: CRISPR-Cas9
+      imaging_modality: Leica DMS1000 microscope
+      hydration_and_prep: frozen at −20°C
+    groups:
+      wnt7_crispant:
+        label: Wnt7 CRISPR-Cas9 G0 mosaic crispants
+        kind: perturbed
+        context: {}
+
+  U4_WNTA_EXPRESSION_AND_KO:
+    where: Fig. 5 and Results
+    title: Pupal WntA and Optix co-expression and WntA CRISPR-Cas9 G0 mosaic knockout phenotypes in B. anynana bands
+    context:
+      functional_architecture: not stated
+    groups:
+      wnta_optix_pupal_hcr:
+        label: Pupal WntA and Optix HCR3.0 co-expression (24–30 h AP)
+        kind: natural
+        context:
+          life_stage: pupal
+          pupal_stage_pct: not stated
+          anatomical_region: forewing and hindwing
+          pattern_element: CSS and BSS
+          scale_type: scale cells
+          target_gene: WntA and Optix
+          genetic_element_type: not applicable
+          allele_or_zygosity: wild type
+          perturbation_modality: wild type
+          imaging_modality: HCR3.0
+          hydration_and_prep: fixed in 4% formaldehyde
+      wnta_crispant_bands:
+        label: WntA CRISPR-Cas9 G0 mosaic crispants (CSS/BSS/chevron defects)
+        kind: perturbed
+        context:
+          life_stage: adult
+          pupal_stage_pct: not applicable
+          anatomical_region: wings
+          pattern_element: CSS, BSS, and marginal chevrons
+          scale_type: scales
+          target_gene: WntA
+          genetic_element_type: coding sequence
+          allele_or_zygosity: mosaic crispants
+          perturbation_modality: CRISPR-Cas9
+          imaging_modality: Leica DMS1000 microscope
+          hydration_and_prep: frozen at −20°C
+      wnta_crispant_eyespot:
+        label: WntA CRISPR-Cas9 G0 mosaic crispants (eyespot pattern check)
+        kind: perturbed
+        context:
+          life_stage: adult
+          pupal_stage_pct: not applicable
+          anatomical_region: wings
+          pattern_element: eyespot
+          scale_type: scales
+          target_gene: WntA
+          genetic_element_type: coding sequence
+          allele_or_zygosity: mosaic crispants
+          perturbation_modality: CRISPR-Cas9
+          imaging_modality: Leica DMS1000 microscope
+          hydration_and_prep: frozen at −20°C
+
+  U5_FZ4_EXPRESSION_AND_KO:
+    where: Fig. 6, Fig. 7, Fig. 8, and Results
+    title: Pupal frizzled receptor expression and frizzled4 CRISPR-Cas9 G0 knockout phenotypes in eyespot duplication, PCP scale orientation, and wing margin
+    context:
+      functional_architecture: not stated
+    groups:
+      fz2_fz4_pupal_hcr:
+        label: Pupal frizzled2 and frizzled4 HCR3.0 anti-colocalized expression (18–24 h AP)
+        kind: natural
+        context:
+          life_stage: pupal
+          pupal_stage_pct: not stated
+          anatomical_region: forewing and hindwing
+          pattern_element: eyespot field
+          scale_type: not applicable
+          target_gene: frizzled2, frizzled4
+          genetic_element_type: not applicable
+          allele_or_zygosity: wild type
+          perturbation_modality: wild type
+          imaging_modality: HCR3.0
+          hydration_and_prep: fixed in 4% formaldehyde
+      fz4_crispant_eyespot_dup:
+        label: frizzled4 CRISPR-Cas9 G0 crispants with duplicated eyespots
+        kind: perturbed
+        context:
+          life_stage: adult
+          pupal_stage_pct: not applicable
+          anatomical_region: wings
+          pattern_element: eyespot centers
+          scale_type: scales
+          target_gene: frizzled4
+          genetic_element_type: coding sequence
+          allele_or_zygosity: mosaic crispants
+          perturbation_modality: CRISPR-Cas9
+          imaging_modality: Leica DMS1000 microscope
+          hydration_and_prep: frozen at −20°C
+      fz4_crispant_pcp:
+        label: frizzled4 CRISPR-Cas9 G0 crispants with PCP scale orientation defects
+        kind: perturbed
+        context:
+          life_stage: adult
+          pupal_stage_pct: not applicable
+          anatomical_region: wings
+          pattern_element: eyespot field
+          scale_type: scale cells
+          target_gene: frizzled4
+          genetic_element_type: coding sequence
+          allele_or_zygosity: mosaic crispants
+          perturbation_modality: CRISPR-Cas9
+          imaging_modality: Leica DMS1000 microscope
+          hydration_and_prep: frozen at −20°C
+      fz4_crispant_margin:
+        label: frizzled4 CRISPR-Cas9 G0 crispants with wing margin defects
+        kind: perturbed
+        context:
+          life_stage: adult
+          pupal_stage_pct: not applicable
+          anatomical_region: wings
+          pattern_element: wing margin
+          scale_type: scales
+          target_gene: frizzled4
+          genetic_element_type: coding sequence
+          allele_or_zygosity: mosaic crispants
+          perturbation_modality: CRISPR-Cas9
+          imaging_modality: Leica DMS1000 microscope
+          hydration_and_prep: frozen at −20°C
+
+evidence:
+  E1_arm_pupal_window:
+    unit: U1_ARM_TIMING_AND_KO
+    measure: developmental milestone timing
+    method: Confocal anti-Arm immunofluorescence on timed pupal forewings and hindwings (Olympus FV3000)
+    finding: Armadillo protein persists in eyespot foci and along the wing margin from 15 to 24 hours after pupation (AP)
+    groups:
+      - arm_pupal_if
+    values:
+      arm_start_ap:
+        printed: '15'
+        unit: h
+        kind: value
+        group: arm_pupal_if
+        spread: none
+      arm_end_ap:
+        printed: '24'
+        unit: h
+        kind: value
+        group: arm_pupal_if
+        spread: none
+    anchor:
+      quote: During the pupal stage, Arm protein was observed in the eyespot foci and along the wing margin from 15 to 24 hours after pupation (AP) (Fig. 1, C and D).
+      where: Results
+
+  E2_arm_crispant_loss:
+    unit: U1_ARM_TIMING_AND_KO
+    measure: crispant wing phenotype count
+    method: Embryonic CRISPR-Cas9 G0 mosaic knockout targeting arm coding sequence, verified by Illumina paired-end amplicon sequencing
+    finding: 1 arm CRISPR G0 mosaic individual exhibited complete loss of an eyespot
+    groups:
+      - arm_crispant_eyespot
+    values:
+      n_eyespot_loss:
+        printed: '1'
+        unit: individuals
+        kind: count
+        group: arm_crispant_eyespot
+        spread: none
+    anchor:
+      quote: Knockout of arm using CRISPR-cas9 resulted in mosaic crispants that showed either a complete loss of the eyespot (one individual) (fig. S7, C and D) or split eyespots (two individuals)
+      where: Results
+
+  E3_arm_crispant_split:
+    unit: U1_ARM_TIMING_AND_KO
+    measure: eyespot duplication count
+    method: Embryonic CRISPR-Cas9 G0 mosaic knockout targeting arm coding sequence, verified without ectopic venation
+    finding: 2 arm CRISPR G0 mosaic individuals exhibited split eyespots with two foci side-by-side in a single wing sector
+    groups:
+      - arm_crispant_eyespot
+    values:
+      n_split_eyespot:
+        printed: '2'
+        unit: individuals
+        kind: count
+        group: arm_crispant_eyespot
+        spread: none
+    anchor:
+      quote: Knockout of arm using CRISPR-cas9 resulted in mosaic crispants that showed either a complete loss of the eyespot (one individual) (fig. S7, C and D) or split eyespots (two individuals)
+      where: Results
+
+  E4_arm_crispant_margin:
+    unit: U1_ARM_TIMING_AND_KO
+    measure: crispant wing phenotype count
+    method: Embryonic CRISPR-Cas9 G0 mosaic knockout targeting arm coding sequence
+    finding: 4 arm CRISPR G0 mosaic individuals exhibited wing margin defects
+    groups:
+      - arm_crispant_margin
+    values:
+      n_margin_defects:
+        printed: '4'
+        unit: individuals
+        kind: count
+        group: arm_crispant_margin
+        spread: none
+    anchor:
+      quote: Defects along the wing margin were also observed in four of the arm CRISPR individuals (fig. S7, C to J).
+      where: Results
+
+  E5_canonical_wnt_pupal_window:
+    unit: U2_CANONICAL_WNT_EXPRESSION
+    measure: developmental milestone timing
+    method: Multiplexed HCR3.0 fluorescent in situ hybridization and BCIP/NBT chromogenic ISH on pupal wings
+    finding: Wnt1 transcripts appear in eyespot foci and wing margin at 18–24 h AP, while Wnt6 and Wnt10 remain confined to the wing margin (18–21 h AP in Fig. 2E–F)
+    groups:
+      - wnt1_pupal_foci
+      - wnt6_wnt10_pupal_margin
+    values:
+      wnt1_start_ap:
+        printed: '18'
+        unit: h
+        kind: value
+        group: wnt1_pupal_foci
+        spread: none
+      wnt1_end_ap:
+        printed: '24'
+        unit: h
+        kind: value
+        group: wnt1_pupal_foci
+        spread: none
+      wnt6_wnt10_end_ap:
+        printed: '21'
+        unit: h
+        kind: value
+        group: wnt6_wnt10_pupal_margin
+        spread: none
+    anchor:
+      quote: In 18 to 24 hours pupal wings, however, we confirmed the expression of Wnt1 transcripts in the eyespot foci, as well as expression along the wing margin
+      where: Results
+
+  E6_dll_pupal_timing:
+    unit: U2_CANONICAL_WNT_EXPRESSION
+    measure: developmental milestone timing
+    method: HCR3.0 fluorescent in situ hybridization for Distal-less (Dll) in early pupal hindwing
+    finding: Dll transcripts mark the future black scale cells of the eyespot ring at 18 hours AP
+    groups:
+      - dll_pupal_eyespot
+    values:
+      dll_pupal_ap:
+        printed: '18'
+        unit: h
+        kind: value
+        group: dll_pupal_eyespot
+        spread: none
+    anchor:
+      quote: Expression of Dll in an 18-hour pupal wing showing expression in the future black scale cells.
+      where: Fig. 3 caption
+
+  E7_wnt7_ectopic_veins_eyespots:
+    unit: U3_WNT7_CRISPANT
+    measure: crispant wing phenotype count
+    method: Embryonic CRISPR-Cas9 G0 mosaic knockout targeting Wnt7 coding sequence (injected 3 h AEL)
+    finding: 12 Wnt7 CRISPR G0 individuals developed ectopic wing veins accompanied by secondary ectopic eyespots in newly formed wing sectors
+    groups:
+      - wnt7_crispant
+    values:
+      n_wnt7_ectopic:
+        printed: '12'
+        unit: individuals
+        kind: count
+        group: wnt7_crispant
+        spread: none
+    anchor:
+      quote: However, knockouts of Wnt7 using CRISPR-Cas9 resulted in ectopic veins and ectopic eyespots differentiating in the wing sectors in 12 individuals (fig. S15, A to D).
+      where: Results
+
+  E8_wnta_optix_pupal_window:
+    unit: U4_WNTA_EXPRESSION_AND_KO
+    measure: developmental milestone timing
+    method: Dual-channel HCR3.0 fluorescent in situ hybridization of WntA and Optix on pupal forewings and hindwings
+    finding: At 24–30 h AP, WntA is expressed in CSS and BSS bands while Optix borders WntA domains and marks orange eyespot ring scale cells
+    groups:
+      - wnta_optix_pupal_hcr
+    values:
+      wnta_start_ap:
+        printed: '24'
+        unit: h
+        kind: value
+        group: wnta_optix_pupal_hcr
+        spread: none
+      wnta_end_ap:
+        printed: '30'
+        unit: h
+        kind: value
+        group: wnta_optix_pupal_hcr
+        spread: none
+    anchor:
+      quote: Expression of WntA and Optix in 24 to 30 hours pupal (D to F) forewing and (G to I) hindwing.
+      where: Fig. 5 caption
+
+  E9_wnta_crispant_defects:
+    unit: U4_WNTA_EXPRESSION_AND_KO
+    measure: crispant wing phenotype count
+    method: Embryonic CRISPR-Cas9 G0 mosaic knockout targeting WntA coding sequence (1–3 h AEL), confirmed by Illumina amplicon sequencing
+    finding: 28 WntA G0 crispants exhibited loss of brown scales with ectopic orange scales along CSS/BSS, CSS width/shape changes, and marginal chevron disruption
+    groups:
+      - wnta_crispant_bands
+    values:
+      n_wnta_defects:
+        printed: '28'
+        unit: individuals
+        kind: count
+        group: wnta_crispant_bands
+        spread: none
+    anchor:
+      quote: A total of 28 individuals with wntA-dependent defects were observed.
+      where: Fig. 5 caption
+
+  E10_wnta_crispant_no_eyespot:
+    unit: U4_WNTA_EXPRESSION_AND_KO
+    measure: crispant wing phenotype count
+    method: Phenotypic scoring of adult WntA G0 crispants under Leica DMS1000 microscopy
+    finding: 0 WntA crispant individuals exhibited eyespot pattern defects, consistent with absence of WntA expression in eyespots
+    groups:
+      - wnta_crispant_eyespot
+    values:
+      n_eyespot_defects:
+        printed: '0'
+        unit: individuals
+        kind: count
+        group: wnta_crispant_eyespot
+        spread: none
+    anchor:
+      quote: No defects in the eyespot pattern were obtained in any individual (Fig. 5, K to M), but the light-colored marginal chevrons of the wing were disrupted
+      where: Results
+
+  E11_fz_pupal_window:
+    unit: U5_FZ4_EXPRESSION_AND_KO
+    measure: developmental milestone timing
+    method: Multiplexed HCR3.0 fluorescent in situ hybridization of frizzled2, frizzled4, frizzled9, and Wnt1 on pupal wings
+    finding: At 18–24 h AP, frizzled4 marks the eyespot field where frizzled2 is depleted, while frizzled9 occupies the wing margin
+    groups:
+      - fz2_fz4_pupal_hcr
+    values:
+      fz_start_ap:
+        printed: '18'
+        unit: h
+        kind: value
+        group: fz2_fz4_pupal_hcr
+        spread: none
+      fz_end_ap:
+        printed: '24'
+        unit: h
+        kind: value
+        group: fz2_fz4_pupal_hcr
+        spread: none
+    anchor:
+      quote: Expression of frizzled2, frizzled4, frizzled9, and Wnt1 in 18 to 24 hours pupal wings of B. anynana.
+      where: Fig. 7 caption
+
+  E12_fz4_eyespot_duplication:
+    unit: U5_FZ4_EXPRESSION_AND_KO
+    measure: eyespot duplication count
+    method: Embryonic CRISPR-Cas9 G0 mosaic knockout targeting frizzled4 coding sequence (3 h AEL), verified by Sanger/ICE indel analysis without ectopic venation
+    finding: 18 frizzled4 G0 crispants differentiated two eyespot centers along the proximal-distal axis within the same wing sector
+    groups:
+      - fz4_crispant_eyespot_dup
+    values:
+      n_double_eyespot:
+        printed: '18'
+        unit: individuals
+        kind: count
+        group: fz4_crispant_eyespot_dup
+        spread: none
+    anchor:
+      quote: In 18 individuals, mosaic crispant wings differentiated two eyespot centers along the proximal-distal axis (Fig. 8, C to F and H, and fig. S15, E to K).
+      where: Results
+
+  E13_fz4_pcp_scale_orientation:
+    unit: U5_FZ4_EXPRESSION_AND_KO
+    measure: scale orientation defect count
+    method: High-magnification adult eyespot phenotyping of frizzled4 CRISPR-Cas9 G0 crispants (Leica DMS1000)
+    finding: 2 frizzled4 G0 crispants exhibited planar cell polarity swirling/orientation defects in orange and black scale cells inside eyespots
+    groups:
+      - fz4_crispant_pcp
+    values:
+      n_pcp_defects:
+        printed: '2'
+        unit: individuals
+        kind: count
+        group: fz4_crispant_pcp
+        spread: none
+    anchor:
+      quote: Two crispants also showed defects in the orientation of the orange and black scale cells in eyespots (Fig. 8, H to J).
+      where: Results
+
+  E14_fz4_margin_defects:
+    unit: U5_FZ4_EXPRESSION_AND_KO
+    measure: crispant wing phenotype count
+    method: Adult wing phenotyping of frizzled4 CRISPR-Cas9 G0 crispants
+    finding: 5 frizzled4 G0 crispants exhibited wing margin defects
+    groups:
+      - fz4_crispant_margin
+    values:
+      n_margin_defects:
+        printed: '5'
+        unit: individuals
+        kind: count
+        group: fz4_crispant_margin
+        spread: none
+    anchor:
+      quote: A total of 18 individuals were observed with two eyespots in the same sector and 5 individuals with wing margin defects.
+      where: Fig. 8 caption
+
+claims:
+  C1_arm_essential_eyespot_foci:
+    kind: stated
+    quote: Disruptions of arm via CRISPR-cas9 resulted in either a split eyespot or no eyespots, suggesting arm’s essential role in eyespot center cell differentiation (fig. S7, C to H).
+    where: Discussion
+    scope: Bicyclus anynana wing eyespot centers
+    direction: arm knockout abolishes or splits eyespot foci
+    rests_on:
+      - E1_arm_pupal_window
+      - E2_arm_crispant_loss
+      - E3_arm_crispant_split
+      - E4_arm_crispant_margin
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Appropriately hedged ("suggesting"); modest crispant recovery (n=1 loss, n=2 split, n=4 margin) reflects expected embryonic lethality of canonical Armadillo disruption, confirmed by Illumina indel sequencing.
+
+  C2_wnta_css_bss_identity:
+    kind: stated
+    quote: Functional disruption of WntA using CRISPR-cas9 resulted in the loss of brown color with ectopic orange scales appearing along the CSS and in the BSS
+    where: Results
+    scope: Bicyclus anynana CSS and BSS wing bands
+    direction: WntA knockout converts brown CSS/BSS band scales to ectopic orange scales and alters CSS width/shape
+    rests_on:
+      - E8_wnta_optix_pupal_window
+      - E9_wnta_crispant_defects
+      - E10_wnta_crispant_no_eyespot
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Strong G0 crispant sample (n=28) verified by Illumina indel sequencing (Fig. 5N) and matched with 24–30 h pupal WntA/Optix HCR3.0 domains.
+
+  C3_wnta_spares_eyespots:
+    kind: stated
+    quote: No defects in the eyespot pattern were obtained in any individual (Fig. 5, K to M), but the light-colored marginal chevrons of the wing were disrupted
+    where: Results
+    scope: Bicyclus anynana eyespots and marginal chevrons in WntA crispants
+    direction: WntA knockout spares eyespots while disrupting marginal chevrons
+    rests_on:
+      - E9_wnta_crispant_defects
+      - E10_wnta_crispant_no_eyespot
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C4_fz4_prevents_eyespot_duplication:
+    kind: stated
+    quote: In 18 individuals, mosaic crispant wings differentiated two eyespot centers along the proximal-distal axis (Fig. 8, C to F and H, and fig. S15, E to K).
+    where: Results
+    scope: Bicyclus anynana wing sectors in frizzled4 G0 crispants
+    direction: frizzled4 knockout induces supernumerary paired eyespot foci within a single wing sector
+    rests_on:
+      - E11_fz_pupal_window
+      - E12_fz4_eyespot_duplication
+      - E14_fz4_margin_defects
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Robust G0 crispant count (n=18 double-eyespot crispants, verified without ectopic veins and confirmed by Sanger/ICE indel analysis in Fig. 8K).
+
+  C5_fz4_pcp_scale_orientation:
+    kind: stated
+    quote: Two crispants also showed defects in the orientation of the orange and black scale cells in eyespots (Fig. 8, H to J).
+    where: Results
+    scope: Bicyclus anynana eyespot field scales in frizzled4 G0 crispants
+    direction: frizzled4 knockout disrupts planar cell polarity scale orientation in the eyespot field
+    rests_on:
+      - E11_fz_pupal_window
+      - E13_fz4_pcp_scale_orientation
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Directly reports exact n=2 mosaic individuals with localized swirling scale-orientation defects matching pupal frizzled4 eyespot-field HCR3.0 expression.
+
+  C6_wnt7_indirect_vein_effect:
+    kind: stated
+    quote: Because ectopic veins often lead to the creation of additional wing sectors with eyespots, we cannot directly implicate Wnt7 in eyespot development.
+    where: Results
+    scope: Bicyclus anynana wing venation and eyespot sectors in Wnt7 crispants
+    direction: Wnt7 knockout causes ectopic veins (n=12) that indirectly generate extra eyespot-bearing wing sectors
+    rests_on:
+      - E7_wnt7_ectopic_veins_eyespots
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Appropriately cautious negative attribution given absence of Wnt7 HCR3.0 expression in tested larval/pupal wings (Fig. 4C, D, J).
+
+  C7_canonical_wnt_margin_restriction:
+    kind: stated
+    quote: The mRNA expression of three canonical Wnts, Wnt1, Wnt6, and Wnt10, in the forewing and hindwing is limited to the wing margin and there is no focal expression.
+    where: Fig. 2 caption
+    scope: Bicyclus anynana larval forewing and hindwing
+    direction: larval Wnt1, Wnt6, and Wnt10 transcripts are restricted to wing margin and discal spot, absent from eyespot foci until pupal Wnt1 onset
+    rests_on:
+      - E1_arm_pupal_window
+      - E5_canonical_wnt_pupal_window
+      - E6_dll_pupal_timing
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+
+  C8_fz2_anticolocalization:
+    kind: stated
+    quote: frizzled2 is anti-colocalized with frizzled4 in the eyespot field, with frizzled9 in the pupal wing margin, and with WntA in the CSS band
+    where: Results
+    scope: Bicyclus anynana 18–24 h pupal wings
+    direction: frizzled2 transcript is spatially excluded from frizzled4 eyespot rings, frizzled9 margin, and WntA CSS domains
+    rests_on:
+      - E8_wnta_optix_pupal_window
+      - E11_fz_pupal_window
+    judgement:
+      direction: follows
+      support: follows
+      comparison: follows
+      scope: follows
+      replication: follows
+      strength: follows
+      presence: follows
+    note: Spatial anti-colocalization directly demonstrated by multiplexed HCR3.0 (Fig. 7C–K); downstream causal repression model (Fig. 9B) remains correlative in B. anynana pending fz2/fz9 perturbation.

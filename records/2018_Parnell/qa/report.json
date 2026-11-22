@@ -1,0 +1,456 @@
+{
+  "paper": "2018_Parnell",
+  "n_figures": 11,
+  "n_atomic_panels": 55,
+  "composite_panels": 0,
+  "n_custom_extractors": 6,
+  "n_fft_panels": 10,
+  "flagged_panels": [],
+  "panels": {
+    "2018_Parnell/F1/A": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 0.8469,
+      "transect_um": 0.8614,
+      "fft_transect_delta_pct": 1.71,
+      "harmonic_ratio_2f": 0.236,
+      "harmonic_guard": "pass",
+      "snr": 12.1,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F2/A": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2018_Parnell/F3/A": {
+      "archetype": "spectral_or_profile",
+      "n_points": 260,
+      "method": "custom:extractors/f3_angular_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F3/B": {
+      "archetype": "spectral_or_profile",
+      "n_points": 195,
+      "method": "custom:extractors/f3_angular_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F3/C": {
+      "archetype": "spectral_or_profile",
+      "n_points": 130,
+      "method": "custom:extractors/f3_angular_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F3/D": {
+      "archetype": "spectral_or_profile",
+      "n_points": 130,
+      "method": "custom:extractors/f3_angular_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F3/E": {
+      "archetype": "spectral_or_profile",
+      "n_points": 260,
+      "method": "custom:extractors/f3_angular_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F3/F": {
+      "archetype": "spectral_or_profile",
+      "n_points": 130,
+      "method": "custom:extractors/f3_angular_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F3/G": {
+      "archetype": "spectral_or_profile",
+      "n_points": 260,
+      "method": "custom:extractors/f3_angular_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F3/H": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2018_Parnell/F4/A": {
+      "archetype": "spectral_or_profile",
+      "n_points": 162,
+      "method": "custom:extractors/f4_f5_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F4/B": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 0.7544,
+      "transect_um": 0.7486,
+      "fft_transect_delta_pct": 0.76,
+      "harmonic_ratio_2f": 0.114,
+      "harmonic_guard": "pass",
+      "snr": 13.5,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F4/C": {
+      "archetype": "spectral_or_profile",
+      "n_points": 162,
+      "method": "custom:extractors/f4_f5_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F4/D": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 0.6732,
+      "transect_um": 0.6487,
+      "fft_transect_delta_pct": 3.64,
+      "harmonic_ratio_2f": 0.056,
+      "harmonic_guard": "pass",
+      "snr": 211.5,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F4/E": {
+      "archetype": "spectral_or_profile",
+      "n_points": 162,
+      "method": "custom:extractors/f4_f5_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F4/F": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 0.83,
+      "transect_um": 0.8219,
+      "fft_transect_delta_pct": 0.98,
+      "harmonic_ratio_2f": 0.029,
+      "harmonic_guard": "pass",
+      "snr": 241.5,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F4/G": {
+      "archetype": "spectral_or_profile",
+      "n_points": 162,
+      "method": "custom:extractors/f4_f5_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F4/H": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 0.5892,
+      "transect_um": 0.5895,
+      "fft_transect_delta_pct": 0.05,
+      "harmonic_ratio_2f": 0.054,
+      "harmonic_guard": "pass",
+      "snr": 1169.7,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F5/A": {
+      "archetype": "spectral_or_profile",
+      "n_points": 162,
+      "method": "custom:extractors/f4_f5_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F5/B": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 0.8351,
+      "transect_um": 0.8434,
+      "fft_transect_delta_pct": 1.0,
+      "harmonic_ratio_2f": 0.119,
+      "harmonic_guard": "pass",
+      "snr": 15.8,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F5/C": {
+      "archetype": "spectral_or_profile",
+      "n_points": 162,
+      "method": "custom:extractors/f4_f5_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F5/D": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 1.1346,
+      "transect_um": 1.1308,
+      "fft_transect_delta_pct": 0.34,
+      "harmonic_ratio_2f": 0.326,
+      "harmonic_guard": "low_snr_verify",
+      "snr": 3.6,
+      "confidence": "low_snr_verified"
+    },
+    "2018_Parnell/F5/E": {
+      "archetype": "spectral_or_profile",
+      "n_points": 162,
+      "method": "custom:extractors/f4_f5_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F5/F": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 0.818,
+      "transect_um": 0.8302,
+      "fft_transect_delta_pct": 1.5,
+      "harmonic_ratio_2f": 0.048,
+      "harmonic_guard": "pass",
+      "snr": 592.6,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F6/A": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 0.7872,
+      "transect_um": 0.7933,
+      "fft_transect_delta_pct": 0.78,
+      "harmonic_ratio_2f": 0.002,
+      "harmonic_guard": "pass",
+      "snr": 6395.1,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F6/B": {
+      "archetype": "planar_microscopy",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2018_Parnell/F6/C": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2018_Parnell/F7/A": {
+      "archetype": "spectral_or_profile",
+      "n_points": 760,
+      "method": "custom:extractors/f7_raman.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F8/A": {
+      "archetype": "cross_section",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2018_Parnell/F8/B": {
+      "archetype": "cross_section",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2018_Parnell/F8/C": {
+      "archetype": "cross_section",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2018_Parnell/F8/D": {
+      "archetype": "cross_section",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2018_Parnell/F9/A": {
+      "archetype": "spectral_or_profile",
+      "n_points": 455,
+      "method": "custom:extractors/f9_afm_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F9/B": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 1.0107,
+      "transect_um": 0.9904,
+      "fft_transect_delta_pct": 2.0,
+      "harmonic_ratio_2f": 0.112,
+      "harmonic_guard": "pass",
+      "snr": 224.1,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F9/C": {
+      "archetype": "spectral_or_profile",
+      "n_points": 140,
+      "method": "custom:extractors/f9_afm_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F9/D": {
+      "archetype": "spectral_or_profile",
+      "n_points": 140,
+      "method": "custom:extractors/f9_afm_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F9/E": {
+      "archetype": "spectral_or_profile",
+      "n_points": 140,
+      "method": "custom:extractors/f9_afm_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F9/F": {
+      "archetype": "spectral_or_profile",
+      "n_points": 140,
+      "method": "custom:extractors/f9_afm_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F10/A": {
+      "archetype": "quantitative_plot",
+      "n_points": 7,
+      "method": "custom:extractors/f10_saxs_reflectance.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/A": {
+      "archetype": "quantitative_plot",
+      "n_points": 5,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/B": {
+      "archetype": "quantitative_plot",
+      "n_points": 5,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/C": {
+      "archetype": "quantitative_plot",
+      "n_points": 2,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/D": {
+      "archetype": "quantitative_plot",
+      "n_points": 2,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/E": {
+      "archetype": "quantitative_plot",
+      "n_points": 5,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/F": {
+      "archetype": "quantitative_plot",
+      "n_points": 5,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/G": {
+      "archetype": "quantitative_plot",
+      "n_points": 2,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/H": {
+      "archetype": "quantitative_plot",
+      "n_points": 2,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/I": {
+      "archetype": "quantitative_plot",
+      "n_points": 5,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/J": {
+      "archetype": "quantitative_plot",
+      "n_points": 5,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/K": {
+      "archetype": "quantitative_plot",
+      "n_points": 2,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/L": {
+      "archetype": "quantitative_plot",
+      "n_points": 2,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/M": {
+      "archetype": "quantitative_plot",
+      "n_points": 5,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/N": {
+      "archetype": "quantitative_plot",
+      "n_points": 5,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/O": {
+      "archetype": "quantitative_plot",
+      "n_points": 2,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2018_Parnell/F11/P": {
+      "archetype": "quantitative_plot",
+      "n_points": 2,
+      "method": "custom:extractors/f11_pavo_jnd.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    }
+  }
+}

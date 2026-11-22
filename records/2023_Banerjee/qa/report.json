@@ -1,0 +1,725 @@
+{
+  "paper": "2023_Banerjee",
+  "n_figures": 10,
+  "n_atomic_panels": 102,
+  "composite_panels": 0,
+  "n_custom_extractors": 0,
+  "n_fft_panels": 0,
+  "flagged_panels": [],
+  "panels": {
+    "2023_Banerjee/F1/A": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F1/B": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F1/C": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F1/D": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F1/E": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F1/F": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F1/G": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F2/A": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F2/B": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F2/C": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F2/D": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F2/E": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F2/F": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/A": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/B": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/C": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/D": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/E": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/F": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/G": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/H": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/I": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/J": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/K": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/L": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/M": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/N": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F3/O": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F4/A": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F4/B": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F4/C": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F4/D": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F4/E": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F4/F": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F4/G": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F4/H": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F4/I": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F4/J": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F4/K": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F4/L": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/A": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/B": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/C": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/D": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/E": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/F": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/G": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/H": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/I": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/J": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/K": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/L": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/M": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F5/N": {
+      "archetype": "genomic_track_or_locus",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/A": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/B": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/C": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/D": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/E": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/F": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/G": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/H": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/I": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/J": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/K": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/L": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/M": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/N": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/O": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/P": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/Q": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F6/R": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/A": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/B": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/C": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/D": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/E": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/F": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/G": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/H": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/I": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/J": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/K": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/L": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/M": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F7/N": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F8/A": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F8/B": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F8/C": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F8/D": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F8/E": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F8/F": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F8/G": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F8/H": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F8/I": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F8/J": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F8/K": {
+      "archetype": "genomic_track_or_locus",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F9/A": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F9/B": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F10/A": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F10/B": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2023_Banerjee/F10/C": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    }
+  }
+}

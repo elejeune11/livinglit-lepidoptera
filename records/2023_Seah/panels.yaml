@@ -1,0 +1,886 @@
+record: 2023_Seah
+default_context:
+  species: Parides eurimedes
+  family: Papilionidae
+  anatomical_region: dorsal forewing
+figures:
+  F1:
+    label: Figure 1
+    file: elife-89082-fig1.jpg
+    xml_id: fig1
+    title: Hierarchical nanostructure of adult male Parides eurimedes green dorsal forewing cover scales
+    caption_anchor:
+      quote: Hierarchical nanostructure of wing scales in Parides eurimedes (Papilionidae).
+      where: Fig 1 caption
+    context:
+      life_stage: adult
+      sex: male
+      scale_type: cover scale
+      functional_architecture: inter-ridge honeycomb lattice
+    panels:
+      A:
+        label: 1A
+        title: Dorsal macro photograph of adult male Parides eurimedes with green forewing patches (1 cm bar)
+        bbox: [0, 0, 458, 357]
+        archetype: macro_morphology
+        context:
+          imaging_modality: light microscopy
+          view_orientation: whole-mount
+        scale_bar:
+          um: 10000.0
+          search_box: [260, 290, 456, 355]
+          polarity: bright
+      B:
+        label: 1B
+        title: Top-down planar SEM of adult male P. eurimedes green cover scale showing ridges and honeycomb lattice (1 µm bar)
+        bbox: [464, 0, 956, 357]
+        archetype: planar_microscopy
+        context:
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 1.0
+          search_box: [360, 300, 490, 355]
+          polarity: bright
+        periodic_spec:
+          roi: [30, 30, 455, 315]
+          spacing_range_um: [0.7, 2.5]
+          wavevector_angle_deg: [-65, -10]
+          channel: gray
+          measure_crossrib: true
+          crossrib_range_um: [0.2, 0.7]
+        linked_items: [F1B_sem_ridge_spacing, F1B_sem_crossrib_spacing, D1_eurimedes_ridge_density]
+        linked_claims: [C1_conserved_actin_ridge_spacers]
+      C:
+        label: 1C
+        title: FIB-SEM milled cross-section of adult male P. eurimedes green cover scale showing honeycomb walls over perforated multilayer (1 µm bar)
+        bbox: [962, 0, 1500, 357]
+        archetype: cross_section
+        context:
+          imaging_modality: FIB-SEM
+          view_orientation: cross-section
+        scale_bar:
+          um: 1.0
+          search_box: [380, 300, 536, 355]
+          polarity: bright
+
+  F2:
+    label: Figure 2
+    file: elife-89082-fig2.jpg
+    xml_id: fig2
+    title: Morphogenetic confocal time series (48–62% development) of plasma-membrane crossribs and cuticular disks in pupal P. eurimedes
+    caption_anchor:
+      quote: Morphogenetic time series of the development of cuticular disks in pupal P. eurimedes dorsal forewing scales, acquired with a 100× confocal microscope.
+      where: Fig 2 caption
+    context:
+      life_stage: pupa
+      imaging_modality: confocal
+    panels:
+      A:
+        label: 2A
+        title: Whole-scale confocal xy view at 48% development stained with AF-555 WGA (yellow) and CellMask (magenta) (5 µm bar)
+        bbox: [0, 37, 372, 358]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), CellMask Deep Red (plasma membrane)]
+        context:
+          pupal_stage_pct: 48%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [250, 270, 370, 319]
+          polarity: bright
+      A_prime:
+        label: 2A'
+        title: Whole-scale confocal xy view at 52% development showing pleated membrane ridges and crossrib network (5 µm bar)
+        bbox: [377, 37, 750, 358]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), CellMask Deep Red (plasma membrane)]
+        context:
+          pupal_stage_pct: 52%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [250, 270, 371, 319]
+          polarity: bright
+        periodic_spec:
+          roi: [65, 55, 290, 265]
+          spacing_range_um: [1.0, 3.2]
+          wavevector_angle_deg: [-75, -15]
+          channel: magenta
+        linked_claims: [C2_membrane_crossrib_disk_scaffold]
+      A_dprime:
+        label: 2A''
+        title: Whole-scale confocal xy view at 62% development showing mature ridges and inter-ridge cuticular disks (5 µm bar)
+        bbox: [755, 37, 1128, 358]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), CellMask Deep Red (plasma membrane)]
+        context:
+          pupal_stage_pct: 62%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [250, 270, 371, 319]
+          polarity: bright
+        linked_claims: [C2_membrane_crossrib_disk_scaffold]
+      A_tprime:
+        label: 2A'''
+        title: Whole-scale confocal xy view at ~62% development in male black scale showing distinct cuticular disk rows (5 µm bar)
+        bbox: [1132, 37, 1500, 358]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), CellMask Deep Red (plasma membrane)]
+        context:
+          pupal_stage_pct: ~62%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [250, 270, 366, 319]
+          polarity: bright
+        periodic_spec:
+          roi: [65, 100, 270, 265]
+          spacing_range_um: [1.2, 3.0]
+          wavevector_angle_deg: [-80, -35]
+          channel: magenta
+        linked_claims: [C2_membrane_crossrib_disk_scaffold]
+      B:
+        label: 2B
+        title: High-magnification confocal closeup at 48% development showing mottled plasma membrane and nascent ridges (2 µm bar)
+        bbox: [0, 361, 372, 694]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), CellMask Deep Red (plasma membrane)]
+        context:
+          pupal_stage_pct: 48%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box: [250, 280, 370, 331]
+          polarity: bright
+      B_prime:
+        label: 2B'
+        title: High-magnification confocal closeup at 52% development showing hollow vein-like membrane crossribs between ridges (2 µm bar)
+        bbox: [377, 361, 750, 694]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), CellMask Deep Red (plasma membrane)]
+        context:
+          pupal_stage_pct: 52%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box: [250, 280, 371, 331]
+          polarity: bright
+        periodic_spec:
+          roi: [20, 35, 345, 300]
+          spacing_range_um: [1.0, 3.2]
+          wavevector_angle_deg: [-85, -35]
+          channel: magenta
+        linked_claims: [C2_membrane_crossrib_disk_scaffold]
+      B_dprime:
+        label: 2B''
+        title: High-magnification confocal closeup at 62% development showing cuticular disks bounded by plasma membrane (2 µm bar)
+        bbox: [755, 361, 1128, 694]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), CellMask Deep Red (plasma membrane)]
+        context:
+          pupal_stage_pct: 62%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box: [250, 280, 371, 331]
+          polarity: bright
+        periodic_spec:
+          roi: [30, 45, 340, 290]
+          spacing_range_um: [1.2, 3.2]
+          wavevector_angle_deg: [-75, -25]
+          channel: magenta
+        linked_claims: [C2_membrane_crossrib_disk_scaffold]
+      B_tprime:
+        label: 2B'''
+        title: High-magnification confocal closeup at ~62% development showing rows of planar chitinous disks between ridges (2 µm bar)
+        bbox: [1132, 361, 1500, 694]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), CellMask Deep Red (plasma membrane)]
+        context:
+          pupal_stage_pct: ~62%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box: [250, 280, 366, 331]
+          polarity: bright
+        periodic_spec:
+          roi: [20, 35, 345, 295]
+          spacing_range_um: [1.0, 3.2]
+          wavevector_angle_deg: [-75, -20]
+          channel: magenta
+        linked_claims: [C2_membrane_crossrib_disk_scaffold]
+      C:
+        label: 2C
+        title: Confocal xz cross-section at 48% development showing cuticular layer overlying plasma membrane (2 µm bar)
+        bbox: [0, 696, 372, 821]
+        archetype: cross_section
+        stains_or_markers: [AF-555 WGA (chitin), CellMask Deep Red (plasma membrane)]
+        context:
+          pupal_stage_pct: 48%
+          view_orientation: cross-section
+        scale_bar:
+          um: 2.0
+          search_box: [270, 95, 370, 123]
+          polarity: bright
+      C_prime:
+        label: 2C'
+        title: Confocal xz cross-section at 52% development showing surface cuticle over pleated plasma membrane (2 µm bar)
+        bbox: [377, 696, 750, 821]
+        archetype: cross_section
+        stains_or_markers: [AF-555 WGA (chitin), CellMask Deep Red (plasma membrane)]
+        context:
+          pupal_stage_pct: 52%
+          view_orientation: cross-section
+        scale_bar:
+          um: 2.0
+          search_box: [270, 95, 371, 123]
+          polarity: bright
+      C_dprime:
+        label: 2C''
+        title: Confocal xz cross-section at 62% development showing planar cuticular disks prior to lumen extrusion (2 µm bar)
+        bbox: [755, 696, 1128, 821]
+        archetype: cross_section
+        stains_or_markers: [AF-555 WGA (chitin), CellMask Deep Red (plasma membrane)]
+        context:
+          pupal_stage_pct: 62%
+          view_orientation: cross-section
+        scale_bar:
+          um: 2.0
+          search_box: [270, 95, 371, 123]
+          polarity: bright
+      C_tprime:
+        label: 2C'''
+        title: Confocal xz cross-section at ~62% development highlighting planar disk ROI between mature ridges (2 µm bar)
+        bbox: [1132, 696, 1500, 821]
+        archetype: cross_section
+        stains_or_markers: [AF-555 WGA (chitin), CellMask Deep Red (plasma membrane)]
+        context:
+          pupal_stage_pct: ~62%
+          view_orientation: cross-section
+        scale_bar:
+          um: 2.0
+          search_box: [270, 95, 366, 123]
+          polarity: bright
+
+  F3:
+    label: Figure 3
+    file: elife-89082-fig3.jpg
+    xml_id: fig3
+    title: Super-resolution lattice SIM time series (57–76% development) of cuticular disk extrusion and F-actin reorganization in P. eurimedes
+    caption_anchor:
+      quote: Morphogenetic time series of the development of columnar honeycomb lattice in pupal P. eurimedes dorsal forewing scale cells acquired with super-resolution lattice structured illumination microscopy (SIM).
+      where: Fig 3 caption
+    context:
+      life_stage: pupa
+      imaging_modality: 3D-SIM
+    panels:
+      A:
+        label: 3A
+        title: Lattice SIM xy overview at 57% development showing double rows of cuticular disks (WGA yellow) and disintegrating F-actin (phalloidin magenta) (5 µm bar)
+        bbox: [0, 48, 511, 488]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          pupal_stage_pct: 57%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [360, 380, 509, 438]
+          polarity: bright
+        periodic_spec:
+          roi: [55, 55, 430, 385]
+          spacing_range_um: [1.0, 3.2]
+          wavevector_angle_deg: [-80, -30]
+          channel: green_isolated
+        linked_items: [F3_sim_ridge_spacing]
+        linked_claims: [C3_actin_reorganization_honeycomb_extrusion]
+      A_prime:
+        label: 3A'
+        title: Lattice SIM xy overview at 67% development showing regularly arrayed cuticular disks and reorganizing F-actin meshwork (5 µm bar)
+        bbox: [519, 48, 1030, 488]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          pupal_stage_pct: 67%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [380, 380, 509, 438]
+          polarity: bright
+        periodic_spec:
+          roi: [120, 120, 370, 310]
+          spacing_range_um: [1.0, 2.2]
+          wavevector_angle_deg: [-89, -55]
+          channel: green_isolated
+        harmonic_verified: true
+        linked_items: [F3_sim_ridge_spacing]
+        linked_claims: [C3_actin_reorganization_honeycomb_extrusion]
+      A_dprime:
+        label: 3A''
+        title: Lattice SIM xy overview at 76% development showing hollow tubular cuticular disks enmeshed by bulb-like F-actin (5 µm bar)
+        bbox: [1038, 48, 1500, 488]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          pupal_stage_pct: 76%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [340, 380, 460, 438]
+          polarity: bright
+        periodic_spec:
+          roi: [65, 80, 365, 345]
+          spacing_range_um: [0.8, 2.5]
+          wavevector_angle_deg: [-85, -35]
+          channel: green_isolated
+        linked_items: [F3_sim_ridge_spacing]
+        linked_claims: [C3_actin_reorganization_honeycomb_extrusion]
+      B:
+        label: 3B
+        title: High-magnification SIM closeup and 3D inset at 57% development showing short actin fibrils around solid disks (1 µm bar)
+        bbox: [0, 495, 511, 932]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          pupal_stage_pct: 57%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 1.0
+          search_box: [400, 385, 509, 435]
+          polarity: bright
+        periodic_spec:
+          roi: [15, 50, 355, 400]
+          spacing_range_um: [1.0, 3.2]
+          wavevector_angle_deg: [-89, -45]
+          channel: green_isolated
+        linked_items: [F3_sim_ridge_spacing]
+      B_prime:
+        label: 3B'
+        title: High-magnification SIM closeup and 3D inset at 67% development showing mesh-like F-actin associating with elongating disks (1 µm bar)
+        bbox: [519, 495, 1030, 932]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          pupal_stage_pct: 67%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 1.0
+          search_box: [390, 385, 509, 435]
+          polarity: bright
+      B_dprime:
+        label: 3B''
+        title: High-magnification SIM closeup and 3D inset at 76% development showing hollow honeycomb pores ringed by tulip-bulb F-actin (1 µm bar)
+        bbox: [1038, 495, 1500, 932]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          pupal_stage_pct: 76%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 1.0
+          search_box: [340, 385, 460, 435]
+          polarity: bright
+        linked_claims: [C3_actin_reorganization_honeycomb_extrusion]
+      C:
+        label: 3C
+        title: Lattice SIM xz cross-section at 57% development showing apical cuticular disks and disintegrating sub-apical F-actin (1 µm bar)
+        bbox: [0, 940, 511, 1130]
+        archetype: cross_section
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          pupal_stage_pct: 57%
+          view_orientation: cross-section
+        scale_bar:
+          um: 1.0
+          search_box: [420, 150, 509, 188]
+          polarity: bright
+      C_prime:
+        label: 3C'
+        title: Lattice SIM xz cross-section at 67% development showing tubular elongating disks over luminal F-actin (1 µm bar)
+        bbox: [519, 940, 1030, 1130]
+        archetype: cross_section
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          pupal_stage_pct: 67%
+          view_orientation: cross-section
+        scale_bar:
+          um: 1.0
+          search_box: [400, 150, 509, 188]
+          polarity: bright
+      C_dprime:
+        label: 3C''
+        title: Lattice SIM xz cross-section at 76% development showing deeply extruded hollow honeycomb tubes enmeshed by F-actin (1 µm bar)
+        bbox: [1038, 940, 1500, 1130]
+        archetype: cross_section
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          pupal_stage_pct: 76%
+          view_orientation: cross-section
+        scale_bar:
+          um: 1.0
+          search_box: [340, 150, 460, 188]
+          polarity: bright
+
+  F4:
+    label: Figure 4
+    file: elife-89082-fig4.jpg
+    xml_id: fig4
+    title: Anti-Arp2 immunofluorescence and phalloidin F-actin confocal time series (~52–76% development) in pupal P. eurimedes
+    caption_anchor:
+      quote: Arp2/3 complex is involved in F-actin reorganization in pupal P. eurimedes wing scales.
+      where: Fig 4 caption
+    context:
+      life_stage: pupa
+      imaging_modality: immunofluorescence
+      target_gene: Arp2/3 complex
+    panels:
+      A:
+        label: 4A
+        title: Whole-scale confocal xy view at ~52% development showing intact linear F-actin bundles (magenta) and sparse Arp2 puncta (yellow) (5 µm bar)
+        bbox: [0, 50, 526, 504]
+        archetype: expression_imaging
+        stains_or_markers: [AF-594 anti-Arp2 (yellow), AF-647 phalloidin (magenta)]
+        channel_gene_map:
+          yellow: target_gene:arp2_3_complex
+          magenta: target_gene:f_actin_cytoskeleton
+        context:
+          pupal_stage_pct: ~52%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [410, 400, 524, 452]
+          polarity: bright
+        periodic_spec:
+          roi: [210, 60, 465, 280]
+          spacing_range_um: [1.0, 2.8]
+          wavevector_angle_deg: [-75, -25]
+          channel: magenta
+        linked_items: [F4_actin_bundle_spacing]
+        linked_claims: [C1_conserved_actin_ridge_spacers]
+      A_prime:
+        label: 4A'
+        title: Whole-scale confocal xy view at ~62% development showing dense punctate Arp2 colocalized with reticulate F-actin (5 µm bar)
+        bbox: [534, 50, 1020, 504]
+        archetype: expression_imaging
+        stains_or_markers: [AF-594 anti-Arp2 (yellow), AF-647 phalloidin (magenta)]
+        channel_gene_map:
+          yellow: target_gene:arp2_3_complex
+          magenta: target_gene:f_actin_cytoskeleton
+        context:
+          pupal_stage_pct: ~62%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [380, 400, 484, 452]
+          polarity: bright
+      A_dprime:
+        label: 4A''
+        title: Whole-scale confocal xy view at ~76% development showing mature ridges with overlapping cuticle autofluorescence (5 µm bar)
+        bbox: [1025, 50, 1500, 504]
+        archetype: expression_imaging
+        stains_or_markers: [AF-594 anti-Arp2 (yellow), AF-647 phalloidin (magenta)]
+        channel_gene_map:
+          yellow: target_gene:arp2_3_complex
+          magenta: target_gene:f_actin_cytoskeleton
+        context:
+          pupal_stage_pct: ~76%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [360, 400, 473, 452]
+          polarity: bright
+      B:
+        label: 4B
+        title: High-magnification confocal closeup at ~52% development showing periodic parallel F-actin bundles and sparse Arp2 puncta (2 µm bar)
+        bbox: [0, 510, 526, 961]
+        archetype: expression_imaging
+        stains_or_markers: [AF-594 anti-Arp2 (yellow), AF-647 phalloidin (magenta)]
+        channel_gene_map:
+          yellow: target_gene:arp2_3_complex
+          magenta: target_gene:f_actin_cytoskeleton
+        context:
+          pupal_stage_pct: ~52%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box: [400, 400, 524, 449]
+          polarity: bright
+        periodic_spec:
+          roi: [30, 45, 480, 400]
+          spacing_range_um: [1.0, 3.2]
+          wavevector_angle_deg: [-75, -20]
+          channel: magenta
+        linked_items: [F4_actin_bundle_spacing]
+        linked_claims: [C1_conserved_actin_ridge_spacers]
+      B_prime:
+        label: 4B'
+        title: High-magnification confocal closeup at ~62% development showing high-density Arp2 puncta on reorganizing F-actin meshwork (2 µm bar)
+        bbox: [534, 510, 1020, 961]
+        archetype: expression_imaging
+        stains_or_markers: [AF-594 anti-Arp2 (yellow), AF-647 phalloidin (magenta)]
+        channel_gene_map:
+          yellow: target_gene:arp2_3_complex
+          magenta: target_gene:f_actin_cytoskeleton
+        context:
+          pupal_stage_pct: ~62%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box: [380, 400, 484, 449]
+          polarity: bright
+      B_dprime:
+        label: 4B''
+        title: High-magnification confocal closeup at ~76% development showing reorganized actin with diffuse autofluorescence (2 µm bar)
+        bbox: [1025, 510, 1500, 961]
+        archetype: expression_imaging
+        stains_or_markers: [AF-594 anti-Arp2 (yellow), AF-647 phalloidin (magenta)]
+        channel_gene_map:
+          yellow: target_gene:arp2_3_complex
+          magenta: target_gene:f_actin_cytoskeleton
+        context:
+          pupal_stage_pct: ~76%
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.0
+          search_box: [360, 400, 473, 449]
+          polarity: bright
+      C:
+        label: 4C
+        title: Confocal xz cross-section at ~52% development showing anti-Arp2 and intact F-actin bundle profile (2 µm bar)
+        bbox: [0, 970, 526, 1166]
+        archetype: cross_section
+        stains_or_markers: [AF-594 anti-Arp2 (yellow), AF-647 phalloidin (magenta)]
+        context:
+          pupal_stage_pct: ~52%
+          view_orientation: cross-section
+        scale_bar:
+          um: 2.0
+          search_box: [430, 155, 524, 194]
+          polarity: bright
+      C_prime:
+        label: 4C'
+        title: Confocal xz cross-section at ~62% development showing Arp2 puncta colocalized with reorganizing F-actin (2 µm bar)
+        bbox: [534, 970, 1020, 1166]
+        archetype: cross_section
+        stains_or_markers: [AF-594 anti-Arp2 (yellow), AF-647 phalloidin (magenta)]
+        context:
+          pupal_stage_pct: ~62%
+          view_orientation: cross-section
+        scale_bar:
+          um: 2.0
+          search_box: [390, 155, 484, 194]
+          polarity: bright
+      C_dprime:
+        label: 4C''
+        title: Confocal xz cross-section at ~76% development showing autofluorescent upper cuticle over F-actin (2 µm bar)
+        bbox: [1025, 970, 1500, 1166]
+        archetype: cross_section
+        stains_or_markers: [AF-594 anti-Arp2 (yellow), AF-647 phalloidin (F-actin)]
+        context:
+          pupal_stage_pct: ~76%
+          view_orientation: cross-section
+        scale_bar:
+          um: 2.0
+          search_box: [370, 155, 473, 194]
+          polarity: bright
+
+  F4S5:
+    label: Figure 4—figure supplement 5
+    file: elife-89082-fig4-figsupp5.jpg
+    xml_id: fig4s5
+    title: Pharmacological disruption of Arp2/3 with 100 µM CK-666 vs DMSO control on honeycomb lattice height in Parides eurimedes and P. iphidamas
+    caption_anchor:
+      quote: Pharmacological disruption of Arp2/3 with CK-666 in Parides pupae.
+      where: Fig 4—figure supplement 5 caption
+    context:
+      life_stage: adult
+      sex: male
+      target_gene: Arp2/3 complex
+      perturbation_modality: pharmacological pupal injection
+      chemical_agent: CK-666
+    panels:
+      A:
+        label: 4S5A
+        title: Violin and boxplots of adult P. eurimedes honeycomb lattice height (nm) across 52%, 57%, and 67% CK-666 vs DMSO groups (N=229)
+        bbox: [0, 0, 1095, 712]
+        archetype: quantitative_plot
+        context:
+          species: Parides eurimedes
+        extractor: extractors/f4s5_honeycomb.py
+        linked_items: [F4S5_eur_all_heights, F4S5_eur_52_vs_ctrl, F4S5_eur_52_vs_57_ck666, F4S5_eur_57_vs_ctrl, F4S5_eur_52_vs_67_ctrl]
+        linked_claims: [C4_ck666_52pct_reduces_honeycomb_height, C5_ck666_stage_window_57pct_recovery, C6_ck666_cautious_validation_needed]
+        linked_resources: [seah_elife_ck666_data, seah_elife_supp1]
+      B:
+        label: 4S5B
+        title: Representative SEM cross-section of adult P. eurimedes scale after 52% pupal 100 µM CK-666 treatment
+        bbox: [1106, 0, 1500, 320]
+        archetype: cross_section
+        context:
+          species: Parides eurimedes
+          imaging_modality: SEM
+          view_orientation: cross-section
+        linked_items: [F4S5_eur_52_vs_ctrl]
+        linked_resources: [seah_elife_ck666_data]
+      C:
+        label: 4S5C
+        title: Representative SEM cross-section of adult P. eurimedes scale after 52% pupal DMSO vehicle control injection
+        bbox: [1106, 355, 1500, 682]
+        archetype: cross_section
+        context:
+          species: Parides eurimedes
+          perturbation_modality: solvent vehicle control
+          chemical_agent: DMSO
+          imaging_modality: SEM
+          view_orientation: cross-section
+        linked_items: [F4S5_eur_52_vs_ctrl]
+        linked_resources: [seah_elife_ck666_data]
+      D:
+        label: 4S5D
+        title: Violin and boxplots of adult P. iphidamas honeycomb lattice height (nm) in 52% DMSO control vs 100 µM CK-666 treatment (N=41)
+        bbox: [0, 718, 1095, 1435]
+        archetype: quantitative_plot
+        context:
+          species: Parides iphidamas
+        extractor: extractors/f4s5_honeycomb.py
+        linked_items: [F4S5_iph_52_vs_ctrl]
+        linked_claims: [C4_ck666_52pct_reduces_honeycomb_height, C6_ck666_cautious_validation_needed]
+        linked_resources: [seah_elife_ck666_data, seah_elife_supp1]
+      E:
+        label: 4S5E
+        title: Representative SEM cross-section of adult P. iphidamas scale after 52% pupal 100 µM CK-666 treatment
+        bbox: [1106, 720, 1500, 1045]
+        archetype: cross_section
+        context:
+          species: Parides iphidamas
+          imaging_modality: SEM
+          view_orientation: cross-section
+        linked_items: [F4S5_iph_52_vs_ctrl]
+        linked_resources: [seah_elife_ck666_data]
+      F:
+        label: 4S5F
+        title: Representative SEM cross-section of adult P. iphidamas scale after 52% pupal DMSO vehicle control injection
+        bbox: [1106, 1082, 1500, 1412]
+        archetype: cross_section
+        context:
+          species: Parides iphidamas
+          perturbation_modality: solvent vehicle control
+          chemical_agent: DMSO
+          imaging_modality: SEM
+          view_orientation: cross-section
+        linked_items: [F4S5_iph_52_vs_ctrl]
+        linked_resources: [seah_elife_ck666_data]
+
+  F5:
+    label: Figure 5
+    file: elife-89082-fig5.jpg
+    xml_id: fig5
+    title: Conservation of honeycomb and dimpled scale lattice morphogenesis across Parides arcas, Papilio nireus, and Papilio palinurus
+    caption_anchor:
+      quote: Conservation of honeycomb lattice development in Papilionidae.
+      where: Fig 5 caption
+    context: {}
+    panels:
+      A:
+        label: 5A
+        title: SEM cross-section of adult male Parides arcas green cover scale showing tall honeycomb walls above gyroid photonic crystals (5 µm bar)
+        bbox: [0, 0, 452, 568]
+        archetype: cross_section
+        context:
+          species: Parides arcas
+          life_stage: adult
+          imaging_modality: SEM
+          view_orientation: cross-section
+        scale_bar:
+          um: 5.0
+          search_box: [300, 500, 450, 566]
+          polarity: bright
+      B:
+        label: 5B
+        title: Maximum-projected 3D-SIM xy view of pupal male P. arcas green cover scale showing planar cuticular disks between linear actin bundles (1 µm bar)
+        bbox: [466, 0, 979, 424]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          species: Parides arcas
+          life_stage: pupa
+          imaging_modality: 3D-SIM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 1.0
+          search_box: [360, 360, 511, 422]
+          polarity: bright
+        periodic_spec:
+          roi: [60, 30, 460, 340]
+          spacing_range_um: [0.5, 3.2]
+          wavevector_angle_deg: [-80, -35]
+          channel: green_isolated
+        linked_items: [F5_comparative_sim_ridge_spacing]
+        linked_claims: [C7_honeycomb_program_conserved_papilionidae]
+      B_prime:
+        label: 5B'
+        title: Maximum-projected 3D-SIM xy view of pupal male P. arcas green cover scale showing irregular crossrib lattice between actin bundles (1 µm bar)
+        bbox: [989, 0, 1500, 424]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          species: Parides arcas
+          life_stage: pupa
+          imaging_modality: 3D-SIM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 1.0
+          search_box: [370, 360, 509, 422]
+          polarity: bright
+        periodic_spec:
+          roi: [30, 25, 480, 375]
+          spacing_range_um: [0.5, 3.2]
+          wavevector_angle_deg: [-85, -45]
+          channel: green_isolated
+        linked_items: [F5_comparative_sim_ridge_spacing]
+        linked_claims: [C7_honeycomb_program_conserved_papilionidae]
+      C:
+        label: 5C
+        title: 3D-SIM xz cross-section of pupal P. arcas scale corresponding to panel 5B (1 µm bar)
+        bbox: [466, 427, 979, 568]
+        archetype: cross_section
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          species: Parides arcas
+          life_stage: pupa
+          imaging_modality: 3D-SIM
+          view_orientation: cross-section
+        scale_bar:
+          um: 1.0
+          search_box: [410, 100, 511, 139]
+          polarity: bright
+      C_prime:
+        label: 5C'
+        title: 3D-SIM xz cross-section of pupal P. arcas scale corresponding to panel 5B' (1 µm bar)
+        bbox: [989, 427, 1500, 568]
+        archetype: cross_section
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          species: Parides arcas
+          life_stage: pupa
+          imaging_modality: 3D-SIM
+          view_orientation: cross-section
+        scale_bar:
+          um: 1.0
+          search_box: [410, 105, 509, 139]
+          polarity: bright
+      D:
+        label: 5D
+        title: SEM cross-section of adult Papilio nireus blue cover scale showing small-pore upper honeycomb lattice (5 µm bar)
+        bbox: [0, 575, 331, 990]
+        archetype: cross_section
+        context:
+          species: Papilio nireus
+          life_stage: adult
+          imaging_modality: SEM
+          view_orientation: cross-section
+        scale_bar:
+          um: 5.0
+          search_box: [190, 360, 329, 413]
+          polarity: bright
+      E:
+        label: 5E
+        title: Maximum-projected 3D-SIM xy view of pupal P. nireus blue cover scale showing crossribs and linear actin bundles (1 µm bar)
+        bbox: [339, 575, 715, 886]
+        archetype: planar_microscopy
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          species: Papilio nireus
+          life_stage: pupa
+          imaging_modality: 3D-SIM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 1.0
+          search_box: [280, 265, 374, 309]
+          polarity: bright
+        periodic_spec:
+          roi: [25, 25, 350, 280]
+          spacing_range_um: [0.6, 3.5]
+          wavevector_angle_deg: [-89, -50]
+          channel: green_isolated
+        linked_items: [F5_comparative_sim_ridge_spacing]
+        linked_claims: [C7_honeycomb_program_conserved_papilionidae]
+      F:
+        label: 5F
+        title: 3D-SIM xz cross-section of pupal P. nireus blue cover scale corresponding to panel 5E (1 µm bar)
+        bbox: [339, 889, 715, 990]
+        archetype: cross_section
+        stains_or_markers: [AF-555 WGA (chitin), AF-647 phalloidin (F-actin)]
+        context:
+          species: Papilio nireus
+          life_stage: pupa
+          imaging_modality: 3D-SIM
+          view_orientation: cross-section
+        scale_bar:
+          um: 1.0
+          search_box: [290, 68, 374, 99]
+          polarity: bright
+      G:
+        label: 5G
+        title: Planar SEM of adult Papilio palinurus green cover scale showing widely spaced ridges and concave dimples (5 µm bar)
+        bbox: [722, 575, 1075, 990]
+        archetype: planar_microscopy
+        context:
+          species: Papilio palinurus
+          life_stage: adult
+          imaging_modality: SEM
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [240, 360, 351, 413]
+          polarity: bright
+      H:
+        label: 5H
+        title: Maximum-projected 60× confocal xy view of pupal P. palinurus green cover scale showing concave F-actin whorl rings underlying dimples (5 µm bar)
+        bbox: [1083, 575, 1500, 885]
+        archetype: planar_microscopy
+        stains_or_markers: [FITC-WGA (chitin), TRITC-phalloidin (F-actin)]
+        context:
+          species: Papilio palinurus
+          life_stage: pupa
+          imaging_modality: confocal
+          view_orientation: top-down apical
+        scale_bar:
+          um: 5.0
+          search_box: [310, 260, 415, 308]
+          polarity: bright
+      I:
+        label: 5I
+        title: Confocal xz cross-section of pupal P. palinurus green cover scale corresponding to panel 5H (5 µm bar)
+        bbox: [1083, 888, 1500, 990]
+        archetype: cross_section
+        stains_or_markers: [FITC-WGA (chitin), TRITC-phalloidin (F-actin)]
+        context:
+          species: Papilio palinurus
+          life_stage: pupa
+          imaging_modality: confocal
+          view_orientation: cross-section
+        scale_bar:
+          um: 5.0
+          search_box: [310, 68, 415, 100]
+          polarity: bright
+
+  F6:
+    label: Figure 6
+    file: elife-89082-fig6.jpg
+    xml_id: fig6
+    title: Three-stage developmental model schematic of papilionid honeycomb lattice morphogenesis
+    caption_anchor:
+      quote: A schematic illustrating the proposed morphogenesis of honeycomb lattices in papilionid wing scales.
+      where: Fig 6 caption
+    context:
+      life_stage: pupa
+      functional_architecture: inter-ridge honeycomb lattice
+    panels:
+      A:
+        label: '6'
+        title: Sequential cross-sectional schematic of F-actin ridge pre-patterning, inter-ridge cuticular disk accretion, and tulip-bulb F-actin honeycomb extrusion
+        bbox: [0, 0, 1500, 1907]
+        archetype: phylogeny_or_schematic
+        linked_claims: [C1_conserved_actin_ridge_spacers, C2_membrane_crossrib_disk_scaffold, C3_actin_reorganization_honeycomb_extrusion]

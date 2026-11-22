@@ -1,0 +1,129 @@
+record: 2023_Seah
+relations:
+  - id: arp2_3_templates_eurimedes_honeycomb_height
+    source: target_gene:arp2_3_complex
+    source_label: Arp2/3 complex
+    source_type: gene
+    relation: required_for_phenotype
+    target: measure:honeycomb_lattice_height
+    target_label: Inter-ridge honeycomb lattice height
+    target_type: measure
+    evidence_tier: perturbation_only
+    effect_direction: down
+    assays:
+      - small_molecule_inhibitor
+      - sem
+      - immunofluorescence
+    context:
+      taxon: Parides eurimedes
+      sex: male
+      life_stage: adult
+      pupal_stage_pct: 52%
+      anatomical_region: dorsal forewing
+      scale_type: cover scale
+      chemical_agent: CK-666
+    linked_items:
+      - F4S5_eur_52_vs_ctrl
+      - F4S5_eur_all_heights
+    linked_panels:
+      - 2023_Seah/F4/A_prime
+      - 2023_Seah/F4/B_prime
+      - 2023_Seah/F4S5/A
+      - 2023_Seah/F4S5/B
+      - 2023_Seah/F4S5/C
+    anchor:
+      quote: However, the height of the honeycombs in scales from pupae treated on 52% development was on average lower than the control
+      where: Results
+    note: 100 µM CK-666 pupal injection at 52% development reduced adult P. eurimedes honeycomb lattice height by 11.1% (1652.7 vs 1859.9 nm, one-sided Holm p = 0.02169); anti-Arp2 puncta colocalize with reorganizing F-actin at ~62%.
+
+  - id: ck666_reduces_iphidamas_honeycomb_height
+    source: chemical_agent:ck_666
+    source_label: CK-666 (Arp2/3 inhibitor)
+    source_type: chemical
+    relation: represses_phenotype
+    target: measure:honeycomb_lattice_height
+    target_label: Inter-ridge honeycomb lattice height
+    target_type: measure
+    evidence_tier: perturbation_only
+    effect_direction: down
+    assays:
+      - small_molecule_inhibitor
+      - sem
+    context:
+      taxon: Parides iphidamas
+      sex: male
+      life_stage: adult
+      pupal_stage_pct: 52%
+      anatomical_region: dorsal forewing
+      scale_type: cover scale
+      chemical_agent: CK-666
+    linked_items:
+      - F4S5_iph_52_vs_ctrl
+    linked_panels:
+      - 2023_Seah/F4S5/D
+      - 2023_Seah/F4S5/E
+      - 2023_Seah/F4S5/F
+    anchor:
+      quote: However, the height of the honeycombs in scales from pupae treated on 52% development was on average lower than the control
+      where: Results
+    note: 100 µM CK-666 pupal injection at 52% development reduced adult P. iphidamas honeycomb lattice height by 27.0% (1410.2 vs 1931.7 nm, one-sided pooled t-test p = 4.4e-07).
+
+  - id: f_actin_reorganization_extrudes_honeycomb
+    source: target_gene:f_actin_cytoskeleton
+    source_label: F-actin (reorganizing dendritic meshwork)
+    source_type: gene
+    relation: required_for_phenotype
+    target: functional_architecture:interridge_honeycomb_lattice
+    target_label: Inter-ridge honeycomb lattice
+    target_type: architecture
+    evidence_tier: correlative
+    effect_direction: up
+    assays:
+      - sim_3d
+      - confocal
+    context:
+      taxon: Parides eurimedes
+      sex: male
+      life_stage: pupa
+      pupal_stage_pct: 57–76%
+      anatomical_region: dorsal forewing
+      scale_type: cover scale
+    linked_items:
+      - F3_sim_ridge_spacing
+      - F4_actin_bundle_spacing
+    linked_panels:
+      - 2023_Seah/F3/A
+      - 2023_Seah/F3/A_prime
+      - 2023_Seah/F3/A_dprime
+      - 2023_Seah/F3/B_dprime
+      - 2023_Seah/F6/A
+    anchor:
+      quote: By 76% development, the cuticular disks appeared hollow and are surrounded by distinct bulb-like structures formed by the disintegrated F-actin bundles
+      where: Results
+    note: Lattice SIM time series (57%, 67%, 76%) documents linear F-actin disintegration into bulb-like rings enmeshing hollowing cuticular disks during honeycomb extrusion.
+
+genomic_tables:
+  - id: seah_fig4s5_source_data1
+    kind: scale_morphometrics
+    file: elife-89082-fig4-figsupp5-data1.xlsx
+    title: Figure 4—figure supplement 5—source data 1 (CK-666 vs DMSO honeycomb lattice heights in Parides eurimedes N=229 and P. iphidamas N=41)
+    assay: SEM cross-section FIJI/ImageJ morphometrics
+    contrast: 100 µM CK-666 vs DMSO vehicle control across 52%, 57%, 67% pupal injection stages
+    stage: adult emerged from 52–67% injected pupae
+    taxon: Parides eurimedes, Parides iphidamas
+    columns:
+      group: CK666 treatment details
+      value: honeycomb height (in nm)
+    linked_items:
+      - F4S5_eur_all_heights
+      - F4S5_eur_52_vs_ctrl
+      - F4S5_eur_52_vs_57_ck666
+      - F4S5_eur_57_vs_ctrl
+      - F4S5_eur_52_vs_67_ctrl
+      - F4S5_iph_52_vs_ctrl
+    linked_panels:
+      - 2023_Seah/F4S5/A
+      - 2023_Seah/F4S5/D
+    anchor:
+      quote: FIJI/ImageJ (version 2.1.0/1.53c) measurements of scanning electron microscopy (SEM) images of developing Parides eurimedes and P. iphidamas scales
+      where: Fig 4—figure supplement 5—source data 1 caption

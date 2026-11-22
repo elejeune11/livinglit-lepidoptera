@@ -1,0 +1,61 @@
+id: 2018_Parnell
+doi: 10.1098/rsif.2017.0948
+title: Wing scale ultrastructure underlying convergent and divergent iridescent colours in mimetic Heliconius butterflies
+year: 2018
+journal: Journal of the Royal Society Interface
+oa_status: open_access
+license: CC-BY-4.0
+figure_embed_policy: public_thumbnails
+repositories:
+  - kind: Figshare
+    url: https://dx.doi.org/10.6084/m9.figshare.c.4058795
+    doi: 10.6084/m9.figshare.c.4058795
+    note: Electronic supplementary material collection (Figshare/Royal Society) containing Supplementary Figures S1–S5 PDF, individual mean reflectance CSVs, angular reflectance zip, 80 1D SAXS .dat files, Heliconius photoreceptor sensitivities/densities, and R analysis scripts (PavoFinal_vonkries.R, angles.r) harvested locally under associated/.
+files:
+  - file: PMC5938584.xml
+    role: main_text
+  - file: rsif20170948-g1.jpg
+    role: main_figure
+  - file: rsif20170948-g2.jpg
+    role: main_figure
+  - file: rsif20170948-g3.jpg
+    role: main_figure
+  - file: rsif20170948-g4.jpg
+    role: main_figure
+  - file: rsif20170948-g5.jpg
+    role: main_figure
+  - file: rsif20170948-g6.jpg
+    role: main_figure
+  - file: rsif20170948-g7.jpg
+    role: main_figure
+  - file: rsif20170948-g8.jpg
+    role: main_figure
+  - file: rsif20170948-g9.jpg
+    role: main_figure
+  - file: rsif20170948-g10.jpg
+    role: main_figure
+  - file: rsif20170948-g11.jpg
+    role: main_figure
+  - file: associated/rsif20170948_si_001.pdf
+    role: supp_figure
+  - file: associated/rsif20170948_si_002.gz
+    role: raw_data
+  - file: associated/parnell_si/forupload/AP.spec.data.individual.means.csv
+    role: raw_data
+  - file: associated/parnell_si/forupload/sara_all_indmean.csv
+    role: raw_data
+  - file: associated/parnell_si/forupload/HeliconiusVSnew.csv
+    role: raw_data
+  - file: associated/parnell_si/forupload/Heli_receptorDensities.xlsx
+    role: supp_table
+  - file: associated/parnell_si/forupload/PavoFinal_vonkries.R
+    role: code
+  - file: associated/parnell_si/forupload/angles.r
+    role: code
+  - file: associated/parnell_si/forupload/Butterfly SAXS 1d data.zip
+    role: raw_data
+  - file: associated/parnell_si/forupload/angular reflectance data.zip
+    role: raw_data
+  - file: associated/parnell_si/forupload/readme.txt
+    role: supp_text
+not_used: []

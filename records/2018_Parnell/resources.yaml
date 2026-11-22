@@ -1,0 +1,122 @@
+record: 2018_Parnell
+resources:
+  - id: parnell_reflectance_csv
+    kind: dataset
+    repository: Figshare
+    title: Individual-mean optical reflectance spectra across all 7 Heliconius taxa (forewing & hindwing, 300–700 nm, n=4/taxon)
+    url: https://dx.doi.org/10.6084/m9.figshare.c.4058795
+    doi: 10.6084/m9.figshare.c.4058795
+    license: CC-BY-4.0
+    local_files:
+      - parnell_si/forupload/AP.spec.data.individual.means.csv
+      - parnell_si/forupload/sara_all_indmean.csv
+      - parnell_si/forupload/angular reflectance data.zip
+    feeds_panels:
+      - 2018_Parnell/F3/A
+      - 2018_Parnell/F3/B
+      - 2018_Parnell/F3/C
+      - 2018_Parnell/F3/D
+      - 2018_Parnell/F3/E
+      - 2018_Parnell/F3/F
+      - 2018_Parnell/F3/G
+      - 2018_Parnell/F4/A
+      - 2018_Parnell/F4/C
+      - 2018_Parnell/F4/E
+      - 2018_Parnell/F4/G
+      - 2018_Parnell/F5/A
+      - 2018_Parnell/F5/C
+      - 2018_Parnell/F5/E
+      - 2018_Parnell/F10/A
+    feeds_items:
+      - T1_max_reflectance
+      - T1_peak_wavelength
+      - T1_sara_ecuador_vs_panama_wl
+    summary:
+      n_taxa: 7
+      n_individuals_per_taxon: 4
+      wavelength_range_nm: [300, 700]
+      audit_note: Raw CSV confirms all 7 forewing max reflectances and 4/5 peak wavelengths match Table 1 exactly; H. erato cyrbia raw CSV mean peak wavelength is 396.0 ± 8.0 nm (matching Fig 4A), revealing a digit transposition typo (369 ± 8 nm) in published Table 1.
+
+  - id: parnell_saxs_1d
+    kind: dataset
+    repository: Figshare
+    title: Synchrotron ESRF ID02 1D radially integrated transmission SAXS profiles (80 .dat files across 7 Heliconius taxa)
+    url: https://dx.doi.org/10.6084/m9.figshare.c.4058795
+    doi: 10.6084/m9.figshare.c.4058795
+    license: CC-BY-4.0
+    local_files:
+      - parnell_si/forupload/Butterfly SAXS 1d data.zip
+    feeds_panels:
+      - 2018_Parnell/F10/A
+    feeds_items:
+      - T1_saxs_ridge_spacing
+      - D2_ridge_density
+      - F10_spacing_reflectance_corr
+    summary:
+      n_dat_files: 80
+      beamline: ESRF ID02 (0.1 nm X-ray, 20x20 um beam, 30.98 m SDD)
+      files_per_taxon:
+        H_erato_cyrbia: 13
+        H_erato_demophoon: 9
+        H_sara: 10
+        H_eleuchia: 11
+        H_cydno: 11
+        H_melpomene_cythera: 8
+        H_melpomene_rosina: 18
+
+  - id: parnell_pavo_code
+    kind: code
+    repository: Figshare
+    title: PAVO v1.1 von Kries receptor-noise visual modelling & angular reflectance R scripts + Heliconius photoreceptor sensitivities
+    url: https://dx.doi.org/10.6084/m9.figshare.c.4058795
+    doi: 10.6084/m9.figshare.c.4058795
+    license: CC-BY-4.0
+    local_files:
+      - parnell_si/forupload/PavoFinal_vonkries.R
+      - parnell_si/forupload/angles.r
+      - parnell_si/forupload/HeliconiusVSnew.csv
+      - parnell_si/forupload/Heli_receptorDensities.xlsx
+      - parnell_si/forupload/readme.txt
+    feeds_panels:
+      - 2018_Parnell/F3/A
+      - 2018_Parnell/F11/A
+      - 2018_Parnell/F11/B
+      - 2018_Parnell/F11/C
+      - 2018_Parnell/F11/D
+      - 2018_Parnell/F11/E
+      - 2018_Parnell/F11/F
+      - 2018_Parnell/F11/G
+      - 2018_Parnell/F11/H
+      - 2018_Parnell/F11/I
+      - 2018_Parnell/F11/J
+      - 2018_Parnell/F11/K
+      - 2018_Parnell/F11/L
+      - 2018_Parnell/F11/M
+      - 2018_Parnell/F11/N
+      - 2018_Parnell/F11/O
+      - 2018_Parnell/F11/P
+    feeds_items:
+      - F11_chromatic_jnd_cyrbia_cythera
+      - F11_chromatic_jnd_cydno_eleuchia
+      - F11_achromatic_jnd
+    summary:
+      visual_models: [avian_VS, heli_I, heli_II, heli_III, heli_IV]
+      illuminants: [D65, forestshade]
+
+  - id: parnell_si_figures
+    kind: supplement
+    repository: Figshare
+    title: Supplementary Information PDF containing Figures S1–S5 (SAXS 2D masking, dark-field cover/ground scales, Panama H. sara spectra, COI tree, tetrahedral colour space)
+    url: https://dx.doi.org/10.6084/m9.figshare.c.4058795
+    doi: 10.6084/m9.figshare.c.4058795
+    license: CC-BY-4.0
+    local_files:
+      - rsif20170948_si_001.pdf
+      - rsif20170948_si_002.gz
+    feeds_panels: []
+    feeds_items:
+      - T1_saxs_ridge_spacing
+      - T1_sara_ecuador_vs_panama_wl
+    summary:
+      n_supp_figures: 5
+      pages: 6

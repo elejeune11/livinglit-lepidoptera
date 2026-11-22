@@ -29,8 +29,12 @@ window.LL = window.LL || {};
         ${papers.map((p) => {
           const mf = manifests[p.paper] || {};
           const qa = qaReports[p.paper] || {};
+          const paperPanels = (data.panels || []).filter((x) => x.paper === p.paper);
+          const nPanels = qa.total_panels != null ? qa.total_panels : paperPanels.length;
+          const nFft = qa.n_fft_panels != null ? qa.n_fft_panels : paperPanels.filter(LL.panelHasFft).length;
           const items = (data.items || []).filter((i) => i.paper === p.paper);
           const claims = (data.claims || []).filter((c) => c.paper === p.paper);
+          const grnCnt = (data.genetic_relations || []).filter((r) => r.paper === p.paper).length;
           return `
             <div class="card">
               <div class="card-title">
@@ -38,15 +42,16 @@ window.LL = window.LL || {};
                 <div style="display:flex;gap:5px;flex-wrap:wrap">
                   <span class="pill ok">${LL.esc(mf.oa_status || "open_access")}</span>
                   <span class="pill info">${LL.esc(mf.license || "OA")}</span>
+                  ${grnCnt ? `<span class="pill accent">${grnCnt} GRN</span>` : ""}
                   <span class="pill ${qa.flagged_panels && qa.flagged_panels.length ? "bad" : "ok"}">QA: ${(qa.flagged_panels || []).length} flagged</span>
                 </div>
               </div>
               <div style="font-weight:700;margin-bottom:4px">${LL.esc(p.title)}</div>
               <div class="muted" style="margin-bottom:10px">${LL.esc(p.lab)} · DOI: <span class="mono">${LL.esc(p.doi)}</span></div>
               <div class="kv-grid">
-                <div class="kv-item"><div class="kv-k">Atomic Panels</div><div class="kv-v mono">${qa.n_panels || 0} (${qa.composite_panels || 0} composites)</div></div>
+                <div class="kv-item"><div class="kv-k">Atomic Panels</div><div class="kv-v mono">${nPanels} (${qa.composite_panels || 0} composites)</div></div>
                 <div class="kv-item"><div class="kv-k">Custom .py Extractors</div><div class="kv-v mono">${qa.n_custom_extractors || 0}</div></div>
-                <div class="kv-item"><div class="kv-k">Calibrated FFT Panels</div><div class="kv-v mono">${qa.n_fft_panels || 0}</div></div>
+                <div class="kv-item"><div class="kv-k">Calibrated FFT Panels</div><div class="kv-v mono">${nFft}</div></div>
                 <div class="kv-item"><div class="kv-k">Evidence / Claims</div><div class="kv-v mono">${items.length} items · ${claims.length} claims</div></div>
               </div>
               ${(mf.repositories || []).length ? `
@@ -79,7 +84,7 @@ window.LL = window.LL || {};
       <div class="vault-pair">
         <div class="card">
           <div class="card-title">
-            <span>Lepidoptera Controlled Vocabulary (${terms.length} terms · field_set 3)</span>
+            <span>Lepidoptera Controlled Vocabulary (${terms.length} terms · field_set 4)</span>
             <button type="button" class="btn btn-sm primary" data-jump-term="" data-jump-field="ALL">Open Explorer →</button>
           </div>
           <div class="muted" style="margin-bottom:8px">Click any field below to explore its hierarchy, definitions, synonyms, and live corpus usage.</div>

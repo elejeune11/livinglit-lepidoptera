@@ -41,6 +41,7 @@ window.LL = window.LL || {};
     auditVerdict: "ALL",
     // GRN & Graph tab
     graphTab: "grn", // grn | tables | corpus
+    grnPaper: "ALL",
     grnTier: "ALL",
     grnSelectedRel: null,
     genomicTableId: null,

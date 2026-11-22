@@ -1,0 +1,564 @@
+{
+  "paper": "2024_Livraghi",
+  "n_figures": 4,
+  "n_atomic_panels": 79,
+  "composite_panels": 0,
+  "n_custom_extractors": 1,
+  "n_fft_panels": 0,
+  "flagged_panels": [],
+  "panels": {
+    "2024_Livraghi/F1/A": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F1/B": {
+      "archetype": "genomic_track_or_locus",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/A": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/B": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/C": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/D": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/D_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/D_dprime": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/E": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/E_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/E_dprime": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/F": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/G": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/H": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/I": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/I_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/I_dprime": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/J": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/J_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/J_dprime": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/K": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/L": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/M": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/N": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/N_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/N_dprime": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/O": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/O_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F2/O_dprime": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F3/A": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F3/B": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F3/C": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F3/D": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F3/E": {
+      "archetype": "expression_imaging",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F3/F": {
+      "archetype": "quantitative_plot",
+      "n_points": 186,
+      "method": "custom:extractors/f3_genotyping.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Livraghi/F3/G": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F3/G_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F3/H_female": {
+      "archetype": "quantitative_plot",
+      "n_points": 138,
+      "method": "custom:extractors/f3_genotyping.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Livraghi/F3/H_male": {
+      "archetype": "quantitative_plot",
+      "n_points": 138,
+      "method": "custom:extractors/f3_genotyping.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Livraghi/F3/I": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F3/I_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F3/J": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F3/K": {
+      "archetype": "genomic_track_or_locus",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/A": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/B": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/C": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/D": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/D_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/D_dprime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/E": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/E_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/E_dprime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/F": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/G": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/H": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/I": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/I_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/I_dprime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/J": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/J_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/J_dprime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/K": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/L": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/M": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/N": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/N_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/N_dprime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/O": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/O_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/O_dprime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/P": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/Q": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/R": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/S": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/S_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/S_dprime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/T": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/T_prime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Livraghi/F4/T_dprime": {
+      "archetype": "crispant_phenotype_plate",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    }
+  }
+}

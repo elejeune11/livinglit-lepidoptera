@@ -1,0 +1,69 @@
+record: 2023_Seah
+vocabulary_version: 4
+agent:
+  model: livinglit-lepidoptera
+  instructions: field_set_4_ingestion
+edits: []
+mappings:
+  - field: taxon
+    stated: P. arcas
+    terms: [taxon:parides]
+    note: Parides arcas mapped to canonical genus taxon:parides in v4 vocabulary
+  - field: taxon
+    stated: P. nireus
+    terms: [taxon:papilio]
+    note: Papilio nireus mapped to canonical genus taxon:papilio in v4 vocabulary
+  - field: pattern_element
+    stated: green patches
+    terms: [pattern_element:medial_patch]
+  - field: scale_type
+    stated: green cover scales
+    terms: [scale_type:cover_scale]
+  - field: scale_type
+    stated: cover scales
+    terms: [scale_type:cover_scale]
+  - field: functional_architecture
+    stated: honeycomb lattices
+    terms: [functional_architecture:interridge_honeycomb_lattice]
+  - field: functional_architecture
+    stated: irregular crossribs
+    terms: [functional_architecture:structural_reflector]
+  - field: life_stage
+    stated: pupal
+    terms: [life_stage:pupa]
+  - field: target_gene
+    stated: F-actin
+    terms: [target_gene:f_actin_cytoskeleton]
+  - field: perturbation_modality
+    stated: pharmacological disruption
+    terms: [perturbation_modality:small_molecule_inhibitor]
+  - field: perturbation_modality
+    stated: negative control
+    terms: [perturbation_modality:vehicle_control]
+  - field: chemical_agent
+    stated: DMSO
+    terms: [chemical_agent:vehicle_solvent]
+  - field: imaging_modality
+    stated: Scanning electron microscopy (SEM)
+    terms: [imaging_modality:sem]
+  - field: imaging_modality
+    stated: confocal microscope
+    terms: [imaging_modality:confocal]
+  - field: imaging_modality
+    stated: lattice structured illumination microscopy (SIM)
+    terms: [imaging_modality:sim_3d]
+  - field: imaging_modality
+    stated: 3D structured illumination microscopy (3D-SIM)
+    terms: [imaging_modality:sim_3d]
+  - field: view_orientation
+    stated: top view
+    terms: [view_orientation:top_down_apical]
+  - field: view_orientation
+    stated: cross-sections
+    terms: [view_orientation:cross_section]
+  - field: hydration_and_prep
+    stated: sputter-coated with platinum or gold
+    terms: [hydration_and_prep:vacuum_sputter_coated]
+  - field: hydration_and_prep
+    stated: fixed in 4% PEM-PFA
+    terms: [hydration_and_prep:fixed_hydrated]

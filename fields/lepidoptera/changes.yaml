@@ -1,3 +1,4 @@
+# Append-only log of accepted vocabulary edits (03-vocabulary). vocab.yaml is rebuilt from it.
 - version: 1
   paper: corpus_v2_schema
   agent:
@@ -2041,3 +2042,230 @@
       must_match:
       - contrast
       may_vary: *id002
+- version: 4
+  paper: ten_paper_oa_corpus_expansion
+  agent:
+    kind: antigravity
+    model: field_set_4_10paper_init
+  events:
+  - event: set_parent
+    id: taxon:papilionoidea
+    parent: taxon:lepidoptera
+  - event: add_term
+    id: taxon:noctuidae
+    field: taxon
+    label: Noctuidae
+    parent: taxon:noctuoidea
+    definition: Owlet moth family within Noctuoidea including Bogong moths (Agrotis infusa).
+    scope: Family-level moth clade under Noctuoidea.
+  - event: add_term
+    id: taxon:agrotis
+    field: taxon
+    label: Agrotis
+    parent: taxon:noctuidae
+    definition: Noctuid moth genus containing migratory cutworm and Bogong moths.
+    scope: Genus under Noctuidae.
+  - event: add_term
+    id: taxon:agrotis_infusa
+    field: taxon
+    label: Agrotis infusa
+    parent: taxon:agrotis
+    definition: Australian Bogong moth (Noctuidae), known for seasonal alpine cave aestivation and camouflaged melanin-loaded
+      scales.
+    scope: Species under Agrotis.
+    synonyms:
+    - Bogong moth
+    - Australian Bogong moth
+    - A. infusa
+  - event: add_term
+    id: taxon:danainae
+    field: taxon
+    label: Danainae
+    parent: taxon:nymphalidae
+    definition: Milkweed butterfly subfamily within Nymphalidae.
+    scope: Subfamily under Nymphalidae, distinct from Heliconiinae, Nymphalinae, Morphinae, Satyrinae.
+  - event: add_term
+    id: taxon:danaus
+    field: taxon
+    label: Danaus
+    parent: taxon:danainae
+    definition: Milkweed butterfly genus including the monarch butterfly.
+    scope: Genus under Danainae.
+  - event: add_term
+    id: taxon:danaus_plexippus
+    field: taxon
+    label: Danaus plexippus
+    parent: taxon:danaus
+    definition: 'Monarch butterfly (Nymphalidae: Danainae).'
+    scope: Species under Danaus.
+    synonyms:
+    - D. plexippus
+    - monarch butterfly
+  - event: add_term
+    id: taxon:agraulis
+    field: taxon
+    label: Agraulis
+    parent: taxon:heliconiinae
+    definition: Passion-vine fritillary butterfly genus within Heliconiinae.
+    scope: Genus under Heliconiinae, distinct from Heliconius.
+  - event: add_term
+    id: taxon:agraulis_incarnata
+    field: taxon
+    label: Agraulis incarnata
+    parent: taxon:agraulis
+    definition: 'Gulf fritillary butterfly (Nymphalidae: Heliconiinae).'
+    scope: Species under Agraulis.
+    synonyms:
+    - A. incarnata
+    - Gulf fritillary
+    - Agraulis vanillae
+  - event: add_term
+    id: taxon:papilio
+    field: taxon
+    label: Papilio
+    parent: taxon:papilioninae
+    definition: Swallowtail butterfly genus within Papilioninae.
+    scope: Genus under Papilioninae, distinct from Parides.
+  - event: add_term
+    id: taxon:papilio_polytes
+    field: taxon
+    label: Papilio polytes
+    parent: taxon:papilio
+    definition: Common Mormon swallowtail butterfly (Papilionidae).
+    scope: Species under Papilio.
+    synonyms:
+    - P. polytes
+  - event: add_term
+    id: target_gene:cortex
+    field: target_gene
+    label: cortex (cort)
+    parent: target_gene:signaling_pathway
+    definition: Cell-cycle APC/C regulator at the major Lepidoptera mimicry supergene locus hosting the nested ivory lncRNA.
+    scope: Protein-coding cortex gene, distinct from the nested non-coding ivory lncRNA.
+    xref:
+    - FlyBase:FBgn0010351
+    synonyms:
+    - cortex
+    - Cortex
+    - cort
+  - event: add_term
+    id: target_gene:wnt6
+    field: target_gene
+    label: Wnt6
+    parent: target_gene:signaling_pathway
+    definition: Wnt-family secreted signaling ligand expressed during butterfly wing pattern development.
+    scope: Distinct from Wnt1/Wingless, WntA, and Wnt10.
+    xref:
+    - FlyBase:FBgn0031903
+    synonyms:
+    - wnt6
+  - event: add_term
+    id: target_gene:wnt10
+    field: target_gene
+    label: Wnt10
+    parent: target_gene:signaling_pathway
+    definition: Wnt-family secreted signaling ligand profiled in butterfly wing pattern development.
+    scope: Distinct from Wnt1/Wingless, WntA, and Wnt6.
+    xref:
+    - FlyBase:FBgn0031902
+    synonyms:
+    - wnt10
+  - event: add_term
+    id: target_gene:frizzled2
+    field: target_gene
+    label: frizzled2 (fz2)
+    parent: target_gene:signaling_pathway
+    definition: Frizzled-class Wnt receptor mediating Wingless/Wnt signaling in butterfly wing patterning.
+    scope: Distinct from frizzled4 (fz4).
+    xref:
+    - FlyBase:FBgn0016797
+    synonyms:
+    - fz2
+    - Frizzled2
+  - event: add_term
+    id: imaging_modality:speckle_reflection_microscopy
+    field: imaging_modality
+    label: speckle-correlation reflection phase microscopy
+    parent: imaging_modality:reflection_phase_microscopy
+    definition: Label-free live quantitative phase imaging using laser speckle correlation to track nascent pupal scale ridges.
+    scope: Sub-modality of reflection phase microscopy.
+    synonyms:
+    - SRPM
+    - speckle reflection phase microscopy
+    - quantitative phase imaging
+  - event: add_term
+    id: imaging_modality:radiolabeling
+    field: imaging_modality
+    label: metabolic radiolabeling
+    parent: imaging_modality:optical_microscopy
+    definition: Isotope tracer autoradiography (e.g. [14C]-tyrosine / [14C]-tryptophan) mapping pigment synthesis domains
+      on wings.
+    scope: Pigment biosynthesis spatial assay, distinct from HCR/IF.
+    synonyms:
+    - autoradiography
+    - tyrosine radiolabeling
+    - tryptophan radiolabeling
+  - event: add_term
+    id: measure:scale_length
+    field: measure
+    label: scale length
+    parent: null
+    definition: Longitudinal apex-to-pedicel length of an individual wing scale blade.
+    scope: Longitudinal dimension, distinct from transverse scale width and thickness.
+    dimension: length
+  - event: add_term
+    id: measure:scale_thickness
+    field: measure
+    label: scale thickness
+    parent: null
+    definition: Total dorsoventral thickness of an individual wing scale blade.
+    scope: Full blade thickness, distinct from lower lamina thickness.
+    dimension: length
+  - event: add_term
+    id: measure:transmittance
+    field: measure
+    label: optical transmittance
+    parent: null
+    definition: Fraction or percentage of incident light transmitted through a single scale or wing lamina.
+    scope: Distinct from reflectance and absorptance.
+    dimension: fraction_percent
+  - event: add_term
+    id: measure:absorptance
+    field: measure
+    label: optical absorptance
+    parent: null
+    definition: Fraction or percentage of incident light absorbed by pigments or microstructures within a scale.
+    scope: Distinct from reflectance and transmittance.
+    dimension: fraction_percent
+  - event: add_term
+    id: measure:chromatic_contrast_jnd
+    field: measure
+    label: chromatic contrast (JND)
+    parent: null
+    definition: Vorobyev–Osorio receptor-noise chromatic discriminability in Just Noticeable Differences (JNDs).
+    scope: Color discriminability, distinct from achromatic luminance contrast.
+    dimension: dimensionless
+  - event: add_term
+    id: measure:achromatic_contrast_jnd
+    field: measure
+    label: achromatic contrast (JND)
+    parent: null
+    definition: Receptor-noise achromatic luminance discriminability in Just Noticeable Differences (JNDs).
+    scope: Luminance contrast, distinct from chromatic contrast.
+    dimension: dimensionless
+  - event: add_term
+    id: measure:membrane_buckling_amplitude
+    field: measure
+    label: ridge buckling amplitude
+    parent: null
+    definition: Peak-to-trough vertical amplitude of nascent longitudinal scale ridges during pupal membrane buckling.
+    scope: Developmental buckling wave height, distinct from adult cuticular ridge height.
+    dimension: length
+  - event: add_term
+    id: measure:specular_reflection_angle
+    field: measure
+    label: angular reflectance width
+    parent: null
+    definition: Angular spread (FWHM or directional beam width in degrees) of scale iridescent reflection.
+    scope: Angular optical dispersion, distinct from spectral wavelength.
+    dimension: angle

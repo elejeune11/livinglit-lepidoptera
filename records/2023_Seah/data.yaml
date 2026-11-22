@@ -1,0 +1,5241 @@
+data:
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B6
+  value: '1878.78'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B6
+  value: '1878.78'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B6
+  value: '1878.78'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B7
+  value: '1861.72'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B7
+  value: '1861.72'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B7
+  value: '1861.72'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B8
+  value: '2335.4'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B8
+  value: '2335.4'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B8
+  value: '2335.4'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B9
+  value: '2188.06'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B9
+  value: '2188.06'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B9
+  value: '2188.06'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B10
+  value: '1996.12'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B10
+  value: '1996.12'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B10
+  value: '1996.12'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B11
+  value: '2425.28'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B11
+  value: '2425.28'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B11
+  value: '2425.28'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B12
+  value: '2242.43'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B12
+  value: '2242.43'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B12
+  value: '2242.43'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B13
+  value: '2615.44'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B13
+  value: '2615.44'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B13
+  value: '2615.44'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B14
+  value: '2562.85'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B14
+  value: '2562.85'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B14
+  value: '2562.85'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B15
+  value: '2093.52'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B15
+  value: '2093.52'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B15
+  value: '2093.52'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B16
+  value: '1122.48'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B16
+  value: '1122.48'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B16
+  value: '1122.48'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B17
+  value: '2095.41'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B17
+  value: '2095.41'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B17
+  value: '2095.41'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B18
+  value: '1319.19'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B18
+  value: '1319.19'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B18
+  value: '1319.19'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B19
+  value: '1469.94'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B19
+  value: '1469.94'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B19
+  value: '1469.94'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B20
+  value: '1668.99'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B20
+  value: '1668.99'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B20
+  value: '1668.99'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B21
+  value: '1827.2'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B21
+  value: '1827.2'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B21
+  value: '1827.2'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B22
+  value: '893.71'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B22
+  value: '893.71'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B22
+  value: '893.71'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B23
+  value: '645.08'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B23
+  value: '645.08'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B23
+  value: '645.08'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B24
+  value: '2233.29'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B24
+  value: '2233.29'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B24
+  value: '2233.29'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B25
+  value: '2154.9'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B25
+  value: '2154.9'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B25
+  value: '2154.9'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B26
+  value: '1261.58'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B26
+  value: '1261.58'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B26
+  value: '1261.58'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B27
+  value: '777.05'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B27
+  value: '777.05'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B27
+  value: '777.05'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B28
+  value: '1622.66'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B28
+  value: '1622.66'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B28
+  value: '1622.66'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B29
+  value: '1101.04'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B29
+  value: '1101.04'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B29
+  value: '1101.04'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B30
+  value: '768.51'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B30
+  value: '768.51'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B30
+  value: '768.51'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B31
+  value: '1056.89'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B31
+  value: '1056.89'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B31
+  value: '1056.89'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B32
+  value: '1013.31'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B32
+  value: '1013.31'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B32
+  value: '1013.31'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B33
+  value: '1841.9'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B33
+  value: '1841.9'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B33
+  value: '1841.9'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B34
+  value: '884.19'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B34
+  value: '884.19'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B34
+  value: '884.19'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B35
+  value: '1715.27'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B35
+  value: '1715.27'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B35
+  value: '1715.27'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B36
+  value: '1738.29'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B36
+  value: '1738.29'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B36
+  value: '1738.29'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B37
+  value: '2196.68'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B37
+  value: '2196.68'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B37
+  value: '2196.68'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B38
+  value: '2185.95'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B38
+  value: '2185.95'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B38
+  value: '2185.95'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B39
+  value: '1500.18'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B39
+  value: '1500.18'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B39
+  value: '1500.18'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B40
+  value: '1686.04'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B40
+  value: '1686.04'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B40
+  value: '1686.04'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B41
+  value: '1386.35'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B41
+  value: '1386.35'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B41
+  value: '1386.35'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B42
+  value: '1506.38'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B42
+  value: '1506.38'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B42
+  value: '1506.38'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B43
+  value: '928.26'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B43
+  value: '928.26'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B43
+  value: '928.26'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B44
+  value: '1568.21'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B44
+  value: '1568.21'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B44
+  value: '1568.21'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B45
+  value: '1740.74'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B45
+  value: '1740.74'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B45
+  value: '1740.74'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B46
+  value: '1455.24'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B46
+  value: '1455.24'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B46
+  value: '1455.24'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B47
+  value: '1706.58'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B47
+  value: '1706.58'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B47
+  value: '1706.58'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B48
+  value: '1776.61'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B48
+  value: '1776.61'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B48
+  value: '1776.61'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B49
+  value: '1845.31'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B49
+  value: '1845.31'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B49
+  value: '1845.31'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B50
+  value: '1628.55'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B50
+  value: '1628.55'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B50
+  value: '1628.55'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B51
+  value: '1746.53'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B51
+  value: '1746.53'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B51
+  value: '1746.53'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B52
+  value: '1805.37'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B52
+  value: '1805.37'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B52
+  value: '1805.37'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B53
+  value: '1487.2'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B53
+  value: '1487.2'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B53
+  value: '1487.2'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B54
+  value: '2003.73'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B54
+  value: '2003.73'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B54
+  value: '2003.73'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B55
+  value: '1851.85'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B55
+  value: '1851.85'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B55
+  value: '1851.85'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B56
+  value: '1754.24'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B56
+  value: '1754.24'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B56
+  value: '1754.24'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B57
+  value: '1948.29'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B57
+  value: '1948.29'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B57
+  value: '1948.29'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B58
+  value: '1789.05'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B58
+  value: '1789.05'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B58
+  value: '1789.05'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B59
+  value: '1975.14'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B59
+  value: '1975.14'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B59
+  value: '1975.14'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B60
+  value: '1520.56'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B60
+  value: '1520.56'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B60
+  value: '1520.56'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B61
+  value: '1564.75'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B61
+  value: '1564.75'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B61
+  value: '1564.75'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B62
+  value: '1731.37'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B62
+  value: '1731.37'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B62
+  value: '1731.37'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B63
+  value: '1343.7'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B63
+  value: '1343.7'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B63
+  value: '1343.7'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B64
+  value: '2052.79'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B64
+  value: '2052.79'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B64
+  value: '2052.79'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B65
+  value: '2230.85'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B65
+  value: '2230.85'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B65
+  value: '2230.85'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B66
+  value: '2178.72'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B66
+  value: '2178.72'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B66
+  value: '2178.72'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B67
+  value: '2126.46'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B67
+  value: '2126.46'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B67
+  value: '2126.46'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B68
+  value: '1802.45'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B68
+  value: '1802.45'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B68
+  value: '1802.45'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B69
+  value: '1772.06'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B69
+  value: '1772.06'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B69
+  value: '1772.06'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B70
+  value: '2109.62'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B70
+  value: '2109.62'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B70
+  value: '2109.62'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B71
+  value: '1640.67'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B71
+  value: '1640.67'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B71
+  value: '1640.67'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B72
+  value: '2301.41'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B72
+  value: '2301.41'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B72
+  value: '2301.41'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B73
+  value: '1943.95'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B73
+  value: '1943.95'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B73
+  value: '1943.95'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B74
+  value: '2044.83'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B74
+  value: '2044.83'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B74
+  value: '2044.83'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B75
+  value: '1495.87'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B75
+  value: '1495.87'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B75
+  value: '1495.87'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B76
+  value: '1655.49'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B76
+  value: '1655.49'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B76
+  value: '1655.49'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B77
+  value: '1723.89'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B77
+  value: '1723.89'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B77
+  value: '1723.89'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B78
+  value: '1919.48'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B78
+  value: '1919.48'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B78
+  value: '1919.48'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B79
+  value: '1887'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B79
+  value: '1887'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B79
+  value: '1887'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B80
+  value: '2112.61'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B80
+  value: '2112.61'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B80
+  value: '2112.61'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B81
+  value: '2342.7'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B81
+  value: '2342.7'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B81
+  value: '2342.7'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B82
+  value: '1246.24'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B82
+  value: '1246.24'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B82
+  value: '1246.24'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B83
+  value: '2194.95'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B83
+  value: '2194.95'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B83
+  value: '2194.95'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B84
+  value: '2327.38'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B84
+  value: '2327.38'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B84
+  value: '2327.38'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B85
+  value: '2364.56'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B85
+  value: '2364.56'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B85
+  value: '2364.56'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B86
+  value: '1942.47'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B86
+  value: '1942.47'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B86
+  value: '1942.47'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B87
+  value: '1758.31'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B87
+  value: '1758.31'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B87
+  value: '1758.31'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B88
+  value: '1798.57'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B88
+  value: '1798.57'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B88
+  value: '1798.57'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B89
+  value: '1823.85'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B89
+  value: '1823.85'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B89
+  value: '1823.85'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B90
+  value: '1760.62'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B90
+  value: '1760.62'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B90
+  value: '1760.62'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B91
+  value: '2064.83'
+  unit: nm
+- item: F4S5_eur_52_vs_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B91
+  value: '2064.83'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B91
+  value: '2064.83'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B92
+  value: '1618.71'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B92
+  value: '1618.71'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B92
+  value: '1618.71'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B93
+  value: '2123.59'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B93
+  value: '2123.59'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B93
+  value: '2123.59'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B94
+  value: '1448.54'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B94
+  value: '1448.54'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B94
+  value: '1448.54'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B95
+  value: '1834.78'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B95
+  value: '1834.78'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B95
+  value: '1834.78'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B96
+  value: '2184.27'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B96
+  value: '2184.27'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B96
+  value: '2184.27'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B97
+  value: '1686.14'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B97
+  value: '1686.14'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B97
+  value: '1686.14'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B98
+  value: '2129.98'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B98
+  value: '2129.98'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B98
+  value: '2129.98'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B99
+  value: '2345.46'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B99
+  value: '2345.46'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B99
+  value: '2345.46'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B100
+  value: '1898.25'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B100
+  value: '1898.25'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B100
+  value: '1898.25'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B101
+  value: '2159'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B101
+  value: '2159'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B101
+  value: '2159'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B102
+  value: '1933.55'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B102
+  value: '1933.55'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B102
+  value: '1933.55'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B103
+  value: '1982.01'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B103
+  value: '1982.01'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B103
+  value: '1982.01'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B104
+  value: '2305.55'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B104
+  value: '2305.55'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B104
+  value: '2305.55'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B105
+  value: '2041.64'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B105
+  value: '2041.64'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B105
+  value: '2041.64'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B106
+  value: '1870.62'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B106
+  value: '1870.62'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B106
+  value: '1870.62'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B107
+  value: '1951.53'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B107
+  value: '1951.53'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B107
+  value: '1951.53'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B108
+  value: '2406'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B108
+  value: '2406'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B108
+  value: '2406'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B109
+  value: '1727.94'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B109
+  value: '1727.94'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B109
+  value: '1727.94'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B110
+  value: '1906.08'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B110
+  value: '1906.08'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B110
+  value: '1906.08'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B111
+  value: '1453.1'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B111
+  value: '1453.1'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B111
+  value: '1453.1'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B112
+  value: '2002.99'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B112
+  value: '2002.99'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B112
+  value: '2002.99'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B113
+  value: '1758.89'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B113
+  value: '1758.89'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B113
+  value: '1758.89'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B114
+  value: '1400.21'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B114
+  value: '1400.21'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B114
+  value: '1400.21'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B115
+  value: '1978.639'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B115
+  value: '1978.639'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B115
+  value: '1978.639'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B116
+  value: '1596.147'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B116
+  value: '1596.147'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B116
+  value: '1596.147'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B117
+  value: '2070.829'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B117
+  value: '2070.829'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B117
+  value: '2070.829'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B118
+  value: '2069.699'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B118
+  value: '2069.699'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B118
+  value: '2069.699'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B119
+  value: '2543.097'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B119
+  value: '2543.097'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B119
+  value: '2543.097'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B120
+  value: '1957.719'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B120
+  value: '1957.719'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B120
+  value: '1957.719'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B121
+  value: '2090.885'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B121
+  value: '2090.885'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B121
+  value: '2090.885'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B122
+  value: '1610.95'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B122
+  value: '1610.95'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B122
+  value: '1610.95'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B123
+  value: '1604.069'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B123
+  value: '1604.069'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B123
+  value: '1604.069'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B124
+  value: '1961.579'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B124
+  value: '1961.579'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B124
+  value: '1961.579'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B125
+  value: '2057.974'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B125
+  value: '2057.974'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B125
+  value: '2057.974'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B126
+  value: '2102.415'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B126
+  value: '2102.415'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B126
+  value: '2102.415'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B127
+  value: '1266.061'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B127
+  value: '1266.061'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B127
+  value: '1266.061'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B128
+  value: '1935.427'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B128
+  value: '1935.427'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B128
+  value: '1935.427'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B129
+  value: '2365.657'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B129
+  value: '2365.657'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B129
+  value: '2365.657'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B130
+  value: '1628.233'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B130
+  value: '1628.233'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B130
+  value: '1628.233'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B131
+  value: '2336.289'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B131
+  value: '2336.289'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B131
+  value: '2336.289'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B132
+  value: '1566.726'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B132
+  value: '1566.726'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B132
+  value: '1566.726'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B133
+  value: '2327.194'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B133
+  value: '2327.194'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B133
+  value: '2327.194'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B134
+  value: '2006.564'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B134
+  value: '2006.564'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B134
+  value: '2006.564'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B135
+  value: '2105.553'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B135
+  value: '2105.553'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B135
+  value: '2105.553'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B136
+  value: '2581.541'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B136
+  value: '2581.541'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B136
+  value: '2581.541'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B137
+  value: '1824.564'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B137
+  value: '1824.564'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B137
+  value: '1824.564'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B138
+  value: '1968.551'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B138
+  value: '1968.551'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B138
+  value: '1968.551'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B139
+  value: '2125.181'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B139
+  value: '2125.181'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B139
+  value: '2125.181'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B140
+  value: '2346.092'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B140
+  value: '2346.092'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B140
+  value: '2346.092'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B141
+  value: '2119.12'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B141
+  value: '2119.12'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B141
+  value: '2119.12'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B142
+  value: '2048.352'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B142
+  value: '2048.352'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B142
+  value: '2048.352'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B143
+  value: '2104.176'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B143
+  value: '2104.176'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B143
+  value: '2104.176'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B144
+  value: '2336.402'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B144
+  value: '2336.402'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B144
+  value: '2336.402'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B145
+  value: '2398.802'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B145
+  value: '2398.802'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B145
+  value: '2398.802'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B146
+  value: '2509.396'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B146
+  value: '2509.396'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B146
+  value: '2509.396'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B147
+  value: '1900.702'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B147
+  value: '1900.702'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B147
+  value: '1900.702'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B148
+  value: '2392.013'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B148
+  value: '2392.013'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B148
+  value: '2392.013'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B149
+  value: '1986.172'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B149
+  value: '1986.172'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B149
+  value: '1986.172'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B150
+  value: '1626.629'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B150
+  value: '1626.629'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B150
+  value: '1626.629'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B151
+  value: '1181.06'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B151
+  value: '1181.06'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B151
+  value: '1181.06'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B152
+  value: '1499.92'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B152
+  value: '1499.92'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B152
+  value: '1499.92'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B153
+  value: '1589.92'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B153
+  value: '1589.92'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B153
+  value: '1589.92'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B154
+  value: '1644.54'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B154
+  value: '1644.54'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B154
+  value: '1644.54'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B155
+  value: '1481.03'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B155
+  value: '1481.03'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B155
+  value: '1481.03'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B156
+  value: '1804.77'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B156
+  value: '1804.77'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B156
+  value: '1804.77'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B157
+  value: '1845.46'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B157
+  value: '1845.46'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B157
+  value: '1845.46'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B158
+  value: '1899.48'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B158
+  value: '1899.48'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B158
+  value: '1899.48'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B159
+  value: '1918.38'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B159
+  value: '1918.38'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B159
+  value: '1918.38'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B160
+  value: '1855.99'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B160
+  value: '1855.99'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B160
+  value: '1855.99'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B161
+  value: '1968.55'
+  unit: nm
+- item: F4S5_eur_52_vs_57_ck666
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B161
+  value: '1968.55'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B161
+  value: '1968.55'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B162
+  value: '2033.347'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B162
+  value: '2033.347'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B163
+  value: '2031.477'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B163
+  value: '2031.477'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B164
+  value: '2002.049'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B164
+  value: '2002.049'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B165
+  value: '2420.331'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B165
+  value: '2420.331'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B166
+  value: '2471.315'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B166
+  value: '2471.315'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B167
+  value: '2624.95'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B167
+  value: '2624.95'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B168
+  value: '2073.008'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B168
+  value: '2073.008'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B169
+  value: '2532.133'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B169
+  value: '2532.133'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B170
+  value: '1855.64'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B170
+  value: '1855.64'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B171
+  value: '2258.429'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B171
+  value: '2258.429'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B172
+  value: '1910.073'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B172
+  value: '1910.073'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B173
+  value: '1895.669'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B173
+  value: '1895.669'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B174
+  value: '1672.386'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B174
+  value: '1672.386'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B175
+  value: '1796.524'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B175
+  value: '1796.524'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B176
+  value: '2161.834'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B176
+  value: '2161.834'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B177
+  value: '1553.139'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B177
+  value: '1553.139'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B178
+  value: '2192.718'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B178
+  value: '2192.718'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B179
+  value: '2137.489'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B179
+  value: '2137.489'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B180
+  value: '1804.414'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B180
+  value: '1804.414'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B181
+  value: '1845.491'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B181
+  value: '1845.491'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B182
+  value: '1824.13'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B182
+  value: '1824.13'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B183
+  value: '2158.98'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B183
+  value: '2158.98'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B184
+  value: '1852.84'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B184
+  value: '1852.84'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B185
+  value: '1268.14'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B185
+  value: '1268.14'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B186
+  value: '1270.23'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B186
+  value: '1270.23'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B187
+  value: '1856.05'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B187
+  value: '1856.05'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B188
+  value: '2001.36'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B188
+  value: '2001.36'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B189
+  value: '1993.5'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B189
+  value: '1993.5'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B190
+  value: '1951.694'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B190
+  value: '1951.694'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B191
+  value: '1642.775'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B191
+  value: '1642.775'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B192
+  value: '1916.757'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B192
+  value: '1916.757'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B193
+  value: '2122.975'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B193
+  value: '2122.975'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B194
+  value: '1808.744'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B194
+  value: '1808.744'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B195
+  value: '1953.458'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B195
+  value: '1953.458'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B196
+  value: '2043.581'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B196
+  value: '2043.581'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B197
+  value: '1912.265'
+  unit: nm
+- item: F4S5_eur_57_vs_ctrl
+  group: eur_57_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B197
+  value: '1912.265'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B198
+  value: '1538.462'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B198
+  value: '1538.462'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B199
+  value: '1643.176'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B199
+  value: '1643.176'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B200
+  value: '1410.604'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B200
+  value: '1410.604'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B201
+  value: '1448.982'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B201
+  value: '1448.982'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B202
+  value: '2035.213'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B202
+  value: '2035.213'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B203
+  value: '1631.471'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B203
+  value: '1631.471'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B204
+  value: '2205.027'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B204
+  value: '2205.027'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B205
+  value: '1868.729'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B205
+  value: '1868.729'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B206
+  value: '2053.641'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B206
+  value: '2053.641'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B207
+  value: '1411.533'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B207
+  value: '1411.533'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B208
+  value: '1972.828'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B208
+  value: '1972.828'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B209
+  value: '1891.73'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B209
+  value: '1891.73'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B210
+  value: '2329.154'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B210
+  value: '2329.154'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B211
+  value: '1827.35'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B211
+  value: '1827.35'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B212
+  value: '2299.252'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B212
+  value: '2299.252'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B213
+  value: '1974.195'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B213
+  value: '1974.195'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B214
+  value: '1639.382'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B214
+  value: '1639.382'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B215
+  value: '1945.794'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B215
+  value: '1945.794'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B216
+  value: '1809.889'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B216
+  value: '1809.889'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B217
+  value: '1813.417'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B217
+  value: '1813.417'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B218
+  value: '1827.266'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B218
+  value: '1827.266'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B219
+  value: '1897.63'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B219
+  value: '1897.63'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B220
+  value: '1729.566'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B220
+  value: '1729.566'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B221
+  value: '2035.706'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B221
+  value: '2035.706'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B222
+  value: '1765.899'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B222
+  value: '1765.899'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B223
+  value: '2144.015'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B223
+  value: '2144.015'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B224
+  value: '1686.713'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B224
+  value: '1686.713'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B225
+  value: '1908.743'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B225
+  value: '1908.743'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B226
+  value: '1701.793'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B226
+  value: '1701.793'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B227
+  value: '1895.257'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B227
+  value: '1895.257'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B228
+  value: '2086.912'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B228
+  value: '2086.912'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B229
+  value: '1722.291'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B229
+  value: '1722.291'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B230
+  value: '1656.476'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B230
+  value: '1656.476'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B231
+  value: '2138.7'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B231
+  value: '2138.7'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B232
+  value: '1728.208'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B232
+  value: '1728.208'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B233
+  value: '1854.352'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B233
+  value: '1854.352'
+  unit: nm
+- item: F4S5_eur_all_heights
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B234
+  value: '2006.89'
+  unit: nm
+- item: F4S5_eur_52_vs_67_ctrl
+  group: eur_67_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel A (P. eurimedes)
+  cell: B234
+  value: '2006.89'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B6
+  value: '1442.43'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B7
+  value: '1396.04'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B8
+  value: '1645.07'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B9
+  value: '1614.38'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B10
+  value: '1573.88'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B11
+  value: '1350.5'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B12
+  value: '1385.28'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B13
+  value: '1445.49'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B14
+  value: '1400.87'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B15
+  value: '1301.54'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B16
+  value: '1207.7'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B17
+  value: '1393.04'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B18
+  value: '1516.9'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B19
+  value: '1057.07'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B20
+  value: '1541.42'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B21
+  value: '1479.14'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B22
+  value: '1111.07'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_ck666
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B23
+  value: '1521'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B24
+  value: '2296'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B25
+  value: '2415.64'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B26
+  value: '1869.88'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B27
+  value: '2100.82'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B28
+  value: '2280.48'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B29
+  value: '1665.78'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B30
+  value: '1703.77'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B31
+  value: '1977.23'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B32
+  value: '2614.31'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B33
+  value: '1235.08'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B34
+  value: '1566.44'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B35
+  value: '1520.22'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B36
+  value: '1496.36'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B37
+  value: '1600.21'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B38
+  value: '1869.5'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B39
+  value: '1901.78'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B40
+  value: '2128.16'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B41
+  value: '2408.09'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B42
+  value: '1838.82'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B43
+  value: '2032.08'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B44
+  value: '2205.95'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B45
+  value: '1596.9'
+  unit: nm
+- item: F4S5_iph_52_vs_ctrl
+  group: iph_52_dmso
+  kind: point
+  file: elife-89082-fig4-figsupp5-data1.xlsx
+  sheet: Panel D (P. iphidamas)
+  cell: B46
+  value: '2105.89'
+  unit: nm

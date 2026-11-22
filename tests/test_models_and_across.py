@@ -82,7 +82,14 @@ def test_relaxed_context_diff_and_confounders():
 
 
 @pytest.mark.parametrize("paper,expected_fs,min_claims,min_ext", [
+    ("2018_Parnell", 4, 7, 6),
+    ("2020_Stavenga", 4, 7, 5),
+    ("2021_McDougal", 4, 7, 4),
+    ("2023_Banerjee", 4, 8, 0),
+    ("2023_Seah", 4, 7, 1),
+    ("2024_Livraghi", 4, 7, 1),
     ("2024_Lloyd", 3, 7, 3),
+    ("2024_Totz", 4, 7, 6),
     ("2025_Loh", 4, 6, 2),
     ("2026_Finet", 3, 7, 3),
 ])
@@ -108,10 +115,18 @@ def test_pilot_records_schema_and_qa_clean(paper: str, expected_fs: int, min_cla
 
 
 def test_genetics_schema_and_binding_tier_guard(tmp_path: Path):
+    total_rels = 0
+    total_tables = 0
+    for paper, min_rels in [("2023_Banerjee", 10), ("2023_Seah", 3), ("2024_Livraghi", 8), ("2025_Loh", 12)]:
+        gf = GeneticsFile.model_validate(yaml.safe_load((RECORDS_DIR / paper / "genetics.yaml").read_text(encoding="utf-8")))
+        assert len(gf.relations) >= min_rels
+        total_rels += len(gf.relations)
+        total_tables += len(gf.genomic_tables)
+    assert total_rels >= 33
+    assert total_tables >= 3
+
     rdir = RECORDS_DIR / "2025_Loh"
     gf = GeneticsFile.model_validate(yaml.safe_load((rdir / "genetics.yaml").read_text(encoding="utf-8")))
-    assert len(gf.relations) >= 12
-    assert len(gf.genomic_tables) >= 2
     assert any(r.id == "bab_binds_represses_mwh" for r in gf.relations)
     assert any(gt.id == "bab_uvi_de_targets" for gt in gf.genomic_tables)
 

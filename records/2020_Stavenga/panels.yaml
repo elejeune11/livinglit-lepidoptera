@@ -1,0 +1,372 @@
+record: 2020_Stavenga
+default_context:
+  taxon: Agrotis infusa
+  life_stage: adult
+  pupal_stage_pct: not applicable
+  target_gene: none
+  genetic_element_type: not applicable
+  allele_or_zygosity: wild type
+  perturbation_modality: wild type
+  chemical_agent: none
+  hydration_and_prep: dry mounted
+figures:
+  F1:
+    label: Fig. 1
+    file: fphys-11-00095-g001.jpg
+    xml_id: F1
+    title: Bogong moth (Agrotis infusa) dorsal wing coloration and bifurcated-probe wing reflectance spectra
+    caption_anchor:
+      quote: Bogong moth coloration. (A) A pinned specimen with exposed fore and hind wings
+      where: Fig. 1 caption
+    context:
+      anatomical_region: dorsal wing
+      functional_architecture: melanic pigmentary
+    panels:
+      A:
+        label: A
+        title: Pinned adult Bogong moth specimen showing dark-brown dorsal forewings and lighter-brown hindwings
+        bbox: [0, 0, 700, 524]
+        archetype: macro_morphology
+        context:
+          imaging_modality: light microscopy
+          view_orientation: whole-mount
+        scale_bar:
+          um: 10000.0
+          search_box: [270, 480, 440, 500]
+          polarity: dark
+        linked_items: [F1_wing_reflectance]
+        linked_claims: [C1_abstract_camouflage_spectra]
+      B:
+        label: B
+        title: Dorsal forewing and hindwing reflectance spectra (300–800 nm) measured with a bifurcated reflection probe
+        bbox: [0, 525, 700, 1108]
+        archetype: spectral_or_profile
+        context:
+          imaging_modality: microspectrophotometry
+          view_orientation: whole-mount
+        partial_x_range: true
+        extractor: extractors/f1_wings.py:extract
+        linked_items: [F1_wing_reflectance]
+        linked_claims: [C1_abstract_camouflage_spectra, C4_results_tip_melanin_blocks_thin_film]
+  F2:
+    label: Fig. 2
+    file: fphys-11-00095-g002.jpg
+    xml_id: F2
+    title: Scanning electron micrographs of an isolated Bogong moth forewing scale (abwing ridges, cross-ribs, and adwing lower lamina)
+    caption_anchor:
+      quote: Scanning electron micrographs of a forewing scale. (A) An isolated scale with dented tip area and on the other end the root.
+      where: Fig. 2 caption
+    context:
+      anatomical_region: dorsal forewing
+      scale_type: wing scale
+      imaging_modality: SEM
+      hydration_and_prep: sputter coated
+    panels:
+      A:
+        label: A
+        title: Whole isolated Bogong moth forewing scale from dented distal tip to proximal root pedicel
+        bbox: [1, 1, 123, 514]
+        archetype: planar_microscopy
+        context:
+          view_orientation: top-down apical
+        scale_bar:
+          um: 50.0
+          search_box: [55, 480, 120, 512]
+          polarity: bright
+        linked_items: [F2_scale_length, F2_scale_width]
+      B:
+        label: B
+        title: Magnified abwing (upper) side of the forewing scale tip showing parallel longitudinal ridges
+        bbox: [128, 1, 443, 254]
+        archetype: planar_microscopy
+        context:
+          view_orientation: top-down apical
+        scale_bar:
+          um: 25.0
+          px: 80.55
+          polarity: bright
+          source: caption (shared 25 um scale bar with panel D)
+        periodic_spec:
+          roi: [55, 115, 270, 245]
+          spacing_range_um: [1.0, 4.0]
+          wavevector_angle_deg: [-20.0, 20.0]
+          channel: gray
+        linked_items: [F2_ridge_spacing]
+        linked_claims: [C5_results_upper_lamina_neglected]
+      C:
+        label: C
+        title: High-magnification SEM of abwing scale ridges with minor overlapping lamellae, transverse cross-ribs, and small open windows
+        bbox: [448, 1, 737, 514]
+        archetype: planar_microscopy
+        context:
+          view_orientation: top-down apical
+        scale_bar:
+          um: 2.5
+          search_box: [160, 480, 288, 512]
+          polarity: bright
+        periodic_spec:
+          roi: [15, 50, 275, 465]
+          spacing_range_um: [1.0, 3.5]
+          wavevector_angle_deg: [-20.0, 20.0]
+          channel: gray
+          measure_crossrib: true
+          crossrib_range_um: [0.30, 0.90]
+        linked_items: [F2_ridge_spacing, F2_ridge_density, F2_crossrib_spacing]
+        linked_claims: [C5_results_upper_lamina_neglected]
+      D:
+        label: D
+        title: Adwing (underside) of forewing scale tip showing smooth slightly wrinkled lower lamina plane
+        bbox: [128, 261, 443, 514]
+        archetype: planar_microscopy
+        context:
+          functional_architecture: lower-lamina thin film
+          view_orientation: top-down apical
+        scale_bar:
+          um: 25.0
+          search_box: [200, 225, 312, 252]
+          polarity: bright
+        linked_items: [F5_lower_lamina_thickness]
+  F3:
+    label: Fig. 3
+    file: fphys-11-00095-g003.jpg
+    xml_id: F3
+    title: Transmittance spectra of an oil-immersed isolated forewing scale across root (1), middle (2), and tip (3) melanin gradient
+    caption_anchor:
+      quote: Transmittance spectra of an isolated forewing scale immersed in immersion oil, in the root (1), middle (2), and tip (3) area, measured with a microspectrophotometer.
+      where: Fig. 3 caption
+    context:
+      anatomical_region: dorsal forewing
+      scale_type: wing scale
+      functional_architecture: melanic pigmentary
+      imaging_modality: microspectrophotometry
+      view_orientation: top-down apical
+    panels:
+      A:
+        label: A
+        title: Isolated forewing scale transmittance spectra (350–800 nm) at root (1), middle (2), and tip (3) in immersion oil (n = 1.515)
+        bbox: [0, 0, 700, 533]
+        archetype: spectral_or_profile
+        extractor: extractors/f3_transmittance.py:extract
+        linked_items: [F3_scale_transmittance]
+        linked_claims: [C2_results_transmittance_gradient, C4_results_tip_melanin_blocks_thin_film, C7_discussion_cost_optimization]
+  F4:
+    label: Fig. 4
+    file: fphys-11-00095-g004.jpg
+    xml_id: F4
+    title: Spectral epi-illumination microscopy, transmitted light microscopy, and imaging scatterometry of Bogong moth forewing scales
+    caption_anchor:
+      quote: Spectral and spatial characteristics of Bogong moth scales. (A) Epi-illumination micrograph of the scale pattern, locally in the forewing.
+      where: Fig. 4 caption
+    context:
+      anatomical_region: dorsal forewing
+      scale_type: wing scale
+      imaging_modality: light microscopy
+    panels:
+      A:
+        label: A
+        title: Epi-illumination optical micrograph of the overlapping scale lattice on the dorsal forewing
+        bbox: [1, 1, 798, 506]
+        archetype: planar_microscopy
+        context:
+          view_orientation: whole-mount
+        scale_bar:
+          um: 100.0
+          search_box: [580, 450, 790, 502]
+          polarity: bright
+        linked_claims: [C4_results_tip_melanin_blocks_thin_film]
+      B:
+        label: B
+        title: Epi-illumination micrograph of the adwing side of an isolated forewing scale showing blue-to-purple lower-lamina thin-film interference (spots 1–2)
+        bbox: [1, 510, 263, 1081]
+        archetype: planar_microscopy
+        context:
+          functional_architecture: lower-lamina thin film
+          view_orientation: top-down apical
+        scale_bar:
+          um: 50.0
+          search_box: [140, 540, 258, 569]
+          polarity: bright
+        linked_items: [F5_lower_lamina_thickness, F5_thin_film_peak_wavelength]
+        linked_claims: [C3_results_thin_film_thickness]
+      C:
+        label: C
+        title: Epi-illumination micrograph of the abwing side of the same isolated scale showing blue-green root (3) and reddish-brown melanized tip (4–5)
+        bbox: [269, 510, 531, 1081]
+        archetype: planar_microscopy
+        context:
+          functional_architecture: melanic pigmentary
+          view_orientation: top-down apical
+        scale_bar:
+          um: 50.0
+          search_box: [140, 540, 258, 569]
+          polarity: bright
+        linked_items: [F5_abwing_melanin_filtering]
+        linked_claims: [C4_results_tip_melanin_blocks_thin_film]
+      D:
+        label: D
+        title: Transmitted-light micrograph of the same isolated forewing scale demonstrating longitudinal melanin optical density gradient
+        bbox: [537, 510, 798, 1081]
+        archetype: planar_microscopy
+        context:
+          functional_architecture: melanic pigmentary
+          view_orientation: top-down apical
+        scale_bar:
+          um: 50.0
+          search_box: [140, 540, 258, 569]
+          polarity: bright
+        linked_items: [F3_scale_transmittance]
+        linked_claims: [C2_results_transmittance_gradient]
+      E:
+        label: E
+        title: Narrow-aperture (<5 deg) imaging scatterogram of adwing area 1 showing directional specular blue thin-film reflection spot
+        bbox: [1, 1086, 262, 1347]
+        archetype: spectral_or_profile
+        context:
+          functional_architecture: lower-lamina thin film
+          view_orientation: top-down apical
+        linked_items: [F5_lower_lamina_thickness]
+        linked_claims: [C3_results_thin_film_thickness]
+      F:
+        label: F
+        title: Narrow-aperture imaging scatterogram of abwing area 4 showing horizontal diffraction-grating line from parallel ridges
+        bbox: [269, 1086, 530, 1347]
+        archetype: spectral_or_profile
+        context:
+          functional_architecture: melanic pigmentary
+          view_orientation: top-down apical
+        linked_items: [F2_ridge_spacing, F5_abwing_melanin_filtering]
+      G:
+        label: G
+        title: Wide-aperture imaging scatterogram of abwing area 4 showing diffuse brown melanin-filtered backscattering
+        bbox: [537, 1086, 798, 1347]
+        archetype: spectral_or_profile
+        context:
+          functional_architecture: melanic pigmentary
+          view_orientation: top-down apical
+        linked_items: [F5_abwing_melanin_filtering]
+        linked_claims: [C4_results_tip_melanin_blocks_thin_film]
+  F5:
+    label: Fig. 5
+    file: fphys-11-00095-g005.jpg
+    xml_id: F5
+    title: Microspectrophotometer reflectance spectra of an isolated forewing scale (adwing thin-film fits 230 nm / 290 nm and abwing spots 3–5)
+    caption_anchor:
+      quote: Reflectance spectra of an isolated scale measured with a microspectrophotometer.
+      where: Fig. 5 caption
+    context:
+      anatomical_region: dorsal forewing
+      scale_type: wing scale
+      imaging_modality: microspectrophotometry
+      view_orientation: top-down apical
+    panels:
+      A:
+        label: A
+        title: Adwing reflectance spectrum at area 1 (solid blue) vs Airy thin-film model for 230 nm chitin in air (dotted navy)
+        bbox: [0, 0, 700, 506]
+        archetype: spectral_or_profile
+        context:
+          functional_architecture: lower-lamina thin film
+        extractor: extractors/f5_scale_reflectance.py:extract
+        linked_items: [F5_lower_lamina_thickness, F5_thin_film_peak_wavelength, F5_abwing_melanin_filtering]
+        linked_claims: [C3_results_thin_film_thickness]
+      B:
+        label: B
+        title: Adwing reflectance spectrum at area 2 (solid yellow) vs Airy thin-film model for 290 nm chitin in air (dotted orange)
+        bbox: [0, 506, 700, 995]
+        archetype: spectral_or_profile
+        context:
+          functional_architecture: lower-lamina thin film
+        extractor: extractors/f5_scale_reflectance.py:extract
+        linked_items: [F5_lower_lamina_thickness, F5_thin_film_peak_wavelength]
+        linked_claims: [C3_results_thin_film_thickness]
+      C:
+        label: C
+        title: Abwing reflectance spectra at root (3, gray), middle (4, green), and melanized tip (5, maroon) demonstrating suppression of thin-film peak
+        bbox: [0, 995, 700, 1523]
+        archetype: spectral_or_profile
+        context:
+          functional_architecture: melanic pigmentary
+        extractor: extractors/f5_scale_reflectance.py:extract
+        linked_items: [F5_abwing_melanin_filtering]
+        linked_claims: [C4_results_tip_melanin_blocks_thin_film, C5_results_upper_lamina_neglected, C7_discussion_cost_optimization]
+  F6:
+    label: Fig. 6
+    file: fphys-11-00095-g006.jpg
+    xml_id: F6
+    title: Reflectance spectra of aestivation cave granite (algal green hump) and Argyle apple (Eucalyptus cinerea) tree bark
+    caption_anchor:
+      quote: Reflectance spectra of a piece of cave granite and a piece of bark from the Argyle apple tree (Eucalyptus cinerea).
+      where: Fig. 6 caption
+    context:
+      anatomical_region: not applicable
+      scale_type: not applicable
+      functional_architecture: not applicable
+      imaging_modality: microspectrophotometry
+      view_orientation: whole-mount
+    panels:
+      A:
+        label: A
+        title: Bifurcated-probe reflectance spectra (300–800 nm) of South Ramshead cave granite vs Eucalyptus cinerea bark
+        bbox: [0, 0, 700, 521]
+        archetype: spectral_or_profile
+        extractor: extractors/f6_granite_bark.py:extract
+        linked_items: [F6_granite_vs_bark]
+        linked_claims: [C1_abstract_camouflage_spectra, C6_results_granite_worse_match]
+        linked_resources: [stavenga_supp_fig_s1]
+  F7:
+    label: Fig. 7
+    file: fphys-11-00095-g007.jpg
+    xml_id: F7
+    title: Reflectance spectra of Bogong moth dorsal forewings compared with likely resting-spot tree barks from Table 1
+    caption_anchor:
+      quote: Reflectance spectra of the bark of the trees listed in Table 1 as likely resting spots (thin lines) and reflectance spectra of various places on the forewings
+      where: Fig. 7 caption
+    context:
+      anatomical_region: dorsal forewing
+      functional_architecture: melanic pigmentary
+      imaging_modality: microspectrophotometry
+      view_orientation: whole-mount
+    panels:
+      A:
+        label: A
+        title: Seven bold dorsal forewing reflectance spectra (300–800 nm) of Bogong moths overlaid on likely resting-spot tree bark spectra
+        bbox: [0, 0, 700, 534]
+        archetype: spectral_or_profile
+        extractor: extractors/f7_forewing_bark.py:extract
+        linked_items: [F7_forewing_vs_bark]
+        linked_claims: [C1_abstract_camouflage_spectra, C6_results_granite_worse_match]
+        linked_resources: [stavenga_supp_fig_s1]
+  F8:
+    label: Fig. 8
+    file: fphys-11-00095-g008.jpg
+    xml_id: F8
+    title: Field photographs of Bogong moth background matching on Eucalyptus cinerea bark, cave granite, and aestivating moth carpets
+    caption_anchor:
+      quote: Bogong moth camouflage on bark of the Argyle apple (Eucalyptus cinerea) (a), and on a small piece of granite (b)
+      where: Fig. 8 caption
+    context:
+      anatomical_region: dorsal forewing
+      functional_architecture: melanic pigmentary
+      imaging_modality: light microscopy
+      view_orientation: whole-mount
+    panels:
+      a:
+        label: a
+        title: Resting Bogong moth closely background-matched on bark of Argyle apple (Eucalyptus cinerea)
+        bbox: [2, 2, 395, 591]
+        archetype: macro_morphology
+        linked_items: [F6_granite_vs_bark, F7_forewing_vs_bark]
+        linked_claims: [C1_abstract_camouflage_spectra, C6_results_granite_worse_match]
+      b:
+        label: b
+        title: Resting Bogong moth on aestivation cave granite from South Ramshead, Kosciuszko National Park (1860 m)
+        bbox: [400, 2, 794, 591]
+        archetype: macro_morphology
+        linked_items: [F6_granite_vs_bark]
+        linked_claims: [C6_results_granite_worse_match]
+      c:
+        label: c
+        title: Tightly tiled carpet of aestivating Bogong moths (up to 17,000 individuals/m^2) on cave wall with close-up inset
+        bbox: [2, 597, 794, 1192]
+        archetype: macro_morphology
+        linked_claims: [C6_results_granite_worse_match]

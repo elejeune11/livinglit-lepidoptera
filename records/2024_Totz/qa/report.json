@@ -1,0 +1,244 @@
+{
+  "paper": "2024_Totz",
+  "n_figures": 4,
+  "n_atomic_panels": 29,
+  "composite_panels": 0,
+  "n_custom_extractors": 6,
+  "n_fft_panels": 5,
+  "flagged_panels": [],
+  "panels": {
+    "2024_Totz/F1/Ai": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Totz/F1/Aii": {
+      "archetype": "macro_morphology",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2024_Totz/F1/Aiii": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 1.9011,
+      "transect_um": 1.8967,
+      "fft_transect_delta_pct": 0.23,
+      "harmonic_ratio_2f": 0.295,
+      "harmonic_guard": "pass",
+      "snr": 19562.2,
+      "confidence": "verified"
+    },
+    "2024_Totz/F1/Aiv": {
+      "archetype": "planar_microscopy",
+      "n_points": 12,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 2.0134,
+      "transect_um": 2.1165,
+      "fft_transect_delta_pct": 5.12,
+      "harmonic_ratio_2f": 0.888,
+      "harmonic_guard": "verified",
+      "snr": 2.7,
+      "confidence": "verified"
+    },
+    "2024_Totz/F1/B": {
+      "archetype": "planar_microscopy",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2024_Totz/F1/C": {
+      "archetype": "planar_microscopy",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2024_Totz/F1/D": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 1.7324,
+      "transect_um": 1.7281,
+      "fft_transect_delta_pct": 0.25,
+      "harmonic_ratio_2f": 0.149,
+      "harmonic_guard": "low_snr_verify",
+      "snr": 1.5,
+      "confidence": "low_snr_verified"
+    },
+    "2024_Totz/F1/E": {
+      "archetype": "spectral_or_profile",
+      "n_points": 90,
+      "method": "custom:extractors/f1_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F1/F": {
+      "archetype": "spectral_or_profile",
+      "n_points": 90,
+      "method": "custom:extractors/f1_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F1/G": {
+      "archetype": "spectral_or_profile",
+      "n_points": 90,
+      "method": "custom:extractors/f1_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F2/A": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 0.8067,
+      "transect_um": 0.7676,
+      "fft_transect_delta_pct": 4.85,
+      "harmonic_ratio_2f": 0.023,
+      "harmonic_guard": "pass",
+      "snr": 45.7,
+      "confidence": "verified"
+    },
+    "2024_Totz/F2/B": {
+      "archetype": "cross_section",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2024_Totz/F2/C": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Totz/F2/D": {
+      "archetype": "phylogeny_or_schematic",
+      "n_points": 0,
+      "method": "crop_only",
+      "has_overlay": false,
+      "confidence": "crop_verified"
+    },
+    "2024_Totz/F2/E_g": {
+      "archetype": "quantitative_plot",
+      "n_points": 225,
+      "method": "custom:extractors/f2_sweeps.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F2/E_Y": {
+      "archetype": "quantitative_plot",
+      "n_points": 225,
+      "method": "custom:extractors/f2_sweeps.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F2/E_L": {
+      "archetype": "quantitative_plot",
+      "n_points": 225,
+      "method": "custom:extractors/f2_sweeps.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F2/E_p": {
+      "archetype": "quantitative_plot",
+      "n_points": 225,
+      "method": "custom:extractors/f2_sweeps.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F3/A": {
+      "archetype": "spectral_or_profile",
+      "n_points": 160,
+      "method": "custom:extractors/f3_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F3/B": {
+      "archetype": "spectral_or_profile",
+      "n_points": 160,
+      "method": "custom:extractors/f3_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F3/C": {
+      "archetype": "spectral_or_profile",
+      "n_points": 160,
+      "method": "custom:extractors/f3_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F3/D": {
+      "archetype": "spectral_or_profile",
+      "n_points": 160,
+      "method": "custom:extractors/f3_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F3/E": {
+      "archetype": "spectral_or_profile",
+      "n_points": 160,
+      "method": "custom:extractors/f3_profiles.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F3/F": {
+      "archetype": "quantitative_plot",
+      "n_points": 5,
+      "method": "custom:extractors/f3_violins.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F3/G": {
+      "archetype": "quantitative_plot",
+      "n_points": 5,
+      "method": "custom:extractors/f3_violins.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F3/H": {
+      "archetype": "quantitative_plot",
+      "n_points": 550,
+      "method": "custom:extractors/f3_phase.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    },
+    "2024_Totz/F4/A": {
+      "archetype": "cross_section",
+      "n_points": 0,
+      "method": "microscopy_scale",
+      "has_overlay": true,
+      "confidence": "crop_verified"
+    },
+    "2024_Totz/F4/B": {
+      "archetype": "planar_microscopy",
+      "n_points": 11,
+      "method": "microscopy_fft",
+      "has_overlay": true,
+      "fft_um": 2.2045,
+      "transect_um": 2.1729,
+      "fft_transect_delta_pct": 1.43,
+      "harmonic_ratio_2f": 0.168,
+      "harmonic_guard": "pass",
+      "snr": 105.6,
+      "confidence": "verified"
+    },
+    "2024_Totz/F4/C": {
+      "archetype": "quantitative_plot",
+      "n_points": 202,
+      "method": "custom:extractors/f4_phase.py",
+      "has_overlay": true,
+      "confidence": "verified"
+    }
+  }
+}
