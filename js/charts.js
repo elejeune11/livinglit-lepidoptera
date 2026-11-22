@@ -303,18 +303,19 @@ window.LL = window.LL || {};
 
   /* One-Axis Cross-Paper Empirical Value Comparison Plot */
   LL.renderCompareStrip = function (canvas, rows, onClickRow) {
-    const { ctx, w, h } = setupHiDPI(canvas, Math.max(150, rows.length * 34 + 62));
+    const rowH = 26;
+    const { ctx, w, h } = setupHiDPI(canvas, Math.max(120, rows.length * rowH + 54));
     const tc = themeColors();
     ctx.fillStyle = tc.bg; ctx.fillRect(0, 0, w, h);
     if (!rows.length) return;
 
-    const pad = { l: 210, r: 28, t: 22, b: 34 };
-    const pw = w - pad.l - pad.r;
+    const pad = { l: Math.min(315, Math.round(w * 0.34)), r: 86, t: 16, b: 32 };
+    const pw = Math.max(160, w - pad.l - pad.r);
     const vals = rows.map((r) => r.val);
     let xmin = Math.min(...vals), xmax = Math.max(...vals);
     const sp = Math.max(xmax - xmin, xmin * 0.25, 0.1);
-    xmin = Math.max(0, xmin - sp * 0.15);
-    xmax = xmax + sp * 0.15;
+    xmin = Math.max(0, xmin - sp * 0.1);
+    xmax = xmax + sp * 0.12;
     const x2p = (v) => pad.l + ((v - xmin) / (xmax - xmin)) * pw;
 
     ctx.strokeStyle = tc.grid; ctx.lineWidth = 1;
@@ -322,7 +323,7 @@ window.LL = window.LL || {};
     for (let i = 0; i <= 5; i++) {
       const v = xmin + (i / 5) * (xmax - xmin), px = x2p(v);
       ctx.beginPath(); ctx.moveTo(px, pad.t); ctx.lineTo(px, h - pad.b); ctx.stroke();
-      ctx.textAlign = "center"; ctx.fillText(LL.fmtNum(v, 2), px, h - pad.b + 15);
+      ctx.textAlign = "center"; ctx.fillText(LL.fmtNum(v, 2), px, h - pad.b + 16);
     }
 
     const paperColors = {};
@@ -331,11 +332,12 @@ window.LL = window.LL || {};
     rows.forEach((r, idx) => {
       if (!paperColors[r.paper]) paperColors[r.paper] = SERIES_COLORS[ci++ % SERIES_COLORS.length];
       const col = paperColors[r.paper];
-      const cy = pad.t + 18 + idx * 34;
+      const cy = pad.t + 14 + idx * rowH;
 
       ctx.fillStyle = tc.ink; ctx.font = "600 11px sans-serif"; ctx.textAlign = "right";
-      const lbl = `${r.paper.split("_")[1]} · ${r.group_label.slice(0, 26)}`;
-      ctx.fillText(lbl, pad.l - 10, cy + 4);
+      const rawLbl = `${r.paper.split("_")[1]} · ${r.group_label}`;
+      const lbl = rawLbl.length > 42 ? rawLbl.slice(0, 40) + "…" : rawLbl;
+      ctx.fillText(lbl, pad.l - 12, cy + 4);
 
       const px = x2p(r.val);
       if (r.spreadVal != null && r.spreadVal > 0) {
@@ -345,15 +347,16 @@ window.LL = window.LL || {};
         ctx.lineTo(x2p(r.val + r.spreadVal), cy);
         ctx.stroke();
       }
-      ctx.beginPath(); ctx.arc(px, cy, 6, 0, Math.PI * 2);
+      ctx.beginPath(); ctx.arc(px, cy, 5, 0, Math.PI * 2);
       ctx.fillStyle = col; ctx.fill();
-      ctx.strokeStyle = tc.bg; ctx.lineWidth = 1.5; ctx.stroke();
+      ctx.strokeStyle = tc.bg; ctx.lineWidth = 1.4; ctx.stroke();
 
-      ctx.fillStyle = tc.muted; ctx.font = "10.5px ui-monospace, monospace"; ctx.textAlign = "left";
-      ctx.fillText(`${LL.fmtNum(r.val, 3)} ${r.unit}`, px + 10, cy + 4);
-      hitBoxes.push({ y0: cy - 15, y1: cy + 15, row: r });
+      ctx.fillStyle = tc.muted; ctx.font = "10.2px ui-monospace, monospace"; ctx.textAlign = "left";
+      ctx.fillText(`${LL.fmtNum(r.val, 3)} ${r.unit}`, px + 9, cy + 3.5);
+      hitBoxes.push({ y0: cy - rowH * 0.5, y1: cy + rowH * 0.5, row: r });
     });
 
+    canvas.style.cursor = "pointer";
     canvas.onclick = function (ev) {
       const rect = canvas.getBoundingClientRect();
       const my = ev.clientY - rect.top;

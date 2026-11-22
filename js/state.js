@@ -3,8 +3,10 @@ window.LL = window.LL || {};
 
 (function (LL) {
   LL.state = {
-    view: "atlas",
+    view: "overview",
     data: null,
+    // Unified Figures workspace (atlas | plots | scale)
+    figuresTab: "atlas",
     // Atlas filters
     atlasPaper: "ALL",
     atlasArch: "ALL",
@@ -15,8 +17,9 @@ window.LL = window.LL || {};
     atlasOverlayOn: true,
     atlasShowCode: false,
     atlasRoiMode: false,
-    // Vault state
+    // Digitized Plots state
     vaultPaper: "ALL",
+    vaultQuery: "",
     selectedVaultId: null,
     vaultOverlayOn: true,
     vaultShowCode: false,
@@ -24,8 +27,12 @@ window.LL = window.LL || {};
     scaleSelected: [],
     scalePxPerUm: 100,
     scaleOverlayOn: true,
-    // Relaxed Compare (Shift #2): dimensions toggled to strict (true) vs relaxed (false)
-    compareMeasure: "ALL",
+    // Cross-paper empirical comparison
+    compareMeasure: null,
+    compareQuery: "",
+    compareHideBlocked: false,
+    compareOnlyConf: false,
+    compareLimit: 20,
     strictDims: {
       taxon: false,
       scale_type: false,
@@ -37,6 +44,7 @@ window.LL = window.LL || {};
       hydration_and_prep: false,
     },
     // Audit tab
+    auditTab: "claims", // claims | findings | gaps
     auditPaper: "ALL",
     auditVerdict: "ALL",
     // GRN & Graph tab

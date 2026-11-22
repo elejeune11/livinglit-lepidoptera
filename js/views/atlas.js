@@ -134,6 +134,7 @@ window.LL = window.LL || {};
         <div class="stage-controls" style="margin-bottom:8px">
           <div style="display:flex;gap:6px;flex-wrap:wrap">
             ${hasOverlay ? `<button type="button" class="btn btn-sm ${st.atlasOverlayOn ? "active" : ""}" id="atlas-toggle-overlay">${st.atlasOverlayOn ? "✓ " : ""}Overlay check (${isMicro ? "FFT + Scale Bar" : "Plot geometry"})</button>` : ""}
+            ${LL.panelHasPlot(panel) ? `<button type="button" class="btn btn-sm primary" data-jump-plot="${LL.esc(panel.id)}">Interactive Re-Plot ↗</button>` : ""}
             ${d.um_per_px != null ? `<button type="button" class="btn btn-sm ${st.atlasRoiMode ? "active" : ""}" id="atlas-toggle-roi">${st.atlasRoiMode ? "✓ " : ""}Drag-ROI Periodicity</button>` : ""}
             ${extSrc ? `<button type="button" class="btn btn-sm ${st.atlasShowCode ? "active" : ""}" id="atlas-toggle-code">${LL.esc(panel.extractor_script.split("/").pop())} (${extSrc.split("\n").length} ln)</button>` : ""}
           </div>
@@ -289,6 +290,8 @@ window.LL = window.LL || {};
     `;
 
     renderInspector(document.getElementById("atlas-inspector"), sel);
+    const activeTile = root.querySelector("#atlas-grid .panel-tile.selected");
+    if (activeTile && activeTile.scrollIntoView) activeTile.scrollIntoView({ block: "nearest" });
 
     document.getElementById("at-paper").onchange = (e) => { st.atlasPaper = e.target.value; LL.renderAtlasView(root); };
     document.getElementById("at-arch").onchange = (e) => { st.atlasArch = e.target.value; LL.renderAtlasView(root); };
